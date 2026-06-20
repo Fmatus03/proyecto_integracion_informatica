@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+
+# Local environments
+.venv/
+venv/
+
+# Runtime outputs
+.factory/runs/
+.harness/runs/
+data/uploads/
+data/processed/
+data/exports/
+
+# OS/editor
+.DS_Store
+Thumbs.db

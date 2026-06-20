@@ -1,0 +1,94 @@
+{
+  "session_id": "9a61bc05-ce11-4b42-a338-79d5ce4842c6",
+  "pipeline_state": "FAILED",
+  "image_count": 20,
+  "filenames": [
+    "Captura de pantalla 2026-06-12 012059.png",
+    "Captura de pantalla 2026-06-12 012110.png",
+    "Captura de pantalla 2026-06-12 012117.png",
+    "Captura de pantalla 2026-06-12 012132.png",
+    "Captura de pantalla 2026-06-12 012139.png",
+    "Captura de pantalla 2026-06-12 012145.png",
+    "Captura de pantalla 2026-06-12 012155.png",
+    "Captura de pantalla 2026-06-12 012204.png",
+    "Captura de pantalla 2026-06-12 012214.png",
+    "Captura de pantalla 2026-06-12 012220.png",
+    "Captura de pantalla 2026-06-12 012228.png",
+    "Captura de pantalla 2026-06-12 012236.png",
+    "Captura de pantalla 2026-06-12 012244.png",
+    "Captura de pantalla 2026-06-12 012252.png",
+    "Captura de pantalla 2026-06-12 012301.png",
+    "Captura de pantalla 2026-06-12 012309.png",
+    "Captura de pantalla 2026-06-12 012316.png",
+    "Captura de pantalla 2026-06-12 012325.png",
+    "Captura de pantalla 2026-06-12 012338.png",
+    "Captura de pantalla 2026-06-12 012347.png"
+  ],
+  "nodeodm_task_uuid": "568a76d9-971b-4791-bdbe-8421b2af0dce",
+  "progress_percentage": 0,
+  "point_cloud_path": null,
+  "reconstruction_attempts": [
+    {
+      "attempt": "attempt_1",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "high"
+        },
+        {
+          "name": "pc-quality",
+          "value": "medium"
+        },
+        {
+          "name": "min-num-features",
+          "value": "8000"
+        }
+      ],
+      "task_uuid": "568a76d9-971b-4791-bdbe-8421b2af0dce",
+      "status": "failed",
+      "message": "HTTPConnectionPool(host='nodeodm', port=3000): Max retries exceeded with url: /task/568a76d9-971b-4791-bdbe-8421b2af0dce/info (Caused by NameResolutionError(\"HTTPConnection(host='nodeodm', port=3000): Failed to resolve 'nodeodm' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "attempt": "attempt_2",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "medium"
+        },
+        {
+          "name": "pc-quality",
+          "value": "low"
+        },
+        {
+          "name": "min-num-features",
+          "value": "4000"
+        }
+      ],
+      "task_uuid": null,
+      "status": "failed",
+      "message": "HTTPConnectionPool(host='nodeodm', port=3000): Max retries exceeded with url: /task/new (Caused by NameResolutionError(\"HTTPConnection(host='nodeodm', port=3000): Failed to resolve 'nodeodm' ([Errno -2] Name or service not known)\"))"
+    },
+    {
+      "attempt": "attempt_3",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "low"
+        },
+        {
+          "name": "pc-quality",
+          "value": "low"
+        },
+        {
+          "name": "min-num-features",
+          "value": "2000"
+        }
+      ],
+      "task_uuid": null,
+      "status": "failed",
+      "message": "HTTPConnectionPool(host='nodeodm', port=3000): Max retries exceeded with url: /task/new (Caused by NameResolutionError(\"HTTPConnection(host='nodeodm', port=3000): Failed to resolve 'nodeodm' ([Errno -2] Name or service not known)\"))"
+    }
+  ],
+  "error_code": "NODEODM_PROCESSING_FAILED",
+  "message": "NodeODM failed after 3 fallback attempts"
+}

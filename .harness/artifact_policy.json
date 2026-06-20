@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "min_chars": 120,
+  "forbidden_patterns": [
+    "lorem ipsum",
+    "todo pendiente",
+    "placeholder",
+    "pendiente de completar",
+    "asdf",
+    "contenido sintetico invalido"
+  ],
+  "max_repeated_line_ratio": 0.35,
+  "artifacts": {
+    "spec.md": {
+      "owner_role": "specifier",
+      "required_headings": [
+        "Objetivo",
+        "Alcance",
+        "Requisitos",
+        "Restricciones",
+        "Riesgos"
+      ],
+      "semantic_rules": {
+        "must_include_any": [
+          ["rgb", "imagenes rgb", "entradas rgb"],
+          ["aruco", "marcador aruco", "referencia aruco"],
+          ["sin metadata", "sin metadatos", "no usar exif", "no asumir gps"],
+          ["ground truth", "rf-09", "error"]
+        ],
+        "must_not_include": [
+          "exif obligatorio",
+          "gps obligatorio",
+          "metadata de dron obligatoria"
+        ]
+      }
+    },
+    "plan.md": {
+      "owner_role": "architect",
+      "required_headings": [
+        "Hitos",
+        "Entregables",
+        "Dependencias"
+      ],
+      "semantic_rules": {
+        "must_include_any": [
+          ["runtime", "runtime ejecutable", "cli"],
+          ["evidencia", "checksum", "validator"],
+          ["dataset_manifest", "manifest", "marcador"]
+        ]
+      }
+    },
+    "tasks.md": {
+      "owner_role": "analyzer",
+      "required_headings": [
+        "Tareas",
+        "Responsable",
+        "Estado"
+      ],
+      "requires_task_ids": true,
+      "semantic_rules": {
+        "must_include_any": [
+          ["manifest", "dataset_manifest"],
+          ["marcador", "aruco"],
+          ["evidencia", "checksum", "claim"],
+          ["malla", "mesh", "volumen"]
+        ]
+      }
+    },
+    "analyze-report.md": {
+      "owner_role": "analyzer",
+      "required_headings": [
+        "Hallazgos",
+        "Riesgos",
+        "Recomendacion"
+      ],
+      "semantic_rules": {
+        "must_include_any": [
+          ["dataset", "manifest"],
+          ["evidencia", "checksum", "validator"],
+          ["claim", "gate", "trazabilidad"]
+        ]
+      }
+    },
+    "validation-report.md": {
+      "owner_role": "validator",
+      "required_headings": [
+        "Validacion",
+        "Pruebas",
+        "Claims"
+      ],
+      "semantic_rules": {
+        "must_include_any": [
+          ["transiciones", "stages", "etapas"],
+          ["claims", "claim_gate"],
+          ["trazabilidad", "audit", "integridad"]
+        ]
+      }
+    },
+    "test-report.md": {
+      "owner_role": "validator",
+      "required_headings": [
+        "Comando",
+        "Resultado",
+        "Cobertura"
+      ],
+      "semantic_rules": {
+        "must_include_any": [
+          ["pytest", "tests/harness"],
+          ["runtime", "contratos", "claims"],
+          ["adversariales", "gates", "audit"]
+        ]
+      }
+    },
+    "final-report.md": {
+      "owner_role": "validator",
+      "required_headings": [
+        "Resumen",
+        "Evidencia",
+        "Decision"
+      ],
+      "semantic_rules": {
+        "must_include_any": [
+          ["evidencia verificable", "checksum", "validator"],
+          ["close", "cierre", "decision"],
+          ["claims", "test_gate", "claim_gate"]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+dataset runtime: 0.538697 seconds
+split runtime: 0.001879 seconds
+merge runtime: 4.1e-05 seconds

@@ -1,0 +1,104 @@
+{
+  "session_id": "ed5dff81-7efb-4abb-903f-121029487c78",
+  "pipeline_state": "FAILED",
+  "image_count": 18,
+  "filenames": [
+    "Captura de pantalla 2026-06-14 192531.png",
+    "Captura de pantalla 2026-06-14 192538.png",
+    "Captura de pantalla 2026-06-14 192824.png",
+    "Captura de pantalla 2026-06-14 192838.png",
+    "Captura de pantalla 2026-06-14 192848.png",
+    "Captura de pantalla 2026-06-14 192855.png",
+    "Captura de pantalla 2026-06-14 192912.png",
+    "Captura de pantalla 2026-06-14 192921.png",
+    "Captura de pantalla 2026-06-14 192928.png",
+    "Captura de pantalla 2026-06-14 192937.png",
+    "Captura de pantalla 2026-06-14 192945.png",
+    "Captura de pantalla 2026-06-14 192957.png",
+    "Captura de pantalla 2026-06-14 193004.png",
+    "Captura de pantalla 2026-06-14 193041.png",
+    "Captura de pantalla 2026-06-14 193053.png",
+    "Captura de pantalla 2026-06-14 193101.png",
+    "Captura de pantalla 2026-06-14 193109.png",
+    "Captura de pantalla 2026-06-14 193132.png"
+  ],
+  "nodeodm_task_uuid": "1d5dfb52-bead-413f-a54b-b1634af8a2b7",
+  "progress_percentage": 100,
+  "point_cloud_path": null,
+  "reconstruction_attempts": [
+    {
+      "attempt": "attempt_1",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "high"
+        },
+        {
+          "name": "pc-quality",
+          "value": "medium"
+        },
+        {
+          "name": "min-num-features",
+          "value": "8000"
+        },
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        }
+      ],
+      "task_uuid": "b57ad95e-a225-40d0-89e6-11f0cfc840ea",
+      "status": "failed",
+      "message": "NodeODM completed without producing a .ply artifact"
+    },
+    {
+      "attempt": "attempt_2",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "medium"
+        },
+        {
+          "name": "pc-quality",
+          "value": "low"
+        },
+        {
+          "name": "min-num-features",
+          "value": "4000"
+        },
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        }
+      ],
+      "task_uuid": "80785238-76bd-4b38-839a-688d8029b361",
+      "status": "failed",
+      "message": "NodeODM completed without producing a .ply artifact"
+    },
+    {
+      "attempt": "attempt_3",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "low"
+        },
+        {
+          "name": "pc-quality",
+          "value": "low"
+        },
+        {
+          "name": "min-num-features",
+          "value": "2000"
+        },
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        }
+      ],
+      "task_uuid": "1d5dfb52-bead-413f-a54b-b1634af8a2b7",
+      "status": "failed",
+      "message": "NodeODM completed without producing a .ply artifact"
+    }
+  ],
+  "error_code": "NODEODM_PROCESSING_FAILED",
+  "message": "NodeODM failed after 3 fallback attempts"
+}

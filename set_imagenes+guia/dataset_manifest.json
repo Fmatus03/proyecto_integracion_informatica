@@ -1,0 +1,27 @@
+{
+  "dataset_id": "castillo_madera_local_2026_06_12",
+  "dataset_version": 1,
+  "dataset_root": "set_imagenes+guia/set_fotos_castillo_de_madera",
+  "reference_marker": {
+    "type": "aruco",
+    "dictionary": "DICT_4X4_50",
+    "id": 0,
+    "physical_size_cm": 50.0,
+    "marker_image_path": "set_imagenes+guia/guia50cm/aruco-marker-ID=0.png"
+  },
+  "input_contract": {
+    "accepted_extensions": [".jpg", ".jpeg", ".png"],
+    "min_images": 10,
+    "max_images": 200,
+    "requires_exif": false,
+    "requires_drone_metadata": false,
+    "allows_screenshots": true,
+    "notes": "El sistema debe funcionar con imagenes RGB basicas, incluso sin metadata, incluyendo capturas de pantalla PNG y futuras imagenes JPG."
+  },
+  "validation_contract": {
+    "requires_mesh_generation": true,
+    "requires_volume_estimation": true,
+    "ground_truth_volume_m3": null,
+    "error_threshold_pct_when_gt_available": 15.0
+  }
+}

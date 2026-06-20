@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "strict": true,
+  "title": "ForestVol Harness Run State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "status",
+    "current_stage",
+    "completed_stages",
+    "active_claims",
+    "blocked_claims",
+    "evidence_refs",
+    "gate_status",
+    "artifacts",
+    "claim_status",
+    "integrity",
+    "last_updated"
+  ],
+  "properties": {
+    "run_id": {"type": "string", "pattern": "^[a-zA-Z0-9_-]+$"},
+    "status": {
+      "type": "string",
+      "enum": ["running", "complete", "blocked", "error", "needs_user_input", "not_answerable"]
+    },
+    "current_stage": {
+      "type": "string",
+      "enum": [
+        "PLAN",
+        "CONTEXT",
+        "SPECIFY",
+        "PLAN_VALIDATION",
+        "TASKS",
+        "ANALYZE",
+        "IMPLEMENT",
+        "VALIDATE",
+        "QA",
+        "CLOSE",
+        "BLOCKED",
+        "ERROR",
+        "NEEDS_USER_INPUT",
+        "NOT_ANSWERABLE"
+      ]
+    },
+    "completed_stages": {"type": "array", "items": {"type": "string"}},
+    "active_claims": {"type": "array", "items": {"type": "string"}},
+    "blocked_claims": {"type": "array", "items": {"type": "string"}},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "gate_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dataset_gate",
+        "authority_gate",
+        "analysis_gate",
+        "claim_gate",
+        "test_gate",
+        "traceability_gate"
+      ],
+      "properties": {
+        "dataset_gate": {"type": "string", "enum": ["pending", "passed", "failed"]},
+        "authority_gate": {"type": "string", "enum": ["pending", "passed", "failed"]},
+        "analysis_gate": {"type": "string", "enum": ["pending", "passed", "failed"]},
+        "claim_gate": {"type": "string", "enum": ["pending", "passed", "failed"]},
+        "test_gate": {"type": "string", "enum": ["pending", "passed", "failed"]},
+        "traceability_gate": {"type": "string", "enum": ["pending", "passed", "failed"]}
+      }
+    },
+    "artifacts": {"type": "array", "items": {"type": "string"}},
+    "claim_status": {"type": "object"},
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["previous_hash", "current_hash", "algorithm"],
+      "properties": {
+        "previous_hash": {"type": "string"},
+        "current_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "algorithm": {"type": "string", "enum": ["sha256"]}
+      }
+    },
+    "last_updated": {"type": "string"}
+  }
+}

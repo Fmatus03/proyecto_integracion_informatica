@@ -1,0 +1,92 @@
+{
+  "session_id": "b8cc0fe3-0aab-4976-841f-a8029ee44d02",
+  "pipeline_state": "FAILED",
+  "image_count": 18,
+  "filenames": [
+    "Captura de pantalla 2026-06-14 192531.png",
+    "Captura de pantalla 2026-06-14 192538.png",
+    "Captura de pantalla 2026-06-14 192824.png",
+    "Captura de pantalla 2026-06-14 192838.png",
+    "Captura de pantalla 2026-06-14 192848.png",
+    "Captura de pantalla 2026-06-14 192855.png",
+    "Captura de pantalla 2026-06-14 192912.png",
+    "Captura de pantalla 2026-06-14 192921.png",
+    "Captura de pantalla 2026-06-14 192928.png",
+    "Captura de pantalla 2026-06-14 192937.png",
+    "Captura de pantalla 2026-06-14 192945.png",
+    "Captura de pantalla 2026-06-14 192957.png",
+    "Captura de pantalla 2026-06-14 193004.png",
+    "Captura de pantalla 2026-06-14 193041.png",
+    "Captura de pantalla 2026-06-14 193053.png",
+    "Captura de pantalla 2026-06-14 193101.png",
+    "Captura de pantalla 2026-06-14 193109.png",
+    "Captura de pantalla 2026-06-14 193132.png"
+  ],
+  "nodeodm_task_uuid": "93e104d2-fae6-48d0-8059-4662c7c94724",
+  "progress_percentage": 100,
+  "point_cloud_path": null,
+  "reconstruction_attempts": [
+    {
+      "attempt": "attempt_1",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "high"
+        },
+        {
+          "name": "pc-quality",
+          "value": "medium"
+        },
+        {
+          "name": "min-num-features",
+          "value": "8000"
+        }
+      ],
+      "task_uuid": "2a6cd326-dba5-426a-b47c-b3e73cf993b4",
+      "status": "failed",
+      "message": "NodeODM returned FAILED"
+    },
+    {
+      "attempt": "attempt_2",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "medium"
+        },
+        {
+          "name": "pc-quality",
+          "value": "low"
+        },
+        {
+          "name": "min-num-features",
+          "value": "4000"
+        }
+      ],
+      "task_uuid": "07ef9ce1-4a53-4b21-b2a4-ad8e2742fe04",
+      "status": "failed",
+      "message": "NodeODM returned FAILED"
+    },
+    {
+      "attempt": "attempt_3",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "low"
+        },
+        {
+          "name": "pc-quality",
+          "value": "low"
+        },
+        {
+          "name": "min-num-features",
+          "value": "2000"
+        }
+      ],
+      "task_uuid": "93e104d2-fae6-48d0-8059-4662c7c94724",
+      "status": "failed",
+      "message": "NodeODM returned FAILED"
+    }
+  ],
+  "error_code": "NODEODM_PROCESSING_FAILED",
+  "message": "NodeODM failed after 3 fallback attempts"
+}

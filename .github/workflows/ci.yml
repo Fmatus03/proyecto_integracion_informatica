@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  harness-contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pytest
+        run: pip install "pytest>=8"
+
+      - name: Run harness tests
+        run: python -m pytest tests/harness -v
+
+      - name: Run harness evals
+        run: python .harness/eval_runner.py
+
+  backend-tests:
+    runs-on: ubuntu-latest
+    if: ${{ hashFiles('backend/requirements.txt') != '' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run backend tests
+        run: pytest backend/tests -q

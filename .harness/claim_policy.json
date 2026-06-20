@@ -1,0 +1,34 @@
+{
+  "claims": {
+    "dataset_contract": {
+      "required_evidence": ["dataset_manifest", "dataset_images"],
+      "on_missing": "block_claim",
+      "semantic_validator": "dataset_contract"
+    },
+    "reference_marker": {
+      "required_evidence": ["dataset_manifest", "marker_image_file"],
+      "on_missing": "block_claim",
+      "semantic_validator": "reference_marker"
+    },
+    "volume_estimate": {
+      "required_evidence": ["valid_mesh"],
+      "on_missing": "block_claim",
+      "semantic_validator": "volume_estimate"
+    },
+    "error_percentage": {
+      "required_evidence": ["ground_truth_certified"],
+      "on_missing": "set_null_and_block_claim",
+      "semantic_validator": "error_percentage"
+    },
+    "rf09_compliance": {
+      "required_evidence": ["ground_truth_certified", "error_percentage"],
+      "on_missing": "block_claim",
+      "semantic_validator": "rf09_compliance"
+    }
+  },
+  "escalation_triggers": [
+    "irreversible_action",
+    "authority_conflict",
+    "security_risk"
+  ]
+}

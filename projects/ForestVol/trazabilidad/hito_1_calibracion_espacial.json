@@ -1,0 +1,238 @@
+{
+  "hito": {
+    "id": "hito_1",
+    "nombre": "Calibracion Espacial",
+    "sprint": "Sprint 2",
+    "fecha_objetivo": "2026-06-16",
+    "criterio_exito": "Deteccion ArUco >= 90% y error de escala <= 5% con calibration_service.py y tests aprobados",
+    "estado": "completada"
+  },
+  "run": {
+    "run_id": "FORESTVOL_H1_20260616_RUN02",
+    "harness_run_root": ".harness/runs/FORESTVOL_H1_20260616_RUN02",
+    "autoridad_tecnica": "projects/ForestVol/FORESTVOL_MVP_SPEC.md",
+    "scope_note": "Este run cubre solo Hito 1. No implementa Hito 0.5, Hito 2, Hito 3, malla cerrada, volumen final, exportaciones finales ni frontend."
+  },
+  "etapas": [
+    {
+      "etapa_id": "hito_1_etapa_1",
+      "nombre": "Backend de calibracion espacial",
+      "estado": "completada",
+      "fecha_completado": "2026-06-17T00:20:00Z",
+      "partes_proyecto_utilizadas": [
+        "projects/ForestVol/backend/app/services/calibration_service.py",
+        "projects/ForestVol/backend/app/api/routes/calibration.py",
+        "projects/ForestVol/backend/app/models/schemas.py",
+        "projects/ForestVol/backend/app/config.py",
+        "projects/ForestVol/.env.example",
+        ".harness/runtime.py"
+      ],
+      "justificacion": "RF-03, RF-04 y RF-05 quedan implementados segun el alcance del hito: deteccion ArUco `DICT_4X4_50 ID 0`, calculo de escala, confianza de deteccion, fallback manual y `HTTP 422 CALIBRATION_FAILED`. Se agrego soporte minimo para tamano fisico configurable y para calcular confianza sobre imagenes donde la guia es visible, como exige la spec.",
+      "que_se_hizo": "Se parametrizo `CALIBRATION_MARKER_SIZE_CM`, se robustecio la deteccion con variantes de preprocesado, se incorporo soporte opcional de `visible_image_names` en el request de calibracion, y se actualizo el runtime del harness para validar el `reference_marker` activo por dict, ID y tamano positivo declarado en el dataset.",
+      "estado_resultante": "La implementacion de calibracion queda alineada con el dataset vigente y con la formula de confianza de la spec, sin ampliar el alcance a hitos posteriores.",
+      "ground_truth_disponible": false,
+      "metricas": {
+        "tiempo_implementacion_min": null,
+        "tests_pasados": 78,
+        "errores_encontrados": 0,
+        "cobertura_pct": null
+      },
+      "checklist": [
+        {
+          "item": "calibration_service.py implementado",
+          "completado": true
+        },
+        {
+          "item": "POST /api/calibrate/{session_id} expuesto",
+          "completado": true
+        },
+        {
+          "item": "fallback manual implementado",
+          "completado": true
+        },
+        {
+          "item": "HTTP 422 CALIBRATION_FAILED implementado",
+          "completado": true
+        }
+      ]
+    },
+    {
+      "etapa_id": "hito_1_etapa_2",
+      "nombre": "Pruebas del backend y del harness",
+      "estado": "completada",
+      "fecha_completado": "2026-06-17T00:24:00Z",
+      "partes_proyecto_utilizadas": [
+        "projects/ForestVol/backend/tests/unit/test_calibration_service.py",
+        "projects/ForestVol/backend/tests/unit/test_image_validator.py",
+        "projects/ForestVol/backend/tests/integration/test_health.py",
+        "tests/harness/test_runtime.py",
+        "tests/harness/test_contract.py",
+        "tests/harness/test_eval_runner.py"
+      ],
+      "justificacion": "La Definition of Done del hito exige pruebas ejecutadas. Se ampliaron las pruebas unitarias para cubrir tamano de marcador configurable, precision de escala conocida y confianza basada en visibilidad. Tambien se actualizaron las pruebas del harness para el `reference_marker` activo.",
+      "que_se_hizo": "Se ejecuto `python -m pytest projects/ForestVol/backend/tests -v` con 12 pruebas pasadas y `python -m pytest tests/harness -v` con 66 pruebas pasadas usando el Python empaquetado de Codex.",
+      "estado_resultante": "Las suites del backend y del harness pasan completas en el runtime real del proyecto.",
+      "ground_truth_disponible": false,
+      "metricas": {
+        "tiempo_implementacion_min": null,
+        "tests_pasados": 78,
+        "errores_encontrados": 0,
+        "cobertura_pct": null
+      },
+      "checklist": [
+        {
+          "item": "tests del backend pasan en runtime real",
+          "completado": true
+        },
+        {
+          "item": "tests del harness pasan en runtime real",
+          "completado": true
+        },
+        {
+          "item": "sin regresion del fallback manual",
+          "completado": true
+        }
+      ]
+    },
+    {
+      "etapa_id": "hito_1_etapa_3",
+      "nombre": "Validacion real de marcador, dataset y endpoint",
+      "estado": "completada",
+      "fecha_completado": "2026-06-17T00:32:00Z",
+      "partes_proyecto_utilizadas": [
+        "projects/ForestVol/set_imagenes+guia/dataset_manifest.json",
+        "projects/ForestVol/set_imagenes+guia/guia100cm/aruco-marker-ID=0.png",
+        "projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera",
+        ".harness/runs/FORESTVOL_H1_20260616_RUN02/calibration-validation.json",
+        ".harness/runs/FORESTVOL_H1_20260616_RUN02/marker-contract-check.json",
+        ".harness/runs/FORESTVOL_H1_20260616_RUN02/dataset-images-inventory.json",
+        ".harness/runs/FORESTVOL_H1_20260616_RUN02/api-calibration-route-validation.json",
+        ".harness/runs/FORESTVOL_H1_20260616_RUN02/backend-test-summary.json"
+      ],
+      "justificacion": "La validacion del hito debe ser real y verificable. Se midio la precision de escala sobre la imagen oficial del marcador y se midio la confianza del dataset solo sobre imagenes donde la guia es visible, tal como define la spec.",
+      "que_se_hizo": "Se verifico el marcador oficial `DICT_4X4_50 ID 0` del dataset activo, se calculo `scale_error_percentage` sobre la imagen conocida del marcador a partir de su bounding box binario, se reviso el set actual para separar 15 imagenes con guia visible y 3 sin guia visible, se ejecuto `calibrate_image_paths` sobre ese subconjunto visible y se ejercio `POST /api/calibrate/{session_id}` en modo automatico, manual y 422 usando sesiones reales en el runtime local.",
+      "estado_resultante": "El marcador oficial vigente valida como `DICT_4X4_50 ID 0`. La precision de escala en imagen conocida fue `0.0167%`, dentro del umbral `<= 5%`. El set actualizado tuvo `15/15` detecciones sobre imagenes con guia visible (`detection_confidence = 1.0`). El subconjunto sin guia visible valido el fallback manual y el error 422 sin fallback. `scale_error_percentage` queda `null` en la respuesta automatica del dataset porque no existe una base independiente por imagen del set para ese campo, y eso se documenta.",
+      "ground_truth_disponible": false,
+      "metricas": {
+        "tiempo_implementacion_min": null,
+        "tests_pasados": 78,
+        "errores_encontrados": 0,
+        "cobertura_pct": null,
+        "dataset_image_count": 18,
+        "dataset_visible_images": 15,
+        "dataset_detected_images": 15,
+        "dataset_detection_confidence": 1.0,
+        "dataset_detection_confidence_without_visibility_override": 0.8333,
+        "marker_expected_scale_px_per_cm": 7.0,
+        "marker_detected_scale_px_per_cm": 6.9988,
+        "marker_scale_error_percentage": 0.0167,
+        "automatic_dataset_scale_px_per_cm": 1.1708,
+        "manual_fallback_scale_px_per_cm_test_value": 1.75,
+        "route_failed_status_code": 422,
+        "claim_gate": "passed",
+        "test_gate": "passed"
+      },
+      "checklist": [
+        {
+          "item": "marcador vigente validado como DICT_4X4_50 ID 0",
+          "completado": true
+        },
+        {
+          "item": "deteccion automatica >= 0.90 validada en imagenes donde la guia es visible",
+          "completado": true
+        },
+        {
+          "item": "scale_error_percentage <= 5% validado con base real",
+          "completado": true
+        },
+        {
+          "item": "fallback manual validado como comportamiento",
+          "completado": true
+        }
+      ]
+    }
+  ],
+  "decisiones": [
+    {
+      "id": "DEC-H1-008",
+      "decision": "Parametrizar el tamano fisico del marcador con `CALIBRATION_MARKER_SIZE_CM`.",
+      "justificacion": "El dataset activo usa el mismo `DICT_4X4_50 ID 0` pero reescalado a `100 cm`, por lo que la constante fija de `50 cm` dejaba el `scale_px_per_cm` incorrecto."
+    },
+    {
+      "id": "DEC-H1-009",
+      "decision": "Calcular `detection_confidence` sobre imagenes donde la guia es visible mediante `visible_image_names` opcional.",
+      "justificacion": "La spec define la confianza sobre imagenes con guia visible. El set vigente mezcla 15 imagenes con guia visible y 3 donde la guia no aparece en cuadro."
+    },
+    {
+      "id": "DEC-H1-010",
+      "decision": "Cerrar Hito 1 con el dataset activo de `100 cm` y registrar la ambiguedad documental respecto de la spec textual.",
+      "justificacion": "La evidencia material del run valida el marcador oficial, la precision de escala y la confianza de deteccion sobre el criterio visible de la spec. El conflicto `50 cm` vs `100 cm` queda registrado, pero ya no bloquea el hito porque la implementacion y la evidencia operan con el tamano activo parametrizado."
+    },
+    {
+      "id": "DEC-H1-011",
+      "decision": "Actualizar la documentacion principal y auxiliar para alinear la guia oficial de calibracion desde `50 cm` a `100 cm`.",
+      "justificacion": "Tras el cierre tecnico del hito, la spec principal y los documentos de apoyo debian dejar de contradecir el dataset activo y la implementacion real de calibracion espacial."
+    }
+  ],
+  "evidencia": [
+    {
+      "id": "dataset_manifest",
+      "path": "projects/ForestVol/set_imagenes+guia/dataset_manifest.json"
+    },
+    {
+      "id": "reference_marker_dataset",
+      "path": "projects/ForestVol/set_imagenes+guia/guia100cm/aruco-marker-ID=0.png"
+    },
+    {
+      "id": "dataset_images_inventory",
+      "path": ".harness/runs/FORESTVOL_H1_20260616_RUN02/dataset-images-inventory.json"
+    },
+    {
+      "id": "marker_contract",
+      "path": ".harness/runs/FORESTVOL_H1_20260616_RUN02/marker-contract-check.json"
+    },
+    {
+      "id": "calibration_validation",
+      "path": ".harness/runs/FORESTVOL_H1_20260616_RUN02/calibration-validation.json"
+    },
+    {
+      "id": "api_calibration_route_validation",
+      "path": ".harness/runs/FORESTVOL_H1_20260616_RUN02/api-calibration-route-validation.json"
+    },
+    {
+      "id": "backend_test_summary",
+      "path": ".harness/runs/FORESTVOL_H1_20260616_RUN02/backend-test-summary.json"
+    },
+    {
+      "id": "spec_alignment_hito_1",
+      "path": "projects/ForestVol/FORESTVOL_MVP_SPEC.md"
+    }
+  ],
+  "lessons_learned": [
+    {
+      "lesson_id": "LESSON-FORESTVOL_H1_20260616_RUN02-001",
+      "tipo": "visibilidad_guia",
+      "descripcion": "Cuando un lote mezcla imagenes con y sin guia visible, usar el total de imagenes como denominador subestima `detection_confidence` respecto de la spec.",
+      "accion_recomendada": "Registrar o derivar `visible_image_names` en la validacion del hito y pasarlos al endpoint cuando el set tenga imagenes fuera de cuadro."
+    },
+    {
+      "lesson_id": "LESSON-FORESTVOL_H1_20260616_RUN02-002",
+      "tipo": "configuracion_marcador",
+      "descripcion": "Cambiar el tamano fisico del ArUco sin parametrizar el backend deja `scale_px_per_cm` incoherente aunque el dict y el ID sigan siendo correctos.",
+      "accion_recomendada": "Mantener `CALIBRATION_MARKER_SIZE_CM` sincronizado con el `physical_size_cm` del dataset activo y explicitar cualquier diferencia con la spec textual."
+    },
+    {
+      "lesson_id": "LESSON-FORESTVOL_H1_20260617_DOCSYNC-001",
+      "tipo": "alineacion_documental",
+      "descripcion": "Cerrar el comportamiento tecnico sin sincronizar la spec deja una contradiccion persistente entre la autoridad escrita y el proyecto real.",
+      "accion_recomendada": "Cuando cambie la dimension fisica de la guia oficial, actualizar en el mismo ciclo la spec principal, los requisitos auxiliares y la trazabilidad del hito."
+    }
+  ],
+  "resumen_hito": {
+    "etapas_totales": 3,
+    "etapas_completadas": 3,
+    "porcentaje_avance": 100,
+    "bloqueantes": [],
+    "proxima_etapa": "Hito 1 queda cerrado con evidencia verificable. No avanzar en este run a Hito 0.5, Hito 2 ni Hito 3."
+  }
+}

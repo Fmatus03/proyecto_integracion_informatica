@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "strict": true,
+  "title": "ForestVol Prompt Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "bootstrap_prompt",
+    "project_context",
+    "role_prompts",
+    "required_markers",
+    "trusted_sources",
+    "untrusted_context_markers",
+    "output_contracts",
+    "eval_prompt",
+    "terminal_confirmation"
+  ],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "bootstrap_prompt": {"type": "string"},
+    "project_context": {"type": "string"},
+    "role_prompts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "orchestrator",
+        "specifier",
+        "architect",
+        "analyzer",
+        "implementer",
+        "validator"
+      ],
+      "properties": {
+        "orchestrator": {"type": "string"},
+        "specifier": {"type": "string"},
+        "architect": {"type": "string"},
+        "analyzer": {"type": "string"},
+        "implementer": {"type": "string"},
+        "validator": {"type": "string"}
+      }
+    },
+    "required_markers": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 4
+    },
+    "trusted_sources": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "untrusted_context_markers": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 2
+    },
+    "output_contracts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "orchestrator",
+        "specifier",
+        "architect",
+        "analyzer",
+        "implementer",
+        "validator"
+      ],
+      "properties": {
+        "orchestrator": {"$ref": "#/$defs/outputContract"},
+        "specifier": {"$ref": "#/$defs/outputContract"},
+        "architect": {"$ref": "#/$defs/outputContract"},
+        "analyzer": {"$ref": "#/$defs/outputContract"},
+        "implementer": {"$ref": "#/$defs/outputContract"},
+        "validator": {"$ref": "#/$defs/outputContract"}
+      }
+    },
+    "eval_prompt": {"type": "string"},
+    "terminal_confirmation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required_stages",
+        "accepted_fields",
+        "allowed_confirmed_by",
+        "token_pattern"
+      ],
+      "properties": {
+        "required_stages": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "accepted_fields": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "allowed_confirmed_by": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "token_pattern": {"type": "string"}
+      }
+    }
+  },
+  "$defs": {
+    "outputContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_output", "artifacts", "required_sections"],
+      "properties": {
+        "primary_output": {"type": "string"},
+        "artifacts": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "required_sections": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        }
+      }
+    }
+  }
+}

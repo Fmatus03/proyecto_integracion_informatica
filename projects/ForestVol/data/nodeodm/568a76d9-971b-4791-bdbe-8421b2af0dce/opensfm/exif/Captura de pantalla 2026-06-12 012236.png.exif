@@ -1,0 +1,12 @@
+{
+    "make": "",
+    "model": "",
+    "width": 1329,
+    "height": 714,
+    "projection_type": "brown",
+    "focal_ratio": 0.85,
+    "orientation": 1,
+    "capture_time": 0.0,
+    "gps": {},
+    "camera": "v2   1329 714 brown 0.85"
+}

@@ -1,0 +1,140 @@
+{
+  "hito": {
+    "id": "hito_0",
+    "nombre": "Validacion Tecnica",
+    "sprint": "Sprint 1",
+    "fecha_objetivo": "2026-06-14",
+    "criterio_exito": "Docker + NodeODM operativos y primera nube de puntos generada en data/processed/*.PLY",
+    "estado": "completada"
+  },
+  "etapas": [
+    {
+      "etapa_id": "hito_0_etapa_1",
+      "nombre": "Infraestructura base ejecutable",
+      "estado": "completada",
+      "fecha_completado": "2026-06-14T23:30:00Z",
+      "partes_proyecto_utilizadas": [
+        "projects/ForestVol/.env.example",
+        "projects/ForestVol/docker-compose.yml",
+        "projects/ForestVol/backend/Dockerfile",
+        "projects/ForestVol/backend/requirements.txt",
+        "projects/ForestVol/backend/app/main.py",
+        "projects/ForestVol/frontend/Dockerfile",
+        "projects/ForestVol/frontend/package.json",
+        "projects/ForestVol/frontend/server.js",
+        "projects/ForestVol/frontend/index.html",
+        ".github/workflows/ci.yml",
+        ".gitignore"
+      ],
+      "justificacion": "Se implemento la infraestructura minima exigida por la spec para Hito 0: backend FastAPI, frontend base, docker-compose con tres servicios y configuracion por entorno. Esto cubre la fase 1 del orden de implementacion y deja el despliegue reproducible sobre Docker Compose dentro del alcance del hito.",
+      "que_se_hizo": "Se creo el scaffold ejecutable del proyecto en projects/ForestVol con servicio backend, placeholder de frontend, servicio nodeodm, carpetas de data y configuracion de build. Se verifico docker compose up --build real y se estabilizo el almacenamiento de NodeODM mediante un volumen Docker nombrado.",
+      "estado_resultante": "Los contenedores forestvol-backend, forestvol-frontend y forestvol-nodeodm levantan. GET /health responde 200 con nodeodm_reachable true. El proyecto queda con base ejecutable real para continuar el pipeline de Hito 0.",
+      "ground_truth_disponible": false,
+      "metricas": {
+        "tiempo_implementacion_min": 0,
+        "tests_pasados": 68,
+        "errores_encontrados": 2,
+        "cobertura_pct": null
+      },
+      "checklist": [
+        {
+          "item": "docker-compose implementado con backend, frontend y nodeodm",
+          "completado": true
+        },
+        {
+          "item": "backend operativo con /health",
+          "completado": true
+        },
+        {
+          "item": "build real ejecutado sin errores terminales",
+          "completado": true
+        }
+      ]
+    },
+    {
+      "etapa_id": "hito_0_etapa_2",
+      "nombre": "Carga y validacion minima del dataset",
+      "estado": "completada",
+      "fecha_completado": "2026-06-15T02:31:00Z",
+      "partes_proyecto_utilizadas": [
+        "projects/ForestVol/backend/app/services/image_validator.py",
+        "projects/ForestVol/backend/app/services/session_store.py",
+        "projects/ForestVol/backend/app/api/routes/upload.py",
+        "projects/ForestVol/backend/app/models/schemas.py",
+        "projects/ForestVol/set_imagenes+guia/dataset_manifest.json",
+        "projects/ForestVol/set_imagenes+guia/guia50cm/aruco-marker-ID=0.png",
+        "projects/ForestVol/backend/tests/unit/test_image_validator.py"
+      ],
+      "justificacion": "La spec de Hito 0 exige una base ejecutable y una corrida real de NodeODM. Para eso fue necesario asegurar carga real del dataset vigente, respetando el contrato de entradas RGB y dejando explicito que no se requiere EXIF ni metadata de dron.",
+      "que_se_hizo": "Se implemento POST /api/upload con validacion de extension, MIME, cantidad y tamano. En el rerun se alineo el manifest con el nuevo marcador PNG vigente y se cargo el dataset actualizado de 18 imagenes PNG, que luego fue reutilizado en la corrida exitosa del hito.",
+      "estado_resultante": "La carga funciona y persiste sesiones en data/uploads. El dataset actual disponible al momento del cierre contiene 18 imagenes PNG y cumple el minimo de la spec para procesamiento sin requerir EXIF, GPS ni metadata de dron.",
+      "ground_truth_disponible": false,
+      "metricas": {
+        "tiempo_implementacion_min": 0,
+        "tests_pasados": 68,
+        "errores_encontrados": 0,
+        "cobertura_pct": null
+      },
+      "checklist": [
+        {
+          "item": "upload real del dataset vigente",
+          "completado": true
+        },
+        {
+          "item": "sesion VALIDATED persistida",
+          "completado": true
+        },
+        {
+          "item": "sin requerir EXIF ni metadata de dron",
+          "completado": true
+        }
+      ]
+    },
+    {
+      "etapa_id": "hito_0_etapa_3",
+      "nombre": "Integracion NodeODM y validacion del primer artefacto PLY",
+      "estado": "completada",
+      "fecha_completado": "2026-06-15T02:47:00Z",
+      "partes_proyecto_utilizadas": [
+        "projects/ForestVol/backend/app/config.py",
+        "projects/ForestVol/backend/app/services/nodeodm_client.py",
+        "projects/ForestVol/backend/app/api/routes/reconstruction.py",
+        "projects/ForestVol/docker-compose.yml",
+        "projects/ForestVol/.env.example",
+        "projects/ForestVol/data/uploads/d005e91f-4a9c-41e3-a0a5-3955fc8af83a/session.json",
+        "projects/ForestVol/data/processed/d005e91f-4a9c-41e3-a0a5-3955fc8af83a/point_cloud.ply"
+      ],
+      "justificacion": "El cierre de Hito 0 depende de una primera nube de puntos generada como artefacto material en data/processed. La corrida previa habia probado que NodeODM llegaba a generar una nube interna pero caia en texturizado, un paso fuera del alcance del hito. Se resolvio limitando Hito 0 al corte en odm_filterpoints y agregando un fallback de exportacion desde el volumen compartido de NodeODM cuando all.zip no entrega el .ply intermedio.",
+      "que_se_hizo": "Se mantuvieron los tres fallbacks oficiales de la spec para feature-quality, pc-quality y min-num-features, pero se ajusto la integracion para Hito 0 usando end-with=odm_filterpoints. Ademas, se monto el volumen forestvol_nodeodm_data en modo lectura dentro del backend y se agrego un fallback que copia point_cloud.ply desde la carpeta de tarea de NodeODM cuando el ZIP oficial no incluye el artefacto. Con esa correccion se ejecuto una nueva corrida real: sesion d005e91f-4a9c-41e3-a0a5-3955fc8af83a, task NodeODM d036b863-536b-4a02-b196-f50923af199c, primer intento completado.",
+      "estado_resultante": "GET /api/results/d005e91f-4a9c-41e3-a0a5-3955fc8af83a retorno POINT_CLOUD_READY con point_cloud_path=data/processed/d005e91f-4a9c-41e3-a0a5-3955fc8af83a/point_cloud.ply. El archivo existe materialmente en projects/ForestVol/data/processed/d005e91f-4a9c-41e3-a0a5-3955fc8af83a/point_cloud.ply y pesa 4525371 bytes. Hito 0 queda cerrado sin afirmar calibracion, malla watertight ni volumen.",
+      "ground_truth_disponible": false,
+      "metricas": {
+        "tiempo_implementacion_min": 0,
+        "tests_pasados": 68,
+        "errores_encontrados": 2,
+        "cobertura_pct": null
+      },
+      "checklist": [
+        {
+          "item": "NodeODM alcanzable desde backend",
+          "completado": true
+        },
+        {
+          "item": "corrida real de reconstruccion ejecutada sobre el dataset vigente",
+          "completado": true
+        },
+        {
+          "item": "artefacto data/processed/*.PLY generado",
+          "completado": true
+        }
+      ]
+    }
+  ],
+  "resumen_hito": {
+    "etapas_totales": 3,
+    "etapas_completadas": 3,
+    "porcentaje_avance": 100,
+    "bloqueantes": [],
+    "proxima_etapa": "No avanzar en este run. Hito 0 queda cerrado; cualquier trabajo siguiente corresponde a Hito 1 o posterior."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "required_fields": [
+    "evidence_id",
+    "claim",
+    "artifact_path",
+    "checksum",
+    "validator",
+    "timestamp",
+    "result"
+  ],
+  "allowed_results": [
+    "pass",
+    "fail"
+  ],
+  "allowed_validators": [
+    "dataset_gate",
+    "artifact_validator",
+    "mesh_validator",
+    "ground_truth_validator",
+    "test_runner",
+    "human_review"
+  ],
+  "checksum_algorithm": "sha256",
+  "claim_evidence_map": {
+    "dataset_manifest": "dataset_manifest",
+    "dataset_images": "dataset_images",
+    "marker_image_file": "reference_marker",
+    "valid_mesh": "volume_estimate",
+    "ground_truth_certified": "error_percentage",
+    "error_percentage": "rf09_compliance"
+  }
+}

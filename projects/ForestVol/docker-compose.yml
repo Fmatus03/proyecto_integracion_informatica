@@ -1,0 +1,52 @@
+services:
+  forestvol-backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: forestvol-backend
+    env_file:
+      - .env.example
+    environment:
+      BACKEND_PORT: ${BACKEND_PORT:-8000}
+      NODEODM_URL: ${NODEODM_URL:-http://nodeodm:3000}
+      NODEODM_TIMEOUT_SECONDS: ${NODEODM_TIMEOUT_SECONDS:-1800}
+      NODEODM_DATA_PATH: ${NODEODM_DATA_PATH:-/nodeodm-data}
+      MIN_IMAGES: ${MIN_IMAGES:-10}
+      MAX_IMAGES: ${MAX_IMAGES:-50}
+      MAX_IMAGE_SIZE_MB: ${MAX_IMAGE_SIZE_MB:-20}
+      MAX_SESSION_SIZE_GB: ${MAX_SESSION_SIZE_GB:-1}
+      UPLOAD_PATH: ${UPLOAD_PATH:-data/uploads}
+      PROCESSED_PATH: ${PROCESSED_PATH:-data/processed}
+      EXPORT_PATH: ${EXPORT_PATH:-data/exports}
+      CALIBRATION_MARKER_SIZE_CM: ${CALIBRATION_MARKER_SIZE_CM:-100.0}
+      FORESTVOL_VERSION: ${FORESTVOL_VERSION:-5.1}
+    volumes:
+      - ./data:/app/data
+      - ./set_imagenes+guia:/app/set_imagenes+guia:ro
+      - forestvol_nodeodm_data:/nodeodm-data:ro
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    depends_on:
+      - nodeodm
+
+  forestvol-frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: forestvol-frontend
+    environment:
+      FRONTEND_PORT: ${FRONTEND_PORT:-3000}
+      API_BASE_URL: http://forestvol-backend:8000
+    ports:
+      - "${FRONTEND_PORT:-3000}:3000"
+
+  nodeodm:
+    image: opendronemap/nodeodm
+    container_name: forestvol-nodeodm
+    ports:
+      - "${NODEODM_PORT:-3001}:3000"
+    volumes:
+      - forestvol_nodeodm_data:/var/www/data
+
+volumes:
+  forestvol_nodeodm_data:

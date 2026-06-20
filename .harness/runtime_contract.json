@@ -1,0 +1,101 @@
+{
+  "harness_version": "7.0",
+  "canonical_doc": "FV_05_Enmienda_Harness_2026_06_12.md",
+  "project_id": "ForestVol",
+  "project_root": "projects/ForestVol",
+  "bootstrap_prompt": "projects/ForestVol/prompts/harness_bootstrap.md",
+  "project_profile": {
+    "artifact_policy": "projects/ForestVol/harness/artifact_policy.json",
+    "claim_policy": "projects/ForestVol/harness/claim_policy.json",
+    "evidence_policy": "projects/ForestVol/harness/evidence_policy.json",
+    "injection_policy": "projects/ForestVol/harness/injection_policy.json",
+    "eval_contract": "projects/ForestVol/harness/eval_contract.json",
+    "prompt_contract": "projects/ForestVol/harness/prompt_contract.json",
+    "dataset_manifest": "set_imagenes+guia/dataset_manifest.json"
+  },
+  "runtime_entrypoint": "python .harness/cli.py",
+  "runtime_entrypoint_alternatives": [
+    "<python-3.11+> .harness/cli.py",
+    "python3 .harness/cli.py",
+    "py -3 .harness/cli.py"
+  ],
+  "test_command": "python -m pytest tests/harness -v",
+  "test_command_alternatives": [
+    "<python-3.11+> -m pytest tests/harness -v",
+    "python3 -m pytest tests/harness -v",
+    "py -3 -m pytest tests/harness -v"
+  ],
+  "run_root": ".harness/runs/<run_id>",
+  "roles": [
+    "orchestrator",
+    "specifier",
+    "architect",
+    "analyzer",
+    "implementer",
+    "validator"
+  ],
+  "stages": [
+    "PLAN",
+    "CONTEXT",
+    "SPECIFY",
+    "PLAN_VALIDATION",
+    "TASKS",
+    "ANALYZE",
+    "IMPLEMENT",
+    "VALIDATE",
+    "QA",
+    "CLOSE",
+    "BLOCKED",
+    "ERROR",
+    "NEEDS_USER_INPUT",
+    "NOT_ANSWERABLE"
+  ],
+  "terminal_stages": [
+    "CLOSE",
+    "BLOCKED",
+    "ERROR",
+    "NEEDS_USER_INPUT",
+    "NOT_ANSWERABLE"
+  ],
+  "terminal_statuses": [
+    "complete",
+    "blocked",
+    "error",
+    "needs_user_input",
+    "not_answerable"
+  ],
+  "gates": [
+    "dataset_gate",
+    "authority_gate",
+    "analysis_gate",
+    "claim_gate",
+    "test_gate",
+    "traceability_gate"
+  ],
+  "allowed_gate_values": [
+    "pending",
+    "passed",
+    "failed"
+  ],
+  "required_run_artifacts": [
+    "state.json",
+    "events/cycle_log.jsonl",
+    "decisions/decision_log.jsonl",
+    "traceability.json",
+    "audit/audit_log.jsonl",
+    "lessons/lessons_log.jsonl"
+  ],
+  "required_state_fields": [
+    "run_id",
+    "status",
+    "current_stage",
+    "completed_stages",
+    "active_claims",
+    "blocked_claims",
+    "evidence_refs",
+    "gate_status",
+    "artifacts",
+    "integrity",
+    "last_updated"
+  ]
+}

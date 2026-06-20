@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "roles": {
+    "orchestrator": {
+      "can_advance": true,
+      "can_set_gate": true,
+      "can_evaluate_claim": true,
+      "can_terminate": true,
+      "can_complete": true,
+      "can_write_artifacts": []
+    },
+    "specifier": {
+      "can_advance": false,
+      "can_set_gate": false,
+      "can_evaluate_claim": false,
+      "can_terminate": false,
+      "can_complete": false,
+      "can_write_artifacts": ["spec.md"]
+    },
+    "architect": {
+      "can_advance": false,
+      "can_set_gate": false,
+      "can_evaluate_claim": false,
+      "can_terminate": false,
+      "can_complete": false,
+      "can_write_artifacts": ["plan.md"]
+    },
+    "analyzer": {
+      "can_advance": false,
+      "can_set_gate": false,
+      "can_evaluate_claim": false,
+      "can_terminate": false,
+      "can_complete": false,
+      "can_write_artifacts": ["tasks.md", "analyze-report.md"]
+    },
+    "implementer": {
+      "can_advance": false,
+      "can_set_gate": false,
+      "can_evaluate_claim": false,
+      "can_terminate": false,
+      "can_complete": false,
+      "can_write_artifacts": []
+    },
+    "validator": {
+      "can_advance": false,
+      "can_set_gate": false,
+      "can_evaluate_claim": false,
+      "can_terminate": false,
+      "can_complete": false,
+      "can_write_artifacts": ["validation-report.md", "test-report.md", "final-report.md"]
+    }
+  },
+  "stage_artifact_roles": {
+    "SPECIFY": "specifier",
+    "PLAN_VALIDATION": "architect",
+    "TASKS": "analyzer",
+    "ANALYZE": "analyzer",
+    "VALIDATE": "validator",
+    "QA": "validator"
+  }
+}

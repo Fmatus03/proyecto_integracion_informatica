@@ -1,0 +1,41 @@
+{
+  "run_id": "FORESTVOL_H0_20260614_RUN02",
+  "hito_id": "hito_0",
+  "estado": "complete",
+  "dataset": {
+    "dataset_id": "castillo_madera_local_2026_06_12",
+    "dataset_version": 2,
+    "image_count": 18,
+    "requires_exif": false,
+    "requires_drone_metadata": false,
+    "marker_path": "projects/ForestVol/set_imagenes+guia/guia50cm/aruco-marker-ID=0.png"
+  },
+  "runtime": {
+    "health_status": "ok",
+    "nodeodm_reachable": true,
+    "docker_services": [
+      "forestvol-backend",
+      "forestvol-frontend",
+      "forestvol-nodeodm"
+    ]
+  },
+  "reconstruction": {
+    "session_id": "d005e91f-4a9c-41e3-a0a5-3955fc8af83a",
+    "task_uuid": "d036b863-536b-4a02-b196-f50923af199c",
+    "pipeline_state": "POINT_CLOUD_READY",
+    "attempt_used": "attempt_1",
+    "attempt_options": {
+      "feature-quality": "high",
+      "pc-quality": "medium",
+      "min-num-features": "8000",
+      "end-with": "odm_filterpoints"
+    },
+    "point_cloud_path": "projects/ForestVol/data/processed/d005e91f-4a9c-41e3-a0a5-3955fc8af83a/point_cloud.ply",
+    "point_cloud_size_bytes": 4525371
+  },
+  "tests": {
+    "harness_pytest": "65 passed",
+    "backend_container_pytest": "3 passed"
+  },
+  "scope_note": "La evidencia corresponde solo a Hito 0. No afirma calibracion espacial, malla watertight, volumen ni RF-09."
+}

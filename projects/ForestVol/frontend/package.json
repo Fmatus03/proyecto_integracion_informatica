@@ -1,0 +1,9 @@
+{
+  "name": "forestvol-frontend-hito0",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Placeholder operativo del frontend para Hito 0",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

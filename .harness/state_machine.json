@@ -1,0 +1,68 @@
+{
+  "initial_stage": "PLAN",
+  "terminal_stages": [
+    "CLOSE",
+    "BLOCKED",
+    "ERROR",
+    "NEEDS_USER_INPUT",
+    "NOT_ANSWERABLE"
+  ],
+  "stages": {
+    "PLAN": {
+      "allowed_next": ["CONTEXT", "ERROR", "NEEDS_USER_INPUT", "NOT_ANSWERABLE"],
+      "exit_artifacts": []
+    },
+    "CONTEXT": {
+      "allowed_next": ["SPECIFY", "BLOCKED", "ERROR", "NEEDS_USER_INPUT", "NOT_ANSWERABLE"],
+      "exit_artifacts": []
+    },
+    "SPECIFY": {
+      "allowed_next": ["PLAN_VALIDATION", "NEEDS_USER_INPUT", "ERROR", "NOT_ANSWERABLE"],
+      "exit_artifacts": ["spec.md"]
+    },
+    "PLAN_VALIDATION": {
+      "allowed_next": ["TASKS", "BLOCKED", "NEEDS_USER_INPUT", "ERROR", "NOT_ANSWERABLE"],
+      "exit_artifacts": ["plan.md"]
+    },
+    "TASKS": {
+      "allowed_next": ["ANALYZE", "BLOCKED", "ERROR", "NEEDS_USER_INPUT", "NOT_ANSWERABLE"],
+      "exit_artifacts": ["tasks.md"]
+    },
+    "ANALYZE": {
+      "allowed_next": ["IMPLEMENT", "BLOCKED", "NEEDS_USER_INPUT", "ERROR", "NOT_ANSWERABLE"],
+      "exit_artifacts": ["analyze-report.md"]
+    },
+    "IMPLEMENT": {
+      "allowed_next": ["VALIDATE", "BLOCKED", "ERROR", "NEEDS_USER_INPUT", "NOT_ANSWERABLE"],
+      "exit_artifacts": []
+    },
+    "VALIDATE": {
+      "allowed_next": ["QA", "BLOCKED", "ERROR", "NEEDS_USER_INPUT", "NOT_ANSWERABLE"],
+      "exit_artifacts": ["validation-report.md"]
+    },
+    "QA": {
+      "allowed_next": ["CLOSE", "BLOCKED", "ERROR", "NEEDS_USER_INPUT", "NOT_ANSWERABLE"],
+      "exit_artifacts": ["test-report.md", "final-report.md"]
+    },
+    "CLOSE": {
+      "allowed_next": [],
+      "exit_artifacts": []
+    },
+    "BLOCKED": {
+      "allowed_next": [],
+      "exit_artifacts": []
+    },
+    "ERROR": {
+      "allowed_next": [],
+      "exit_artifacts": []
+    },
+    "NEEDS_USER_INPUT": {
+      "allowed_next": [],
+      "exit_artifacts": []
+    },
+    "NOT_ANSWERABLE": {
+      "allowed_next": [],
+      "exit_artifacts": []
+    }
+  }
+}

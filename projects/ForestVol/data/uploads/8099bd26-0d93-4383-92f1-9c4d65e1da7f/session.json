@@ -1,0 +1,424 @@
+{
+  "session_id": "8099bd26-0d93-4383-92f1-9c4d65e1da7f",
+  "pipeline_state": "FAILED",
+  "image_count": 18,
+  "filenames": [
+    "Captura de pantalla 2026-06-16 200740.png",
+    "Captura de pantalla 2026-06-16 200759.png",
+    "Captura de pantalla 2026-06-16 200808.png",
+    "Captura de pantalla 2026-06-16 200822.png",
+    "Captura de pantalla 2026-06-16 200840.png",
+    "Captura de pantalla 2026-06-16 200848.png",
+    "Captura de pantalla 2026-06-16 200902.png",
+    "Captura de pantalla 2026-06-16 200918.png",
+    "Captura de pantalla 2026-06-16 200928.png",
+    "Captura de pantalla 2026-06-16 200936.png",
+    "Captura de pantalla 2026-06-16 200950.png",
+    "Captura de pantalla 2026-06-16 201002.png",
+    "Captura de pantalla 2026-06-16 201021.png",
+    "Captura de pantalla 2026-06-16 201030.png",
+    "Captura de pantalla 2026-06-16 201050.png",
+    "Captura de pantalla 2026-06-16 201104.png",
+    "Captura de pantalla 2026-06-16 201123.png",
+    "Captura de pantalla 2026-06-16 201137.png"
+  ],
+  "nodeodm_task_uuid": "b96f5658-372d-4c13-8d27-ae441b9ed01e",
+  "progress_percentage": 100,
+  "point_cloud_path": "data/processed/8099bd26-0d93-4383-92f1-9c4d65e1da7f/point_cloud.ply",
+  "mesh": {
+    "mesh_watertight": false,
+    "error_details": {
+      "point_cloud_path": "data/processed/8099bd26-0d93-4383-92f1-9c4d65e1da7f/point_cloud.ply",
+      "repair_cycles": [
+        "cycle_1_topology_cleanup",
+        "cycle_2_normals_recomputed"
+      ],
+      "mesh_watertight": false
+    }
+  },
+  "volume": null,
+  "reconstruction_attempts": [
+    {
+      "attempt": "attempt_1",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "high"
+        },
+        {
+          "name": "pc-quality",
+          "value": "medium"
+        },
+        {
+          "name": "min-num-features",
+          "value": "8000"
+        },
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        }
+      ],
+      "task_uuid": "b96f5658-372d-4c13-8d27-ae441b9ed01e",
+      "status": "completed",
+      "message": null
+    }
+  ],
+  "error_code": "MESH_PROCESSING_FAILED",
+  "message": "Generated mesh is not watertight after repair cycles",
+  "calibration": {
+    "calibration_mode": "automatic",
+    "guide_detected_in_n_images": 15,
+    "guide_visible_in_n_images": 15,
+    "detection_confidence": 1.0,
+    "scale_px_per_cm": 1.1708,
+    "scale_error_percentage": null,
+    "warning": null,
+    "marker_detections": [
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200740.png",
+        "marker_id": 0,
+        "side_px": 157.2465,
+        "scale_px_per_cm": 1.5725,
+        "homography_px_to_cm": [
+          [
+            3.446870395773501,
+            2.7523066830127525,
+            -3197.9259874946956
+          ],
+          [
+            -0.14876390425132965,
+            5.043897045843053,
+            -4745.7320918888745
+          ],
+          [
+            -0.0003014695914222827,
+            0.0048917458930588095,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200759.png",
+        "marker_id": 0,
+        "side_px": 156.9711,
+        "scale_px_per_cm": 1.5697,
+        "homography_px_to_cm": [
+          [
+            13.957503844205153,
+            1.2896569298078784,
+            -2293.110148614604
+          ],
+          [
+            4.415269137215232,
+            24.270884869220026,
+            -23799.82670771708
+          ],
+          [
+            6.359160987279347e-05,
+            0.025658576776237237,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200808.png",
+        "marker_id": 0,
+        "side_px": 166.9703,
+        "scale_px_per_cm": 1.6697,
+        "homography_px_to_cm": [
+          [
+            -63.27093389866763,
+            74.75558149542283,
+            -37254.53568782286
+          ],
+          [
+            -53.6125272035648,
+            -108.12875595828368,
+            139275.52971300352
+          ],
+          [
+            0.0023013555040143556,
+            -0.16690779710085352,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200822.png",
+        "marker_id": 0,
+        "side_px": 153.578,
+        "scale_px_per_cm": 1.5358,
+        "homography_px_to_cm": [
+          [
+            16.376838236506785,
+            -63.05814139267668,
+            43000.34830725548
+          ],
+          [
+            37.48284498913473,
+            7.664868793836123,
+            -55547.519675824864
+          ],
+          [
+            -0.001803557626927291,
+            0.07665397241897134,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200840.png",
+        "marker_id": 0,
+        "side_px": 144.7372,
+        "scale_px_per_cm": 1.4474,
+        "homography_px_to_cm": [
+          [
+            0.6637953782807706,
+            -13.501383991448245,
+            11973.294823634076
+          ],
+          [
+            8.570172530343497,
+            -4.3613194252149885,
+            -9613.486577858246
+          ],
+          [
+            9.858302686515672e-05,
+            0.014132567535415969,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200848.png",
+        "marker_id": 0,
+        "side_px": 149.6655,
+        "scale_px_per_cm": 1.4967,
+        "homography_px_to_cm": [
+          [
+            6.625190364804069,
+            -131.34876291730168,
+            116304.42279154777
+          ],
+          [
+            84.66579873409997,
+            -53.38239215495168,
+            -87598.02561959169
+          ],
+          [
+            0.0009637045368241933,
+            0.14860680069285181,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200902.png",
+        "marker_id": 0,
+        "side_px": 109.9182,
+        "scale_px_per_cm": 1.0992,
+        "homography_px_to_cm": [
+          [
+            -2.6493916183858945,
+            -9.503656068129569,
+            11220.532037429299
+          ],
+          [
+            6.387487105033274,
+            -11.881862113574568,
+            -1577.3970985054755
+          ],
+          [
+            -0.0010927526148133916,
+            0.013792243645297086,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200918.png",
+        "marker_id": 0,
+        "side_px": 78.4704,
+        "scale_px_per_cm": 0.7847,
+        "homography_px_to_cm": [
+          [
+            -1.1447207893434623,
+            -1.421246509646696,
+            2677.316296350687
+          ],
+          [
+            0.8795237029977088,
+            -3.7947754294430958,
+            672.1802659813752
+          ],
+          [
+            0.0002837568715818611,
+            0.0001606899063192263,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 200928.png",
+        "marker_id": 0,
+        "side_px": 62.005,
+        "scale_px_per_cm": 0.62,
+        "homography_px_to_cm": [
+          [
+            -12.431965877779605,
+            -0.4812696602855435,
+            20022.597397591024
+          ],
+          [
+            4.254541243621029,
+            -34.767403786208035,
+            9591.754478747034
+          ],
+          [
+            0.0012196587799975457,
+            0.019284778737739504,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 201021.png",
+        "marker_id": 0,
+        "side_px": 126.2929,
+        "scale_px_per_cm": 1.2629,
+        "homography_px_to_cm": [
+          [
+            2.161502830582911,
+            3.2997789475745893,
+            -2867.751588314853
+          ],
+          [
+            -0.7494656967671081,
+            3.0883344793125236,
+            -2293.8780860618945
+          ],
+          [
+            -0.00045805052904809537,
+            0.0027372019282069135,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 201030.png",
+        "marker_id": 0,
+        "side_px": 126.2929,
+        "scale_px_per_cm": 1.2629,
+        "homography_px_to_cm": [
+          [
+            2.1113704037964847,
+            3.2232486682036026,
+            -2847.466265546692
+          ],
+          [
+            -0.7320838125185035,
+            3.016708247327398,
+            -2208.1120980311734
+          ],
+          [
+            -0.00044742226268320565,
+            0.002673752922993522,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 201050.png",
+        "marker_id": 0,
+        "side_px": 89.5073,
+        "scale_px_per_cm": 0.8951,
+        "homography_px_to_cm": [
+          [
+            1.4006533220597777,
+            0.1735182145175674,
+            -268.4925478542124
+          ],
+          [
+            -0.046618739628371396,
+            1.328706416240629,
+            -1324.2687610321086
+          ],
+          [
+            0.0001866900545362284,
+            0.00018519897226705294,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 201104.png",
+        "marker_id": 0,
+        "side_px": 88.9936,
+        "scale_px_per_cm": 0.8899,
+        "homography_px_to_cm": [
+          [
+            0.10024930805157237,
+            -1.2415130059114936,
+            1243.0205362004278
+          ],
+          [
+            1.290673999804959,
+            0.043179897459567546,
+            -1341.3462627009226
+          ],
+          [
+            -7.81717003319628e-06,
+            0.00013288713024584242,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 201123.png",
+        "marker_id": 0,
+        "side_px": 68.3683,
+        "scale_px_per_cm": 0.6837,
+        "homography_px_to_cm": [
+          [
+            -1.201738357507846,
+            -1.368078415332831,
+            2237.6067269167897
+          ],
+          [
+            1.4235789772621588,
+            -1.2541891008045367,
+            -876.2533928763095
+          ],
+          [
+            0.00015397536163447946,
+            0.00016798683593520725,
+            1.0
+          ]
+        ]
+      },
+      {
+        "image_path": "data/uploads/8099bd26-0d93-4383-92f1-9c4d65e1da7f/Captura de pantalla 2026-06-16 201137.png",
+        "marker_id": 0,
+        "side_px": 77.1368,
+        "scale_px_per_cm": 0.7714,
+        "homography_px_to_cm": [
+          [
+            -1.1700312049393724,
+            -0.06781951565453054,
+            1307.1707721798473
+          ],
+          [
+            0.0911940730583407,
+            -1.2135658158162512,
+            93.38593816683634
+          ],
+          [
+            -8.064804353024812e-05,
+            5.7802427093232416e-05,
+            1.0
+          ]
+        ]
+      }
+    ]
+  }
+}

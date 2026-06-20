@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "strict": true,
+  "title": "Reusable Harness Runtime Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "harness_version",
+    "canonical_doc",
+    "project_id",
+    "project_root",
+    "bootstrap_prompt",
+    "project_profile",
+    "runtime_entrypoint",
+    "runtime_entrypoint_alternatives",
+    "test_command",
+    "test_command_alternatives",
+    "run_root",
+    "roles",
+    "stages",
+    "terminal_stages",
+    "terminal_statuses",
+    "gates",
+    "allowed_gate_values",
+    "required_run_artifacts",
+    "required_state_fields"
+  ],
+  "properties": {
+    "harness_version": {"type": "string"},
+    "canonical_doc": {"type": "string"},
+    "project_id": {"type": "string"},
+    "project_root": {"type": "string"},
+    "bootstrap_prompt": {"type": "string"},
+    "project_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_policy",
+        "claim_policy",
+        "evidence_policy",
+        "injection_policy",
+        "eval_contract",
+        "prompt_contract",
+        "dataset_manifest"
+      ],
+      "properties": {
+        "artifact_policy": {"type": "string"},
+        "claim_policy": {"type": "string"},
+        "evidence_policy": {"type": "string"},
+        "injection_policy": {"type": "string"},
+        "eval_contract": {"type": "string"},
+        "prompt_contract": {"type": "string"},
+        "dataset_manifest": {"type": "string"}
+      }
+    },
+    "runtime_entrypoint": {"type": "string"},
+    "runtime_entrypoint_alternatives": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "test_command": {"type": "string"},
+    "test_command_alternatives": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 1
+    },
+    "run_root": {"type": "string"},
+    "roles": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "stages": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "terminal_stages": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "terminal_statuses": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "gates": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "allowed_gate_values": {"type": "array", "items": {"type": "string"}, "minItems": 3},
+    "required_run_artifacts": {"type": "array", "items": {"type": "string"}},
+    "required_state_fields": {"type": "array", "items": {"type": "string"}}
+  }
+}

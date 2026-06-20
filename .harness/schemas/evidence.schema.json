@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "strict": true,
+  "title": "ForestVol Harness Evidence Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "claim",
+    "artifact_path",
+    "checksum",
+    "validator",
+    "timestamp",
+    "result"
+  ],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^[A-Za-z0-9_.+=-]+$"},
+    "claim": {"type": "string"},
+    "artifact_path": {"type": "string", "pattern": "^[A-Za-z0-9_./+=-]+$"},
+    "checksum": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "validator": {"type": "string"},
+    "timestamp": {"type": "string"},
+    "result": {"type": "string", "enum": ["pass", "fail"]}
+  }
+}

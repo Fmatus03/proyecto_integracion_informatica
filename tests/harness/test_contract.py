@@ -295,6 +295,23 @@ def test_orchestrator_role_references_structured_output_contract():
     assert "Output ONLY one JSON object" in content
 
 
+def test_orchestrator_decision_basis_precedes_action_in_schema_and_examples():
+    schema = _read_json("projects/ForestVol/harness/orchestrator_response.schema.json")
+    assert schema["required"][:3] == ["decision_basis", "action", "run_id"]
+    assert list(schema["properties"])[:3] == ["decision_basis", "action", "run_id"]
+
+    orchestrator = (ROOT / ".agents" / "orchestrator.md").read_text(encoding="utf-8")
+    bootstrap = (ROOT / "projects/ForestVol/prompts/harness_bootstrap.md").read_text(
+        encoding="utf-8"
+    )
+    assert "Decide the `decision_basis` before choosing `action`." in orchestrator
+    assert "Emit `decision_basis` as the first key" in orchestrator
+    assert '{"decision_basis":"' in orchestrator
+    assert '{"action":"' not in orchestrator
+    assert '{"decision_basis":"' in bootstrap
+    assert '{"action":"' not in bootstrap
+
+
 def test_artifact_roles_reference_template_contracts():
     for agent in ("specifier", "architect", "analyzer", "validator"):
         content = (ROOT / ".agents" / f"{agent}.md").read_text(encoding="utf-8")

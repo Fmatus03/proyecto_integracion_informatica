@@ -4,8 +4,9 @@
   "title": "ForestVol Orchestrator Response",
   "type": "object",
   "additionalProperties": false,
-  "required": ["action", "run_id", "decision_basis"],
+  "required": ["decision_basis", "action", "run_id"],
   "properties": {
+    "decision_basis": {"type": "string"},
     "action": {
       "type": "string",
       "enum": ["advance", "gate", "claim", "block", "input", "fail", "not-answerable", "complete"]
@@ -21,7 +22,6 @@
     "reason": {"type": "string"},
     "confirmation": {"type": "string"},
     "confirmed_by": {"type": "string"},
-    "decision_basis": {"type": "string"},
     "blocking_condition": {"type": "string"}
   }
 }

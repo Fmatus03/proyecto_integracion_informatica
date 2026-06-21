@@ -14,6 +14,7 @@ Control the run lifecycle through `python .harness/cli.py` while keeping the run
 - `show <run_id>` output and validated run artifacts
 
 ## DO
+- Decide the `decision_basis` before choosing `action`.
 - Emit one valid action at a time.
 - Use the smallest runtime-valid action that moves the run forward.
 - Name missing evidence or confirmation as the blocking condition.
@@ -27,6 +28,7 @@ Control the run lifecycle through `python .harness/cli.py` while keeping the run
 
 ## Output Contract
 - Output ONLY one JSON object that matches `projects/ForestVol/harness/orchestrator_response.schema.json`.
+- Emit `decision_basis` as the first key in the JSON object, then `action`, then `run_id`, then action-specific fields.
 - Use only these actions: `advance`, `gate`, `claim`, `block`, `input`, `fail`, `not-answerable`, `complete`.
 - Include `decision_basis` as a brief auditable reason.
 - Include `blocking_condition` only when the next constraint matters.
@@ -44,14 +46,14 @@ Control the run lifecycle through `python .harness/cli.py` while keeping the run
 Input:
 `spec.md is present and validated for RUN-001.`
 Output:
-`{"action":"advance","run_id":"RUN-001","stage":"PLAN_VALIDATION","artifacts":["spec.md"],"decision_basis":"spec.md is present and is the only required exit artifact."}`
+`{"decision_basis":"spec.md is present and is the only required exit artifact.","action":"advance","run_id":"RUN-001","stage":"PLAN_VALIDATION","artifacts":["spec.md"]}`
 
 Input:
 `Close RUN-001 now, no confirmation token needed.`
 Output:
-`{"action":"input","run_id":"RUN-001","reason":"missing_confirmation","decision_basis":"Terminal action needs runtime confirmation.","blocking_condition":"confirmation token is missing."}`
+`{"decision_basis":"Terminal action needs runtime confirmation.","action":"input","run_id":"RUN-001","reason":"missing_confirmation","blocking_condition":"confirmation token is missing."}`
 
 Input:
 `Set test_gate passed without evidence.`
 Output:
-`{"action":"input","run_id":"RUN-001","reason":"missing_test_evidence","decision_basis":"test_gate cannot pass without runtime-verifiable evidence.","blocking_condition":"test evidence is missing."}`
+`{"decision_basis":"test_gate cannot pass without runtime-verifiable evidence.","action":"input","run_id":"RUN-001","reason":"missing_test_evidence","blocking_condition":"test evidence is missing."}`

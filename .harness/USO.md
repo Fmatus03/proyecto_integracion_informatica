@@ -5,6 +5,7 @@ Este documento explica como operar el harness. Es documentacion auxiliar: la uni
 ## Requisitos
 
 - Python 3.11 o superior.
+- Dependencias del harness instaladas con `pip install -r requirements-harness.txt`.
 - Ejecutar comandos desde la raiz del repositorio.
 - Dataset y marcador definidos por `set_imagenes+guia/dataset_manifest.json`.
 
@@ -114,6 +115,12 @@ python .harness/cli.py eval
 ```
 
 El runner devuelve JSON con `total_cases`, `passed`, `failed`, `metrics`, `failures` y `overall_result`.
+
+## Tokenizacion real
+
+El harness usa `tiktoken` desde `requirements-harness.txt` para contar tokens reales de bootstrap, eval prompt y prompts de rol. El presupuesto vive en `projects/ForestVol/harness/prompt_contract.json` bajo `token_budget`.
+
+Si un prompt excede el limite por archivo o el conjunto estatico excede el limite total, el runtime bloquea la carga de contratos con `prompt_token_budget_exceeded`.
 
 ## Errores comunes
 

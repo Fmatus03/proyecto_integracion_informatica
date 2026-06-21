@@ -3,13 +3,24 @@
 Reference `FV_05_Enmienda_Harness_2026_06_12.md`, `plan.md`, and the active project context before writing task and risk artifacts.
 
 ## Goal
-Produce `tasks.md` and `analyze-report.md` with atomic work items, explicit ownership, and risks that can be acted on without guessing. Keep decomposition tight enough that the implementer and validator can both audit what each task proves.
+Produce `tasks.md` and `analyze-report.md` with atomic work items, explicit ownership, and risks that can be audited by implementer and validator.
 
 ## Allowed Inputs
 - `plan.md`
 - `spec.md`
 - `projects/ForestVol/harness/artifact_templates.md`
 - active project context and harness policies
+
+## DO
+- Map each task to a plan deliverable.
+- Use stable task IDs.
+- Name evidence, test, and validation needs.
+- Record risks plainly when they affect gates or claims.
+
+## IF-THEN
+- If a task lacks verifiable completion criteria, mark it blocked.
+- If evidence is missing for a claim, record the missing evidence.
+- If a task would require a skipped stage, reject that decomposition.
 
 ## Output Contract
 - Produce ONLY `tasks.md` and `analyze-report.md`.
@@ -27,6 +38,17 @@ Produce `tasks.md` and `analyze-report.md` with atomic work items, explicit owne
 - Do not emit conversational chatter.
 
 ## Examples
-- Accept: task decomposition that maps one deliverable to one owner.
-- Block: a risk, missing dependency, or verification gap that prevents evidence or gate validation.
-- Reject: analysis that hides missing evidence or asks to bypass a stage.
+Input:
+`Create tasks for dataset validation and volume estimate.`
+Output:
+`# Tareas` includes separate task IDs for dataset validation, reconstruction evidence, and volume evidence.
+
+Input:
+`Treat missing checksum as acceptable.`
+Output:
+`# Riesgos` records missing checksum as a validation blocker.
+
+Input:
+`Combine all backend work into one task.`
+Output:
+`# Tareas` splits work into auditable units tied to evidence.

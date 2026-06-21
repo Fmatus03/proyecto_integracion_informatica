@@ -89,6 +89,9 @@ def test_prompt_contract_declares_bootstrap_eval_and_role_prompts():
     assert prompt_contract["terminal_confirmation"]["required_stages"] == [
         "CLOSE", "ERROR", "NOT_ANSWERABLE"
     ]
+    assert prompt_contract["token_budget"]["tokenizer"] == "tiktoken"
+    assert prompt_contract["token_budget"]["model"] == "gpt-4o-mini"
+    assert prompt_contract["token_budget"]["max_static_prompt_tokens"] >= 16000
 
 
 def test_agent_files_point_back_to_canonical_harness():
@@ -179,6 +182,24 @@ def test_structured_output_schemas_are_strict_and_closed():
         assert schema["additionalProperties"] is False
 
 
+def test_prompt_token_budget_uses_real_tokenizer():
+    import sys
+
+    sys.path.insert(0, str(ROOT / ".harness"))
+    from prompt_validation import validate_prompt_contract_files  # noqa: E402
+    from tokenization import count_tokens  # noqa: E402
+
+    runtime_contract = _read_json(".harness/runtime_contract.json")
+    prompt_contract = _read_json("projects/ForestVol/harness/prompt_contract.json")
+    canonical = (ROOT / runtime_contract["canonical_doc"]).read_text(encoding="utf-8")
+
+    stats = validate_prompt_contract_files(ROOT, runtime_contract, prompt_contract, canonical)
+
+    assert stats["model"] == prompt_contract["token_budget"]["model"]
+    assert stats["total"] <= prompt_contract["token_budget"]["max_static_prompt_tokens"]
+    assert count_tokens("Hello, harness.", stats["model"]) > 0
+
+
 def test_prompt_contract_trusted_sources_include_new_prompt_hardening_contracts():
     prompt_contract = _read_json("projects/ForestVol/harness/prompt_contract.json")
     trusted = set(prompt_contract["trusted_sources"])
@@ -235,7 +256,7 @@ def test_adversarial_eval_dataset_covers_layered_guardrails():
         if line.strip()
     ]
     risks = {case["risk"] for case in cases}
-    assert len(cases) >= 24
+    assert len(cases) >= 50
     assert {
         "prompt_injection",
         "fake_artifact",

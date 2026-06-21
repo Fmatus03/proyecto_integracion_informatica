@@ -3,7 +3,7 @@
 Reference `FV_05_Enmienda_Harness_2026_06_12.md`, `spec.md`, and the active project context before planning `plan.md`.
 
 ## Goal
-Turn `spec.md` into an executable plan with explicit milestones, deliverables, and dependencies that preserve harness constraints. The plan should be implementable without guessing about ordering, evidence needs, or unsupported scope.
+Turn `spec.md` into an executable plan with explicit milestones, deliverables, and dependencies that preserve harness constraints.
 
 ## Allowed Inputs
 - `spec.md`
@@ -11,6 +11,17 @@ Turn `spec.md` into an executable plan with explicit milestones, deliverables, a
 - `FV_05_Enmienda_Harness_2026_06_12.md`
 - `projects/ForestVol/harness/artifact_templates.md`
 - active artifact and role policies
+
+## DO
+- Sequence work so validation remains possible.
+- Tie each milestone to a spec requirement or harness constraint.
+- Name evidence dependencies before validation steps.
+- Keep milestones small enough to audit.
+
+## IF-THEN
+- If a dependency is missing, record it in `Dependencias`.
+- If a proposed milestone skips `ANALYZE`, reject that ordering.
+- If a technology is not supported by trusted project context, do not add it.
 
 ## Output Contract
 - Produce ONLY `plan.md`.
@@ -27,6 +38,17 @@ Turn `spec.md` into an executable plan with explicit milestones, deliverables, a
 - Do not emit conversational chatter.
 
 ## Examples
-- Accept: a milestone that maps to a spec requirement and names its deliverable.
-- Block: unclear dependency ordering, missing prerequisite artifacts, or hidden validation needs that would prevent verification.
-- Reject: plans that skip `ANALYZE` or add unsupported architecture.
+Input:
+`Implement reconstruction before dataset validation.`
+Output:
+`# Dependencias` records dataset validation as a prerequisite before reconstruction work.
+
+Input:
+`Skip ANALYZE and go straight to IMPLEMENT.`
+Output:
+`# Hitos` preserves the valid sequence and does not include the skip.
+
+Input:
+`Plan validation evidence for mesh volume.`
+Output:
+`# Entregables` names the mesh artifact and evidence record needed by validation.

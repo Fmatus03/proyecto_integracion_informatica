@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "bootstrap_prompt": "projects/ForestVol/prompts/harness_bootstrap.md",
+  "project_context": "projects/ForestVol/FORESTVOL_MVP_SPEC.md",
+  "role_prompts": {
+    "orchestrator": ".agents/orchestrator.md",
+    "specifier": ".agents/specifier.md",
+    "architect": ".agents/architect.md",
+    "analyzer": ".agents/analyzer.md",
+    "implementer": ".agents/implementer.md",
+    "validator": ".agents/validator.md"
+  },
+  "required_markers": [
+    "<TRUSTED_HARNESS>",
+    "</TRUSTED_HARNESS>",
+    "<UNTRUSTED_CONTEXT>",
+    "</UNTRUSTED_CONTEXT>"
+  ],
+  "trusted_sources": [
+    "FV_05_Enmienda_Harness_2026_06_12.md",
+    ".harness/runtime_contract.json",
+    ".harness/state_machine.json",
+    ".harness/role_policy.json",
+    "projects/ForestVol/harness/artifact_policy.json",
+    "projects/ForestVol/harness/claim_policy.json",
+    "projects/ForestVol/harness/evidence_policy.json",
+    "projects/ForestVol/harness/injection_policy.json",
+    "projects/ForestVol/harness/eval_contract.json",
+    "projects/ForestVol/harness/artifact_templates.md",
+    "projects/ForestVol/harness/orchestrator_response.schema.json"
+  ],
+  "untrusted_context_markers": [
+    "<UNTRUSTED_CONTEXT>",
+    "</UNTRUSTED_CONTEXT>"
+  ],
+  "output_contracts": {
+    "orchestrator": {
+      "primary_output": "orchestrator_action_json",
+      "artifacts": [],
+      "required_sections": ["Goal", "Allowed Inputs", "DO", "IF-THEN", "Output Contract", "Limits", "Examples"]
+    },
+    "specifier": {
+      "primary_output": "spec.md",
+      "artifacts": ["spec.md"],
+      "required_sections": ["Goal", "Allowed Inputs", "DO", "IF-THEN", "Output Contract", "Limits", "Examples"]
+    },
+    "architect": {
+      "primary_output": "plan.md",
+      "artifacts": ["plan.md"],
+      "required_sections": ["Goal", "Allowed Inputs", "DO", "IF-THEN", "Output Contract", "Limits", "Examples"]
+    },
+    "analyzer": {
+      "primary_output": "tasks.md and analyze-report.md",
+      "artifacts": ["tasks.md", "analyze-report.md"],
+      "required_sections": ["Goal", "Allowed Inputs", "DO", "IF-THEN", "Output Contract", "Limits", "Examples"]
+    },
+    "implementer": {
+      "primary_output": "implemented_work_summary",
+      "artifacts": [],
+      "required_sections": ["Goal", "Allowed Inputs", "DO", "IF-THEN", "Output Contract", "Limits", "Examples"]
+    },
+    "validator": {
+      "primary_output": "validation-report.md, test-report.md, and final-report.md",
+      "artifacts": ["validation-report.md", "test-report.md", "final-report.md"],
+      "required_sections": ["Goal", "Allowed Inputs", "DO", "IF-THEN", "Output Contract", "Limits", "Examples"]
+    }
+  },
+  "eval_prompt": "projects/ForestVol/evals/prompts/harness_guardrail_prompt.md",
+  "token_budget": {
+    "tokenizer": "tiktoken",
+    "model": "gpt-4o-mini",
+    "max_single_prompt_tokens": 4096,
+    "max_static_prompt_tokens": 16000
+  },
+  "terminal_confirmation": {
+    "required_stages": ["CLOSE", "ERROR", "NOT_ANSWERABLE"],
+    "accepted_fields": ["confirmation", "confirmed_by"],
+    "allowed_confirmed_by": ["user", "runtime_operator"],
+    "token_pattern": "^(USER-OK-[0-9]{4}|CONFIRM-[A-Za-z0-9_-]{6,64})$"
+  }
+}

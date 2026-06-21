@@ -5,6 +5,12 @@ import hashlib
 import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
+from validation import (
+    assert_safe_ref,
+    assert_terminal_confirmation,
+    validate_schema_node,
+)
+from prompt_validation import validate_prompt_contract_files
 
 MODULE_DIR = Path(__file__).parent
 DEFAULT_ROOT = MODULE_DIR.parent
@@ -18,9 +24,7 @@ TERMINAL_STATUS_BY_STAGE = {
 }
 
 ALLOWED_GATE_VALUES = {"pending", "passed", "failed"}
-SAFE_REF_RE = re.compile(r"^[A-Za-z0-9_./+=-]+$")
 LESSON_SEVERITIES = {"low", "medium", "high", "critical"}
-PROMPT_PLACEHOLDER_PATTERNS = ("placeholder", "todo", "tbd", "lorem ipsum")
 REQUIRED_LESSON_FIELDS = {
     "lesson_id",
     "run_id",
@@ -141,24 +145,6 @@ def _policy_term_matches(term: str, normalized: str, joined: str) -> bool:
     if compact_term and re.search(rf"(^| ){re.escape(compact_term)}( |$)", normalized):
         return True
     return len(joined_term) >= 5 and joined_term in joined
-
-
-def _json_type_matches(value, expected_type: str) -> bool:
-    if expected_type == "object":
-        return isinstance(value, dict)
-    if expected_type == "array":
-        return isinstance(value, list)
-    if expected_type == "string":
-        return isinstance(value, str)
-    if expected_type == "boolean":
-        return isinstance(value, bool)
-    if expected_type == "number":
-        return isinstance(value, (int, float)) and not isinstance(value, bool)
-    if expected_type == "integer":
-        return isinstance(value, int) and not isinstance(value, bool)
-    if expected_type == "null":
-        return value is None
-    return True
 
 
 SEMANTIC_CONCEPT_GROUPS = {
@@ -470,140 +456,18 @@ class HarnessRuntime:
         if not set(confirmation_policy["required_stages"]).issubset(set(runtime_contract["terminal_stages"])):
             raise ValueError("authority_gate_failed:terminal_confirmation_stage_invalid")
 
-        self._validate_prompt_file(
-            bootstrap_prompt,
-            "bootstrap_prompt",
+        validate_prompt_contract_files(
+            self.root_dir,
+            runtime_contract,
+            prompt_contract,
             content,
-            required_sections=[
-                "## Identity",
-                "## Authority",
-                "## Trusted Sources",
-                "## Untrusted Context",
-                "## Runtime-Only Decisions",
-                "## Output Contract",
-                "## Failure Modes",
-            ],
-            required_markers=prompt_contract["required_markers"],
         )
-        self._validate_prompt_file(
-            eval_prompt,
-            "eval_prompt",
-            content,
-            required_markers=prompt_contract["required_markers"],
-        )
-        self._validate_context_file(project_context, "project_context")
-        self._assert_no_reserved_markers(
-            project_context.read_text(encoding="utf-8"),
-            "project_context",
-            prompt_contract["required_markers"],
-        )
-        for role, rel_path in prompt_contract["role_prompts"].items():
-            role_prompt = self.root_dir / rel_path
-            if not role_prompt.exists():
-                raise FileNotFoundError(f"authority_gate_failed:role_prompt_missing:{role}")
-            self._validate_prompt_file(
-                role_prompt,
-                f"role_prompt:{role}",
-                content,
-                required_sections=[
-                    f"## {section}"
-                    for section in prompt_contract["output_contracts"][role]["required_sections"]
-                ],
-            )
-            role_content = role_prompt.read_text(encoding="utf-8")
-            self._assert_no_reserved_markers(
-                role_content,
-                f"role_prompt:{role}",
-                prompt_contract["required_markers"],
-            )
-
-    def _assert_no_reserved_markers(self, content: str, label: str, reserved_markers: list) -> None:
-        for marker in reserved_markers:
-            if marker in content:
-                raise ValueError(f"prompt_invalid:reserved_marker:{label}:{marker}")
-
-    def _validate_context_file(self, path: Path, label: str) -> None:
-        try:
-            content = path.read_text(encoding="utf-8")
-        except UnicodeDecodeError as exc:
-            raise ValueError(f"prompt_invalid:encoding:{label}") from exc
-        if not content.strip():
-            raise ValueError(f"prompt_invalid:empty:{label}")
-
-    def _validate_prompt_file(self, path: Path, label: str, canonical_content: str,
-                              required_sections: list = None,
-                              required_markers: list = None) -> None:
-        try:
-            content = path.read_text(encoding="utf-8")
-        except UnicodeDecodeError as exc:
-            raise ValueError(f"prompt_invalid:encoding:{label}") from exc
-        if not content.strip():
-            raise ValueError(f"prompt_invalid:empty:{label}")
-        folded = _ascii_fold(content)
-        for pattern in PROMPT_PLACEHOLDER_PATTERNS:
-            if pattern in folded:
-                raise ValueError(f"prompt_invalid:placeholder:{label}:{pattern}")
-        if (
-            "FV_05_Enmienda_Harness_2026_06_12.md" not in content
-            and label not in ("bootstrap_prompt", "project_context")
-        ):
-            raise ValueError(f"prompt_invalid:missing_authority_reference:{label}")
-        for marker in required_markers or []:
-            if marker not in content:
-                raise ValueError(f"prompt_invalid:missing_marker:{label}:{marker}")
-        for heading in required_sections or []:
-            if heading.lower() not in content.lower():
-                raise ValueError(f"prompt_invalid:missing_section:{label}:{heading}")
-        self._assert_prompt_not_duplicate_canonical(content, canonical_content, label)
-
-    def _assert_prompt_not_duplicate_canonical(self, content: str, canonical_content: str, label: str) -> None:
-        canonical_lines = {
-            line.strip() for line in canonical_content.splitlines()
-            if len(line.strip()) >= 32
-        }
-        duplicated = 0
-        for line in content.splitlines():
-            stripped = line.strip()
-            if stripped in canonical_lines:
-                duplicated += 1
-        if duplicated >= 8:
-            raise ValueError(f"prompt_invalid:duplicated_authority:{label}")
 
     def _validate_json_schema(self, payload, schema_path: Path, label: str) -> None:
         schema = _read_json(schema_path)
         if schema.get("strict") is not True:
             raise ValueError(f"schema_not_strict:{label}")
-        self._validate_schema_node(payload, schema, label)
-
-    def _validate_schema_node(self, value, schema: dict, label: str) -> None:
-        expected_type = schema.get("type")
-        if expected_type and not _json_type_matches(value, expected_type):
-            raise ValueError(f"schema_invalid_type:{label}:{expected_type}")
-
-        if "enum" in schema and value not in schema["enum"]:
-            raise ValueError(f"schema_invalid_enum:{label}:{value}")
-
-        if "pattern" in schema and isinstance(value, str):
-            if not re.match(schema["pattern"], value):
-                raise ValueError(f"schema_invalid_pattern:{label}")
-
-        if isinstance(value, dict):
-            required = schema.get("required", [])
-            for field in required:
-                if field not in value:
-                    raise ValueError(f"schema_missing_field:{label}:{field}")
-            properties = schema.get("properties", {})
-            if schema.get("additionalProperties") is False:
-                extra = set(value) - set(properties)
-                if extra:
-                    raise ValueError(f"schema_extra_field:{label}:{sorted(extra)[0]}")
-            for key, child in value.items():
-                if key in properties:
-                    self._validate_schema_node(child, properties[key], f"{label}.{key}")
-
-        if isinstance(value, list) and "items" in schema:
-            for idx, item in enumerate(value):
-                self._validate_schema_node(item, schema["items"], f"{label}[{idx}]")
+        validate_schema_node(payload, schema, label)
 
     # ── Paths ─────────────────────────────────────────────────────────────────
 
@@ -614,13 +478,7 @@ class HarnessRuntime:
             raise ValueError("invalid_run_id_format")
 
     def _assert_safe_ref(self, value: str, label: str) -> None:
-        if not value or not isinstance(value, str):
-            raise ValueError(f"guardrail_input_invalid:{label}:empty")
-        if "\\" in value or not SAFE_REF_RE.match(value):
-            raise ValueError(f"guardrail_input_invalid:{label}:unsafe_chars")
-        path = Path(value)
-        if path.is_absolute() or ".." in path.parts:
-            raise ValueError(f"guardrail_input_invalid:{label}:unsafe_path")
+        assert_safe_ref(value, label)
 
     def _resolve_under(self, base: Path, rel_path: str, label: str) -> Path:
         self._assert_safe_ref(rel_path, label)
@@ -1581,16 +1439,13 @@ class HarnessRuntime:
                                       confirmed_by: str = "") -> None:
         runtime_contract, _, _, _, _, _, _, _, prompt_contract, _ = self._load_contracts()
         policy = prompt_contract["terminal_confirmation"]
-        if terminal_stage not in policy["required_stages"]:
-            return
-        if terminal_stage not in runtime_contract["terminal_stages"]:
-            raise ValueError(f"terminal_confirmation_invalid_stage:{terminal_stage}")
-        if not confirmation and not confirmed_by:
-            raise ValueError(f"terminal_confirmation_required:{terminal_stage}")
-        if confirmation and not re.match(policy["token_pattern"], confirmation):
-            raise ValueError(f"terminal_confirmation_invalid:{terminal_stage}")
-        if confirmed_by and confirmed_by not in policy["allowed_confirmed_by"]:
-            raise ValueError(f"terminal_confirmed_by_invalid:{confirmed_by}")
+        assert_terminal_confirmation(
+            policy,
+            confirmation=confirmation,
+            confirmed_by=confirmed_by,
+            terminal_stage=terminal_stage,
+            terminal_stages=set(runtime_contract["terminal_stages"]),
+        )
 
     def _terminate_run(self, run_id: str, terminal_stage: str,
                        reason: str, evidence: list = None,

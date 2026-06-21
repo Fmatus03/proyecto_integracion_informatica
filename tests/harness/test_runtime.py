@@ -287,6 +287,17 @@ def test_init_rejects_placeholder_in_role_prompt(temp_repo):
         rt.init_run("RUN-ROLE-PLACEHOLDER")
 
 
+def test_init_rejects_prompt_token_budget_overflow(temp_repo):
+    contract_path = temp_repo / "projects" / "ForestVol" / "harness" / "prompt_contract.json"
+    contract = json.loads(contract_path.read_text(encoding="utf-8"))
+    contract["token_budget"]["max_static_prompt_tokens"] = 1
+    contract_path.write_text(json.dumps(contract, indent=2), encoding="utf-8")
+    rt = create_runtime(temp_repo)
+
+    with pytest.raises(ValueError, match="prompt_token_budget_exceeded:static_prompt_tokens"):
+        rt.init_run("RUN-TOKEN-BUDGET")
+
+
 def test_advance_requires_exit_artifacts_from_current_stage(temp_repo):
     rt = create_runtime(temp_repo)
     rt.init_run("RUN-ARTIFACTS")

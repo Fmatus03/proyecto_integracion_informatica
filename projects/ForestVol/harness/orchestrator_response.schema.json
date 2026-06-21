@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "strict": true,
+  "title": "ForestVol Orchestrator Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["action", "run_id", "decision_basis"],
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": ["advance", "gate", "claim", "block", "input", "fail", "not-answerable", "complete"]
+    },
+    "run_id": {"type": "string", "pattern": "^[A-Za-z0-9_-]+$"},
+    "stage": {"type": "string"},
+    "artifacts": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "gate_name": {"type": "string"},
+    "value": {"type": "string"},
+    "justification": {"type": "string"},
+    "claim_name": {"type": "string"},
+    "reason": {"type": "string"},
+    "confirmation": {"type": "string"},
+    "confirmed_by": {"type": "string"},
+    "decision_basis": {"type": "string"},
+    "blocking_condition": {"type": "string"}
+  }
+}

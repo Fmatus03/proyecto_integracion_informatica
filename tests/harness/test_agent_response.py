@@ -9,6 +9,7 @@ from agent_response import (  # noqa: E402
     orchestrator_response_to_cli_args,
     validate_orchestrator_response,
 )
+from validation import assert_safe_ref, validate_schema_node  # noqa: E402
 
 
 def test_validate_orchestrator_response_accepts_advance_payload(temp_repo):
@@ -119,3 +120,20 @@ def test_orchestrator_response_to_cli_args_matches_complete_shape(temp_repo):
         "--confirmed-by=user",
         "--actor=orchestrator",
     ]
+
+
+def test_shared_validation_helpers_keep_schema_and_path_guards_consistent():
+    schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "required": ["artifact"],
+        "properties": {"artifact": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+$"}},
+    }
+
+    validate_schema_node({"artifact": "spec.md"}, schema, "sample")
+
+    with pytest.raises(ValueError, match="schema_extra_field:sample:extra"):
+        validate_schema_node({"artifact": "spec.md", "extra": True}, schema, "sample")
+
+    with pytest.raises(ValueError, match="guardrail_input_invalid:artifact:unsafe_path"):
+        assert_safe_ref("../secret.md", "artifact")

@@ -14,6 +14,7 @@
     "untrusted_context_markers",
     "output_contracts",
     "eval_prompt",
+    "token_budget",
     "terminal_confirmation"
   ],
   "properties": {
@@ -76,6 +77,22 @@
       }
     },
     "eval_prompt": {"type": "string"},
+    "token_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tokenizer",
+        "model",
+        "max_single_prompt_tokens",
+        "max_static_prompt_tokens"
+      ],
+      "properties": {
+        "tokenizer": {"type": "string", "enum": ["tiktoken"]},
+        "model": {"type": "string"},
+        "max_single_prompt_tokens": {"type": "integer"},
+        "max_static_prompt_tokens": {"type": "integer"}
+      }
+    },
     "terminal_confirmation": {
       "type": "object",
       "additionalProperties": false,

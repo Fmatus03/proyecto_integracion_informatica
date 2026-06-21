@@ -39,7 +39,7 @@ def test_eval_runner_passes_current_adversarial_suite(temp_repo):
 
     assert result["overall_result"] == "pass"
     assert result["mode"] == "offline"
-    assert result["total_cases"] >= 24
+    assert result["total_cases"] >= 50
     assert result["failed"] == 0
     assert result["failures"] == []
     assert all(metric["score"] == 1.0 for metric in result["metrics"].values())

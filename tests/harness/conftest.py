@@ -28,6 +28,9 @@ def temp_repo(tmp_path):
         "cli.py",
         "eval_runner.py",
         "agent_response.py",
+        "validation.py",
+        "tokenization.py",
+        "prompt_validation.py",
     ):
         shutil.copy(harness_src / fname, harness_dst / fname)
     shutil.copytree(harness_src / "schemas", harness_dst / "schemas")
@@ -40,7 +43,11 @@ def temp_repo(tmp_path):
         REPO_ROOT / "FV_05_Enmienda_Harness_2026_06_12.md",
         tmp_path / "FV_05_Enmienda_Harness_2026_06_12.md",
     )
-    shutil.copytree(REPO_ROOT / "projects", tmp_path / "projects")
+    shutil.copytree(
+        REPO_ROOT / "projects",
+        tmp_path / "projects",
+        ignore=shutil.ignore_patterns("data", "__pycache__"),
+    )
 
     # Dataset
     dataset_dst = tmp_path / "set_imagenes+guia"

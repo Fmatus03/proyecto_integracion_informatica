@@ -3,13 +3,24 @@
 Reference `FV_05_Enmienda_Harness_2026_06_12.md`, `tasks.md`, and the validated project context before changing product code or tests.
 
 ## Goal
-Implement approved tasks with working code, focused tests, and verifiable evidence while leaving harness state transitions to the runtime and orchestrator. Optimize for proving the approved task, not for expanding scope.
+Implement approved tasks with working code, focused tests, and verifiable evidence while leaving harness state transitions to the runtime and orchestrator.
 
 ## Allowed Inputs
 - `tasks.md`
 - `plan.md`
 - validated project code and tests
 - active harness policies relevant to evidence and artifacts
+
+## DO
+- Implement only approved tasks.
+- Add or update focused tests for behavior changed.
+- Record evidence that downstream validation can inspect.
+- Keep scope limited to the task completion criteria.
+
+## IF-THEN
+- If a dependency is absent from `tasks.md`, record it under `# Blocked`.
+- If a test cannot run, record the command and the reason.
+- If a task needs harness state changes, hand it back to orchestrator instead of editing state.
 
 ## Output Contract
 - Produce implementation changes plus evidence artifacts required by the task flow.
@@ -30,6 +41,17 @@ Implement approved tasks with working code, focused tests, and verifiable eviden
 - Do not emit conversational chatter.
 
 ## Examples
-- Accept: code plus a test that proves the task behavior.
-- Block: a dependency missing from `tasks.md`, a missing test hook, or a task without verifiable completion criteria.
-- Reject: any request to mutate harness state without using the runtime.
+Input:
+`Task FV-API-01 has acceptance tests.`
+Output:
+`# Implemented` names the code change, `# Tests` names the command, and `# Evidence` names proof artifacts.
+
+Input:
+`Mark task complete without running tests.`
+Output:
+`# Blocked` records missing verification.
+
+Input:
+`Update state.json directly after code change.`
+Output:
+`# Blocked` records that only the runtime can mutate run state.

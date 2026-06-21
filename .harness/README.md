@@ -7,6 +7,9 @@ Este directorio contiene el motor operativo reutilizable del harness. Es documen
 - `runtime.py`: runtime ejecutable que aplica transiciones, gates, roles, claims, evidencia, trazabilidad e integridad de estado.
 - `cli.py`: entrada de linea de comandos para operar el runtime.
 - `eval_runner.py`: verificador ejecutable de los evals adversariales declarados en `evals/`.
+- `validation.py`: validadores compartidos para schemas, referencias seguras y confirmacion terminal.
+- `prompt_validation.py`: validacion de prompts, roles, marcadores, placeholders y presupuesto de tokens.
+- `tokenization.py`: conteo real de tokens mediante `tiktoken`; no usa heuristicas por caracteres.
 - `runtime_contract.json`: contrato principal del harness, comandos oficiales, roles, stages, gates y artefactos requeridos.
 - `prompt_contract.json` del proyecto activo: contrato de prompts, bootstrap, prompts de rol y politica de confirmacion terminal.
 - `state_machine.json`: ciclo permitido de trabajo desde `PLAN` hasta estados terminales.
@@ -29,6 +32,7 @@ Este directorio contiene el motor operativo reutilizable del harness. Es documen
 - `projects/ForestVol/evals/`: datasets, graders, outputs y prompts de eval del proyecto activo.
 - `tests/harness/`: tests de contrato, runtime y eval runner.
 - `.github/workflows/ci.yml`: CI que ejecuta tests y evals del harness.
+- `requirements-harness.txt`: dependencias minimas para tests, evals y tokenizacion real del harness.
 
 ## Roles y responsabilidades
 
@@ -48,6 +52,12 @@ Los gates son `dataset_gate`, `authority_gate`, `analysis_gate`, `claim_gate`, `
 La evidencia valida no es nominal. Debe ser JSON con `evidence_id`, `claim`, `artifact_path`, `checksum`, `validator`, `timestamp` y `result`.
 
 Cada run mantiene `state.json`, `cycle_log.jsonl`, `decision_log.jsonl`, `traceability.json`, `audit_log.jsonl` y `lessons_log.jsonl`. El estado usa `sha256` con `previous_hash` y `current_hash`; `validate` detecta manipulacion manual.
+
+## Prompt Budget
+
+El contrato de prompts del proyecto activo declara `token_budget` con `tokenizer: "tiktoken"`, `model`, `max_single_prompt_tokens` y `max_static_prompt_tokens`.
+
+Durante la carga de contratos, el runtime cuenta tokens reales de `harness_bootstrap.md`, el prompt de eval y cada prompt de rol. Si un archivo o el conjunto estatico excede el presupuesto, el authority gate falla con `prompt_token_budget_exceeded`. Esto reemplaza cualquier estimacion por caracteres.
 
 ## Memoria operativa
 

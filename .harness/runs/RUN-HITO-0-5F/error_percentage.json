@@ -1,0 +1,9 @@
+{
+  "evidence_id": "error_percentage",
+  "claim": "error_percentage",
+  "artifact_path": "projects/ForestVol/data/processed/RUN-HITO-0-5F/rf09-evidence.json",
+  "checksum": "fc5cc06ca0064f12a3f5b230872fca54d9bba636e5f3cea21cb45dd56091427d",
+  "validator": "ground_truth_validator",
+  "timestamp": "2026-06-22T01:51:29.275358+00:00",
+  "result": "pass"
+}

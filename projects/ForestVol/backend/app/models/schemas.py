@@ -56,6 +56,7 @@ class ResultResponse(BaseModel):
     ground_truth_volume_m3: float | None = None
     error_percentage: float | None = None
     reconstruction_attempts: list[dict[str, Any]] = Field(default_factory=list)
+    scale_evidence: dict[str, Any] | None = None
     error_code: str | None = None
     message: str | None = None
 

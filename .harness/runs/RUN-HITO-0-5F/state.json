@@ -1,0 +1,76 @@
+{
+  "run_id": "RUN-HITO-0-5F",
+  "status": "complete",
+  "current_stage": "CLOSE",
+  "completed_stages": [
+    "PLAN",
+    "CONTEXT",
+    "SPECIFY",
+    "PLAN_VALIDATION",
+    "TASKS",
+    "ANALYZE",
+    "IMPLEMENT",
+    "VALIDATE",
+    "QA"
+  ],
+  "active_claims": [
+    "volume_estimate",
+    "error_percentage",
+    "rf09_compliance"
+  ],
+  "blocked_claims": [],
+  "evidence_refs": [
+    "set_imagenes+guia/dataset_manifest.json",
+    "dataset_manifest",
+    "dataset_images",
+    "marker_image_file",
+    "valid_mesh.json",
+    "ground_truth_certified.json",
+    "error_percentage.json",
+    "test_runner.json"
+  ],
+  "gate_status": {
+    "dataset_gate": "passed",
+    "authority_gate": "passed",
+    "analysis_gate": "passed",
+    "claim_gate": "passed",
+    "test_gate": "passed",
+    "traceability_gate": "passed"
+  },
+  "artifacts": [
+    "spec.md",
+    "plan.md",
+    "tasks.md",
+    "analyze-report.md",
+    "validation-report.md",
+    "test-report.md",
+    "final-report.md"
+  ],
+  "claim_status": {
+    "volume_estimate": {
+      "status": "accepted",
+      "evidence": [
+        "valid_mesh.json"
+      ]
+    },
+    "error_percentage": {
+      "status": "accepted",
+      "evidence": [
+        "ground_truth_certified.json"
+      ]
+    },
+    "rf09_compliance": {
+      "status": "accepted",
+      "evidence": [
+        "ground_truth_certified.json",
+        "error_percentage.json"
+      ]
+    }
+  },
+  "integrity": {
+    "previous_hash": "f917afe9d470eb136dfb54fed9afecd8074e563d694cbc2bbefa26604fa12642",
+    "current_hash": "02c0c65ab078cdf5051237d6ea93996f73b8a6ac35acbcf6e6bf8d900751602a",
+    "algorithm": "sha256"
+  },
+  "last_updated": "2026-06-22T01:54:18.732134+00:00"
+}

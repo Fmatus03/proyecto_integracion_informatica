@@ -1,0 +1,9 @@
+{
+  "evidence_id": "valid_mesh",
+  "claim": "valid_mesh",
+  "artifact_path": "projects/ForestVol/data/processed/RUN-HITO-0-5F/preliminary_mesh_RUN-HITO-0-5F_segmented.ply",
+  "checksum": "76defe68f82f44d545b0157888cf1b219ac682c49e6778bf7fd2f8c2828d80a1",
+  "validator": "mesh_validator",
+  "timestamp": "2026-06-22T01:50:44.544791+00:00",
+  "result": "pass"
+}

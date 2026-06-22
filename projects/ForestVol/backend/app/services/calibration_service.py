@@ -31,6 +31,7 @@ class MarkerDetection:
     side_px: float
     scale_px_per_cm: float
     homography_px_to_cm: list[list[float]]
+    corners_px: list[list[float]]
 
 
 @dataclass(frozen=True)
@@ -171,6 +172,7 @@ def _detect_marker(image_path: Path, marker_size_cm: float) -> MarkerDetection |
                 side_px=side_px,
                 scale_px_per_cm=side_px / marker_size_cm,
                 homography_px_to_cm=_homography_px_to_cm(marker_corners, marker_size_cm),
+                corners_px=marker_corners.reshape(4, 2).astype(float).tolist(),
             )
 
     return None
@@ -299,6 +301,7 @@ def calibration_result_to_session_payload(result: CalibrationResult) -> dict[str
                 "side_px": round(detection.side_px, 4),
                 "scale_px_per_cm": round(detection.scale_px_per_cm, 4),
                 "homography_px_to_cm": detection.homography_px_to_cm,
+                "corners_px": detection.corners_px,
             }
             for detection in result.marker_detections
         ],

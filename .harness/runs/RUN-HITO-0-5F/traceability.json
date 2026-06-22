@@ -1,0 +1,164 @@
+{
+  "run_id": "RUN-HITO-0-5F",
+  "status": "complete",
+  "current_stage": "CLOSE",
+  "events": [
+    {
+      "stage": "PLAN",
+      "image_count": 20,
+      "ts": "2026-06-22T01:22:02.342604+00:00",
+      "type": "run_initialized"
+    },
+    {
+      "from": "PLAN",
+      "to": "CONTEXT",
+      "artifacts": [],
+      "evidence": [],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:22:59.375198+00:00",
+      "type": "stage_advanced"
+    },
+    {
+      "from": "CONTEXT",
+      "to": "SPECIFY",
+      "artifacts": [],
+      "evidence": [],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:23:05.488309+00:00",
+      "type": "stage_advanced"
+    },
+    {
+      "from": "SPECIFY",
+      "to": "PLAN_VALIDATION",
+      "artifacts": [
+        "spec.md"
+      ],
+      "evidence": [],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:23:29.373256+00:00",
+      "type": "stage_advanced"
+    },
+    {
+      "from": "PLAN_VALIDATION",
+      "to": "TASKS",
+      "artifacts": [
+        "plan.md"
+      ],
+      "evidence": [],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:23:48.865016+00:00",
+      "type": "stage_advanced"
+    },
+    {
+      "from": "TASKS",
+      "to": "ANALYZE",
+      "artifacts": [
+        "tasks.md"
+      ],
+      "evidence": [],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:24:19.586836+00:00",
+      "type": "stage_advanced"
+    },
+    {
+      "from": "ANALYZE",
+      "to": "IMPLEMENT",
+      "artifacts": [
+        "analyze-report.md"
+      ],
+      "evidence": [],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:26:35.474336+00:00",
+      "type": "stage_advanced"
+    },
+    {
+      "from": "IMPLEMENT",
+      "to": "VALIDATE",
+      "artifacts": [],
+      "evidence": [
+        "valid_mesh.json",
+        "ground_truth_certified.json",
+        "error_percentage.json",
+        "test_runner.json"
+      ],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:52:36.875913+00:00",
+      "type": "stage_advanced"
+    },
+    {
+      "from": "VALIDATE",
+      "to": "QA",
+      "artifacts": [
+        "validation-report.md"
+      ],
+      "evidence": [
+        "valid_mesh.json",
+        "ground_truth_certified.json",
+        "error_percentage.json",
+        "test_runner.json"
+      ],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:54:08.412670+00:00",
+      "type": "stage_advanced"
+    },
+    {
+      "from": "QA",
+      "to": "CLOSE",
+      "artifacts": [
+        "test-report.md",
+        "final-report.md"
+      ],
+      "evidence": [
+        "valid_mesh.json",
+        "ground_truth_certified.json",
+        "error_percentage.json",
+        "test_runner.json"
+      ],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:54:18.740256+00:00",
+      "type": "stage_advanced"
+    }
+  ],
+  "decisions": [
+    {
+      "claim": "volume_estimate",
+      "evidence": [
+        "valid_mesh.json"
+      ],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:50:57.687643+00:00",
+      "type": "claim_accepted"
+    },
+    {
+      "claim": "error_percentage",
+      "evidence": [
+        "ground_truth_certified.json"
+      ],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:51:40.723582+00:00",
+      "type": "claim_accepted"
+    },
+    {
+      "claim": "rf09_compliance",
+      "evidence": [
+        "ground_truth_certified.json",
+        "error_percentage.json"
+      ],
+      "actor": "orchestrator",
+      "ts": "2026-06-22T01:51:40.888980+00:00",
+      "type": "claim_accepted"
+    },
+    {
+      "gate": "test_gate",
+      "value": "passed",
+      "actor": "orchestrator",
+      "justification": "pytest completo paso: 27 passed; evidencia test_runner con checksum y validator",
+      "evidence": [
+        "test_runner.json"
+      ],
+      "ts": "2026-06-22T01:53:17.641087+00:00",
+      "type": "gate_updated"
+    }
+  ],
+  "lessons": []
+}

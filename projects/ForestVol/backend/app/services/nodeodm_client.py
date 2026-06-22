@@ -11,6 +11,8 @@ from zipfile import ZipFile
 import requests
 
 from backend.app.config import Settings
+from backend.app.services.gcp_service import nodeodm_safe_filename
+from backend.app.services.scale_service import ScaleEvidence
 
 
 STATUS_QUEUED = 10
@@ -29,32 +31,54 @@ ATTEMPTS = [
     AttemptConfig(
         name="attempt_1",
         options=[
-            {"name": "feature-quality", "value": "high"},
-            {"name": "pc-quality", "value": "medium"},
-            {"name": "min-num-features", "value": "8000"},
-            # Hito 0 closes when the first dense point cloud exists in data/processed.
+            {"name": "feature-quality", "value": "ultra"},
+            {"name": "pc-quality", "value": "high"},
+            {"name": "min-num-features", "value": "16000"},
+            {"name": "matcher-neighbors", "value": "12"},
+            {"name": "depthmap-resolution", "value": "high"},
+            {"name": "pc-filter", "value": "1"},
+            # Hito 0.5 needs a dense cloud with enough texture detail before meshing.
             {"name": "end-with", "value": "odm_filterpoints"},
         ],
     ),
     AttemptConfig(
         name="attempt_2",
         options=[
-            {"name": "feature-quality", "value": "medium"},
-            {"name": "pc-quality", "value": "low"},
-            {"name": "min-num-features", "value": "4000"},
+            {"name": "feature-quality", "value": "high"},
+            {"name": "pc-quality", "value": "high"},
+            {"name": "min-num-features", "value": "12000"},
+            {"name": "matcher-neighbors", "value": "10"},
+            {"name": "depthmap-resolution", "value": "medium"},
+            {"name": "pc-filter", "value": "1"},
             {"name": "end-with", "value": "odm_filterpoints"},
         ],
     ),
     AttemptConfig(
         name="attempt_3",
         options=[
-            {"name": "feature-quality", "value": "low"},
-            {"name": "pc-quality", "value": "low"},
-            {"name": "min-num-features", "value": "2000"},
+            {"name": "feature-quality", "value": "medium"},
+            {"name": "pc-quality", "value": "medium"},
+            {"name": "min-num-features", "value": "9000"},
+            {"name": "matcher-neighbors", "value": "8"},
+            {"name": "depthmap-resolution", "value": "medium"},
+            {"name": "pc-filter", "value": "2"},
             {"name": "end-with", "value": "odm_filterpoints"},
         ],
     ),
 ]
+
+
+def options_for_attempt(attempt: AttemptConfig, scale_evidence: ScaleEvidence | None = None) -> list[dict[str, str]]:
+    options = list(attempt.options)
+    if scale_evidence is None:
+        return options
+    if scale_evidence.gcp_path:
+        if scale_evidence.images_with_gps:
+            options.append({"name": "force-gps", "value": "true"})
+            options.append({"name": "use-exif", "value": "true"})
+    elif scale_evidence.scale_certified and scale_evidence.images_with_gps == scale_evidence.image_count:
+        options.append({"name": "force-gps", "value": "true"})
+    return options
 
 
 class NodeODMClient:
@@ -72,14 +96,23 @@ class NodeODMClient:
         except requests.RequestException:
             return False
 
-    def submit_task(self, session_id: str, images: list[Path], attempt: AttemptConfig) -> str:
+    def submit_task(
+        self,
+        session_id: str,
+        images: list[Path],
+        attempt: AttemptConfig,
+        scale_evidence: ScaleEvidence | None = None,
+    ) -> str:
         files = [
-            ("images", (path.name, path.read_bytes(), self._guess_mime(path)))
+            ("images", (nodeodm_safe_filename(path.name), path.read_bytes(), self._guess_mime(path)))
             for path in images
         ]
+        if scale_evidence is not None and scale_evidence.gcp_path:
+            gcp_path = Path(scale_evidence.gcp_path)
+            files.append(("images", (gcp_path.name, gcp_path.read_bytes(), "text/plain")))
         data = {
             "name": f"forestvol-{session_id}-{attempt.name}",
-            "options": json.dumps(attempt.options),
+            "options": json.dumps(options_for_attempt(attempt, scale_evidence)),
         }
         response = requests.post(
             f"{self.settings.nodeodm_url}/task/new",

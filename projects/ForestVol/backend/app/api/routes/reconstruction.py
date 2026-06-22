@@ -14,7 +14,9 @@ from backend.app.services.mesh_service import (
     generate_preliminary_volumetry,
     mesh_artifacts_to_session_payload,
 )
+from backend.app.services.gcp_service import generate_aruco_gcp_file
 from backend.app.services.nodeodm_client import ATTEMPTS, STATUS_COMPLETED, NodeODMClient
+from backend.app.services.scale_service import inspect_scale_inputs
 from backend.app.services.session_store import SessionStore
 
 router = APIRouter(prefix="/api", tags=["reconstruction"])
@@ -62,6 +64,7 @@ def _run_preliminary_volumetry(session_id: str, settings: Settings, store: Sessi
             "repair_cycles",
             "vertex_count",
             "triangle_count",
+            "point_cloud_quality",
             "warning",
         )
     }
@@ -89,9 +92,40 @@ def _run_reconstruction(session_id: str, settings: Settings) -> None:
     image_paths = sorted((settings.upload_path / session_id).glob("*"))
     image_paths = [path for path in image_paths if path.is_file() and path.suffix.lower() in {".png", ".jpg", ".jpeg"}]
     processed_dir = store.processed_dir(session_id)
+    dataset_root = Path("set_imagenes+guia/set_fotos_castillo_de_madera")
+    if not dataset_root.exists():
+        dataset_root = Path("projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera")
+    scale_evidence = inspect_scale_inputs(image_paths, dataset_root)
+    try:
+        gcp_result = generate_aruco_gcp_file(
+            image_paths,
+            processed_dir,
+            marker_size_cm=settings.calibration_marker_size_cm,
+        )
+        scale_payload = scale_evidence.to_payload()
+        scale_payload.update(
+            {
+                "gcp_path": gcp_result.gcp_path,
+                "scale_certified": True,
+                "reason": "aruco_gcp_generated",
+                "aruco_gcp": gcp_result.to_payload(),
+            }
+        )
+        scale_evidence = type(scale_evidence)(
+            image_count=scale_evidence.image_count,
+            images_with_exif=scale_evidence.images_with_exif,
+            images_with_gps=scale_evidence.images_with_gps,
+            gcp_path=gcp_result.gcp_path,
+            scale_certified=True,
+            reason="aruco_gcp_generated",
+        )
+    except ValueError as exc:
+        scale_payload = scale_evidence.to_payload()
+        scale_payload["aruco_gcp_error"] = str(exc)
 
     session["pipeline_state"] = "RECONSTRUCTING"
     session["message"] = "NodeODM task started"
+    session["scale_evidence"] = scale_payload
     store.save_session(session_id, session)
 
     for attempt in ATTEMPTS:
@@ -105,7 +139,7 @@ def _run_reconstruction(session_id: str, settings: Settings) -> None:
         session["reconstruction_attempts"].append(attempt_record)
         store.save_session(session_id, session)
         try:
-            task_uuid = client.submit_task(session_id, image_paths, attempt)
+            task_uuid = client.submit_task(session_id, image_paths, attempt, scale_evidence=scale_evidence)
             attempt_record["task_uuid"] = task_uuid
             session["nodeodm_task_uuid"] = task_uuid
             store.save_session(session_id, session)
@@ -210,6 +244,7 @@ def results(
         ground_truth_volume_m3=volume.get("ground_truth_volume_m3"),
         error_percentage=volume.get("error_percentage"),
         reconstruction_attempts=session.get("reconstruction_attempts", []),
+        scale_evidence=session.get("scale_evidence"),
         error_code=session.get("error_code"),
         message=session.get("message"),
     )

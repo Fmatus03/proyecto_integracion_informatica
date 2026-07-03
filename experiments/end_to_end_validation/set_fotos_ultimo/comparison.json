@@ -1,0 +1,23 @@
+[
+  {
+    "metric": "pipeline_original_reference",
+    "volume_m3": 234.0469,
+    "difference_vs_real_m3": 114.3069,
+    "error_percent": 95.462586,
+    "difference_vs_benchmark_m3": ""
+  },
+  {
+    "metric": "benchmark_winner_reference",
+    "volume_m3": 121.2031,
+    "difference_vs_real_m3": 1.4631,
+    "error_percent": 1.221897,
+    "difference_vs_benchmark_m3": 0.0
+  },
+  {
+    "metric": "set_fotos_ultimo_e2e_with_winner_filter",
+    "volume_m3": 123.9844,
+    "difference_vs_real_m3": 4.2444,
+    "error_percent": 3.54468,
+    "difference_vs_benchmark_m3": 2.7813
+  }
+]

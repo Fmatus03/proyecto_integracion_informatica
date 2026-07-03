@@ -1,0 +1,198 @@
+{
+  "session_id": "ecd0f8b7-64f5-437b-9048-2ae83609e8e7",
+  "nodeodm_task_uuid": "ba72bb1c-f0fc-491c-8d80-71a0bb97e3d2",
+  "volume_m3": 946.0781,
+  "error_percentage": 690.110322,
+  "aruco_center_assumption_m": [
+    0.5,
+    0.5,
+    0.0
+  ],
+  "castle_center_proxy_selected_centroid": [
+    7.321014,
+    2.945702,
+    2.392841
+  ],
+  "selected_cluster_ids": [
+    0,
+    27,
+    48
+  ],
+  "exact_cluster_count": 104,
+  "exact_noise_points": 275,
+  "exact_clusters_top10": [
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 1,
+      "cluster_id": 0,
+      "selected_by_pipeline": true,
+      "point_count": 140388,
+      "point_percent_total": 95.6713,
+      "bbox_extent_m": [
+        23.552737,
+        19.529496,
+        8.354078
+      ],
+      "bbox_volume_m3": 3842.651037,
+      "density_points_per_m3": 36.534153,
+      "classification": "castillo + fuga dominante (suelo/fondo conectado)"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 2,
+      "cluster_id": 27,
+      "selected_by_pipeline": true,
+      "point_count": 527,
+      "point_percent_total": 0.3591,
+      "bbox_extent_m": [
+        5.082526,
+        4.594227,
+        0.896534
+      ],
+      "bbox_volume_m3": 20.934314,
+      "density_points_per_m3": 25.17398,
+      "classification": "suelo / plano bajo"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 3,
+      "cluster_id": 48,
+      "selected_by_pipeline": true,
+      "point_count": 359,
+      "point_percent_total": 0.2447,
+      "bbox_extent_m": [
+        1.172711,
+        2.024215,
+        2.374816
+      ],
+      "bbox_volume_m3": 5.637387,
+      "density_points_per_m3": 63.681984,
+      "classification": "vegetacion / fondo vertical"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 4,
+      "cluster_id": 3,
+      "selected_by_pipeline": false,
+      "point_count": 350,
+      "point_percent_total": 0.2385,
+      "bbox_extent_m": [
+        1.429202,
+        4.25546,
+        0.304129
+      ],
+      "bbox_volume_m3": 1.849687,
+      "density_points_per_m3": 189.221169,
+      "classification": "suelo / plano bajo"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 5,
+      "cluster_id": 55,
+      "selected_by_pipeline": false,
+      "point_count": 345,
+      "point_percent_total": 0.2351,
+      "bbox_extent_m": [
+        3.389521,
+        2.069847,
+        0.727644
+      ],
+      "bbox_volume_m3": 5.104998,
+      "density_points_per_m3": 67.580825,
+      "classification": "suelo / plano bajo"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 6,
+      "cluster_id": 42,
+      "selected_by_pipeline": false,
+      "point_count": 329,
+      "point_percent_total": 0.2242,
+      "bbox_extent_m": [
+        2.047485,
+        2.248338,
+        0.498469
+      ],
+      "bbox_volume_m3": 2.29467,
+      "density_points_per_m3": 143.375739,
+      "classification": "suelo / plano bajo"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 7,
+      "cluster_id": 47,
+      "selected_by_pipeline": false,
+      "point_count": 278,
+      "point_percent_total": 0.1895,
+      "bbox_extent_m": [
+        1.146271,
+        1.466444,
+        1.540873
+      ],
+      "bbox_volume_m3": 2.590119,
+      "density_points_per_m3": 107.330971,
+      "classification": "vegetacion / fondo vertical"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 8,
+      "cluster_id": 76,
+      "selected_by_pipeline": false,
+      "point_count": 275,
+      "point_percent_total": 0.1874,
+      "bbox_extent_m": [
+        2.037107,
+        1.086423,
+        0.594072
+      ],
+      "bbox_volume_m3": 1.314776,
+      "density_points_per_m3": 209.161039,
+      "classification": "suelo / plano bajo"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 9,
+      "cluster_id": 52,
+      "selected_by_pipeline": false,
+      "point_count": 249,
+      "point_percent_total": 0.1697,
+      "bbox_extent_m": [
+        2.427805,
+        1.745791,
+        1.023424
+      ],
+      "bbox_volume_m3": 4.337719,
+      "density_points_per_m3": 57.40344,
+      "classification": "vegetacion / fondo vertical"
+    },
+    {
+      "source": "validation_result_exact_top10",
+      "rank": 10,
+      "cluster_id": 84,
+      "selected_by_pipeline": false,
+      "point_count": 215,
+      "point_percent_total": 0.1465,
+      "bbox_extent_m": [
+        2.355548,
+        0.49548,
+        0.701366
+      ],
+      "bbox_volume_m3": 0.818583,
+      "density_points_per_m3": 262.648862,
+      "classification": "suelo / plano bajo"
+    }
+  ],
+  "diagnostic_note": "Intermediate PLYs were not persisted by the validation run. Stage metrics are exact from result.json; intermediate images and diagnostic clusters are re-derived from the existing RAW artifact without changing parameters or reconstructing.",
+  "diagnostic_cluster_count": 97,
+  "diagnostic_noise_points": 518,
+  "root_cause": {
+    "first_stage_where_cloud_is_not_only_castle": "RAW Dense Point Cloud",
+    "primary_cause": "A) Reconstruccion fotogrametrica",
+    "propagation_gate": "E) Seleccion de clusters",
+    "not_primary_cause": [
+      "B) Outlier Removal",
+      "C) Voxelizacion",
+      "F) PDI"
+    ]
+  }
+}

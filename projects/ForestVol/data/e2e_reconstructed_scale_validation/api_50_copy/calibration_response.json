@@ -1,0 +1,13 @@
+{
+  "status_code": 200,
+  "body": {
+    "session_id": "bd1e9a21-3f48-4a6f-a236-b1010a9d153f",
+    "calibration_mode": "automatic",
+    "guide_detected_in_n_images": 33,
+    "detection_confidence": 0.66,
+    "scale_px_per_cm": 0.6976,
+    "scale_error_percentage": null,
+    "pipeline_state": "CALIBRATED",
+    "warning": "Automatic detection confidence below recommended threshold (0.90); continuing with detected markers."
+  }
+}

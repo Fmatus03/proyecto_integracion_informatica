@@ -1,0 +1,3482 @@
+[
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.25,
+    "min_points": 10,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 108,
+    "noise_points": 472,
+    "noise_ratio": 0.019345,
+    "cluster_point_distribution_top10": [
+      9338,
+      5458,
+      1823,
+      1816,
+      869,
+      421,
+      394,
+      342,
+      265,
+      243
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.031274,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.09803,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      20,
+      2
+    ],
+    "points_retained": 14796,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1406,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.767224,
+      "hull_volume_m3": 125.637673,
+      "solid_voxels": 4617,
+      "occupied_voxels": 1312,
+      "dense_voxels": 1312,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5994,
+      "percent_error": 39.752297
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.25,
+    "min_points": 15,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 79,
+    "noise_points": 855,
+    "noise_ratio": 0.035042,
+    "cluster_point_distribution_top10": [
+      9326,
+      5453,
+      1823,
+      1816,
+      869,
+      421,
+      394,
+      342,
+      263,
+      243
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.028256,
+        "python_tracemalloc_current_mb": 9.9e-05,
+        "python_tracemalloc_peak_mb": 9.9e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.100946,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      17,
+      2
+    ],
+    "points_retained": 14779,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1406,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.631915,
+      "hull_volume_m3": 125.637673,
+      "solid_voxels": 4617,
+      "occupied_voxels": 1309,
+      "dense_voxels": 1309,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5994,
+      "percent_error": 39.752297
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.25,
+    "min_points": 20,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 54,
+    "noise_points": 1404,
+    "noise_ratio": 0.057543,
+    "cluster_point_distribution_top10": [
+      9296,
+      5449,
+      1812,
+      1808,
+      869,
+      407,
+      394,
+      342,
+      252,
+      243
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.026014,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.097804,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      13,
+      2
+    ],
+    "points_retained": 14745,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 71.3281,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 118.920296,
+      "hull_volume_m3": 123.99061,
+      "solid_voxels": 4565,
+      "occupied_voxels": 1301,
+      "dense_voxels": 1301,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 48.4119,
+      "percent_error": 40.43085
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.25,
+    "min_points": 25,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 47,
+    "noise_points": 1912,
+    "noise_ratio": 0.078364,
+    "cluster_point_distribution_top10": [
+      9171,
+      5403,
+      1803,
+      1798,
+      869,
+      402,
+      394,
+      342,
+      232,
+      201
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.028182,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.095024,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      2
+    ],
+    "points_retained": 14574,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 69.375,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 122.075212,
+      "hull_volume_m3": 119.385416,
+      "solid_voxels": 4440,
+      "occupied_voxels": 1277,
+      "dense_voxels": 1277,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 50.365,
+      "percent_error": 42.061968
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.25,
+    "min_points": 30,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 41,
+    "noise_points": 2364,
+    "noise_ratio": 0.096889,
+    "cluster_point_distribution_top10": [
+      9161,
+      5397,
+      1796,
+      1062,
+      869,
+      674,
+      353,
+      336,
+      305,
+      196
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.025524,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.09125,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      8,
+      2
+    ],
+    "points_retained": 14558,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 69.3125,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 122.180369,
+      "hull_volume_m3": 119.151711,
+      "solid_voxels": 4436,
+      "occupied_voxels": 1274,
+      "dense_voxels": 1274,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 50.4275,
+      "percent_error": 42.114164
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.3,
+    "min_points": 10,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 97,
+    "noise_points": 410,
+    "noise_ratio": 0.016804,
+    "cluster_point_distribution_top10": [
+      9343,
+      5458,
+      2692,
+      1816,
+      423,
+      408,
+      351,
+      345,
+      290,
+      218
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.030454,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.124679,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      17,
+      1
+    ],
+    "points_retained": 14801,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.32061,
+      "hull_volume_m3": 126.158567,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1313,
+      "dense_voxels": 1313,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.3,
+    "min_points": 15,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 72,
+    "noise_points": 746,
+    "noise_ratio": 0.030575,
+    "cluster_point_distribution_top10": [
+      9342,
+      5458,
+      2692,
+      1816,
+      423,
+      408,
+      344,
+      343,
+      282,
+      218
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.027878,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.120029,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      15,
+      1
+    ],
+    "points_retained": 14800,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.412966,
+      "hull_volume_m3": 126.050815,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1313,
+      "dense_voxels": 1313,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.3,
+    "min_points": 20,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 53,
+    "noise_points": 1185,
+    "noise_ratio": 0.048568,
+    "cluster_point_distribution_top10": [
+      9338,
+      5457,
+      2685,
+      1810,
+      418,
+      395,
+      344,
+      343,
+      282,
+      201
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.02615,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.128829,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      12,
+      1
+    ],
+    "points_retained": 14795,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.373299,
+      "hull_volume_m3": 126.050815,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1312,
+      "dense_voxels": 1312,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.3,
+    "min_points": 25,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 41,
+    "noise_points": 1524,
+    "noise_ratio": 0.062462,
+    "cluster_point_distribution_top10": [
+      9338,
+      5455,
+      2685,
+      1810,
+      411,
+      395,
+      344,
+      333,
+      282,
+      201
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.02427,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.11979,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      1
+    ],
+    "points_retained": 14793,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.357432,
+      "hull_volume_m3": 126.050815,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1311,
+      "dense_voxels": 1311,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.3,
+    "min_points": 30,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 37,
+    "noise_points": 1828,
+    "noise_ratio": 0.074921,
+    "cluster_point_distribution_top10": [
+      9311,
+      5427,
+      2683,
+      1808,
+      407,
+      395,
+      344,
+      265,
+      251,
+      201
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.027234,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.116208,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      1
+    ],
+    "points_retained": 14738,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 71.4375,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 118.481668,
+      "hull_volume_m3": 124.390552,
+      "solid_voxels": 4572,
+      "occupied_voxels": 1303,
+      "dense_voxels": 1303,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 48.3025,
+      "percent_error": 40.339486
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.35,
+    "min_points": 10,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 92,
+    "noise_points": 359,
+    "noise_ratio": 0.014714,
+    "cluster_point_distribution_top10": [
+      9343,
+      5458,
+      2692,
+      1817,
+      641,
+      408,
+      361,
+      345,
+      290,
+      256
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.025787,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.152675,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      18,
+      1
+    ],
+    "points_retained": 14801,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.32061,
+      "hull_volume_m3": 126.158567,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1313,
+      "dense_voxels": 1313,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.35,
+    "min_points": 15,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 70,
+    "noise_points": 682,
+    "noise_ratio": 0.027952,
+    "cluster_point_distribution_top10": [
+      9343,
+      5458,
+      2692,
+      1817,
+      428,
+      408,
+      354,
+      345,
+      290,
+      256
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.025278,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.153735,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      15,
+      1
+    ],
+    "points_retained": 14801,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.32061,
+      "hull_volume_m3": 126.158567,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1313,
+      "dense_voxels": 1313,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.35,
+    "min_points": 20,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 51,
+    "noise_points": 1089,
+    "noise_ratio": 0.044633,
+    "cluster_point_distribution_top10": [
+      9343,
+      5458,
+      2692,
+      1817,
+      428,
+      408,
+      350,
+      345,
+      286,
+      256
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.023981,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.145674,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      12,
+      1
+    ],
+    "points_retained": 14801,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.32061,
+      "hull_volume_m3": 126.158567,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1313,
+      "dense_voxels": 1313,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.35,
+    "min_points": 25,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 41,
+    "noise_points": 1352,
+    "noise_ratio": 0.055412,
+    "cluster_point_distribution_top10": [
+      9343,
+      5458,
+      2692,
+      1813,
+      428,
+      398,
+      350,
+      341,
+      286,
+      256
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.02434,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.148048,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      1
+    ],
+    "points_retained": 14801,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.32061,
+      "hull_volume_m3": 126.158567,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1313,
+      "dense_voxels": 1313,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.35,
+    "min_points": 30,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 35,
+    "noise_points": 1573,
+    "noise_ratio": 0.06447,
+    "cluster_point_distribution_top10": [
+      9342,
+      5458,
+      2688,
+      1813,
+      423,
+      398,
+      350,
+      341,
+      286,
+      241
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.027991,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.153029,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      1
+    ],
+    "points_retained": 14800,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 72.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 117.312683,
+      "hull_volume_m3": 126.158567,
+      "solid_voxels": 4620,
+      "occupied_voxels": 1313,
+      "dense_voxels": 1313,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 47.5525,
+      "percent_error": 39.713128
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.4,
+    "min_points": 10,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 84,
+    "noise_points": 304,
+    "noise_ratio": 0.01246,
+    "cluster_point_distribution_top10": [
+      9817,
+      8159,
+      1843,
+      1037,
+      408,
+      361,
+      256,
+      170,
+      109,
+      74
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.030925,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.186926,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      15,
+      0
+    ],
+    "points_retained": 17976,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 83.211845,
+      "hull_volume_m3": 216.026938,
+      "solid_voxels": 5452,
+      "occupied_voxels": 1652,
+      "dense_voxels": 1652,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 34.5525,
+      "percent_error": 28.856272
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.4,
+    "min_points": 15,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 63,
+    "noise_points": 598,
+    "noise_ratio": 0.024509,
+    "cluster_point_distribution_top10": [
+      9799,
+      8152,
+      1841,
+      1037,
+      408,
+      361,
+      256,
+      170,
+      107,
+      74
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.031822,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.195943,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      12,
+      0
+    ],
+    "points_retained": 17951,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 84.5625,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 84.754863,
+      "hull_volume_m3": 211.799057,
+      "solid_voxels": 5412,
+      "occupied_voxels": 1648,
+      "dense_voxels": 1648,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 35.1775,
+      "percent_error": 29.378236
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.4,
+    "min_points": 20,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 43,
+    "noise_points": 995,
+    "noise_ratio": 0.04078,
+    "cluster_point_distribution_top10": [
+      9799,
+      8152,
+      1841,
+      1037,
+      408,
+      358,
+      256,
+      170,
+      74,
+      67
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.028173,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.196347,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      10,
+      0
+    ],
+    "points_retained": 17951,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 84.5625,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 84.754863,
+      "hull_volume_m3": 211.799057,
+      "solid_voxels": 5412,
+      "occupied_voxels": 1648,
+      "dense_voxels": 1648,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 35.1775,
+      "percent_error": 29.378236
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.4,
+    "min_points": 25,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 37,
+    "noise_points": 1222,
+    "noise_ratio": 0.050084,
+    "cluster_point_distribution_top10": [
+      9345,
+      8152,
+      1822,
+      608,
+      454,
+      429,
+      408,
+      358,
+      256,
+      170
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.030288,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.188949,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      0
+    ],
+    "points_retained": 17497,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 78.0469,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 102.299014,
+      "hull_volume_m3": 171.037816,
+      "solid_voxels": 4995,
+      "occupied_voxels": 1574,
+      "dense_voxels": 1574,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 41.6931,
+      "percent_error": 34.819693
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.4,
+    "min_points": 30,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 30,
+    "noise_points": 1472,
+    "noise_ratio": 0.06033,
+    "cluster_point_distribution_top10": [
+      9345,
+      8152,
+      1819,
+      608,
+      444,
+      429,
+      400,
+      357,
+      256,
+      170
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.02557,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.188431,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      0
+    ],
+    "points_retained": 17497,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 78.0469,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 102.299014,
+      "hull_volume_m3": 171.037816,
+      "solid_voxels": 4995,
+      "occupied_voxels": 1574,
+      "dense_voxels": 1574,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 41.6931,
+      "percent_error": 34.819693
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.45,
+    "min_points": 10,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 77,
+    "noise_points": 293,
+    "noise_ratio": 0.012009,
+    "cluster_point_distribution_top10": [
+      9817,
+      8171,
+      1843,
+      1149,
+      408,
+      361,
+      256,
+      170,
+      109,
+      74
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.036949,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.275404,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      13,
+      0
+    ],
+    "points_retained": 17988,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 83.267393,
+      "hull_volume_m3": 216.026938,
+      "solid_voxels": 5452,
+      "occupied_voxels": 1656,
+      "dense_voxels": 1656,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 34.5525,
+      "percent_error": 28.856272
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.45,
+    "min_points": 15,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 59,
+    "noise_points": 534,
+    "noise_ratio": 0.021886,
+    "cluster_point_distribution_top10": [
+      9817,
+      8171,
+      1843,
+      1149,
+      408,
+      361,
+      256,
+      170,
+      109,
+      74
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.039774,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.239324,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      0
+    ],
+    "points_retained": 17988,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 83.267393,
+      "hull_volume_m3": 216.026938,
+      "solid_voxels": 5452,
+      "occupied_voxels": 1656,
+      "dense_voxels": 1656,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 34.5525,
+      "percent_error": 28.856272
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.45,
+    "min_points": 20,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 42,
+    "noise_points": 899,
+    "noise_ratio": 0.036846,
+    "cluster_point_distribution_top10": [
+      9808,
+      8161,
+      1843,
+      1149,
+      408,
+      361,
+      256,
+      170,
+      74,
+      71
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.03368,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.256566,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      9,
+      0
+    ],
+    "points_retained": 17969,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.0156,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 84.482453,
+      "hull_volume_m3": 212.695055,
+      "solid_voxels": 5441,
+      "occupied_voxels": 1654,
+      "dense_voxels": 1654,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 34.7244,
+      "percent_error": 28.999833
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.45,
+    "min_points": 25,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 35,
+    "noise_points": 1064,
+    "noise_ratio": 0.043608,
+    "cluster_point_distribution_top10": [
+      9808,
+      8161,
+      1843,
+      1149,
+      408,
+      361,
+      256,
+      170,
+      74,
+      71
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.029171,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.247256,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      9,
+      0
+    ],
+    "points_retained": 17969,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.0156,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 84.482453,
+      "hull_volume_m3": 212.695055,
+      "solid_voxels": 5441,
+      "occupied_voxels": 1654,
+      "dense_voxels": 1654,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 34.7244,
+      "percent_error": 28.999833
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.45,
+    "min_points": 30,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 29,
+    "noise_points": 1326,
+    "noise_ratio": 0.054346,
+    "cluster_point_distribution_top10": [
+      9808,
+      8161,
+      1828,
+      1040,
+      408,
+      361,
+      256,
+      170,
+      74,
+      71
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.027225,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.268601,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      9,
+      0
+    ],
+    "points_retained": 17969,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.0156,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 84.482453,
+      "hull_volume_m3": 212.695055,
+      "solid_voxels": 5441,
+      "occupied_voxels": 1654,
+      "dense_voxels": 1654,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 34.7244,
+      "percent_error": 28.999833
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.5,
+    "min_points": 10,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 73,
+    "noise_points": 269,
+    "noise_ratio": 0.011025,
+    "cluster_point_distribution_top10": [
+      9823,
+      8292,
+      1843,
+      1192,
+      408,
+      361,
+      256,
+      178,
+      109,
+      74
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.031491,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.290408,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      12,
+      0
+    ],
+    "points_retained": 18115,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 86.0938,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 81.909424,
+      "hull_volume_m3": 221.158923,
+      "solid_voxels": 5510,
+      "occupied_voxels": 1681,
+      "dense_voxels": 1681,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 33.6462,
+      "percent_error": 28.099382
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.5,
+    "min_points": 15,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 55,
+    "noise_points": 490,
+    "noise_ratio": 0.020083,
+    "cluster_point_distribution_top10": [
+      9820,
+      8292,
+      1843,
+      1192,
+      408,
+      361,
+      256,
+      174,
+      109,
+      74
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.030078,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.303741,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      10,
+      0
+    ],
+    "points_retained": 18112,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.9688,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 81.895859,
+      "hull_volume_m3": 221.158923,
+      "solid_voxels": 5502,
+      "occupied_voxels": 1680,
+      "dense_voxels": 1680,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 33.7712,
+      "percent_error": 28.203775
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.5,
+    "min_points": 20,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 38,
+    "noise_points": 817,
+    "noise_ratio": 0.033485,
+    "cluster_point_distribution_top10": [
+      9818,
+      8290,
+      1843,
+      1192,
+      408,
+      361,
+      256,
+      174,
+      109,
+      74
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.029933,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.306389,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      8,
+      0
+    ],
+    "points_retained": 18108,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.9688,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 82.072435,
+      "hull_volume_m3": 220.634369,
+      "solid_voxels": 5502,
+      "occupied_voxels": 1680,
+      "dense_voxels": 1680,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 33.7712,
+      "percent_error": 28.203775
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.5,
+    "min_points": 25,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 33,
+    "noise_points": 989,
+    "noise_ratio": 0.040534,
+    "cluster_point_distribution_top10": [
+      9818,
+      8290,
+      1843,
+      1183,
+      408,
+      361,
+      256,
+      174,
+      74,
+      70
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.031292,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.298782,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      8,
+      0
+    ],
+    "points_retained": 18108,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.9688,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 82.072435,
+      "hull_volume_m3": 220.634369,
+      "solid_voxels": 5502,
+      "occupied_voxels": 1680,
+      "dense_voxels": 1680,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 33.7712,
+      "percent_error": 28.203775
+    }
+  },
+  {
+    "dataset": "set1",
+    "voxel_size": 0.07,
+    "eps": 0.5,
+    "min_points": 30,
+    "points_after_outlier": 398562,
+    "points_after_voxel": 24399,
+    "voxel_loss_ratio": 0.938782,
+    "cluster_count": 27,
+    "noise_points": 1198,
+    "noise_ratio": 0.0491,
+    "cluster_point_distribution_top10": [
+      9818,
+      8289,
+      1829,
+      1160,
+      408,
+      361,
+      256,
+      174,
+      74,
+      70
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.035871,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.332287,
+        "python_tracemalloc_current_mb": 0.186356,
+        "python_tracemalloc_peak_mb": 0.186798
+      }
+    ],
+    "selected_cluster_ids": [
+      8,
+      0
+    ],
+    "points_retained": 18107,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 85.9688,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 82.067903,
+      "hull_volume_m3": 220.634369,
+      "solid_voxels": 5502,
+      "occupied_voxels": 1680,
+      "dense_voxels": 1680,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 33.7712,
+      "percent_error": 28.203775
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.25,
+    "min_points": 10,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 50,
+    "noise_points": 37,
+    "noise_ratio": 0.001819,
+    "cluster_point_distribution_top10": [
+      9816,
+      3979,
+      1817,
+      1713,
+      343,
+      220,
+      215,
+      143,
+      140,
+      129
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.027701,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.400261,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      20,
+      15
+    ],
+    "points_retained": 13795,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 29.9375,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 433.21459,
+      "hull_volume_m3": 31.843341,
+      "solid_voxels": 1916,
+      "occupied_voxels": 314,
+      "dense_voxels": 281,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 89.8025,
+      "percent_error": 74.997912
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.25,
+    "min_points": 15,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 44,
+    "noise_points": 136,
+    "noise_ratio": 0.006685,
+    "cluster_point_distribution_top10": [
+      9792,
+      3978,
+      1817,
+      1713,
+      343,
+      220,
+      215,
+      143,
+      140,
+      129
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.021861,
+        "python_tracemalloc_current_mb": 9.9e-05,
+        "python_tracemalloc_peak_mb": 9.9e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.396243,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      19,
+      14
+    ],
+    "points_retained": 13770,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 29.4844,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 434.3674,
+      "hull_volume_m3": 31.701274,
+      "solid_voxels": 1887,
+      "occupied_voxels": 313,
+      "dense_voxels": 279,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 90.2556,
+      "percent_error": 75.376315
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.25,
+    "min_points": 20,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 39,
+    "noise_points": 227,
+    "noise_ratio": 0.011158,
+    "cluster_point_distribution_top10": [
+      9792,
+      3970,
+      1817,
+      1713,
+      343,
+      220,
+      215,
+      143,
+      140,
+      129
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.021002,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.404126,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      18,
+      14
+    ],
+    "points_retained": 13762,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 29.4844,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 434.115044,
+      "hull_volume_m3": 31.701274,
+      "solid_voxels": 1887,
+      "occupied_voxels": 312,
+      "dense_voxels": 278,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 90.2556,
+      "percent_error": 75.376315
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.25,
+    "min_points": 25,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 36,
+    "noise_points": 312,
+    "noise_ratio": 0.015336,
+    "cluster_point_distribution_top10": [
+      9792,
+      3964,
+      1817,
+      1713,
+      343,
+      220,
+      215,
+      143,
+      140,
+      129
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.023566,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.417091,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      16,
+      12
+    ],
+    "points_retained": 13756,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 29.4844,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 434.078722,
+      "hull_volume_m3": 31.690104,
+      "solid_voxels": 1887,
+      "occupied_voxels": 312,
+      "dense_voxels": 278,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 90.2556,
+      "percent_error": 75.376315
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.25,
+    "min_points": 30,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 34,
+    "noise_points": 401,
+    "noise_ratio": 0.019711,
+    "cluster_point_distribution_top10": [
+      6739,
+      3952,
+      3053,
+      1817,
+      1713,
+      343,
+      220,
+      215,
+      143,
+      140
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.028821,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.400707,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      16,
+      12
+    ],
+    "points_retained": 10691,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 23.3906,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 445.052828,
+      "hull_volume_m3": 24.021867,
+      "solid_voxels": 1497,
+      "occupied_voxels": 229,
+      "dense_voxels": 211,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 96.3494,
+      "percent_error": 80.465509
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.3,
+    "min_points": 10,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 45,
+    "noise_points": 35,
+    "noise_ratio": 0.00172,
+    "cluster_point_distribution_top10": [
+      10031,
+      3989,
+      1817,
+      1713,
+      343,
+      271,
+      253,
+      220,
+      161,
+      143
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.026304,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.535961,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      14,
+      12
+    ],
+    "points_retained": 14020,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 31.6562,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 402.007018,
+      "hull_volume_m3": 34.875013,
+      "solid_voxels": 2026,
+      "occupied_voxels": 324,
+      "dense_voxels": 290,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 88.0838,
+      "percent_error": 73.562552
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.3,
+    "min_points": 15,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 40,
+    "noise_points": 92,
+    "noise_ratio": 0.004522,
+    "cluster_point_distribution_top10": [
+      10031,
+      3989,
+      1817,
+      1713,
+      343,
+      271,
+      253,
+      220,
+      161,
+      143
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.033964,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.494902,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      13,
+      11
+    ],
+    "points_retained": 14020,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 31.6562,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 402.007018,
+      "hull_volume_m3": 34.875013,
+      "solid_voxels": 2026,
+      "occupied_voxels": 324,
+      "dense_voxels": 290,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 88.0838,
+      "percent_error": 73.562552
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.3,
+    "min_points": 20,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 35,
+    "noise_points": 175,
+    "noise_ratio": 0.008602,
+    "cluster_point_distribution_top10": [
+      10031,
+      3989,
+      1817,
+      1713,
+      343,
+      271,
+      253,
+      220,
+      161,
+      143
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.025659,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.510813,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      13,
+      11
+    ],
+    "points_retained": 14020,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 31.6562,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 402.007018,
+      "hull_volume_m3": 34.875013,
+      "solid_voxels": 2026,
+      "occupied_voxels": 324,
+      "dense_voxels": 290,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 88.0838,
+      "percent_error": 73.562552
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.3,
+    "min_points": 25,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 32,
+    "noise_points": 238,
+    "noise_ratio": 0.011699,
+    "cluster_point_distribution_top10": [
+      10031,
+      3989,
+      1817,
+      1713,
+      343,
+      271,
+      253,
+      220,
+      161,
+      143
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.019709,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.497479,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      12,
+      10
+    ],
+    "points_retained": 14020,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 31.6562,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 402.007018,
+      "hull_volume_m3": 34.875013,
+      "solid_voxels": 2026,
+      "occupied_voxels": 324,
+      "dense_voxels": 290,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 88.0838,
+      "percent_error": 73.562552
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.3,
+    "min_points": 30,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 29,
+    "noise_points": 315,
+    "noise_ratio": 0.015484,
+    "cluster_point_distribution_top10": [
+      10031,
+      3989,
+      1817,
+      1713,
+      343,
+      271,
+      253,
+      220,
+      161,
+      143
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.029704,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.53371,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      12,
+      10
+    ],
+    "points_retained": 14020,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 31.6562,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 3,
+      "hull_density_points_per_m3": 402.007018,
+      "hull_volume_m3": 34.875013,
+      "solid_voxels": 2026,
+      "occupied_voxels": 324,
+      "dense_voxels": 290,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 88.0838,
+      "percent_error": 73.562552
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.35,
+    "min_points": 10,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 36,
+    "noise_points": 34,
+    "noise_ratio": 0.001671,
+    "cluster_point_distribution_top10": [
+      12008,
+      4223,
+      1713,
+      343,
+      271,
+      253,
+      161,
+      143,
+      125,
+      97
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.021529,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.6648,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      12,
+      11
+    ],
+    "points_retained": 16231,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 40.5781,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 361.767229,
+      "hull_volume_m3": 44.865866,
+      "solid_voxels": 2597,
+      "occupied_voxels": 396,
+      "dense_voxels": 375,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 79.1619,
+      "percent_error": 66.111492
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.35,
+    "min_points": 15,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 32,
+    "noise_points": 77,
+    "noise_ratio": 0.003785,
+    "cluster_point_distribution_top10": [
+      12008,
+      4223,
+      1713,
+      343,
+      271,
+      253,
+      161,
+      143,
+      125,
+      97
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.02851,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.637494,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      10
+    ],
+    "points_retained": 16231,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 40.5781,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 361.767229,
+      "hull_volume_m3": 44.865866,
+      "solid_voxels": 2597,
+      "occupied_voxels": 396,
+      "dense_voxels": 375,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 79.1619,
+      "percent_error": 66.111492
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.35,
+    "min_points": 20,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 28,
+    "noise_points": 158,
+    "noise_ratio": 0.007766,
+    "cluster_point_distribution_top10": [
+      11995,
+      4223,
+      1713,
+      343,
+      271,
+      253,
+      161,
+      143,
+      125,
+      97
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.021359,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.642482,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      10
+    ],
+    "points_retained": 16218,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 40.5781,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 361.477476,
+      "hull_volume_m3": 44.865866,
+      "solid_voxels": 2597,
+      "occupied_voxels": 395,
+      "dense_voxels": 374,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 79.1619,
+      "percent_error": 66.111492
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.35,
+    "min_points": 25,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 26,
+    "noise_points": 200,
+    "noise_ratio": 0.009831,
+    "cluster_point_distribution_top10": [
+      11995,
+      4223,
+      1713,
+      343,
+      271,
+      253,
+      161,
+      143,
+      125,
+      97
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.028588,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.640307,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      10
+    ],
+    "points_retained": 16218,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 40.5781,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 361.477476,
+      "hull_volume_m3": 44.865866,
+      "solid_voxels": 2597,
+      "occupied_voxels": 395,
+      "dense_voxels": 374,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 79.1619,
+      "percent_error": 66.111492
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.35,
+    "min_points": 30,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 23,
+    "noise_points": 289,
+    "noise_ratio": 0.014206,
+    "cluster_point_distribution_top10": [
+      11995,
+      4223,
+      1713,
+      343,
+      271,
+      253,
+      161,
+      143,
+      125,
+      97
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.024265,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.645274,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      10
+    ],
+    "points_retained": 16218,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 40.5781,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 361.477476,
+      "hull_volume_m3": 44.865866,
+      "solid_voxels": 2597,
+      "occupied_voxels": 395,
+      "dense_voxels": 374,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 79.1619,
+      "percent_error": 66.111492
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.4,
+    "min_points": 10,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 32,
+    "noise_points": 28,
+    "noise_ratio": 0.001376,
+    "cluster_point_distribution_top10": [
+      12294,
+      4229,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.023753,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.806582,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      8,
+      11
+    ],
+    "points_retained": 16523,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 43.5938,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 359.046419,
+      "hull_volume_m3": 46.019119,
+      "solid_voxels": 2790,
+      "occupied_voxels": 410,
+      "dense_voxels": 389,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 76.1462,
+      "percent_error": 63.592951
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.4,
+    "min_points": 15,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 28,
+    "noise_points": 73,
+    "noise_ratio": 0.003588,
+    "cluster_point_distribution_top10": [
+      12294,
+      4227,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.029159,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.809516,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      10
+    ],
+    "points_retained": 16521,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 43.5938,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 359.002959,
+      "hull_volume_m3": 46.019119,
+      "solid_voxels": 2790,
+      "occupied_voxels": 410,
+      "dense_voxels": 389,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 76.1462,
+      "percent_error": 63.592951
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.4,
+    "min_points": 20,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 25,
+    "noise_points": 126,
+    "noise_ratio": 0.006193,
+    "cluster_point_distribution_top10": [
+      12294,
+      4227,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.023523,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.835592,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      10
+    ],
+    "points_retained": 16521,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 43.5938,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 359.002959,
+      "hull_volume_m3": 46.019119,
+      "solid_voxels": 2790,
+      "occupied_voxels": 410,
+      "dense_voxels": 389,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 76.1462,
+      "percent_error": 63.592951
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.4,
+    "min_points": 25,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 25,
+    "noise_points": 148,
+    "noise_ratio": 0.007275,
+    "cluster_point_distribution_top10": [
+      12016,
+      4227,
+      2076,
+      278,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.033843,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.899721,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      10
+    ],
+    "points_retained": 16243,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 40.7969,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 362.000197,
+      "hull_volume_m3": 44.870141,
+      "solid_voxels": 2611,
+      "occupied_voxels": 398,
+      "dense_voxels": 377,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 78.9431,
+      "percent_error": 65.928762
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.4,
+    "min_points": 30,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 22,
+    "noise_points": 225,
+    "noise_ratio": 0.01106,
+    "cluster_point_distribution_top10": [
+      12016,
+      4227,
+      2076,
+      278,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.03349,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.860659,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      11,
+      10
+    ],
+    "points_retained": 16243,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 40.7969,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 362.000197,
+      "hull_volume_m3": 44.870141,
+      "solid_voxels": 2611,
+      "occupied_voxels": 398,
+      "dense_voxels": 377,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 78.9431,
+      "percent_error": 65.928762
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.45,
+    "min_points": 10,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 30,
+    "noise_points": 28,
+    "noise_ratio": 0.001376,
+    "cluster_point_distribution_top10": [
+      12365,
+      4229,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.02107,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.961851,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      8,
+      11
+    ],
+    "points_retained": 16594,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 44.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 360.589256,
+      "hull_volume_m3": 46.019119,
+      "solid_voxels": 2828,
+      "occupied_voxels": 416,
+      "dense_voxels": 395,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 75.5525,
+      "percent_error": 63.097127
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.45,
+    "min_points": 15,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 27,
+    "noise_points": 68,
+    "noise_ratio": 0.003343,
+    "cluster_point_distribution_top10": [
+      12358,
+      4229,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.032777,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 1.011486,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      10
+    ],
+    "points_retained": 16587,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 44.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 360.437145,
+      "hull_volume_m3": 46.019119,
+      "solid_voxels": 2828,
+      "occupied_voxels": 416,
+      "dense_voxels": 394,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 75.5525,
+      "percent_error": 63.097127
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.45,
+    "min_points": 20,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 24,
+    "noise_points": 121,
+    "noise_ratio": 0.005948,
+    "cluster_point_distribution_top10": [
+      12358,
+      4229,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.033348,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.967585,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      10
+    ],
+    "points_retained": 16587,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 44.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 360.437145,
+      "hull_volume_m3": 46.019119,
+      "solid_voxels": 2828,
+      "occupied_voxels": 416,
+      "dense_voxels": 394,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 75.5525,
+      "percent_error": 63.097127
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.45,
+    "min_points": 25,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 23,
+    "noise_points": 143,
+    "noise_ratio": 0.007029,
+    "cluster_point_distribution_top10": [
+      12358,
+      4229,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.024382,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.969209,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      10
+    ],
+    "points_retained": 16587,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 44.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 360.437145,
+      "hull_volume_m3": 46.019119,
+      "solid_voxels": 2828,
+      "occupied_voxels": 416,
+      "dense_voxels": 394,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 75.5525,
+      "percent_error": 63.097127
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.45,
+    "min_points": 30,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 20,
+    "noise_points": 220,
+    "noise_ratio": 0.010814,
+    "cluster_point_distribution_top10": [
+      12358,
+      4229,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.021782,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 0.966596,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      10
+    ],
+    "points_retained": 16587,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 44.1875,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 360.437145,
+      "hull_volume_m3": 46.019119,
+      "solid_voxels": 2828,
+      "occupied_voxels": 416,
+      "dense_voxels": 394,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 75.5525,
+      "percent_error": 63.097127
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.5,
+    "min_points": 10,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 28,
+    "noise_points": 19,
+    "noise_ratio": 0.000934,
+    "cluster_point_distribution_top10": [
+      12433,
+      4238,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.021252,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 1.07086,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      8,
+      10
+    ],
+    "points_retained": 16671,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 45.8594,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 341.636173,
+      "hull_volume_m3": 48.797526,
+      "solid_voxels": 2935,
+      "occupied_voxels": 420,
+      "dense_voxels": 390,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 73.8806,
+      "percent_error": 61.700852
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.5,
+    "min_points": 15,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 26,
+    "noise_points": 50,
+    "noise_ratio": 0.002458,
+    "cluster_point_distribution_top10": [
+      12433,
+      4238,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.023957,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 1.080993,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      9
+    ],
+    "points_retained": 16671,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 45.8594,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 341.636173,
+      "hull_volume_m3": 48.797526,
+      "solid_voxels": 2935,
+      "occupied_voxels": 420,
+      "dense_voxels": 390,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 73.8806,
+      "percent_error": 61.700852
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.5,
+    "min_points": 20,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 24,
+    "noise_points": 85,
+    "noise_ratio": 0.004178,
+    "cluster_point_distribution_top10": [
+      12433,
+      4238,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.028702,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 1.169309,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      9
+    ],
+    "points_retained": 16671,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 45.8594,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 341.636173,
+      "hull_volume_m3": 48.797526,
+      "solid_voxels": 2935,
+      "occupied_voxels": 420,
+      "dense_voxels": 390,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 73.8806,
+      "percent_error": 61.700852
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.5,
+    "min_points": 25,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 22,
+    "noise_points": 131,
+    "noise_ratio": 0.006439,
+    "cluster_point_distribution_top10": [
+      12433,
+      4234,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.023509,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 1.145592,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      9
+    ],
+    "points_retained": 16667,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 45.8594,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 342.644013,
+      "hull_volume_m3": 48.642321,
+      "solid_voxels": 2935,
+      "occupied_voxels": 417,
+      "dense_voxels": 390,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 73.8806,
+      "percent_error": 61.700852
+    }
+  },
+  {
+    "dataset": "set2",
+    "voxel_size": 0.02,
+    "eps": 0.5,
+    "min_points": 30,
+    "points_after_outlier": 364166,
+    "points_after_voxel": 20344,
+    "voxel_loss_ratio": 0.944135,
+    "cluster_count": 19,
+    "noise_points": 208,
+    "noise_ratio": 0.010224,
+    "cluster_point_distribution_top10": [
+      12433,
+      4234,
+      2076,
+      253,
+      161,
+      143,
+      125,
+      97,
+      85,
+      80
+    ],
+    "timing_memory": [
+      {
+        "stage": "voxel_down_sample",
+        "time_seconds": 0.02172,
+        "python_tracemalloc_current_mb": 5.3e-05,
+        "python_tracemalloc_peak_mb": 6.1e-05
+      },
+      {
+        "stage": "dbscan",
+        "time_seconds": 1.091821,
+        "python_tracemalloc_current_mb": 0.155418,
+        "python_tracemalloc_peak_mb": 0.155861
+      }
+    ],
+    "selected_cluster_ids": [
+      7,
+      9
+    ],
+    "points_retained": 16667,
+    "pdi": {
+      "status": "ok",
+      "method": "point_density_integration",
+      "volume_m3": 45.8594,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 2,
+      "hull_density_points_per_m3": 342.644013,
+      "hull_volume_m3": 48.642321,
+      "solid_voxels": 2935,
+      "occupied_voxels": 417,
+      "dense_voxels": 390,
+      "ground_truth_volume_m3": 119.74,
+      "absolute_error_m3": 73.8806,
+      "percent_error": 61.700852
+    }
+  }
+]

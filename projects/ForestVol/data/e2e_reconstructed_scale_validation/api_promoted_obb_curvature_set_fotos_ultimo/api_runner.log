@@ -1,0 +1,41 @@
+[2026-07-02 21:34:01] Dataset: projects\ForestVol\set_imagenes+guia\set_fotos_ultimo
+[2026-07-02 21:34:01] Images: 50
+[2026-07-02 21:34:05] Uploaded session 422bae01-50e4-40a6-8425-2a96f84d8cf6
+[2026-07-02 21:34:20] Calibration completed
+[2026-07-02 21:34:20] Reconstruction submitted
+[2026-07-02 21:34:20] Poll state=RECONSTRUCTION_PENDING progress=0 message=Reconstruction task submitted to NodeODM
+[2026-07-02 21:34:40] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:35:00] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:35:20] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:35:40] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:36:00] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:36:20] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:36:40] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:37:00] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:37:20] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:37:41] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:38:01] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:38:21] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:38:41] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:39:01] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:39:21] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:39:41] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:40:01] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:40:21] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:40:41] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:41:01] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:41:21] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:41:41] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:42:01] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:42:21] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:42:41] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:43:02] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:43:22] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:43:42] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:44:02] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:44:22] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:44:42] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:45:02] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:45:23] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:45:43] Poll state=RECONSTRUCTING progress=0 message=NodeODM task started
+[2026-07-02 21:46:03] Poll state=COMPLETED progress=100 message=Preliminary volumetry completed

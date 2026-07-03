@@ -52,6 +52,12 @@ class ResultResponse(BaseModel):
     mesh_watertight: bool | None = None
     mesh_repair_applied: bool | None = None
     volume_m3: float | None = None
+    volume_method: str | None = None
+    confidence_score: float | None = None
+    confidence_level: str | None = None
+    quality_gates: list[dict[str, Any]] | None = None
+    diagnostic: list[str] | None = None
+    pdi_metrics: dict[str, Any] | None = None
     bounding_box_m: dict[str, float] | None = None
     ground_truth_volume_m3: float | None = None
     error_percentage: float | None = None

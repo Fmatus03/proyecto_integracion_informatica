@@ -1,0 +1,408 @@
+{
+  "set1": [
+    {
+      "stage": "RAW",
+      "point_count": 401873,
+      "loss_ratio_from_previous": null,
+      "loss_percent_from_previous": null,
+      "bbox_min": [
+        -12.331664,
+        -12.92817,
+        -30.942608
+      ],
+      "bbox_max": [
+        17.171391,
+        15.431313,
+        9.907525
+      ],
+      "bbox_extent": [
+        29.503055,
+        28.359483,
+        40.850133
+      ],
+      "bbox_volume_m3": 34178.953655,
+      "centroid": [
+        5.826524,
+        -0.680233,
+        -1.489034
+      ],
+      "density_points_per_m3": 11.757908,
+      "dataset": "set1"
+    },
+    {
+      "stage": "Outlier Removal",
+      "point_count": 398562,
+      "loss_ratio_from_previous": 0.008239,
+      "loss_percent_from_previous": 0.8239,
+      "bbox_min": [
+        -12.316292,
+        -11.846539,
+        -25.375698
+      ],
+      "bbox_max": [
+        16.411634,
+        13.428234,
+        7.810715
+      ],
+      "bbox_extent": [
+        28.727926,
+        25.274774,
+        33.186413
+      ],
+      "bbox_volume_m3": 24096.383622,
+      "centroid": [
+        5.837542,
+        -0.673211,
+        -1.469936
+      ],
+      "density_points_per_m3": 16.540324,
+      "dataset": "set1"
+    },
+    {
+      "stage": "Voxel Down Sample + DBSCAN",
+      "point_count": 31465,
+      "loss_ratio_from_previous": 0.921054,
+      "loss_percent_from_previous": 92.1054,
+      "bbox_min": [
+        -12.316292,
+        -11.837327,
+        -25.362817
+      ],
+      "bbox_max": [
+        16.411634,
+        13.412292,
+        7.810715
+      ],
+      "bbox_extent": [
+        28.727926,
+        25.249619,
+        33.173532
+      ],
+      "bbox_volume_m3": 24063.057681,
+      "centroid": [
+        5.627128,
+        -1.849472,
+        -1.922954
+      ],
+      "density_points_per_m3": 1.307606,
+      "dataset": "set1"
+    },
+    {
+      "stage": "Ranking + Cluster Selection",
+      "point_count": 19403,
+      "loss_ratio_from_previous": 0.383347,
+      "loss_percent_from_previous": 38.3347,
+      "bbox_min": [
+        1.434959,
+        -9.25373,
+        -4.607718
+      ],
+      "bbox_max": [
+        9.572889,
+        4.665641,
+        2.046638
+      ],
+      "bbox_extent": [
+        8.137929,
+        13.919371,
+        6.654356
+      ],
+      "bbox_volume_m3": 753.771215,
+      "centroid": [
+        5.06069,
+        -0.643259,
+        -1.447559
+      ],
+      "density_points_per_m3": 25.741232,
+      "dataset": "set1"
+    },
+    {
+      "stage": "PDI",
+      "point_count": 15799,
+      "loss_ratio_from_previous": 0.185744,
+      "loss_percent_from_previous": 18.5744,
+      "bbox_min": [
+        2.467712,
+        -4.827366,
+        -4.450778
+      ],
+      "bbox_max": [
+        9.572889,
+        4.665641,
+        2.046638
+      ],
+      "bbox_extent": [
+        7.105177,
+        9.493006,
+        6.497416
+      ],
+      "bbox_volume_m3": 438.24735,
+      "centroid": [
+        6.558608,
+        0.843278,
+        -0.794953
+      ],
+      "density_points_per_m3": 36.050418,
+      "pdi": {
+        "status": "ok",
+        "method": "point_density_integration",
+        "volume_m3": 69.8281,
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 193.414566,
+        "hull_volume_m3": 81.684644,
+        "solid_voxels": 4469,
+        "occupied_voxels": 1081,
+        "dense_voxels": 975,
+        "ground_truth_volume_m3": 119.74,
+        "absolute_error_m3": 49.9119,
+        "percent_error": 41.683564
+      },
+      "selected_cluster_ids": [
+        14,
+        1
+      ],
+      "dbscan_summary": {
+        "voxel_size": 0.06,
+        "eps": 0.35,
+        "min_points": 20,
+        "points_after_outlier": 398562,
+        "points_after_voxel": 31465,
+        "voxel_loss_ratio": 0.921054,
+        "cluster_count": 60,
+        "noise_points": 1008,
+        "noise_ratio": 0.032036,
+        "cluster_point_distribution_top10": [
+          12247,
+          7156,
+          3552,
+          2402,
+          533,
+          450,
+          417,
+          407,
+          373,
+          321
+        ],
+        "timing_memory": [
+          {
+            "stage": "voxel_down_sample",
+            "time_seconds": 0.031661,
+            "python_tracemalloc_current_mb": 5.3e-05,
+            "python_tracemalloc_peak_mb": 6.1e-05
+          },
+          {
+            "stage": "dbscan",
+            "time_seconds": 0.273433,
+            "python_tracemalloc_current_mb": 0.240265,
+            "python_tracemalloc_peak_mb": 0.240707
+          }
+        ]
+      },
+      "dataset": "set1"
+    }
+  ],
+  "set2": [
+    {
+      "stage": "RAW",
+      "point_count": 371766,
+      "loss_ratio_from_previous": null,
+      "loss_percent_from_previous": null,
+      "bbox_min": [
+        -1.282025,
+        -9.225185,
+        -7.388458
+      ],
+      "bbox_max": [
+        11.047532,
+        2.114264,
+        1.66957
+      ],
+      "bbox_extent": [
+        12.329557,
+        11.33945,
+        9.058028
+      ],
+      "bbox_volume_m3": 1266.406363,
+      "centroid": [
+        0.572442,
+        -0.423265,
+        -1.393283
+      ],
+      "density_points_per_m3": 293.559801,
+      "dataset": "set2"
+    },
+    {
+      "stage": "Outlier Removal",
+      "point_count": 364166,
+      "loss_ratio_from_previous": 0.020443,
+      "loss_percent_from_previous": 2.0443,
+      "bbox_min": [
+        -0.862003,
+        -9.182234,
+        -7.380173
+      ],
+      "bbox_max": [
+        11.047532,
+        2.110117,
+        1.453394
+      ],
+      "bbox_extent": [
+        11.909535,
+        11.292351,
+        8.833567
+      ],
+      "bbox_volume_m3": 1187.996792,
+      "centroid": [
+        0.488343,
+        -0.305694,
+        -1.306233
+      ],
+      "density_points_per_m3": 306.537865,
+      "dataset": "set2"
+    },
+    {
+      "stage": "Voxel Down Sample + DBSCAN",
+      "point_count": 4200,
+      "loss_ratio_from_previous": 0.988467,
+      "loss_percent_from_previous": 98.8467,
+      "bbox_min": [
+        -0.848295,
+        -9.169596,
+        -7.374809
+      ],
+      "bbox_max": [
+        11.043644,
+        2.095286,
+        1.443144
+      ],
+      "bbox_extent": [
+        11.891939,
+        11.264882,
+        8.817953
+      ],
+      "bbox_volume_m3": 1181.264317,
+      "centroid": [
+        4.493524,
+        -5.461642,
+        -5.216742
+      ],
+      "density_points_per_m3": 3.555512,
+      "dataset": "set2"
+    },
+    {
+      "stage": "Ranking + Cluster Selection",
+      "point_count": 3278,
+      "loss_ratio_from_previous": 0.219524,
+      "loss_percent_from_previous": 21.9524,
+      "bbox_min": [
+        -0.725309,
+        -9.169596,
+        -7.374809
+      ],
+      "bbox_max": [
+        7.412486,
+        0.644581,
+        -0.637976
+      ],
+      "bbox_extent": [
+        8.137795,
+        9.814177,
+        6.736833
+      ],
+      "bbox_volume_m3": 538.042284,
+      "centroid": [
+        3.626917,
+        -6.013584,
+        -5.362235
+      ],
+      "density_points_per_m3": 6.092458,
+      "dataset": "set2"
+    },
+    {
+      "stage": "PDI",
+      "point_count": 3278,
+      "loss_ratio_from_previous": 0.0,
+      "loss_percent_from_previous": 0.0,
+      "bbox_min": [
+        -0.725309,
+        -9.169596,
+        -7.374809
+      ],
+      "bbox_max": [
+        7.412486,
+        0.644581,
+        -0.637976
+      ],
+      "bbox_extent": [
+        8.137795,
+        9.814177,
+        6.736833
+      ],
+      "bbox_volume_m3": 538.042284,
+      "centroid": [
+        3.626917,
+        -6.013584,
+        -5.362235
+      ],
+      "density_points_per_m3": 6.092458,
+      "pdi": {
+        "status": "ok",
+        "method": "point_density_integration",
+        "volume_m3": 39.0156,
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 74.396752,
+        "hull_volume_m3": 44.061063,
+        "solid_voxels": 2497,
+        "occupied_voxels": 346,
+        "dense_voxels": 346,
+        "ground_truth_volume_m3": 119.74,
+        "absolute_error_m3": 80.7244,
+        "percent_error": 67.416402
+      },
+      "selected_cluster_ids": [
+        4,
+        8
+      ],
+      "dbscan_summary": {
+        "voxel_size": 0.06,
+        "eps": 0.35,
+        "min_points": 20,
+        "points_after_outlier": 364166,
+        "points_after_voxel": 4200,
+        "voxel_loss_ratio": 0.988467,
+        "cluster_count": 11,
+        "noise_points": 342,
+        "noise_ratio": 0.081429,
+        "cluster_point_distribution_top10": [
+          2609,
+          669,
+          276,
+          61,
+          55,
+          50,
+          38,
+          31,
+          31,
+          21
+        ],
+        "timing_memory": [
+          {
+            "stage": "voxel_down_sample",
+            "time_seconds": 0.019136,
+            "python_tracemalloc_current_mb": 5.3e-05,
+            "python_tracemalloc_peak_mb": 6.1e-05
+          },
+          {
+            "stage": "dbscan",
+            "time_seconds": 0.024488,
+            "python_tracemalloc_current_mb": 0.032249,
+            "python_tracemalloc_peak_mb": 0.032692
+          }
+        ]
+      },
+      "dataset": "set2"
+    }
+  ]
+}

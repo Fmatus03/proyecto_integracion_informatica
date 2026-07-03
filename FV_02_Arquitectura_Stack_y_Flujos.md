@@ -135,7 +135,7 @@ Bloquear implementación hasta recibir aprobación.
 
 ```
 forestvol/
-├── back_data/                    # Documentación del proyecto (solo lectura)
+├── projects/ForestVol/back_data/ # Documentacion del proyecto (solo lectura)
 │   ├── Casos de uso
 │   ├── Diagramas de arquitectura
 │   ├── Dominios problemática
@@ -150,16 +150,8 @@ forestvol/
 │   ├── hito_1_calibracion_espacial.json
 │   ├── hito_2_volumetria_funcional.json
 │   └── hito_3_mvp_completo.json
-├── .factory/                     # Control operacional del ciclo SDD
-│   ├── runs/
-│   │   └── <cycle_id>/
-│   │       ├── state.json
-│   │       ├── cycle_log.jsonl
-│   │       ├── usage_ledger.jsonl
-│   │       ├── index-update-report.md
-│   │       └── final-report.md
-│   └── memory/
-│       └── Aprendizaje.ForestVol.md
+├── trazabilidad/lessons/         # Memoria operativa y lecciones aprendidas
+│   └── LESSONS_LEARNED.jsonl
 ├── specs/
 │   └── forestvol-mvp/
 │       ├── spec.md
@@ -599,7 +591,7 @@ Si `mesh.is_watertight() == False`:
   -> [Specify] → specs/forestvol-mvp/spec.md
   -> [Clarify] → (preguntas abiertas de la spec)
   -> [Checklist] → requisitos claros, testables, con criterios de aceptación
-  -> [Context Grounding] → indexar back_data/, código existente, aprendizajes
+  -> [Context Grounding] -> indexar projects/ForestVol/back_data/, codigo existente, aprendizajes
   -> [Plan] → specs/forestvol-mvp/plan.md
   -> [Plan Validation] → stack aprobado, dependencias verificadas
   -> [Tasks] → specs/forestvol-mvp/tasks.md (tareas atómicas por RF-XX)

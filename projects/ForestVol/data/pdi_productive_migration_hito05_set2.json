@@ -1,0 +1,897 @@
+{
+  "run_id": "RUN-PDI-PRODUCTIVE-MIGRATION-01",
+  "dataset": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2",
+  "image_count": 28,
+  "steps": [
+    {
+      "step": "upload",
+      "status_code": 200,
+      "seconds": 1.978,
+      "body": {
+        "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+        "image_count": 28,
+        "valid": true,
+        "errors": [],
+        "pipeline_state": "VALIDATED"
+      }
+    },
+    {
+      "step": "calibrate",
+      "status_code": 200,
+      "seconds": 12.331,
+      "body": {
+        "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+        "calibration_mode": "automatic",
+        "guide_detected_in_n_images": 21,
+        "detection_confidence": 0.75,
+        "scale_px_per_cm": 0.9865,
+        "scale_error_percentage": null,
+        "pipeline_state": "CALIBRATED",
+        "warning": "Automatic detection confidence below recommended threshold (0.90); continuing with detected markers."
+      }
+    },
+    {
+      "step": "reconstruct",
+      "status_code": 202,
+      "seconds": 0.055,
+      "body": {
+        "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+        "pipeline_state": "RECONSTRUCTION_PENDING",
+        "message": "Reconstruction task submitted to NodeODM. Poll /api/results/{session_id} for status."
+      }
+    }
+  ],
+  "polls": [
+    {
+      "poll": 1,
+      "status_code": 200,
+      "seconds": 0.019,
+      "pipeline_state": "RECONSTRUCTION_PENDING",
+      "progress_percentage": 0,
+      "message": "Reconstruction task submitted to NodeODM"
+    },
+    {
+      "poll": 2,
+      "status_code": 200,
+      "seconds": 0.163,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 3,
+      "status_code": 200,
+      "seconds": 0.1,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 4,
+      "status_code": 200,
+      "seconds": 0.02,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 5,
+      "status_code": 200,
+      "seconds": 0.018,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 6,
+      "status_code": 200,
+      "seconds": 0.021,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 7,
+      "status_code": 200,
+      "seconds": 0.041,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 8,
+      "status_code": 200,
+      "seconds": 0.022,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 9,
+      "status_code": 200,
+      "seconds": 0.022,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 10,
+      "status_code": 200,
+      "seconds": 0.043,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 11,
+      "status_code": 200,
+      "seconds": 0.029,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 12,
+      "status_code": 200,
+      "seconds": 0.024,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 13,
+      "status_code": 200,
+      "seconds": 0.021,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 14,
+      "status_code": 200,
+      "seconds": 0.029,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 15,
+      "status_code": 200,
+      "seconds": 0.018,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 16,
+      "status_code": 200,
+      "seconds": 0.017,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 17,
+      "status_code": 200,
+      "seconds": 0.037,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 18,
+      "status_code": 200,
+      "seconds": 0.02,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 19,
+      "status_code": 200,
+      "seconds": 0.028,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 20,
+      "status_code": 200,
+      "seconds": 0.022,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 21,
+      "status_code": 200,
+      "seconds": 0.028,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 22,
+      "status_code": 200,
+      "seconds": 0.034,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 23,
+      "status_code": 200,
+      "seconds": 0.069,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 24,
+      "status_code": 200,
+      "seconds": 0.063,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 25,
+      "status_code": 200,
+      "seconds": 0.096,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 26,
+      "status_code": 200,
+      "seconds": 0.038,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 27,
+      "status_code": 200,
+      "seconds": 0.03,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 28,
+      "status_code": 200,
+      "seconds": 0.029,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 29,
+      "status_code": 200,
+      "seconds": 0.067,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 30,
+      "status_code": 200,
+      "seconds": 0.14,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 31,
+      "status_code": 200,
+      "seconds": 0.021,
+      "pipeline_state": "RECONSTRUCTING",
+      "progress_percentage": 0,
+      "message": "NodeODM task started"
+    },
+    {
+      "poll": 32,
+      "status_code": 200,
+      "seconds": 0.023,
+      "pipeline_state": "COMPLETED",
+      "progress_percentage": 100,
+      "message": "Preliminary volumetry completed"
+    }
+  ],
+  "final": {
+    "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+    "pipeline_state": "COMPLETED",
+    "progress_percentage": 100,
+    "point_cloud_path": "data/processed/723f91e2-b1b5-43f7-b336-6816d8300509/point_cloud.ply",
+    "mesh_ply_path": null,
+    "mesh_glb_path": null,
+    "mesh_watertight": null,
+    "mesh_repair_applied": false,
+    "volume_m3": 39.0156,
+    "volume_method": "point_density_integration",
+    "confidence_score": 25.0,
+    "confidence_level": "CRITICAL",
+    "quality_gates": [
+      {
+        "name": "segmentation.isolated_points",
+        "status": "PASS",
+        "metric": "isolated_point_ratio",
+        "value": 0.002746,
+        "explanation": "High isolated-point ratio indicates possible background leakage or sparse segmentation."
+      },
+      {
+        "name": "segmentation.outliers",
+        "status": "PASS",
+        "metric": "outlier_ratio",
+        "value": 0.006711,
+        "explanation": "Nearest-neighbor outliers can expand PDI support and inflate volume."
+      },
+      {
+        "name": "segmentation.mean_density",
+        "status": "FAIL",
+        "metric": "density_points_per_m3",
+        "value": 6.0925,
+        "explanation": "Low global density increases sensitivity to voxelization."
+      },
+      {
+        "name": "segmentation.bbox_aspect",
+        "status": "PASS",
+        "metric": "axis_ratio",
+        "value": 1.4568,
+        "explanation": "Extreme bounding-box ratios can indicate missing views or background contamination."
+      },
+      {
+        "name": "coverage.spatial_distribution",
+        "status": "PASS",
+        "metric": "spatial_coverage_ratio",
+        "value": 0.092593,
+        "explanation": "Low occupied-cell coverage suggests incomplete spatial support."
+      },
+      {
+        "name": "coverage.interior_holes",
+        "status": "FAIL",
+        "metric": "interior_hole_ratio",
+        "value": 0.921875,
+        "explanation": "High empty-interior ratio is a proxy for large holes or missing regions."
+      },
+      {
+        "name": "coverage.lateral",
+        "status": "FAIL",
+        "metric": "lateral_coverage_ratio",
+        "value": 0.097222,
+        "explanation": "Low lateral coverage can cause structured underestimation."
+      },
+      {
+        "name": "coverage.top",
+        "status": "FAIL",
+        "metric": "top_coverage_ratio",
+        "value": 0.055556,
+        "explanation": "Low top coverage can indicate missing upper surface observations."
+      },
+      {
+        "name": "coverage.bottom",
+        "status": "PASS",
+        "metric": "bottom_coverage_ratio",
+        "value": 0.222222,
+        "explanation": "Low bottom coverage is expected in aerial capture but reduces volumetric confidence."
+      },
+      {
+        "name": "geometry.point_count",
+        "status": "FAIL",
+        "metric": "point_count",
+        "value": 3278,
+        "explanation": "Low point count reduces estimator stability."
+      },
+      {
+        "name": "geometry.components",
+        "status": "PASS",
+        "metric": "voxel_components",
+        "value": 3,
+        "explanation": "Many disconnected occupied components indicate fragmentation or background leakage."
+      },
+      {
+        "name": "geometry.spatial_consistency",
+        "status": "PASS",
+        "metric": "dominant_component_voxel_ratio",
+        "value": 0.809249,
+        "explanation": "Low dominant-component ratio indicates fragmented spatial support."
+      }
+    ],
+    "diagnostic": [
+      "segmentation.mean_density: FAIL - Low global density increases sensitivity to voxelization.",
+      "coverage.interior_holes: FAIL - High empty-interior ratio is a proxy for large holes or missing regions.",
+      "coverage.lateral: FAIL - Low lateral coverage can cause structured underestimation.",
+      "coverage.top: FAIL - Low top coverage can indicate missing upper surface observations.",
+      "geometry.point_count: FAIL - Low point count reduces estimator stability."
+    ],
+    "pdi_metrics": {
+      "method": "point_density_integration",
+      "volume_m3": 39.0156,
+      "voxel_size_m": 0.25,
+      "density_threshold_points_per_voxel": 1,
+      "hull_density_points_per_m3": 74.396752,
+      "hull_volume_m3": 44.061063,
+      "solid_voxels": 2497,
+      "occupied_voxels": 346,
+      "dense_voxels": 346
+    },
+    "bounding_box_m": {
+      "length_m": 8.1378,
+      "width_m": 9.8142,
+      "height_m": 6.7368
+    },
+    "ground_truth_volume_m3": 119.74,
+    "error_percentage": 67.4164,
+    "reconstruction_attempts": [
+      {
+        "attempt": "attempt_1",
+        "options": [
+          {
+            "name": "feature-quality",
+            "value": "ultra"
+          },
+          {
+            "name": "pc-quality",
+            "value": "high"
+          },
+          {
+            "name": "min-num-features",
+            "value": "16000"
+          },
+          {
+            "name": "matcher-neighbors",
+            "value": "12"
+          },
+          {
+            "name": "depthmap-resolution",
+            "value": "high"
+          },
+          {
+            "name": "pc-filter",
+            "value": "1"
+          },
+          {
+            "name": "end-with",
+            "value": "odm_filterpoints"
+          }
+        ],
+        "task_uuid": "86f11977-7789-42d8-b4b0-852f623f1df0",
+        "status": "completed",
+        "message": null
+      }
+    ],
+    "scale_evidence": {
+      "image_count": 28,
+      "images_with_exif": 0,
+      "images_with_gps": 0,
+      "gcp_path": "data/processed/723f91e2-b1b5-43f7-b336-6816d8300509/gcp_list.txt",
+      "scale_certified": true,
+      "reason": "aruco_gcp_generated",
+      "aruco_gcp": {
+        "gcp_path": "data/processed/723f91e2-b1b5-43f7-b336-6816d8300509/gcp_list.txt",
+        "marker_size_m": 1.0,
+        "detections_count": 15,
+        "rejected_detections_count": 6,
+        "gcp_count": 60,
+        "detections": [
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014000.png",
+            "marker_id": 0,
+            "side_px": 135.175,
+            "corners_px": [
+              [
+                133.45794677734375,
+                836.9730224609375
+              ],
+              [
+                274.34271240234375,
+                838.127685546875
+              ],
+              [
+                203.26722717285156,
+                933.5525512695312
+              ],
+              [
+                49.13911056518555,
+                931.5191650390625
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014016.png",
+            "marker_id": 0,
+            "side_px": 129.6255,
+            "corners_px": [
+              [
+                259.65045166015625,
+                809.451416015625
+              ],
+              [
+                400.66705322265625,
+                811.5188598632812
+              ],
+              [
+                346.41552734375,
+                904.5349731445312
+              ],
+              [
+                191.79026794433594,
+                902.4814453125
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014026.png",
+            "marker_id": 0,
+            "side_px": 132.5468,
+            "corners_px": [
+              [
+                194.27816772460938,
+                795.6844482421875
+              ],
+              [
+                347.25830078125,
+                786.4334106445312
+              ],
+              [
+                319.57958984375,
+                882.4803466796875
+              ],
+              [
+                150.3710479736328,
+                893.691162109375
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014035.png",
+            "marker_id": 0,
+            "side_px": 152.7549,
+            "corners_px": [
+              [
+                431.5993347167969,
+                894.2445678710938
+              ],
+              [
+                581.949462890625,
+                834.8959350585938
+              ],
+              [
+                689.6718139648438,
+                918.576171875
+              ],
+              [
+                531.4093017578125,
+                990.9262084960938
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014042.png",
+            "marker_id": 0,
+            "side_px": 148.6713,
+            "corners_px": [
+              [
+                977.6923828125,
+                941.680908203125
+              ],
+              [
+                1064.2430419921875,
+                859.1507568359375
+              ],
+              [
+                1228.492431640625,
+                903.3749389648438
+              ],
+              [
+                1155.9180908203125,
+                996.9273071289062
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014049.png",
+            "marker_id": 0,
+            "side_px": 150.0816,
+            "corners_px": [
+              [
+                1247.8533935546875,
+                905.9750366210938
+              ],
+              [
+                1280.2718505859375,
+                824.7266235351562
+              ],
+              [
+                1473.768798828125,
+                868.8609619140625
+              ],
+              [
+                1461.9658203125,
+                961.3391723632812
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014102.png",
+            "marker_id": 0,
+            "side_px": 139.8549,
+            "corners_px": [
+              [
+                1576.385986328125,
+                856.0595092773438
+              ],
+              [
+                1524.3040771484375,
+                770.4549560546875
+              ],
+              [
+                1686.070068359375,
+                778.4541015625
+              ],
+              [
+                1758.9246826171875,
+                866.6643676757812
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014129.png",
+            "marker_id": 0,
+            "side_px": 127.1842,
+            "corners_px": [
+              [
+                1749.797607421875,
+                778.7212524414062
+              ],
+              [
+                1651.010986328125,
+                709.93017578125
+              ],
+              [
+                1775.095947265625,
+                699.3718872070312
+              ],
+              [
+                1884.800537109375,
+                765.6956787109375
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014145.png",
+            "marker_id": 0,
+            "side_px": 73.2515,
+            "corners_px": [
+              [
+                1617.608154296875,
+                483.79473876953125
+              ],
+              [
+                1518.6087646484375,
+                460.71771240234375
+              ],
+              [
+                1563.40185546875,
+                435.653076171875
+              ],
+              [
+                1654.576904296875,
+                455.1014099121094
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014339.png",
+            "marker_id": 0,
+            "side_px": 103.2014,
+            "corners_px": [
+              [
+                197.42074584960938,
+                597.8088989257812
+              ],
+              [
+                270.4868469238281,
+                625.8842163085938
+              ],
+              [
+                154.47930908203125,
+                680.2134399414062
+              ],
+              [
+                81.31436157226562,
+                648.5037231445312
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014347.png",
+            "marker_id": 0,
+            "side_px": 132.902,
+            "corners_px": [
+              [
+                154.54348754882812,
+                739.4660034179688
+              ],
+              [
+                278.1768493652344,
+                753.3125610351562
+              ],
+              [
+                171.13946533203125,
+                832.5924072265625
+              ],
+              [
+                37.704166412353516,
+                815.6787109375
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014420.png",
+            "marker_id": 0,
+            "side_px": 85.271,
+            "corners_px": [
+              [
+                143.0017547607422,
+                981.7092895507812
+              ],
+              [
+                225.27938842773438,
+                988.0722045898438
+              ],
+              [
+                215.3334503173828,
+                1074.6402587890625
+              ],
+              [
+                132.12950134277344,
+                1069.068359375
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014429.png",
+            "marker_id": 0,
+            "side_px": 78.0452,
+            "corners_px": [
+              [
+                1081.0108642578125,
+                117.01536560058594
+              ],
+              [
+                1002.9830322265625,
+                116.01490020751953
+              ],
+              [
+                1003.9805297851562,
+                37.974605560302734
+              ],
+              [
+                1082.0225830078125,
+                38.97050094604492
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014454.png",
+            "marker_id": 0,
+            "side_px": 62.9249,
+            "corners_px": [
+              [
+                569.349853515625,
+                68.23811340332031
+              ],
+              [
+                522.1309814453125,
+                109.81739044189453
+              ],
+              [
+                481.04901123046875,
+                62.46382522583008
+              ],
+              [
+                528.335693359375,
+                20.54656410217285
+              ]
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014507.png",
+            "marker_id": 0,
+            "side_px": 69.2144,
+            "corners_px": [
+              [
+                349.51812744140625,
+                1024.501953125
+              ],
+              [
+                410.6587829589844,
+                994.6574096679688
+              ],
+              [
+                438.82275390625,
+                1058.059814453125
+              ],
+              [
+                377.3973388671875,
+                1089.29345703125
+              ]
+            ]
+          }
+        ],
+        "rejected_detections": [
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014203.png",
+            "side_px": 57.5716,
+            "mean_side_px": 57.5716,
+            "side_cv": 0.4987,
+            "area_ratio": 0.2861,
+            "reasons": [
+              "marker_too_small",
+              "unstable_side_lengths"
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014212.png",
+            "side_px": 50.9751,
+            "mean_side_px": 50.9751,
+            "side_cv": 0.556,
+            "area_ratio": 0.2579,
+            "reasons": [
+              "marker_too_small",
+              "unstable_side_lengths"
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014219.png",
+            "side_px": 51.5455,
+            "mean_side_px": 51.5455,
+            "side_cv": 0.5473,
+            "area_ratio": 0.2569,
+            "reasons": [
+              "marker_too_small",
+              "unstable_side_lengths"
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014314.png",
+            "side_px": 52.5989,
+            "mean_side_px": 52.5989,
+            "side_cv": 0.5241,
+            "area_ratio": 0.2406,
+            "reasons": [
+              "marker_too_small",
+              "unstable_side_lengths"
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014320.png",
+            "side_px": 61.1081,
+            "mean_side_px": 61.1081,
+            "side_cv": 0.6326,
+            "area_ratio": 0.2111,
+            "reasons": [
+              "unstable_side_lengths"
+            ]
+          },
+          {
+            "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014327.png",
+            "side_px": 77.2173,
+            "mean_side_px": 77.2173,
+            "side_cv": 0.5338,
+            "area_ratio": 0.2325,
+            "reasons": [
+              "unstable_side_lengths"
+            ]
+          }
+        ]
+      }
+    },
+    "error_code": null,
+    "message": "Preliminary volumetry completed"
+  },
+  "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+  "total_seconds": 335.804
+}

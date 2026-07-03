@@ -1,0 +1,150 @@
+{
+  "method": "point-cloud SDF with TSDF truncation and marching tetrahedra extraction",
+  "not_pipeline_integration": true,
+  "sign_source": "dominant volumetric inside/outside prior from segmented point cloud",
+  "distance_source": "continuous nearest-neighbor distance to metric point cloud",
+  "datasets": {
+    "set1": {
+      "input_points": 19879,
+      "grid_shape": [
+        45,
+        69,
+        30
+      ],
+      "grid_step_m": 0.25,
+      "truncation_m": 0.75,
+      "sdf_grid": "/app/data/tsdf_sdf_outputs/set1/sdf_grid.npz",
+      "sdf_mesh": "/app/data/tsdf_sdf_outputs/set1/sdf_marching_tetrahedra_mesh.ply",
+      "poisson_metrics": {
+        "vertices": 29592,
+        "triangles": 58975,
+        "boundary_edges": 191,
+        "non_manifold_edges": 4,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          15.963822,
+          16.478785,
+          6.404328
+        ],
+        "area": 264.530912,
+        "volume": null,
+        "components_connected": 10
+      },
+      "voxel_metrics": {
+        "vertices": 3583,
+        "triangles": 7164,
+        "boundary_edges": 0,
+        "non_manifold_edges": 1,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          10.0,
+          6.75,
+          5.5
+        ],
+        "area": 223.875,
+        "volume": null,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.48055614,
+        "area_drift_vs_poisson_pct": -15.369059,
+        "hausdorff_approx": 10.751639,
+        "chamfer_approx": 3.880317
+      },
+      "sdf_tsdf_metrics": {
+        "vertices": 10012,
+        "triangles": 20020,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          10.0,
+          6.758066,
+          5.501884
+        ],
+        "area": 186.746325,
+        "volume": 95.756277,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.48026213,
+        "area_drift_vs_poisson_pct": -29.404725,
+        "hausdorff_approx": 10.759122,
+        "chamfer_approx": 3.987835
+      }
+    },
+    "set2": {
+      "input_points": 26113,
+      "grid_shape": [
+        37,
+        46,
+        35
+      ],
+      "grid_step_m": 0.25,
+      "truncation_m": 0.75,
+      "sdf_grid": "/app/data/tsdf_sdf_outputs/set2/sdf_grid.npz",
+      "sdf_mesh": "/app/data/tsdf_sdf_outputs/set2/sdf_marching_tetrahedra_mesh.ply",
+      "poisson_metrics": {
+        "vertices": 83623,
+        "triangles": 167102,
+        "boundary_edges": 226,
+        "non_manifold_edges": 39,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          7.819652,
+          10.009154,
+          7.107628
+        ],
+        "area": 162.982306,
+        "volume": null,
+        "components_connected": 39
+      },
+      "voxel_metrics": {
+        "vertices": 4826,
+        "triangles": 9648,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.25,
+          7.5
+        ],
+        "area": 301.5,
+        "volume": 135.671875,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.0339716,
+        "area_drift_vs_poisson_pct": 84.989406,
+        "hausdorff_approx": 1.197256,
+        "chamfer_approx": 1.2059
+      },
+      "sdf_tsdf_metrics": {
+        "vertices": 12948,
+        "triangles": 25892,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.251058,
+          7.5
+        ],
+        "area": 245.881311,
+        "volume": 133.573573,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.03400707,
+        "area_drift_vs_poisson_pct": 50.863806,
+        "hausdorff_approx": 1.309915,
+        "chamfer_approx": 1.221416
+      }
+    }
+  }
+}

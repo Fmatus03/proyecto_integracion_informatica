@@ -1,0 +1,422 @@
+{
+  "dataset": "C:\\Users\\Fabian Matus\\OneDrive\\Escritorio\\harness_con_separacion_de_proyectos\\projects\\ForestVol\\set_imagenes+guia\\set_fotos_ultimo",
+  "image_count": 50,
+  "session_id": "a1ae51a5-1d9e-4c73-9e24-600321d26eb4",
+  "point_cloud_path": "C:\\Users\\Fabian Matus\\OneDrive\\Escritorio\\harness_con_separacion_de_proyectos\\projects\\ForestVol\\data\\processed\\a1ae51a5-1d9e-4c73-9e24-600321d26eb4\\point_cloud.ply",
+  "nodeodm": {
+    "attempts": "resumed_from_existing_nodeodm_point_cloud",
+    "task_uuid": "e67aa093-e1b2-4a61-92b7-cf8c9073b857",
+    "scale_payload": {
+      "scale_certified": true,
+      "reason": "reconstructed_aruco_3d_resume_from_existing_nodeodm_cloud",
+      "reconstructed_aruco_scale": {
+        "method": "reconstructed_aruco_3d",
+        "marker_size_m": 1.0,
+        "point_cloud_path": "C:\\Users\\Fabian Matus\\OneDrive\\Escritorio\\harness_con_separacion_de_proyectos\\projects\\ForestVol\\data\\processed\\a1ae51a5-1d9e-4c73-9e24-600321d26eb4\\point_cloud.ply",
+        "point_count": 750418,
+        "color_candidate_points": 250000,
+        "candidate_count": 14,
+        "scale_factor_m_per_unit": 0.56331326,
+        "selected_candidate": {
+          "point_count": 794,
+          "centroid": [
+            8.875414,
+            -1.205535,
+            4.825478
+          ],
+          "pca_extent": [
+            1.729711,
+            1.820712,
+            0.22226
+          ],
+          "reconstructed_side_units": 1.775211,
+          "scale_factor_m_per_unit": 0.56331326,
+          "plane_thickness_units": 0.22226,
+          "flatness_ratio": 0.122073,
+          "square_ratio": 0.950019,
+          "distance_to_expected_center_units": 9.815378,
+          "confidence": 0.077117
+        },
+        "candidates": [
+          {
+            "point_count": 794,
+            "centroid": [
+              8.875414,
+              -1.205535,
+              4.825478
+            ],
+            "pca_extent": [
+              1.729711,
+              1.820712,
+              0.22226
+            ],
+            "reconstructed_side_units": 1.775211,
+            "scale_factor_m_per_unit": 0.56331326,
+            "plane_thickness_units": 0.22226,
+            "flatness_ratio": 0.122073,
+            "square_ratio": 0.950019,
+            "distance_to_expected_center_units": 9.815378,
+            "confidence": 0.077117
+          },
+          {
+            "point_count": 235,
+            "centroid": [
+              3.157222,
+              -1.062015,
+              -1.339295
+            ],
+            "pca_extent": [
+              0.714771,
+              0.989601,
+              0.206734
+            ],
+            "reconstructed_side_units": 0.852186,
+            "scale_factor_m_per_unit": 1.17345333,
+            "plane_thickness_units": 0.206734,
+            "flatness_ratio": 0.208906,
+            "square_ratio": 0.722282,
+            "distance_to_expected_center_units": 3.360719,
+            "confidence": 0.061585
+          },
+          {
+            "point_count": 466,
+            "centroid": [
+              4.214714,
+              -7.855816,
+              0.316766
+            ],
+            "pca_extent": [
+              1.432448,
+              0.871536,
+              0.250396
+            ],
+            "reconstructed_side_units": 1.151992,
+            "scale_factor_m_per_unit": 0.86806155,
+            "plane_thickness_units": 0.250396,
+            "flatness_ratio": 0.174803,
+            "square_ratio": 0.608424,
+            "distance_to_expected_center_units": 9.149815,
+            "confidence": 0.046102
+          },
+          {
+            "point_count": 297,
+            "centroid": [
+              6.578251,
+              2.233557,
+              4.878689
+            ],
+            "pca_extent": [
+              0.846892,
+              1.164496,
+              0.232856
+            ],
+            "reconstructed_side_units": 1.005694,
+            "scale_factor_m_per_unit": 0.99433832,
+            "plane_thickness_units": 0.232856,
+            "flatness_ratio": 0.199963,
+            "square_ratio": 0.72726,
+            "distance_to_expected_center_units": 7.984482,
+            "confidence": 0.038467
+          },
+          {
+            "point_count": 96,
+            "centroid": [
+              2.333795,
+              -0.234685,
+              -1.119619
+            ],
+            "pca_extent": [
+              0.311341,
+              0.199648,
+              0.088981
+            ],
+            "reconstructed_side_units": 0.255494,
+            "scale_factor_m_per_unit": 3.91398038,
+            "plane_thickness_units": 0.088981,
+            "flatness_ratio": 0.285798,
+            "square_ratio": 0.64125,
+            "distance_to_expected_center_units": 2.270707,
+            "confidence": 0.026885
+          },
+          {
+            "point_count": 203,
+            "centroid": [
+              5.982785,
+              -5.086795,
+              4.841709
+            ],
+            "pca_extent": [
+              1.012356,
+              0.723973,
+              0.126144
+            ],
+            "reconstructed_side_units": 0.868164,
+            "scale_factor_m_per_unit": 1.15185569,
+            "plane_thickness_units": 0.126144,
+            "flatness_ratio": 0.124604,
+            "square_ratio": 0.715136,
+            "distance_to_expected_center_units": 9.204094,
+            "confidence": 0.024908
+          },
+          {
+            "point_count": 84,
+            "centroid": [
+              0.875527,
+              2.24069,
+              -0.301462
+            ],
+            "pca_extent": [
+              0.37844,
+              0.185369,
+              0.065298
+            ],
+            "reconstructed_side_units": 0.281905,
+            "scale_factor_m_per_unit": 3.54730019,
+            "plane_thickness_units": 0.065298,
+            "flatness_ratio": 0.172544,
+            "square_ratio": 0.489826,
+            "distance_to_expected_center_units": 1.806073,
+            "confidence": 0.024266
+          },
+          {
+            "point_count": 319,
+            "centroid": [
+              13.176146,
+              -1.578996,
+              2.161312
+            ],
+            "pca_extent": [
+              1.435929,
+              0.722071,
+              0.053736
+            ],
+            "reconstructed_side_units": 1.079,
+            "scale_factor_m_per_unit": 0.9267839,
+            "plane_thickness_units": 0.053736,
+            "flatness_ratio": 0.037422,
+            "square_ratio": 0.50286,
+            "distance_to_expected_center_units": 13.026057,
+            "confidence": 0.022017
+          },
+          {
+            "point_count": 156,
+            "centroid": [
+              8.729049,
+              1.066719,
+              4.984058
+            ],
+            "pca_extent": [
+              0.94542,
+              0.613637,
+              0.143897
+            ],
+            "reconstructed_side_units": 0.779528,
+            "scale_factor_m_per_unit": 1.28282684,
+            "plane_thickness_units": 0.143897,
+            "flatness_ratio": 0.152204,
+            "square_ratio": 0.649063,
+            "distance_to_expected_center_units": 9.637388,
+            "confidence": 0.01614
+          },
+          {
+            "point_count": 179,
+            "centroid": [
+              7.246661,
+              1.16995,
+              4.818362
+            ],
+            "pca_extent": [
+              0.580756,
+              1.098225,
+              0.275543
+            ],
+            "reconstructed_side_units": 0.839491,
+            "scale_factor_m_per_unit": 1.1911985,
+            "plane_thickness_units": 0.275543,
+            "flatness_ratio": 0.250899,
+            "square_ratio": 0.528813,
+            "distance_to_expected_center_units": 8.317624,
+            "confidence": 0.01522
+          }
+        ]
+      }
+    }
+  },
+  "configuration": {
+    "algorithm": "obb_plus_curvature",
+    "obb_percentile": 80,
+    "curvature_percentile": 80
+  },
+  "scale_factor_m_per_unit": 0.56331326,
+  "stage_points": {
+    "raw_scaled": 750418,
+    "after_clean": 745904,
+    "pipeline_volume_input_before_filter": 48684,
+    "after_winner_filter": 19788
+  },
+  "filter_metrics": {
+    "algorithm": "obb_plus_curvature",
+    "obb_percentile": 80,
+    "curvature_percentile": 80,
+    "obb_local_bounds": [
+      [
+        -2.8648256753714074,
+        2.923983772437008
+      ],
+      [
+        -2.823495313778425,
+        2.302828548811135
+      ],
+      [
+        -1.5320019723372824,
+        1.3709513091448253
+      ]
+    ],
+    "curvature_threshold": 0.13526103782512763,
+    "input_points": 48684,
+    "after_obb_points": 24735,
+    "after_curvature_points": 19788,
+    "removed_points": 28896,
+    "removed_percent": 59.354202612768056
+  },
+  "segmentation_quality": {
+    "applied": true,
+    "method": "dbscan_dominant_components",
+    "voxel_size_m": 0.06,
+    "cluster_eps_m": 0.35,
+    "cluster_min_points": 20,
+    "max_components": 2,
+    "min_component_ratio": 0.1,
+    "max_component_height_m": 8.0,
+    "max_component_bbox_volume_m3": 500.0,
+    "max_component_axis_ratio": 8.0,
+    "selection_reason": "dominant_components_fallback",
+    "selected_labels": [
+      0
+    ],
+    "selected_point_count": 48684,
+    "cluster_counts": {
+      "0": 48684,
+      "3": 301,
+      "5": 207,
+      "23": 191,
+      "26": 129,
+      "19": 128,
+      "14": 116,
+      "1": 89
+    },
+    "cluster_metrics": {
+      "0": {
+        "count": 48684,
+        "extent": [
+          10.6745,
+          10.3722,
+          5.0834
+        ],
+        "bbox_volume_m3": 562.8303,
+        "density_points_per_m3": 86.4985,
+        "axis_ratio": 2.0999,
+        "plausible_woodpile": false
+      }
+    }
+  },
+  "original_pdi_recomputed_for_this_run": {
+    "method": "point_density_integration",
+    "volume_m3": 254.6719,
+    "voxel_size_m": 0.25,
+    "density_threshold_points_per_voxel": 2,
+    "hull_density_points_per_m3": 192.136447,
+    "hull_volume_m3": 253.382431,
+    "solid_voxels": 16299,
+    "occupied_voxels": 3148,
+    "dense_voxels": 2923
+  },
+  "filtered_pdi": {
+    "method": "point_density_integration",
+    "volume_m3": 123.9844,
+    "voxel_size_m": 0.25,
+    "density_threshold_points_per_voxel": 2,
+    "hull_density_points_per_m3": 258.643795,
+    "hull_volume_m3": 76.506765,
+    "solid_voxels": 7935,
+    "occupied_voxels": 1465,
+    "dense_voxels": 1360
+  },
+  "geometry": {
+    "before_filter_aabb": {
+      "min": [
+        -1.1643140657354498,
+        -4.758577432144559,
+        -1.5070913505653272
+      ],
+      "max": [
+        9.510204550375438,
+        5.61363496641872,
+        3.5763493601518728
+      ],
+      "extent_m": [
+        10.674518616110888,
+        10.37221239856328,
+        5.0834407107172
+      ],
+      "volume_m3": 562.8302915378753
+    },
+    "after_filter_aabb": {
+      "min": [
+        0.7816847415451385,
+        -4.099908523835378,
+        -0.7032262405108042
+      ],
+      "max": [
+        7.772335731538573,
+        3.0180977623830514,
+        3.4345063566236633
+      ],
+      "extent_m": [
+        6.990650989993434,
+        7.11800628621843,
+        4.137732597134468
+      ],
+      "volume_m3": 205.89149561529072
+    },
+    "after_filter_hull_volume_m3": 76.50676494937593,
+    "after_filter_components_eps035": {
+      "component_count": 2,
+      "component_sizes": [
+        19772,
+        15
+      ]
+    }
+  },
+  "comparison": [
+    {
+      "metric": "pipeline_original_reference",
+      "volume_m3": 234.0469,
+      "difference_vs_real_m3": 114.3069,
+      "error_percent": 95.462586,
+      "difference_vs_benchmark_m3": ""
+    },
+    {
+      "metric": "benchmark_winner_reference",
+      "volume_m3": 121.2031,
+      "difference_vs_real_m3": 1.4631,
+      "error_percent": 1.221897,
+      "difference_vs_benchmark_m3": 0.0
+    },
+    {
+      "metric": "set_fotos_ultimo_e2e_with_winner_filter",
+      "volume_m3": 123.9844,
+      "difference_vs_real_m3": 4.2444,
+      "error_percent": 3.54468,
+      "difference_vs_benchmark_m3": 2.7813
+    }
+  ],
+  "validations": {
+    "pipeline_completed": true,
+    "filtered_cloud_valid": true,
+    "volume_completed": true,
+    "unexpected_components": true,
+    "benchmark_difference_abs_m3": 2.7813
+  },
+  "runtime_seconds": 12.097
+}

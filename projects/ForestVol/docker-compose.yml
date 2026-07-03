@@ -22,7 +22,7 @@ services:
       FORESTVOL_VERSION: ${FORESTVOL_VERSION:-5.1}
     volumes:
       - ./data:/app/data
-      - ./set_imagenes+guia:/app/set_imagenes+guia:ro
+      - ./set_imagenes+guia:/app/projects/ForestVol/set_imagenes+guia:ro
       - forestvol_nodeodm_data:/nodeodm-data:ro
     ports:
       - "${BACKEND_PORT:-8000}:8000"

@@ -9,6 +9,7 @@ from fastapi import APIRouter, Depends, HTTPException
 
 from backend.app.config import Settings, get_settings
 from backend.app.models.schemas import ReconstructionResponse, ResultResponse
+from backend.app.services.cloud_provider import load_pipeline_point_cloud
 from backend.app.services.mesh_service import (
     MeshProcessingError,
     generate_preliminary_volumetry,
@@ -16,6 +17,10 @@ from backend.app.services.mesh_service import (
 )
 from backend.app.services.gcp_service import generate_aruco_gcp_file
 from backend.app.services.nodeodm_client import ATTEMPTS, STATUS_COMPLETED, NodeODMClient
+from backend.app.services.reconstructed_scale_service import (
+    ReconstructedScaleError,
+    estimate_reconstructed_aruco_scale,
+)
 from backend.app.services.scale_service import inspect_scale_inputs
 from backend.app.services.session_store import SessionStore
 
@@ -28,30 +33,41 @@ def _raise(status_code: int, code: str, message: str) -> None:
 
 
 def _ground_truth_volume_m3() -> float | None:
-    manifest_path = Path("set_imagenes+guia/dataset_manifest.json")
-    if not manifest_path.exists():
-        manifest_path = Path("projects/ForestVol/set_imagenes+guia/dataset_manifest.json")
+    manifest_path = Path("projects/ForestVol/set_imagenes+guia/dataset_manifest.json")
     if not manifest_path.exists():
         return None
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     return manifest.get("validation_contract", {}).get("ground_truth_volume_m3")
 
 
+def _metric_point_cloud_scale_from_session(session: dict) -> tuple[float | None, str | None]:
+    scale_evidence = session.get("scale_evidence") or {}
+    reconstructed_scale = scale_evidence.get("reconstructed_aruco_scale") or {}
+    scale_factor = reconstructed_scale.get("scale_factor_m_per_unit")
+    if scale_evidence.get("scale_certified") and scale_factor:
+        return float(scale_factor), "reconstructed_aruco_3d"
+    return None, None
+
+
 def _run_preliminary_volumetry(session_id: str, settings: Settings, store: SessionStore, session: dict) -> None:
-    point_cloud_path = session.get("point_cloud_path")
     scale_px_per_cm = session.get("calibration", {}).get("scale_px_per_cm")
-    if not point_cloud_path:
+    point_cloud_scale_m_per_unit, scale_source = _metric_point_cloud_scale_from_session(session)
+    if not session.get("point_cloud_path"):
         raise MeshProcessingError("Point cloud is required before preliminary volumetry")
+    cloud_source = load_pipeline_point_cloud(session_id, settings)
 
     session["pipeline_state"] = "MESH_PENDING"
     session["message"] = "Preliminary mesh generation started"
+    session["cloud_source"] = cloud_source.fingerprint()
     store.save_session(session_id, session)
 
     artifacts = generate_preliminary_volumetry(
-        Path(point_cloud_path),
+        cloud_source.path,
         store.processed_dir(session_id),
         scale_px_per_cm=scale_px_per_cm,
         ground_truth_volume_m3=_ground_truth_volume_m3(),
+        point_cloud_scale_m_per_unit=point_cloud_scale_m_per_unit,
+        scale_source=scale_source,
     )
     payload = mesh_artifacts_to_session_payload(artifacts)
     session["mesh"] = {
@@ -66,12 +82,19 @@ def _run_preliminary_volumetry(session_id: str, settings: Settings, store: Sessi
             "triangle_count",
             "point_cloud_quality",
             "warning",
+            "legacy_mesh_enabled",
         )
     }
     session["volume"] = {
         key: payload[key]
         for key in (
             "volume_m3",
+            "volume_method",
+            "confidence_score",
+            "confidence_level",
+            "quality_gates",
+            "diagnostic",
+            "pdi_metrics",
             "bounding_box_m",
             "ground_truth_volume_m3",
             "error_percentage",
@@ -92,9 +115,7 @@ def _run_reconstruction(session_id: str, settings: Settings) -> None:
     image_paths = sorted((settings.upload_path / session_id).glob("*"))
     image_paths = [path for path in image_paths if path.is_file() and path.suffix.lower() in {".png", ".jpg", ".jpeg"}]
     processed_dir = store.processed_dir(session_id)
-    dataset_root = Path("set_imagenes+guia/set_fotos_castillo_de_madera")
-    if not dataset_root.exists():
-        dataset_root = Path("projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera")
+    dataset_root = Path("projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera")
     scale_evidence = inspect_scale_inputs(image_paths, dataset_root)
     try:
         gcp_result = generate_aruco_gcp_file(
@@ -106,8 +127,8 @@ def _run_reconstruction(session_id: str, settings: Settings) -> None:
         scale_payload.update(
             {
                 "gcp_path": gcp_result.gcp_path,
-                "scale_certified": True,
-                "reason": "aruco_gcp_generated",
+                "scale_certified": False,
+                "reason": "aruco_gcp_generated_pending_3d_validation",
                 "aruco_gcp": gcp_result.to_payload(),
             }
         )
@@ -116,8 +137,8 @@ def _run_reconstruction(session_id: str, settings: Settings) -> None:
             images_with_exif=scale_evidence.images_with_exif,
             images_with_gps=scale_evidence.images_with_gps,
             gcp_path=gcp_result.gcp_path,
-            scale_certified=True,
-            reason="aruco_gcp_generated",
+            scale_certified=False,
+            reason="aruco_gcp_generated_pending_3d_validation",
         )
     except ValueError as exc:
         scale_payload = scale_evidence.to_payload()
@@ -148,8 +169,33 @@ def _run_reconstruction(session_id: str, settings: Settings) -> None:
             session["progress_percentage"] = int(task_info.get("progress", 100))
             if int(task_info["status"]["code"]) == STATUS_COMPLETED:
                 point_cloud = client.download_first_ply(task_uuid, processed_dir)
+                scale_payload = session.get("scale_evidence") or scale_payload
+                try:
+                    reconstructed_scale = estimate_reconstructed_aruco_scale(
+                        point_cloud,
+                        marker_size_m=settings.calibration_marker_size_cm / 100.0,
+                    )
+                    scale_payload.update(
+                        {
+                            "scale_certified": True,
+                            "reason": "reconstructed_aruco_3d",
+                            "reconstructed_aruco_scale": reconstructed_scale.to_payload(),
+                        }
+                    )
+                except ReconstructedScaleError as exc:
+                    scale_payload.update(
+                        {
+                            "scale_certified": False,
+                            "reason": "reconstructed_aruco_3d_failed",
+                            "reconstructed_aruco_scale_error": {
+                                "message": str(exc),
+                                "details": exc.details,
+                            },
+                        }
+                    )
                 session["pipeline_state"] = "POINT_CLOUD_READY"
                 session["point_cloud_path"] = str(point_cloud)
+                session["scale_evidence"] = scale_payload
                 session["message"] = "Point cloud generated successfully"
                 attempt_record["status"] = "completed"
                 store.save_session(session_id, session)
@@ -240,6 +286,12 @@ def results(
         mesh_watertight=mesh.get("mesh_watertight"),
         mesh_repair_applied=mesh.get("mesh_repair_applied"),
         volume_m3=volume.get("volume_m3"),
+        volume_method=volume.get("volume_method"),
+        confidence_score=volume.get("confidence_score"),
+        confidence_level=volume.get("confidence_level"),
+        quality_gates=volume.get("quality_gates"),
+        diagnostic=volume.get("diagnostic"),
+        pdi_metrics=volume.get("pdi_metrics"),
         bounding_box_m=volume.get("bounding_box_m"),
         ground_truth_volume_m3=volume.get("ground_truth_volume_m3"),
         error_percentage=volume.get("error_percentage"),

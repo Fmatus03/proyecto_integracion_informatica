@@ -1,0 +1,1242 @@
+{
+  "set1": {
+    "nodeodm_raw": {
+      "stage": "nodeodm_raw",
+      "point_count": 401873,
+      "bbox_min": [
+        -12.331664,
+        -12.92817,
+        -30.942608
+      ],
+      "bbox_max": [
+        17.171391,
+        15.431313,
+        9.907525
+      ],
+      "bbox_extent": [
+        29.503055,
+        28.359483,
+        40.850133
+      ],
+      "bbox_volume_m3": 34178.953655,
+      "density_points_per_m3": 11.757908,
+      "centroid": [
+        5.826524,
+        -0.680233,
+        -1.489034
+      ],
+      "mean_nn_distance_m": 0.010189,
+      "median_nn_distance_m": 0.009061,
+      "density_uniformity_cv": 2.899396,
+      "anisotropy_axis_ratio": 1.44044,
+      "coverage": {
+        "bins": 8,
+        "occupied_cells": 80,
+        "coverage_ratio": 0.15625,
+        "hole_ratio": 0.84375,
+        "interior_hole_ratio": 0.759259,
+        "lateral_face_coverage": 0.078125,
+        "top_coverage": 0.265625,
+        "bottom_coverage": 0.015625,
+        "z_layer_coverage": [
+          0.015625,
+          0.125,
+          0.0,
+          0.0,
+          0.15625,
+          0.359375,
+          0.328125,
+          0.265625
+        ]
+      },
+      "components": {
+        "voxel_size_m": 0.25,
+        "component_count": 249,
+        "largest_component_ratio": 0.573997,
+        "mean_component_point_count": 1613.947791,
+        "components_top10": [
+          {
+            "label": 47,
+            "point_count": 230674,
+            "point_ratio": 0.573997,
+            "bbox_extent": [
+              8.023757,
+              6.299534,
+              3.642876
+            ],
+            "centroid": [
+              6.593425,
+              1.948679,
+              0.191545
+            ]
+          },
+          {
+            "label": 35,
+            "point_count": 137124,
+            "point_ratio": 0.341212,
+            "bbox_extent": [
+              8.148409,
+              7.949737,
+              1.133932
+            ],
+            "centroid": [
+              4.459791,
+              -4.196232,
+              -4.253221
+            ]
+          },
+          {
+            "label": 101,
+            "point_count": 10048,
+            "point_ratio": 0.025003,
+            "bbox_extent": [
+              4.011813,
+              4.513717,
+              7.101881
+            ],
+            "centroid": [
+              8.060014,
+              -6.321364,
+              -1.214378
+            ]
+          },
+          {
+            "label": 58,
+            "point_count": 5508,
+            "point_ratio": 0.013706,
+            "bbox_extent": [
+              4.430503,
+              2.866558,
+              5.803973
+            ],
+            "centroid": [
+              5.465284,
+              -8.984051,
+              -1.818977
+            ]
+          },
+          {
+            "label": 21,
+            "point_count": 2225,
+            "point_ratio": 0.005537,
+            "bbox_extent": [
+              1.854877,
+              1.743052,
+              1.514943
+            ],
+            "centroid": [
+              0.811186,
+              0.412116,
+              -1.441947
+            ]
+          },
+          {
+            "label": 204,
+            "point_count": 1847,
+            "point_ratio": 0.004596,
+            "bbox_extent": [
+              0.932925,
+              2.739455,
+              0.983397
+            ],
+            "centroid": [
+              10.453296,
+              0.188148,
+              0.69708
+            ]
+          },
+          {
+            "label": 19,
+            "point_count": 1099,
+            "point_ratio": 0.002735,
+            "bbox_extent": [
+              1.208539,
+              0.958891,
+              0.507314
+            ],
+            "centroid": [
+              -0.203001,
+              0.674884,
+              0.721183
+            ]
+          },
+          {
+            "label": 228,
+            "point_count": 951,
+            "point_ratio": 0.002366,
+            "bbox_extent": [
+              0.889618,
+              1.926812,
+              1.651531
+            ],
+            "centroid": [
+              12.711703,
+              -9.828169,
+              5.216213
+            ]
+          },
+          {
+            "label": 5,
+            "point_count": 920,
+            "point_ratio": 0.002289,
+            "bbox_extent": [
+              3.560975,
+              2.874897,
+              2.691168
+            ],
+            "centroid": [
+              -6.496056,
+              12.471858,
+              -24.590707
+            ]
+          },
+          {
+            "label": 233,
+            "point_count": 711,
+            "point_ratio": 0.001769,
+            "bbox_extent": [
+              0.417441,
+              1.616647,
+              2.599132
+            ],
+            "centroid": [
+              12.893068,
+              -3.567283,
+              4.766467
+            ]
+          }
+        ]
+      },
+      "points_removed_from_previous": 0,
+      "points_removed_ratio_from_previous": 0.0
+    },
+    "after_outlier": {
+      "stage": "after_outlier",
+      "point_count": 398562,
+      "bbox_min": [
+        -12.316292,
+        -11.846539,
+        -25.375698
+      ],
+      "bbox_max": [
+        16.411634,
+        13.428234,
+        7.810715
+      ],
+      "bbox_extent": [
+        28.727926,
+        25.274774,
+        33.186413
+      ],
+      "bbox_volume_m3": 24096.383622,
+      "density_points_per_m3": 16.540324,
+      "centroid": [
+        5.837542,
+        -0.673211,
+        -1.469936
+      ],
+      "mean_nn_distance_m": 0.009603,
+      "median_nn_distance_m": 0.00904,
+      "density_uniformity_cv": 0.438593,
+      "anisotropy_axis_ratio": 1.313025,
+      "coverage": {
+        "bins": 8,
+        "occupied_cells": 65,
+        "coverage_ratio": 0.126953,
+        "hole_ratio": 0.873047,
+        "interior_hole_ratio": 0.810185,
+        "lateral_face_coverage": 0.066406,
+        "top_coverage": 0.15625,
+        "bottom_coverage": 0.078125,
+        "z_layer_coverage": [
+          0.078125,
+          0.0,
+          0.0,
+          0.0,
+          0.15625,
+          0.328125,
+          0.296875,
+          0.15625
+        ]
+      },
+      "components": {
+        "voxel_size_m": 0.25,
+        "component_count": 128,
+        "largest_component_ratio": 0.578098,
+        "mean_component_point_count": 3113.765625,
+        "components_top10": [
+          {
+            "label": 38,
+            "point_count": 230408,
+            "point_ratio": 0.578098,
+            "bbox_extent": [
+              7.883324,
+              6.299534,
+              3.487131
+            ],
+            "centroid": [
+              6.59657,
+              1.948358,
+              0.191803
+            ]
+          },
+          {
+            "label": 28,
+            "point_count": 135925,
+            "point_ratio": 0.341039,
+            "bbox_extent": [
+              8.077518,
+              7.900105,
+              0.838699
+            ],
+            "centroid": [
+              4.455337,
+              -4.171804,
+              -4.253827
+            ]
+          },
+          {
+            "label": 70,
+            "point_count": 10021,
+            "point_ratio": 0.025143,
+            "bbox_extent": [
+              3.968769,
+              4.893358,
+              6.936385
+            ],
+            "centroid": [
+              8.069148,
+              -6.333325,
+              -1.230425
+            ]
+          },
+          {
+            "label": 48,
+            "point_count": 5222,
+            "point_ratio": 0.013102,
+            "bbox_extent": [
+              4.346301,
+              2.866558,
+              5.258265
+            ],
+            "centroid": [
+              5.489282,
+              -8.96746,
+              -1.85854
+            ]
+          },
+          {
+            "label": 116,
+            "point_count": 1844,
+            "point_ratio": 0.004627,
+            "bbox_extent": [
+              0.932925,
+              2.739455,
+              0.774268
+            ],
+            "centroid": [
+              10.453653,
+              0.186906,
+              0.696115
+            ]
+          },
+          {
+            "label": 11,
+            "point_count": 1089,
+            "point_ratio": 0.002732,
+            "bbox_extent": [
+              1.18468,
+              0.948305,
+              0.360969
+            ],
+            "centroid": [
+              -0.206908,
+              0.671159,
+              0.722288
+            ]
+          },
+          {
+            "label": 19,
+            "point_count": 1016,
+            "point_ratio": 0.002549,
+            "bbox_extent": [
+              1.038354,
+              0.677402,
+              0.580731
+            ],
+            "centroid": [
+              0.59782,
+              0.14998,
+              -1.023025
+            ]
+          },
+          {
+            "label": 124,
+            "point_count": 920,
+            "point_ratio": 0.002308,
+            "bbox_extent": [
+              0.77036,
+              1.615227,
+              1.605868
+            ],
+            "centroid": [
+              12.711832,
+              -9.83131,
+              5.20751
+            ]
+          },
+          {
+            "label": 26,
+            "point_count": 907,
+            "point_ratio": 0.002276,
+            "bbox_extent": [
+              0.446706,
+              0.794064,
+              1.198631
+            ],
+            "centroid": [
+              1.330174,
+              0.855942,
+              -1.804798
+            ]
+          },
+          {
+            "label": 100,
+            "point_count": 641,
+            "point_ratio": 0.001608,
+            "bbox_extent": [
+              0.426497,
+              0.741993,
+              0.213627
+            ],
+            "centroid": [
+              9.457695,
+              -9.674316,
+              -3.105034
+            ]
+          }
+        ]
+      },
+      "points_removed_from_previous": 3311,
+      "points_removed_ratio_from_previous": 0.008239,
+      "bbox_volume_lost_from_previous_m3": 10082.570033
+    },
+    "after_dbscan": {
+      "stage": "after_dbscan",
+      "point_count": 15799,
+      "bbox_min": [
+        2.467712,
+        -4.827366,
+        -4.450778
+      ],
+      "bbox_max": [
+        9.572889,
+        4.665641,
+        2.046638
+      ],
+      "bbox_extent": [
+        7.105177,
+        9.493006,
+        6.497416
+      ],
+      "bbox_volume_m3": 438.24735,
+      "density_points_per_m3": 36.050418,
+      "centroid": [
+        6.558608,
+        0.843278,
+        -0.794953
+      ],
+      "mean_nn_distance_m": 0.035901,
+      "median_nn_distance_m": 0.03627,
+      "density_uniformity_cv": 0.289588,
+      "anisotropy_axis_ratio": 1.461043,
+      "coverage": {
+        "bins": 8,
+        "occupied_cells": 81,
+        "coverage_ratio": 0.158203,
+        "hole_ratio": 0.841797,
+        "interior_hole_ratio": 0.814815,
+        "lateral_face_coverage": 0.113281,
+        "top_coverage": 0.125,
+        "bottom_coverage": 0.28125,
+        "z_layer_coverage": [
+          0.28125,
+          0.0,
+          0.0,
+          0.03125,
+          0.234375,
+          0.359375,
+          0.234375,
+          0.125
+        ]
+      },
+      "components": {
+        "voxel_size_m": 0.25,
+        "component_count": 2,
+        "largest_component_ratio": 0.775176,
+        "mean_component_point_count": 7899.5,
+        "components_top10": [
+          {
+            "label": 1,
+            "point_count": 12247,
+            "point_ratio": 0.775176,
+            "bbox_extent": [
+              7.105177,
+              5.447449,
+              3.469413
+            ],
+            "centroid": [
+              6.312674,
+              1.958857,
+              0.192722
+            ]
+          },
+          {
+            "label": 2,
+            "point_count": 3552,
+            "point_ratio": 0.224824,
+            "bbox_extent": [
+              4.697708,
+              3.038216,
+              0.592068
+            ],
+            "centroid": [
+              7.406566,
+              -3.003147,
+              -4.200375
+            ]
+          }
+        ]
+      },
+      "points_removed_from_previous": 382763,
+      "points_removed_ratio_from_previous": 0.96036,
+      "bbox_volume_lost_from_previous_m3": 23658.136272
+    },
+    "before_pdi": {
+      "stage": "before_pdi",
+      "point_count": 15799,
+      "bbox_min": [
+        2.467712,
+        -4.827366,
+        -4.450778
+      ],
+      "bbox_max": [
+        9.572889,
+        4.665641,
+        2.046638
+      ],
+      "bbox_extent": [
+        7.105177,
+        9.493006,
+        6.497416
+      ],
+      "bbox_volume_m3": 438.24735,
+      "density_points_per_m3": 36.050418,
+      "centroid": [
+        6.558608,
+        0.843278,
+        -0.794953
+      ],
+      "mean_nn_distance_m": 0.035901,
+      "median_nn_distance_m": 0.03627,
+      "density_uniformity_cv": 0.289588,
+      "anisotropy_axis_ratio": 1.461043,
+      "coverage": {
+        "bins": 8,
+        "occupied_cells": 81,
+        "coverage_ratio": 0.158203,
+        "hole_ratio": 0.841797,
+        "interior_hole_ratio": 0.814815,
+        "lateral_face_coverage": 0.113281,
+        "top_coverage": 0.125,
+        "bottom_coverage": 0.28125,
+        "z_layer_coverage": [
+          0.28125,
+          0.0,
+          0.0,
+          0.03125,
+          0.234375,
+          0.359375,
+          0.234375,
+          0.125
+        ]
+      },
+      "components": {
+        "voxel_size_m": 0.25,
+        "component_count": 2,
+        "largest_component_ratio": 0.775176,
+        "mean_component_point_count": 7899.5,
+        "components_top10": [
+          {
+            "label": 1,
+            "point_count": 12247,
+            "point_ratio": 0.775176,
+            "bbox_extent": [
+              7.105177,
+              5.447449,
+              3.469413
+            ],
+            "centroid": [
+              6.312674,
+              1.958857,
+              0.192722
+            ]
+          },
+          {
+            "label": 2,
+            "point_count": 3552,
+            "point_ratio": 0.224824,
+            "bbox_extent": [
+              4.697708,
+              3.038216,
+              0.592068
+            ],
+            "centroid": [
+              7.406566,
+              -3.003147,
+              -4.200375
+            ]
+          }
+        ]
+      },
+      "points_removed_from_previous": 0,
+      "points_removed_ratio_from_previous": 0.0,
+      "bbox_volume_lost_from_previous_m3": 0.0
+    }
+  },
+  "set2": {
+    "nodeodm_raw": {
+      "stage": "nodeodm_raw",
+      "point_count": 371766,
+      "bbox_min": [
+        -1.282025,
+        -9.225185,
+        -7.388458
+      ],
+      "bbox_max": [
+        11.047532,
+        2.114264,
+        1.66957
+      ],
+      "bbox_extent": [
+        12.329557,
+        11.33945,
+        9.058028
+      ],
+      "bbox_volume_m3": 1266.406363,
+      "density_points_per_m3": 293.559801,
+      "centroid": [
+        0.572442,
+        -0.423265,
+        -1.393283
+      ],
+      "mean_nn_distance_m": 0.002228,
+      "median_nn_distance_m": 0.001118,
+      "density_uniformity_cv": 1.641841,
+      "anisotropy_axis_ratio": 1.361175,
+      "coverage": {
+        "bins": 8,
+        "occupied_cells": 71,
+        "coverage_ratio": 0.138672,
+        "hole_ratio": 0.861328,
+        "interior_hole_ratio": 0.842593,
+        "lateral_face_coverage": 0.09375,
+        "top_coverage": 0.109375,
+        "bottom_coverage": 0.296875,
+        "z_layer_coverage": [
+          0.296875,
+          0.28125,
+          0.078125,
+          0.078125,
+          0.15625,
+          0.03125,
+          0.078125,
+          0.109375
+        ]
+      },
+      "components": {
+        "voxel_size_m": 0.25,
+        "component_count": 43,
+        "largest_component_ratio": 0.915549,
+        "mean_component_point_count": 8645.72093,
+        "components_top10": [
+          {
+            "label": 3,
+            "point_count": 340370,
+            "point_ratio": 0.915549,
+            "bbox_extent": [
+              1.635659,
+              1.268371,
+              1.770698
+            ],
+            "centroid": [
+              0.108759,
+              0.128841,
+              -0.967676
+            ]
+          },
+          {
+            "label": 9,
+            "point_count": 22972,
+            "point_ratio": 0.061792,
+            "bbox_extent": [
+              5.798256,
+              5.802956,
+              1.970889
+            ],
+            "centroid": [
+              4.467611,
+              -7.400032,
+              -6.399583
+            ]
+          },
+          {
+            "label": 37,
+            "point_count": 4911,
+            "point_ratio": 0.01321,
+            "bbox_extent": [
+              1.633353,
+              2.747679,
+              0.155674
+            ],
+            "centroid": [
+              10.305095,
+              -5.529609,
+              -6.664632
+            ]
+          },
+          {
+            "label": 43,
+            "point_count": 451,
+            "point_ratio": 0.001213,
+            "bbox_extent": [
+              0.21588,
+              1.450817,
+              0.128318
+            ],
+            "centroid": [
+              10.576777,
+              1.138429,
+              -0.387887
+            ]
+          },
+          {
+            "label": 31,
+            "point_count": 327,
+            "point_ratio": 0.00088,
+            "bbox_extent": [
+              0.176774,
+              1.80289,
+              0.120743
+            ],
+            "centroid": [
+              8.17083,
+              0.875788,
+              0.218247
+            ]
+          },
+          {
+            "label": 11,
+            "point_count": 325,
+            "point_ratio": 0.000874,
+            "bbox_extent": [
+              0.254628,
+              1.047484,
+              0.295519
+            ],
+            "centroid": [
+              2.680257,
+              -4.869921,
+              -5.603757
+            ]
+          },
+          {
+            "label": 18,
+            "point_count": 264,
+            "point_ratio": 0.00071,
+            "bbox_extent": [
+              0.142537,
+              1.369415,
+              0.15596
+            ],
+            "centroid": [
+              4.891536,
+              -1.314145,
+              -3.531363
+            ]
+          },
+          {
+            "label": 41,
+            "point_count": 211,
+            "point_ratio": 0.000568,
+            "bbox_extent": [
+              0.615849,
+              0.109996,
+              0.033868
+            ],
+            "centroid": [
+              10.068659,
+              -3.666661,
+              -6.575836
+            ]
+          },
+          {
+            "label": 27,
+            "point_count": 208,
+            "point_ratio": 0.000559,
+            "bbox_extent": [
+              0.181381,
+              0.940388,
+              0.075958
+            ],
+            "centroid": [
+              6.856325,
+              1.65681,
+              0.462406
+            ]
+          },
+          {
+            "label": 39,
+            "point_count": 206,
+            "point_ratio": 0.000554,
+            "bbox_extent": [
+              0.158817,
+              0.557327,
+              0.060911
+            ],
+            "centroid": [
+              9.39445,
+              0.900937,
+              -0.083115
+            ]
+          }
+        ]
+      },
+      "points_removed_from_previous": 0,
+      "points_removed_ratio_from_previous": 0.0
+    },
+    "after_outlier": {
+      "stage": "after_outlier",
+      "point_count": 364166,
+      "bbox_min": [
+        -0.862003,
+        -9.182234,
+        -7.380173
+      ],
+      "bbox_max": [
+        11.047532,
+        2.110117,
+        1.453394
+      ],
+      "bbox_extent": [
+        11.909535,
+        11.292351,
+        8.833567
+      ],
+      "bbox_volume_m3": 1187.996792,
+      "density_points_per_m3": 306.537865,
+      "centroid": [
+        0.488343,
+        -0.305694,
+        -1.306233
+      ],
+      "mean_nn_distance_m": 0.001943,
+      "median_nn_distance_m": 0.001114,
+      "density_uniformity_cv": 1.588435,
+      "anisotropy_axis_ratio": 1.348214,
+      "coverage": {
+        "bins": 8,
+        "occupied_cells": 51,
+        "coverage_ratio": 0.099609,
+        "hole_ratio": 0.900391,
+        "interior_hole_ratio": 0.898148,
+        "lateral_face_coverage": 0.078125,
+        "top_coverage": 0.046875,
+        "bottom_coverage": 0.25,
+        "z_layer_coverage": [
+          0.25,
+          0.234375,
+          0.046875,
+          0.03125,
+          0.078125,
+          0.03125,
+          0.078125,
+          0.046875
+        ]
+      },
+      "components": {
+        "voxel_size_m": 0.25,
+        "component_count": 36,
+        "largest_component_ratio": 0.934426,
+        "mean_component_point_count": 10115.722222,
+        "components_top10": [
+          {
+            "label": 1,
+            "point_count": 340286,
+            "point_ratio": 0.934426,
+            "bbox_extent": [
+              1.635659,
+              1.268371,
+              1.770698
+            ],
+            "centroid": [
+              0.108788,
+              0.128865,
+              -0.967554
+            ]
+          },
+          {
+            "label": 6,
+            "point_count": 16169,
+            "point_ratio": 0.0444,
+            "bbox_extent": [
+              5.628736,
+              4.797278,
+              1.688024
+            ],
+            "centroid": [
+              4.502719,
+              -7.57663,
+              -6.44213
+            ]
+          },
+          {
+            "label": 33,
+            "point_count": 4907,
+            "point_ratio": 0.013475,
+            "bbox_extent": [
+              1.629951,
+              2.747679,
+              0.155674
+            ],
+            "centroid": [
+              10.30003,
+              -5.533606,
+              -6.664372
+            ]
+          },
+          {
+            "label": 11,
+            "point_count": 395,
+            "point_ratio": 0.001085,
+            "bbox_extent": [
+              0.540447,
+              1.222076,
+              0.347193
+            ],
+            "centroid": [
+              3.661127,
+              -4.444439,
+              -5.78671
+            ]
+          },
+          {
+            "label": 36,
+            "point_count": 353,
+            "point_ratio": 0.000969,
+            "bbox_extent": [
+              0.196376,
+              1.26877,
+              0.119295
+            ],
+            "centroid": [
+              10.576248,
+              1.136861,
+              -0.386627
+            ]
+          },
+          {
+            "label": 8,
+            "point_count": 197,
+            "point_ratio": 0.000541,
+            "bbox_extent": [
+              0.244245,
+              0.962083,
+              0.251497
+            ],
+            "centroid": [
+              2.698759,
+              -4.794329,
+              -5.579496
+            ]
+          },
+          {
+            "label": 35,
+            "point_count": 197,
+            "point_ratio": 0.000541,
+            "bbox_extent": [
+              0.6132,
+              0.109996,
+              0.033868
+            ],
+            "centroid": [
+              10.082388,
+              -3.667152,
+              -6.576622
+            ]
+          },
+          {
+            "label": 29,
+            "point_count": 182,
+            "point_ratio": 0.0005,
+            "bbox_extent": [
+              0.11942,
+              0.807085,
+              0.052999
+            ],
+            "centroid": [
+              8.165132,
+              1.156916,
+              0.207015
+            ]
+          },
+          {
+            "label": 32,
+            "point_count": 171,
+            "point_ratio": 0.00047,
+            "bbox_extent": [
+              0.148839,
+              0.518571,
+              0.060911
+            ],
+            "centroid": [
+              9.395982,
+              0.902825,
+              -0.081189
+            ]
+          },
+          {
+            "label": 27,
+            "point_count": 133,
+            "point_ratio": 0.000365,
+            "bbox_extent": [
+              0.308791,
+              0.707281,
+              0.46496
+            ],
+            "centroid": [
+              7.118483,
+              -1.748229,
+              -5.493882
+            ]
+          }
+        ]
+      },
+      "points_removed_from_previous": 7600,
+      "points_removed_ratio_from_previous": 0.020443,
+      "bbox_volume_lost_from_previous_m3": 78.409571
+    },
+    "after_dbscan": {
+      "stage": "after_dbscan",
+      "point_count": 3278,
+      "bbox_min": [
+        -0.725309,
+        -9.169596,
+        -7.374809
+      ],
+      "bbox_max": [
+        7.412486,
+        0.644581,
+        -0.637976
+      ],
+      "bbox_extent": [
+        8.137795,
+        9.814177,
+        6.736833
+      ],
+      "bbox_volume_m3": 538.042284,
+      "density_points_per_m3": 6.092458,
+      "centroid": [
+        3.626917,
+        -6.013584,
+        -5.362235
+      ],
+      "mean_nn_distance_m": 0.032287,
+      "median_nn_distance_m": 0.031672,
+      "density_uniformity_cv": 0.475097,
+      "anisotropy_axis_ratio": 1.456794,
+      "coverage": {
+        "bins": 8,
+        "occupied_cells": 31,
+        "coverage_ratio": 0.060547,
+        "hole_ratio": 0.939453,
+        "interior_hole_ratio": 0.953704,
+        "lateral_face_coverage": 0.082031,
+        "top_coverage": 0.03125,
+        "bottom_coverage": 0.15625,
+        "z_layer_coverage": [
+          0.15625,
+          0.21875,
+          0.0,
+          0.0,
+          0.0,
+          0.03125,
+          0.046875,
+          0.03125
+        ]
+      },
+      "components": {
+        "voxel_size_m": 0.25,
+        "component_count": 3,
+        "largest_component_ratio": 0.795912,
+        "mean_component_point_count": 1092.666667,
+        "components_top10": [
+          {
+            "label": 3,
+            "point_count": 2609,
+            "point_ratio": 0.795912,
+            "bbox_extent": [
+              5.587158,
+              4.773677,
+              1.677443
+            ],
+            "centroid": [
+              4.535162,
+              -7.556376,
+              -6.443642
+            ]
+          },
+          {
+            "label": 1,
+            "point_count": 615,
+            "point_ratio": 0.187614,
+            "bbox_extent": [
+              1.462876,
+              1.183629,
+              1.085069
+            ],
+            "centroid": [
+              0.077535,
+              0.044736,
+              -1.054324
+            ]
+          },
+          {
+            "label": 2,
+            "point_count": 54,
+            "point_ratio": 0.016473,
+            "bbox_extent": [
+              1.008881,
+              0.371531,
+              0.511664
+            ],
+            "centroid": [
+              0.16874,
+              -0.471412,
+              -2.1766
+            ]
+          }
+        ]
+      },
+      "points_removed_from_previous": 360888,
+      "points_removed_ratio_from_previous": 0.990999,
+      "bbox_volume_lost_from_previous_m3": 649.954508
+    },
+    "before_pdi": {
+      "stage": "before_pdi",
+      "point_count": 3278,
+      "bbox_min": [
+        -0.725309,
+        -9.169596,
+        -7.374809
+      ],
+      "bbox_max": [
+        7.412486,
+        0.644581,
+        -0.637976
+      ],
+      "bbox_extent": [
+        8.137795,
+        9.814177,
+        6.736833
+      ],
+      "bbox_volume_m3": 538.042284,
+      "density_points_per_m3": 6.092458,
+      "centroid": [
+        3.626917,
+        -6.013584,
+        -5.362235
+      ],
+      "mean_nn_distance_m": 0.032287,
+      "median_nn_distance_m": 0.031672,
+      "density_uniformity_cv": 0.475097,
+      "anisotropy_axis_ratio": 1.456794,
+      "coverage": {
+        "bins": 8,
+        "occupied_cells": 31,
+        "coverage_ratio": 0.060547,
+        "hole_ratio": 0.939453,
+        "interior_hole_ratio": 0.953704,
+        "lateral_face_coverage": 0.082031,
+        "top_coverage": 0.03125,
+        "bottom_coverage": 0.15625,
+        "z_layer_coverage": [
+          0.15625,
+          0.21875,
+          0.0,
+          0.0,
+          0.0,
+          0.03125,
+          0.046875,
+          0.03125
+        ]
+      },
+      "components": {
+        "voxel_size_m": 0.25,
+        "component_count": 3,
+        "largest_component_ratio": 0.795912,
+        "mean_component_point_count": 1092.666667,
+        "components_top10": [
+          {
+            "label": 3,
+            "point_count": 2609,
+            "point_ratio": 0.795912,
+            "bbox_extent": [
+              5.587158,
+              4.773677,
+              1.677443
+            ],
+            "centroid": [
+              4.535162,
+              -7.556376,
+              -6.443642
+            ]
+          },
+          {
+            "label": 1,
+            "point_count": 615,
+            "point_ratio": 0.187614,
+            "bbox_extent": [
+              1.462876,
+              1.183629,
+              1.085069
+            ],
+            "centroid": [
+              0.077535,
+              0.044736,
+              -1.054324
+            ]
+          },
+          {
+            "label": 2,
+            "point_count": 54,
+            "point_ratio": 0.016473,
+            "bbox_extent": [
+              1.008881,
+              0.371531,
+              0.511664
+            ],
+            "centroid": [
+              0.16874,
+              -0.471412,
+              -2.1766
+            ]
+          }
+        ]
+      },
+      "points_removed_from_previous": 0,
+      "points_removed_ratio_from_previous": 0.0,
+      "bbox_volume_lost_from_previous_m3": 0.0
+    }
+  }
+}

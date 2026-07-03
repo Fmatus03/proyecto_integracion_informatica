@@ -1,0 +1,14 @@
+{
+  "run": 2,
+  "status": "not_executed",
+  "blocked_at_stage": "Run 1 did not complete",
+  "dataset": "projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_defnitivo",
+  "physical_aruco_side_m": 1.0,
+  "code_or_parameter_changes": false,
+  "outputs_generated_by_pipeline": false,
+  "scale_factor_m_per_unit": null,
+  "volume_m3": null,
+  "expected_volume_m3": 119.74,
+  "absolute_error_m3": null,
+  "error_percent": null
+}

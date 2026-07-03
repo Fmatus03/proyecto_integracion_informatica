@@ -1,0 +1,409 @@
+{
+  "run_id": "RUN-PDI-MVP-READINESS-01",
+  "constraints": {
+    "main_pipeline_modified": false,
+    "pdi_behavior_changed": false,
+    "ground_truth_used_for_tuning": false,
+    "quality_gates_stop_pipeline": false,
+    "nodeodm_modified": false,
+    "opensfm_modified": false,
+    "open3d_modified": false
+  },
+  "ground_truth_m3": 119.74,
+  "parameters": {
+    "voxel_size_m": 0.25
+  },
+  "inputs": {
+    "set1": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_input_cloud.ply",
+    "set2": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_input_cloud.ply"
+  },
+  "datasets": [
+    {
+      "dataset": "set1",
+      "input_cloud": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_input_cloud.ply",
+      "point_count": 19879,
+      "pdi": {
+        "volume_m3": 97.375,
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 126.676172,
+        "hull_volume_m3": 156.927698,
+        "solid_voxels": 6232,
+        "occupied_voxels": 1429,
+        "dense_voxels": 1429,
+        "execution_time_seconds": 0.037979
+      },
+      "absolute_error_m3": 22.365,
+      "percent_error": 18.677969,
+      "quality": {
+        "metrics": {
+          "point_count": 19879,
+          "mean_density_points_per_m3": 29.028473,
+          "bbox_min": [
+            1.28758,
+            -10.007647,
+            -4.472788
+          ],
+          "bbox_max": [
+            10.271735,
+            4.973067,
+            0.61537
+          ],
+          "bbox_extent_m": [
+            8.984155,
+            14.980714,
+            5.088158
+          ],
+          "bbox_volume_m3": 684.810396,
+          "bbox_aspect_ratio": 2.944231,
+          "bbox_axis_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "median_nn_m": 0.041225,
+          "mean_nn_m": 0.042182,
+          "local_density_cv": 0.310786,
+          "isolated_point_ratio": 0.000333,
+          "outlier_ratio": 0.016667,
+          "nn_outlier_limit_m": 0.071318,
+          "coverage_grid_bins": 6,
+          "spatial_coverage_ratio": 0.240741,
+          "interior_hole_ratio": 0.734375,
+          "lateral_coverage_ratio": 0.284722,
+          "top_coverage_ratio": 0.111111,
+          "bottom_coverage_ratio": 0.194444,
+          "face_coverage_ratios": {
+            "x_min": 0.166667,
+            "x_max": 0.277778,
+            "y_min": 0.222222,
+            "y_max": 0.472222,
+            "z_min": 0.194444,
+            "z_max": 0.111111
+          },
+          "voxel_components": 2,
+          "dominant_component_voxel_ratio": 0.783065,
+          "occupied_voxels": 1429
+        },
+        "gates": [
+          {
+            "gate": "segmentation.isolated_points",
+            "status": "PASS",
+            "metric": "isolated_point_ratio",
+            "value": 0.000333,
+            "explanation": "High isolated-point ratio indicates possible background leakage or sparse segmentation."
+          },
+          {
+            "gate": "segmentation.outliers",
+            "status": "PASS",
+            "metric": "outlier_ratio",
+            "value": 0.016667,
+            "explanation": "Nearest-neighbor outliers expand support and can inflate PDI volume."
+          },
+          {
+            "gate": "segmentation.mean_density",
+            "status": "PASS",
+            "metric": "mean_density_points_per_m3",
+            "value": 29.028473,
+            "explanation": "Low global density increases sensitivity to voxelization."
+          },
+          {
+            "gate": "segmentation.bbox_aspect",
+            "status": "PASS",
+            "metric": "bbox_aspect_ratio",
+            "value": 2.944231,
+            "explanation": "Extreme bounding-box ratios can indicate missing views or background contamination."
+          },
+          {
+            "gate": "coverage.spatial_distribution",
+            "status": "PASS",
+            "metric": "spatial_coverage_ratio",
+            "value": 0.240741,
+            "explanation": "Low occupied-cell coverage suggests incomplete spatial support."
+          },
+          {
+            "gate": "coverage.interior_holes",
+            "status": "PASS",
+            "metric": "interior_hole_ratio",
+            "value": 0.734375,
+            "explanation": "High empty-interior ratio is a proxy for large holes or missing regions."
+          },
+          {
+            "gate": "coverage.lateral",
+            "status": "PASS",
+            "metric": "lateral_coverage_ratio",
+            "value": 0.284722,
+            "explanation": "Low lateral coverage can cause structured underestimation."
+          },
+          {
+            "gate": "coverage.top",
+            "status": "WARNING",
+            "metric": "top_coverage_ratio",
+            "value": 0.111111,
+            "explanation": "Low top coverage can indicate missing upper surface observations."
+          },
+          {
+            "gate": "coverage.bottom",
+            "status": "PASS",
+            "metric": "bottom_coverage_ratio",
+            "value": 0.194444,
+            "explanation": "Low bottom coverage is expected in aerial capture but still reduces volumetric confidence."
+          },
+          {
+            "gate": "geometry.point_count",
+            "status": "PASS",
+            "metric": "point_count",
+            "value": 19879,
+            "explanation": "Low point count reduces estimator stability."
+          },
+          {
+            "gate": "geometry.components",
+            "status": "PASS",
+            "metric": "voxel_components",
+            "value": 2,
+            "explanation": "Many disconnected occupied components indicate fragmentation or background leakage."
+          },
+          {
+            "gate": "geometry.spatial_consistency",
+            "status": "PASS",
+            "metric": "dominant_component_voxel_ratio",
+            "value": 0.783065,
+            "explanation": "Low dominant-component ratio indicates fragmented spatial support."
+          }
+        ],
+        "gate_counts": {
+          "PASS": 11,
+          "WARNING": 1,
+          "FAIL": 0
+        }
+      },
+      "stability_probe": {
+        "bootstrap_trials": 5,
+        "removal_ratio": 0.05,
+        "volume_mean_m3": 97.228125,
+        "volume_std_m3": 0.103997,
+        "volume_cv": 0.00107
+      },
+      "confidence": {
+        "score_percent": 95.0,
+        "level": "HIGH",
+        "diagnosis": [
+          "coverage.top: WARNING (Low top coverage can indicate missing upper surface observations.)"
+        ],
+        "uses_ground_truth": false
+      },
+      "previous_pdi_volume_m3": 97.375,
+      "volume_delta_vs_previous_m3": 0.0,
+      "numeric_equivalence_with_previous_pdi": true,
+      "total_time_seconds": 0.269671,
+      "approx_memory_before_mb": 322.84,
+      "approx_memory_after_mb": 325.652,
+      "memory_delta_mb": 2.812
+    },
+    {
+      "dataset": "set2",
+      "input_cloud": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_input_cloud.ply",
+      "point_count": 26113,
+      "pdi": {
+        "volume_m3": 132.671875,
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 316.513648,
+        "hull_volume_m3": 82.501972,
+        "solid_voxels": 8491,
+        "occupied_voxels": 1627,
+        "dense_voxels": 1499,
+        "execution_time_seconds": 0.031168
+      },
+      "absolute_error_m3": 12.931875,
+      "percent_error": 10.799962,
+      "quality": {
+        "metrics": {
+          "point_count": 26113,
+          "mean_density_points_per_m3": 67.239444,
+          "bbox_min": [
+            2.862918,
+            -7.653658,
+            -1.040662
+          ],
+          "bbox_max": [
+            9.662048,
+            1.445573,
+            5.236663
+          ],
+          "bbox_extent_m": [
+            6.79913,
+            9.099231,
+            6.277325
+          ],
+          "bbox_volume_m3": 388.358359,
+          "bbox_aspect_ratio": 1.449539,
+          "bbox_axis_order": [
+            "x",
+            "y",
+            "z"
+          ],
+          "median_nn_m": 0.044955,
+          "mean_nn_m": 0.0461,
+          "local_density_cv": 0.283059,
+          "isolated_point_ratio": 0.00025,
+          "outlier_ratio": 0.05175,
+          "nn_outlier_limit_m": 0.069738,
+          "coverage_grid_bins": 6,
+          "spatial_coverage_ratio": 0.361111,
+          "interior_hole_ratio": 0.46875,
+          "lateral_coverage_ratio": 0.243056,
+          "top_coverage_ratio": 0.416667,
+          "bottom_coverage_ratio": 0.305556,
+          "face_coverage_ratios": {
+            "x_min": 0.305556,
+            "x_max": 0.25,
+            "y_min": 0.055556,
+            "y_max": 0.361111,
+            "z_min": 0.305556,
+            "z_max": 0.416667
+          },
+          "voxel_components": 1,
+          "dominant_component_voxel_ratio": 1.0,
+          "occupied_voxels": 1627
+        },
+        "gates": [
+          {
+            "gate": "segmentation.isolated_points",
+            "status": "PASS",
+            "metric": "isolated_point_ratio",
+            "value": 0.00025,
+            "explanation": "High isolated-point ratio indicates possible background leakage or sparse segmentation."
+          },
+          {
+            "gate": "segmentation.outliers",
+            "status": "PASS",
+            "metric": "outlier_ratio",
+            "value": 0.05175,
+            "explanation": "Nearest-neighbor outliers expand support and can inflate PDI volume."
+          },
+          {
+            "gate": "segmentation.mean_density",
+            "status": "PASS",
+            "metric": "mean_density_points_per_m3",
+            "value": 67.239444,
+            "explanation": "Low global density increases sensitivity to voxelization."
+          },
+          {
+            "gate": "segmentation.bbox_aspect",
+            "status": "PASS",
+            "metric": "bbox_aspect_ratio",
+            "value": 1.449539,
+            "explanation": "Extreme bounding-box ratios can indicate missing views or background contamination."
+          },
+          {
+            "gate": "coverage.spatial_distribution",
+            "status": "PASS",
+            "metric": "spatial_coverage_ratio",
+            "value": 0.361111,
+            "explanation": "Low occupied-cell coverage suggests incomplete spatial support."
+          },
+          {
+            "gate": "coverage.interior_holes",
+            "status": "PASS",
+            "metric": "interior_hole_ratio",
+            "value": 0.46875,
+            "explanation": "High empty-interior ratio is a proxy for large holes or missing regions."
+          },
+          {
+            "gate": "coverage.lateral",
+            "status": "PASS",
+            "metric": "lateral_coverage_ratio",
+            "value": 0.243056,
+            "explanation": "Low lateral coverage can cause structured underestimation."
+          },
+          {
+            "gate": "coverage.top",
+            "status": "PASS",
+            "metric": "top_coverage_ratio",
+            "value": 0.416667,
+            "explanation": "Low top coverage can indicate missing upper surface observations."
+          },
+          {
+            "gate": "coverage.bottom",
+            "status": "PASS",
+            "metric": "bottom_coverage_ratio",
+            "value": 0.305556,
+            "explanation": "Low bottom coverage is expected in aerial capture but still reduces volumetric confidence."
+          },
+          {
+            "gate": "geometry.point_count",
+            "status": "PASS",
+            "metric": "point_count",
+            "value": 26113,
+            "explanation": "Low point count reduces estimator stability."
+          },
+          {
+            "gate": "geometry.components",
+            "status": "PASS",
+            "metric": "voxel_components",
+            "value": 1,
+            "explanation": "Many disconnected occupied components indicate fragmentation or background leakage."
+          },
+          {
+            "gate": "geometry.spatial_consistency",
+            "status": "PASS",
+            "metric": "dominant_component_voxel_ratio",
+            "value": 1.0,
+            "explanation": "Low dominant-component ratio indicates fragmented spatial support."
+          }
+        ],
+        "gate_counts": {
+          "PASS": 12,
+          "WARNING": 0,
+          "FAIL": 0
+        }
+      },
+      "stability_probe": {
+        "bootstrap_trials": 5,
+        "removal_ratio": 0.05,
+        "volume_mean_m3": 132.3,
+        "volume_std_m3": 0.127609,
+        "volume_cv": 0.000965
+      },
+      "confidence": {
+        "score_percent": 100.0,
+        "level": "HIGH",
+        "diagnosis": [
+          "No quality gate produced WARNING or FAIL."
+        ],
+        "uses_ground_truth": false
+      },
+      "previous_pdi_volume_m3": 132.671875,
+      "volume_delta_vs_previous_m3": 0.0,
+      "numeric_equivalence_with_previous_pdi": true,
+      "total_time_seconds": 0.200771,
+      "approx_memory_before_mb": 326.277,
+      "approx_memory_after_mb": 326.277,
+      "memory_delta_mb": 0.0
+    }
+  ],
+  "robustness_context": {
+    "most_damaging_degradation": {
+      "experiment": "segmentation_spurious_points",
+      "mean_percent_error": 744.668657
+    },
+    "worst_case": {
+      "dataset": "set1",
+      "experiment": "segmentation_spurious_points",
+      "level": "add_10pct",
+      "percent_error": 1226.611304
+    },
+    "robustness_assessment": "PDI is robust to moderate random point removal and small Gaussian noise, but sensitive to structured occlusion and segmentation outliers that expand the hull/density support.",
+    "recommendation": "PDI remains a viable MVP volumetric estimator only under capture conditions with broad object coverage and controlled segmentation. It should be integrated with documented operating limits and future quality gates for occlusion/background contamination, not treated as universally robust."
+  },
+  "decision": {
+    "ready_for_mvp_integration": "SI",
+    "basis": "volumes_equivalent=True; total_fail_gates=0; mean_confidence=97.5%; decision threshold requires unchanged PDI volume, zero FAIL gates on current Set 1/Set 2, and mean confidence >= 60%."
+  },
+  "total_runtime_seconds": 0.846878,
+  "plots": [
+    "/app/data/pdi_mvp_readiness/pdi_readiness_error_confidence.png",
+    "/app/data/pdi_mvp_readiness/pdi_quality_gates.png"
+  ]
+}

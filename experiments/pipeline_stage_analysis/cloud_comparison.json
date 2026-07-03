@@ -1,0 +1,182 @@
+{
+  "set1": {
+    "nodeodm_raw_to_after_outlier": {
+      "chamfer_distance_m": 0.039307,
+      "hausdorff_distance_m": 11.696093,
+      "a_overlap_at_0_25m": 0.988867,
+      "b_overlap_at_0_25m": 0.997067,
+      "icp": {
+        "fitness": 0.985608,
+        "rmse_m": 0.081296
+      },
+      "bbox_extent_delta": [
+        -0.775129,
+        -3.084709,
+        -7.66372
+      ],
+      "centroid_delta": [
+        0.011018,
+        0.007022,
+        0.019098
+      ],
+      "density_delta_points_per_m3": 4.782416,
+      "bbox_volume_delta_m3": -10082.570033
+    },
+    "after_outlier_to_after_dbscan": {
+      "chamfer_distance_m": 0.49837,
+      "hausdorff_distance_m": 28.571184,
+      "a_overlap_at_0_25m": 0.669,
+      "b_overlap_at_0_25m": 0.998467,
+      "icp": {
+        "fitness": 0.593666,
+        "rmse_m": 0.26855
+      },
+      "bbox_extent_delta": [
+        -21.622749,
+        -15.781768,
+        -26.688997
+      ],
+      "centroid_delta": [
+        0.721066,
+        1.516489,
+        0.674983
+      ],
+      "density_delta_points_per_m3": 19.510094,
+      "bbox_volume_delta_m3": -23658.136272
+    },
+    "nodeodm_raw_to_after_dbscan": {
+      "chamfer_distance_m": 0.513978,
+      "hausdorff_distance_m": 28.723695,
+      "a_overlap_at_0_25m": 0.669533,
+      "b_overlap_at_0_25m": 0.998733,
+      "icp": {
+        "fitness": 0.565662,
+        "rmse_m": 0.266487
+      },
+      "bbox_extent_delta": [
+        -22.397878,
+        -18.866477,
+        -34.352717
+      ],
+      "centroid_delta": [
+        0.732084,
+        1.523511,
+        0.694081
+      ],
+      "density_delta_points_per_m3": 24.29251,
+      "bbox_volume_delta_m3": -33740.706305
+    },
+    "nodeodm_raw_to_before_pdi": {
+      "chamfer_distance_m": 0.513978,
+      "hausdorff_distance_m": 28.723695,
+      "a_overlap_at_0_25m": 0.669533,
+      "b_overlap_at_0_25m": 0.998733,
+      "icp": {
+        "fitness": 0.565662,
+        "rmse_m": 0.266487
+      },
+      "bbox_extent_delta": [
+        -22.397878,
+        -18.866477,
+        -34.352717
+      ],
+      "centroid_delta": [
+        0.732084,
+        1.523511,
+        0.694081
+      ],
+      "density_delta_points_per_m3": 24.29251,
+      "bbox_volume_delta_m3": -33740.706305
+    }
+  },
+  "set2": {
+    "nodeodm_raw_to_after_outlier": {
+      "chamfer_distance_m": 0.009344,
+      "hausdorff_distance_m": 3.799229,
+      "a_overlap_at_0_25m": 0.995533,
+      "b_overlap_at_0_25m": 0.999933,
+      "icp": {
+        "fitness": 0.993838,
+        "rmse_m": 0.079535
+      },
+      "bbox_extent_delta": [
+        -0.420022,
+        -0.047099,
+        -0.224461
+      ],
+      "centroid_delta": [
+        -0.084099,
+        0.117571,
+        0.08705
+      ],
+      "density_delta_points_per_m3": 12.978064,
+      "bbox_volume_delta_m3": -78.409571
+    },
+    "after_outlier_to_after_dbscan": {
+      "chamfer_distance_m": 0.071812,
+      "hausdorff_distance_m": 9.981977,
+      "a_overlap_at_0_25m": 0.978133,
+      "b_overlap_at_0_25m": 0.990543,
+      "icp": {
+        "fitness": 0.8225,
+        "rmse_m": 0.134002
+      },
+      "bbox_extent_delta": [
+        -3.77174,
+        -1.478174,
+        -2.096734
+      ],
+      "centroid_delta": [
+        3.138574,
+        -5.70789,
+        -4.056002
+      ],
+      "density_delta_points_per_m3": -300.445407,
+      "bbox_volume_delta_m3": -649.954508
+    },
+    "nodeodm_raw_to_after_dbscan": {
+      "chamfer_distance_m": 0.077851,
+      "hausdorff_distance_m": 10.000928,
+      "a_overlap_at_0_25m": 0.972933,
+      "b_overlap_at_0_25m": 0.99939,
+      "icp": {
+        "fitness": 0.821709,
+        "rmse_m": 0.17045
+      },
+      "bbox_extent_delta": [
+        -4.191762,
+        -1.525273,
+        -2.321195
+      ],
+      "centroid_delta": [
+        3.054475,
+        -5.590319,
+        -3.968952
+      ],
+      "density_delta_points_per_m3": -287.467343,
+      "bbox_volume_delta_m3": -728.364079
+    },
+    "nodeodm_raw_to_before_pdi": {
+      "chamfer_distance_m": 0.077851,
+      "hausdorff_distance_m": 10.000928,
+      "a_overlap_at_0_25m": 0.972933,
+      "b_overlap_at_0_25m": 0.99939,
+      "icp": {
+        "fitness": 0.821709,
+        "rmse_m": 0.17045
+      },
+      "bbox_extent_delta": [
+        -4.191762,
+        -1.525273,
+        -2.321195
+      ],
+      "centroid_delta": [
+        3.054475,
+        -5.590319,
+        -3.968952
+      ],
+      "density_delta_points_per_m3": -287.467343,
+      "bbox_volume_delta_m3": -728.364079
+    }
+  }
+}

@@ -42,8 +42,8 @@ No gobierna arquitectura de producto ni requisitos funcionales detallados; eso v
 1. Entradas: imagenes RGB provistas externamente.
 2. Formatos aceptados: `.png`, `.jpg`, `.jpeg`.
 3. No asumir EXIF, GPS, altura de vuelo ni metadata de dron.
-4. Dataset oficial: `set_imagenes+guia/dataset_manifest.json`.
-5. Referencia oficial: ArUco `DICT_4X4_50`, ID `0`, `50 x 50 cm`, archivo `set_imagenes+guia/guia50cm/aruco-marker-ID=0.png`.
+4. Dataset oficial: `projects/ForestVol/set_imagenes+guia/dataset_manifest.json`.
+5. Referencia oficial: ArUco `DICT_4X4_50`, ID `0`, `100 x 100 cm`, archivo `projects/ForestVol/set_imagenes+guia/guia100cm/aruco-marker-ID=0.png`.
 6. Sin Ground Truth certificado: `ground_truth.volume_m3 = null` y `error_percentage = null`.
 7. Sin Ground Truth certificado no se puede afirmar error `<= 15%` ni cumplimiento de RF-09.
 8. El harness es `manifest-driven`, no `filename-driven`.

@@ -1,0 +1,1043 @@
+{
+  "run_id": "VOLUME-ESTIMATORS-BENCHMARK-01",
+  "ground_truth_m3": 119.74,
+  "constraints": {
+    "main_pipeline_modified": false,
+    "ground_truth_used_for_parameter_tuning": false,
+    "same_input_per_dataset": true
+  },
+  "parameters": {
+    "voxel_size_m": 0.25,
+    "noise_trials": 5
+  },
+  "datasets": {
+    "set1": {
+      "input_cloud": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_input_cloud.ply",
+      "point_count": 19879,
+      "noise_sigma_m": 0.022857,
+      "methods": [
+        {
+          "method": "Convex Hull",
+          "status": "ok",
+          "volume_m3": 156.927698,
+          "absolute_error_m3": 37.187698,
+          "percent_error": 31.057038,
+          "execution_time_seconds": 0.012216,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "implementation": "Open3D convex hull"
+          },
+          "failure": null,
+          "components": 1,
+          "boundary_edges": 0,
+          "non_manifold_edges": 0,
+          "non_manifold_vertices": 0,
+          "watertight": true,
+          "orientable": true,
+          "dataset": "set1",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.022857,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 160.197316,
+            "volume_std_m3": 1.199168,
+            "volume_range_m3": 3.015214
+          },
+          "noise_volume_std_m3": 1.199168,
+          "noise_volume_range_m3": 3.015214,
+          "cross_set_volume_delta_m3": 74.425726,
+          "cross_set_volume_delta_pct": 62.15611
+        },
+        {
+          "method": "Alpha Shape",
+          "status": "volume_unavailable",
+          "volume_m3": null,
+          "absolute_error_m3": null,
+          "percent_error": null,
+          "execution_time_seconds": 0.976071,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "alpha_m": 0.137141,
+            "alpha_source": "3 * median nearest-neighbor distance; no GT tuning"
+          },
+          "failure": null,
+          "components": 156,
+          "boundary_edges": 0,
+          "non_manifold_edges": 5448,
+          "non_manifold_vertices": 826,
+          "watertight": false,
+          "orientable": false,
+          "dataset": "set1",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.022857,
+            "trials": 5,
+            "valid_trials": 0,
+            "volume_std_m3": null,
+            "volume_range_m3": null
+          },
+          "noise_volume_std_m3": null,
+          "noise_volume_range_m3": null,
+          "cross_set_volume_delta_m3": null,
+          "cross_set_volume_delta_pct": null
+        },
+        {
+          "method": "Voxel Occupancy",
+          "status": "ok",
+          "volume_m3": 97.375,
+          "absolute_error_m3": 22.365,
+          "percent_error": 18.677969,
+          "execution_time_seconds": 0.027858,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "voxel_size_m": 0.25,
+            "solid_voxels": 6232
+          },
+          "failure": null,
+          "components": null,
+          "boundary_edges": null,
+          "non_manifold_edges": null,
+          "non_manifold_vertices": null,
+          "watertight": null,
+          "orientable": null,
+          "dataset": "set1",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.022857,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 99.896875,
+            "volume_std_m3": 0.249413,
+            "volume_range_m3": 0.59375
+          },
+          "noise_volume_std_m3": 0.249413,
+          "noise_volume_range_m3": 0.59375,
+          "cross_set_volume_delta_m3": 38.296875,
+          "cross_set_volume_delta_pct": 31.98336
+        },
+        {
+          "method": "Octree Occupancy",
+          "status": "ok",
+          "volume_m3": 840.421875,
+          "absolute_error_m3": 720.681875,
+          "percent_error": 601.872286,
+          "execution_time_seconds": 1.997745,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "coarse_voxel_size_m": 0.5,
+            "fine_voxel_size_m": 0.25,
+            "refined_parent_voxels": 280
+          },
+          "failure": null,
+          "components": null,
+          "boundary_edges": null,
+          "non_manifold_edges": null,
+          "non_manifold_vertices": null,
+          "watertight": null,
+          "orientable": null,
+          "dataset": "set1",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.022857,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 868.73125,
+            "volume_std_m3": 1.425279,
+            "volume_range_m3": 3.453125
+          },
+          "noise_volume_std_m3": 1.425279,
+          "noise_volume_range_m3": 3.453125,
+          "cross_set_volume_delta_m3": 322.828125,
+          "cross_set_volume_delta_pct": 269.607587
+        },
+        {
+          "method": "Surface Mesh (Poisson)",
+          "status": "volume_unavailable",
+          "volume_m3": null,
+          "absolute_error_m3": null,
+          "percent_error": null,
+          "execution_time_seconds": 0.424937,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "source": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_raw.ply",
+            "volume_requires_watertight_mesh": true
+          },
+          "failure": null,
+          "components": 10,
+          "boundary_edges": 191,
+          "non_manifold_edges": 4,
+          "non_manifold_vertices": 0,
+          "watertight": false,
+          "orientable": false,
+          "dataset": "set1",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.022857,
+            "trials": 5,
+            "valid_trials": 0,
+            "volume_std_m3": null,
+            "volume_range_m3": null
+          },
+          "noise_volume_std_m3": null,
+          "noise_volume_range_m3": null,
+          "cross_set_volume_delta_m3": null,
+          "cross_set_volume_delta_pct": null
+        },
+        {
+          "method": "TSDF Occupancy",
+          "status": "ok",
+          "volume_m3": 97.375,
+          "absolute_error_m3": 22.365,
+          "percent_error": 18.677969,
+          "execution_time_seconds": 0.033447,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "grid_step_m": 0.25,
+            "inside_voxels": 6232
+          },
+          "failure": null,
+          "components": null,
+          "boundary_edges": null,
+          "non_manifold_edges": null,
+          "non_manifold_vertices": null,
+          "watertight": null,
+          "orientable": null,
+          "dataset": "set1",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.022857,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 97.375,
+            "volume_std_m3": 0.0,
+            "volume_range_m3": 0.0
+          },
+          "noise_volume_std_m3": 0.0,
+          "noise_volume_range_m3": 0.0,
+          "cross_set_volume_delta_m3": 38.296875,
+          "cross_set_volume_delta_pct": 31.98336
+        },
+        {
+          "method": "Point Density Integration",
+          "status": "ok",
+          "volume_m3": 97.375,
+          "absolute_error_m3": 22.365,
+          "percent_error": 18.677969,
+          "execution_time_seconds": 0.033571,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "density_threshold_points_per_voxel": 1,
+            "hull_density_points_per_m3": 126.676172
+          },
+          "failure": null,
+          "components": null,
+          "boundary_edges": null,
+          "non_manifold_edges": null,
+          "non_manifold_vertices": null,
+          "watertight": null,
+          "orientable": null,
+          "dataset": "set1",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.022857,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 99.896875,
+            "volume_std_m3": 0.249413,
+            "volume_range_m3": 0.59375
+          },
+          "noise_volume_std_m3": 0.249413,
+          "noise_volume_range_m3": 0.59375,
+          "cross_set_volume_delta_m3": 35.296875,
+          "cross_set_volume_delta_pct": 29.477931
+        }
+      ]
+    },
+    "set2": {
+      "input_cloud": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_input_cloud.ply",
+      "point_count": 26113,
+      "noise_sigma_m": 0.024385,
+      "methods": [
+        {
+          "method": "Convex Hull",
+          "status": "ok",
+          "volume_m3": 82.501972,
+          "absolute_error_m3": 37.238028,
+          "percent_error": 31.099072,
+          "execution_time_seconds": 0.007128,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "implementation": "Open3D convex hull"
+          },
+          "failure": null,
+          "components": 1,
+          "boundary_edges": 0,
+          "non_manifold_edges": 0,
+          "non_manifold_vertices": 0,
+          "watertight": true,
+          "orientable": true,
+          "dataset": "set2",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.024385,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 85.427148,
+            "volume_std_m3": 0.724453,
+            "volume_range_m3": 1.72495
+          },
+          "noise_volume_std_m3": 0.724453,
+          "noise_volume_range_m3": 1.72495,
+          "cross_set_volume_delta_m3": 74.425726,
+          "cross_set_volume_delta_pct": 62.15611
+        },
+        {
+          "method": "Alpha Shape",
+          "status": "volume_unavailable",
+          "volume_m3": null,
+          "absolute_error_m3": null,
+          "percent_error": null,
+          "execution_time_seconds": 1.098167,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "alpha_m": 0.146311,
+            "alpha_source": "3 * median nearest-neighbor distance; no GT tuning"
+          },
+          "failure": null,
+          "components": 319,
+          "boundary_edges": 0,
+          "non_manifold_edges": 3632,
+          "non_manifold_vertices": 953,
+          "watertight": false,
+          "orientable": false,
+          "dataset": "set2",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.024385,
+            "trials": 5,
+            "valid_trials": 0,
+            "volume_std_m3": null,
+            "volume_range_m3": null
+          },
+          "noise_volume_std_m3": null,
+          "noise_volume_range_m3": null,
+          "cross_set_volume_delta_m3": null,
+          "cross_set_volume_delta_pct": null
+        },
+        {
+          "method": "Voxel Occupancy",
+          "status": "ok",
+          "volume_m3": 135.671875,
+          "absolute_error_m3": 15.931875,
+          "percent_error": 13.305391,
+          "execution_time_seconds": 0.015632,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "voxel_size_m": 0.25,
+            "solid_voxels": 8683
+          },
+          "failure": null,
+          "components": null,
+          "boundary_edges": null,
+          "non_manifold_edges": null,
+          "non_manifold_vertices": null,
+          "watertight": null,
+          "orientable": null,
+          "dataset": "set2",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.024385,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 139.621875,
+            "volume_std_m3": 0.305667,
+            "volume_range_m3": 0.765625
+          },
+          "noise_volume_std_m3": 0.305667,
+          "noise_volume_range_m3": 0.765625,
+          "cross_set_volume_delta_m3": 38.296875,
+          "cross_set_volume_delta_pct": 31.98336
+        },
+        {
+          "method": "Octree Occupancy",
+          "status": "ok",
+          "volume_m3": 1163.25,
+          "absolute_error_m3": 1043.51,
+          "percent_error": 871.479873,
+          "execution_time_seconds": 3.429219,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "coarse_voxel_size_m": 0.5,
+            "fine_voxel_size_m": 0.25,
+            "refined_parent_voxels": 385
+          },
+          "failure": null,
+          "components": null,
+          "boundary_edges": null,
+          "non_manifold_edges": null,
+          "non_manifold_vertices": null,
+          "watertight": null,
+          "orientable": null,
+          "dataset": "set2",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.024385,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 1214.9,
+            "volume_std_m3": 8.792729,
+            "volume_range_m3": 21.671875
+          },
+          "noise_volume_std_m3": 8.792729,
+          "noise_volume_range_m3": 21.671875,
+          "cross_set_volume_delta_m3": 322.828125,
+          "cross_set_volume_delta_pct": 269.607587
+        },
+        {
+          "method": "Surface Mesh (Poisson)",
+          "status": "volume_unavailable",
+          "volume_m3": null,
+          "absolute_error_m3": null,
+          "percent_error": null,
+          "execution_time_seconds": 1.217743,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "source": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_raw.ply",
+            "volume_requires_watertight_mesh": true
+          },
+          "failure": null,
+          "components": 39,
+          "boundary_edges": 226,
+          "non_manifold_edges": 39,
+          "non_manifold_vertices": 0,
+          "watertight": false,
+          "orientable": false,
+          "dataset": "set2",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.024385,
+            "trials": 5,
+            "valid_trials": 0,
+            "volume_std_m3": null,
+            "volume_range_m3": null
+          },
+          "noise_volume_std_m3": null,
+          "noise_volume_range_m3": null,
+          "cross_set_volume_delta_m3": null,
+          "cross_set_volume_delta_pct": null
+        },
+        {
+          "method": "TSDF Occupancy",
+          "status": "ok",
+          "volume_m3": 135.671875,
+          "absolute_error_m3": 15.931875,
+          "percent_error": 13.305391,
+          "execution_time_seconds": 0.013817,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "grid_step_m": 0.25,
+            "inside_voxels": 8683
+          },
+          "failure": null,
+          "components": null,
+          "boundary_edges": null,
+          "non_manifold_edges": null,
+          "non_manifold_vertices": null,
+          "watertight": null,
+          "orientable": null,
+          "dataset": "set2",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.024385,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 135.671875,
+            "volume_std_m3": 0.0,
+            "volume_range_m3": 0.0
+          },
+          "noise_volume_std_m3": 0.0,
+          "noise_volume_range_m3": 0.0,
+          "cross_set_volume_delta_m3": 38.296875,
+          "cross_set_volume_delta_pct": 31.98336
+        },
+        {
+          "method": "Point Density Integration",
+          "status": "ok",
+          "volume_m3": 132.671875,
+          "absolute_error_m3": 12.931875,
+          "percent_error": 10.799962,
+          "execution_time_seconds": 0.026479,
+          "approx_memory_mb": null,
+          "memory_note": "Peak memory not measured; no profiler added.",
+          "parameters": {
+            "density_threshold_points_per_voxel": 2,
+            "hull_density_points_per_m3": 316.513648
+          },
+          "failure": null,
+          "components": null,
+          "boundary_edges": null,
+          "non_manifold_edges": null,
+          "non_manifold_vertices": null,
+          "watertight": null,
+          "orientable": null,
+          "dataset": "set2",
+          "ground_truth_m3": 119.74,
+          "noise_sensitivity": {
+            "noise_sigma_m": 0.024385,
+            "trials": 5,
+            "valid_trials": 5,
+            "volume_mean_m3": 133.90625,
+            "volume_std_m3": 0.481341,
+            "volume_range_m3": 1.28125
+          },
+          "noise_volume_std_m3": 0.481341,
+          "noise_volume_range_m3": 1.28125,
+          "cross_set_volume_delta_m3": 35.296875,
+          "cross_set_volume_delta_pct": 29.477931
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "method": "Convex Hull",
+      "status": "ok",
+      "volume_m3": 156.927698,
+      "absolute_error_m3": 37.187698,
+      "percent_error": 31.057038,
+      "execution_time_seconds": 0.012216,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "implementation": "Open3D convex hull"
+      },
+      "failure": null,
+      "components": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "non_manifold_vertices": 0,
+      "watertight": true,
+      "orientable": true,
+      "dataset": "set1",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.022857,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 160.197316,
+        "volume_std_m3": 1.199168,
+        "volume_range_m3": 3.015214
+      },
+      "noise_volume_std_m3": 1.199168,
+      "noise_volume_range_m3": 3.015214,
+      "cross_set_volume_delta_m3": 74.425726,
+      "cross_set_volume_delta_pct": 62.15611
+    },
+    {
+      "method": "Alpha Shape",
+      "status": "volume_unavailable",
+      "volume_m3": null,
+      "absolute_error_m3": null,
+      "percent_error": null,
+      "execution_time_seconds": 0.976071,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "alpha_m": 0.137141,
+        "alpha_source": "3 * median nearest-neighbor distance; no GT tuning"
+      },
+      "failure": null,
+      "components": 156,
+      "boundary_edges": 0,
+      "non_manifold_edges": 5448,
+      "non_manifold_vertices": 826,
+      "watertight": false,
+      "orientable": false,
+      "dataset": "set1",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.022857,
+        "trials": 5,
+        "valid_trials": 0,
+        "volume_std_m3": null,
+        "volume_range_m3": null
+      },
+      "noise_volume_std_m3": null,
+      "noise_volume_range_m3": null,
+      "cross_set_volume_delta_m3": null,
+      "cross_set_volume_delta_pct": null
+    },
+    {
+      "method": "Voxel Occupancy",
+      "status": "ok",
+      "volume_m3": 97.375,
+      "absolute_error_m3": 22.365,
+      "percent_error": 18.677969,
+      "execution_time_seconds": 0.027858,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "voxel_size_m": 0.25,
+        "solid_voxels": 6232
+      },
+      "failure": null,
+      "components": null,
+      "boundary_edges": null,
+      "non_manifold_edges": null,
+      "non_manifold_vertices": null,
+      "watertight": null,
+      "orientable": null,
+      "dataset": "set1",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.022857,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 99.896875,
+        "volume_std_m3": 0.249413,
+        "volume_range_m3": 0.59375
+      },
+      "noise_volume_std_m3": 0.249413,
+      "noise_volume_range_m3": 0.59375,
+      "cross_set_volume_delta_m3": 38.296875,
+      "cross_set_volume_delta_pct": 31.98336
+    },
+    {
+      "method": "Octree Occupancy",
+      "status": "ok",
+      "volume_m3": 840.421875,
+      "absolute_error_m3": 720.681875,
+      "percent_error": 601.872286,
+      "execution_time_seconds": 1.997745,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "coarse_voxel_size_m": 0.5,
+        "fine_voxel_size_m": 0.25,
+        "refined_parent_voxels": 280
+      },
+      "failure": null,
+      "components": null,
+      "boundary_edges": null,
+      "non_manifold_edges": null,
+      "non_manifold_vertices": null,
+      "watertight": null,
+      "orientable": null,
+      "dataset": "set1",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.022857,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 868.73125,
+        "volume_std_m3": 1.425279,
+        "volume_range_m3": 3.453125
+      },
+      "noise_volume_std_m3": 1.425279,
+      "noise_volume_range_m3": 3.453125,
+      "cross_set_volume_delta_m3": 322.828125,
+      "cross_set_volume_delta_pct": 269.607587
+    },
+    {
+      "method": "Surface Mesh (Poisson)",
+      "status": "volume_unavailable",
+      "volume_m3": null,
+      "absolute_error_m3": null,
+      "percent_error": null,
+      "execution_time_seconds": 0.424937,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "source": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_raw.ply",
+        "volume_requires_watertight_mesh": true
+      },
+      "failure": null,
+      "components": 10,
+      "boundary_edges": 191,
+      "non_manifold_edges": 4,
+      "non_manifold_vertices": 0,
+      "watertight": false,
+      "orientable": false,
+      "dataset": "set1",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.022857,
+        "trials": 5,
+        "valid_trials": 0,
+        "volume_std_m3": null,
+        "volume_range_m3": null
+      },
+      "noise_volume_std_m3": null,
+      "noise_volume_range_m3": null,
+      "cross_set_volume_delta_m3": null,
+      "cross_set_volume_delta_pct": null
+    },
+    {
+      "method": "TSDF Occupancy",
+      "status": "ok",
+      "volume_m3": 97.375,
+      "absolute_error_m3": 22.365,
+      "percent_error": 18.677969,
+      "execution_time_seconds": 0.033447,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "grid_step_m": 0.25,
+        "inside_voxels": 6232
+      },
+      "failure": null,
+      "components": null,
+      "boundary_edges": null,
+      "non_manifold_edges": null,
+      "non_manifold_vertices": null,
+      "watertight": null,
+      "orientable": null,
+      "dataset": "set1",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.022857,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 97.375,
+        "volume_std_m3": 0.0,
+        "volume_range_m3": 0.0
+      },
+      "noise_volume_std_m3": 0.0,
+      "noise_volume_range_m3": 0.0,
+      "cross_set_volume_delta_m3": 38.296875,
+      "cross_set_volume_delta_pct": 31.98336
+    },
+    {
+      "method": "Point Density Integration",
+      "status": "ok",
+      "volume_m3": 97.375,
+      "absolute_error_m3": 22.365,
+      "percent_error": 18.677969,
+      "execution_time_seconds": 0.033571,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 126.676172
+      },
+      "failure": null,
+      "components": null,
+      "boundary_edges": null,
+      "non_manifold_edges": null,
+      "non_manifold_vertices": null,
+      "watertight": null,
+      "orientable": null,
+      "dataset": "set1",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.022857,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 99.896875,
+        "volume_std_m3": 0.249413,
+        "volume_range_m3": 0.59375
+      },
+      "noise_volume_std_m3": 0.249413,
+      "noise_volume_range_m3": 0.59375,
+      "cross_set_volume_delta_m3": 35.296875,
+      "cross_set_volume_delta_pct": 29.477931
+    },
+    {
+      "method": "Convex Hull",
+      "status": "ok",
+      "volume_m3": 82.501972,
+      "absolute_error_m3": 37.238028,
+      "percent_error": 31.099072,
+      "execution_time_seconds": 0.007128,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "implementation": "Open3D convex hull"
+      },
+      "failure": null,
+      "components": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "non_manifold_vertices": 0,
+      "watertight": true,
+      "orientable": true,
+      "dataset": "set2",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.024385,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 85.427148,
+        "volume_std_m3": 0.724453,
+        "volume_range_m3": 1.72495
+      },
+      "noise_volume_std_m3": 0.724453,
+      "noise_volume_range_m3": 1.72495,
+      "cross_set_volume_delta_m3": 74.425726,
+      "cross_set_volume_delta_pct": 62.15611
+    },
+    {
+      "method": "Alpha Shape",
+      "status": "volume_unavailable",
+      "volume_m3": null,
+      "absolute_error_m3": null,
+      "percent_error": null,
+      "execution_time_seconds": 1.098167,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "alpha_m": 0.146311,
+        "alpha_source": "3 * median nearest-neighbor distance; no GT tuning"
+      },
+      "failure": null,
+      "components": 319,
+      "boundary_edges": 0,
+      "non_manifold_edges": 3632,
+      "non_manifold_vertices": 953,
+      "watertight": false,
+      "orientable": false,
+      "dataset": "set2",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.024385,
+        "trials": 5,
+        "valid_trials": 0,
+        "volume_std_m3": null,
+        "volume_range_m3": null
+      },
+      "noise_volume_std_m3": null,
+      "noise_volume_range_m3": null,
+      "cross_set_volume_delta_m3": null,
+      "cross_set_volume_delta_pct": null
+    },
+    {
+      "method": "Voxel Occupancy",
+      "status": "ok",
+      "volume_m3": 135.671875,
+      "absolute_error_m3": 15.931875,
+      "percent_error": 13.305391,
+      "execution_time_seconds": 0.015632,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "voxel_size_m": 0.25,
+        "solid_voxels": 8683
+      },
+      "failure": null,
+      "components": null,
+      "boundary_edges": null,
+      "non_manifold_edges": null,
+      "non_manifold_vertices": null,
+      "watertight": null,
+      "orientable": null,
+      "dataset": "set2",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.024385,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 139.621875,
+        "volume_std_m3": 0.305667,
+        "volume_range_m3": 0.765625
+      },
+      "noise_volume_std_m3": 0.305667,
+      "noise_volume_range_m3": 0.765625,
+      "cross_set_volume_delta_m3": 38.296875,
+      "cross_set_volume_delta_pct": 31.98336
+    },
+    {
+      "method": "Octree Occupancy",
+      "status": "ok",
+      "volume_m3": 1163.25,
+      "absolute_error_m3": 1043.51,
+      "percent_error": 871.479873,
+      "execution_time_seconds": 3.429219,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "coarse_voxel_size_m": 0.5,
+        "fine_voxel_size_m": 0.25,
+        "refined_parent_voxels": 385
+      },
+      "failure": null,
+      "components": null,
+      "boundary_edges": null,
+      "non_manifold_edges": null,
+      "non_manifold_vertices": null,
+      "watertight": null,
+      "orientable": null,
+      "dataset": "set2",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.024385,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 1214.9,
+        "volume_std_m3": 8.792729,
+        "volume_range_m3": 21.671875
+      },
+      "noise_volume_std_m3": 8.792729,
+      "noise_volume_range_m3": 21.671875,
+      "cross_set_volume_delta_m3": 322.828125,
+      "cross_set_volume_delta_pct": 269.607587
+    },
+    {
+      "method": "Surface Mesh (Poisson)",
+      "status": "volume_unavailable",
+      "volume_m3": null,
+      "absolute_error_m3": null,
+      "percent_error": null,
+      "execution_time_seconds": 1.217743,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "source": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_raw.ply",
+        "volume_requires_watertight_mesh": true
+      },
+      "failure": null,
+      "components": 39,
+      "boundary_edges": 226,
+      "non_manifold_edges": 39,
+      "non_manifold_vertices": 0,
+      "watertight": false,
+      "orientable": false,
+      "dataset": "set2",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.024385,
+        "trials": 5,
+        "valid_trials": 0,
+        "volume_std_m3": null,
+        "volume_range_m3": null
+      },
+      "noise_volume_std_m3": null,
+      "noise_volume_range_m3": null,
+      "cross_set_volume_delta_m3": null,
+      "cross_set_volume_delta_pct": null
+    },
+    {
+      "method": "TSDF Occupancy",
+      "status": "ok",
+      "volume_m3": 135.671875,
+      "absolute_error_m3": 15.931875,
+      "percent_error": 13.305391,
+      "execution_time_seconds": 0.013817,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "grid_step_m": 0.25,
+        "inside_voxels": 8683
+      },
+      "failure": null,
+      "components": null,
+      "boundary_edges": null,
+      "non_manifold_edges": null,
+      "non_manifold_vertices": null,
+      "watertight": null,
+      "orientable": null,
+      "dataset": "set2",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.024385,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 135.671875,
+        "volume_std_m3": 0.0,
+        "volume_range_m3": 0.0
+      },
+      "noise_volume_std_m3": 0.0,
+      "noise_volume_range_m3": 0.0,
+      "cross_set_volume_delta_m3": 38.296875,
+      "cross_set_volume_delta_pct": 31.98336
+    },
+    {
+      "method": "Point Density Integration",
+      "status": "ok",
+      "volume_m3": 132.671875,
+      "absolute_error_m3": 12.931875,
+      "percent_error": 10.799962,
+      "execution_time_seconds": 0.026479,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "parameters": {
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 316.513648
+      },
+      "failure": null,
+      "components": null,
+      "boundary_edges": null,
+      "non_manifold_edges": null,
+      "non_manifold_vertices": null,
+      "watertight": null,
+      "orientable": null,
+      "dataset": "set2",
+      "ground_truth_m3": 119.74,
+      "noise_sensitivity": {
+        "noise_sigma_m": 0.024385,
+        "trials": 5,
+        "valid_trials": 5,
+        "volume_mean_m3": 133.90625,
+        "volume_std_m3": 0.481341,
+        "volume_range_m3": 1.28125
+      },
+      "noise_volume_std_m3": 0.481341,
+      "noise_volume_range_m3": 1.28125,
+      "cross_set_volume_delta_m3": 35.296875,
+      "cross_set_volume_delta_pct": 29.477931
+    }
+  ],
+  "stability_between_sets": {
+    "Convex Hull": {
+      "cross_set_volume_delta_m3": 74.425726,
+      "cross_set_volume_delta_pct": 62.15611
+    },
+    "Alpha Shape": {
+      "cross_set_volume_delta_m3": null,
+      "cross_set_volume_delta_pct": null
+    },
+    "Voxel Occupancy": {
+      "cross_set_volume_delta_m3": 38.296875,
+      "cross_set_volume_delta_pct": 31.98336
+    },
+    "Octree Occupancy": {
+      "cross_set_volume_delta_m3": 322.828125,
+      "cross_set_volume_delta_pct": 269.607587
+    },
+    "Surface Mesh (Poisson)": {
+      "cross_set_volume_delta_m3": null,
+      "cross_set_volume_delta_pct": null
+    },
+    "TSDF Occupancy": {
+      "cross_set_volume_delta_m3": 38.296875,
+      "cross_set_volume_delta_pct": 31.98336
+    },
+    "Point Density Integration": {
+      "cross_set_volume_delta_m3": 35.296875,
+      "cross_set_volume_delta_pct": 29.477931
+    }
+  },
+  "recommendation": {
+    "best_by_mean_percent_error": "Point Density Integration",
+    "mean_percent_error": 14.738966,
+    "mean_execution_time_seconds": 0.030025,
+    "rationale": "Selected strictly by lowest mean percent error across Set 1 and Set 2; runtime is secondary context."
+  },
+  "plots": [
+    "/app/data/volume_estimator_benchmark/set1_volume_error.png",
+    "/app/data/volume_estimator_benchmark/set2_volume_error.png"
+  ]
+}

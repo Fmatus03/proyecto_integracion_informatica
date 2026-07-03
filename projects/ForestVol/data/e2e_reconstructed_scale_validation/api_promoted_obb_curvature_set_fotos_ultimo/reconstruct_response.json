@@ -1,0 +1,8 @@
+{
+  "status_code": 202,
+  "body": {
+    "session_id": "422bae01-50e4-40a6-8425-2a96f84d8cf6",
+    "pipeline_state": "RECONSTRUCTION_PENDING",
+    "message": "Reconstruction task submitted to NodeODM. Poll /api/results/{session_id} for status."
+  }
+}

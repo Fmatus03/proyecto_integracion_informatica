@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import replace
 import json
+import logging
 from pathlib import Path
 
 import cv2
@@ -57,6 +58,9 @@ def _write_images(upload_dir: Path, images: list[np.ndarray]) -> list[str]:
 def _project_dataset() -> tuple[Path, dict]:
     project_root = Path(__file__).resolve().parents[3]
     manifest_path = project_root / "set_imagenes+guia" / "dataset_manifest.json"
+    if not manifest_path.exists():
+        project_root = project_root / "projects" / "ForestVol"
+        manifest_path = project_root / "set_imagenes+guia" / "dataset_manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     return project_root, manifest
 
@@ -115,6 +119,27 @@ def test_calibrate_session_uses_manual_fallback_when_confidence_is_low(tmp_path:
     assert result.warning is not None
 
 
+def test_calibrate_session_continues_when_detection_confidence_is_below_recommended_threshold(
+    tmp_path: Path,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    settings = _settings(tmp_path)
+    session_id = "session-low-coverage"
+    images = [_marker_image() for _ in range(4)] + [_blank_image() for _ in range(6)]
+    _write_images(settings.upload_path / session_id, images)
+
+    with caplog.at_level(logging.WARNING):
+        result = calibrate_session(session_id, settings)
+
+    assert result.calibration_mode == "automatic"
+    assert result.guide_detected_in_n_images == 4
+    assert result.detection_confidence == 0.4
+    assert result.scale_px_per_cm == pytest.approx(5.0, abs=0.05)
+    assert result.warning is not None
+    assert "below recommended threshold" in result.warning
+    assert "ArUco detection coverage below recommended threshold" in caplog.text
+
+
 def test_calibrate_session_uses_visible_image_names_for_confidence(tmp_path: Path) -> None:
     settings = _settings(tmp_path)
     session_id = "session-visible"
@@ -137,7 +162,12 @@ def test_calibrate_image_paths_recovers_real_dataset_marker_with_preprocessing(t
         _settings(tmp_path),
         calibration_marker_size_cm=float(manifest["reference_marker"]["physical_size_cm"]),
     )
-    image_path = project_root / "set_imagenes+guia" / "set_fotos_castillo_de_madera" / "Captura de pantalla 2026-06-16 200918.png"
+    image_path = (
+        project_root
+        / "set_imagenes+guia"
+        / "set_fotos_castillo_de_madera"
+        / "Captura de pantalla 2026-06-16 200918.png"
+    )
 
     calibrated = calibrate_image_paths([image_path], settings)
 

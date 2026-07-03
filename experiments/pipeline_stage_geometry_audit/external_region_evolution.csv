@@ -1,0 +1,49 @@
+stage,region_id,exists,points,connected_to_main,separated_from_main,fused_same_component_only,labels
+01_nodeodm_point_cloud_scaled,0,True,43888,True,False,False,"[0, 3, 4, 5, 10, 13, 32, 36, 38, 40, 41]"
+01_nodeodm_point_cloud_scaled,1,True,9507,True,False,False,"[0, 9, 14, 21, 24, 45]"
+01_nodeodm_point_cloud_scaled,2,True,1223,True,False,True,[0]
+01_nodeodm_point_cloud_scaled,3,True,24,True,False,True,[0]
+01_nodeodm_point_cloud_scaled,4,True,127,True,False,True,[0]
+01_nodeodm_point_cloud_scaled,5,True,32,True,False,True,[0]
+01_nodeodm_point_cloud_scaled,6,True,18,True,False,True,[0]
+01_nodeodm_point_cloud_scaled,7,True,19,True,False,True,[0]
+02_after_clean_point_cloud,0,True,42205,True,False,False,"[0, 3, 4, 9, 10, 14, 15, 21, 22, 23, 24, 25, 28, 36, 37]"
+02_after_clean_point_cloud,1,True,9257,True,False,False,"[0, 1, 8, 17, 34]"
+02_after_clean_point_cloud,2,True,1235,True,False,True,[0]
+02_after_clean_point_cloud,3,True,32,True,False,True,[0]
+02_after_clean_point_cloud,4,True,129,True,False,True,[0]
+02_after_clean_point_cloud,5,True,30,True,False,True,[0]
+02_after_clean_point_cloud,6,True,20,True,False,True,[0]
+02_after_clean_point_cloud,7,True,16,True,False,True,[0]
+03_after_segmentation_voxelization,0,True,42205,True,False,False,"[0, 3, 4, 9, 10, 14, 15, 21, 22, 23, 24, 25, 28, 36, 37]"
+03_after_segmentation_voxelization,1,True,9257,True,False,False,"[0, 1, 8, 17, 34]"
+03_after_segmentation_voxelization,2,True,1235,True,False,True,[0]
+03_after_segmentation_voxelization,3,True,32,True,False,True,[0]
+03_after_segmentation_voxelization,4,True,129,True,False,True,[0]
+03_after_segmentation_voxelization,5,True,30,True,False,True,[0]
+03_after_segmentation_voxelization,6,True,20,True,False,True,[0]
+03_after_segmentation_voxelization,7,True,16,True,False,True,[0]
+04_immediately_before_segment,0,True,42205,True,False,False,"[0, 3, 4, 9, 10, 14, 15, 21, 22, 23, 24, 25, 28, 36, 37]"
+04_immediately_before_segment,1,True,9257,True,False,False,"[0, 1, 8, 17, 34]"
+04_immediately_before_segment,2,True,1235,True,False,True,[0]
+04_immediately_before_segment,3,True,32,True,False,True,[0]
+04_immediately_before_segment,4,True,129,True,False,True,[0]
+04_immediately_before_segment,5,True,30,True,False,True,[0]
+04_immediately_before_segment,6,True,20,True,False,True,[0]
+04_immediately_before_segment,7,True,16,True,False,True,[0]
+05_after_segment_woodpile_components,0,True,41033,True,False,True,[0]
+05_after_segment_woodpile_components,1,True,9061,True,False,True,[0]
+05_after_segment_woodpile_components,2,True,1235,True,False,True,[0]
+05_after_segment_woodpile_components,3,True,32,True,False,True,[0]
+05_after_segment_woodpile_components,4,True,129,True,False,True,[0]
+05_after_segment_woodpile_components,5,True,30,True,False,True,[0]
+05_after_segment_woodpile_components,6,True,20,True,False,True,[0]
+05_after_segment_woodpile_components,7,True,16,True,False,True,[0]
+06_pdi_input,0,True,41033,True,False,True,[0]
+06_pdi_input,1,True,9061,True,False,True,[0]
+06_pdi_input,2,True,1235,True,False,True,[0]
+06_pdi_input,3,True,32,True,False,True,[0]
+06_pdi_input,4,True,129,True,False,True,[0]
+06_pdi_input,5,True,30,True,False,True,[0]
+06_pdi_input,6,True,20,True,False,True,[0]
+06_pdi_input,7,True,16,True,False,True,[0]

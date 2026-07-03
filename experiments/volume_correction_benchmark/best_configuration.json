@@ -1,0 +1,22 @@
+{
+  "algorithm": "obb_plus_curvature",
+  "params_json": "{\"curvature_percentile\": 80, \"obb_percentile\": 80}",
+  "volume_m3": 121.2031,
+  "abs_error_m3": 1.4631,
+  "pct_error": 1.221897,
+  "points": 17497,
+  "points_removed": 28014,
+  "pct_removed": 61.554349,
+  "components": 1,
+  "largest_components": "[17497]",
+  "runtime_seconds": 0.275276,
+  "complexity": 5,
+  "pdi_metrics": {
+    "volume_m3": 121.2031,
+    "hull_volume_m3": 73.672951,
+    "solid_voxels": 7757,
+    "dense_voxels": 1252,
+    "density_threshold_points_per_voxel": 2
+  },
+  "rank": 1
+}

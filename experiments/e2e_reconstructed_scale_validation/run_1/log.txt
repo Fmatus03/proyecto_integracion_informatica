@@ -1,0 +1,15 @@
+Run 1 status: not executed.
+
+Reason:
+NodeODM/Docker was unavailable before the reconstruction stage, so the requested image-to-volume E2E pipeline could not start.
+
+Checks:
+- http://localhost:3000/info: unreachable, "No es posible conectar con el servidor remoto".
+- http://localhost:3001/info: unreachable, "No es posible conectar con el servidor remoto".
+- docker ps, sandbox: failed to connect to npipe:////./pipe/docker_engine.
+- docker ps, elevated: failed to connect to npipe:////./pipe/dockerDesktopLinuxEngine.
+
+No algorithms or parameters were modified.
+No point cloud was reconstructed.
+No scale factor was applied.
+No segmentation/PDI/volume result was produced.

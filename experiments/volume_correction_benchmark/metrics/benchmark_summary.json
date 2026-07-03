@@ -1,0 +1,265 @@
+{
+  "ground_truth_volume_m3": 119.74,
+  "current_pipeline_volume_m3": 234.0469,
+  "raw_cloud": "C:\\Users\\Fabian Matus\\OneDrive\\Escritorio\\harness_con_separacion_de_proyectos\\projects\\ForestVol\\data\\processed\\971d6e25-8ff0-41d2-8784-c981dec7ccbf\\point_cloud.ply",
+  "volume_input_cloud": "C:\\Users\\Fabian Matus\\OneDrive\\Escritorio\\harness_con_separacion_de_proyectos\\experiments\\volume_input_audit\\selected_volume_cloud.ply",
+  "scale_factor_m_per_unit": 0.54611448,
+  "common_input": {
+    "description": "Nube exacta que entra a PDI, derivada de la RAW escalada. Se usa para que el baseline reproduzca el volumen actual y todos los metodos compitan sobre el mismo exceso de geometria.",
+    "raw_scaled_points": 746225,
+    "benchmark_input_points": 45511,
+    "baseline_pdi_volume_m3": 234.0469
+  },
+  "run_count": 166,
+  "best": {
+    "algorithm": "obb_plus_curvature",
+    "params_json": "{\"curvature_percentile\": 80, \"obb_percentile\": 80}",
+    "volume_m3": 121.2031,
+    "abs_error_m3": 1.4631,
+    "pct_error": 1.221897,
+    "points": 17497,
+    "points_removed": 28014,
+    "pct_removed": 61.554349,
+    "components": 1,
+    "largest_components": "[17497]",
+    "runtime_seconds": 0.275276,
+    "complexity": 5,
+    "pdi_metrics": {
+      "volume_m3": 121.2031,
+      "hull_volume_m3": 73.672951,
+      "solid_voxels": 7757,
+      "dense_voxels": 1252,
+      "density_threshold_points_per_voxel": 2
+    },
+    "rank": 1
+  },
+  "top10": [
+    {
+      "algorithm": "obb_plus_curvature",
+      "params_json": "{\"curvature_percentile\": 80, \"obb_percentile\": 80}",
+      "volume_m3": 121.2031,
+      "abs_error_m3": 1.4631,
+      "pct_error": 1.221897,
+      "points": 17497,
+      "points_removed": 28014,
+      "pct_removed": 61.554349,
+      "components": 1,
+      "largest_components": "[17497]",
+      "runtime_seconds": 0.275276,
+      "complexity": 5,
+      "pdi_metrics": {
+        "volume_m3": 121.2031,
+        "hull_volume_m3": 73.672951,
+        "solid_voxels": 7757,
+        "dense_voxels": 1252,
+        "density_threshold_points_per_voxel": 2
+      },
+      "rank": 1
+    },
+    {
+      "algorithm": "compactness",
+      "params_json": "{\"score_percentile\": 55}",
+      "volume_m3": 121.5781,
+      "abs_error_m3": 1.8381,
+      "pct_error": 1.535076,
+      "points": 25019,
+      "points_removed": 20492,
+      "pct_removed": 45.026477,
+      "components": 1,
+      "largest_components": "[25019]",
+      "runtime_seconds": 0.016092,
+      "complexity": 2,
+      "pdi_metrics": {
+        "volume_m3": 121.5781,
+        "hull_volume_m3": 70.275779,
+        "solid_voxels": 7781,
+        "dense_voxels": 1409,
+        "density_threshold_points_per_voxel": 2
+      },
+      "rank": 2
+    },
+    {
+      "algorithm": "obb_plus_curvature",
+      "params_json": "{\"curvature_percentile\": 90, \"obb_percentile\": 80}",
+      "volume_m3": 121.8281,
+      "abs_error_m3": 2.0881,
+      "pct_error": 1.743862,
+      "points": 19691,
+      "points_removed": 25820,
+      "pct_removed": 56.733537,
+      "components": 1,
+      "largest_components": "[19691]",
+      "runtime_seconds": 0.265304,
+      "complexity": 5,
+      "pdi_metrics": {
+        "volume_m3": 121.8281,
+        "hull_volume_m3": 73.776859,
+        "solid_voxels": 7797,
+        "dense_voxels": 1281,
+        "density_threshold_points_per_voxel": 2
+      },
+      "rank": 3
+    },
+    {
+      "algorithm": "obb_shrink",
+      "params_json": "{\"axis_percentile\": 80}",
+      "volume_m3": 122.1094,
+      "abs_error_m3": 2.3694,
+      "pct_error": 1.978787,
+      "points": 21885,
+      "points_removed": 23626,
+      "pct_removed": 51.912724,
+      "components": 1,
+      "largest_components": "[21885]",
+      "runtime_seconds": 0.00852,
+      "complexity": 1,
+      "pdi_metrics": {
+        "volume_m3": 122.1094,
+        "hull_volume_m3": 73.862565,
+        "solid_voxels": 7815,
+        "dense_voxels": 1300,
+        "density_threshold_points_per_voxel": 2
+      },
+      "rank": 4
+    },
+    {
+      "algorithm": "obb_plus_curvature",
+      "params_json": "{\"curvature_percentile\": 60, \"obb_percentile\": 80}",
+      "volume_m3": 122.1562,
+      "abs_error_m3": 2.4162,
+      "pct_error": 2.017872,
+      "points": 13111,
+      "points_removed": 32400,
+      "pct_removed": 71.19158,
+      "components": 1,
+      "largest_components": "[13111]",
+      "runtime_seconds": 0.266285,
+      "complexity": 5,
+      "pdi_metrics": {
+        "volume_m3": 122.1562,
+        "hull_volume_m3": 73.2733,
+        "solid_voxels": 7818,
+        "dense_voxels": 1262,
+        "density_threshold_points_per_voxel": 1
+      },
+      "rank": 5
+    },
+    {
+      "algorithm": "center_distance",
+      "params_json": "{\"keep_percentile\": 60}",
+      "volume_m3": 117.2812,
+      "abs_error_m3": 2.4588,
+      "pct_error": 2.053449,
+      "points": 27304,
+      "points_removed": 18207,
+      "pct_removed": 40.005713,
+      "components": 1,
+      "largest_components": "[27304]",
+      "runtime_seconds": 0.010046,
+      "complexity": 1,
+      "pdi_metrics": {
+        "volume_m3": 117.2812,
+        "hull_volume_m3": 72.105356,
+        "solid_voxels": 7506,
+        "dense_voxels": 1369,
+        "density_threshold_points_per_voxel": 3
+      },
+      "rank": 6
+    },
+    {
+      "algorithm": "center_plus_density",
+      "params_json": "{\"center_percentile\": 80, \"density_percentile\": 40}",
+      "volume_m3": 115.0625,
+      "abs_error_m3": 4.6775,
+      "pct_error": 3.90638,
+      "points": 22299,
+      "points_removed": 23212,
+      "pct_removed": 51.003054,
+      "components": 1,
+      "largest_components": "[22299]",
+      "runtime_seconds": 0.929812,
+      "complexity": 4,
+      "pdi_metrics": {
+        "volume_m3": 115.0625,
+        "hull_volume_m3": 90.623332,
+        "solid_voxels": 7364,
+        "dense_voxels": 1216,
+        "density_threshold_points_per_voxel": 2
+      },
+      "rank": 7
+    },
+    {
+      "algorithm": "density_filter",
+      "params_json": "{\"radius_m\": 0.2, \"remove_below_density_percentile\": 60}",
+      "volume_m3": 125.4375,
+      "abs_error_m3": 5.6975,
+      "pct_error": 4.758226,
+      "points": 18771,
+      "points_removed": 26740,
+      "pct_removed": 58.755026,
+      "components": 1,
+      "largest_components": "[18771]",
+      "runtime_seconds": 1.046092,
+      "complexity": 2,
+      "pdi_metrics": {
+        "volume_m3": 125.4375,
+        "hull_volume_m3": 107.800272,
+        "solid_voxels": 8028,
+        "dense_voxels": 1238,
+        "density_threshold_points_per_voxel": 1
+      },
+      "rank": 8
+    },
+    {
+      "algorithm": "center_distance",
+      "params_json": "{\"keep_percentile\": 65}",
+      "volume_m3": 125.5938,
+      "abs_error_m3": 5.8538,
+      "pct_error": 4.888759,
+      "points": 29578,
+      "points_removed": 15933,
+      "pct_removed": 35.009119,
+      "components": 1,
+      "largest_components": "[29578]",
+      "runtime_seconds": 0.010024,
+      "complexity": 1,
+      "pdi_metrics": {
+        "volume_m3": 125.5938,
+        "hull_volume_m3": 80.587512,
+        "solid_voxels": 8038,
+        "dense_voxels": 1498,
+        "density_threshold_points_per_voxel": 3
+      },
+      "rank": 9
+    },
+    {
+      "algorithm": "center_plus_density",
+      "params_json": "{\"center_percentile\": 70, \"density_percentile\": 10}",
+      "volume_m3": 126.6562,
+      "abs_error_m3": 6.9162,
+      "pct_error": 5.776015,
+      "points": 28565,
+      "points_removed": 16946,
+      "pct_removed": 37.234954,
+      "components": 1,
+      "largest_components": "[28565]",
+      "runtime_seconds": 0.634063,
+      "complexity": 4,
+      "pdi_metrics": {
+        "volume_m3": 126.6562,
+        "hull_volume_m3": 84.850317,
+        "solid_voxels": 8106,
+        "dense_voxels": 1496,
+        "density_threshold_points_per_voxel": 2
+      },
+      "rank": 10
+    }
+  ],
+  "runtime_seconds": 262.311,
+  "environment": {
+    "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "open3d": "0.19.0",
+    "numpy": "2.3.5"
+  }
+}

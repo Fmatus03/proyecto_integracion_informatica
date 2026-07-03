@@ -88,7 +88,7 @@ ForestVol es un sistema que automatiza el cálculo del volumen de acopios de mad
 
 ```
 forestvol/
-├── back_data/                  # Documentación del proyecto (solo lectura)
+├── projects/ForestVol/back_data/ # Documentacion del proyecto (solo lectura)
 ├── trazabilidad/               # Archivos de trazabilidad JSON (un archivo por hito)
 │   ├── hito_0_validacion_tecnica.json
 │   ├── hito_0_5_volumetria_preliminar.json
@@ -262,7 +262,7 @@ La limpieza automática se ejecuta al inicio de cada nueva sesión (borrar sesio
 |---|---|
 | Dimensiones | 100 cm × 100 cm (exacto) |
 | Material recomendado | PVC rígido |
-| Patrón | **Marcador ArUco — DICT_4X4_50, ID 0** (método oficial y preferido) |
+| Patrón | **Marcador ArUco — DICT_4X4_100, ID 0** (método oficial y preferido) |
 | Colocación | Plana sobre el castillo o apoyada en cara lateral visible desde el dron |
 
 ### Detección con ArUco (método principal)
@@ -271,7 +271,7 @@ El marcador ArUco es la referencia oficial de calibración. OpenCV lo detecta co
 
 ```python
 corners, ids, rejected = cv2.aruco.detectMarkers(
-    image, cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
+    image, cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_100)
 )
 ```
 
@@ -280,7 +280,7 @@ Esta detección es robusta a sombras y condiciones de campo. Se prefiere sobre d
 ### Flujo de `calibration_service.py`
 
 1. Convertir imagen a escala de grises.
-2. Intentar detección ArUco con `cv2.aruco.detectMarkers` (DICT_4X4_50, ID 0).
+2. Intentar detección ArUco con `cv2.aruco.detectMarkers` (DICT_4X4_100, ID 0).
 3. Si ArUco detectado: calcular lado del marcador en píxeles → dividir entre 100 cm → obtener px/cm.
 4. Calcular homografía para corrección de perspectiva.
 5. Si la confianza es < `CALIBRATION_CONFIDENCE_THRESHOLD` (0.90): activar fallback de escala manual.
@@ -300,7 +300,7 @@ Esta detección es robusta a sombras y condiciones de campo. Se prefiere sobre d
 - Transición: `UPLOADED` → `VALIDATED`.
 
 ### Etapa 2 — Calibración Espacial (RF-03, RF-04, RF-05)
-- Detectar marcador ArUco DICT_4X4_50 ID 0 en las imágenes.
+- Detectar marcador ArUco DICT_4X4_100 ID 0 en las imágenes.
 - Calcular relación px/cm y matriz de escala.
 - Fallback: escala manual si confianza < 0.90.
 - Error de escala objetivo: ≤ 5%.
@@ -917,7 +917,7 @@ FASE 3 — INTEGRACIÓN NODEODM
   → Actualizar trazabilidad/hito_0_validacion_tecnica.json (etapa 3 — CIERRE HITO 0)
 
 FASE 4 — CALIBRACIÓN ESPACIAL
-  4.1  Implementar calibration_service.py con detección ArUco (DICT_4X4_50, ID 0)
+  4.1  Implementar calibration_service.py con detección ArUco (DICT_4X4_100, ID 0)
   4.2  Calcular px/cm y matriz homográfica
   4.3  Implementar fallback de escala manual
   4.4  Implementar POST /api/calibrate/{session_id}
@@ -977,3 +977,10 @@ FASE 8 — ESTABILIZACIÓN Y CIERRE
 - **Errores explícitos**: todas las excepciones del backend retornan HTTP 4xx/5xx con `error_code` y `message`. Sin errores silenciosos. Sin stack traces expuestos al cliente.
 - **Variables de entorno**: toda configuración desde `.env.example`. Sin valores hardcodeados.
 - **Sin over-engineering**: priorizar funcionalidad y legibilidad sobre elegancia.
+
+---
+
+## Actualizacion PDI vigente
+
+La volumetria oficial del MVP proviene de Point Density Integration sobre la nube segmentada. Las mallas Poisson, Alpha Shape y sus reparaciones quedan como artefactos legacy para visualizacion, exportacion, depuracion o comparacion manual, pero no son fuente oficial de volume_m3.
+

@@ -1,0 +1,11 @@
+{
+  "run": "run_1",
+  "status": "failed",
+  "session_id": "d0563947-152b-411b-a62a-fb525d9bbeaa",
+  "pipeline_state": "FAILED",
+  "message": "NodeODM failed after 3 fallback attempts",
+  "error_code": "NODEODM_PROCESSING_FAILED",
+  "volume_m3": null,
+  "error_percentage": null,
+  "scale_factor_m_per_unit": null
+}

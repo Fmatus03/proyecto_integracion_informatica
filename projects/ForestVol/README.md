@@ -1,12 +1,19 @@
 # ForestVol - Hito 0
 
-Este directorio contiene el scaffold ejecutable del Hito 0 de ForestVol. El alcance de este hito es validar la base tecnica del proyecto con Docker Compose, una API FastAPI minima, integracion real con NodeODM y evidencia trazable del primer intento de generacion de nube de puntos `.ply`.
+Este directorio contiene el scaffold ejecutable de ForestVol. El pipeline productivo usa NodeODM para reconstruir nube de puntos y Point Density Integration (PDI) como estimador volumetrico oficial.
 
 ## Servicios
 
 - `forestvol-backend`: FastAPI con `/health`, `/api/upload`, `/api/reconstruct/{session_id}` y `/api/results/{session_id}`.
-- `forestvol-frontend`: placeholder operativo para la UI futura, sin adelantar Hito 3.
+- `forestvol-frontend`: interfaz minima para consultar volumen PDI, confidence score, quality gates y diagnostico.
 - `nodeodm`: motor SfM/MVS usado para la validacion tecnica real.
+
+## Volumetria oficial
+
+- El volumen oficial proviene exclusivamente de `point_density_integration`.
+- La malla queda como capa legacy para visualizacion, exportacion, depuracion o comparacion manual.
+- Poisson, Alpha Shape y mesh repair no participan en el calculo oficial del volumen.
+- `GET /api/results/{session_id}` retorna `volume_method`, `confidence_score`, `confidence_level`, `quality_gates`, `diagnostic` y `pdi_metrics`.
 
 ## Comandos
 
@@ -15,8 +22,10 @@ docker compose -f projects/ForestVol/docker-compose.yml up --build
 docker compose -f projects/ForestVol/docker-compose.yml run --rm forestvol-backend pytest backend/tests -q
 ```
 
-## Alcance de Hito 0
+## Validacion productiva PDI
 
-- Si NodeODM produce una nube de puntos `.ply`, Hito 0 puede marcarse como completado.
-- Si Docker o NodeODM fallan con evidencia real, el hito debe quedar bloqueado exactamente en ese punto.
-- No se afirma calibracion espacial, volumetria final ni RF-09 en este hito.
+- Run: `RUN-PDI-PRODUCTIVE-MIGRATION-01`.
+- Backend unit tests en Docker: `32 passed`.
+- Set 1 API end-to-end: `COMPLETED`, volumen PDI `69.8281 m3`, error `41.6836%`.
+- Set 2 API end-to-end: `COMPLETED`, volumen PDI `39.0156 m3`, error `67.4164%`.
+- Hito 0.5 queda bloqueado por criterio de error volumetrico, no por falla de ejecucion.

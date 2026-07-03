@@ -1,0 +1,31 @@
+{
+  "status": "not_comparable",
+  "reason": "The requested E2E run could not start because NodeODM/Docker is unavailable.",
+  "expected_volume_m3": 119.74,
+  "pipelines": [
+    {
+      "pipeline": "Escala anterior",
+      "volume_m3": 946.0781,
+      "absolute_error_m3": 826.3381,
+      "error_percent": 690.110322
+    },
+    {
+      "pipeline": "Nuevo escalado",
+      "volume_m3": null,
+      "absolute_error_m3": null,
+      "error_percent": null
+    }
+  ],
+  "stability": {
+    "run_1": "not_executed",
+    "run_2": "not_executed",
+    "scale_factor_delta": null,
+    "volume_delta_m3": null,
+    "error_delta_percent_points": null
+  },
+  "improvement": {
+    "absolute_error_reduction_m3": null,
+    "relative_error_reduction_percent": null,
+    "error_percent_points_reduction": null
+  }
+}

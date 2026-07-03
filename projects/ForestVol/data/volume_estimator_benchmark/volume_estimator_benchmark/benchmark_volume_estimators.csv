@@ -1,0 +1,15 @@
+dataset,method,status,volume_m3,absolute_error_m3,percent_error,execution_time_seconds,approx_memory_mb,noise_volume_std_m3,noise_volume_range_m3,cross_set_volume_delta_m3,cross_set_volume_delta_pct,components,boundary_edges,non_manifold_edges,non_manifold_vertices,watertight,orientable
+set1,Convex Hull,ok,156.927698,37.187698,31.057038,0.012216,,1.199168,3.015214,74.425726,62.15611,1,0,0,0,True,True
+set1,Alpha Shape,volume_unavailable,,,,0.976071,,,,,,156,0,5448,826,False,False
+set1,Voxel Occupancy,ok,97.375,22.365,18.677969,0.027858,,0.249413,0.59375,38.296875,31.98336,,,,,,
+set1,Octree Occupancy,ok,840.421875,720.681875,601.872286,1.997745,,1.425279,3.453125,322.828125,269.607587,,,,,,
+set1,Surface Mesh (Poisson),volume_unavailable,,,,0.424937,,,,,,10,191,4,0,False,False
+set1,TSDF Occupancy,ok,97.375,22.365,18.677969,0.033447,,0.0,0.0,38.296875,31.98336,,,,,,
+set1,Point Density Integration,ok,97.375,22.365,18.677969,0.033571,,0.249413,0.59375,35.296875,29.477931,,,,,,
+set2,Convex Hull,ok,82.501972,37.238028,31.099072,0.007128,,0.724453,1.72495,74.425726,62.15611,1,0,0,0,True,True
+set2,Alpha Shape,volume_unavailable,,,,1.098167,,,,,,319,0,3632,953,False,False
+set2,Voxel Occupancy,ok,135.671875,15.931875,13.305391,0.015632,,0.305667,0.765625,38.296875,31.98336,,,,,,
+set2,Octree Occupancy,ok,1163.25,1043.51,871.479873,3.429219,,8.792729,21.671875,322.828125,269.607587,,,,,,
+set2,Surface Mesh (Poisson),volume_unavailable,,,,1.217743,,,,,,39,226,39,0,False,False
+set2,TSDF Occupancy,ok,135.671875,15.931875,13.305391,0.013817,,0.0,0.0,38.296875,31.98336,,,,,,
+set2,Point Density Integration,ok,132.671875,12.931875,10.799962,0.026479,,0.481341,1.28125,35.296875,29.477931,,,,,,

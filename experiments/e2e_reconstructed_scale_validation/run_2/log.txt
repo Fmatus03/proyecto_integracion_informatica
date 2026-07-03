@@ -1,0 +1,9 @@
+Run 2 status: not executed.
+
+Reason:
+The requested stability run depends on Run 1 finishing correctly. Run 1 could not start because NodeODM/Docker was unavailable.
+
+No algorithms or parameters were modified.
+No point cloud was reconstructed.
+No scale factor was applied.
+No segmentation/PDI/volume result was produced.

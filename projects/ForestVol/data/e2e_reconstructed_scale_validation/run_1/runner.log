@@ -1,0 +1,6 @@
+[2026-07-01 05:36:24] Starting E2E run
+[2026-07-01 05:36:24] Dataset images found: 95
+[2026-07-01 05:36:24] Created session: d0563947-152b-411b-a62a-fb525d9bbeaa
+[2026-07-01 05:36:29] Images copied into session upload folder
+[2026-07-01 05:37:02] Calibration completed: mode=automatic, detections=61, confidence=0.6421
+[2026-07-01 06:23:36] Run finished with state=FAILED

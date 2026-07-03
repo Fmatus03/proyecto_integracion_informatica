@@ -1,0 +1,391 @@
+{
+  "method": "ray-based camera TSDF from OpenSfM poses/intrinsics with approximate depth from SfM point reprojection",
+  "not_pipeline_integration": true,
+  "depth_source": "synthetic sparse depth maps from SfM landmark reprojection; OpenMVS .dmap files detected but not decoded in runtime",
+  "datasets": {
+    "set1": {
+      "task_uuid": "56396d01-c139-445e-ba50-55644781e877",
+      "alignment": {
+        "scale_sfm_to_metric": 0.9490063003266858,
+        "sfm_center": [
+          6.463409,
+          1.862006,
+          -1.885771
+        ],
+        "metric_center": [
+          6.797274,
+          1.920281,
+          -1.619715
+        ]
+      },
+      "cameras_used": [
+        {
+          "shot_id": "Capturadepantalla2026-06-16200808.png",
+          "visible_points": 8456
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16201123.png",
+          "visible_points": 8237
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200759.png",
+          "visible_points": 7023
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200918.png",
+          "visible_points": 6847
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200740.png",
+          "visible_points": 6715
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16201021.png",
+          "visible_points": 6624
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16201030.png",
+          "visible_points": 6619
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200848.png",
+          "visible_points": 6554
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200840.png",
+          "visible_points": 6534
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200902.png",
+          "visible_points": 6526
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200822.png",
+          "visible_points": 6512
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200936.png",
+          "visible_points": 5640
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16200928.png",
+          "visible_points": 5224
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16201050.png",
+          "visible_points": 4396
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16201104.png",
+          "visible_points": 4071
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16201137.png",
+          "visible_points": 3964
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-16201002.png",
+          "visible_points": 2216
+        }
+      ],
+      "grid_shape": [
+        36,
+        53,
+        25
+      ],
+      "grid_step_m": 0.35,
+      "truncation_m": 1.4,
+      "known_voxel_ratio": 0.310713,
+      "tsdf_grid": "/app/data/camera_tsdf_outputs_r80/set1/camera_ray_tsdf_grid.npz",
+      "camera_tsdf_mesh": "/app/data/camera_tsdf_outputs_r80/set1/camera_ray_tsdf_mesh.ply",
+      "poisson_metrics": {
+        "vertices": 29592,
+        "triangles": 58975,
+        "boundary_edges": 191,
+        "non_manifold_edges": 4,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          15.963822,
+          16.478785,
+          6.404328
+        ],
+        "area": 264.530912,
+        "volume": null,
+        "components_connected": 10
+      },
+      "voxel_metrics": {
+        "vertices": 3583,
+        "triangles": 7164,
+        "boundary_edges": 0,
+        "non_manifold_edges": 1,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          10.0,
+          6.75,
+          5.5
+        ],
+        "area": 223.875,
+        "volume": null,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.48055614,
+        "area_drift_vs_poisson_pct": -15.369059
+      },
+      "point_sdf_metrics": {
+        "vertices": 10012,
+        "triangles": 20020,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          10.0,
+          6.758066,
+          5.501884
+        ],
+        "area": 186.746325,
+        "volume": 95.756277,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.48026213,
+        "area_drift_vs_poisson_pct": -29.404725
+      },
+      "camera_tsdf_metrics": {
+        "vertices": 19912,
+        "triangles": 39904,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          11.197265,
+          16.094076,
+          8.04923
+        ],
+        "area": 656.712956,
+        "volume": null,
+        "components_connected": 16,
+        "bbox_drift_vs_poisson": 0.21229957,
+        "area_drift_vs_poisson_pct": 148.255658
+      }
+    },
+    "set2": {
+      "task_uuid": "002ca5e3-6eca-4aba-b3e2-623f97878136",
+      "alignment": {
+        "scale_sfm_to_metric": 0.5560259139707914,
+        "sfm_center": [
+          5.147873,
+          -1.680842,
+          2.85233
+        ],
+        "metric_center": [
+          6.299921,
+          -2.068313,
+          2.360453
+        ]
+      },
+      "cameras_used": [
+        {
+          "shot_id": "Capturadepantalla2026-06-27014429.png",
+          "visible_points": 19110
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014454.png",
+          "visible_points": 19107
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014420.png",
+          "visible_points": 19011
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014507.png",
+          "visible_points": 17676
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014339.png",
+          "visible_points": 17217
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014347.png",
+          "visible_points": 16381
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014042.png",
+          "visible_points": 14319
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014000.png",
+          "visible_points": 13603
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014016.png",
+          "visible_points": 13562
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014327.png",
+          "visible_points": 12090
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014049.png",
+          "visible_points": 11974
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014256.png",
+          "visible_points": 11840
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014203.png",
+          "visible_points": 11775
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014320.png",
+          "visible_points": 11486
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014026.png",
+          "visible_points": 11474
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014212.png",
+          "visible_points": 11446
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014035.png",
+          "visible_points": 11405
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014219.png",
+          "visible_points": 11398
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014309.png",
+          "visible_points": 11371
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014251.png",
+          "visible_points": 11358
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014314.png",
+          "visible_points": 11349
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014244.png",
+          "visible_points": 11346
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014225.png",
+          "visible_points": 11313
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014301.png",
+          "visible_points": 11313
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014230.png",
+          "visible_points": 11307
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014102.png",
+          "visible_points": 9335
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014145.png",
+          "visible_points": 8954
+        },
+        {
+          "shot_id": "Capturadepantalla2026-06-27014129.png",
+          "visible_points": 5160
+        }
+      ],
+      "grid_shape": [
+        29,
+        36,
+        28
+      ],
+      "grid_step_m": 0.35,
+      "truncation_m": 1.4,
+      "known_voxel_ratio": 0.241003,
+      "tsdf_grid": "/app/data/camera_tsdf_outputs_r80/set2/camera_ray_tsdf_grid.npz",
+      "camera_tsdf_mesh": "/app/data/camera_tsdf_outputs_r80/set2/camera_ray_tsdf_mesh.ply",
+      "poisson_metrics": {
+        "vertices": 83623,
+        "triangles": 167102,
+        "boundary_edges": 226,
+        "non_manifold_edges": 39,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          7.819652,
+          10.009154,
+          7.107628
+        ],
+        "area": 162.982306,
+        "volume": null,
+        "components_connected": 39
+      },
+      "voxel_metrics": {
+        "vertices": 4826,
+        "triangles": 9648,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.25,
+          7.5
+        ],
+        "area": 301.5,
+        "volume": 135.671875,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.0339716,
+        "area_drift_vs_poisson_pct": 84.989406
+      },
+      "point_sdf_metrics": {
+        "vertices": 12948,
+        "triangles": 25892,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.251058,
+          7.5
+        ],
+        "area": 245.881311,
+        "volume": 133.573573,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.03400707,
+        "area_drift_vs_poisson_pct": 50.863806
+      },
+      "camera_tsdf_metrics": {
+        "vertices": 13870,
+        "triangles": 27322,
+        "boundary_edges": 418,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          8.224459,
+          12.25,
+          9.45
+        ],
+        "area": 447.366799,
+        "volume": null,
+        "components_connected": 23,
+        "bbox_drift_vs_poisson": 0.22444478,
+        "area_drift_vs_poisson_pct": 174.487955
+      }
+    }
+  }
+}

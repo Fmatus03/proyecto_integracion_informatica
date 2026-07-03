@@ -1,0 +1,310 @@
+{
+  "graph_eps_m": 0.35,
+  "high_support_seed_component_points": 37447,
+  "low_support_component_count": 49,
+  "low_support_components_analyzed": [
+    {
+      "region_id": 0,
+      "point_count": 5035,
+      "bbox": {
+        "min": [
+          0.928163,
+          -2.317415,
+          -1.006744
+        ],
+        "max": [
+          9.749031,
+          6.584214,
+          3.315024
+        ],
+        "extent_m": [
+          8.820868,
+          8.901629,
+          4.3217680000000005
+        ],
+        "volume_m3": 339.34563130884766
+      },
+      "mean_support": 0.3341772621418432,
+      "mean_density_r0_20": 761.5255832171591,
+      "mean_neighbors_0_20m": 25.51896722939424,
+      "min_distance_to_castle_seed_m": 0.005016890072544891,
+      "path_point_count": 2,
+      "path_length_m": 0.13242998330061093,
+      "bridge_density_r0_20": 746.0387957432592,
+      "bridge_support": 0.39477731442864994,
+      "bridge_k20_median_m": 0.15552311891962795,
+      "removing_path_disconnects_region": false
+    },
+    {
+      "region_id": 1,
+      "point_count": 1694,
+      "bbox": {
+        "min": [
+          -1.382151,
+          -4.004341,
+          -0.886231
+        ],
+        "max": [
+          5.082058,
+          2.336245,
+          0.530456
+        ],
+        "extent_m": [
+          6.464209,
+          6.340586,
+          1.416687
+        ],
+        "volume_m3": 58.0655702722576
+      },
+      "mean_support": 0.33181674801116184,
+      "mean_density_r0_20": 764.5180093615517,
+      "mean_neighbors_0_20m": 25.619244391971666,
+      "min_distance_to_castle_seed_m": 0.010037241105004896,
+      "path_point_count": 2,
+      "path_length_m": 0.28913597637616806,
+      "bridge_density_r0_20": 895.2465548919112,
+      "bridge_support": 0.35190933788265,
+      "bridge_k20_median_m": 0.17005024645494624,
+      "removing_path_disconnects_region": false
+    },
+    {
+      "region_id": 2,
+      "point_count": 134,
+      "bbox": {
+        "min": [
+          1.326114,
+          0.724152,
+          -0.00533
+        ],
+        "max": [
+          3.938896,
+          4.140624,
+          0.538329
+        ],
+        "extent_m": [
+          2.612782,
+          3.4164719999999997,
+          0.5436589999999999
+        ],
+        "volume_m3": 4.852970185214694
+      },
+      "mean_support": 0.3423708893195117,
+      "mean_density_r0_20": 833.7818660485858,
+      "mean_neighbors_0_20m": 27.940298507462686,
+      "min_distance_to_castle_seed_m": 0.018912750963305237,
+      "path_point_count": 2,
+      "path_length_m": 0.32437857010135535,
+      "bridge_density_r0_20": 1357.790608252732,
+      "bridge_support": 0.4914814318102554,
+      "bridge_k20_median_m": 0.13693331780818654,
+      "removing_path_disconnects_region": false
+    },
+    {
+      "region_id": 3,
+      "point_count": 17,
+      "bbox": {
+        "min": [
+          0.579968,
+          2.320261,
+          -0.225541
+        ],
+        "max": [
+          0.790444,
+          2.693677,
+          -0.115772
+        ],
+        "extent_m": [
+          0.210476,
+          0.3734160000000002,
+          0.10976899999999999
+        ],
+        "volume_m3": 0.008627306192270307
+      },
+      "mean_support": 0.3287348269566454,
+      "mean_density_r0_20": 649.4925986470728,
+      "mean_neighbors_0_20m": 21.764705882352942,
+      "min_distance_to_castle_seed_m": 0.9027025937422578,
+      "path_point_count": 7,
+      "path_length_m": 1.7188869419805433,
+      "bridge_density_r0_20": 690.6187709166172,
+      "bridge_support": 0.3397289370403246,
+      "bridge_k20_median_m": 0.15757934562943218,
+      "removing_path_disconnects_region": true
+    },
+    {
+      "region_id": 4,
+      "point_count": 17,
+      "bbox": {
+        "min": [
+          6.856171,
+          0.247882,
+          1.616673
+        ],
+        "max": [
+          7.594439,
+          0.842006,
+          1.841086
+        ],
+        "extent_m": [
+          0.7382680000000006,
+          0.5941240000000001,
+          0.22441299999999997
+        ],
+        "volume_m3": 0.0984326443304449
+      },
+      "mean_support": 0.3577290750379901,
+      "mean_density_r0_20": 868.9157738656785,
+      "mean_neighbors_0_20m": 29.11764705882353,
+      "min_distance_to_castle_seed_m": 0.02632961042248814,
+      "path_point_count": 2,
+      "path_length_m": 0.22630179463937083,
+      "bridge_density_r0_20": 1536.8399192311142,
+      "bridge_support": 0.5075643946403967,
+      "bridge_k20_median_m": 0.12954901664435092,
+      "removing_path_disconnects_region": false
+    },
+    {
+      "region_id": 5,
+      "point_count": 16,
+      "bbox": {
+        "min": [
+          2.449036,
+          2.308225,
+          1.478827
+        ],
+        "max": [
+          2.944596,
+          2.491604,
+          1.74335
+        ],
+        "extent_m": [
+          0.4955600000000002,
+          0.18337899999999996,
+          0.26452300000000006
+        ],
+        "volume_m3": 0.02403860625181653
+      },
+      "mean_support": 0.3392401720846939,
+      "mean_density_r0_20": 843.023839189883,
+      "mean_neighbors_0_20m": 28.25,
+      "min_distance_to_castle_seed_m": 0.025595483683650326,
+      "path_point_count": 2,
+      "path_length_m": 0.24929300600097068,
+      "bridge_density_r0_20": 731.1180198283942,
+      "bridge_support": 0.34971127654902934,
+      "bridge_k20_median_m": 0.19960037176307913,
+      "removing_path_disconnects_region": false
+    },
+    {
+      "region_id": 6,
+      "point_count": 14,
+      "bbox": {
+        "min": [
+          2.853923,
+          2.846399,
+          1.461615
+        ],
+        "max": [
+          3.286937,
+          2.994342,
+          1.705343
+        ],
+        "extent_m": [
+          0.433014,
+          0.14794300000000016,
+          0.24372799999999994
+        ],
+        "volume_m3": 0.015613554511153068
+      },
+      "mean_support": 0.32394471485460835,
+      "mean_density_r0_20": 865.405003062181,
+      "mean_neighbors_0_20m": 29.0,
+      "min_distance_to_castle_seed_m": 0.03630753834949437,
+      "path_point_count": 2,
+      "path_length_m": 0.26040618058909454,
+      "bridge_density_r0_20": 1357.790608252732,
+      "bridge_support": 0.42751229581016315,
+      "bridge_k20_median_m": 0.15381927118367789,
+      "removing_path_disconnects_region": false
+    },
+    {
+      "region_id": 7,
+      "point_count": 14,
+      "bbox": {
+        "min": [
+          1.82085,
+          1.341275,
+          1.610343
+        ],
+        "max": [
+          2.123742,
+          1.472003,
+          1.763414
+        ],
+        "extent_m": [
+          0.30289199999999994,
+          0.13072799999999996,
+          0.15307099999999996
+        ],
+        "volume_m3": 0.006061070551569691
+      },
+      "mean_support": 0.34587255418201457,
+      "mean_density_r0_20": 795.0642023206736,
+      "mean_neighbors_0_20m": 26.642857142857142,
+      "min_distance_to_castle_seed_m": 0.024643016475261598,
+      "path_point_count": 2,
+      "path_length_m": 0.15953594611246716,
+      "bridge_density_r0_20": 969.8504344662372,
+      "bridge_support": 0.41370617340681126,
+      "bridge_k20_median_m": 0.1548422624550311,
+      "removing_path_disconnects_region": false
+    }
+  ],
+  "bridge_total_unique_points": 21,
+  "bridge_points_density_stats": {
+    "support": {
+      "mean": 0.3929250956351516,
+      "median": 0.3964222434176152,
+      "std": 0.10453121392089945,
+      "min": 0.20623757476738905,
+      "p05": 0.21221983014879373,
+      "p25": 0.320489645643311,
+      "p75": 0.4625631357997066,
+      "p95": 0.5565890598119663,
+      "max": 0.6170820278493517
+    },
+    "density_r0_20": {
+      "mean": 953.5086322737659,
+      "median": 895.2465548919112,
+      "std": 430.92021471837177,
+      "min": 358.0986219567645,
+      "p05": 358.0986219567645,
+      "p25": 716.197243913529,
+      "p75": 1104.137417700024,
+      "p95": 1880.0177652730135,
+      "max": 2029.2255244216653
+    },
+    "neighbors_0_20m": {
+      "mean": 31.952380952380953,
+      "median": 30.0,
+      "std": 14.440274995654113,
+      "min": 12.0,
+      "p05": 12.0,
+      "p25": 24.0,
+      "p75": 37.0,
+      "p95": 63.0,
+      "max": 68.0
+    },
+    "kdist_20m": {
+      "mean": 0.17109636193889632,
+      "median": 0.15353676394271143,
+      "std": 0.05155063042049419,
+      "min": 0.11697197112556465,
+      "p05": 0.12032987167366165,
+      "p25": 0.14149486378310705,
+      "p75": 0.18210909190372632,
+      "p95": 0.2726274917942064,
+      "max": 0.3122425347017925
+    }
+  }
+}

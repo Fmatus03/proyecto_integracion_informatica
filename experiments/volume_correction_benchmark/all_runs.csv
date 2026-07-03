@@ -1,0 +1,167 @@
+rank,algorithm,params_json,volume_m3,abs_error_m3,pct_error,points,points_removed,pct_removed,components,largest_components,runtime_seconds,complexity
+1,obb_plus_curvature,"{""curvature_percentile"": 80, ""obb_percentile"": 80}",121.2031,1.4631,1.221897,17497,28014,61.554349,1,[17497],0.275276,5
+2,compactness,"{""score_percentile"": 55}",121.5781,1.8381,1.535076,25019,20492,45.026477,1,[25019],0.016092,2
+3,obb_plus_curvature,"{""curvature_percentile"": 90, ""obb_percentile"": 80}",121.8281,2.0881,1.743862,19691,25820,56.733537,1,[19691],0.265304,5
+4,obb_shrink,"{""axis_percentile"": 80}",122.1094,2.3694,1.978787,21885,23626,51.912724,1,[21885],0.00852,1
+5,obb_plus_curvature,"{""curvature_percentile"": 60, ""obb_percentile"": 80}",122.1562,2.4162,2.017872,13111,32400,71.19158,1,[13111],0.266285,5
+6,center_distance,"{""keep_percentile"": 60}",117.2812,2.4588,2.053449,27304,18207,40.005713,1,[27304],0.010046,1
+7,center_plus_density,"{""center_percentile"": 80, ""density_percentile"": 40}",115.0625,4.6775,3.90638,22299,23212,51.003054,1,[22299],0.929812,4
+8,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 60}",125.4375,5.6975,4.758226,18771,26740,58.755026,1,[18771],1.046092,2
+9,center_distance,"{""keep_percentile"": 65}",125.5938,5.8538,4.888759,29578,15933,35.009119,1,[29578],0.010024,1
+10,center_plus_density,"{""center_percentile"": 70, ""density_percentile"": 10}",126.6562,6.9162,5.776015,28565,16946,37.234954,1,[28565],0.634063,4
+11,center_plus_density,"{""center_percentile"": 80, ""density_percentile"": 25}",127.9844,8.2444,6.885251,27496,18015,39.583837,1,[27496],0.875551,4
+12,compactness,"{""score_percentile"": 60}",128.3594,8.6194,7.19843,27280,18231,40.058447,1,[27280],0.015557,2
+13,center_distance,"{""keep_percentile"": 55}",110.7344,9.0056,7.520962,25018,20493,45.028674,1,[25018],0.009026,1
+14,center_plus_density,"{""center_percentile"": 70, ""density_percentile"": 25}",110.2344,9.5056,7.938533,24201,21310,46.823845,1,[24201],0.738924,4
+15,center_plus_density,"{""center_percentile"": 90, ""density_percentile"": 40}",130.1875,10.4475,8.725155,25326,20185,44.351915,1,[25326],0.886542,4
+16,normal_filter,"{""remove_below_consistency_percentile"": 50}",131.1094,11.3694,9.495073,14211,31300,68.774582,1,[14211],4.915004,3
+17,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 50}",131.8125,12.0725,10.082262,23221,22290,48.97717,1,[23221],1.045859,2
+18,obb_shrink,"{""axis_percentile"": 75}",106.4219,13.3181,11.122515,16648,28863,63.419833,1,[16648],0.00903,1
+19,concave_hull_3d_proxy,"{""alpha"": 0.75, ""density_percentile"": 40}",135.1406,15.4006,12.8617,4504,41007,90.103491,1,[4504],2.430872,5
+20,compactness,"{""score_percentile"": 65}",137.2812,17.5412,14.649407,29582,15929,35.00033,1,[29582],0.015745,2
+21,concave_hull_3d_proxy,"{""alpha"": 0.5, ""density_percentile"": 40}",137.5312,17.7912,14.858193,6916,38595,84.803674,1,[6916],2.368858,5
+22,density_plus_alpha,"{""alpha"": 0.5, ""density_percentile"": 40}",137.5312,17.7912,14.858193,6916,38595,84.803674,1,[6916],2.505373,6
+23,center_distance,"{""keep_percentile"": 70}",137.5938,17.8538,14.910473,31853,13658,30.010327,1,[31853],0.010674,1
+24,concave_hull_3d_proxy,"{""alpha"": 0.75, ""density_percentile"": 25}",137.75,18.01,15.040922,4950,40561,89.123509,1,[4950],2.554639,5
+25,obb_shrink,"{""axis_percentile"": 85}",139.3125,19.5725,16.345833,27430,18081,39.728857,1,[27430],0.008952,1
+26,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 40}",140.9375,21.1975,17.70294,27698,17813,39.139988,1,[27698],0.991787,2
+27,concave_hull_3d_proxy,"{""alpha"": 0.35, ""density_percentile"": 40}",142.4688,22.7288,18.981794,10968,34543,75.900332,1,[10968],2.431552,5
+28,center_plus_density,"{""center_percentile"": 90, ""density_percentile"": 25}",142.9688,23.2288,19.399365,30471,15040,33.046956,1,[30471],0.962078,4
+29,center_plus_density,"{""center_percentile"": 80, ""density_percentile"": 10}",144.5938,24.8538,20.756472,32305,13206,29.017161,1,[32305],0.884867,4
+30,compactness,"{""score_percentile"": 70}",144.7969,25.0569,20.92609,31851,13660,30.014722,1,[31851],0.012796,2
+31,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 35}",144.8594,25.1194,20.978286,29512,15999,35.154139,1,[29512],0.713779,2
+32,center_distance,"{""keep_percentile"": 75}",146.4844,26.7444,22.335393,33771,11740,25.795961,1,[33771],0.0067,1
+33,density_plus_alpha,"{""alpha"": 0.5, ""density_percentile"": 30}",148.2344,28.4944,23.796893,7858,37653,82.733845,1,[7858],2.748613,6
+34,concave_hull_3d_proxy,"{""alpha"": 0.75, ""density_percentile"": 10}",148.4062,28.6662,23.940371,5557,39954,87.789765,1,[5557],3.087326,5
+35,center_plus_density,"{""center_percentile"": 70, ""density_percentile"": 40}",88.5781,31.1619,26.024637,18029,27482,60.385401,1,[18029],0.725878,4
+36,alpha_shape,"{""alpha"": 0.75}",151.6406,31.9006,26.641557,5571,39940,87.759003,1,[5571],2.399938,4
+37,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 30}",152.25,32.51,27.150493,31697,13814,30.353101,1,[31697],0.783917,2
+38,compactness,"{""score_percentile"": 75}",153.4531,33.7131,28.155253,34103,11408,25.066467,1,[34103],0.01175,2
+39,obb_plus_curvature,"{""curvature_percentile"": 60, ""obb_percentile"": 90}",153.6719,33.9319,28.337982,19705,25806,56.702775,1,[19705],0.376333,5
+40,morphological_opening_3d,"{""iterations"": 1, ""voxel_m"": 0.2}",85.125,34.615,28.908468,923,44588,97.971919,1,[923],0.008115,3
+41,obb_plus_curvature,"{""curvature_percentile"": 80, ""obb_percentile"": 90}",155.7188,35.9788,30.047436,26326,19185,42.154644,1,[26326],0.438823,5
+42,normal_filter,"{""remove_below_consistency_percentile"": 60}",81.8594,37.8806,31.635711,8097,37414,82.208697,1,[8097],4.218498,3
+43,obb_plus_curvature,"{""curvature_percentile"": 90, ""obb_percentile"": 90}",158.1719,38.4319,32.096125,29650,15861,34.850915,1,[29650],0.435324,5
+44,opening_plus_compactness,"{""compactness_percentile"": 90, ""opening_voxel_m"": 0.2}",81.2656,38.4744,32.131619,886,44625,98.053218,1,[886],0.01304,5
+45,obb_shrink,"{""axis_percentile"": 90}",159.0469,39.3069,32.826875,32975,12536,27.544989,1,[32975],0.009431,1
+46,obb_plus_curvature,"{""curvature_percentile"": 60, ""obb_percentile"": 70}",79.125,40.615,33.919325,6943,38568,84.744348,1,[6943],0.131798,5
+47,morphological_opening_3d,"{""iterations"": 1, ""voxel_m"": 0.16}",78.1875,41.5525,34.702272,1102,44409,97.578607,1,[1102],0.016567,3
+48,obb_shrink,"{""axis_percentile"": 70}",77.7656,41.9744,35.054618,11689,33822,74.316099,1,[11689],0.009017,1
+49,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 25}",162.0,42.26,35.293135,33982,11529,25.332337,1,[33982],0.743644,2
+50,obb_plus_curvature,"{""curvature_percentile"": 90, ""obb_percentile"": 70}",77.4219,42.3181,35.341657,10500,35011,76.928655,1,[10500],0.142723,5
+51,obb_plus_curvature,"{""curvature_percentile"": 80, ""obb_percentile"": 70}",77.2344,42.5056,35.498246,9311,36200,79.54121,1,[9311],0.154416,5
+52,compactness,"{""score_percentile"": 80}",163.0156,43.2756,36.141306,36360,9151,20.107227,1,[36360],0.010933,2
+53,density_plus_alpha,"{""alpha"": 1.0, ""density_percentile"": 30}",76.375,43.365,36.215968,2028,43483,95.543934,1,[2028],2.740372,6
+54,concave_hull_3d_proxy,"{""alpha"": 0.5, ""density_percentile"": 25}",163.5312,43.7912,36.571906,8508,37003,81.305618,1,[8508],2.619681,5
+55,opening_plus_compactness,"{""compactness_percentile"": 90, ""opening_voxel_m"": 0.16}",75.9062,43.8338,36.607483,1062,44449,97.666498,1,[1062],0.015026,5
+56,concave_hull_3d_proxy,"{""alpha"": 1.0, ""density_percentile"": 25}",75.1875,44.5525,37.2077,2036,43475,95.526356,1,[2036],2.823886,5
+57,center_distance,"{""keep_percentile"": 80}",164.2969,44.5569,37.211375,36357,9154,20.113819,1,[36357],0.008036,1
+58,concave_hull_3d_proxy,"{""alpha"": 0.35, ""density_percentile"": 25}",165.1875,45.4475,37.955153,13594,31917,70.130298,1,[13594],2.988948,5
+59,alpha_shape,"{""alpha"": 1.0}",73.6562,46.0838,38.486554,2060,43451,95.473622,1,[2060],2.586474,4
+60,center_plus_density,"{""center_percentile"": 90, ""density_percentile"": 10}",166.0,46.26,38.633706,36645,8866,19.481005,1,[36645],0.974194,4
+61,concave_hull_3d_proxy,"{""alpha"": 1.0, ""density_percentile"": 40}",72.6875,47.0525,39.295557,1702,43809,96.260245,1,[1702],2.4769,5
+62,density_plus_alpha,"{""alpha"": 1.0, ""density_percentile"": 40}",72.6875,47.0525,39.295557,1702,43809,96.260245,1,[1702],2.442948,6
+63,opening_plus_compactness,"{""compactness_percentile"": 80, ""opening_voxel_m"": 0.2}",72.6094,47.1306,39.360782,802,44709,98.237789,1,[802],0.01202,5
+64,opening_plus_compactness,"{""compactness_percentile"": 80, ""opening_voxel_m"": 0.16}",72.5,47.24,39.452146,993,44518,97.81811,1,[993],0.014708,5
+65,morphological_opening_3d,"{""iterations"": 1, ""voxel_m"": 0.3}",70.8906,48.8494,40.796225,460,45051,98.989255,1,[460],0.010037,3
+66,morphological_opening_3d,"{""iterations"": 1, ""voxel_m"": 0.24}",70.2969,49.4431,41.292049,557,44954,98.77612,1,[557],0.012541,3
+67,density_plus_alpha,"{""alpha"": 0.5, ""density_percentile"": 20}",172.1875,52.4475,43.801152,9051,36460,80.1125,1,[9051],3.195081,6
+68,opening_plus_compactness,"{""compactness_percentile"": 70, ""opening_voxel_m"": 0.2}",66.9375,52.8025,44.097628,717,44794,98.424557,1,[717],0.013118,5
+69,obb_shrink,"{""axis_percentile"": 93}",172.7344,52.9944,44.257892,36500,9011,19.799609,1,[36500],0.010026,1
+70,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 20}",173.2812,53.5412,44.714548,36127,9384,20.619191,1,[36127],0.736578,2
+71,opening_plus_compactness,"{""compactness_percentile"": 90, ""opening_voxel_m"": 0.24}",66.0312,53.7088,44.854518,534,44977,98.826657,1,[534],0.011024,5
+72,compactness,"{""score_percentile"": 85}",174.0625,54.3225,45.367045,38610,6901,15.163367,1,[38610],0.011707,2
+73,concave_hull_3d_proxy,"{""alpha"": 1.0, ""density_percentile"": 10}",64.8125,54.9275,45.872307,1992,43519,95.623036,1,[1992],3.295106,5
+74,density_plus_alpha,"{""alpha"": 1.0, ""density_percentile"": 10}",64.8125,54.9275,45.872307,1992,43519,95.623036,1,[1992],3.313513,6
+75,opening_plus_compactness,"{""compactness_percentile"": 70, ""opening_voxel_m"": 0.16}",64.7969,54.9431,45.885335,892,44619,98.040034,1,[892],0.013586,5
+76,center_distance,"{""keep_percentile"": 85}",175.0,55.26,46.149992,38592,6919,15.202918,1,[38592],0.007886,1
+77,density_plus_alpha,"{""alpha"": 1.0, ""density_percentile"": 20}",63.1719,56.5681,47.242442,1957,43554,95.699941,1,[1957],2.992155,6
+78,opening_plus_compactness,"{""compactness_percentile"": 80, ""opening_voxel_m"": 0.24}",62.4844,57.2556,47.816603,509,45002,98.881589,1,[509],0.010736,5
+79,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 15}",180.5781,60.8381,50.808502,38198,7313,16.068643,1,[38198],0.763014,2
+80,opening_plus_compactness,"{""compactness_percentile"": 70, ""opening_voxel_m"": 0.24}",58.5156,61.2244,51.131117,470,45041,98.967283,1,[470],0.012049,5
+81,obb_shrink,"{""axis_percentile"": 95}",181.9219,62.1819,51.930767,38925,6586,14.471227,1,[38925],0.008528,1
+82,concave_hull_3d_proxy,"{""alpha"": 0.5, ""density_percentile"": 10}",184.6094,64.8694,54.175213,10013,35498,77.998726,1,[10013],3.304333,5
+83,density_plus_alpha,"{""alpha"": 0.5, ""density_percentile"": 10}",184.6094,64.8694,54.175213,10013,35498,77.998726,1,[10013],3.364628,6
+84,compactness,"{""score_percentile"": 90}",186.2656,66.5256,55.558376,40818,4693,10.311793,1,[40818],0.012048,2
+85,center_distance,"{""keep_percentile"": 90}",187.4844,67.7444,56.576249,40789,4722,10.375514,1,[40789],0.007513,1
+86,thickness_filter,"{""remove_below_thickness_percentile"": 60}",188.5469,68.8069,57.463588,17481,28030,61.589506,1,[17481],0.642766,3
+87,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 10}",192.5781,72.8381,60.830215,40500,5011,11.010525,1,[40500],0.779441,2
+88,center_distance,"{""keep_percentile"": 93}",194.4219,74.6819,62.370052,42083,3428,7.532245,1,[42083],0.009143,1
+89,concave_hull_3d_proxy,"{""alpha"": 1.5, ""density_percentile"": 25}",44.3281,75.4119,62.979706,995,44516,97.813715,1,[995],2.755957,5
+90,density_plus_alpha,"{""alpha"": 1.5, ""density_percentile"": 30}",44.2344,75.5056,63.057959,1003,44508,97.796137,1,[1003],2.666058,6
+91,compactness,"{""score_percentile"": 93}",195.4688,75.7288,63.244363,42116,3395,7.459735,1,[42116],0.012028,2
+92,concave_hull_3d_proxy,"{""alpha"": 0.35, ""density_percentile"": 10}",195.6406,75.9006,63.38784,16740,28771,63.217684,1,[16740],3.21185,5
+93,center_distance,"{""keep_percentile"": 95}",199.8281,80.0881,66.885001,42952,2559,5.622816,1,[42952],0.007531,1
+94,compactness,"{""score_percentile"": 95}",200.125,80.385,67.132955,42963,2548,5.598646,1,[42963],0.013369,2
+95,thickness_filter,"{""remove_below_thickness_percentile"": 50}",202.0625,82.3225,68.751044,21994,23517,51.673222,1,[21994],0.695314,3
+96,density_filter,"{""radius_m"": 0.2, ""remove_below_density_percentile"": 5}",202.0938,82.3538,68.777184,42383,3128,6.873064,1,[42383],0.769283,2
+97,concave_hull_3d_proxy,"{""alpha"": 1.5, ""density_percentile"": 10}",37.2031,82.5369,68.930099,915,44596,97.989497,1,[915],3.240922,5
+98,density_plus_alpha,"{""alpha"": 1.5, ""density_percentile"": 10}",37.2031,82.5369,68.930099,915,44596,97.989497,1,[915],3.483772,6
+99,obb_shrink,"{""axis_percentile"": 65}",35.2031,84.5369,70.600384,3973,41538,91.270242,1,[3973],0.010605,1
+100,density_plus_alpha,"{""alpha"": 1.5, ""density_percentile"": 20}",35.1875,84.5525,70.613412,868,44643,98.092769,1,[868],3.272288,6
+101,normal_filter,"{""remove_below_consistency_percentile"": 40}",204.6562,84.9162,70.917154,26335,19176,42.134868,1,[26335],5.072745,3
+102,concave_hull_3d_proxy,"{""alpha"": 1.5, ""density_percentile"": 40}",31.5156,88.2244,73.679973,641,44870,98.591549,1,[641],2.36932,5
+103,density_plus_alpha,"{""alpha"": 1.5, ""density_percentile"": 40}",31.5156,88.2244,73.679973,641,44870,98.591549,1,[641],2.363557,6
+104,alpha_shape,"{""alpha"": 1.5}",30.6719,89.0681,74.384583,815,44696,98.209224,1,[815],2.543688,4
+105,normal_filter,"{""remove_below_consistency_percentile"": 35}",213.6406,93.9006,78.420411,28792,16719,36.736174,1,[28792],3.131903,3
+106,obb_shrink,"{""axis_percentile"": 60}",25.3906,94.3494,78.795223,2757,42754,93.942124,1,[2757],0.00974,1
+107,concave_hull_3d_proxy,"{""alpha"": 2.0, ""density_percentile"": 40}",24.9531,94.7869,79.160598,390,45121,99.143064,1,[390],2.543231,5
+108,concave_hull_3d_proxy,"{""alpha"": 2.0, ""density_percentile"": 25}",24.7188,95.0212,79.356272,476,45035,98.954099,1,[476],3.146461,5
+109,fine_branch_prune,"{""end_percentile"": 80, ""radial_percentile"": 45}",215.0,95.26,79.555704,39089,6422,14.110874,1,[39089],0.015639,3
+110,thickness_filter,"{""remove_below_thickness_percentile"": 40}",216.25,96.51,80.599633,26780,18731,41.157083,1,[26780],0.742805,3
+111,curvature_filter,"{""keep_below_curvature_percentile"": 40}",216.4844,96.7444,80.79539,17927,27584,60.609523,1,[17927],0.559018,3
+112,concave_hull_3d_proxy,"{""alpha"": 2.0, ""density_percentile"": 10}",22.2344,97.5056,81.431101,453,45058,99.004636,1,[453],3.308022,5
+113,fine_branch_prune,"{""end_percentile"": 85, ""radial_percentile"": 45}",217.3125,97.5725,81.486972,40775,4736,10.406275,1,[40775],0.014328,3
+114,normal_filter,"{""remove_below_consistency_percentile"": 30}",218.75,99.01,82.68749,31226,14285,31.388016,1,[31226],3.12669,3
+115,morphological_opening_3d,"{""iterations"": 1, ""voxel_m"": 0.12}",20.2344,99.5056,83.101386,283,45228,99.378172,1,[283],0.023473,3
+116,thickness_filter,"{""remove_below_thickness_percentile"": 35}",219.5469,99.8069,83.353015,29136,16375,35.980312,1,[29136],0.717644,3
+117,fine_branch_prune,"{""end_percentile"": 90, ""radial_percentile"": 45}",219.9062,100.1662,83.653082,42377,3134,6.886247,1,[42377],0.014661,3
+118,fine_branch_prune,"{""end_percentile"": 80, ""radial_percentile"": 35}",220.625,100.885,84.253382,39756,5755,12.645295,1,[39756],0.016764,3
+119,fine_branch_prune,"{""end_percentile"": 85, ""radial_percentile"": 35}",222.25,102.51,85.610489,41237,4274,9.391136,1,[41237],0.014654,3
+120,normal_filter,"{""remove_below_consistency_percentile"": 25}",222.8594,103.1194,86.119425,33580,11931,26.21564,1,[33580],3.141138,3
+121,fine_branch_prune,"{""end_percentile"": 80, ""radial_percentile"": 25}",222.9062,103.1662,86.15851,40676,4835,10.623805,1,[40676],0.014544,3
+122,thickness_filter,"{""remove_below_thickness_percentile"": 30}",223.25,103.51,86.445632,31426,14085,30.948562,1,[31426],0.487569,3
+123,fine_branch_prune,"{""end_percentile"": 90, ""radial_percentile"": 35}",223.25,103.51,86.445632,42623,2888,6.345719,1,[42623],0.014538,3
+124,fine_branch_prune,"{""end_percentile"": 85, ""radial_percentile"": 25}",224.125,104.385,87.176382,41926,3585,7.877216,1,[41926],0.013639,3
+125,fine_branch_prune,"{""end_percentile"": 95, ""radial_percentile"": 45}",224.2969,104.5569,87.319943,43908,1603,3.522225,1,[43908],0.011053,3
+126,fine_branch_prune,"{""end_percentile"": 80, ""radial_percentile"": 15}",224.5156,104.7756,87.502589,42136,3375,7.41579,1,[42136],0.011067,3
+127,fine_branch_prune,"{""end_percentile"": 90, ""radial_percentile"": 25}",224.7188,104.9788,87.67229,43013,2498,5.488783,1,[43013],0.017597,3
+128,fine_branch_prune,"{""end_percentile"": 85, ""radial_percentile"": 15}",225.0156,105.2756,87.92016,43094,2417,5.310804,1,[43094],0.01585,3
+129,fine_branch_prune,"{""end_percentile"": 90, ""radial_percentile"": 15}",225.2969,105.5569,88.155086,43860,1651,3.627694,1,[43860],0.01497,3
+130,alpha_shape,"{""alpha"": 2.0}",13.6562,106.0838,88.595123,423,45088,99.070554,1,[423],2.431781,4
+131,fine_branch_prune,"{""end_percentile"": 95, ""radial_percentile"": 35}",226.6562,106.9162,89.290296,44014,1497,3.289315,1,[44014],0.01515,3
+132,thickness_filter,"{""remove_below_thickness_percentile"": 25}",227.1406,107.4006,89.694839,33888,11623,25.538881,1,[33888],0.511902,3
+133,fine_branch_prune,"{""end_percentile"": 95, ""radial_percentile"": 25}",227.3594,107.6194,89.877568,44160,1351,2.968513,1,[44160],0.014086,3
+134,thickness_filter,"{""remove_below_thickness_percentile"": 20}",227.8906,108.1506,90.321196,36116,9395,20.643361,1,[36116],0.487008,3
+135,fine_branch_prune,"{""end_percentile"": 95, ""radial_percentile"": 15}",228.2812,108.5412,90.647403,44485,1026,2.2544,1,[44485],0.016055,3
+136,obb_shrink,"{""axis_percentile"": 55}",10.6875,109.0525,91.074411,1735,43776,96.187735,1,[1735],0.011053,1
+137,alpha_shape,"{""alpha"": 3.0}",9.9688,109.7712,91.674628,268,45243,99.411131,1,[268],2.619644,4
+138,concave_hull_3d_proxy,"{""alpha"": 3.0, ""density_percentile"": 10}",9.7031,110.0369,91.896526,256,45255,99.437499,1,[256],3.32628,5
+139,concave_hull_3d_proxy,"{""alpha"": 3.0, ""density_percentile"": 40}",9.5625,110.1775,92.013947,137,45374,99.698974,1,[137],2.543288,5
+140,normal_filter,"{""remove_below_consistency_percentile"": 15}",230.0312,110.2912,92.108903,38647,6864,15.082068,1,[38647],3.08806,3
+141,thickness_filter,"{""remove_below_thickness_percentile"": 15}",230.1094,110.3694,92.174211,38583,6928,15.222693,1,[38583],0.483576,3
+142,concave_hull_3d_proxy,"{""alpha"": 3.0, ""density_percentile"": 25}",8.9531,110.7869,92.522883,213,45298,99.531981,1,[213],2.67892,5
+143,alpha_shape,"{""alpha"": 0.5}",231.2969,111.5569,93.165943,11430,34081,74.885193,1,[11430],2.436,4
+144,curvature_filter,"{""keep_below_curvature_percentile"": 50}",231.4062,111.6662,93.257224,22705,22806,50.110962,1,[22705],0.525899,3
+145,normal_filter,"{""remove_below_consistency_percentile"": 10}",232.2344,112.4944,93.948889,40936,4575,10.052515,1,[40936],3.411444,3
+146,thickness_filter,"{""remove_below_thickness_percentile"": 10}",232.6406,112.9006,94.288124,40957,4554,10.006372,1,[40957],0.545131,3
+147,normal_filter,"{""remove_below_consistency_percentile"": 20}",232.7031,112.9631,94.340321,36166,9345,20.533497,1,[36166],3.014619,3
+148,curvature_filter,"{""keep_below_curvature_percentile"": 85}",232.7188,112.9788,94.353432,38684,6827,15.000769,1,[38684],0.610764,3
+149,normal_filter,"{""remove_below_consistency_percentile"": 5}",232.8281,113.0881,94.444714,43235,2276,5.000989,1,[43235],3.231149,3
+150,curvature_filter,"{""keep_below_curvature_percentile"": 90}",233.0781,113.3381,94.653499,40960,4551,9.99978,1,[40960],0.618032,3
+151,thickness_filter,"{""remove_below_thickness_percentile"": 5}",233.7031,113.9631,95.175464,43227,2284,5.018567,1,[43227],0.523727,3
+152,baseline_common_input,"{""voxel_m"": 0.06}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.0,1
+153,morphological_opening_3d,"{""iterations"": 2, ""voxel_m"": 0.12}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.022662,3
+154,morphological_opening_3d,"{""iterations"": 3, ""voxel_m"": 0.12}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.02259,3
+155,morphological_opening_3d,"{""iterations"": 2, ""voxel_m"": 0.16}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.016037,3
+156,morphological_opening_3d,"{""iterations"": 3, ""voxel_m"": 0.16}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.01475,3
+157,morphological_opening_3d,"{""iterations"": 2, ""voxel_m"": 0.2}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.01056,3
+158,morphological_opening_3d,"{""iterations"": 3, ""voxel_m"": 0.2}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.008512,3
+159,morphological_opening_3d,"{""iterations"": 2, ""voxel_m"": 0.24}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.010041,3
+160,morphological_opening_3d,"{""iterations"": 3, ""voxel_m"": 0.24}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.04728,3
+161,morphological_opening_3d,"{""iterations"": 2, ""voxel_m"": 0.3}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.011039,3
+162,morphological_opening_3d,"{""iterations"": 3, ""voxel_m"": 0.3}",234.0469,114.3069,95.462586,45511,0,0.0,1,[45511],0.015413,3
+163,curvature_filter,"{""keep_below_curvature_percentile"": 60}",235.125,115.385,96.362953,27297,18214,40.021094,1,[27297],0.582556,3
+164,curvature_filter,"{""keep_below_curvature_percentile"": 70}",235.4219,115.6819,96.610907,31835,13676,30.049878,1,[31835],0.565737,3
+165,curvature_filter,"{""keep_below_curvature_percentile"": 80}",236.4219,116.6819,97.44605,36407,9104,20.003955,1,[36407],0.542826,3
+166,alpha_shape,"{""alpha"": 0.35}",237.0781,117.3381,97.99407,19098,26413,58.036519,1,[19098],2.529931,4

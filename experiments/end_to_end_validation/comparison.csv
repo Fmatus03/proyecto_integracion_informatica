@@ -1,0 +1,4 @@
+metric,volume_m3,difference_vs_real_m3,error_percent,difference_vs_benchmark_m3
+pipeline_original_reference,234.0469,114.3069,95.462586,
+benchmark_winner_reference,121.2031,1.4631,1.221897,0.0
+set_fotos_ultimo_e2e_with_winner_filter,123.9844,4.2444,3.54468,2.7813

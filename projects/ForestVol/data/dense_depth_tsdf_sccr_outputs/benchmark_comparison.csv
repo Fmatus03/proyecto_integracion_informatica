@@ -1,0 +1,15 @@
+dataset,method,volume,volumetric_error,components,boundary_edges,non_manifold_edges,non_manifold_vertices,watertight,orientable,known_voxel_ratio,bbox_drift,area_drift,chamfer_distance,hausdorff_distance,total_execution_seconds,stage_execution_seconds,approx_memory,notes
+set1,Baseline original / Poisson,,,10,191,4,0,False,False,,,,,,,,,No known_voxel_ratio for mesh baseline. Volume unavailable because mesh is not watertight.
+set1,TSDF / point SDF,95.756277,,1,0,0,0,True,True,,0.48026213,-29.404725,3.852331,10.753586,,,,Point-cloud SDF/TSDF prototype; not camera-observed TSDF.
+set1,Dense Depth TSDF,,,56,80,0,0,False,True,0.025996,0.36286241,-47.407438,5.164254,10.919192,,,,
+set1,Dense Depth + Ray Carving,,,44,72,0,4,False,True,0.0626,0.36078954,-57.646345,5.327563,11.118629,,,,
+set1,Dense Depth + Alignment,,,37,18,0,0,False,True,0.014004,0.46487168,-70.659436,4.478468,10.819039,,,,
+set1,Dense Depth + Alignment + SCCR,7.077038,,32,0,0,0,True,True,0.014591,0.49423951,-69.299877,4.389832,10.623811,56,,997.4MiB / 7.616GiB,"SCCR run included coarse TSDF, local camera refinement, and TSDF reintegration."
+set1,Dense Depth + Alignment + SCCR + Ray,,,36,0,1,6,False,False,0.049937,0.49431681,-78.98736,4.492918,10.74683,56,,997.4MiB / 7.616GiB,Final SCCR protocol output after optional ray-carving refinement.
+set2,Baseline original / Poisson,,,39,226,39,0,False,False,,,,,,,,,No known_voxel_ratio for mesh baseline. Volume unavailable because mesh is not watertight.
+set2,TSDF / point SDF,133.573573,,1,0,0,0,True,True,,0.03400707,50.863806,1.195443,1.273551,,,,Point-cloud SDF/TSDF prototype; not camera-observed TSDF.
+set2,Dense Depth TSDF,,,40,6,0,0,False,True,0.024186,0.06806145,-53.02338,1.865074,6.248324,,,,
+set2,Dense Depth + Ray Carving,,,28,6,1,4,False,False,0.074302,0.08667682,-67.286213,2.252851,6.181703,,,,
+set2,Dense Depth + Alignment,,,63,12,0,0,False,True,0.043103,0.13725012,-20.845712,1.861858,3.290061,,,,
+set2,Dense Depth + Alignment + SCCR,1.620532,,28,0,0,0,True,True,0.01081,0.22747311,-77.619474,1.746864,4.539742,56,,997.4MiB / 7.616GiB,"Set 2 NodeODM UUID 002ca5e3 was absent from volume; environment path restored from task 37fe01cd using the same Set 2 image directory, without recalculation."
+set2,Dense Depth + Alignment + SCCR + Ray,,,20,0,1,2,False,False,0.061166,0.28040677,-91.026083,2.439513,4.561994,56,,997.4MiB / 7.616GiB,"Final SCCR protocol output after optional ray-carving refinement. Set 2 NodeODM UUID 002ca5e3 was absent from volume; environment path restored from task 37fe01cd using the same Set 2 image directory, without recalculation."

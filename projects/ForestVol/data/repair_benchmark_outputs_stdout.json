@@ -1,0 +1,161 @@
+{
+  "protocol": "RUN-SET1-BASELINE-01 repair benchmark",
+  "engine_availability": {
+    "open3d_cleanup_control": "available",
+    "trimesh_repair_extended": "unavailable",
+    "pymeshlab": "unavailable",
+    "vtk_fill_holes": "unavailable",
+    "meshfix": "unavailable: meshfix not found on PATH",
+    "cgal_pmp": "unavailable: cgal_pmp_repair not found on PATH"
+  },
+  "datasets": {
+    "set1": {
+      "source": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_raw.ply",
+      "frozen_mesh": "/app/data/repair_benchmark_outputs/set1/poisson_raw_frozen.ply",
+      "base_metrics": {
+        "vertices": 29592,
+        "triangles": 58975,
+        "boundary_edges": 191,
+        "non_manifold_edges": 4,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          15.963822,
+          16.478785,
+          6.404328
+        ],
+        "area": 264.530912,
+        "volume": null,
+        "components_connected": 10
+      },
+      "engines": {
+        "open3d_cleanup_control": {
+          "status": "ok",
+          "note": "Local control using Open3D cleanup primitives available in backend; not a requested replacement engine.",
+          "output": "/app/data/repair_benchmark_outputs/set1/open3d_cleanup_control.ply",
+          "metrics": {
+            "vertices": 29592,
+            "triangles": 58967,
+            "boundary_edges": 203,
+            "non_manifold_edges": 0,
+            "non_manifold_vertices": 0,
+            "orientable": true,
+            "watertight": false,
+            "bbox_extent": [
+              15.963822,
+              16.478785,
+              6.404328
+            ],
+            "area": 264.524874,
+            "volume": null,
+            "components_connected": 10,
+            "bbox_drift": 0.0,
+            "area_drift_pct": -0.002283,
+            "hausdorff_approx": 0.622237,
+            "chamfer_approx": 0.295963
+          }
+        },
+        "trimesh_repair_extended": {
+          "status": "unavailable",
+          "note": "Python module 'trimesh' is not installed in forestvol-backend.",
+          "output": null
+        },
+        "pymeshlab": {
+          "status": "unavailable",
+          "note": "Python module 'pymeshlab' is not installed in forestvol-backend.",
+          "output": null
+        },
+        "vtk_fill_holes": {
+          "status": "unavailable",
+          "note": "Python module 'vtk' is not installed in forestvol-backend.",
+          "output": null
+        },
+        "meshfix": {
+          "status": "unavailable_or_failed",
+          "note": "unavailable: meshfix not found on PATH",
+          "output": null
+        },
+        "cgal_pmp": {
+          "status": "unavailable_or_failed",
+          "note": "unavailable: cgal_pmp_repair not found on PATH",
+          "output": null
+        }
+      }
+    },
+    "set2": {
+      "source": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_raw.ply",
+      "frozen_mesh": "/app/data/repair_benchmark_outputs/set2/poisson_raw_frozen.ply",
+      "base_metrics": {
+        "vertices": 83623,
+        "triangles": 167102,
+        "boundary_edges": 226,
+        "non_manifold_edges": 39,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          7.819652,
+          10.009154,
+          7.107628
+        ],
+        "area": 162.982306,
+        "volume": null,
+        "components_connected": 39
+      },
+      "engines": {
+        "open3d_cleanup_control": {
+          "status": "ok",
+          "note": "Local control using Open3D cleanup primitives available in backend; not a requested replacement engine.",
+          "output": "/app/data/repair_benchmark_outputs/set2/open3d_cleanup_control.ply",
+          "metrics": {
+            "vertices": 83620,
+            "triangles": 167030,
+            "boundary_edges": 318,
+            "non_manifold_edges": 0,
+            "non_manifold_vertices": 26,
+            "orientable": false,
+            "watertight": false,
+            "bbox_extent": [
+              7.819652,
+              10.009154,
+              7.107628
+            ],
+            "area": 162.967339,
+            "volume": null,
+            "components_connected": 48,
+            "bbox_drift": 0.0,
+            "area_drift_pct": -0.009183,
+            "hausdorff_approx": 0.516047,
+            "chamfer_approx": 0.227462
+          }
+        },
+        "trimesh_repair_extended": {
+          "status": "unavailable",
+          "note": "Python module 'trimesh' is not installed in forestvol-backend.",
+          "output": null
+        },
+        "pymeshlab": {
+          "status": "unavailable",
+          "note": "Python module 'pymeshlab' is not installed in forestvol-backend.",
+          "output": null
+        },
+        "vtk_fill_holes": {
+          "status": "unavailable",
+          "note": "Python module 'vtk' is not installed in forestvol-backend.",
+          "output": null
+        },
+        "meshfix": {
+          "status": "unavailable_or_failed",
+          "note": "unavailable: meshfix not found on PATH",
+          "output": null
+        },
+        "cgal_pmp": {
+          "status": "unavailable_or_failed",
+          "note": "unavailable: cgal_pmp_repair not found on PATH",
+          "output": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3211 @@
+{
+  "source_raw_cloud": "C:\\Users\\Fabian Matus\\OneDrive\\Escritorio\\harness_con_separacion_de_proyectos\\projects\\ForestVol\\data\\processed\\971d6e25-8ff0-41d2-8784-c981dec7ccbf\\point_cloud.ply",
+  "source_final_pdi_cloud": "C:\\Users\\Fabian Matus\\OneDrive\\Escritorio\\harness_con_separacion_de_proyectos\\experiments\\volume_input_audit\\selected_volume_cloud.ply",
+  "eps_connectivity_m": 0.35,
+  "contact_capsule_radius_m": 0.3,
+  "scale_factor_m_per_unit": 0.54611448,
+  "voxel_sizes_m": [
+    0.01,
+    0.02,
+    0.03,
+    0.04,
+    0.05,
+    0.06,
+    0.07,
+    0.08,
+    0.1
+  ],
+  "regions": [
+    {
+      "region_id": 0,
+      "raw_contact_crop_points": 1397,
+      "external_endpoint": [
+        1.954702,
+        1.106584,
+        2.432865
+      ],
+      "castle_endpoint": [
+        1.766762,
+        1.091327,
+        2.469713
+      ],
+      "raw": {
+        "point_count": 1397,
+        "component_count": 1,
+        "component_sizes": [
+          1397
+        ],
+        "connected": true,
+        "external_endpoint_nearest_distance_m": 0.008043063028072416,
+        "castle_endpoint_nearest_distance_m": 0.006960403104357575,
+        "external_component": 0,
+        "castle_component": 0,
+        "min_distance_between_endpoint_components_m": 0.0,
+        "gap_count": 0,
+        "max_gap_m": null,
+        "gaps_m": [],
+        "contact_thickness_points": 321,
+        "aabb": {
+          "min": [
+            1.4695520015071677,
+            0.8129889256341075,
+            2.3017327776080703
+          ],
+          "max": [
+            2.249964512703781,
+            1.40057170060009,
+            2.540620363902626
+          ],
+          "extent_m": [
+            0.7804125111966134,
+            0.5875827749659824,
+            0.23888758629455564
+          ],
+          "volume_m3": 0.10954356271256299
+        }
+      },
+      "voxel_sweep": [
+        {
+          "point_count": 1301,
+          "component_count": 1,
+          "component_sizes": [
+            1301
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.008043063028072416,
+          "castle_endpoint_nearest_distance_m": 0.006960403104357575,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 307,
+          "aabb": {
+            "min": [
+              1.4695520015071677,
+              0.8129889256341075,
+              2.3017327776080703
+            ],
+            "max": [
+              2.249964512703781,
+              1.40057170060009,
+              2.540620363902626
+            ],
+            "extent_m": [
+              0.7804125111966134,
+              0.5875827749659824,
+              0.23888758629455564
+            ],
+            "volume_m3": 0.10954356271256299
+          },
+          "voxel_size_m": 0.01,
+          "point_reduction_percent_vs_raw_contact_crop": 6.871868289191118,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 801,
+          "component_count": 1,
+          "component_sizes": [
+            801
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.008043063028072416,
+          "castle_endpoint_nearest_distance_m": 0.008146739334144833,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 213,
+          "aabb": {
+            "min": [
+              1.4702303635049627,
+              0.8129889256341075,
+              2.302476762340393
+            ],
+            "max": [
+              2.249964512703781,
+              1.40057170060009,
+              2.540620363902626
+            ],
+            "extent_m": [
+              0.7797341491988183,
+              0.5875827749659824,
+              0.2381436015622329
+            ],
+            "volume_m3": 0.10910748077457706
+          },
+          "voxel_size_m": 0.02,
+          "point_reduction_percent_vs_raw_contact_crop": 42.66284896206156,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 486,
+          "component_count": 1,
+          "component_sizes": [
+            486
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.008043063028072416,
+          "castle_endpoint_nearest_distance_m": 0.008146739334144833,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 149,
+          "aabb": {
+            "min": [
+              1.4792702857976532,
+              0.8129889256341075,
+              2.3090523165846633
+            ],
+            "max": [
+              2.249964512703781,
+              1.3975749290566635,
+              2.538672254073257
+            ],
+            "extent_m": [
+              0.7706942269061279,
+              0.584586003422556,
+              0.22961993748859388
+            ],
+            "volume_m3": 0.10345229108688185
+          },
+          "voxel_size_m": 0.03,
+          "point_reduction_percent_vs_raw_contact_crop": 65.21116678596994,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 310,
+          "component_count": 1,
+          "component_sizes": [
+            310
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.00604785633305669,
+          "castle_endpoint_nearest_distance_m": 0.01701130450670294,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 96,
+          "aabb": {
+            "min": [
+              1.4796899110680102,
+              0.8298457655658816,
+              2.320979352748123
+            ],
+            "max": [
+              2.2465102048723984,
+              1.3962911843124675,
+              2.535598662265205
+            ],
+            "extent_m": [
+              0.7668202938043882,
+              0.5664454187465858,
+              0.21461930951708208
+            ],
+            "volume_m3": 0.09322243870233762
+          },
+          "voxel_size_m": 0.04,
+          "point_reduction_percent_vs_raw_contact_crop": 77.80959198282032,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 212,
+          "component_count": 1,
+          "component_sizes": [
+            212
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.021544301403850764,
+          "castle_endpoint_nearest_distance_m": 0.014549288773243126,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 70,
+          "aabb": {
+            "min": [
+              1.4815707272135925,
+              0.819535769932022,
+              2.324830380514624
+            ],
+            "max": [
+              2.242757730251198,
+              1.3871583615811156,
+              2.538672254073257
+            ],
+            "extent_m": [
+              0.7611870030376053,
+              0.5676225916490936,
+              0.21384187355863293
+            ],
+            "volume_m3": 0.09239400382271706
+          },
+          "voxel_size_m": 0.05,
+          "point_reduction_percent_vs_raw_contact_crop": 84.82462419470293,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 145,
+          "component_count": 1,
+          "component_sizes": [
+            145
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.03367483939072178,
+          "castle_endpoint_nearest_distance_m": 0.014549288773243126,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 43,
+          "aabb": {
+            "min": [
+              1.482491007943039,
+              0.8129889256341075,
+              2.3340168844284723
+            ],
+            "max": [
+              2.249964512703781,
+              1.3962911843124675,
+              2.5242911359646074
+            ],
+            "extent_m": [
+              0.7674735047607422,
+              0.5833022586783599,
+              0.1902742515361351
+            ],
+            "volume_m3": 0.08517988939134946
+          },
+          "voxel_size_m": 0.06,
+          "point_reduction_percent_vs_raw_contact_crop": 89.62061560486757,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 115,
+          "component_count": 1,
+          "component_sizes": [
+            115
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.0345512185732823,
+          "castle_endpoint_nearest_distance_m": 0.03367815158800017,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 38,
+          "aabb": {
+            "min": [
+              1.4850318056445693,
+              0.8308768032603917,
+              2.3363637278883225
+            ],
+            "max": [
+              2.244938970053129,
+              1.3907854499059866,
+              2.537506756114921
+            ],
+            "extent_m": [
+              0.7599071644085595,
+              0.5599086466455949,
+              0.20114302822659846
+            ],
+            "volume_m3": 0.08558205244052733
+          },
+          "voxel_size_m": 0.07,
+          "point_reduction_percent_vs_raw_contact_crop": 91.7680744452398,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 84,
+          "component_count": 1,
+          "component_sizes": [
+            84
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.029113381979089893,
+          "castle_endpoint_nearest_distance_m": 0.004759534086110199,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 27,
+          "aabb": {
+            "min": [
+              1.4879500270723753,
+              0.8308768032603917,
+              2.3312251839304445
+            ],
+            "max": [
+              2.2240614327626385,
+              1.3907455424295325,
+              2.5223407605884516
+            ],
+            "extent_m": [
+              0.7361114056902631,
+              0.5598687391691408,
+              0.19111557665800705
+            ],
+            "volume_m3": 0.07876365315558995
+          },
+          "voxel_size_m": 0.08,
+          "point_reduction_percent_vs_raw_contact_crop": 93.98711524695777,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 64,
+          "component_count": 1,
+          "component_sizes": [
+            64
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.03579331536689356,
+          "castle_endpoint_nearest_distance_m": 0.06364881621896223,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 19,
+          "aabb": {
+            "min": [
+              1.4901896353949833,
+              0.8370852849835354,
+              2.331343343913746
+            ],
+            "max": [
+              2.2268301551137157,
+              1.3607667939331762,
+              2.5238856985725016
+            ],
+            "extent_m": [
+              0.7366405197187325,
+              0.5236815089496408,
+              0.1925423546587557
+            ],
+            "volume_m3": 0.07427610508778877
+          },
+          "voxel_size_m": 0.1,
+          "point_reduction_percent_vs_raw_contact_crop": 95.41875447387258,
+          "state": "fusionada"
+        }
+      ],
+      "critical_first_fused_voxel_m": 0.01,
+      "max_voxel_preserving_separation_m": null
+    },
+    {
+      "region_id": 1,
+      "raw_contact_crop_points": 442,
+      "external_endpoint": [
+        -0.229169,
+        1.787223,
+        0.098078
+      ],
+      "castle_endpoint": [
+        -0.446306,
+        1.698689,
+        0.02085
+      ],
+      "raw": {
+        "point_count": 442,
+        "component_count": 1,
+        "component_sizes": [
+          442
+        ],
+        "connected": true,
+        "external_endpoint_nearest_distance_m": 2.0743761599276244e-07,
+        "castle_endpoint_nearest_distance_m": 0.007678025171599644,
+        "external_component": 0,
+        "castle_component": 0,
+        "min_distance_between_endpoint_components_m": 0.0,
+        "gap_count": 0,
+        "max_gap_m": null,
+        "gaps_m": [],
+        "contact_thickness_points": 262,
+        "aabb": {
+          "min": [
+            -0.7094885924925899,
+            1.4391630766558456,
+            -0.12855317104998706
+          ],
+          "max": [
+            -0.13441649402301192,
+            1.878045972118778,
+            0.21377229123237845
+          ],
+          "extent_m": [
+            0.575072098469578,
+            0.43888289546293247,
+            0.3423254622823655
+          ],
+          "volume_m3": 0.08639928642540633
+        }
+      },
+      "voxel_sweep": [
+        {
+          "point_count": 433,
+          "component_count": 1,
+          "component_sizes": [
+            433
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 2.0743761599276244e-07,
+          "castle_endpoint_nearest_distance_m": 0.007678025171599644,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 260,
+          "aabb": {
+            "min": [
+              -0.7094885924925899,
+              1.4391630766558456,
+              -0.12855317104998706
+            ],
+            "max": [
+              -0.13441649402301192,
+              1.878045972118778,
+              0.21377229123237845
+            ],
+            "extent_m": [
+              0.575072098469578,
+              0.43888289546293247,
+              0.3423254622823655
+            ],
+            "volume_m3": 0.08639928642540633
+          },
+          "voxel_size_m": 0.01,
+          "point_reduction_percent_vs_raw_contact_crop": 2.0361990950226283,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 340,
+          "component_count": 1,
+          "component_sizes": [
+            340
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 2.0743761599276244e-07,
+          "castle_endpoint_nearest_distance_m": 0.007678025171599644,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 214,
+          "aabb": {
+            "min": [
+              -0.702308111215353,
+              1.440719793747139,
+              -0.12855317104998706
+            ],
+            "max": [
+              -0.13441649402301192,
+              1.878045972118778,
+              0.21377229123237845
+            ],
+            "extent_m": [
+              0.567891617192341,
+              0.4373261783716391,
+              0.3423254622823655
+            ],
+            "volume_m3": 0.08501785358878211
+          },
+          "voxel_size_m": 0.02,
+          "point_reduction_percent_vs_raw_contact_crop": 23.076923076923073,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 230,
+          "component_count": 1,
+          "component_sizes": [
+            230
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 2.0743761599276244e-07,
+          "castle_endpoint_nearest_distance_m": 0.009139026112077465,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 148,
+          "aabb": {
+            "min": [
+              -0.702308111215353,
+              1.443222360346634,
+              -0.12443395290485858
+            ],
+            "max": [
+              -0.13441649402301192,
+              1.878045972118778,
+              0.21109717199611183
+            ],
+            "extent_m": [
+              0.567891617192341,
+              0.434823611772144,
+              0.3355311249009704
+            ],
+            "volume_m3": 0.08285360126508345
+          },
+          "voxel_size_m": 0.03,
+          "point_reduction_percent_vs_raw_contact_crop": 47.96380090497737,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 151,
+          "component_count": 1,
+          "component_sizes": [
+            151
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.01904436431370566,
+          "castle_endpoint_nearest_distance_m": 0.004203692008296156,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 94,
+          "aabb": {
+            "min": [
+              -0.702308111215353,
+              1.4462817371506345,
+              -0.12855317104998706
+            ],
+            "max": [
+              -0.1348167202777451,
+              1.8578373468579368,
+              0.20612364252378415
+            ],
+            "extent_m": [
+              0.5674913909376078,
+              0.4115556097073023,
+              0.3346768135737712
+            ],
+            "volume_m3": 0.07816519734096027
+          },
+          "voxel_size_m": 0.04,
+          "point_reduction_percent_vs_raw_contact_crop": 65.83710407239819,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 107,
+          "component_count": 1,
+          "component_sizes": [
+            107
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.0196582052760014,
+          "castle_endpoint_nearest_distance_m": 0.0239075355488328,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 64,
+          "aabb": {
+            "min": [
+              -0.6864270839500808,
+              1.439398289889822,
+              -0.12086273830211877
+            ],
+            "max": [
+              -0.14073672939060092,
+              1.8576998646250247,
+              0.20369057005294322
+            ],
+            "extent_m": [
+              0.5456903545594799,
+              0.4183015747352026,
+              0.324553308355062
+            ],
+            "volume_m3": 0.07408355551967688
+          },
+          "voxel_size_m": 0.05,
+          "point_reduction_percent_vs_raw_contact_crop": 75.7918552036199,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 84,
+          "component_count": 1,
+          "component_sizes": [
+            84
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.036374576691956616,
+          "castle_endpoint_nearest_distance_m": 0.019681563549486344,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 48,
+          "aabb": {
+            "min": [
+              -0.702308111215353,
+              1.4511358729582928,
+              -0.12080347114245056
+            ],
+            "max": [
+              -0.14079383733661652,
+              1.870851624132757,
+              0.21109717199611183
+            ],
+            "extent_m": [
+              0.5615142738787364,
+              0.41971575117446425,
+              0.3319006431385624
+            ],
+            "volume_m3": 0.07822114383910363
+          },
+          "voxel_size_m": 0.06,
+          "point_reduction_percent_vs_raw_contact_crop": 80.99547511312217,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 71,
+          "component_count": 1,
+          "component_sizes": [
+            71
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.024145933721124717,
+          "castle_endpoint_nearest_distance_m": 0.016762811971452532,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 42,
+          "aabb": {
+            "min": [
+              -0.667749468117683,
+              1.4462817371506345,
+              -0.12231439988392472
+            ],
+            "max": [
+              -0.1348167202777451,
+              1.870851624132757,
+              0.20951431241540014
+            ],
+            "extent_m": [
+              0.5329327478399379,
+              0.4245698869821226,
+              0.33182871229932487
+            ],
+            "volume_m3": 0.0750819524566355
+          },
+          "voxel_size_m": 0.07,
+          "point_reduction_percent_vs_raw_contact_crop": 83.93665158371041,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 57,
+          "component_count": 1,
+          "component_sizes": [
+            57
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.0295392259962769,
+          "castle_endpoint_nearest_distance_m": 0.033236208362652946,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 34,
+          "aabb": {
+            "min": [
+              -0.6710116900239623,
+              1.4604127770870974,
+              -0.11988091388026803
+            ],
+            "max": [
+              -0.1348167202777451,
+              1.8578373468579368,
+              0.20612364252378415
+            ],
+            "extent_m": [
+              0.5361949697462172,
+              0.3974245697708394,
+              0.3260045564040522
+            ],
+            "volume_m3": 0.06947061093997088
+          },
+          "voxel_size_m": 0.08,
+          "point_reduction_percent_vs_raw_contact_crop": 87.10407239819004,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 39,
+          "component_count": 1,
+          "component_sizes": [
+            39
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.0403026516970003,
+          "castle_endpoint_nearest_distance_m": 0.013705764111835342,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 23,
+          "aabb": {
+            "min": [
+              -0.6691808368887663,
+              1.4511358729582928,
+              -0.11855968670610756
+            ],
+            "max": [
+              -0.14073672939060092,
+              1.8552425275838758,
+              0.19999169136172568
+            ],
+            "extent_m": [
+              0.5284441074981654,
+              0.40410665462558293,
+              0.31855137806783324
+            ],
+            "volume_m3": 0.0680259397417518
+          },
+          "voxel_size_m": 0.1,
+          "point_reduction_percent_vs_raw_contact_crop": 91.17647058823529,
+          "state": "fusionada"
+        }
+      ],
+      "critical_first_fused_voxel_m": 0.01,
+      "max_voxel_preserving_separation_m": null
+    },
+    {
+      "region_id": 2,
+      "raw_contact_crop_points": 1802,
+      "external_endpoint": [
+        3.524162,
+        3.49374,
+        0.042889
+      ],
+      "castle_endpoint": [
+        3.253073,
+        3.622069,
+        -0.114859
+      ],
+      "raw": {
+        "point_count": 1802,
+        "component_count": 1,
+        "component_sizes": [
+          1802
+        ],
+        "connected": true,
+        "external_endpoint_nearest_distance_m": 0.012244139405914697,
+        "castle_endpoint_nearest_distance_m": 0.005818763151944033,
+        "external_component": 0,
+        "castle_component": 0,
+        "min_distance_between_endpoint_components_m": 0.0,
+        "gap_count": 0,
+        "max_gap_m": null,
+        "gaps_m": [],
+        "contact_thickness_points": 810,
+        "aabb": {
+          "min": [
+            3.0188442189186855,
+            3.4259929234724806,
+            -0.4089699958446121
+          ],
+          "max": [
+            3.5927941962961576,
+            3.9104066689636228,
+            0.21892058355163335
+          ],
+          "extent_m": [
+            0.5739499773774721,
+            0.48441374549114213,
+            0.6278905793962455
+          ],
+          "volume_m3": 0.17457195206173304
+        }
+      },
+      "voxel_sweep": [
+        {
+          "point_count": 1733,
+          "component_count": 1,
+          "component_sizes": [
+            1733
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.012244139405914697,
+          "castle_endpoint_nearest_distance_m": 0.004969410323754071,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 769,
+          "aabb": {
+            "min": [
+              3.0188442189186855,
+              3.4259929234724806,
+              -0.4089699958446121
+            ],
+            "max": [
+              3.5927941962961576,
+              3.9104066689636228,
+              0.21892058355163335
+            ],
+            "extent_m": [
+              0.5739499773774721,
+              0.48441374549114213,
+              0.6278905793962455
+            ],
+            "volume_m3": 0.17457195206173304
+          },
+          "voxel_size_m": 0.01,
+          "point_reduction_percent_vs_raw_contact_crop": 3.8290788013318533,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 1159,
+          "component_count": 1,
+          "component_sizes": [
+            1159
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.012244139405914697,
+          "castle_endpoint_nearest_distance_m": 0.005546391603959468,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 501,
+          "aabb": {
+            "min": [
+              3.0188442189186855,
+              3.4259929234724806,
+              -0.4089699958446121
+            ],
+            "max": [
+              3.5882854977818295,
+              3.9104066689636228,
+              0.21892058355163335
+            ],
+            "extent_m": [
+              0.569441278863144,
+              0.48441374549114213,
+              0.6278905793962455
+            ],
+            "volume_m3": 0.1732005916088578
+          },
+          "voxel_size_m": 0.02,
+          "point_reduction_percent_vs_raw_contact_crop": 35.68257491675916,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 657,
+          "component_count": 1,
+          "component_sizes": [
+            657
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.01462066490213077,
+          "castle_endpoint_nearest_distance_m": 0.005546391603959468,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 277,
+          "aabb": {
+            "min": [
+              3.0272923647660828,
+              3.4264798858279035,
+              -0.4089699958446121
+            ],
+            "max": [
+              3.5927941962961576,
+              3.9104066689636228,
+              0.21892058355163335
+            ],
+            "extent_m": [
+              0.5655018315300748,
+              0.48392678313571924,
+              0.6278905793962455
+            ],
+            "volume_m3": 0.17182946661053014
+          },
+          "voxel_size_m": 0.03,
+          "point_reduction_percent_vs_raw_contact_crop": 63.54051054384018,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 407,
+          "component_count": 1,
+          "component_sizes": [
+            407
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.007961520371850075,
+          "castle_endpoint_nearest_distance_m": 0.014221711987715761,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 174,
+          "aabb": {
+            "min": [
+              3.0348207506993865,
+              3.431927874832077,
+              -0.4089699958446121
+            ],
+            "max": [
+              3.586321763491859,
+              3.9104066689636228,
+              0.20613006645565868
+            ],
+            "extent_m": [
+              0.5515010127924724,
+              0.4784787941315458,
+              0.6151000623002707
+            ],
+            "volume_m3": 0.16231355142525775
+          },
+          "voxel_size_m": 0.04,
+          "point_reduction_percent_vs_raw_contact_crop": 77.41398446170922,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 273,
+          "component_count": 1,
+          "component_sizes": [
+            273
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.025550796525964422,
+          "castle_endpoint_nearest_distance_m": 0.018202021270849727,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 115,
+          "aabb": {
+            "min": [
+              3.0437621797067225,
+              3.437804169362497,
+              -0.4063662445872402
+            ],
+            "max": [
+              3.586874869397163,
+              3.9027600579450983,
+              0.20254054600702107
+            ],
+            "extent_m": [
+              0.5431126896904406,
+              0.46495588858260106,
+              0.6089067905942612
+            ],
+            "volume_m3": 0.15376323937034364
+          },
+          "voxel_size_m": 0.05,
+          "point_reduction_percent_vs_raw_contact_crop": 84.85016648168701,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 197,
+          "component_count": 1,
+          "component_sizes": [
+            197
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.01462066490213077,
+          "castle_endpoint_nearest_distance_m": 0.016783426131227946,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 82,
+          "aabb": {
+            "min": [
+              3.054195776266097,
+              3.438189203813133,
+              -0.4089699958446121
+            ],
+            "max": [
+              3.586321763491859,
+              3.9104066689636228,
+              0.20254054600702107
+            ],
+            "extent_m": [
+              0.5321259872257618,
+              0.4722174651504898,
+              0.6115105418516331
+            ],
+            "volume_m3": 0.15365987047048282
+          },
+          "voxel_size_m": 0.06,
+          "point_reduction_percent_vs_raw_contact_crop": 89.0677025527192,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 146,
+          "component_count": 1,
+          "component_sizes": [
+            146
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.01259592839307505,
+          "castle_endpoint_nearest_distance_m": 0.016713131156112816,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 60,
+          "aabb": {
+            "min": [
+              3.0593562600991002,
+              3.438189203813133,
+              -0.4037624933298683
+            ],
+            "max": [
+              3.5845224766497226,
+              3.879232077168597,
+              0.1856919763746436
+            ],
+            "extent_m": [
+              0.5251662165506223,
+              0.4410428733554639,
+              0.5894544697045119
+            ],
+            "volume_m3": 0.13652992593784172
+          },
+          "voxel_size_m": 0.07,
+          "point_reduction_percent_vs_raw_contact_crop": 91.89789123196448,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 119,
+          "component_count": 1,
+          "component_sizes": [
+            119
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.008435128548995535,
+          "castle_endpoint_nearest_distance_m": 0.02444761457841614,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 53,
+          "aabb": {
+            "min": [
+              3.062183694946213,
+              3.437827671155319,
+              -0.4089699958446121
+            ],
+            "max": [
+              3.5848167807256694,
+              3.9104066689636228,
+              0.1829994263331374
+            ],
+            "extent_m": [
+              0.5226330857794563,
+              0.4725789978083039,
+              0.5919694221777495
+            ],
+            "volume_m3": 0.14620781630400903
+          },
+          "voxel_size_m": 0.08,
+          "point_reduction_percent_vs_raw_contact_crop": 93.39622641509435,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 76,
+          "component_count": 1,
+          "component_sizes": [
+            76
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.03705047972432299,
+          "castle_endpoint_nearest_distance_m": 0.0432722000512718,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 33,
+          "aabb": {
+            "min": [
+              3.073537148480723,
+              3.4407044468413233,
+              -0.35853026580491065
+            ],
+            "max": [
+              3.5578693366548673,
+              3.8947647827481173,
+              0.20254054600702107
+            ],
+            "extent_m": [
+              0.4843321881741445,
+              0.45406033590679407,
+              0.5610708118119317
+            ],
+            "volume_m3": 0.12338846887862037
+          },
+          "voxel_size_m": 0.1,
+          "point_reduction_percent_vs_raw_contact_crop": 95.78246392896781,
+          "state": "fusionada"
+        }
+      ],
+      "critical_first_fused_voxel_m": 0.01,
+      "max_voxel_preserving_separation_m": null
+    },
+    {
+      "region_id": 3,
+      "raw_contact_crop_points": 851,
+      "external_endpoint": [
+        0.641928,
+        2.413029,
+        -0.161601
+      ],
+      "castle_endpoint": [
+        0.622689,
+        1.236539,
+        -0.079504
+      ],
+      "raw": {
+        "point_count": 851,
+        "component_count": 2,
+        "component_sizes": [
+          592,
+          259
+        ],
+        "connected": false,
+        "external_endpoint_nearest_distance_m": 0.009390361933828879,
+        "castle_endpoint_nearest_distance_m": 3.271558941014217e-07,
+        "external_component": 1,
+        "castle_component": 0,
+        "min_distance_between_endpoint_components_m": 0.43753105613252696,
+        "gap_count": 1,
+        "max_gap_m": 0.4013870583850826,
+        "gaps_m": [
+          0.4013870583850826
+        ],
+        "contact_thickness_points": 405,
+        "aabb": {
+          "min": [
+            0.34594033585965156,
+            0.9413608610788535,
+            -0.24598965231014727
+          ],
+          "max": [
+            0.9177368068527603,
+            2.7000692863824463,
+            0.19986429155603885
+          ],
+          "extent_m": [
+            0.5717964709931087,
+            1.7587084253035927,
+            0.44585394386618615
+          ],
+          "volume_m3": 0.4483611014610717
+        }
+      },
+      "voxel_sweep": [
+        {
+          "point_count": 841,
+          "component_count": 2,
+          "component_sizes": [
+            584,
+            257
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.009390361933828879,
+          "castle_endpoint_nearest_distance_m": 3.271558941014217e-07,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.43753105613252696,
+          "gap_count": 1,
+          "max_gap_m": 0.4013870583850826,
+          "gaps_m": [
+            0.4013870583850826
+          ],
+          "contact_thickness_points": 400,
+          "aabb": {
+            "min": [
+              0.34594033585965156,
+              0.9413608610788535,
+              -0.2411968083318436
+            ],
+            "max": [
+              0.9177368068527603,
+              2.7000692863824463,
+              0.19986429155603885
+            ],
+            "extent_m": [
+              0.5717964709931087,
+              1.7587084253035927,
+              0.44106109988788245
+            ],
+            "volume_m3": 0.44354130602176467
+          },
+          "voxel_size_m": 0.01,
+          "point_reduction_percent_vs_raw_contact_crop": 1.1750881316098694,
+          "state": "separada"
+        },
+        {
+          "point_count": 581,
+          "component_count": 2,
+          "component_sizes": [
+            399,
+            182
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.009390361933828879,
+          "castle_endpoint_nearest_distance_m": 0.00789473066874548,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.43753105613252696,
+          "gap_count": 1,
+          "max_gap_m": 0.40122649965052665,
+          "gaps_m": [
+            0.40122649965052665
+          ],
+          "contact_thickness_points": 270,
+          "aabb": {
+            "min": [
+              0.34594033585965156,
+              0.9413608610788535,
+              -0.2411968083318436
+            ],
+            "max": [
+              0.9177368068527603,
+              2.7000692863824463,
+              0.19986429155603885
+            ],
+            "extent_m": [
+              0.5717964709931087,
+              1.7587084253035927,
+              0.44106109988788245
+            ],
+            "volume_m3": 0.44354130602176467
+          },
+          "voxel_size_m": 0.02,
+          "point_reduction_percent_vs_raw_contact_crop": 31.727379553466506,
+          "state": "separada"
+        },
+        {
+          "point_count": 351,
+          "component_count": 2,
+          "component_sizes": [
+            250,
+            101
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.012565621921656061,
+          "castle_endpoint_nearest_distance_m": 0.011558641835519884,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.4384077855815965,
+          "gap_count": 1,
+          "max_gap_m": 0.4006597385269337,
+          "gaps_m": [
+            0.4006597385269337
+          ],
+          "contact_thickness_points": 165,
+          "aabb": {
+            "min": [
+              0.3550847901338958,
+              0.9526190661654853,
+              -0.23282761320937725
+            ],
+            "max": [
+              0.9177368068527603,
+              2.7000692863824463,
+              0.19053447041726587
+            ],
+            "extent_m": [
+              0.5626520167188644,
+              1.7474502202169608,
+              0.4233620836266431
+            ],
+            "volume_m3": 0.4162523061259578
+          },
+          "voxel_size_m": 0.03,
+          "point_reduction_percent_vs_raw_contact_crop": 58.75440658049354,
+          "state": "separada"
+        },
+        {
+          "point_count": 251,
+          "component_count": 2,
+          "component_sizes": [
+            174,
+            77
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.010670880803764002,
+          "castle_endpoint_nearest_distance_m": 0.008709967213677155,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.4384077855815965,
+          "gap_count": 1,
+          "max_gap_m": 0.4037956243068117,
+          "gaps_m": [
+            0.4037956243068117
+          ],
+          "contact_thickness_points": 115,
+          "aabb": {
+            "min": [
+              0.34594033585965156,
+              0.9526190661654853,
+              -0.23615763496686457
+            ],
+            "max": [
+              0.9177368068527603,
+              2.6919314162818333,
+              0.19986429155603885
+            ],
+            "extent_m": [
+              0.5717964709931087,
+              1.7393123501163479,
+              0.4360219265229034
+            ],
+            "volume_m3": 0.4336380480387784
+          },
+          "voxel_size_m": 0.04,
+          "point_reduction_percent_vs_raw_contact_crop": 70.50528789659225,
+          "state": "separada"
+        },
+        {
+          "point_count": 180,
+          "component_count": 2,
+          "component_sizes": [
+            124,
+            56
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.013865107687618311,
+          "castle_endpoint_nearest_distance_m": 0.011558641835519884,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.44829307778782385,
+          "gap_count": 1,
+          "max_gap_m": 0.40930815140377735,
+          "gaps_m": [
+            0.40930815140377735
+          ],
+          "contact_thickness_points": 80,
+          "aabb": {
+            "min": [
+              0.3660300231692576,
+              0.9413608610788535,
+              -0.22886753833321807
+            ],
+            "max": [
+              0.9150232937596607,
+              2.7000692863824463,
+              0.18226445698362945
+            ],
+            "extent_m": [
+              0.5489932705904031,
+              1.7587084253035927,
+              0.4111319953168475
+            ],
+            "volume_m3": 0.39695579016183496
+          },
+          "voxel_size_m": 0.05,
+          "point_reduction_percent_vs_raw_contact_crop": 78.84841363102232,
+          "state": "separada"
+        },
+        {
+          "point_count": 138,
+          "component_count": 2,
+          "component_sizes": [
+            99,
+            39
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.025348913277500718,
+          "castle_endpoint_nearest_distance_m": 0.027359760993351988,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.4384077855815965,
+          "gap_count": 1,
+          "max_gap_m": 0.3993786166011744,
+          "gaps_m": [
+            0.3993786166011744
+          ],
+          "contact_thickness_points": 61,
+          "aabb": {
+            "min": [
+              0.3784331594329262,
+              0.9721464030972647,
+              -0.22325805425324532
+            ],
+            "max": [
+              0.9109973910779284,
+              2.7000692863824463,
+              0.1886824428828585
+            ],
+            "extent_m": [
+              0.5325642316450022,
+              1.7279228832851814,
+              0.4119404971361038
+            ],
+            "volume_m3": 0.3790799718277365
+          },
+          "voxel_size_m": 0.06,
+          "point_reduction_percent_vs_raw_contact_crop": 83.78378378378379,
+          "state": "separada"
+        },
+        {
+          "point_count": 111,
+          "component_count": 2,
+          "component_sizes": [
+            81,
+            30
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.02069384954811786,
+          "castle_endpoint_nearest_distance_m": 0.031734398498657314,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.45534905168057344,
+          "gap_count": 1,
+          "max_gap_m": 0.41574758605581974,
+          "gaps_m": [
+            0.41574758605581974
+          ],
+          "contact_thickness_points": 46,
+          "aabb": {
+            "min": [
+              0.3550847901338958,
+              0.9670661151577473,
+              -0.22507644471104737
+            ],
+            "max": [
+              0.9155242204767464,
+              2.7000692863824463,
+              0.1886824428828585
+            ],
+            "extent_m": [
+              0.5604394303428506,
+              1.733003171224699,
+              0.4137588875939059
+            ],
+            "volume_m3": 0.40186055155490663
+          },
+          "voxel_size_m": 0.07,
+          "point_reduction_percent_vs_raw_contact_crop": 86.95652173913044,
+          "state": "separada"
+        },
+        {
+          "point_count": 86,
+          "component_count": 2,
+          "component_sizes": [
+            63,
+            23
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.021309470807018602,
+          "castle_endpoint_nearest_distance_m": 0.011958855326434006,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.45026272281003327,
+          "gap_count": 1,
+          "max_gap_m": 0.4113883956205564,
+          "gaps_m": [
+            0.4113883956205564
+          ],
+          "contact_thickness_points": 37,
+          "aabb": {
+            "min": [
+              0.39983054736543633,
+              0.9810083725489882,
+              -0.22905473890180347
+            ],
+            "max": [
+              0.9177368068527603,
+              2.6728140225969463,
+              0.17922568811464137
+            ],
+            "extent_m": [
+              0.5179062594873239,
+              1.6918056500479581,
+              0.40828042701644485
+            ],
+            "volume_m3": 0.35773397752280434
+          },
+          "voxel_size_m": 0.08,
+          "point_reduction_percent_vs_raw_contact_crop": 89.89424206815511,
+          "state": "separada"
+        },
+        {
+          "point_count": 66,
+          "component_count": 2,
+          "component_sizes": [
+            44,
+            22
+          ],
+          "connected": false,
+          "external_endpoint_nearest_distance_m": 0.03769584527844866,
+          "castle_endpoint_nearest_distance_m": 0.051896155394901396,
+          "external_component": 1,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.4534888464552262,
+          "gap_count": 1,
+          "max_gap_m": 0.4124119479573,
+          "gaps_m": [
+            0.4124119479573
+          ],
+          "contact_thickness_points": 28,
+          "aabb": {
+            "min": [
+              0.39212287934948037,
+              0.960451521462612,
+              -0.19807392096424936
+            ],
+            "max": [
+              0.9109973910779284,
+              2.6823322251021575,
+              0.18226445698362945
+            ],
+            "extent_m": [
+              0.5188745117284481,
+              1.7218807036395454,
+              0.38033837794787884
+            ],
+            "volume_m3": 0.3398095239520488
+          },
+          "voxel_size_m": 0.1,
+          "point_reduction_percent_vs_raw_contact_crop": 92.24441833137486,
+          "state": "separada"
+        }
+      ],
+      "critical_first_fused_voxel_m": null,
+      "max_voxel_preserving_separation_m": 0.1
+    },
+    {
+      "region_id": 4,
+      "raw_contact_crop_points": 2956,
+      "external_endpoint": [
+        7.341912,
+        0.770774,
+        1.712347
+      ],
+      "castle_endpoint": [
+        7.363483,
+        0.496303,
+        1.827031
+      ],
+      "raw": {
+        "point_count": 2956,
+        "component_count": 1,
+        "component_sizes": [
+          2956
+        ],
+        "connected": true,
+        "external_endpoint_nearest_distance_m": 6.503809282794226e-07,
+        "castle_endpoint_nearest_distance_m": 0.007164618155954685,
+        "external_component": 0,
+        "castle_component": 0,
+        "min_distance_between_endpoint_components_m": 0.0,
+        "gap_count": 0,
+        "max_gap_m": null,
+        "gaps_m": [],
+        "contact_thickness_points": 745,
+        "aabb": {
+          "min": [
+            7.087761040687637,
+            0.19812633072176455,
+            1.612073513574829
+          ],
+          "max": [
+            7.655760702652588,
+            0.8703433909169769,
+            2.041395020372486
+          ],
+          "extent_m": [
+            0.5679996619649508,
+            0.6722170601952123,
+            0.429321506797657
+          ],
+          "volume_m3": 0.1639231354331781
+        }
+      },
+      "voxel_sweep": [
+        {
+          "point_count": 2464,
+          "component_count": 1,
+          "component_sizes": [
+            2464
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 6.503809282794226e-07,
+          "castle_endpoint_nearest_distance_m": 0.007164618155954685,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 679,
+          "aabb": {
+            "min": [
+              7.087761040687637,
+              0.19864656015788554,
+              1.612073513574829
+            ],
+            "max": [
+              7.655760702652588,
+              0.8703433909169769,
+              2.041395020372486
+            ],
+            "extent_m": [
+              0.5679996619649508,
+              0.6716968307590914,
+              0.429321506797657
+            ],
+            "volume_m3": 0.16379627515937187
+          },
+          "voxel_size_m": 0.01,
+          "point_reduction_percent_vs_raw_contact_crop": 16.644113667117722,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 1175,
+          "component_count": 1,
+          "component_sizes": [
+            1175
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 6.503809282794226e-07,
+          "castle_endpoint_nearest_distance_m": 0.01215184284439389,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 378,
+          "aabb": {
+            "min": [
+              7.087761040687637,
+              0.20154945473386288,
+              1.612073513574829
+            ],
+            "max": [
+              7.655760702652588,
+              0.8703433909169769,
+              2.041040605524502
+            ],
+            "extent_m": [
+              0.5679996619649508,
+              0.668793936183114,
+              0.42896709194967286
+            ],
+            "volume_m3": 0.16295375809437515
+          },
+          "voxel_size_m": 0.02,
+          "point_reduction_percent_vs_raw_contact_crop": 60.250338294993234,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 614,
+          "component_count": 1,
+          "component_sizes": [
+            614
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 6.503809282794226e-07,
+          "castle_endpoint_nearest_distance_m": 0.016478800351867013,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 209,
+          "aabb": {
+            "min": [
+              7.087761040687637,
+              0.20502405808854818,
+              1.6141109432373046
+            ],
+            "max": [
+              7.655252386867676,
+              0.8697166547410868,
+              2.039502464180813
+            ],
+            "extent_m": [
+              0.5674913461800388,
+              0.6646925966525387,
+              0.4253915209435084
+            ],
+            "volume_m3": 0.16046078555647056
+          },
+          "voxel_size_m": 0.03,
+          "point_reduction_percent_vs_raw_contact_crop": 79.22868741542626,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 378,
+          "component_count": 1,
+          "component_sizes": [
+            378
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.006114986165465657,
+          "castle_endpoint_nearest_distance_m": 0.011834177092160105,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 128,
+          "aabb": {
+            "min": [
+              7.102439700607681,
+              0.20502405808854818,
+              1.612073513574829
+            ],
+            "max": [
+              7.653956598268432,
+              0.856030913016808,
+              2.032935156179638
+            ],
+            "extent_m": [
+              0.5515168976607514,
+              0.6510068549282598,
+              0.42086164260480885
+            ],
+            "volume_m3": 0.15110670327866763
+          },
+          "voxel_size_m": 0.04,
+          "point_reduction_percent_vs_raw_contact_crop": 87.21244925575101,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 262,
+          "component_count": 1,
+          "component_sizes": [
+            262
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 6.503809282794226e-07,
+          "castle_endpoint_nearest_distance_m": 0.023396905295985322,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 85,
+          "aabb": {
+            "min": [
+              7.110232660740509,
+              0.20416588187741394,
+              1.6167803497801636
+            ],
+            "max": [
+              7.649548503919867,
+              0.8634261818008803,
+              2.033409618966579
+            ],
+            "extent_m": [
+              0.5393158431793577,
+              0.6592602999234664,
+              0.4166292691864155
+            ],
+            "volume_m3": 0.1481323385636367
+          },
+          "voxel_size_m": 0.05,
+          "point_reduction_percent_vs_raw_contact_crop": 91.13667117726658,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 183,
+          "component_count": 1,
+          "component_sizes": [
+            183
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.01721069504935102,
+          "castle_endpoint_nearest_distance_m": 0.026877340195427715,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 60,
+          "aabb": {
+            "min": [
+              7.087761040687637,
+              0.2163194195343252,
+              1.61667339817728
+            ],
+            "max": [
+              7.643150929642364,
+              0.8697166547410868,
+              2.0392884524718475
+            ],
+            "extent_m": [
+              0.5553898889547275,
+              0.6533972352067616,
+              0.42261505429456747
+            ],
+            "volume_m3": 0.1533628691428084
+          },
+          "voxel_size_m": 0.06,
+          "point_reduction_percent_vs_raw_contact_crop": 93.80920162381597,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 145,
+          "component_count": 1,
+          "component_sizes": [
+            145
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.006114986165465657,
+          "castle_endpoint_nearest_distance_m": 0.01215184284439389,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 44,
+          "aabb": {
+            "min": [
+              7.115010516629471,
+              0.20940042067667483,
+              1.6184902625375936
+            ],
+            "max": [
+              7.653292142040573,
+              0.8448530777289857,
+              2.0379698130989743
+            ],
+            "extent_m": [
+              0.538281625411102,
+              0.6354526570523108,
+              0.41947955056138064
+            ],
+            "volume_m3": 0.1434840244002314
+          },
+          "voxel_size_m": 0.07,
+          "point_reduction_percent_vs_raw_contact_crop": 95.09472259810555,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 112,
+          "component_count": 1,
+          "component_sizes": [
+            112
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.03901744087026576,
+          "castle_endpoint_nearest_distance_m": 0.017318318970343576,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 34,
+          "aabb": {
+            "min": [
+              7.112080134839547,
+              0.22131912847368077,
+              1.612073513574829
+            ],
+            "max": [
+              7.652417241688919,
+              0.856030913016808,
+              2.0312691701671475
+            ],
+            "extent_m": [
+              0.5403371068493721,
+              0.6347117845431273,
+              0.4191956565923185
+            ],
+            "volume_m3": 0.14376664205284218
+          },
+          "voxel_size_m": 0.08,
+          "point_reduction_percent_vs_raw_contact_crop": 96.21109607577807,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 73,
+          "component_count": 1,
+          "component_sizes": [
+            73
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.049532624720988634,
+          "castle_endpoint_nearest_distance_m": 0.027987862661325944,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 21,
+          "aabb": {
+            "min": [
+              7.128437587813263,
+              0.21799065044545182,
+              1.6242599662382662
+            ],
+            "max": [
+              7.635745768621673,
+              0.8346577128885929,
+              2.0264426822634842
+            ],
+            "extent_m": [
+              0.5073081808084101,
+              0.6166670624431411,
+              0.40218271602521805
+            ],
+            "volume_m3": 0.12581893966243
+          },
+          "voxel_size_m": 0.1,
+          "point_reduction_percent_vs_raw_contact_crop": 97.53044654939107,
+          "state": "fusionada"
+        }
+      ],
+      "critical_first_fused_voxel_m": 0.01,
+      "max_voxel_preserving_separation_m": null
+    },
+    {
+      "region_id": 5,
+      "raw_contact_crop_points": 3191,
+      "external_endpoint": [
+        2.590905,
+        2.479934,
+        1.740944
+      ],
+      "castle_endpoint": [
+        2.428563,
+        2.229066,
+        1.708654
+      ],
+      "raw": {
+        "point_count": 3191,
+        "component_count": 1,
+        "component_sizes": [
+          3191
+        ],
+        "connected": true,
+        "external_endpoint_nearest_distance_m": 0.012823618060350567,
+        "castle_endpoint_nearest_distance_m": 0.00804705513338204,
+        "external_component": 0,
+        "castle_component": 0,
+        "min_distance_between_endpoint_components_m": 0.0,
+        "gap_count": 0,
+        "max_gap_m": null,
+        "gaps_m": [],
+        "contact_thickness_points": 581,
+        "aabb": {
+          "min": [
+            2.141609269041767,
+            1.947750596978588,
+            1.4945016610114858
+          ],
+          "max": [
+            2.84484840280323,
+            2.7706512247050474,
+            1.998954818855152
+          ],
+          "extent_m": [
+            0.7032391337614632,
+            0.8229006277264594,
+            0.5044531578436662
+          ],
+          "volume_m3": 0.2919249866028529
+        }
+      },
+      "voxel_sweep": [
+        {
+          "point_count": 2840,
+          "component_count": 1,
+          "component_sizes": [
+            2840
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.012823618060350567,
+          "castle_endpoint_nearest_distance_m": 0.00804705513338204,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 522,
+          "aabb": {
+            "min": [
+              2.141609269041767,
+              1.947750596978588,
+              1.4945016610114858
+            ],
+            "max": [
+              2.84484840280323,
+              2.7703208975671574,
+              1.998954818855152
+            ],
+            "extent_m": [
+              0.7032391337614632,
+              0.8225703005885694,
+              0.5044531578436662
+            ],
+            "volume_m3": 0.2918078026537173
+          },
+          "voxel_size_m": 0.01,
+          "point_reduction_percent_vs_raw_contact_crop": 10.999686618614856,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 1501,
+          "component_count": 1,
+          "component_sizes": [
+            1501
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.012823618060350567,
+          "castle_endpoint_nearest_distance_m": 0.00804705513338204,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 321,
+          "aabb": {
+            "min": [
+              2.143281476937675,
+              1.9525614986017226,
+              1.496542996789112
+            ],
+            "max": [
+              2.84484840280323,
+              2.7703208975671574,
+              1.998954818855152
+            ],
+            "extent_m": [
+              0.701566925865555,
+              0.8177593989654348,
+              0.5024118220660401
+            ],
+            "volume_m3": 0.2882401673615886
+          },
+          "voxel_size_m": 0.02,
+          "point_reduction_percent_vs_raw_contact_crop": 52.96145408962707,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 813,
+          "component_count": 1,
+          "component_sizes": [
+            813
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.010917941519443097,
+          "castle_endpoint_nearest_distance_m": 0.006745778852916857,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 189,
+          "aabb": {
+            "min": [
+              2.143575412102747,
+              1.9568135219493865,
+              1.497623254634609
+            ],
+            "max": [
+              2.8422121656881902,
+              2.7659896668844985,
+              1.9925074502897355
+            ],
+            "extent_m": [
+              0.6986367535854434,
+              0.809176144935112,
+              0.4948841956551264
+            ],
+            "volume_m3": 0.27976802997842115
+          },
+          "voxel_size_m": 0.03,
+          "point_reduction_percent_vs_raw_contact_crop": 74.52209338765276,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 489,
+          "component_count": 1,
+          "component_sizes": [
+            489
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.008513027090916003,
+          "castle_endpoint_nearest_distance_m": 0.018317063696631983,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 113,
+          "aabb": {
+            "min": [
+              2.147916473175201,
+              1.9525614986017226,
+              1.5014080632089994
+            ],
+            "max": [
+              2.8422121656881902,
+              2.7598681594653165,
+              1.9889127920208876
+            ],
+            "extent_m": [
+              0.6942956925129891,
+              0.8073066608635939,
+              0.4875047288118881
+            ],
+            "volume_m3": 0.27325104991679866
+          },
+          "voxel_size_m": 0.04,
+          "point_reduction_percent_vs_raw_contact_crop": 84.67565026637418,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 350,
+          "component_count": 1,
+          "component_sizes": [
+            350
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.013642275251391198,
+          "castle_endpoint_nearest_distance_m": 0.02127338667511547,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 89,
+          "aabb": {
+            "min": [
+              2.1471990145157633,
+              1.95562285124897,
+              1.5031918123930932
+            ],
+            "max": [
+              2.84484840280323,
+              2.7583664452100267,
+              1.9983233953410815
+            ],
+            "extent_m": [
+              0.6976493882874668,
+              0.8027435939610568,
+              0.4951315829479883
+            ],
+            "volume_m3": 0.27729031162198464
+          },
+          "voxel_size_m": 0.05,
+          "point_reduction_percent_vs_raw_contact_crop": 89.03165151989971,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 254,
+          "component_count": 1,
+          "component_sizes": [
+            254
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.016447515688257027,
+          "castle_endpoint_nearest_distance_m": 0.02460835292947327,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 59,
+          "aabb": {
+            "min": [
+              2.1564442386697484,
+              1.959591594445667,
+              1.5079775722750612
+            ],
+            "max": [
+              2.8363814425011924,
+              2.7640504109161377,
+              1.9868103162408828
+            ],
+            "extent_m": [
+              0.679937203831444,
+              0.8044588164704707,
+              0.47883274396582154
+            ],
+            "volume_m3": 0.26191264213777987
+          },
+          "voxel_size_m": 0.06,
+          "point_reduction_percent_vs_raw_contact_crop": 92.04011281729865,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 192,
+          "component_count": 1,
+          "component_sizes": [
+            192
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.01069735592539101,
+          "castle_endpoint_nearest_distance_m": 0.02223267022147009,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 49,
+          "aabb": {
+            "min": [
+              2.155516134859681,
+              1.9554685922514867,
+              1.505969689583616
+            ],
+            "max": [
+              2.84484840280323,
+              2.7452162153697657,
+              1.993579744000454
+            ],
+            "extent_m": [
+              0.689332267943549,
+              0.789747623118279,
+              0.4876100544168378
+            ],
+            "volume_m3": 0.265454192033398
+          },
+          "voxel_size_m": 0.07,
+          "point_reduction_percent_vs_raw_contact_crop": 93.98307740520212,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 149,
+          "component_count": 1,
+          "component_sizes": [
+            149
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.023403635069312416,
+          "castle_endpoint_nearest_distance_m": 0.024186569712776065,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 35,
+          "aabb": {
+            "min": [
+              2.152497247173104,
+              1.9622303426347323,
+              1.5130831809860228
+            ],
+            "max": [
+              2.827162207822456,
+              2.7585809264419243,
+              1.9889127920208876
+            ],
+            "extent_m": [
+              0.674664960649352,
+              0.796350583807192,
+              0.47582961103486476
+            ],
+            "volume_m3": 0.255648896745554
+          },
+          "voxel_size_m": 0.08,
+          "point_reduction_percent_vs_raw_contact_crop": 95.33061736132873,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 106,
+          "component_count": 1,
+          "component_sizes": [
+            106
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.03689187347825092,
+          "castle_endpoint_nearest_distance_m": 0.02460835292947327,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 30,
+          "aabb": {
+            "min": [
+              2.177300875413666,
+              1.9718019189297464,
+              1.5134486631602666
+            ],
+            "max": [
+              2.84484840280323,
+              2.757957370396147,
+              1.9977548928318927
+            ],
+            "extent_m": [
+              0.6675475273895644,
+              0.7861554514664004,
+              0.48430622967162607
+            ],
+            "volume_m3": 0.25416203398666526
+          },
+          "voxel_size_m": 0.1,
+          "point_reduction_percent_vs_raw_contact_crop": 96.67815731745534,
+          "state": "fusionada"
+        }
+      ],
+      "critical_first_fused_voxel_m": 0.01,
+      "max_voxel_preserving_separation_m": null
+    },
+    {
+      "region_id": 6,
+      "raw_contact_crop_points": 2762,
+      "external_endpoint": [
+        3.187771,
+        2.976188,
+        1.581882
+      ],
+      "castle_endpoint": [
+        2.849464,
+        3.018587,
+        1.51175
+      ],
+      "raw": {
+        "point_count": 2762,
+        "component_count": 1,
+        "component_sizes": [
+          2762
+        ],
+        "connected": true,
+        "external_endpoint_nearest_distance_m": 5.28789887755186e-07,
+        "castle_endpoint_nearest_distance_m": 0.004697876889784117,
+        "external_component": 0,
+        "castle_component": 0,
+        "min_distance_between_endpoint_components_m": 0.0,
+        "gap_count": 0,
+        "max_gap_m": null,
+        "gaps_m": [],
+        "contact_thickness_points": 1250,
+        "aabb": {
+          "min": [
+            2.6256770629344177,
+            2.7995882465549466,
+            1.2174169558836936
+          ],
+          "max": [
+            3.3260200727194973,
+            3.304090881857185,
+            1.8228185818410871
+          ],
+          "extent_m": [
+            0.7003430097850796,
+            0.5045026353022384,
+            0.6054016259573936
+          ],
+          "volume_m3": 0.21390346535034938
+        }
+      },
+      "voxel_sweep": [
+        {
+          "point_count": 2518,
+          "component_count": 1,
+          "component_sizes": [
+            2518
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 5.28789887755186e-07,
+          "castle_endpoint_nearest_distance_m": 0.004697876889784117,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 1149,
+          "aabb": {
+            "min": [
+              2.6256770629344177,
+              2.7995882465549466,
+              1.2174169558836936
+            ],
+            "max": [
+              3.3260200727194973,
+              3.304090881857185,
+              1.8228185818410871
+            ],
+            "extent_m": [
+              0.7003430097850796,
+              0.5045026353022384,
+              0.6054016259573936
+            ],
+            "volume_m3": 0.21390346535034938
+          },
+          "voxel_size_m": 0.01,
+          "point_reduction_percent_vs_raw_contact_crop": 8.834178131788562,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 1294,
+          "component_count": 1,
+          "component_sizes": [
+            1294
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 5.28789887755186e-07,
+          "castle_endpoint_nearest_distance_m": 0.004697876889784117,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 577,
+          "aabb": {
+            "min": [
+              2.628274629509468,
+              2.7995882465549466,
+              1.2224354024251556
+            ],
+            "max": [
+              3.3260200727194973,
+              3.30292139098114,
+              1.8228185818410871
+            ],
+            "extent_m": [
+              0.6977454432100294,
+              0.5033331444261933,
+              0.6003831794159316
+            ],
+            "volume_m3": 0.2108536167648017
+          },
+          "voxel_size_m": 0.02,
+          "point_reduction_percent_vs_raw_contact_crop": 53.14989138305576,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 667,
+          "component_count": 1,
+          "component_sizes": [
+            667
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.01194721964981059,
+          "castle_endpoint_nearest_distance_m": 0.013366625054329721,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 306,
+          "aabb": {
+            "min": [
+              2.6265122771561433,
+              2.7995882465549466,
+              1.2246424876889992
+            ],
+            "max": [
+              3.324855008773956,
+              3.293652960952148,
+              1.8214040473412703
+            ],
+            "extent_m": [
+              0.6983427316178128,
+              0.49406471439720123,
+              0.5967615596522711
+            ],
+            "volume_m3": 0.20589855360295353
+          },
+          "voxel_size_m": 0.03,
+          "point_reduction_percent_vs_raw_contact_crop": 75.85083272990587,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 429,
+          "component_count": 1,
+          "component_sizes": [
+            429
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 5.28789887755186e-07,
+          "castle_endpoint_nearest_distance_m": 0.012207589554304916,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 192,
+          "aabb": {
+            "min": [
+              2.6298807124560435,
+              2.7995882465549466,
+              1.2301292340357206
+            ],
+            "max": [
+              3.318306536928062,
+              3.2939295573060794,
+              1.8214040473412703
+            ],
+            "extent_m": [
+              0.6884258244720187,
+              0.49434131075113275,
+              0.5912748133055497
+            ],
+            "volume_m3": 0.20122106246369723
+          },
+          "voxel_size_m": 0.04,
+          "point_reduction_percent_vs_raw_contact_crop": 84.46777697320782,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 286,
+          "component_count": 1,
+          "component_sizes": [
+            286
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.005188225068776989,
+          "castle_endpoint_nearest_distance_m": 0.021090359011942627,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 125,
+          "aabb": {
+            "min": [
+              2.633747664997454,
+              2.7995882465549466,
+              1.2409367286719823
+            ],
+            "max": [
+              3.3260200727194973,
+              3.30292139098114,
+              1.8214040473412703
+            ],
+            "extent_m": [
+              0.6922724077220432,
+              0.5033331444261933,
+              0.5804673186692879
+            ],
+            "volume_m3": 0.20226014993317362
+          },
+          "voxel_size_m": 0.05,
+          "point_reduction_percent_vs_raw_contact_crop": 89.64518464880521,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 210,
+          "component_count": 1,
+          "component_sizes": [
+            210
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.01194721964981059,
+          "castle_endpoint_nearest_distance_m": 0.0306257097652844,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 91,
+          "aabb": {
+            "min": [
+              2.6371580568041435,
+              2.8113667461796186,
+              1.243313336796917
+            ],
+            "max": [
+              3.3111505339724348,
+              3.2928887078223226,
+              1.8208947333269307
+            ],
+            "extent_m": [
+              0.6739924771682912,
+              0.481521961642704,
+              0.5775813965300138
+            ],
+            "volume_m3": 0.18744952540625814
+          },
+          "voxel_size_m": 0.06,
+          "point_reduction_percent_vs_raw_contact_crop": 92.39681390296887,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 155,
+          "component_count": 1,
+          "component_sizes": [
+            155
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 5.28789887755186e-07,
+          "castle_endpoint_nearest_distance_m": 0.01873231930893954,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 66,
+          "aabb": {
+            "min": [
+              2.6415401065695403,
+              2.8066450341857525,
+              1.2499527717628227
+            ],
+            "max": [
+              3.3260200727194973,
+              3.2988431463563916,
+              1.819349864784927
+            ],
+            "extent_m": [
+              0.684479966149957,
+              0.49219811217063913,
+              0.5693970930221044
+            ],
+            "volume_m3": 0.19182973667143755
+          },
+          "voxel_size_m": 0.07,
+          "point_reduction_percent_vs_raw_contact_crop": 94.3881245474294,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 127,
+          "component_count": 1,
+          "component_sizes": [
+            127
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 5.28789887755186e-07,
+          "castle_endpoint_nearest_distance_m": 0.033379703864366554,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 53,
+          "aabb": {
+            "min": [
+              2.6481266679815403,
+              2.8113667461796186,
+              1.2568727256304624
+            ],
+            "max": [
+              3.3059490208342552,
+              3.292323015545978,
+              1.8070050978169583
+            ],
+            "extent_m": [
+              0.657822352852715,
+              0.4809562693663594,
+              0.5501323721864959
+            ],
+            "volume_m3": 0.17405296201697054
+          },
+          "voxel_size_m": 0.08,
+          "point_reduction_percent_vs_raw_contact_crop": 95.40188269370022,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 84,
+          "component_count": 1,
+          "component_sizes": [
+            84
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.04265609005246863,
+          "castle_endpoint_nearest_distance_m": 0.03824609782398322,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 35,
+          "aabb": {
+            "min": [
+              2.6597284750208217,
+              2.8317656079285434,
+              1.261720079655948
+            ],
+            "max": [
+              3.3260200727194973,
+              3.30292139098114,
+              1.8214040473412703
+            ],
+            "extent_m": [
+              0.6662915976986756,
+              0.47115578305259653,
+              0.5596839676853222
+            ],
+            "volume_m3": 0.17569998697432554
+          },
+          "voxel_size_m": 0.1,
+          "point_reduction_percent_vs_raw_contact_crop": 96.95872556118755,
+          "state": "fusionada"
+        }
+      ],
+      "critical_first_fused_voxel_m": 0.01,
+      "max_voxel_preserving_separation_m": null
+    },
+    {
+      "region_id": 7,
+      "raw_contact_crop_points": 613,
+      "external_endpoint": [
+        2.086217,
+        1.346857,
+        1.626165
+      ],
+      "castle_endpoint": [
+        2.022728,
+        1.42101,
+        1.664212
+      ],
+      "raw": {
+        "point_count": 613,
+        "component_count": 1,
+        "component_sizes": [
+          613
+        ],
+        "connected": true,
+        "external_endpoint_nearest_distance_m": 0.008146995360277503,
+        "castle_endpoint_nearest_distance_m": 3.874496761022365e-07,
+        "external_component": 0,
+        "castle_component": 0,
+        "min_distance_between_endpoint_components_m": 0.0,
+        "gap_count": 0,
+        "max_gap_m": null,
+        "gaps_m": [],
+        "contact_thickness_points": 233,
+        "aabb": {
+          "min": [
+            1.732978323992214,
+            1.3015609260086631,
+            1.6053154135491943
+          ],
+          "max": [
+            2.1507942384103775,
+            1.6760146655301473,
+            1.858328684062328
+          ],
+          "extent_m": [
+            0.41781591441816346,
+            0.3744537395214842,
+            0.2530132705131338
+          ],
+          "volume_m3": 0.03958461729915316
+        }
+      },
+      "voxel_sweep": [
+        {
+          "point_count": 552,
+          "component_count": 1,
+          "component_sizes": [
+            552
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.008146995360277503,
+          "castle_endpoint_nearest_distance_m": 3.874496761022365e-07,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 218,
+          "aabb": {
+            "min": [
+              1.732978323992214,
+              1.3015609260086631,
+              1.6053154135491943
+            ],
+            "max": [
+              2.1507942384103775,
+              1.6755661784089564,
+              1.8580919734842107
+            ],
+            "extent_m": [
+              0.41781591441816346,
+              0.37400525240029325,
+              0.25277655993501646
+            ],
+            "volume_m3": 0.03950021673260953
+          },
+          "voxel_size_m": 0.01,
+          "point_reduction_percent_vs_raw_contact_crop": 9.951060358890707,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 305,
+          "component_count": 1,
+          "component_sizes": [
+            305
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.008146995360277503,
+          "castle_endpoint_nearest_distance_m": 0.008220438908781963,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 120,
+          "aabb": {
+            "min": [
+              1.732978323992214,
+              1.3015609260086631,
+              1.6053154135491943
+            ],
+            "max": [
+              2.1446556482476042,
+              1.6706365959871672,
+              1.8580919734842107
+            ],
+            "extent_m": [
+              0.41167732425539016,
+              0.36907566997850405,
+              0.25277655993501646
+            ],
+            "volume_m3": 0.038406891816620874
+          },
+          "voxel_size_m": 0.02,
+          "point_reduction_percent_vs_raw_contact_crop": 50.24469820554649,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 183,
+          "component_count": 1,
+          "component_sizes": [
+            183
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.010084324130034869,
+          "castle_endpoint_nearest_distance_m": 0.014462562629256255,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 75,
+          "aabb": {
+            "min": [
+              1.732978323992214,
+              1.308084398717594,
+              1.612720496447582
+            ],
+            "max": [
+              2.1484609856271746,
+              1.6708342714545477,
+              1.8545713918991087
+            ],
+            "extent_m": [
+              0.4154826616349605,
+              0.3627498727369536,
+              0.2418508954515266
+            ],
+            "volume_m3": 0.03645086791379372
+          },
+          "voxel_size_m": 0.03,
+          "point_reduction_percent_vs_raw_contact_crop": 70.1468189233279,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 118,
+          "component_count": 1,
+          "component_sizes": [
+            118
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.015024027725148966,
+          "castle_endpoint_nearest_distance_m": 0.01666433567752471,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 44,
+          "aabb": {
+            "min": [
+              1.732978323992214,
+              1.3115293969745347,
+              1.614911957250824
+            ],
+            "max": [
+              2.1446556482476042,
+              1.6706365959871672,
+              1.8580919734842107
+            ],
+            "extent_m": [
+              0.41167732425539016,
+              0.35910719901263244,
+              0.2431800162333868
+            ],
+            "volume_m3": 0.03595083159914909
+          },
+          "voxel_size_m": 0.04,
+          "point_reduction_percent_vs_raw_contact_crop": 80.75040783034257,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 89,
+          "component_count": 1,
+          "component_sizes": [
+            89
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.029070644790510913,
+          "castle_endpoint_nearest_distance_m": 0.02482345961862589,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 33,
+          "aabb": {
+            "min": [
+              1.732978323992214,
+              1.3188983049065017,
+              1.6213787044875145
+            ],
+            "max": [
+              2.146127732843971,
+              1.665094773416824,
+              1.8580919734842107
+            ],
+            "extent_m": [
+              0.4131494088517571,
+              0.34619646851032226,
+              0.2367132689966962
+            ],
+            "volume_m3": 0.03385730393204958
+          },
+          "voxel_size_m": 0.05,
+          "point_reduction_percent_vs_raw_contact_crop": 85.48123980424144,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 63,
+          "component_count": 1,
+          "component_sizes": [
+            63
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.010084324130034869,
+          "castle_endpoint_nearest_distance_m": 0.03695420726576015,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 22,
+          "aabb": {
+            "min": [
+              1.732978323992214,
+              1.331164526408987,
+              1.6312874986941432
+            ],
+            "max": [
+              2.1237417869167325,
+              1.6698821804806834,
+              1.8529260710958193
+            ],
+            "extent_m": [
+              0.39076346292451847,
+              0.3387176540716963,
+              0.22163857240167606
+            ],
+            "volume_m3": 0.029335745319042702
+          },
+          "voxel_size_m": 0.06,
+          "point_reduction_percent_vs_raw_contact_crop": 89.72267536704732,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 50,
+          "component_count": 1,
+          "component_sizes": [
+            50
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.02943045990258795,
+          "castle_endpoint_nearest_distance_m": 0.035695765874634536,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 17,
+          "aabb": {
+            "min": [
+              1.7427683505976297,
+              1.3362192954812202,
+              1.6213053129239654
+            ],
+            "max": [
+              2.1185333642948647,
+              1.6647043933752697,
+              1.8475632516774054
+            ],
+            "extent_m": [
+              0.37576501369723503,
+              0.32848509789404945,
+              0.22625793875344002
+            ],
+            "volume_m3": 0.027927743059572404
+          },
+          "voxel_size_m": 0.07,
+          "point_reduction_percent_vs_raw_contact_crop": 91.84339314845025,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 39,
+          "component_count": 1,
+          "component_sizes": [
+            39
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.023130742085393383,
+          "castle_endpoint_nearest_distance_m": 0.01669775885218144,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 14,
+          "aabb": {
+            "min": [
+              1.7427683505976297,
+              1.32088743979527,
+              1.6207502973623655
+            ],
+            "max": [
+              2.142138091931219,
+              1.651868982176671,
+              1.8543055156612012
+            ],
+            "extent_m": [
+              0.3993697413335895,
+              0.3309815423814011,
+              0.23355521829883563
+            ],
+            "volume_m3": 0.0308722660041361
+          },
+          "voxel_size_m": 0.08,
+          "point_reduction_percent_vs_raw_contact_crop": 93.6378466557912,
+          "state": "fusionada"
+        },
+        {
+          "point_count": 31,
+          "component_count": 1,
+          "component_sizes": [
+            31
+          ],
+          "connected": true,
+          "external_endpoint_nearest_distance_m": 0.029867357713262065,
+          "castle_endpoint_nearest_distance_m": 0.03891773776526096,
+          "external_component": 0,
+          "castle_component": 0,
+          "min_distance_between_endpoint_components_m": 0.0,
+          "gap_count": 0,
+          "max_gap_m": null,
+          "gaps_m": [],
+          "contact_thickness_points": 10,
+          "aabb": {
+            "min": [
+              1.732978323992214,
+              1.32088743979527,
+              1.6213787044875145
+            ],
+            "max": [
+              2.142138091931219,
+              1.6462268348363005,
+              1.8519558137930867
+            ],
+            "extent_m": [
+              0.4091597679390051,
+              0.3253393950410306,
+              0.23057710930557218
+            ],
+            "volume_m3": 0.03069345437849494
+          },
+          "voxel_size_m": 0.1,
+          "point_reduction_percent_vs_raw_contact_crop": 94.94290375203916,
+          "state": "fusionada"
+        }
+      ],
+      "critical_first_fused_voxel_m": 0.01,
+      "max_voxel_preserving_separation_m": null
+    }
+  ],
+  "runtime_seconds": 61.43840718269348
+}

@@ -50,14 +50,14 @@ Cuando una decisión no esté cubierta por evidencia del proyecto:
 - Usar `not_answerable` si se exige evidencia y no existe.
 - **Bloquear implementación** si falta spec, plan, tasks, analyze o validación.
 
-### 1.3 Supersesión de documentos de back_data/
+### 1.3 Supersesion de documentos de projects/ForestVol/back_data/
 
-> **REGLA DE AUTORIDAD:** Los documentos en `back_data/` son la fuente académica original del proyecto (entregables de curso). En caso de conflicto con esta Constitución (FV_01), la enmienda `FV_05`, o `FV_02`, **los documentos FV prevalecen siempre**.
+> **REGLA DE AUTORIDAD:** Los documentos en `projects/ForestVol/back_data/` son la fuente academica original del proyecto (entregables de curso). En caso de conflicto con esta Constitucion (FV_01), la enmienda `FV_05`, o `FV_02`, **los documentos FV prevalecen siempre**.
 >
 > Diferencias conocidas y resueltas:
-> - `back_data/Requisitos.md` define RF-01 a RF-12 con numeración distinta a la de esta Constitución (por ejemplo, su RF-09 es "reporte del resultado" y su RF-10 es "exportación JSON"). La numeración canonica es la de esta Constitución (RF-01 a RF-12 definidos en sección 9).
-> - `back_data/Casos de uso.md` referenciaba RF-13 y RF-14 (inexistentes) en UC-05 — corregido: corresponden a RF-10 y RF-12.
-> - `back_data/Casos de uso.md` indicaba NodeODM en puerto 3000 (UC-03) — corregido: el puerto oficial es **3001**.
+> - `projects/ForestVol/back_data/Requisitos.md` define RF-01 a RF-12 con numeracion distinta a la de esta Constitucion (por ejemplo, su RF-09 es "reporte del resultado" y su RF-10 es "exportacion JSON"). La numeracion canonica es la de esta Constitucion (RF-01 a RF-12 definidos en seccion 9).
+> - `projects/ForestVol/back_data/Casos de uso.md` referenciaba RF-13 y RF-14 (inexistentes) en UC-05; corregido: corresponden a RF-10 y RF-12.
+> - `projects/ForestVol/back_data/Casos de uso.md` indicaba NodeODM en puerto 3000 (UC-03); corregido: el puerto oficial es **3001**.
 
 ---
 
@@ -154,7 +154,7 @@ Orden de autoridad para este proyecto:
 1. FV_05_Enmienda_Harness_2026_06_12.md para reglas operativas del harness
 2. Este documento (Constitución ForestVol)
 3. Documento FV_02
-4. Documentos back_data/ del proyecto como referencia historica no canonica en caso de conflicto
+4. Documentos `projects/ForestVol/back_data/` del proyecto como referencia historica no canonica en caso de conflicto
 5. specs/forestvol-mvp/spec.md
 6. specs/forestvol-mvp/plan.md
 7. Contratos API (schemas.py + OpenAPI generado por FastAPI)
@@ -163,7 +163,7 @@ Orden de autoridad para este proyecto:
 10. Código implementado
 11. Pruebas y reportes de validación
 12. Trazabilidad (trazabilidad/*.json)
-13. Aprendizaje validado (.factory/memory/Aprendizaje.ForestVol.md)
+13. Aprendizaje validado (trazabilidad/lessons/LESSONS_LEARNED.jsonl y trazabilidad/LESSONS_LEARNED.jsonl)
 ```
 
 **Regla de drift:** Si el código contradice la spec, se considera drift. Se debe actualizar la spec o corregir el código antes de cerrar el hito.
@@ -427,4 +427,4 @@ Resumen operativo:
 - [x] Matriz de trazabilidad inicial definida.
 - [x] Política de no improvisación definida.
 - [x] Template de spec SDD a generar definido.
-- [x] Regla de supersesión de documentos back_data/ definida.
+- [x] Regla de supersesion de documentos `projects/ForestVol/back_data/` definida.

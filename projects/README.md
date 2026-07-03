@@ -37,7 +37,7 @@ El archivo `.harness/runtime_contract.json` elige el proyecto activo con:
     "injection_policy": "projects/ForestVol/harness/injection_policy.json",
     "eval_contract": "projects/ForestVol/harness/eval_contract.json",
     "prompt_contract": "projects/ForestVol/harness/prompt_contract.json",
-    "dataset_manifest": "set_imagenes+guia/dataset_manifest.json"
+    "dataset_manifest": "projects/ForestVol/set_imagenes+guia/dataset_manifest.json"
   }
 }
 ```

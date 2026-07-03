@@ -7,7 +7,7 @@ Este documento explica como operar el harness. Es documentacion auxiliar: la uni
 - Python 3.11 o superior.
 - Dependencias del harness instaladas con `pip install -r requirements-harness.txt`.
 - Ejecutar comandos desde la raiz del repositorio.
-- Dataset y marcador definidos por `set_imagenes+guia/dataset_manifest.json`.
+- Dataset y marcador definidos por `projects/ForestVol/set_imagenes+guia/dataset_manifest.json`.
 
 Comando oficial:
 
@@ -70,7 +70,7 @@ Forma requerida:
 {
   "evidence_id": "dataset-manifest",
   "claim": "dataset_manifest",
-  "artifact_path": "set_imagenes+guia/dataset_manifest.json",
+  "artifact_path": "projects/ForestVol/set_imagenes+guia/dataset_manifest.json",
   "checksum": "<sha256>",
   "validator": "dataset_gate",
   "timestamp": "2026-06-14T00:00:00Z",

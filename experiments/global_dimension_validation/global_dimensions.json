@@ -1,0 +1,270 @@
+{
+  "source_cloud": "projects\\ForestVol\\data\\processed\\971d6e25-8ff0-41d2-8784-c981dec7ccbf\\point_cloud.ply",
+  "scale_factor_m_per_unit": 0.54611448,
+  "castle_isolation": {
+    "method": "raw cloud scaled to meters, remove outer 0.5% per axis, then keep central 98% per axis",
+    "raw_point_count": 746225,
+    "core_point_count": 726523,
+    "selected_point_count": 685025,
+    "q005_m": [
+      -0.5399238109059643,
+      -3.314233052555644,
+      -0.7185082732965705
+    ],
+    "q995_m": [
+      8.75199335776765,
+      5.602104412863603,
+      3.2481482610628323
+    ],
+    "q01_core_m": [
+      0.07801869867557583,
+      -2.6031038786794802,
+      -0.46275704261764866
+    ],
+    "q99_core_m": [
+      8.327135962481918,
+      4.577245106249543,
+      3.2170040758267864
+    ]
+  },
+  "frame": {
+    "origin_m": [
+      4.155135199446487,
+      -0.32427464501519676,
+      1.5383760578082275
+    ],
+    "axis_x": [
+      0.9656153943328314,
+      -0.2599748261417834,
+      0.0
+    ],
+    "axis_y": [
+      0.2599748261417834,
+      0.9656153943328314,
+      0.0
+    ],
+    "axis_z": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "note": "X is dominant horizontal log direction, Y is transverse horizontal, Z is vertical."
+  },
+  "face_planes": {
+    "left": {
+      "center": [
+        4.06423098796884,
+        -2.3293101093620954,
+        0.9338248465386009
+      ],
+      "normal": [
+        -0.16511325294332976,
+        -0.9861093892053866,
+        0.01805231906021365
+      ],
+      "rms_residual_m": 0.16403523428722194,
+      "p95_abs_residual_m": 0.39468947399684834,
+      "normal_alignment_to_expected_axis": 0.9951276959405134,
+      "point_count": 41102,
+      "face": "left",
+      "axis": "y",
+      "side": "min",
+      "axis_position_m": -1.910858860757937,
+      "axis_threshold_m": -1.7673462810564238,
+      "position_uncertainty_m": 0.16403523428722194,
+      "quality_score": 0.8548948233082169
+    },
+    "right": {
+      "center": [
+        4.117704282014591,
+        3.714707491106566,
+        1.3138182845222017
+      ],
+      "normal": [
+        0.2570878473679877,
+        0.9663731757728404,
+        0.0053594666160537985
+      ],
+      "rms_residual_m": 0.4443947924833583,
+      "p95_abs_residual_m": 0.7267731262416782,
+      "normal_alignment_to_expected_axis": 0.9999811836192201,
+      "point_count": 41102,
+      "face": "right",
+      "axis": "y",
+      "side": "max",
+      "axis_position_m": 3.861225276326601,
+      "axis_threshold_m": 3.1693472799673055,
+      "position_uncertainty_m": 0.4443947924833583,
+      "quality_score": 0.6923184636382864
+    },
+    "front": {
+      "center": [
+        1.0088959339546697,
+        0.8270882966822997,
+        0.6548401728820564
+      ],
+      "normal": [
+        -0.9483205879928448,
+        0.22291647914351836,
+        0.22582361638048806
+      ],
+      "rms_residual_m": 0.2826499132868034,
+      "p95_abs_residual_m": 0.5720233348130387,
+      "normal_alignment_to_expected_axis": 0.9736656314381283,
+      "point_count": 41102,
+      "face": "front",
+      "axis": "x",
+      "side": "min",
+      "axis_position_m": -3.206712521435507,
+      "axis_threshold_m": -3.0356819895931775,
+      "position_uncertainty_m": 0.2826499132868034,
+      "quality_score": 0.7591047419502803
+    },
+    "back": {
+      "center": [
+        7.927375197312659,
+        0.5267649790692935,
+        1.2505371561197909
+      ],
+      "normal": [
+        0.9667900627247545,
+        -0.2413418667065328,
+        0.08408970205245958
+      ],
+      "rms_residual_m": 0.15639675652825583,
+      "p95_abs_residual_m": 0.2927685513826574,
+      "normal_alignment_to_expected_axis": 0.996290177492791,
+      "point_count": 41102,
+      "face": "back",
+      "axis": "x",
+      "side": "max",
+      "axis_position_m": 3.391360238310251,
+      "axis_threshold_m": 3.1867634776892837,
+      "position_uncertainty_m": 0.15639675652825583,
+      "quality_score": 0.8615470182429964
+    },
+    "bottom": {
+      "center": [
+        3.4285261619311354,
+        0.40597588479991586,
+        -0.1916225430150797
+      ],
+      "normal": [
+        -0.0011214066013392888,
+        -0.01903288621212047,
+        -0.9998182293245461
+      ],
+      "rms_residual_m": 0.10150159895573953,
+      "p95_abs_residual_m": 0.20166191322166888,
+      "normal_alignment_to_expected_axis": 0.9998182293245462,
+      "point_count": 41102,
+      "face": "bottom",
+      "axis": "z",
+      "side": "min",
+      "axis_position_m": -1.7021758310615982,
+      "axis_threshold_m": -1.5915081433055613,
+      "position_uncertainty_m": 0.10150159895573953,
+      "quality_score": 0.9076865891728232
+    },
+    "top": {
+      "center": [
+        5.867630254209473,
+        -0.03035083931573568,
+        3.1428703449722124
+      ],
+      "normal": [
+        0.013209608631861531,
+        0.005047269386609203,
+        0.9999000106568315
+      ],
+      "rms_residual_m": 0.040171146843227215,
+      "p95_abs_residual_m": 0.07183907142996841,
+      "normal_alignment_to_expected_axis": 0.9999000106568317,
+      "point_count": 41102,
+      "face": "top",
+      "axis": "z",
+      "side": "max",
+      "axis_position_m": 1.6064091257913207,
+      "axis_threshold_m": 1.5143126281255501,
+      "position_uncertainty_m": 0.040171146843227215,
+      "quality_score": 0.9612841249167381
+    }
+  },
+  "plane_dimensions": {
+    "x_length_m": {
+      "value_m": 6.598072759745758,
+      "uncertainty_m": 0.3230339284558141,
+      "point_count": 82204,
+      "quality_score": 0.8103258800966384,
+      "negative_face": "front",
+      "positive_face": "back"
+    },
+    "y_width_m": {
+      "value_m": 5.772084137084538,
+      "uncertainty_m": 0.4737027440009091,
+      "point_count": 82204,
+      "quality_score": 0.7736066434732516,
+      "negative_face": "left",
+      "positive_face": "right"
+    },
+    "z_height_m": {
+      "value_m": 3.308584956852919,
+      "uncertainty_m": 0.10916178648809256,
+      "point_count": 82204,
+      "quality_score": 0.9344853570447806,
+      "negative_face": "bottom",
+      "positive_face": "top"
+    }
+  },
+  "aabb_extent_m": [
+    8.249018542116822,
+    7.180249253997001,
+    3.6797320152824877
+  ],
+  "robust_aabb_extent_m": [
+    7.572033033259968,
+    6.7844737713924825,
+    3.5059253996665745
+  ],
+  "obb_extent_m": [
+    9.078653140768015,
+    8.232522840334752,
+    3.6797320152824877
+  ],
+  "robust_obb_extent_m": [
+    7.221882175064222,
+    6.4320711368790136,
+    3.505925399666574
+  ],
+  "expected_m": {
+    "x_length_m": 6.0,
+    "y_width_m": 10.08,
+    "z_height_m": 5.04,
+    "log_diameter_m": 1.26
+  },
+  "comparison_to_expected": {
+    "x_length_m": {
+      "expected_m": 6.0,
+      "planes_m": 6.598072759745758,
+      "planes_error_percent": 9.967879329095968
+    },
+    "y_width_m": {
+      "expected_m": 10.08,
+      "planes_m": 5.772084137084538,
+      "planes_error_percent": -42.73726054479625
+    },
+    "z_height_m": {
+      "expected_m": 5.04,
+      "planes_m": 3.308584956852919,
+      "planes_error_percent": -34.3534730783151
+    }
+  },
+  "trunk_local_summary": {
+    "detected_trunk_count": 9,
+    "mean_length_m": 5.533763945832937,
+    "std_length_m": 0.961447457835174,
+    "mean_diameter_p90_m": 1.178414868668254,
+    "std_diameter_p90_m": 0.12794370528448804,
+    "inferred_layer_count": 3
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "set1_benchmark": {
+    "uuid": "56396d01-c139-445e-ba50-55644781e877",
+    "exists": true,
+    "options_name": "56396d01-c139-445e-ba50-55644781e877",
+    "options_project_path": "/var/www/data/56396d01-c139-445e-ba50-55644781e877",
+    "clouds": {
+      "odm_filterpoints/point_cloud.ply": {
+        "size_bytes": 8432743,
+        "sha256": "6dda4d260a9cf2c7c9cc722379a3624b20c429b950c1bcd11c8acf29dc32430f"
+      },
+      "opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply": {
+        "size_bytes": 8689171,
+        "sha256": "c9686d097ad78a624d2df269145754242d317d4f8b5d9156cb5da75a72c82afc"
+      },
+      "opensfm/undistorted/openmvs/scene_dense.ply": {
+        "size_bytes": 8694939,
+        "sha256": "cc9b288ea611b53ecd637fb5b7de200942ef563ec4648cd070a622c4be5351d3"
+      }
+    }
+  },
+  "set1_production": {
+    "uuid": "4d324ed3-3ec9-446b-9976-39285560b6b5",
+    "exists": true,
+    "options_name": "4d324ed3-3ec9-446b-9976-39285560b6b5",
+    "options_project_path": "/var/www/data/4d324ed3-3ec9-446b-9976-39285560b6b5",
+    "clouds": {
+      "odm_filterpoints/point_cloud.ply": {
+        "size_bytes": 11252735,
+        "sha256": "99c67aeed8feb3ab06bfe0f74c932af67aabbe5ebb0c8736b879c042846af777"
+      },
+      "opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply": {
+        "size_bytes": 11253019,
+        "sha256": "937fe16dea69f416f94d3685b59477d947cb8e8228a820dffc49af0cbea933f7"
+      },
+      "opensfm/undistorted/openmvs/scene_dense.ply": {
+        "size_bytes": 11261699,
+        "sha256": "ae67519cc9df67b16bae4da451b82f3bf52e6f3d61d754e0c538e72ca2585c59"
+      }
+    }
+  },
+  "set2_benchmark_session": {
+    "uuid": "002ca5e3-6eca-4aba-b3e2-623f97878136",
+    "exists": true,
+    "options_name": "37fe01cd-356f-4776-952a-17e989f8452b",
+    "options_project_path": "/var/www/data/37fe01cd-356f-4776-952a-17e989f8452b",
+    "clouds": {
+      "odm_filterpoints/point_cloud.ply": {
+        "size_bytes": 17856591,
+        "sha256": "525dffc0ce6e89c19456695196d8547ef3115b11dca1de37eaba19c2d2ebbe55"
+      },
+      "opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply": {
+        "size_bytes": 18989951,
+        "sha256": "29c9943ae6c81fd4d3d4d5f2fb2baf7eaa539e37eafaf5e8d624d6c882a593b2"
+      },
+      "opensfm/undistorted/openmvs/scene_dense.ply": {
+        "size_bytes": 19136055,
+        "sha256": "4a2c1db69b14f03b16215f6b1aa3879c44a5469287412ba4a3983067aa2f029e"
+      }
+    }
+  },
+  "set2_benchmark_project_path": {
+    "uuid": "37fe01cd-356f-4776-952a-17e989f8452b",
+    "exists": true,
+    "options_name": "37fe01cd-356f-4776-952a-17e989f8452b",
+    "options_project_path": "/var/www/data/37fe01cd-356f-4776-952a-17e989f8452b",
+    "clouds": {
+      "odm_filterpoints/point_cloud.ply": {
+        "size_bytes": 17856591,
+        "sha256": "525dffc0ce6e89c19456695196d8547ef3115b11dca1de37eaba19c2d2ebbe55"
+      },
+      "opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply": {
+        "size_bytes": 18989951,
+        "sha256": "29c9943ae6c81fd4d3d4d5f2fb2baf7eaa539e37eafaf5e8d624d6c882a593b2"
+      },
+      "opensfm/undistorted/openmvs/scene_dense.ply": {
+        "size_bytes": 19136055,
+        "sha256": "4a2c1db69b14f03b16215f6b1aa3879c44a5469287412ba4a3983067aa2f029e"
+      }
+    }
+  },
+  "set2_production": {
+    "uuid": "86f11977-7789-42d8-b4b0-852f623f1df0",
+    "exists": true,
+    "options_name": "86f11977-7789-42d8-b4b0-852f623f1df0",
+    "options_project_path": "/var/www/data/86f11977-7789-42d8-b4b0-852f623f1df0",
+    "clouds": {
+      "odm_filterpoints/point_cloud.ply": {
+        "size_bytes": 10409739,
+        "sha256": "4ede2ae47fd561c67a1de73afcb3adcfc20297164b2084c911ff3785dda6d88b"
+      },
+      "opensfm/undistorted/openmvs/scene_dense_dense_filtered.ply": {
+        "size_bytes": 11053099,
+        "sha256": "ce0882e35637071d740fd848b813c7b31a284ddc035c2c80f3e6acd383603e6a"
+      },
+      "opensfm/undistorted/openmvs/scene_dense.ply": {
+        "size_bytes": 11168963,
+        "sha256": "2ba6baa6996115567d4843fa48557ce65f87f4f68cf6f53c81ddf7b2da248831"
+      }
+    }
+  },
+  "set2_reuse_demonstration": {
+    "002ca_and_37fe_filterpoints_same_hash": true,
+    "002ca_options_points_to_37fe": true
+  }
+}

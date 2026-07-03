@@ -137,7 +137,7 @@ def create_dataset_claim_evidence(temp_repo: Path, run_id: str) -> list:
         run_id,
         "evidence/dataset_manifest.json",
         "dataset_manifest",
-        "set_imagenes+guia/dataset_manifest.json",
+        "projects/ForestVol/set_imagenes+guia/dataset_manifest.json",
         validator="dataset_gate",
     )
     write_evidence(
@@ -171,7 +171,7 @@ def create_reference_marker_evidence(temp_repo: Path, run_id: str) -> list:
         run_id,
         "evidence/reference_marker.json",
         "marker_image_file",
-        "set_imagenes+guia/guia50cm/aruco-marker-ID=0.png",
+        "projects/ForestVol/set_imagenes+guia/guia100cm/aruco-marker-ID=0.png",
         validator="dataset_gate",
     )
     return ["evidence/dataset_manifest.json", "evidence/reference_marker.json"]
@@ -588,7 +588,7 @@ def test_reference_marker_claim_requires_matching_marker_artifact(temp_repo):
     evidence = create_reference_marker_evidence(temp_repo, "RUN-REF-MARKER")
     bad_record = temp_repo / ".harness" / "runs" / "RUN-REF-MARKER" / "evidence/reference_marker.json"
     payload = json.loads(bad_record.read_text(encoding="utf-8"))
-    payload["artifact_path"] = "set_imagenes+guia/guia50cm/otro-marker.png"
+    payload["artifact_path"] = "projects/ForestVol/set_imagenes+guia/guia100cm/otro-marker.png"
     bad_record.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
     with pytest.raises((ValueError, FileNotFoundError), match="checksum|marker_artifact_path|artifact_missing"):
@@ -641,7 +641,7 @@ def test_error_percentage_claim_requires_ground_truth_payload(temp_repo):
 def test_rf09_claim_rejects_error_above_threshold(temp_repo):
     rt = create_runtime(temp_repo)
     rt.init_run("RUN-RF09")
-    evidence = create_ground_truth_evidence(temp_repo, "RUN-RF09", error_percentage=22.0)
+    evidence = create_ground_truth_evidence(temp_repo, "RUN-RF09", error_percentage=30.0)
 
     with pytest.raises(ValueError, match="claim_invalid:rf09_compliance:threshold_exceeded"):
         rt.evaluate_claim(

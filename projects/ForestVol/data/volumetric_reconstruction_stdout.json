@@ -1,0 +1,96 @@
+{
+  "method": "binary voxel solid from point cloud with external face extraction",
+  "not_pipeline_integration": true,
+  "datasets": {
+    "set1": {
+      "point_cloud": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_input_cloud.ply",
+      "poisson_baseline": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_raw.ply",
+      "output_mesh": "/app/data/volumetric_reconstruction_outputs/set1/voxel_solid_surface.ply",
+      "input_points": 19879,
+      "voxel_size_m": 0.25,
+      "pipeline_volume_reference_m3": 156.9277,
+      "poisson_metrics": {
+        "vertices": 29592,
+        "triangles": 58975,
+        "boundary_edges": 191,
+        "non_manifold_edges": 4,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          15.963822,
+          16.478785,
+          6.404328
+        ],
+        "area": 264.530912,
+        "volume": null,
+        "components_connected": 10
+      },
+      "volumetric_metrics": {
+        "vertices": 3583,
+        "triangles": 7164,
+        "boundary_edges": 0,
+        "non_manifold_edges": 1,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          10.0,
+          6.75,
+          5.5
+        ],
+        "area": 223.875,
+        "volume": null,
+        "components_connected": 1,
+        "voxel_count": 6232,
+        "voxel_volume_estimate_m3": 97.375,
+        "volume_drift_vs_pipeline_pct": null
+      }
+    },
+    "set2": {
+      "point_cloud": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_input_cloud.ply",
+      "poisson_baseline": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_raw.ply",
+      "output_mesh": "/app/data/volumetric_reconstruction_outputs/set2/voxel_solid_surface.ply",
+      "input_points": 26113,
+      "voxel_size_m": 0.25,
+      "pipeline_volume_reference_m3": 46.7197,
+      "poisson_metrics": {
+        "vertices": 83623,
+        "triangles": 167102,
+        "boundary_edges": 226,
+        "non_manifold_edges": 39,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          7.819652,
+          10.009154,
+          7.107628
+        ],
+        "area": 162.982306,
+        "volume": null,
+        "components_connected": 39
+      },
+      "volumetric_metrics": {
+        "vertices": 4826,
+        "triangles": 9648,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.25,
+          7.5
+        ],
+        "area": 301.5,
+        "volume": 135.671875,
+        "components_connected": 1,
+        "voxel_count": 8683,
+        "voxel_volume_estimate_m3": 135.671875,
+        "volume_drift_vs_pipeline_pct": 190.395433
+      }
+    }
+  }
+}

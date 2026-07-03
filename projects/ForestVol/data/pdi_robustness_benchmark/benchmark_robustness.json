@@ -1,0 +1,1860 @@
+{
+  "run_id": "RUN-PDI-ROBUSTNESS-01",
+  "ground_truth_m3": 119.74,
+  "constraints": {
+    "main_pipeline_modified": false,
+    "pdi_parameters_changed": false,
+    "ground_truth_used_for_tuning": false,
+    "degradations_combined": false
+  },
+  "input_clouds": {
+    "set1": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_input_cloud.ply",
+    "set2": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_input_cloud.ply"
+  },
+  "parameters": {
+    "voxel_size_m": 0.25,
+    "seed": 20260629
+  },
+  "rows": [
+    {
+      "dataset": "set1",
+      "experiment": "base",
+      "level": "original",
+      "volume_m3": 97.375,
+      "absolute_error_m3": 22.365,
+      "percent_error": 18.677969,
+      "execution_time_seconds": 0.05313,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 0.0,
+      "deviation_from_base_pct": 0.0,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 126.676172,
+        "solid_voxels": 6232
+      },
+      "point_count": 19879,
+      "mean_density_points_per_m3": 29.028473,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 684.810396
+    },
+    {
+      "dataset": "set1",
+      "experiment": "random_point_reduction",
+      "level": "remove_5pct",
+      "volume_m3": 97.328125,
+      "absolute_error_m3": 22.411875,
+      "percent_error": 18.717116,
+      "execution_time_seconds": 0.030303,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.046875,
+      "deviation_from_base_pct": -0.048139,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 120.357898,
+        "solid_voxels": 6229
+      },
+      "point_count": 18885,
+      "mean_density_points_per_m3": 27.576976,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 684.810396
+    },
+    {
+      "dataset": "set1",
+      "experiment": "random_point_reduction",
+      "level": "remove_10pct",
+      "volume_m3": 97.28125,
+      "absolute_error_m3": 22.45875,
+      "percent_error": 18.756264,
+      "execution_time_seconds": 0.032311,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.09375,
+      "deviation_from_base_pct": -0.096277,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 114.043016,
+        "solid_voxels": 6226
+      },
+      "point_count": 17891,
+      "mean_density_points_per_m3": 26.12548,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 684.810396
+    },
+    {
+      "dataset": "set1",
+      "experiment": "random_point_reduction",
+      "level": "remove_20pct",
+      "volume_m3": 96.859375,
+      "absolute_error_m3": 22.880625,
+      "percent_error": 19.108589,
+      "execution_time_seconds": 0.03298,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.515625,
+      "deviation_from_base_pct": -0.529525,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 101.507047,
+        "solid_voxels": 6199
+      },
+      "point_count": 15903,
+      "mean_density_points_per_m3": 23.238949,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.469184
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.084554
+      ],
+      "bbox_volume_m3": 684.325255
+    },
+    {
+      "dataset": "set1",
+      "experiment": "random_point_reduction",
+      "level": "remove_30pct",
+      "volume_m3": 96.4375,
+      "absolute_error_m3": 23.3025,
+      "percent_error": 19.460915,
+      "execution_time_seconds": 0.033533,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.9375,
+      "deviation_from_base_pct": -0.962773,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 88.913727,
+        "solid_voxels": 6172
+      },
+      "point_count": 13915,
+      "mean_density_points_per_m3": 20.333898,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.469184
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.084554
+      ],
+      "bbox_volume_m3": 684.325255
+    },
+    {
+      "dataset": "set1",
+      "experiment": "random_point_reduction",
+      "level": "remove_40pct",
+      "volume_m3": 95.9375,
+      "absolute_error_m3": 23.8025,
+      "percent_error": 19.878487,
+      "execution_time_seconds": 0.032232,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -1.4375,
+      "deviation_from_base_pct": -1.476252,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 76.694983,
+        "solid_voxels": 6140
+      },
+      "point_count": 11927,
+      "mean_density_points_per_m3": 17.489591,
+      "bbox_min": [
+        1.28758,
+        -9.992482,
+        -4.459866
+      ],
+      "bbox_max": [
+        10.271735,
+        4.963609,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.956091,
+        5.075236
+      ],
+      "bbox_volume_m3": 681.948491
+    },
+    {
+      "dataset": "set1",
+      "experiment": "random_point_reduction",
+      "level": "remove_50pct",
+      "volume_m3": 95.296875,
+      "absolute_error_m3": 24.443125,
+      "percent_error": 20.4135,
+      "execution_time_seconds": 0.038656,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -2.078125,
+      "deviation_from_base_pct": -2.134146,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 63.751498,
+        "solid_voxels": 6099
+      },
+      "point_count": 9940,
+      "mean_density_points_per_m3": 14.588172,
+      "bbox_min": [
+        1.30528,
+        -10.007647,
+        -4.459866
+      ],
+      "bbox_max": [
+        10.267111,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.961831,
+        14.980714,
+        5.075236
+      ],
+      "bbox_volume_m3": 681.373945
+    },
+    {
+      "dataset": "set1",
+      "experiment": "gaussian_noise",
+      "level": "sigma_1cm",
+      "volume_m3": 97.609375,
+      "absolute_error_m3": 22.130625,
+      "percent_error": 18.482232,
+      "execution_time_seconds": 0.040006,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 0.234375,
+      "deviation_from_base_pct": 0.240693,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 125.510058,
+        "solid_voxels": 6247
+      },
+      "point_count": 19879,
+      "mean_density_points_per_m3": 28.994513,
+      "bbox_min": [
+        1.288192,
+        -10.02161,
+        -4.494637
+      ],
+      "bbox_max": [
+        10.267288,
+        4.968653,
+        0.599104
+      ],
+      "bbox_extent": [
+        8.979095,
+        14.990263,
+        5.093741
+      ],
+      "bbox_volume_m3": 685.612474
+    },
+    {
+      "dataset": "set1",
+      "experiment": "gaussian_noise",
+      "level": "sigma_2cm",
+      "volume_m3": 99.09375,
+      "absolute_error_m3": 20.64625,
+      "percent_error": 17.242567,
+      "execution_time_seconds": 0.044837,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 1.71875,
+      "deviation_from_base_pct": 1.765083,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 124.644535,
+        "solid_voxels": 6342
+      },
+      "point_count": 19879,
+      "mean_density_points_per_m3": 28.858375,
+      "bbox_min": [
+        1.25305,
+        -10.017983,
+        -4.483047
+      ],
+      "bbox_max": [
+        10.30461,
+        4.9729,
+        0.593542
+      ],
+      "bbox_extent": [
+        9.05156,
+        14.990883,
+        5.076589
+      ],
+      "bbox_volume_m3": 688.846835
+    },
+    {
+      "dataset": "set1",
+      "experiment": "gaussian_noise",
+      "level": "sigma_5cm",
+      "volume_m3": 106.234375,
+      "absolute_error_m3": 13.505625,
+      "percent_error": 11.279126,
+      "execution_time_seconds": 0.03602,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 8.859375,
+      "deviation_from_base_pct": 9.098203,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 116.726932,
+        "solid_voxels": 6799
+      },
+      "point_count": 19879,
+      "mean_density_points_per_m3": 27.668575,
+      "bbox_min": [
+        1.229382,
+        -10.108238,
+        -4.542068
+      ],
+      "bbox_max": [
+        10.35854,
+        5.050237,
+        0.649774
+      ],
+      "bbox_extent": [
+        9.129158,
+        15.158476,
+        5.191842
+      ],
+      "bbox_volume_m3": 718.468523
+    },
+    {
+      "dataset": "set1",
+      "experiment": "gaussian_noise",
+      "level": "sigma_10cm",
+      "volume_m3": 119.84375,
+      "absolute_error_m3": 0.10375,
+      "percent_error": 0.086646,
+      "execution_time_seconds": 0.038488,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 22.46875,
+      "deviation_from_base_pct": 23.074454,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 100.587898,
+        "solid_voxels": 7670
+      },
+      "point_count": 19879,
+      "mean_density_points_per_m3": 25.775024,
+      "bbox_min": [
+        1.240492,
+        -10.203641,
+        -4.696027
+      ],
+      "bbox_max": [
+        10.404475,
+        5.086924,
+        0.80809
+      ],
+      "bbox_extent": [
+        9.163983,
+        15.290564,
+        5.504117
+      ],
+      "bbox_volume_m3": 771.25048
+    },
+    {
+      "dataset": "set1",
+      "experiment": "partial_occlusion",
+      "level": "remove_x_min_face_20pct",
+      "volume_m3": 73.515625,
+      "absolute_error_m3": 46.224375,
+      "percent_error": 38.603954,
+      "execution_time_seconds": 0.028423,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -23.859375,
+      "deviation_from_base_pct": -24.502567,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 136.666823,
+        "solid_voxels": 4705
+      },
+      "point_count": 15903,
+      "mean_density_points_per_m3": 37.377784,
+      "bbox_min": [
+        4.689959,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        5.581776,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 425.466636
+    },
+    {
+      "dataset": "set1",
+      "experiment": "partial_occlusion",
+      "level": "remove_high_corner_20pct_xyz",
+      "volume_m3": 97.375,
+      "absolute_error_m3": 22.365,
+      "percent_error": 18.677969,
+      "execution_time_seconds": 0.035509,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 0.0,
+      "deviation_from_base_pct": 0.0,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 126.676172,
+        "solid_voxels": 6232
+      },
+      "point_count": 19879,
+      "mean_density_points_per_m3": 29.028473,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 684.810396
+    },
+    {
+      "dataset": "set1",
+      "experiment": "partial_occlusion",
+      "level": "remove_vertical_band_mid_x",
+      "volume_m3": 87.265625,
+      "absolute_error_m3": 32.474375,
+      "percent_error": 27.120741,
+      "execution_time_seconds": 0.031694,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -10.109375,
+      "deviation_from_base_pct": -10.3819,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 92.961809,
+        "solid_voxels": 5585
+      },
+      "point_count": 13916,
+      "mean_density_points_per_m3": 20.353393,
+      "bbox_min": [
+        1.28758,
+        -9.98377,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.956837,
+        5.088158
+      ],
+      "bbox_volume_m3": 683.718926
+    },
+    {
+      "dataset": "set1",
+      "experiment": "partial_occlusion",
+      "level": "remove_horizontal_band_mid_z",
+      "volume_m3": 85.8125,
+      "absolute_error_m3": 33.9275,
+      "percent_error": 28.334308,
+      "execution_time_seconds": 0.028578,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -11.5625,
+      "deviation_from_base_pct": -11.874198,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 96.118517,
+        "solid_voxels": 5492
+      },
+      "point_count": 13916,
+      "mean_density_points_per_m3": 21.109656,
+      "bbox_min": [
+        1.452018,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.100505,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.648487,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 659.224382
+    },
+    {
+      "dataset": "set1",
+      "experiment": "partial_occlusion",
+      "level": "remove_y_max_face_20pct",
+      "volume_m3": 77.5625,
+      "absolute_error_m3": 42.1775,
+      "percent_error": 35.224236,
+      "execution_time_seconds": 0.028072,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -19.8125,
+      "deviation_from_base_pct": -20.346598,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 120.385813,
+        "solid_voxels": 4964
+      },
+      "point_count": 15903,
+      "mean_density_points_per_m3": 31.093507,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.267111,
+        3.279715,
+        -0.186149
+      ],
+      "bbox_extent": [
+        8.979531,
+        13.287362,
+        4.28664
+      ],
+      "bbox_volume_m3": 511.457264
+    },
+    {
+      "dataset": "set1",
+      "experiment": "partial_occlusion",
+      "level": "remove_low_corner_20pct_xyz",
+      "volume_m3": 97.375,
+      "absolute_error_m3": 22.365,
+      "percent_error": 18.677969,
+      "execution_time_seconds": 0.029085,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 0.0,
+      "deviation_from_base_pct": 0.0,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 126.674167,
+        "solid_voxels": 6232
+      },
+      "point_count": 19847,
+      "mean_density_points_per_m3": 28.981745,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 684.810396
+    },
+    {
+      "dataset": "set1",
+      "experiment": "segmentation_spurious_points",
+      "level": "add_2pct",
+      "volume_m3": 645.421875,
+      "absolute_error_m3": 525.681875,
+      "percent_error": 439.019438,
+      "execution_time_seconds": 0.054896,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 548.046875,
+      "deviation_from_base_pct": 562.820924,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 15.709722,
+        "solid_voxels": 41307
+      },
+      "point_count": 20277,
+      "mean_density_points_per_m3": 13.723368,
+      "bbox_min": [
+        -0.008486,
+        -12.168891,
+        -5.228702
+      ],
+      "bbox_max": [
+        11.604979,
+        7.184215,
+        1.34531
+      ],
+      "bbox_extent": [
+        11.613465,
+        19.353106,
+        6.574012
+      ],
+      "bbox_volume_m3": 1477.552707
+    },
+    {
+      "dataset": "set1",
+      "experiment": "segmentation_spurious_points",
+      "level": "add_5pct",
+      "volume_m3": 1185.40625,
+      "absolute_error_m3": 1065.66625,
+      "percent_error": 889.983506,
+      "execution_time_seconds": 0.053159,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 1088.03125,
+      "deviation_from_base_pct": 1117.362003,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 14.905321,
+        "solid_voxels": 75866
+      },
+      "point_count": 20873,
+      "mean_density_points_per_m3": 13.887761,
+      "bbox_min": [
+        -0.054195,
+        -12.254654,
+        -5.235674
+      ],
+      "bbox_max": [
+        11.616547,
+        7.218489,
+        1.377624
+      ],
+      "bbox_extent": [
+        11.670742,
+        19.473143,
+        6.613298
+      ],
+      "bbox_volume_m3": 1502.97809
+    },
+    {
+      "dataset": "set1",
+      "experiment": "segmentation_spurious_points",
+      "level": "add_10pct",
+      "volume_m3": 1588.484375,
+      "absolute_error_m3": 1468.744375,
+      "percent_error": 1226.611304,
+      "execution_time_seconds": 0.056274,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 1491.109375,
+      "deviation_from_base_pct": 1531.306162,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 15.10814,
+        "solid_voxels": 101663
+      },
+      "point_count": 21867,
+      "mean_density_points_per_m3": 14.55506,
+      "bbox_min": [
+        -0.055332,
+        -12.249791,
+        -5.235468
+      ],
+      "bbox_max": [
+        11.616297,
+        7.212677,
+        1.378252
+      ],
+      "bbox_extent": [
+        11.67163,
+        19.462469,
+        6.61372
+      ],
+      "bbox_volume_m3": 1502.364132
+    },
+    {
+      "dataset": "set1",
+      "experiment": "segmentation_missing_object_points",
+      "level": "remove_2pct",
+      "volume_m3": 97.265625,
+      "absolute_error_m3": 22.474375,
+      "percent_error": 18.769313,
+      "execution_time_seconds": 0.03401,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.109375,
+      "deviation_from_base_pct": -0.112323,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 124.165108,
+        "solid_voxels": 6225
+      },
+      "point_count": 19481,
+      "mean_density_points_per_m3": 28.44729,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 684.810396
+    },
+    {
+      "dataset": "set1",
+      "experiment": "segmentation_missing_object_points",
+      "level": "remove_5pct",
+      "volume_m3": 97.578125,
+      "absolute_error_m3": 22.161875,
+      "percent_error": 18.508331,
+      "execution_time_seconds": 0.031688,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 0.203125,
+      "deviation_from_base_pct": 0.208601,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 120.571266,
+        "solid_voxels": 6245
+      },
+      "point_count": 18885,
+      "mean_density_points_per_m3": 27.600112,
+      "bbox_min": [
+        1.295111,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.976624,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 684.236365
+    },
+    {
+      "dataset": "set1",
+      "experiment": "segmentation_missing_object_points",
+      "level": "remove_10pct",
+      "volume_m3": 97.265625,
+      "absolute_error_m3": 22.474375,
+      "percent_error": 18.769313,
+      "execution_time_seconds": 0.029404,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.109375,
+      "deviation_from_base_pct": -0.112323,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 114.088266,
+        "solid_voxels": 6225
+      },
+      "point_count": 17891,
+      "mean_density_points_per_m3": 26.12548,
+      "bbox_min": [
+        1.28758,
+        -10.007647,
+        -4.472788
+      ],
+      "bbox_max": [
+        10.271735,
+        4.973067,
+        0.61537
+      ],
+      "bbox_extent": [
+        8.984155,
+        14.980714,
+        5.088158
+      ],
+      "bbox_volume_m3": 684.810396
+    },
+    {
+      "dataset": "set2",
+      "experiment": "base",
+      "level": "original",
+      "volume_m3": 132.671875,
+      "absolute_error_m3": 12.931875,
+      "percent_error": 10.799962,
+      "execution_time_seconds": 0.02411,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 0.0,
+      "deviation_from_base_pct": 0.0,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 316.513648,
+        "solid_voxels": 8491
+      },
+      "point_count": 26113,
+      "mean_density_points_per_m3": 67.239444,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.277325
+      ],
+      "bbox_volume_m3": 388.358359
+    },
+    {
+      "dataset": "set2",
+      "experiment": "random_point_reduction",
+      "level": "remove_5pct",
+      "volume_m3": 132.53125,
+      "absolute_error_m3": 12.79125,
+      "percent_error": 10.68252,
+      "execution_time_seconds": 0.02384,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.140625,
+      "deviation_from_base_pct": -0.105995,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 301.184315,
+        "solid_voxels": 8482
+      },
+      "point_count": 24807,
+      "mean_density_points_per_m3": 63.87657,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.277325
+      ],
+      "bbox_volume_m3": 388.358359
+    },
+    {
+      "dataset": "set2",
+      "experiment": "random_point_reduction",
+      "level": "remove_10pct",
+      "volume_m3": 132.03125,
+      "absolute_error_m3": 12.29125,
+      "percent_error": 10.264949,
+      "execution_time_seconds": 0.023825,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.640625,
+      "deviation_from_base_pct": -0.482864,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 285.047729,
+        "solid_voxels": 8450
+      },
+      "point_count": 23502,
+      "mean_density_points_per_m3": 60.516272,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.277325
+      ],
+      "bbox_volume_m3": 388.358359
+    },
+    {
+      "dataset": "set2",
+      "experiment": "random_point_reduction",
+      "level": "remove_20pct",
+      "volume_m3": 131.546875,
+      "absolute_error_m3": 11.806875,
+      "percent_error": 9.860427,
+      "execution_time_seconds": 0.022038,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -1.125,
+      "deviation_from_base_pct": -0.847957,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 253.709808,
+        "solid_voxels": 8419
+      },
+      "point_count": 20890,
+      "mean_density_points_per_m3": 53.81851,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.233399
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.274061
+      ],
+      "bbox_volume_m3": 388.156414
+    },
+    {
+      "dataset": "set2",
+      "experiment": "random_point_reduction",
+      "level": "remove_30pct",
+      "volume_m3": 130.5625,
+      "absolute_error_m3": 10.8225,
+      "percent_error": 9.038333,
+      "execution_time_seconds": 0.028013,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -2.109375,
+      "deviation_from_base_pct": -1.589919,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 222.396605,
+        "solid_voxels": 8356
+      },
+      "point_count": 18279,
+      "mean_density_points_per_m3": 47.219625,
+      "bbox_min": [
+        2.862918,
+        -7.643182,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.653303,
+        1.443112,
+        5.233399
+      ],
+      "bbox_extent": [
+        6.790385,
+        9.086294,
+        6.274061
+      ],
+      "bbox_volume_m3": 387.105995
+    },
+    {
+      "dataset": "set2",
+      "experiment": "random_point_reduction",
+      "level": "remove_40pct",
+      "volume_m3": 129.625,
+      "absolute_error_m3": 9.885,
+      "percent_error": 8.255387,
+      "execution_time_seconds": 0.027555,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -3.046875,
+      "deviation_from_base_pct": -2.296549,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 191.010824,
+        "solid_voxels": 8296
+      },
+      "point_count": 15668,
+      "mean_density_points_per_m3": 40.474094,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.020513
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.257177
+      ],
+      "bbox_volume_m3": 387.111815
+    },
+    {
+      "dataset": "set2",
+      "experiment": "random_point_reduction",
+      "level": "remove_50pct",
+      "volume_m3": 134.21875,
+      "absolute_error_m3": 14.47875,
+      "percent_error": 12.091824,
+      "execution_time_seconds": 0.018835,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 1.546875,
+      "deviation_from_base_pct": 1.16594,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 161.726877,
+        "solid_voxels": 8590
+      },
+      "point_count": 13056,
+      "mean_density_points_per_m3": 33.784467,
+      "bbox_min": [
+        2.862918,
+        -7.642439,
+        -1.030102
+      ],
+      "bbox_max": [
+        9.653303,
+        1.439012,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.790385,
+        9.081451,
+        6.266766
+      ],
+      "bbox_volume_m3": 386.44978
+    },
+    {
+      "dataset": "set2",
+      "experiment": "gaussian_noise",
+      "level": "sigma_1cm",
+      "volume_m3": 132.890625,
+      "absolute_error_m3": 13.150625,
+      "percent_error": 10.98265,
+      "execution_time_seconds": 0.024397,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 0.21875,
+      "deviation_from_base_pct": 0.16488,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 314.29314,
+        "solid_voxels": 8505
+      },
+      "point_count": 26113,
+      "mean_density_points_per_m3": 66.909576,
+      "bbox_min": [
+        2.851668,
+        -7.662555,
+        -1.038553
+      ],
+      "bbox_max": [
+        9.66841,
+        1.447645,
+        5.245846
+      ],
+      "bbox_extent": [
+        6.816742,
+        9.1102,
+        6.284399
+      ],
+      "bbox_volume_m3": 390.272985
+    },
+    {
+      "dataset": "set2",
+      "experiment": "gaussian_noise",
+      "level": "sigma_2cm",
+      "volume_m3": 133.78125,
+      "absolute_error_m3": 14.04125,
+      "percent_error": 11.726449,
+      "execution_time_seconds": 0.024412,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 1.109375,
+      "deviation_from_base_pct": 0.836179,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 310.980753,
+        "solid_voxels": 8562
+      },
+      "point_count": 26113,
+      "mean_density_points_per_m3": 66.264882,
+      "bbox_min": [
+        2.85679,
+        -7.668817,
+        -1.048985
+      ],
+      "bbox_max": [
+        9.665455,
+        1.484365,
+        5.274249
+      ],
+      "bbox_extent": [
+        6.808665,
+        9.153182,
+        6.323235
+      ],
+      "bbox_volume_m3": 394.069968
+    },
+    {
+      "dataset": "set2",
+      "experiment": "gaussian_noise",
+      "level": "sigma_5cm",
+      "volume_m3": 138.28125,
+      "absolute_error_m3": 18.54125,
+      "percent_error": 15.484592,
+      "execution_time_seconds": 0.02409,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 5.609375,
+      "deviation_from_base_pct": 4.228006,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 292.203511,
+        "solid_voxels": 8850
+      },
+      "point_count": 26113,
+      "mean_density_points_per_m3": 65.050795,
+      "bbox_min": [
+        2.850554,
+        -7.721122,
+        -1.068605
+      ],
+      "bbox_max": [
+        9.691773,
+        1.513419,
+        5.285515
+      ],
+      "bbox_extent": [
+        6.841219,
+        9.234541,
+        6.354119
+      ],
+      "bbox_volume_m3": 401.424765
+    },
+    {
+      "dataset": "set2",
+      "experiment": "gaussian_noise",
+      "level": "sigma_10cm",
+      "volume_m3": 149.84375,
+      "absolute_error_m3": 30.10375,
+      "percent_error": 25.14093,
+      "execution_time_seconds": 0.026783,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 17.171875,
+      "deviation_from_base_pct": 12.943116,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 250.133305,
+        "solid_voxels": 9590
+      },
+      "point_count": 26113,
+      "mean_density_points_per_m3": 58.995846,
+      "bbox_min": [
+        2.744334,
+        -7.804807,
+        -1.262369
+      ],
+      "bbox_max": [
+        9.859139,
+        1.643687,
+        5.321933
+      ],
+      "bbox_extent": [
+        7.114805,
+        9.448494,
+        6.584302
+      ],
+      "bbox_volume_m3": 442.624381
+    },
+    {
+      "dataset": "set2",
+      "experiment": "partial_occlusion",
+      "level": "remove_x_min_face_20pct",
+      "volume_m3": 104.765625,
+      "absolute_error_m3": 14.974375,
+      "percent_error": 12.505742,
+      "execution_time_seconds": 0.020481,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -27.90625,
+      "deviation_from_base_pct": -21.034036,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 345.089271,
+        "solid_voxels": 6705
+      },
+      "point_count": 20890,
+      "mean_density_points_per_m3": 81.374345,
+      "bbox_min": [
+        4.651597,
+        -7.056243,
+        -0.927387
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.099073
+      ],
+      "bbox_extent": [
+        5.010452,
+        8.501817,
+        6.026461
+      ],
+      "bbox_volume_m3": 256.714816
+    },
+    {
+      "dataset": "set2",
+      "experiment": "partial_occlusion",
+      "level": "remove_high_corner_20pct_xyz",
+      "volume_m3": 130.3125,
+      "absolute_error_m3": 10.5725,
+      "percent_error": 8.829547,
+      "execution_time_seconds": 0.026378,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -2.359375,
+      "deviation_from_base_pct": -1.778354,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 313.356748,
+        "solid_voxels": 8340
+      },
+      "point_count": 25452,
+      "mean_density_points_per_m3": 66.067843,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.372519,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.026176,
+        6.277325
+      ],
+      "bbox_volume_m3": 385.240366
+    },
+    {
+      "dataset": "set2",
+      "experiment": "partial_occlusion",
+      "level": "remove_vertical_band_mid_x",
+      "volume_m3": 116.59375,
+      "absolute_error_m3": 3.14625,
+      "percent_error": 2.627568,
+      "execution_time_seconds": 0.023,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -16.078125,
+      "deviation_from_base_pct": -12.118714,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 223.63563,
+        "solid_voxels": 7462
+      },
+      "point_count": 18280,
+      "mean_density_points_per_m3": 47.069928,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.277325
+      ],
+      "bbox_volume_m3": 388.358359
+    },
+    {
+      "dataset": "set2",
+      "experiment": "partial_occlusion",
+      "level": "remove_horizontal_band_mid_z",
+      "volume_m3": 117.5625,
+      "absolute_error_m3": 2.1775,
+      "percent_error": 1.818523,
+      "execution_time_seconds": 0.021963,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -15.109375,
+      "deviation_from_base_pct": -11.388529,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 232.55099,
+        "solid_voxels": 7524
+      },
+      "point_count": 18280,
+      "mean_density_points_per_m3": 47.069928,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.277325
+      ],
+      "bbox_volume_m3": 388.358359
+    },
+    {
+      "dataset": "set2",
+      "experiment": "partial_occlusion",
+      "level": "remove_y_max_face_20pct",
+      "volume_m3": 110.875,
+      "absolute_error_m3": 8.865,
+      "percent_error": 7.403541,
+      "execution_time_seconds": 0.023231,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -21.796875,
+      "deviation_from_base_pct": -16.42916,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 300.120084,
+        "solid_voxels": 7096
+      },
+      "point_count": 20890,
+      "mean_density_points_per_m3": 72.891287,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.013073,
+        -0.23027,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.150155,
+        7.423388,
+        6.277325
+      ],
+      "bbox_volume_m3": 286.59118
+    },
+    {
+      "dataset": "set2",
+      "experiment": "partial_occlusion",
+      "level": "remove_low_corner_20pct_xyz",
+      "volume_m3": 129.28125,
+      "absolute_error_m3": 9.54125,
+      "percent_error": 7.968306,
+      "execution_time_seconds": 0.031893,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -3.390625,
+      "deviation_from_base_pct": -2.555647,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 327.119555,
+        "solid_voxels": 8274
+      },
+      "point_count": 25371,
+      "mean_density_points_per_m3": 66.529366,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -0.927387
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.16405
+      ],
+      "bbox_volume_m3": 381.350394
+    },
+    {
+      "dataset": "set2",
+      "experiment": "segmentation_spurious_points",
+      "level": "add_2pct",
+      "volume_m3": 662.15625,
+      "absolute_error_m3": 542.41625,
+      "percent_error": 452.995031,
+      "execution_time_seconds": 0.041244,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 529.484375,
+      "deviation_from_base_pct": 399.093157,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 35.347764,
+        "solid_voxels": 42378
+      },
+      "point_count": 26635,
+      "mean_density_points_per_m3": 31.670834,
+      "bbox_min": [
+        1.84654,
+        -8.981149,
+        -1.955452
+      ],
+      "bbox_max": [
+        10.673748,
+        2.752806,
+        6.163976
+      ],
+      "bbox_extent": [
+        8.827209,
+        11.733955,
+        8.119428
+      ],
+      "bbox_volume_m3": 840.994591
+    },
+    {
+      "dataset": "set2",
+      "experiment": "segmentation_spurious_points",
+      "level": "add_5pct",
+      "volume_m3": 944.5625,
+      "absolute_error_m3": 824.8225,
+      "percent_error": 688.84458,
+      "execution_time_seconds": 0.036804,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 811.890625,
+      "deviation_from_base_pct": 611.953833,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 33.864619,
+        "solid_voxels": 60452
+      },
+      "point_count": 27419,
+      "mean_density_points_per_m3": 32.205102,
+      "bbox_min": [
+        1.846681,
+        -9.016099,
+        -1.980519
+      ],
+      "bbox_max": [
+        10.680383,
+        2.803455,
+        6.173714
+      ],
+      "bbox_extent": [
+        8.833702,
+        11.819554,
+        8.154233
+      ],
+      "bbox_volume_m3": 851.386846
+    },
+    {
+      "dataset": "set2",
+      "experiment": "segmentation_spurious_points",
+      "level": "add_10pct",
+      "volume_m3": 1042.40625,
+      "absolute_error_m3": 922.66625,
+      "percent_error": 770.558084,
+      "execution_time_seconds": 0.041866,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": 909.734375,
+      "deviation_from_base_pct": 685.702509,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 34.78392,
+        "solid_voxels": 66714
+      },
+      "point_count": 28724,
+      "mean_density_points_per_m3": 33.789434,
+      "bbox_min": [
+        1.845156,
+        -9.015803,
+        -1.982
+      ],
+      "bbox_max": [
+        10.676939,
+        2.790944,
+        6.170397
+      ],
+      "bbox_extent": [
+        8.831783,
+        11.806747,
+        8.152397
+      ],
+      "bbox_volume_m3": 850.088218
+    },
+    {
+      "dataset": "set2",
+      "experiment": "segmentation_missing_object_points",
+      "level": "remove_2pct",
+      "volume_m3": 132.484375,
+      "absolute_error_m3": 12.744375,
+      "percent_error": 10.643373,
+      "execution_time_seconds": 0.02773,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.1875,
+      "deviation_from_base_pct": -0.141326,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 310.186939,
+        "solid_voxels": 8479
+      },
+      "point_count": 25591,
+      "mean_density_points_per_m3": 65.895324,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.277325
+      ],
+      "bbox_volume_m3": 388.358359
+    },
+    {
+      "dataset": "set2",
+      "experiment": "segmentation_missing_object_points",
+      "level": "remove_5pct",
+      "volume_m3": 132.34375,
+      "absolute_error_m3": 12.60375,
+      "percent_error": 10.525931,
+      "execution_time_seconds": 0.026494,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.328125,
+      "deviation_from_base_pct": -0.247321,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 300.685525,
+        "solid_voxels": 8470
+      },
+      "point_count": 24807,
+      "mean_density_points_per_m3": 63.87657,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.277325
+      ],
+      "bbox_volume_m3": 388.358359
+    },
+    {
+      "dataset": "set2",
+      "experiment": "segmentation_missing_object_points",
+      "level": "remove_10pct",
+      "volume_m3": 132.0625,
+      "absolute_error_m3": 12.3225,
+      "percent_error": 10.291047,
+      "execution_time_seconds": 0.022954,
+      "approx_memory_mb": null,
+      "memory_note": "Peak memory not measured; no profiler added.",
+      "deviation_from_base_m3": -0.609375,
+      "deviation_from_base_pct": -0.45931,
+      "pdi_parameters": {
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 284.988078,
+        "solid_voxels": 8452
+      },
+      "point_count": 23502,
+      "mean_density_points_per_m3": 60.516272,
+      "bbox_min": [
+        2.862918,
+        -7.653658,
+        -1.040662
+      ],
+      "bbox_max": [
+        9.662048,
+        1.445573,
+        5.236663
+      ],
+      "bbox_extent": [
+        6.79913,
+        9.099231,
+        6.277325
+      ],
+      "bbox_volume_m3": 388.358359
+    }
+  ],
+  "aggregates": {
+    "set1:random_point_reduction": {
+      "count": 6,
+      "mean_percent_error": 19.389145,
+      "median_percent_error": 19.284752,
+      "std_percent_error": 0.667051,
+      "coefficient_of_variation_volume": 0.008275,
+      "worst_percent_error": 20.4135,
+      "best_percent_error": 18.717116,
+      "ci95_percent_error": 0.533752
+    },
+    "set1:gaussian_noise": {
+      "count": 4,
+      "mean_percent_error": 11.772643,
+      "median_percent_error": 14.260846,
+      "std_percent_error": 8.401284,
+      "coefficient_of_variation_volume": 0.096087,
+      "worst_percent_error": 18.482232,
+      "best_percent_error": 0.086646,
+      "ci95_percent_error": 8.233259
+    },
+    "set1:partial_occlusion": {
+      "count": 6,
+      "mean_percent_error": 27.773196,
+      "median_percent_error": 27.727525,
+      "std_percent_error": 8.234199,
+      "coefficient_of_variation_volume": 0.114005,
+      "worst_percent_error": 38.603954,
+      "best_percent_error": 18.677969,
+      "ci95_percent_error": 6.588731
+    },
+    "set1:segmentation_spurious_points": {
+      "count": 3,
+      "mean_percent_error": 851.871416,
+      "median_percent_error": 889.983506,
+      "std_percent_error": 395.176714,
+      "coefficient_of_variation_volume": 0.415158,
+      "worst_percent_error": 1226.611304,
+      "best_percent_error": 439.019438,
+      "ci95_percent_error": 447.184549
+    },
+    "set1:segmentation_missing_object_points": {
+      "count": 3,
+      "mean_percent_error": 18.682319,
+      "median_percent_error": 18.769313,
+      "std_percent_error": 0.150678,
+      "coefficient_of_variation_volume": 0.001853,
+      "worst_percent_error": 18.769313,
+      "best_percent_error": 18.508331,
+      "ci95_percent_error": 0.170508
+    },
+    "set2:random_point_reduction": {
+      "count": 6,
+      "mean_percent_error": 10.03224,
+      "median_percent_error": 10.062688,
+      "std_percent_error": 1.333678,
+      "coefficient_of_variation_volume": 0.012121,
+      "worst_percent_error": 12.091824,
+      "best_percent_error": 8.255387,
+      "ci95_percent_error": 1.067164
+    },
+    "set2:gaussian_noise": {
+      "count": 4,
+      "mean_percent_error": 15.833655,
+      "median_percent_error": 13.605521,
+      "std_percent_error": 6.510213,
+      "coefficient_of_variation_volume": 0.056203,
+      "worst_percent_error": 25.14093,
+      "best_percent_error": 10.98265,
+      "ci95_percent_error": 6.380008
+    },
+    "set2:partial_occlusion": {
+      "count": 6,
+      "mean_percent_error": 6.858871,
+      "median_percent_error": 7.685923,
+      "std_percent_error": 4.015153,
+      "coefficient_of_variation_volume": 0.085138,
+      "worst_percent_error": 12.505742,
+      "best_percent_error": 1.818523,
+      "ci95_percent_error": 3.212791
+    },
+    "set2:segmentation_spurious_points": {
+      "count": 3,
+      "mean_percent_error": 637.465898,
+      "median_percent_error": 688.84458,
+      "std_percent_error": 164.89815,
+      "coefficient_of_variation_volume": 0.223601,
+      "worst_percent_error": 770.558084,
+      "best_percent_error": 452.995031,
+      "ci95_percent_error": 186.599823
+    },
+    "set2:segmentation_missing_object_points": {
+      "count": 3,
+      "mean_percent_error": 10.486784,
+      "median_percent_error": 10.525931,
+      "std_percent_error": 0.179396,
+      "coefficient_of_variation_volume": 0.001624,
+      "worst_percent_error": 10.643373,
+      "best_percent_error": 10.291047,
+      "ci95_percent_error": 0.203005
+    }
+  },
+  "analysis": {
+    "most_damaging_degradation": {
+      "experiment": "segmentation_spurious_points",
+      "mean_percent_error": 744.668657
+    },
+    "worst_case": {
+      "dataset": "set1",
+      "experiment": "segmentation_spurious_points",
+      "level": "add_10pct",
+      "percent_error": 1226.611304
+    },
+    "best_case": {
+      "dataset": "set1",
+      "experiment": "gaussian_noise",
+      "level": "sigma_10cm",
+      "percent_error": 0.086646
+    },
+    "abrupt_error_thresholds": [],
+    "dataset_variability": {
+      "set1_volume_m3": 97.375,
+      "set2_volume_m3": 132.671875,
+      "absolute_volume_difference_m3": 35.296875,
+      "relative_volume_difference_pct_of_gt": 29.477931,
+      "mean_percent_error": 14.738966,
+      "coefficient_of_variation_volume": 0.216988
+    },
+    "robustness_assessment": "PDI is robust to moderate random point removal and small Gaussian noise, but sensitive to structured occlusion and segmentation outliers that expand the hull/density support.",
+    "capture_scenarios_to_avoid": "Avoid missing full faces/bands/corners and avoid background contamination; these degradations dominate error growth."
+  },
+  "recommendation": "PDI remains a viable MVP volumetric estimator only under capture conditions with broad object coverage and controlled segmentation. It should be integrated with documented operating limits and future quality gates for occlusion/background contamination, not treated as universally robust.",
+  "plots": [
+    "/app/data/pdi_robustness_benchmark/set1_robustness_errors.png",
+    "/app/data/pdi_robustness_benchmark/set2_robustness_errors.png",
+    "/app/data/pdi_robustness_benchmark/sensitivity_random_point_reduction.png",
+    "/app/data/pdi_robustness_benchmark/sensitivity_gaussian_noise.png"
+  ]
+}

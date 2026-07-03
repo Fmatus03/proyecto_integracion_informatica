@@ -1,0 +1,785 @@
+{
+  "set1": {
+    "selected": {
+      "selected_cluster_ids": [
+        14,
+        0
+      ],
+      "selection_reason": "plausible_woodpile_components",
+      "selected_point_count": 15799,
+      "selected_ratio_dbscan_input": 0.502113,
+      "selected_ratio_after_outlier": 0.03964,
+      "selection_loss_after_dbscan_input": {
+        "points_before": 31465,
+        "points_after": 15799,
+        "removed_points": 15666,
+        "removed_ratio": 0.497887
+      },
+      "pipeline_pdi": {
+        "status": "ok",
+        "method": "point_density_integration",
+        "volume_m3": 69.8281,
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 2,
+        "hull_density_points_per_m3": 193.414566,
+        "hull_volume_m3": 81.684644,
+        "solid_voxels": 4469,
+        "occupied_voxels": 1081,
+        "dense_voxels": 975
+      }
+    },
+    "ranking": [
+      {
+        "rank": 1,
+        "cluster_id": 14,
+        "point_count": 12247,
+        "density_points_per_m3": 91.202275,
+        "pipeline_selected": true,
+        "discard_reasons": []
+      },
+      {
+        "rank": 2,
+        "cluster_id": 1,
+        "point_count": 7156,
+        "density_points_per_m3": 349.276975,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      },
+      {
+        "rank": 3,
+        "cluster_id": 0,
+        "point_count": 3552,
+        "density_points_per_m3": 420.336368,
+        "pipeline_selected": true,
+        "discard_reasons": []
+      },
+      {
+        "rank": 4,
+        "cluster_id": 2,
+        "point_count": 2402,
+        "density_points_per_m3": 18.163593,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "not_in_top_max_components_after_ranking"
+        ]
+      },
+      {
+        "rank": 5,
+        "cluster_id": 7,
+        "point_count": 533,
+        "density_points_per_m3": 175.452396,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 6,
+        "cluster_id": 41,
+        "point_count": 450,
+        "density_points_per_m3": 93.126164,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 7,
+        "cluster_id": 31,
+        "point_count": 417,
+        "density_points_per_m3": 81.235588,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 8,
+        "cluster_id": 10,
+        "point_count": 407,
+        "density_points_per_m3": 224.349444,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 9,
+        "cluster_id": 20,
+        "point_count": 373,
+        "density_points_per_m3": 239.70557,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 10,
+        "cluster_id": 13,
+        "point_count": 321,
+        "density_points_per_m3": 283.580537,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 11,
+        "cluster_id": 8,
+        "point_count": 261,
+        "density_points_per_m3": 191.030682,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 12,
+        "cluster_id": 34,
+        "point_count": 220,
+        "density_points_per_m3": 567.322903,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 13,
+        "cluster_id": 18,
+        "point_count": 122,
+        "density_points_per_m3": 572.920867,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 14,
+        "cluster_id": 39,
+        "point_count": 109,
+        "density_points_per_m3": 186.62773,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 15,
+        "cluster_id": 16,
+        "point_count": 87,
+        "density_points_per_m3": 231.79195,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio",
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      },
+      {
+        "rank": 16,
+        "cluster_id": 9,
+        "point_count": 85,
+        "density_points_per_m3": 1466.022612,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 17,
+        "cluster_id": 32,
+        "point_count": 74,
+        "density_points_per_m3": 254.146773,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 18,
+        "cluster_id": 46,
+        "point_count": 73,
+        "density_points_per_m3": 809.728837,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 19,
+        "cluster_id": 6,
+        "point_count": 70,
+        "density_points_per_m3": 556.755926,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 20,
+        "cluster_id": 40,
+        "point_count": 70,
+        "density_points_per_m3": 907.020913,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 21,
+        "cluster_id": 11,
+        "point_count": 66,
+        "density_points_per_m3": 813.658697,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 22,
+        "cluster_id": 29,
+        "point_count": 61,
+        "density_points_per_m3": 2176.113592,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 23,
+        "cluster_id": 47,
+        "point_count": 59,
+        "density_points_per_m3": 1566.048065,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 24,
+        "cluster_id": 35,
+        "point_count": 59,
+        "density_points_per_m3": 3633.87643,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 25,
+        "cluster_id": 25,
+        "point_count": 58,
+        "density_points_per_m3": 330.46054,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 26,
+        "cluster_id": 56,
+        "point_count": 55,
+        "density_points_per_m3": 2028.779865,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 27,
+        "cluster_id": 19,
+        "point_count": 55,
+        "density_points_per_m3": 1428.795007,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 28,
+        "cluster_id": 28,
+        "point_count": 48,
+        "density_points_per_m3": 562.443633,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 29,
+        "cluster_id": 3,
+        "point_count": 48,
+        "density_points_per_m3": 1413.156385,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 30,
+        "cluster_id": 23,
+        "point_count": 46,
+        "density_points_per_m3": 798.514119,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 31,
+        "cluster_id": 52,
+        "point_count": 46,
+        "density_points_per_m3": 716.740396,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 32,
+        "cluster_id": 4,
+        "point_count": 42,
+        "density_points_per_m3": 2056.463,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 33,
+        "cluster_id": 12,
+        "point_count": 42,
+        "density_points_per_m3": 1525.268415,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 34,
+        "cluster_id": 22,
+        "point_count": 40,
+        "density_points_per_m3": 625.490051,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 35,
+        "cluster_id": 5,
+        "point_count": 39,
+        "density_points_per_m3": 1126.791188,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 36,
+        "cluster_id": 30,
+        "point_count": 39,
+        "density_points_per_m3": 1114.331402,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 37,
+        "cluster_id": 24,
+        "point_count": 35,
+        "density_points_per_m3": 2470.357626,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 38,
+        "cluster_id": 36,
+        "point_count": 35,
+        "density_points_per_m3": 7122.074655,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 39,
+        "cluster_id": 17,
+        "point_count": 35,
+        "density_points_per_m3": 1084.690305,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 40,
+        "cluster_id": 55,
+        "point_count": 33,
+        "density_points_per_m3": 2523.467704,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 41,
+        "cluster_id": 27,
+        "point_count": 33,
+        "density_points_per_m3": 1778.749756,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 42,
+        "cluster_id": 50,
+        "point_count": 31,
+        "density_points_per_m3": 1604.059839,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 43,
+        "cluster_id": 37,
+        "point_count": 28,
+        "density_points_per_m3": 752.624011,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 44,
+        "cluster_id": 43,
+        "point_count": 28,
+        "density_points_per_m3": 2413.305108,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 45,
+        "cluster_id": 26,
+        "point_count": 28,
+        "density_points_per_m3": 2704.474199,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 46,
+        "cluster_id": 49,
+        "point_count": 27,
+        "density_points_per_m3": 5352.645996,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 47,
+        "cluster_id": 48,
+        "point_count": 24,
+        "density_points_per_m3": 8803.928901,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 48,
+        "cluster_id": 53,
+        "point_count": 24,
+        "density_points_per_m3": 2092.721188,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 49,
+        "cluster_id": 44,
+        "point_count": 24,
+        "density_points_per_m3": 1219.260774,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 50,
+        "cluster_id": 51,
+        "point_count": 24,
+        "density_points_per_m3": 2893.476748,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 51,
+        "cluster_id": 15,
+        "point_count": 24,
+        "density_points_per_m3": 2964.359884,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 52,
+        "cluster_id": 42,
+        "point_count": 24,
+        "density_points_per_m3": 2818.174837,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 53,
+        "cluster_id": 57,
+        "point_count": 22,
+        "density_points_per_m3": 3782.755231,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 54,
+        "cluster_id": 54,
+        "point_count": 22,
+        "density_points_per_m3": 3425.16275,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 55,
+        "cluster_id": 21,
+        "point_count": 22,
+        "density_points_per_m3": 2473.830115,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 56,
+        "cluster_id": 45,
+        "point_count": 21,
+        "density_points_per_m3": 2176.155722,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 57,
+        "cluster_id": 33,
+        "point_count": 21,
+        "density_points_per_m3": 7338.88047,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 58,
+        "cluster_id": 38,
+        "point_count": 20,
+        "density_points_per_m3": 3066.792979,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 59,
+        "cluster_id": 59,
+        "point_count": 20,
+        "density_points_per_m3": 2688.490068,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 60,
+        "cluster_id": 58,
+        "point_count": 20,
+        "density_points_per_m3": 9921.235687,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio",
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      }
+    ]
+  },
+  "set2": {
+    "selected": {
+      "selected_cluster_ids": [
+        4,
+        8
+      ],
+      "selection_reason": "plausible_woodpile_components",
+      "selected_point_count": 3278,
+      "selected_ratio_dbscan_input": 0.780476,
+      "selected_ratio_after_outlier": 0.009001,
+      "selection_loss_after_dbscan_input": {
+        "points_before": 4200,
+        "points_after": 3278,
+        "removed_points": 922,
+        "removed_ratio": 0.219524
+      },
+      "pipeline_pdi": {
+        "status": "ok",
+        "method": "point_density_integration",
+        "volume_m3": 39.0156,
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 74.396752,
+        "hull_volume_m3": 44.061063,
+        "solid_voxels": 2497,
+        "occupied_voxels": 346,
+        "dense_voxels": 346
+      }
+    },
+    "ranking": [
+      {
+        "rank": 1,
+        "cluster_id": 4,
+        "point_count": 2609,
+        "density_points_per_m3": 58.315266,
+        "pipeline_selected": true,
+        "discard_reasons": []
+      },
+      {
+        "rank": 2,
+        "cluster_id": 8,
+        "point_count": 669,
+        "density_points_per_m3": 206.828934,
+        "pipeline_selected": true,
+        "discard_reasons": []
+      },
+      {
+        "rank": 3,
+        "cluster_id": 7,
+        "point_count": 276,
+        "density_points_per_m3": 675.275848,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      },
+      {
+        "rank": 4,
+        "cluster_id": 2,
+        "point_count": 61,
+        "density_points_per_m3": 625.299113,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 5,
+        "cluster_id": 6,
+        "point_count": 55,
+        "density_points_per_m3": 7152.100176,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio",
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      },
+      {
+        "rank": 6,
+        "cluster_id": 1,
+        "point_count": 50,
+        "density_points_per_m3": 2414.529401,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio",
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      },
+      {
+        "rank": 7,
+        "cluster_id": 10,
+        "point_count": 38,
+        "density_points_per_m3": 12701.378628,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio",
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      },
+      {
+        "rank": 8,
+        "cluster_id": 0,
+        "point_count": 31,
+        "density_points_per_m3": 11572.449659,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio",
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      },
+      {
+        "rank": 9,
+        "cluster_id": 3,
+        "point_count": 31,
+        "density_points_per_m3": 1007.717568,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio"
+        ]
+      },
+      {
+        "rank": 10,
+        "cluster_id": 9,
+        "point_count": 21,
+        "density_points_per_m3": 14270.654311,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio",
+          "axis_ratio_exceeds_max_component_axis_ratio",
+          "not_plausible_woodpile"
+        ]
+      },
+      {
+        "rank": 11,
+        "cluster_id": 5,
+        "point_count": 17,
+        "density_points_per_m3": 674.213053,
+        "pipeline_selected": false,
+        "discard_reasons": [
+          "below_min_component_ratio",
+          "not_plausible_woodpile"
+        ]
+      }
+    ]
+  }
+}

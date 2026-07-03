@@ -1,0 +1,8 @@
+measurement,value_m,method
+length_x,8.362702,AABB trimmed dense component
+width_y,7.242434,AABB trimmed dense component
+height_z_including_extension,3.731540,AABB trimmed dense component
+height_z_excluding_sparse_extension,3.707141,z p99 minus z min
+obb_length_major,9.265336,PCA OBB XY + Z extent
+obb_width_minor,8.223863,PCA OBB XY + Z extent
+obb_height_z,3.731540,PCA OBB XY + Z extent

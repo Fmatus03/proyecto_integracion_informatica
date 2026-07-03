@@ -1,0 +1,446 @@
+{
+  "method": "dense-depth camera TSDF from OpenMVS .dmap depth maps and OpenSfM poses",
+  "not_pipeline_integration": true,
+  "depth_source": "OpenMVS .dmap dense depth maps; first float32 channel used as per-pixel depth",
+  "dmap_reader": "DR header, image path, 196-byte camera metadata block, 5 float32 channels per pixel",
+  "datasets": {
+    "set1": {
+      "task_uuid": "56396d01-c139-445e-ba50-55644781e877",
+      "alignment": {
+        "scale_sfm_to_metric": 0.9490063003266858,
+        "sfm_center": [
+          6.463409,
+          1.862006,
+          -1.885771
+        ],
+        "metric_center": [
+          6.797274,
+          1.920281,
+          -1.619715
+        ]
+      },
+      "depthmaps_used": [
+        {
+          "file": "depth0002.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200740.png",
+          "valid_ratio": 0.071839,
+          "depth_size": [
+            970,
+            554
+          ]
+        },
+        {
+          "file": "depth0007.dmap",
+          "shot_id": "Capturadepantalla2026-06-16201021.png",
+          "valid_ratio": 0.06081,
+          "depth_size": [
+            970,
+            569
+          ]
+        },
+        {
+          "file": "depth0004.dmap",
+          "shot_id": "Capturadepantalla2026-06-16201030.png",
+          "valid_ratio": 0.058632,
+          "depth_size": [
+            970,
+            573
+          ]
+        },
+        {
+          "file": "depth0010.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200840.png",
+          "valid_ratio": 0.054083,
+          "depth_size": [
+            970,
+            526
+          ]
+        },
+        {
+          "file": "depth0000.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200759.png",
+          "valid_ratio": 0.052816,
+          "depth_size": [
+            970,
+            696
+          ]
+        },
+        {
+          "file": "depth0005.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200848.png",
+          "valid_ratio": 0.05112,
+          "depth_size": [
+            970,
+            530
+          ]
+        },
+        {
+          "file": "depth0014.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200902.png",
+          "valid_ratio": 0.050961,
+          "depth_size": [
+            970,
+            551
+          ]
+        }
+      ],
+      "grid_shape": [
+        36,
+        53,
+        25
+      ],
+      "grid_step_m": 0.35,
+      "truncation_m": 1.4,
+      "known_voxel_ratio": 0.025996,
+      "tsdf_diagnostics": {
+        "known_voxels": 1240,
+        "known_negative_voxels": 499,
+        "known_positive_voxels": 741,
+        "closed_negative_voxels": 685,
+        "closed_positive_voxels": 47015,
+        "raw_tsdf_min": -0.999857,
+        "raw_tsdf_max": 1.0
+      },
+      "tsdf_grid": "/app/data/dense_depth_tsdf_outputs_w01/set1/dense_depth_tsdf_grid.npz",
+      "dense_depth_tsdf_mesh": "/app/data/dense_depth_tsdf_outputs_w01/set1/dense_depth_tsdf_mesh.ply",
+      "poisson_metrics": {
+        "vertices": 29592,
+        "triangles": 58975,
+        "boundary_edges": 191,
+        "non_manifold_edges": 4,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          15.963822,
+          16.478785,
+          6.404328
+        ],
+        "area": 264.530912,
+        "volume": null,
+        "components_connected": 10
+      },
+      "voxel_metrics": {
+        "vertices": 3583,
+        "triangles": 7164,
+        "boundary_edges": 0,
+        "non_manifold_edges": 1,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          10.0,
+          6.75,
+          5.5
+        ],
+        "area": 223.875,
+        "volume": null,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.48055614,
+        "area_drift_vs_poisson_pct": -15.369059,
+        "hausdorff_approx": 10.596015,
+        "chamfer_approx": 3.8566
+      },
+      "point_sdf_metrics": {
+        "vertices": 10012,
+        "triangles": 20020,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          10.0,
+          6.758066,
+          5.501884
+        ],
+        "area": 186.746325,
+        "volume": 95.756277,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.48026213,
+        "area_drift_vs_poisson_pct": -29.404725,
+        "hausdorff_approx": 10.753586,
+        "chamfer_approx": 3.852331
+      },
+      "pseudo_depth_camera_tsdf_metrics": {
+        "vertices": 17990,
+        "triangles": 36164,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          10.492951,
+          15.038667,
+          7.934171
+        ],
+        "area": 598.102275,
+        "volume": null,
+        "components_connected": 23,
+        "bbox_drift_vs_poisson": 0.24602666,
+        "area_drift_vs_poisson_pct": 126.0992,
+        "hausdorff_approx": 4.952733,
+        "chamfer_approx": 1.863991
+      },
+      "dense_depth_tsdf_metrics": {
+        "vertices": 4790,
+        "triangles": 9296,
+        "boundary_edges": 80,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          12.059088,
+          8.907457,
+          7.866636
+        ],
+        "area": 139.123583,
+        "volume": null,
+        "components_connected": 56,
+        "bbox_drift_vs_poisson": 0.36286241,
+        "area_drift_vs_poisson_pct": -47.407438,
+        "hausdorff_approx": 10.919192,
+        "chamfer_approx": 5.164254
+      }
+    },
+    "set2": {
+      "task_uuid": "002ca5e3-6eca-4aba-b3e2-623f97878136",
+      "alignment": {
+        "scale_sfm_to_metric": 0.5560259139707914,
+        "sfm_center": [
+          5.147873,
+          -1.680842,
+          2.85233
+        ],
+        "metric_center": [
+          6.299921,
+          -2.068313,
+          2.360453
+        ]
+      },
+      "depthmaps_used": [
+        {
+          "file": "depth0006.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014230.png",
+          "valid_ratio": 0.229888,
+          "depth_size": [
+            946,
+            557
+          ]
+        },
+        {
+          "file": "depth0001.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014309.png",
+          "valid_ratio": 0.223287,
+          "depth_size": [
+            946,
+            566
+          ]
+        },
+        {
+          "file": "depth0002.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014219.png",
+          "valid_ratio": 0.217116,
+          "depth_size": [
+            946,
+            572
+          ]
+        },
+        {
+          "file": "depth0010.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014225.png",
+          "valid_ratio": 0.20211,
+          "depth_size": [
+            946,
+            546
+          ]
+        },
+        {
+          "file": "depth0013.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014301.png",
+          "valid_ratio": 0.17884,
+          "depth_size": [
+            946,
+            580
+          ]
+        },
+        {
+          "file": "depth0027.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014203.png",
+          "valid_ratio": 0.145992,
+          "depth_size": [
+            946,
+            552
+          ]
+        },
+        {
+          "file": "depth0011.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014244.png",
+          "valid_ratio": 0.113837,
+          "depth_size": [
+            946,
+            597
+          ]
+        },
+        {
+          "file": "depth0015.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014320.png",
+          "valid_ratio": 0.091587,
+          "depth_size": [
+            946,
+            488
+          ]
+        },
+        {
+          "file": "depth0012.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014256.png",
+          "valid_ratio": 0.061777,
+          "depth_size": [
+            946,
+            556
+          ]
+        },
+        {
+          "file": "depth0021.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014102.png",
+          "valid_ratio": 0.023047,
+          "depth_size": [
+            946,
+            480
+          ]
+        },
+        {
+          "file": "depth0005.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014129.png",
+          "valid_ratio": 0.021323,
+          "depth_size": [
+            946,
+            408
+          ]
+        }
+      ],
+      "grid_shape": [
+        29,
+        36,
+        28
+      ],
+      "grid_step_m": 0.35,
+      "truncation_m": 1.4,
+      "known_voxel_ratio": 0.024186,
+      "tsdf_diagnostics": {
+        "known_voxels": 707,
+        "known_negative_voxels": 272,
+        "known_positive_voxels": 435,
+        "closed_negative_voxels": 332,
+        "closed_positive_voxels": 28900,
+        "raw_tsdf_min": -0.998378,
+        "raw_tsdf_max": 1.0
+      },
+      "tsdf_grid": "/app/data/dense_depth_tsdf_outputs_w01/set2/dense_depth_tsdf_grid.npz",
+      "dense_depth_tsdf_mesh": "/app/data/dense_depth_tsdf_outputs_w01/set2/dense_depth_tsdf_mesh.ply",
+      "poisson_metrics": {
+        "vertices": 83623,
+        "triangles": 167102,
+        "boundary_edges": 226,
+        "non_manifold_edges": 39,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          7.819652,
+          10.009154,
+          7.107628
+        ],
+        "area": 162.982306,
+        "volume": null,
+        "components_connected": 39
+      },
+      "voxel_metrics": {
+        "vertices": 4826,
+        "triangles": 9648,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.25,
+          7.5
+        ],
+        "area": 301.5,
+        "volume": 135.671875,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.0339716,
+        "area_drift_vs_poisson_pct": 84.989406,
+        "hausdorff_approx": 1.19408,
+        "chamfer_approx": 1.19967
+      },
+      "point_sdf_metrics": {
+        "vertices": 12948,
+        "triangles": 25892,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.251058,
+          7.5
+        ],
+        "area": 245.881311,
+        "volume": 133.573573,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.03400707,
+        "area_drift_vs_poisson_pct": 50.863806,
+        "hausdorff_approx": 1.273551,
+        "chamfer_approx": 1.195443
+      },
+      "pseudo_depth_camera_tsdf_metrics": {
+        "vertices": 11600,
+        "triangles": 22976,
+        "boundary_edges": 232,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          8.224459,
+          11.022971,
+          8.903989
+        ],
+        "area": 377.91311,
+        "volume": null,
+        "components_connected": 30,
+        "bbox_drift_vs_poisson": 0.14442085,
+        "area_drift_vs_poisson_pct": 131.873704,
+        "hausdorff_approx": 5.261978,
+        "chamfer_approx": 2.058181
+      },
+      "dense_depth_tsdf_metrics": {
+        "vertices": 2670,
+        "triangles": 5188,
+        "boundary_edges": 6,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          8.56651,
+          9.680447,
+          6.545922
+        ],
+        "area": 76.563578,
+        "volume": null,
+        "components_connected": 40,
+        "bbox_drift_vs_poisson": 0.06806145,
+        "area_drift_vs_poisson_pct": -53.02338,
+        "hausdorff_approx": 6.248324,
+        "chamfer_approx": 1.865074
+      }
+    }
+  }
+}

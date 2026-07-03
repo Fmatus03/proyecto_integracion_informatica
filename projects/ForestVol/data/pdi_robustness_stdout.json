@@ -1,0 +1,8 @@
+{
+  "out": "/app/data/pdi_robustness_benchmark",
+  "rows": 46,
+  "most_damaging": {
+    "experiment": "segmentation_spurious_points",
+    "mean_percent_error": 744.668657
+  }
+}

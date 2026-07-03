@@ -49,11 +49,12 @@ def temp_repo(tmp_path):
         ignore=shutil.ignore_patterns("data", "__pycache__"),
     )
 
-    # Dataset
-    dataset_dst = tmp_path / "set_imagenes+guia"
-    dataset_dst.mkdir()
-    manifest_path = dataset_dst / "dataset_manifest.json"
-    shutil.copy(REPO_ROOT / "set_imagenes+guia" / "dataset_manifest.json", manifest_path)
+    # Dataset oficial del proyecto activo
+    dataset_src_root = REPO_ROOT / "projects" / "ForestVol" / "set_imagenes+guia"
+    dataset_dst_root = tmp_path / "projects" / "ForestVol" / "set_imagenes+guia"
+    dataset_dst_root.mkdir(parents=True, exist_ok=True)
+    manifest_path = dataset_dst_root / "dataset_manifest.json"
+    shutil.copy(dataset_src_root / "dataset_manifest.json", manifest_path)
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 
     fotos_dir = tmp_path / manifest["dataset_root"]

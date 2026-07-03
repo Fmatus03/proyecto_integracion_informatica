@@ -1,0 +1,2578 @@
+[
+  {
+    "path": "projects\\ForestVol\\data\\processed\\971d6e25-8ff0-41d2-8784-c981dec7ccbf\\point_cloud.ply",
+    "bytes": 20894591,
+    "extension": ".ply",
+    "last_modified_epoch": 1782890333.4973428,
+    "candidate_latest_session": true,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "experiments\\cloud_unification\\benchmark_after_unification.csv",
+    "bytes": 868,
+    "extension": ".csv",
+    "last_modified_epoch": 1782786014.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\cloud_unification\\benchmark_after_unification.json",
+    "bytes": 12398,
+    "extension": ".json",
+    "last_modified_epoch": 1782786014.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\density_connectivity_audit\\density_colored_cloud.ply",
+    "bytes": 1693311,
+    "extension": ".ply",
+    "last_modified_epoch": 1782980555.8566272,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\density_connectivity_audit\\support_colored_cloud.ply",
+    "bytes": 1695607,
+    "extension": ".ply",
+    "last_modified_epoch": 1782980556.4691508,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\hito_0_5_close\\dataset_definitivo_run_1\\nodeodm_attempts.json",
+    "bytes": 1727,
+    "extension": ".json",
+    "last_modified_epoch": 1782797961.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\hito_0_5_close\\dataset_definitivo_run_2\\nodeodm_attempts.json",
+    "bytes": 1727,
+    "extension": ".json",
+    "last_modified_epoch": 1782801843.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\hito_0_5_close\\set1_run_1\\nodeodm_attempts.json",
+    "bytes": 1726,
+    "extension": ".json",
+    "last_modified_epoch": 1782790643.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\hito_0_5_close\\set1_run_2\\nodeodm_attempts.json",
+    "bytes": 1726,
+    "extension": ".json",
+    "last_modified_epoch": 1782790911.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\nodeodm_trace\\nodeodm_parameter_diff.json",
+    "bytes": 12194,
+    "extension": ".json",
+    "last_modified_epoch": 1782783185.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\nodeodm_trace\\nodeodm_reuse_check.json",
+    "bytes": 4196,
+    "extension": ".json",
+    "last_modified_epoch": 1782784179.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\nodeodm_trace\\nodeodm_task_manifest.json",
+    "bytes": 18349338,
+    "extension": ".json",
+    "last_modified_epoch": 1782782995.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\nodeodm_trace\\pointcloud_hashes.csv",
+    "bytes": 1963,
+    "extension": ".csv",
+    "last_modified_epoch": 1782783183.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\nodeodm_trace\\pointcloud_hashes.json",
+    "bytes": 36093,
+    "extension": ".json",
+    "last_modified_epoch": 1782783185.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\nodeodm_trace\\reconstruction_diff.json",
+    "bytes": 50382,
+    "extension": ".json",
+    "last_modified_epoch": 1782783185.0,
+    "candidate_latest_session": false,
+    "utility": "Estructura SfM/camaras/poses/tracks; util para soporte por vista si corresponde a la misma corrida."
+  },
+  {
+    "path": "experiments\\nodeodm_trace\\reconstruction_trace.json",
+    "bytes": 24412905,
+    "extension": ".json",
+    "last_modified_epoch": 1782783185.0,
+    "candidate_latest_session": false,
+    "utility": "Estructura SfM/camaras/poses/tracks; util para soporte por vista si corresponde a la misma corrida."
+  },
+  {
+    "path": "experiments\\pipeline_diagnostics\\cloud_comparison.json",
+    "bytes": 16403,
+    "extension": ".json",
+    "last_modified_epoch": 1782782351.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\pipeline_diagnostics\\cloud_statistics.json",
+    "bytes": 37296,
+    "extension": ".json",
+    "last_modified_epoch": 1782782351.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\pipeline_diagnostics\\nodeodm_opensfm_metrics.json",
+    "bytes": 14312,
+    "extension": ".json",
+    "last_modified_epoch": 1782782146.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\pipeline_stage_analysis\\cloud_comparison.json",
+    "bytes": 4453,
+    "extension": ".json",
+    "last_modified_epoch": 1782786726.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\pipeline_stage_analysis\\cloud_statistics.json",
+    "bytes": 29406,
+    "extension": ".json",
+    "last_modified_epoch": 1782786726.0,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\pipeline_stage_analysis\\raw_cloud.ply",
+    "bytes": 20495789,
+    "extension": ".ply",
+    "last_modified_epoch": 1782786655.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\pipeline_stage_analysis\\set1\\raw_cloud.ply",
+    "bytes": 20495789,
+    "extension": ".ply",
+    "last_modified_epoch": 1782786701.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\pipeline_stage_analysis\\set2\\raw_cloud.ply",
+    "bytes": 18960332,
+    "extension": ".ply",
+    "last_modified_epoch": 1782786719.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\pipeline_stage_geometry_audit\\01_nodeodm_point_cloud_scaled.ply",
+    "bytes": 8311211,
+    "extension": ".ply",
+    "last_modified_epoch": 1782985345.9929652,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\pipeline_stage_geometry_audit\\02_after_clean_point_cloud.ply",
+    "bytes": 8310782,
+    "extension": ".ply",
+    "last_modified_epoch": 1782985352.4735513,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\volume_input_audit\\selected_volume_cloud.ply",
+    "bytes": 1714554,
+    "extension": ".ply",
+    "last_modified_epoch": 1782980012.2733488,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\camera_tsdf_outputs\\camera_tsdf_results.json",
+    "bytes": 8475,
+    "extension": ".json",
+    "last_modified_epoch": 1782697913.0383081,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\camera_tsdf_outputs\\set1\\camera_ray_tsdf_grid.npz",
+    "bytes": 152013,
+    "extension": ".npz",
+    "last_modified_epoch": 1782697888.404183,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\camera_tsdf_outputs\\set1\\camera_ray_tsdf_mesh.ply",
+    "bytes": 1333916,
+    "extension": ".ply",
+    "last_modified_epoch": 1782697703.159658,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\camera_tsdf_outputs\\set2\\camera_ray_tsdf_grid.npz",
+    "bytes": 71430,
+    "extension": ".npz",
+    "last_modified_epoch": 1782697901.7807798,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\camera_tsdf_outputs\\set2\\camera_ray_tsdf_mesh.ply",
+    "bytes": 855752,
+    "extension": ".ply",
+    "last_modified_epoch": 1782697901.852388,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\dense_depth_tsdf_alignment_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 33034,
+    "extension": ".json",
+    "last_modified_epoch": 1782700618.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\dense_depth_tsdf_alignment_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 18735,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700592.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\dense_depth_tsdf_alignment_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 198974,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700592.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\dense_depth_tsdf_alignment_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 29747,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700606.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\dense_depth_tsdf_alignment_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 320642,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700606.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 33034,
+    "extension": ".json",
+    "last_modified_epoch": 1782700283.075353,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 18696,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700256.4005933,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 205050,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700256.4271033,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 29760,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700270.7124102,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 319162,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700270.7514148,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 35055,
+    "extension": ".json",
+    "last_modified_epoch": 1782700750.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 18735,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700707.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 198974,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700707.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 30169,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700707.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 119298,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700707.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 29747,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700738.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 320642,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700738.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 43476,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700738.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_alignment_ray_outputs\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 169954,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700738.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 35054,
+    "extension": ".json",
+    "last_modified_epoch": 1782700391.31611,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 18696,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700348.4925277,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 205050,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700348.521988,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 30180,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700348.542582,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 119742,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700348.559484,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 29760,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700379.3169541,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 319162,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700379.358485,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 43507,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700379.3836815,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_alignment_ray_outputs\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 173698,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700379.3998375,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 12067,
+    "extension": ".json",
+    "last_modified_epoch": 1782698780.5905101,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 16258,
+    "extension": ".npz",
+    "last_modified_epoch": 1782698756.654986,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 29864,
+    "extension": ".ply",
+    "last_modified_epoch": 1782698756.6714492,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 10053,
+    "extension": ".npz",
+    "last_modified_epoch": 1782698769.0988932,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 16968,
+    "extension": ".ply",
+    "last_modified_epoch": 1782698769.1098826,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs_w01\\dense_depth_tsdf_results.json",
+    "bytes": 12082,
+    "extension": ".json",
+    "last_modified_epoch": 1782698871.054325,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs_w01\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 31608,
+    "extension": ".npz",
+    "last_modified_epoch": 1782698847.0300734,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs_w01\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 351030,
+    "extension": ".ply",
+    "last_modified_epoch": 1782698847.0634446,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs_w01\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 18649,
+    "extension": ".npz",
+    "last_modified_epoch": 1782698859.6817503,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_outputs_w01\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 195866,
+    "extension": ".ply",
+    "last_modified_epoch": 1782698859.7038074,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 14467,
+    "extension": ".json",
+    "last_modified_epoch": 1782699604.7988164,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 31608,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699566.2807083,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 351030,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699566.320832,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 40516,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699566.345061,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 192462,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699566.3617108,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 18649,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699593.5000923,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 195866,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699593.5255592,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 31004,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699593.542461,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 88948,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699593.5606432,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\dense_depth_tsdf_results.json",
+    "bytes": 14506,
+    "extension": ".json",
+    "last_modified_epoch": 1782699686.474458,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 31608,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699647.9250858,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 351030,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699647.9573662,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 40347,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699647.986828,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 238324,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699648.007621,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 18649,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699675.0475767,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 195866,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699675.07108,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 30840,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699675.0875316,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\dense_depth_tsdf_ray_outputs_w025\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 106336,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699675.1025257,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\outputs\\set1\\voxel_solid_surface.ply",
+    "bytes": 265378,
+    "extension": ".ply",
+    "last_modified_epoch": 1782695457.231997,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\outputs\\set2\\voxel_solid_surface.ply",
+    "bytes": 357334,
+    "extension": ".ply",
+    "last_modified_epoch": 1782695459.5052722,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\outputs\\volumetric_voxel_results.json",
+    "bytes": 3055,
+    "extension": ".json",
+    "last_modified_epoch": 1782695464.2810016,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\tsdf_outputs\\set1\\sdf_grid.npz",
+    "bytes": 74375,
+    "extension": ".npz",
+    "last_modified_epoch": 1782695876.7233906,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\tsdf_outputs\\set1\\sdf_marching_tetrahedra_mesh.ply",
+    "bytes": 741100,
+    "extension": ".ply",
+    "last_modified_epoch": 1782695876.7967925,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\tsdf_outputs\\set2\\sdf_grid.npz",
+    "bytes": 69926,
+    "extension": ".npz",
+    "last_modified_epoch": 1782695884.5654454,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\tsdf_outputs\\set2\\sdf_marching_tetrahedra_mesh.ply",
+    "bytes": 958364,
+    "extension": ".ply",
+    "last_modified_epoch": 1782695884.6504066,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "experiments\\volumetric_reconstruction\\tsdf_outputs\\tsdf_sdf_results.json",
+    "bytes": 4166,
+    "extension": ".json",
+    "last_modified_epoch": 1782695895.2875743,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs\\camera_tsdf_results.json",
+    "bytes": 8475,
+    "extension": ".json",
+    "last_modified_epoch": 1782697913.0383081,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs\\set1\\camera_ray_tsdf_grid.npz",
+    "bytes": 152013,
+    "extension": ".npz",
+    "last_modified_epoch": 1782697888.404183,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs\\set1\\camera_ray_tsdf_mesh.ply",
+    "bytes": 1333916,
+    "extension": ".ply",
+    "last_modified_epoch": 1782697703.159658,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs\\set2\\camera_ray_tsdf_grid.npz",
+    "bytes": 71430,
+    "extension": ".npz",
+    "last_modified_epoch": 1782697901.7807798,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs\\set2\\camera_ray_tsdf_mesh.ply",
+    "bytes": 855752,
+    "extension": ".ply",
+    "last_modified_epoch": 1782697901.852388,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs_r80\\camera_tsdf_results.json",
+    "bytes": 10957,
+    "extension": ".json",
+    "last_modified_epoch": 1782697813.2210784,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs_r80\\set1\\camera_ray_tsdf_grid.npz",
+    "bytes": 192180,
+    "extension": ".npz",
+    "last_modified_epoch": 1782697787.0798216,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs_r80\\set1\\camera_ray_tsdf_mesh.ply",
+    "bytes": 1474792,
+    "extension": ".ply",
+    "last_modified_epoch": 1782697787.213053,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs_r80\\set2\\camera_ray_tsdf_grid.npz",
+    "bytes": 99906,
+    "extension": ".npz",
+    "last_modified_epoch": 1782697801.8513525,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_outputs_r80\\set2\\camera_ray_tsdf_mesh.ply",
+    "bytes": 1021210,
+    "extension": ".ply",
+    "last_modified_epoch": 1782697801.9628484,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_r80_stdout.json",
+    "bytes": 10958,
+    "extension": ".json",
+    "last_modified_epoch": 1782697813.2256575,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\camera_tsdf_stdout.json",
+    "bytes": 8604,
+    "extension": ".json",
+    "last_modified_epoch": 1782697913.0413413,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 33034,
+    "extension": ".json",
+    "last_modified_epoch": 1782700618.3567314,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 18735,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700592.2766192,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 198974,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700592.3088672,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 29747,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700606.5691102,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 320642,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700606.6006093,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 35055,
+    "extension": ".json",
+    "last_modified_epoch": 1782700750.512882,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 18735,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700707.8314939,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 198974,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700707.85468,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 30169,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700707.8763988,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 119298,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700707.8878014,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 29747,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700738.206835,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 320642,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700738.2449076,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 43476,
+    "extension": ".npz",
+    "last_modified_epoch": 1782700738.261968,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_outputs\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 169954,
+    "extension": ".ply",
+    "last_modified_epoch": 1782700738.2909472,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_ray_stdout.json",
+    "bytes": 35056,
+    "extension": ".json",
+    "last_modified_epoch": 1782700750.5178537,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_alignment_stdout.json",
+    "bytes": 33035,
+    "extension": ".json",
+    "last_modified_epoch": 1782700618.3633676,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 12067,
+    "extension": ".json",
+    "last_modified_epoch": 1782698780.5905101,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 16258,
+    "extension": ".npz",
+    "last_modified_epoch": 1782698756.654986,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 29864,
+    "extension": ".ply",
+    "last_modified_epoch": 1782698756.6714492,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 10053,
+    "extension": ".npz",
+    "last_modified_epoch": 1782698769.0988932,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 16968,
+    "extension": ".ply",
+    "last_modified_epoch": 1782698769.1098826,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs_w01\\dense_depth_tsdf_results.json",
+    "bytes": 12082,
+    "extension": ".json",
+    "last_modified_epoch": 1782698871.054325,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs_w01\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 31608,
+    "extension": ".npz",
+    "last_modified_epoch": 1782698847.0300734,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs_w01\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 351030,
+    "extension": ".ply",
+    "last_modified_epoch": 1782698847.0634446,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs_w01\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 18649,
+    "extension": ".npz",
+    "last_modified_epoch": 1782698859.6817503,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_outputs_w01\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 195866,
+    "extension": ".ply",
+    "last_modified_epoch": 1782698859.7038074,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 14467,
+    "extension": ".json",
+    "last_modified_epoch": 1782699604.7988164,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 31608,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699566.2807083,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 351030,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699566.320832,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 40516,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699566.345061,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 192462,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699566.3617108,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 18649,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699593.5000923,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 195866,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699593.5255592,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 31004,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699593.542461,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 88948,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699593.5606432,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\dense_depth_tsdf_results.json",
+    "bytes": 14506,
+    "extension": ".json",
+    "last_modified_epoch": 1782699686.474458,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 31608,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699647.9250858,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 351030,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699647.9573662,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 40347,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699647.986828,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 238324,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699648.007621,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 18649,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699675.0475767,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 195866,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699675.07108,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 30840,
+    "extension": ".npz",
+    "last_modified_epoch": 1782699675.0875316,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_outputs_w025\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 106336,
+    "extension": ".ply",
+    "last_modified_epoch": 1782699675.1025257,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_stdout.json",
+    "bytes": 14468,
+    "extension": ".json",
+    "last_modified_epoch": 1782699604.802207,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_ray_w025_stdout.json",
+    "bytes": 14507,
+    "extension": ".json",
+    "last_modified_epoch": 1782699686.4764557,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\benchmark_comparison.csv",
+    "bytes": 2613,
+    "extension": ".csv",
+    "last_modified_epoch": 1782757450.1926668,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\benchmark_results.json",
+    "bytes": 14103,
+    "extension": ".json",
+    "last_modified_epoch": 1782757498.2340474,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 90538,
+    "extension": ".json",
+    "last_modified_epoch": 1782757056.5757568,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_results.json",
+    "bytes": 90538,
+    "extension": ".json",
+    "last_modified_epoch": 1782757056.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 18876,
+    "extension": ".npz",
+    "last_modified_epoch": 1782757016.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 206494,
+    "extension": ".ply",
+    "last_modified_epoch": 1782757016.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 30187,
+    "extension": ".npz",
+    "last_modified_epoch": 1782757016.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 111396,
+    "extension": ".ply",
+    "last_modified_epoch": 1782757016.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 10743,
+    "extension": ".npz",
+    "last_modified_epoch": 1782757044.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 101378,
+    "extension": ".ply",
+    "last_modified_epoch": 1782757044.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 22884,
+    "extension": ".npz",
+    "last_modified_epoch": 1782757044.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\dense_depth_tsdf_sccr_outputs\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 27614,
+    "extension": ".ply",
+    "last_modified_epoch": 1782757044.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\set1\\dense_depth_tsdf_grid.npz",
+    "bytes": 18876,
+    "extension": ".npz",
+    "last_modified_epoch": 1782757016.9130025,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\set1\\dense_depth_tsdf_mesh.ply",
+    "bytes": 206494,
+    "extension": ".ply",
+    "last_modified_epoch": 1782757016.9410465,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\set1\\ray_refined_tsdf_grid.npz",
+    "bytes": 30187,
+    "extension": ".npz",
+    "last_modified_epoch": 1782757016.9613945,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\set1\\ray_refined_tsdf_mesh.ply",
+    "bytes": 111396,
+    "extension": ".ply",
+    "last_modified_epoch": 1782757016.9798224,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\set2\\dense_depth_tsdf_grid.npz",
+    "bytes": 10743,
+    "extension": ".npz",
+    "last_modified_epoch": 1782757044.7128406,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\set2\\dense_depth_tsdf_mesh.ply",
+    "bytes": 101378,
+    "extension": ".ply",
+    "last_modified_epoch": 1782757044.7289162,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\set2\\ray_refined_tsdf_grid.npz",
+    "bytes": 22884,
+    "extension": ".npz",
+    "last_modified_epoch": 1782757044.7537346,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_outputs\\set2\\ray_refined_tsdf_mesh.ply",
+    "bytes": 27614,
+    "extension": ".ply",
+    "last_modified_epoch": 1782757044.7631483,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_stdout.json",
+    "bytes": 90539,
+    "extension": ".json",
+    "last_modified_epoch": 1782757056.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_sccr_time.txt",
+    "bytes": 75,
+    "extension": ".txt",
+    "last_modified_epoch": 1782757057.0,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_stdout.json",
+    "bytes": 12068,
+    "extension": ".json",
+    "last_modified_epoch": 1782698780.5943587,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\dense_depth_tsdf_w01_stdout.json",
+    "bytes": 12083,
+    "extension": ".json",
+    "last_modified_epoch": 1782698871.057591,
+    "candidate_latest_session": false,
+    "utility": "Artefacto de profundidad/TSDF; util para contrastar densificacion o MVS."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\benchmark.txt",
+    "bytes": 97,
+    "extension": ".txt",
+    "last_modified_epoch": 1781479739.0199974,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\images.json",
+    "bytes": 19320,
+    "extension": ".json",
+    "last_modified_epoch": 1781479739.0023167,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\img_list.txt",
+    "bytes": 840,
+    "extension": ".txt",
+    "last_modified_epoch": 1781479738.9969232,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\camera_models.json",
+    "bytes": 6142,
+    "extension": ".json",
+    "last_modified_epoch": 1781479739.2208254,
+    "candidate_latest_session": false,
+    "utility": "Modelo o resultado de camaras; util para cobertura si corresponde a la misma corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\config.yaml",
+    "bytes": 528,
+    "extension": ".yaml",
+    "last_modified_epoch": 1781479739.0370748,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012059.png.features.npz",
+    "bytes": 1100899,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479743.700699,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012145.png.features.npz",
+    "bytes": 1009166,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479743.581506,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012228.png.features.npz",
+    "bytes": 1219000,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479744.0589738,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012244.png.features.npz",
+    "bytes": 979178,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479743.5428224,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012252.png.features.npz",
+    "bytes": 950804,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479743.6863613,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012301.png.features.npz",
+    "bytes": 930324,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479743.722648,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012309.png.features.npz",
+    "bytes": 915352,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479743.278893,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012316.png.features.npz",
+    "bytes": 1102112,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479744.0295475,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\features\\Captura de pantalla 2026-06-12 012325.png.features.npz",
+    "bytes": 1094032,
+    "extension": ".npz",
+    "last_modified_epoch": 1781479743.8703063,
+    "candidate_latest_session": false,
+    "utility": "Evidencia de matching; util para soporte fotogrametrico si esta completo."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\nodeodm\\568a76d9-971b-4791-bdbe-8421b2af0dce\\opensfm\\image_list.txt",
+    "bytes": 2000,
+    "extension": ".txt",
+    "last_modified_epoch": 1781479739.03097,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\065d24e9-e723-42a5-b1c5-f14a5e4bc36b\\point_cloud.ply",
+    "bytes": 10029835,
+    "extension": ".ply",
+    "last_modified_epoch": 1782790643.445027,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\0f165751-4163-4824-9c1a-a21fccd2ddbc\\point_cloud.ply",
+    "bytes": 9142067,
+    "extension": ".ply",
+    "last_modified_epoch": 1782167463.8571951,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\0f165751-4163-4824-9c1a-a21fccd2ddbc\\preliminary_mesh.ply",
+    "bytes": 52321,
+    "extension": ".ply",
+    "last_modified_epoch": 1782167499.2535362,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\0f9470fb-5a88-4f6a-b62d-a53e3549e5f1\\point_cloud.ply",
+    "bytes": 15043487,
+    "extension": ".ply",
+    "last_modified_epoch": 1782540119.3386047,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\0f9470fb-5a88-4f6a-b62d-a53e3549e5f1\\preliminary_mesh.ply",
+    "bytes": 113485,
+    "extension": ".ply",
+    "last_modified_epoch": 1782540231.6346035,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\1022b827-cd74-4afd-9058-0b5dc813fff9\\point_cloud.ply",
+    "bytes": 19921255,
+    "extension": ".ply",
+    "last_modified_epoch": 1782542105.0796833,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\1022b827-cd74-4afd-9058-0b5dc813fff9\\preliminary_mesh.ply",
+    "bytes": 9384,
+    "extension": ".ply",
+    "last_modified_epoch": 1782542224.3496945,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\17d0cf42-f6a8-47bc-b11d-7656a0bca44f\\point_cloud.ply",
+    "bytes": 9859203,
+    "extension": ".ply",
+    "last_modified_epoch": 1782165212.0038683,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\17d0cf42-f6a8-47bc-b11d-7656a0bca44f\\preliminary_mesh.ply",
+    "bytes": 9754,
+    "extension": ".ply",
+    "last_modified_epoch": 1782165239.6485987,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\280e5e3e-2565-4542-a144-d18830e4a740\\point_cloud.ply",
+    "bytes": 10488811,
+    "extension": ".ply",
+    "last_modified_epoch": 1782621246.7911863,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\2bf7eb5e-19ba-44f6-a1bc-774b72ae971e\\point_cloud.ply",
+    "bytes": 8639775,
+    "extension": ".ply",
+    "last_modified_epoch": 1782168285.883985,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\2bf7eb5e-19ba-44f6-a1bc-774b72ae971e\\preliminary_mesh.ply",
+    "bytes": 5165,
+    "extension": ".ply",
+    "last_modified_epoch": 1782168345.2269795,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\41b64560-7dc2-44a5-92a7-01d0ab5fca50\\point_cloud.ply",
+    "bytes": 7310895,
+    "extension": ".ply",
+    "last_modified_epoch": 1782166370.5907583,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\41b64560-7dc2-44a5-92a7-01d0ab5fca50\\preliminary_mesh.ply",
+    "bytes": 7163,
+    "extension": ".ply",
+    "last_modified_epoch": 1782166393.4839337,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\4a20fa6a-b666-4e42-9b69-3b3004dbc515\\point_cloud.ply",
+    "bytes": 8387971,
+    "extension": ".ply",
+    "last_modified_epoch": 1782008968.7756355,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\6a014e11-8a7b-4f93-8539-5b3b2bf1dc95\\point_cloud.ply",
+    "bytes": 17856591,
+    "extension": ".ply",
+    "last_modified_epoch": 1782610417.017755,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\6a014e11-8a7b-4f93-8539-5b3b2bf1dc95\\preliminary_mesh.ply",
+    "bytes": 10346,
+    "extension": ".ply",
+    "last_modified_epoch": 1782610540.7270625,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\6a014e11-8a7b-4f93-8539-5b3b2bf1dc95\\segmented_woodpile_mesh.ply",
+    "bytes": 5683,
+    "extension": ".ply",
+    "last_modified_epoch": 1782611818.6951423,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\723f91e2-b1b5-43f7-b336-6816d8300509\\point_cloud.ply",
+    "bytes": 10409739,
+    "extension": ".ply",
+    "last_modified_epoch": 1782780619.6244383,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\74db42bf-07ed-48a4-a0b9-9c9759baceee\\point_cloud.ply",
+    "bytes": 18384363,
+    "extension": ".ply",
+    "last_modified_epoch": 1782541219.0726457,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\74db42bf-07ed-48a4-a0b9-9c9759baceee\\preliminary_mesh.ply",
+    "bytes": 8570,
+    "extension": ".ply",
+    "last_modified_epoch": 1782541280.2074907,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\7d024fd5-362a-4666-816b-94cd738f56d1\\point_cloud.ply",
+    "bytes": 12464575,
+    "extension": ".ply",
+    "last_modified_epoch": 1782609869.1722844,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\7f8e9818-340e-408c-ac94-70e9e8cb85f0\\point_cloud.ply",
+    "bytes": 6882075,
+    "extension": ".ply",
+    "last_modified_epoch": 1782194152.3758729,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\7f8e9818-340e-408c-ac94-70e9e8cb85f0\\preliminary_mesh.ply",
+    "bytes": 67952,
+    "extension": ".ply",
+    "last_modified_epoch": 1782194163.9097643,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\7fa04b98-9f81-4fa8-9529-b56f6e4f747d\\point_cloud.ply",
+    "bytes": 7981327,
+    "extension": ".ply",
+    "last_modified_epoch": 1781674294.1479142,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\8099bd26-0d93-4383-92f1-9c4d65e1da7f\\point_cloud.ply",
+    "bytes": 8292099,
+    "extension": ".ply",
+    "last_modified_epoch": 1781674712.334597,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\8da29c53-67a3-4f64-b161-eb3a47e8c64e\\point_cloud.ply",
+    "bytes": 9610871,
+    "extension": ".ply",
+    "last_modified_epoch": 1782267991.0298667,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\8da29c53-67a3-4f64-b161-eb3a47e8c64e\\preliminary_mesh.ply",
+    "bytes": 46725,
+    "extension": ".ply",
+    "last_modified_epoch": 1782268005.9043403,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\9b6f5b24-d992-469d-9e24-56428a96e4bb\\point_cloud.ply",
+    "bytes": 7150707,
+    "extension": ".ply",
+    "last_modified_epoch": 1782193627.6944423,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\9b6f5b24-d992-469d-9e24-56428a96e4bb\\preliminary_mesh.ply",
+    "bytes": 35405,
+    "extension": ".ply",
+    "last_modified_epoch": 1782193640.1820228,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\9e7a4ca6-cbd1-4472-9ca3-3c0879a7d13c\\point_cloud.ply",
+    "bytes": 18913899,
+    "extension": ".ply",
+    "last_modified_epoch": 1782541699.8120582,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5C\\point_cloud.ply",
+    "bytes": 8330459,
+    "extension": ".ply",
+    "last_modified_epoch": 1782088382.0,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5C\\preliminary_mesh_RUN-HITO-0-5C.ply",
+    "bytes": 797,
+    "extension": ".ply",
+    "last_modified_epoch": 1782088707.564173,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5D\\point_cloud.ply",
+    "bytes": 8330459,
+    "extension": ".ply",
+    "last_modified_epoch": 1782088382.0,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5D\\preliminary_mesh_RUN-HITO-0-5D.ply",
+    "bytes": 797,
+    "extension": ".ply",
+    "last_modified_epoch": 1782090272.757562,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5E\\point_cloud.ply",
+    "bytes": 8330459,
+    "extension": ".ply",
+    "last_modified_epoch": 1782088382.0,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5E\\preliminary_mesh_RUN-HITO-0-5E.ply",
+    "bytes": 797,
+    "extension": ".ply",
+    "last_modified_epoch": 1782090935.2090154,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5F\\nodeodm-task.json",
+    "bytes": 1030,
+    "extension": ".json",
+    "last_modified_epoch": 1782092137.514352,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5F\\point_cloud.ply",
+    "bytes": 11471611,
+    "extension": ".ply",
+    "last_modified_epoch": 1782092130.0,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5F\\preliminary_mesh_RUN-HITO-0-5F.ply",
+    "bytes": 8570,
+    "extension": ".ply",
+    "last_modified_epoch": 1782092203.521703,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5F\\preliminary_mesh_RUN-HITO-0-5F_segmented.ply",
+    "bytes": 7015,
+    "extension": ".ply",
+    "last_modified_epoch": 1782092893.6088068,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5G\\preliminary_mesh_RUN-HITO-0-5G_probe.ply",
+    "bytes": 51859,
+    "extension": ".ply",
+    "last_modified_epoch": 1782167080.1334505,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5J-repro-fixed\\preliminary_mesh.ply",
+    "bytes": 7015,
+    "extension": ".ply",
+    "last_modified_epoch": 1782184518.343465,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5J-repro\\preliminary_mesh.ply",
+    "bytes": 6571,
+    "extension": ".ply",
+    "last_modified_epoch": 1782184488.5823538,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\RUN-HITO-0-5J\\preliminary_mesh.ply",
+    "bytes": 7015,
+    "extension": ".ply",
+    "last_modified_epoch": 1782184726.7031326,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\a3c36266-f866-402f-8bc8-1c2b59b4a4ce\\point_cloud.ply",
+    "bytes": 8432743,
+    "extension": ".ply",
+    "last_modified_epoch": 1782693128.3951917,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\a3c36266-f866-402f-8bc8-1c2b59b4a4ce\\preliminary_mesh.ply",
+    "bytes": 8496,
+    "extension": ".ply",
+    "last_modified_epoch": 1782693219.1416242,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\a3c36266-f866-402f-8bc8-1c2b59b4a4ce\\surface_closure_diagnostics\\poisson_input_cloud.ply",
+    "bytes": 1014094,
+    "extension": ".ply",
+    "last_modified_epoch": 1782693315.2659967,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\a44ee3a6-b7d0-4c62-b075-1a2865dcded0\\point_cloud.ply",
+    "bytes": 11899759,
+    "extension": ".ply",
+    "last_modified_epoch": 1782790911.564691,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\a6c77923-6a25-40ff-b189-a008cd59aa82\\point_cloud.ply",
+    "bytes": 8155095,
+    "extension": ".ply",
+    "last_modified_epoch": 1782009357.5260274,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b3c14c84-b660-407f-817f-1fc185ce3e9c\\point_cloud.ply",
+    "bytes": 11252735,
+    "extension": ".ply",
+    "last_modified_epoch": 1782780209.0371673,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\08_poisson_input_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782617235.579379,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\09_poisson_raw_after_density_filter.ply",
+    "bytes": 6437398,
+    "extension": ".ply",
+    "last_modified_epoch": 1782617391.6249368,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\10_poisson_after_remove_degenerate_triangles.ply",
+    "bytes": 6437398,
+    "extension": ".ply",
+    "last_modified_epoch": 1782617531.90432,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\11_poisson_after_remove_duplicated_vertices.ply",
+    "bytes": 6437296,
+    "extension": ".ply",
+    "last_modified_epoch": 1782617672.791086,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\12_poisson_after_remove_unreferenced_vertices.ply",
+    "bytes": 6437296,
+    "extension": ".ply",
+    "last_modified_epoch": 1782617816.199809,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\13_poisson_after_remove_duplicated_triangles.ply",
+    "bytes": 6437296,
+    "extension": ".ply",
+    "last_modified_epoch": 1782617959.2444437,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\14_poisson_after_compute_vertex_normals.ply",
+    "bytes": 6437296,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618237.254342,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\15_alpha_shape_after_builtin_cleanup.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618529.588404,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\16_alpha_after_remove_degenerate_triangles.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618529.71658,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\17_alpha_after_remove_duplicated_vertices.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618529.8622806,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\18_alpha_after_remove_unreferenced_vertices.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618529.988923,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\19_alpha_after_final_cleanup.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618530.1097262,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\20_final_mesh.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618530.2178535,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics\\meshing_metrics.json",
+    "bytes": 18648,
+    "extension": ".json",
+    "last_modified_epoch": 1782618530.323072,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\08_poisson_input_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782617994.3131537,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\09_poisson_raw_after_density_filter.ply",
+    "bytes": 6437270,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618251.0382526,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\10_poisson_after_remove_degenerate_triangles.ply",
+    "bytes": 6437270,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618255.918612,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\11_poisson_after_remove_duplicated_vertices.ply",
+    "bytes": 6437168,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618260.7180557,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\12_poisson_after_remove_unreferenced_vertices.ply",
+    "bytes": 6437168,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618265.328802,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\13_poisson_after_remove_duplicated_triangles.ply",
+    "bytes": 6437168,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618270.079355,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\14_poisson_after_compute_vertex_normals.ply",
+    "bytes": 6437168,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618274.4636312,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\15_alpha_shape_after_builtin_cleanup.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618282.8372486,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\16_alpha_after_remove_degenerate_triangles.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618282.9673848,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\17_alpha_after_remove_duplicated_vertices.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618283.106148,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\18_alpha_after_remove_unreferenced_vertices.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618283.2264302,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\19_alpha_after_final_cleanup.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618283.3879504,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\20_final_mesh.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782618283.5285077,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_2\\meshing_metrics.json",
+    "bytes": 18973,
+    "extension": ".json",
+    "last_modified_epoch": 1782618283.6439304,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\08_poisson_input_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689618.3271368,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\09_poisson_raw_after_density_filter.ply",
+    "bytes": 6437398,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689761.503122,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\10_poisson_after_remove_degenerate_triangles.ply",
+    "bytes": 6437398,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689765.6950424,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\11_poisson_after_remove_duplicated_vertices.ply",
+    "bytes": 6437296,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689769.386887,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\12_poisson_after_remove_unreferenced_vertices.ply",
+    "bytes": 6437296,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689773.1472285,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\13_poisson_after_remove_duplicated_triangles.ply",
+    "bytes": 6437296,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689776.9276223,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\14_poisson_after_compute_vertex_normals.ply",
+    "bytes": 6437296,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689780.813223,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\15_alpha_shape_after_builtin_cleanup.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689788.1596568,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\16_alpha_after_remove_degenerate_triangles.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689788.2650752,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\17_alpha_after_remove_duplicated_vertices.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689788.3645253,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\18_alpha_after_remove_unreferenced_vertices.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689788.465941,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\19_alpha_after_final_cleanup.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689788.5688658,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\20_final_mesh.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689788.6808016,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\meshing_diagnostics_3\\meshing_metrics.json",
+    "bytes": 18973,
+    "extension": ".json",
+    "last_modified_epoch": 1782689788.7707105,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\point_cloud.ply",
+    "bytes": 19516123,
+    "extension": ".ply",
+    "last_modified_epoch": 1782613395.6161406,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\poisson_recovery_probe\\poisson_recovery_mesh.ply",
+    "bytes": 16192,
+    "extension": ".ply",
+    "last_modified_epoch": 1782620415.1913922,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\preliminary_mesh.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782613539.9269912,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\01_raw_cloud.ply",
+    "bytes": 35546960,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616233.5167263,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\02_scaled_cloud.ply",
+    "bytes": 35546960,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616239.9294517,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\03_clean_cloud.ply",
+    "bytes": 35344235,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616245.0841923,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\04_filtered_voxel_cloud.ply",
+    "bytes": 1733245,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616245.6134236,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\05_segmented_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616246.1975915,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\06_mesh_input_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616248.4262257,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\06a_poisson_mesh_before_repair.ply",
+    "bytes": 6437231,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616456.1218681,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\07_existing_final_mesh_copy.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782613539.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics\\07_final_mesh.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616458.7134378,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\01_raw_cloud.ply",
+    "bytes": 35546960,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616464.787608,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\02_scaled_cloud.ply",
+    "bytes": 35546960,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616470.6390548,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\03_clean_cloud.ply",
+    "bytes": 35344235,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616475.4378424,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\04_filtered_voxel_cloud.ply",
+    "bytes": 1733245,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616476.0183184,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\05_segmented_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616476.6029975,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\06_mesh_input_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616478.8655467,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\06a_poisson_mesh_before_repair.ply",
+    "bytes": 6437424,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616664.7761402,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\07_existing_final_mesh_copy.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782613539.0,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\stage_diagnostics_2\\07_final_mesh.ply",
+    "bytes": 55401,
+    "extension": ".ply",
+    "last_modified_epoch": 1782616667.1503108,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\surface_closure_diagnostics\\poisson_input_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689864.7108128,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\b6b04af0-122f-4fcc-af8a-cc553ca5e28d\\surface_closure_diagnostics_2\\poisson_input_cloud.ply",
+    "bytes": 1332028,
+    "extension": ".ply",
+    "last_modified_epoch": 1782689939.724995,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\bd1e9a21-3f48-4a6f-a236-b1010a9d153f\\point_cloud.ply",
+    "bytes": 25375935,
+    "extension": ".ply",
+    "last_modified_epoch": 1782888025.0639515,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\d005e91f-4a9c-41e3-a0a5-3955fc8af83a\\point_cloud.ply",
+    "bytes": 4525371,
+    "extension": ".ply",
+    "last_modified_epoch": 1781492823.7271016,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\d78e0ca6-6259-47b1-89a7-2278acf95119\\point_cloud.ply",
+    "bytes": 46870696,
+    "extension": ".ply",
+    "last_modified_epoch": 1782797961.3228078,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\dc1e8e32-fd1e-46b7-974c-07d8b5907cb8\\point_cloud.ply",
+    "bytes": 7279367,
+    "extension": ".ply",
+    "last_modified_epoch": 1782168947.9172406,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\dc1e8e32-fd1e-46b7-974c-07d8b5907cb8\\preliminary_mesh.ply",
+    "bytes": 9088,
+    "extension": ".ply",
+    "last_modified_epoch": 1782169014.4506538,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\ecd0f8b7-64f5-437b-9048-2ae83609e8e7\\point_cloud.ply",
+    "bytes": 50021760,
+    "extension": ".ply",
+    "last_modified_epoch": 1782801843.028172,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\processed\\fb28d9ce-e52d-45d9-99be-c046dfc5d2f6\\point_cloud.ply",
+    "bytes": 5963955,
+    "extension": ".ply",
+    "last_modified_epoch": 1781673708.5520062,
+    "candidate_latest_session": false,
+    "utility": "Nube densa RAW/descargada; evidencia principal de geometria ya reconstruida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\tsdf_sdf_outputs\\set1\\sdf_marching_tetrahedra_mesh.ply",
+    "bytes": 741100,
+    "extension": ".ply",
+    "last_modified_epoch": 1782695876.7967925,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\tsdf_sdf_outputs\\set2\\sdf_marching_tetrahedra_mesh.ply",
+    "bytes": 958364,
+    "extension": ".ply",
+    "last_modified_epoch": 1782695884.6504066,
+    "candidate_latest_session": false,
+    "utility": "Malla/superficie; util para distinguir nube densa vs reconstruccion de superficie."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\volumetric_reconstruction_outputs\\set1\\voxel_solid_surface.ply",
+    "bytes": 265378,
+    "extension": ".ply",
+    "last_modified_epoch": 1782695457.231997,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\volumetric_reconstruction_outputs\\set2\\voxel_solid_surface.ply",
+    "bytes": 357334,
+    "extension": ".ply",
+    "last_modified_epoch": 1782695459.5052722,
+    "candidate_latest_session": false,
+    "utility": "Artefacto relacionado; utilidad dependiente de pertenencia a la corrida."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\volumetric_reconstruction_outputs\\volumetric_voxel_results.json",
+    "bytes": 3055,
+    "extension": ".json",
+    "last_modified_epoch": 1782695464.2810016,
+    "candidate_latest_session": false,
+    "utility": "Metadatos/metricas; util para trazabilidad si pertenece a la corrida auditada."
+  },
+  {
+    "path": "projects\\ForestVol\\data\\volumetric_reconstruction_stdout.json",
+    "bytes": 3056,
+    "extension": ".json",
+    "last_modified_epoch": 1782695464.2823198,
+    "candidate_latest_session": false,
+    "utility": "Estructura SfM/camaras/poses/tracks; util para soporte por vista si corresponde a la misma corrida."
+  }
+]

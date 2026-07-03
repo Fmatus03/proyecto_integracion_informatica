@@ -1,0 +1,905 @@
+{
+  "method": "dense-depth camera TSDF from OpenMVS .dmap depth maps and OpenSfM poses",
+  "not_pipeline_integration": true,
+  "depth_source": "OpenMVS .dmap dense depth maps; first float32 channel used as per-pixel depth",
+  "dmap_reader": "DR header, image path, 196-byte camera metadata block, 5 float32 channels per pixel",
+  "ray_integration_layer_enabled": false,
+  "validation_alignment_layer_enabled": true,
+  "datasets": {
+    "set1": {
+      "task_uuid": "56396d01-c139-445e-ba50-55644781e877",
+      "alignment": {
+        "scale_sfm_to_metric": 0.7406799605216473,
+        "sfm_center": [
+          6.463409,
+          1.862006,
+          -1.885771
+        ],
+        "metric_center": [
+          6.560091,
+          0.038217,
+          -2.317562
+        ]
+      },
+      "depthmaps_used": [
+        {
+          "file": "depth0002.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200740.png",
+          "valid_ratio": 0.071839,
+          "depth_size": [
+            970,
+            554
+          ]
+        },
+        {
+          "file": "depth0007.dmap",
+          "shot_id": "Capturadepantalla2026-06-16201021.png",
+          "valid_ratio": 0.06081,
+          "depth_size": [
+            970,
+            569
+          ]
+        },
+        {
+          "file": "depth0004.dmap",
+          "shot_id": "Capturadepantalla2026-06-16201030.png",
+          "valid_ratio": 0.058632,
+          "depth_size": [
+            970,
+            573
+          ]
+        },
+        {
+          "file": "depth0010.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200840.png",
+          "valid_ratio": 0.054083,
+          "depth_size": [
+            970,
+            526
+          ]
+        },
+        {
+          "file": "depth0000.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200759.png",
+          "valid_ratio": 0.052816,
+          "depth_size": [
+            970,
+            696
+          ]
+        },
+        {
+          "file": "depth0005.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200848.png",
+          "valid_ratio": 0.05112,
+          "depth_size": [
+            970,
+            530
+          ]
+        },
+        {
+          "file": "depth0014.dmap",
+          "shot_id": "Capturadepantalla2026-06-16200902.png",
+          "valid_ratio": 0.050961,
+          "depth_size": [
+            970,
+            551
+          ]
+        }
+      ],
+      "validation_alignment": {
+        "enabled": true,
+        "min_coverage_ratio": 0.02,
+        "max_reprojection_error_m": 2.5,
+        "drift_report": {
+          "depth_center_metric": [
+            7.101167,
+            4.331701,
+            -0.725589
+          ],
+          "target_center_metric": [
+            6.797274,
+            1.920281,
+            -1.619715
+          ],
+          "scale_correction": 0.780479,
+          "offset_correction_m": [
+            -0.237183,
+            -1.882064,
+            -0.697847
+          ],
+          "input_frame_count": 7,
+          "accepted_frame_count": 7,
+          "rejected_frame_count": 0,
+          "median_reprojection_error_m": 1.009785,
+          "mean_voxel_coverage_ratio": 0.921824
+        },
+        "accepted_frames": [
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0002.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200740.png",
+            "valid_ratio": 0.071839,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.8944,
+            "reprojection_error_median_m": 1.009785,
+            "depth_discontinuity_score": 0.002751,
+            "tsdf_contribution_variance_proxy": 0.111517,
+            "bad_frame": false,
+            "weight_multiplier": 0.804666
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0007.dmap",
+            "shot_id": "Capturadepantalla2026-06-16201021.png",
+            "valid_ratio": 0.06081,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.8852,
+            "reprojection_error_median_m": 1.128272,
+            "depth_discontinuity_score": 0.003355,
+            "tsdf_contribution_variance_proxy": 0.115113,
+            "bad_frame": false,
+            "weight_multiplier": 0.793821
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0004.dmap",
+            "shot_id": "Capturadepantalla2026-06-16201030.png",
+            "valid_ratio": 0.058632,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.8848,
+            "reprojection_error_median_m": 1.190323,
+            "depth_discontinuity_score": 0.003362,
+            "tsdf_contribution_variance_proxy": 0.120253,
+            "bad_frame": false,
+            "weight_multiplier": 0.789822
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0010.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200840.png",
+            "valid_ratio": 0.054083,
+            "sampled_points": 2300,
+            "voxel_coverage_ratio": 0.928261,
+            "reprojection_error_median_m": 0.685905,
+            "depth_discontinuity_score": 0.002147,
+            "tsdf_contribution_variance_proxy": 0.082499,
+            "bad_frame": false,
+            "weight_multiplier": 0.857517
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0000.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200759.png",
+            "valid_ratio": 0.052816,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9972,
+            "reprojection_error_median_m": 1.001489,
+            "depth_discontinuity_score": 0.002708,
+            "tsdf_contribution_variance_proxy": 0.110785,
+            "bad_frame": false,
+            "weight_multiplier": 0.897743
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0005.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200848.png",
+            "valid_ratio": 0.05112,
+            "sampled_points": 2191,
+            "voxel_coverage_ratio": 0.921497,
+            "reprojection_error_median_m": 0.697666,
+            "depth_discontinuity_score": 0.002245,
+            "tsdf_contribution_variance_proxy": 0.085571,
+            "bad_frame": false,
+            "weight_multiplier": 0.848859
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0014.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200902.png",
+            "valid_ratio": 0.050961,
+            "sampled_points": 2270,
+            "voxel_coverage_ratio": 0.94141,
+            "reprojection_error_median_m": 1.455379,
+            "depth_discontinuity_score": 0.004214,
+            "tsdf_contribution_variance_proxy": 0.096627,
+            "bad_frame": false,
+            "weight_multiplier": 0.85846
+          }
+        ],
+        "rejected_frames": [],
+        "camera_metrics": [
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0002.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200740.png",
+            "valid_ratio": 0.071839,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.8944,
+            "reprojection_error_median_m": 1.009785,
+            "depth_discontinuity_score": 0.002751,
+            "tsdf_contribution_variance_proxy": 0.111517
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0007.dmap",
+            "shot_id": "Capturadepantalla2026-06-16201021.png",
+            "valid_ratio": 0.06081,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.8852,
+            "reprojection_error_median_m": 1.128272,
+            "depth_discontinuity_score": 0.003355,
+            "tsdf_contribution_variance_proxy": 0.115113
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0004.dmap",
+            "shot_id": "Capturadepantalla2026-06-16201030.png",
+            "valid_ratio": 0.058632,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.8848,
+            "reprojection_error_median_m": 1.190323,
+            "depth_discontinuity_score": 0.003362,
+            "tsdf_contribution_variance_proxy": 0.120253
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0010.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200840.png",
+            "valid_ratio": 0.054083,
+            "sampled_points": 2300,
+            "voxel_coverage_ratio": 0.928261,
+            "reprojection_error_median_m": 0.685905,
+            "depth_discontinuity_score": 0.002147,
+            "tsdf_contribution_variance_proxy": 0.082499
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0000.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200759.png",
+            "valid_ratio": 0.052816,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9972,
+            "reprojection_error_median_m": 1.001489,
+            "depth_discontinuity_score": 0.002708,
+            "tsdf_contribution_variance_proxy": 0.110785
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0005.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200848.png",
+            "valid_ratio": 0.05112,
+            "sampled_points": 2191,
+            "voxel_coverage_ratio": 0.921497,
+            "reprojection_error_median_m": 0.697666,
+            "depth_discontinuity_score": 0.002245,
+            "tsdf_contribution_variance_proxy": 0.085571
+          },
+          {
+            "file": "/nodeodm-data/56396d01-c139-445e-ba50-55644781e877/opensfm/undistorted/openmvs/depthmaps/depth0014.dmap",
+            "shot_id": "Capturadepantalla2026-06-16200902.png",
+            "valid_ratio": 0.050961,
+            "sampled_points": 2270,
+            "voxel_coverage_ratio": 0.94141,
+            "reprojection_error_median_m": 1.455379,
+            "depth_discontinuity_score": 0.004214,
+            "tsdf_contribution_variance_proxy": 0.096627
+          }
+        ]
+      },
+      "grid_shape": [
+        36,
+        53,
+        25
+      ],
+      "grid_step_m": 0.35,
+      "truncation_m": 1.4,
+      "known_voxel_ratio": 0.014004,
+      "tsdf_diagnostics": {
+        "known_voxels": 668,
+        "known_negative_voxels": 248,
+        "known_positive_voxels": 420,
+        "closed_negative_voxels": 316,
+        "closed_positive_voxels": 47384,
+        "raw_tsdf_min": -0.999845,
+        "raw_tsdf_max": 1.0
+      },
+      "tsdf_grid": "/app/data/dense_depth_tsdf_alignment_outputs/set1/dense_depth_tsdf_grid.npz",
+      "dense_depth_tsdf_mesh": "/app/data/dense_depth_tsdf_alignment_outputs/set1/dense_depth_tsdf_mesh.ply",
+      "ray_integration": {
+        "enabled": false
+      },
+      "ray_refined_tsdf_grid": null,
+      "ray_refined_tsdf_mesh": null,
+      "poisson_metrics": {
+        "vertices": 29592,
+        "triangles": 58975,
+        "boundary_edges": 191,
+        "non_manifold_edges": 4,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          15.963822,
+          16.478785,
+          6.404328
+        ],
+        "area": 264.530912,
+        "volume": null,
+        "components_connected": 10
+      },
+      "voxel_metrics": {
+        "vertices": 3583,
+        "triangles": 7164,
+        "boundary_edges": 0,
+        "non_manifold_edges": 1,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          10.0,
+          6.75,
+          5.5
+        ],
+        "area": 223.875,
+        "volume": null,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.48055614,
+        "area_drift_vs_poisson_pct": -15.369059,
+        "hausdorff_approx": 10.855025,
+        "chamfer_approx": 3.974116
+      },
+      "point_sdf_metrics": {
+        "vertices": 10012,
+        "triangles": 20020,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          10.0,
+          6.758066,
+          5.501884
+        ],
+        "area": 186.746325,
+        "volume": 95.756277,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.48026213,
+        "area_drift_vs_poisson_pct": -29.404725,
+        "hausdorff_approx": 10.710534,
+        "chamfer_approx": 3.838764
+      },
+      "pseudo_depth_camera_tsdf_metrics": {
+        "vertices": 17990,
+        "triangles": 36164,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          10.492951,
+          15.038667,
+          7.934171
+        ],
+        "area": 598.102275,
+        "volume": null,
+        "components_connected": 23,
+        "bbox_drift_vs_poisson": 0.24602666,
+        "area_drift_vs_poisson_pct": 126.0992,
+        "hausdorff_approx": 4.655659,
+        "chamfer_approx": 1.862661
+      },
+      "dense_depth_tsdf_metrics": {
+        "vertices": 2712,
+        "triangles": 5272,
+        "boundary_edges": 18,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          9.971447,
+          7.262464,
+          7.735219
+        ],
+        "area": 77.61486,
+        "volume": null,
+        "components_connected": 37,
+        "bbox_drift_vs_poisson": 0.46487168,
+        "area_drift_vs_poisson_pct": -70.659436,
+        "hausdorff_approx": 10.819039,
+        "chamfer_approx": 4.478468
+      },
+      "ray_refined_dense_depth_tsdf_metrics": null
+    },
+    "set2": {
+      "task_uuid": "002ca5e3-6eca-4aba-b3e2-623f97878136",
+      "alignment": {
+        "scale_sfm_to_metric": 0.6773251889868247,
+        "sfm_center": [
+          5.147873,
+          -1.680842,
+          2.85233
+        ],
+        "metric_center": [
+          6.481069,
+          -2.388171,
+          2.065571
+        ]
+      },
+      "depthmaps_used": [
+        {
+          "file": "depth0006.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014230.png",
+          "valid_ratio": 0.229888,
+          "depth_size": [
+            946,
+            557
+          ]
+        },
+        {
+          "file": "depth0001.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014309.png",
+          "valid_ratio": 0.223287,
+          "depth_size": [
+            946,
+            566
+          ]
+        },
+        {
+          "file": "depth0002.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014219.png",
+          "valid_ratio": 0.217116,
+          "depth_size": [
+            946,
+            572
+          ]
+        },
+        {
+          "file": "depth0010.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014225.png",
+          "valid_ratio": 0.20211,
+          "depth_size": [
+            946,
+            546
+          ]
+        },
+        {
+          "file": "depth0013.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014301.png",
+          "valid_ratio": 0.17884,
+          "depth_size": [
+            946,
+            580
+          ]
+        },
+        {
+          "file": "depth0027.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014203.png",
+          "valid_ratio": 0.145992,
+          "depth_size": [
+            946,
+            552
+          ]
+        },
+        {
+          "file": "depth0011.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014244.png",
+          "valid_ratio": 0.113837,
+          "depth_size": [
+            946,
+            597
+          ]
+        },
+        {
+          "file": "depth0015.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014320.png",
+          "valid_ratio": 0.091587,
+          "depth_size": [
+            946,
+            488
+          ]
+        },
+        {
+          "file": "depth0012.dmap",
+          "shot_id": "Capturadepantalla2026-06-27014256.png",
+          "valid_ratio": 0.061777,
+          "depth_size": [
+            946,
+            556
+          ]
+        }
+      ],
+      "validation_alignment": {
+        "enabled": true,
+        "min_coverage_ratio": 0.02,
+        "max_reprojection_error_m": 2.5,
+        "drift_report": {
+          "depth_center_metric": [
+            6.151215,
+            -1.805737,
+            2.602526
+          ],
+          "target_center_metric": [
+            6.299921,
+            -2.068313,
+            2.360453
+          ],
+          "scale_correction": 1.218154,
+          "offset_correction_m": [
+            0.181147,
+            -0.319858,
+            -0.294882
+          ],
+          "input_frame_count": 11,
+          "accepted_frame_count": 9,
+          "rejected_frame_count": 2,
+          "median_reprojection_error_m": 0.661309,
+          "mean_voxel_coverage_ratio": 0.996982
+        },
+        "accepted_frames": [
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0006.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014230.png",
+            "valid_ratio": 0.229888,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9912,
+            "reprojection_error_median_m": 0.661309,
+            "depth_discontinuity_score": 0.008306,
+            "tsdf_contribution_variance_proxy": 0.057148,
+            "bad_frame": false,
+            "weight_multiplier": 0.937617
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0001.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014309.png",
+            "valid_ratio": 0.223287,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9992,
+            "reprojection_error_median_m": 0.601795,
+            "depth_discontinuity_score": 0.008923,
+            "tsdf_contribution_variance_proxy": 0.163893,
+            "bad_frame": false,
+            "weight_multiplier": 0.858498
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0002.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014219.png",
+            "valid_ratio": 0.217116,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9924,
+            "reprojection_error_median_m": 0.72591,
+            "depth_discontinuity_score": 0.008475,
+            "tsdf_contribution_variance_proxy": 0.059438,
+            "bad_frame": false,
+            "weight_multiplier": 0.936723
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0010.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014225.png",
+            "valid_ratio": 0.20211,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9888,
+            "reprojection_error_median_m": 0.598094,
+            "depth_discontinuity_score": 0.005147,
+            "tsdf_contribution_variance_proxy": 0.019702,
+            "bad_frame": false,
+            "weight_multiplier": 0.969695
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0013.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014301.png",
+            "valid_ratio": 0.17884,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9992,
+            "reprojection_error_median_m": 0.399744,
+            "depth_discontinuity_score": 0.006751,
+            "tsdf_contribution_variance_proxy": 0.131223,
+            "bad_frame": false,
+            "weight_multiplier": 0.883292
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0027.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014203.png",
+            "valid_ratio": 0.145992,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9988,
+            "reprojection_error_median_m": 0.977224,
+            "depth_discontinuity_score": 0.010355,
+            "tsdf_contribution_variance_proxy": 0.079823,
+            "bad_frame": false,
+            "weight_multiplier": 0.924966
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0011.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014244.png",
+            "valid_ratio": 0.113837,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9972,
+            "reprojection_error_median_m": 0.505351,
+            "depth_discontinuity_score": 0.003452,
+            "tsdf_contribution_variance_proxy": 0.026206,
+            "bad_frame": false,
+            "weight_multiplier": 0.971735
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0015.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014320.png",
+            "valid_ratio": 0.091587,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 1.0,
+            "reprojection_error_median_m": 0.536228,
+            "depth_discontinuity_score": 0.005581,
+            "tsdf_contribution_variance_proxy": 0.05555,
+            "bad_frame": false,
+            "weight_multiplier": 0.947373
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0012.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014256.png",
+            "valid_ratio": 0.061777,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 1.0,
+            "reprojection_error_median_m": 0.713861,
+            "depth_discontinuity_score": 0.009262,
+            "tsdf_contribution_variance_proxy": 0.085303,
+            "bad_frame": false,
+            "weight_multiplier": 0.921402
+          }
+        ],
+        "rejected_frames": [
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0021.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014102.png",
+            "valid_ratio": 0.023047,
+            "sampled_points": 873,
+            "voxel_coverage_ratio": 1.0,
+            "reprojection_error_median_m": 3.899803,
+            "depth_discontinuity_score": 0.015711,
+            "tsdf_contribution_variance_proxy": 0.014783,
+            "bad_frame": true,
+            "reason": "low_coverage_or_high_reprojection_error"
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0005.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014129.png",
+            "valid_ratio": 0.021323,
+            "sampled_points": 686,
+            "voxel_coverage_ratio": 1.0,
+            "reprojection_error_median_m": 3.802551,
+            "depth_discontinuity_score": 0.010841,
+            "tsdf_contribution_variance_proxy": 0.019725,
+            "bad_frame": true,
+            "reason": "low_coverage_or_high_reprojection_error"
+          }
+        ],
+        "camera_metrics": [
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0006.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014230.png",
+            "valid_ratio": 0.229888,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9912,
+            "reprojection_error_median_m": 0.661309,
+            "depth_discontinuity_score": 0.008306,
+            "tsdf_contribution_variance_proxy": 0.057148
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0001.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014309.png",
+            "valid_ratio": 0.223287,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9992,
+            "reprojection_error_median_m": 0.601795,
+            "depth_discontinuity_score": 0.008923,
+            "tsdf_contribution_variance_proxy": 0.163893
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0002.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014219.png",
+            "valid_ratio": 0.217116,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9924,
+            "reprojection_error_median_m": 0.72591,
+            "depth_discontinuity_score": 0.008475,
+            "tsdf_contribution_variance_proxy": 0.059438
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0010.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014225.png",
+            "valid_ratio": 0.20211,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9888,
+            "reprojection_error_median_m": 0.598094,
+            "depth_discontinuity_score": 0.005147,
+            "tsdf_contribution_variance_proxy": 0.019702
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0013.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014301.png",
+            "valid_ratio": 0.17884,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9992,
+            "reprojection_error_median_m": 0.399744,
+            "depth_discontinuity_score": 0.006751,
+            "tsdf_contribution_variance_proxy": 0.131223
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0027.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014203.png",
+            "valid_ratio": 0.145992,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9988,
+            "reprojection_error_median_m": 0.977224,
+            "depth_discontinuity_score": 0.010355,
+            "tsdf_contribution_variance_proxy": 0.079823
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0011.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014244.png",
+            "valid_ratio": 0.113837,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 0.9972,
+            "reprojection_error_median_m": 0.505351,
+            "depth_discontinuity_score": 0.003452,
+            "tsdf_contribution_variance_proxy": 0.026206
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0015.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014320.png",
+            "valid_ratio": 0.091587,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 1.0,
+            "reprojection_error_median_m": 0.536228,
+            "depth_discontinuity_score": 0.005581,
+            "tsdf_contribution_variance_proxy": 0.05555
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0012.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014256.png",
+            "valid_ratio": 0.061777,
+            "sampled_points": 2500,
+            "voxel_coverage_ratio": 1.0,
+            "reprojection_error_median_m": 0.713861,
+            "depth_discontinuity_score": 0.009262,
+            "tsdf_contribution_variance_proxy": 0.085303
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0021.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014102.png",
+            "valid_ratio": 0.023047,
+            "sampled_points": 873,
+            "voxel_coverage_ratio": 1.0,
+            "reprojection_error_median_m": 3.899803,
+            "depth_discontinuity_score": 0.015711,
+            "tsdf_contribution_variance_proxy": 0.014783
+          },
+          {
+            "file": "/nodeodm-data/002ca5e3-6eca-4aba-b3e2-623f97878136/opensfm/undistorted/openmvs/depthmaps/depth0005.dmap",
+            "shot_id": "Capturadepantalla2026-06-27014129.png",
+            "valid_ratio": 0.021323,
+            "sampled_points": 686,
+            "voxel_coverage_ratio": 1.0,
+            "reprojection_error_median_m": 3.802551,
+            "depth_discontinuity_score": 0.010841,
+            "tsdf_contribution_variance_proxy": 0.019725
+          }
+        ]
+      },
+      "grid_shape": [
+        29,
+        36,
+        28
+      ],
+      "grid_step_m": 0.35,
+      "truncation_m": 1.4,
+      "known_voxel_ratio": 0.043103,
+      "tsdf_diagnostics": {
+        "known_voxels": 1260,
+        "known_negative_voxels": 477,
+        "known_positive_voxels": 783,
+        "closed_negative_voxels": 595,
+        "closed_positive_voxels": 28637,
+        "raw_tsdf_min": -0.997131,
+        "raw_tsdf_max": 1.0
+      },
+      "tsdf_grid": "/app/data/dense_depth_tsdf_alignment_outputs/set2/dense_depth_tsdf_grid.npz",
+      "dense_depth_tsdf_mesh": "/app/data/dense_depth_tsdf_alignment_outputs/set2/dense_depth_tsdf_mesh.ply",
+      "ray_integration": {
+        "enabled": false
+      },
+      "ray_refined_tsdf_grid": null,
+      "ray_refined_tsdf_mesh": null,
+      "poisson_metrics": {
+        "vertices": 83623,
+        "triangles": 167102,
+        "boundary_edges": 226,
+        "non_manifold_edges": 39,
+        "non_manifold_vertices": 0,
+        "orientable": false,
+        "watertight": false,
+        "bbox_extent": [
+          7.819652,
+          10.009154,
+          7.107628
+        ],
+        "area": 162.982306,
+        "volume": null,
+        "components_connected": 39
+      },
+      "voxel_metrics": {
+        "vertices": 4826,
+        "triangles": 9648,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.25,
+          7.5
+        ],
+        "area": 301.5,
+        "volume": 135.671875,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.0339716,
+        "area_drift_vs_poisson_pct": 84.989406,
+        "hausdorff_approx": 1.256574,
+        "chamfer_approx": 1.212917
+      },
+      "point_sdf_metrics": {
+        "vertices": 12948,
+        "triangles": 25892,
+        "boundary_edges": 0,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": true,
+        "bbox_extent": [
+          8.0,
+          10.251058,
+          7.5
+        ],
+        "area": 245.881311,
+        "volume": 133.573573,
+        "components_connected": 1,
+        "bbox_drift_vs_poisson": 0.03400707,
+        "area_drift_vs_poisson_pct": 50.863806,
+        "hausdorff_approx": 1.230562,
+        "chamfer_approx": 1.214134
+      },
+      "pseudo_depth_camera_tsdf_metrics": {
+        "vertices": 11600,
+        "triangles": 22976,
+        "boundary_edges": 232,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          8.224459,
+          11.022971,
+          8.903989
+        ],
+        "area": 377.91311,
+        "volume": null,
+        "components_connected": 30,
+        "bbox_drift_vs_poisson": 0.14442085,
+        "area_drift_vs_poisson_pct": 131.873704,
+        "hausdorff_approx": 5.221442,
+        "chamfer_approx": 2.049906
+      },
+      "dense_depth_tsdf_metrics": {
+        "vertices": 4366,
+        "triangles": 8524,
+        "boundary_edges": 12,
+        "non_manifold_edges": 0,
+        "non_manifold_vertices": 0,
+        "orientable": true,
+        "watertight": false,
+        "bbox_extent": [
+          7.837798,
+          8.707057,
+          5.592725
+        ],
+        "area": 129.007484,
+        "volume": null,
+        "components_connected": 63,
+        "bbox_drift_vs_poisson": 0.13725012,
+        "area_drift_vs_poisson_pct": -20.845712,
+        "hausdorff_approx": 3.290061,
+        "chamfer_approx": 1.861858
+      },
+      "ray_refined_dense_depth_tsdf_metrics": null
+    }
+  }
+}

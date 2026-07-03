@@ -1,0 +1,370 @@
+{
+  "run_index": 1,
+  "dataset": "set1",
+  "session_id": "065d24e9-e723-42a5-b1c5-f14a5e4bc36b",
+  "point_cloud_path": "data/processed/065d24e9-e723-42a5-b1c5-f14a5e4bc36b/point_cloud.ply",
+  "nodeodm": {
+    "attempts": [
+      {
+        "attempt": "attempt_1",
+        "options": [
+          {
+            "name": "feature-quality",
+            "value": "ultra"
+          },
+          {
+            "name": "pc-quality",
+            "value": "high"
+          },
+          {
+            "name": "min-num-features",
+            "value": "16000"
+          },
+          {
+            "name": "matcher-neighbors",
+            "value": "12"
+          },
+          {
+            "name": "depthmap-resolution",
+            "value": "high"
+          },
+          {
+            "name": "pc-filter",
+            "value": "1"
+          },
+          {
+            "name": "end-with",
+            "value": "odm_filterpoints"
+          }
+        ],
+        "task_uuid": "85ee2d31-702c-43f8-871e-ac6f2858d048",
+        "status": "completed",
+        "nodeodm_info": {
+          "uuid": "85ee2d31-702c-43f8-871e-ac6f2858d048",
+          "name": "forestvol-065d24e9-e723-42a5-b1c5-f14a5e4bc36b-attempt_1",
+          "dateCreated": 1782790382600,
+          "processingTime": 251184,
+          "status": {
+            "code": 40
+          },
+          "options": [
+            {
+              "name": "end-with",
+              "value": "odm_filterpoints"
+            },
+            {
+              "name": "min-num-features",
+              "value": 16000
+            },
+            {
+              "name": "feature-quality",
+              "value": "ultra"
+            },
+            {
+              "name": "matcher-neighbors",
+              "value": 12
+            },
+            {
+              "name": "pc-quality",
+              "value": "high"
+            },
+            {
+              "name": "pc-filter",
+              "value": 1
+            },
+            {
+              "name": "pc-ept",
+              "value": true
+            },
+            {
+              "name": "cog",
+              "value": true
+            },
+            {
+              "name": "gltf",
+              "value": true
+            }
+          ],
+          "imagesCount": 18,
+          "progress": 100
+        }
+      }
+    ],
+    "task_uuid": "85ee2d31-702c-43f8-871e-ac6f2858d048",
+    "gcp_path": "data/processed/065d24e9-e723-42a5-b1c5-f14a5e4bc36b/gcp_list.txt"
+  },
+  "pipeline_state": "COMPLETED",
+  "manual_intervention_required": false,
+  "total_time_seconds": 293.687946,
+  "memory": {
+    "python_tracemalloc_current_mb": 0.763163,
+    "python_tracemalloc_peak_mb": 165.837127
+  },
+  "segmentation_config": {
+    "outlier_nb_neighbors": 24,
+    "outlier_std_ratio": 2.0,
+    "voxel_size_m": 0.07,
+    "dbscan_eps_m": 0.5,
+    "dbscan_min_points": 10,
+    "cluster_selection": "top_3_by_points",
+    "pdi_voxel_size_m": 0.25
+  },
+  "stages": [
+    {
+      "stage": "RAW Dense Point Cloud",
+      "point_count": 358198,
+      "loss_ratio_from_previous": null,
+      "loss_percent_from_previous": null,
+      "bbox_extent_m": [
+        17.037688,
+        16.69451,
+        21.342204
+      ],
+      "bbox_volume_m3": 6070.487761,
+      "centroid": [
+        5.277486,
+        -1.402891,
+        -5.156111
+      ],
+      "density_points_per_m3": 59.006461
+    },
+    {
+      "stage": "Outlier Removal",
+      "point_count": 353658,
+      "loss_ratio_from_previous": 0.012675,
+      "loss_percent_from_previous": 1.2675,
+      "bbox_extent_m": [
+        17.037688,
+        16.679,
+        20.838406
+      ],
+      "bbox_volume_m3": 5921.683048,
+      "centroid": [
+        5.291734,
+        -1.388254,
+        -5.157666
+      ],
+      "density_points_per_m3": 59.722548
+    },
+    {
+      "stage": "Voxelization",
+      "point_count": 32508,
+      "loss_ratio_from_previous": 0.908081,
+      "loss_percent_from_previous": 90.8081,
+      "bbox_extent_m": [
+        16.998614,
+        16.656894,
+        20.823743
+      ],
+      "bbox_volume_m3": 5896.12001,
+      "centroid": [
+        4.829987,
+        -2.072349,
+        -5.498765
+      ],
+      "density_points_per_m3": 5.513456
+    },
+    {
+      "stage": "DBSCAN + Cluster Selection",
+      "point_count": 30479,
+      "loss_ratio_from_previous": 0.062415,
+      "loss_percent_from_previous": 6.2415,
+      "bbox_extent_m": [
+        13.796986,
+        14.385116,
+        6.089181
+      ],
+      "bbox_volume_m3": 1208.527318,
+      "centroid": [
+        4.831442,
+        -2.141635,
+        -5.528225
+      ],
+      "density_points_per_m3": 25.219951
+    },
+    {
+      "stage": "PDI",
+      "point_count": 30479,
+      "loss_ratio_from_previous": 0.0,
+      "loss_percent_from_previous": 0.0,
+      "bbox_extent_m": [
+        13.796986,
+        14.385116,
+        6.089181
+      ],
+      "bbox_volume_m3": 1208.527318,
+      "centroid": [
+        4.831442,
+        -2.141635,
+        -5.528225
+      ],
+      "density_points_per_m3": 25.219951,
+      "pdi": {
+        "method": "point_density_integration",
+        "volume_m3": 285.9531,
+        "voxel_size_m": 0.25,
+        "density_threshold_points_per_voxel": 1,
+        "hull_density_points_per_m3": 90.876671,
+        "hull_volume_m3": 335.388605,
+        "solid_voxels": 18301,
+        "occupied_voxels": 3036,
+        "dense_voxels": 3036
+      }
+    }
+  ],
+  "cluster_count": 33,
+  "noise_points": 128,
+  "selected_cluster_ids": [
+    0,
+    2,
+    20
+  ],
+  "clusters_top10": [
+    {
+      "rank": 1,
+      "cluster_id": 0,
+      "point_count": 29660,
+      "point_ratio_input": 0.912391,
+      "bbox_extent_m": [
+        11.484783,
+        14.385116,
+        6.089181
+      ],
+      "bbox_volume_m3": 1005.993169,
+      "density_points_per_m3": 29.483302
+    },
+    {
+      "rank": 2,
+      "cluster_id": 2,
+      "point_count": 496,
+      "point_ratio_input": 0.015258,
+      "bbox_extent_m": [
+        1.873732,
+        1.565276,
+        0.542603
+      ],
+      "bbox_volume_m3": 1.591404,
+      "density_points_per_m3": 311.674552
+    },
+    {
+      "rank": 3,
+      "cluster_id": 20,
+      "point_count": 323,
+      "point_ratio_input": 0.009936,
+      "bbox_extent_m": [
+        1.314052,
+        0.879585,
+        0.921799
+      ],
+      "bbox_volume_m3": 1.065434,
+      "density_points_per_m3": 303.162767
+    },
+    {
+      "rank": 4,
+      "cluster_id": 26,
+      "point_count": 305,
+      "point_ratio_input": 0.009382,
+      "bbox_extent_m": [
+        1.217169,
+        1.929038,
+        1.027093
+      ],
+      "bbox_volume_m3": 2.411581,
+      "density_points_per_m3": 126.47307
+    },
+    {
+      "rank": 5,
+      "cluster_id": 1,
+      "point_count": 296,
+      "point_ratio_input": 0.009105,
+      "bbox_extent_m": [
+        1.030065,
+        1.553424,
+        0.547354
+      ],
+      "bbox_volume_m3": 0.875837,
+      "density_points_per_m3": 337.962477
+    },
+    {
+      "rank": 6,
+      "cluster_id": 21,
+      "point_count": 264,
+      "point_ratio_input": 0.008121,
+      "bbox_extent_m": [
+        4.747873,
+        0.849755,
+        0.507659
+      ],
+      "bbox_volume_m3": 2.048163,
+      "density_points_per_m3": 128.895983
+    },
+    {
+      "rank": 7,
+      "cluster_id": 5,
+      "point_count": 175,
+      "point_ratio_input": 0.005383,
+      "bbox_extent_m": [
+        0.995348,
+        1.249447,
+        1.942611
+      ],
+      "bbox_volume_m3": 2.415899,
+      "density_points_per_m3": 72.436806
+    },
+    {
+      "rank": 8,
+      "cluster_id": 24,
+      "point_count": 99,
+      "point_ratio_input": 0.003045,
+      "bbox_extent_m": [
+        0.904826,
+        0.697198,
+        0.595029
+      ],
+      "bbox_volume_m3": 0.37537,
+      "density_points_per_m3": 263.739887
+    },
+    {
+      "rank": 9,
+      "cluster_id": 30,
+      "point_count": 81,
+      "point_ratio_input": 0.002492,
+      "bbox_extent_m": [
+        0.777357,
+        0.526344,
+        0.231907
+      ],
+      "bbox_volume_m3": 0.094886,
+      "density_points_per_m3": 853.652796
+    },
+    {
+      "rank": 10,
+      "cluster_id": 23,
+      "point_count": 80,
+      "point_ratio_input": 0.002461,
+      "bbox_extent_m": [
+        0.10557,
+        1.630867,
+        0.919881
+      ],
+      "bbox_volume_m3": 0.158376,
+      "density_points_per_m3": 505.126065
+    }
+  ],
+  "volume_m3": 285.9531,
+  "ground_truth_volume_m3": 119.74,
+  "absolute_error_m3": 166.2131,
+  "error_percentage": 138.811675,
+  "accepts_error_threshold": false,
+  "pdi_metrics": {
+    "method": "point_density_integration",
+    "volume_m3": 285.9531,
+    "voxel_size_m": 0.25,
+    "density_threshold_points_per_voxel": 1,
+    "hull_density_points_per_m3": 90.876671,
+    "hull_volume_m3": 335.388605,
+    "solid_voxels": 18301,
+    "occupied_voxels": 3036,
+    "dense_voxels": 3036
+  }
+}

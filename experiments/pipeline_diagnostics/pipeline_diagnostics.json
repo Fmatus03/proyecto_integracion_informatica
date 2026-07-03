@@ -1,0 +1,5986 @@
+{
+  "run_id": "RUN-PIPELINE-CLOUD-DIAGNOSTICS-01",
+  "created_at_utc": "2026-06-30T01:18:23Z",
+  "root": "/app",
+  "ground_truth_volume_m3": 119.74,
+  "nodeodm_opensfm_metrics": {
+    "set1": {
+      "nodeodm_task_uuid": "4d324ed3-3ec9-446b-9976-39285560b6b5",
+      "opensfm_dir": "/var/www/data/4d324ed3-3ec9-446b-9976-39285560b6b5/opensfm",
+      "cameras_models_count": 18,
+      "reconstructed_shots_from_reconstruction_json": 18,
+      "landmarks_from_reconstruction_json": 12024,
+      "tracks_csv_rows_including_header": 10201,
+      "tracks_csv_observations_rows_estimate": 10200,
+      "reconstruction_statistics": {
+        "components": 1,
+        "has_gps": false,
+        "has_gcp": true,
+        "initial_points_count": 36803,
+        "initial_shots_count": 18,
+        "reconstructed_points_count": 12024,
+        "reconstructed_shots_count": 18,
+        "observations_count": 31671,
+        "average_track_length": 2.6339820359281436,
+        "average_track_length_over_two": 3.519433924656169,
+        "histogram_track_length": {
+          "2": 7007,
+          "3": 3526,
+          "4": 857,
+          "5": 348,
+          "6": 160,
+          "7": 76,
+          "8": 35,
+          "9": 11,
+          "10": 4
+        },
+        "reprojection_error_normalized": 0.16485530464295284,
+        "reprojection_error_pixels": 0.4519559220438218,
+        "reprojection_error_angular": 0.00029767348164481727,
+        "reprojection_histogram_normalized": [
+          [
+            10079.0,
+            2738.0,
+            1477.0,
+            848.0,
+            671.0,
+            554.0,
+            462.0,
+            339.0,
+            209.0,
+            125.0,
+            91.0,
+            64.0,
+            53.0,
+            56.0,
+            39.0,
+            33.0,
+            25.0,
+            28.0,
+            22.0,
+            23.0,
+            24.0,
+            12.0,
+            14.0,
+            8.0,
+            10.0,
+            5.0,
+            2.0,
+            1.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0002742699535833293,
+            0.08069552556662703,
+            0.1611167811796707,
+            0.2415380367927144,
+            0.3219592924057581,
+            0.4023805480188018,
+            0.4828018036318455,
+            0.5632230592448892,
+            0.6436443148579329,
+            0.7240655704709766,
+            0.8044868260840203,
+            0.884908081697064,
+            0.9653293373101077,
+            1.0457505929231514,
+            1.1261718485361951,
+            1.2065931041492388,
+            1.2870143597622825,
+            1.3674356153753262,
+            1.44785687098837,
+            1.5282781266014136,
+            1.6086993822144573,
+            1.689120637827501,
+            1.7695418934405447,
+            1.8499631490535884,
+            1.930384404666632,
+            2.0108056602796758,
+            2.0912269158927193,
+            2.1716481715057627,
+            2.2520694271188066,
+            2.3324906827318506,
+            2.412911938344894
+          ]
+        ],
+        "reprojection_histogram_pixels": [
+          [
+            6793.0,
+            3486.0,
+            1705.0,
+            1256.0,
+            860.0,
+            659.0,
+            606.0,
+            478.0,
+            394.0,
+            368.0,
+            278.0,
+            220.0,
+            167.0,
+            118.0,
+            78.0,
+            40.0,
+            45.0,
+            45.0,
+            45.0,
+            38.0,
+            41.0,
+            38.0,
+            33.0,
+            34.0,
+            26.0,
+            41.0,
+            30.0,
+            29.0,
+            25.0,
+            37.0
+          ],
+          [
+            0.0012711210456537718,
+            0.1344698726195837,
+            0.2676686241935136,
+            0.4008673757674436,
+            0.5340661273413735,
+            0.6672648789153034,
+            0.8004636304892334,
+            0.9336623820631633,
+            1.0668611336370932,
+            1.2000598852110231,
+            1.333258636784953,
+            1.466457388358883,
+            1.599656139932813,
+            1.732854891506743,
+            1.866053643080673,
+            1.9992523946546028,
+            2.132451146228533,
+            2.265649897802463,
+            2.3988486493763927,
+            2.5320474009503227,
+            2.6652461525242526,
+            2.7984449040981825,
+            2.9316436556721124,
+            3.0648424072460423,
+            3.1980411588199726,
+            3.3312399103939025,
+            3.4644386619678325,
+            3.5976374135417624,
+            3.7308361651156923,
+            3.864034916689622,
+            3.9972336682635516
+          ]
+        ],
+        "reprojection_histogram_angular": [
+          [
+            17962.0,
+            47.0,
+            0.0,
+            2.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            7.183534379717236e-07,
+            0.0030302339693287065,
+            0.006059749585219441,
+            0.009089265201110176,
+            0.01211878081700091,
+            0.015148296432891645,
+            0.01817781204878238,
+            0.021207327664673113,
+            0.024236843280563847,
+            0.02726635889645458,
+            0.030295874512345316,
+            0.03332539012823605,
+            0.03635490574412679,
+            0.03938442136001752,
+            0.042413936975908256,
+            0.04544345259179899,
+            0.048472968207689725,
+            0.05150248382358046,
+            0.05453199943947119,
+            0.05756151505536193,
+            0.06059103067125266,
+            0.06362054628714339,
+            0.06665006190303413,
+            0.06967957751892487,
+            0.0727090931348156,
+            0.07573860875070634,
+            0.07876812436659707,
+            0.0817976399824878,
+            0.08482715559837854,
+            0.08785667121426928,
+            0.09088618683016
+          ]
+        ]
+      },
+      "processing_statistics": {
+        "steps_times": {
+          "Feature Extraction": 19.000030284999866,
+          "Features Matching": 48.336660338,
+          "Tracks Merging": 1.904501664000236,
+          "Reconstruction": 29.792625186999885,
+          "Total Time": 99.03381747399999
+        },
+        "date": "30/06/2026 at 00:41:00",
+        "start_date": "01/01/1970 at 00:00:00",
+        "end_date": "01/01/1970 at 00:00:00",
+        "area": 112.59935705195176
+      },
+      "features_statistics": {
+        "detected_features": {
+          "min": 12784,
+          "max": 19570,
+          "mean": 16645,
+          "median": 16515
+        },
+        "reconstructed_features": {
+          "min": 90,
+          "max": 5699,
+          "mean": 1759,
+          "median": 1140
+        }
+      },
+      "reprojection_error_pixels": 0.4519559220438218,
+      "reprojection_error_normalized": 0.16485530464295284,
+      "reprojection_error_angular": 0.00029767348164481727,
+      "poses_sample": [
+        "Capturadepantalla2026-06-16201137.png",
+        "Capturadepantalla2026-06-16200840.png",
+        "Capturadepantalla2026-06-16200950.png",
+        "Capturadepantalla2026-06-16201123.png",
+        "Capturadepantalla2026-06-16200918.png",
+        "Capturadepantalla2026-06-16200928.png",
+        "Capturadepantalla2026-06-16201050.png",
+        "Capturadepantalla2026-06-16200740.png",
+        "Capturadepantalla2026-06-16200759.png",
+        "Capturadepantalla2026-06-16200936.png"
+      ]
+    },
+    "set2": {
+      "nodeodm_task_uuid": "86f11977-7789-42d8-b4b0-852f623f1df0",
+      "opensfm_dir": "/var/www/data/86f11977-7789-42d8-b4b0-852f623f1df0/opensfm",
+      "cameras_models_count": 28,
+      "reconstructed_shots_from_reconstruction_json": 28,
+      "landmarks_from_reconstruction_json": 14722,
+      "tracks_csv_rows_including_header": 12687,
+      "tracks_csv_observations_rows_estimate": 12686,
+      "reconstruction_statistics": {
+        "components": 1,
+        "has_gps": false,
+        "has_gcp": true,
+        "initial_points_count": 38490,
+        "initial_shots_count": 28,
+        "reconstructed_points_count": 14722,
+        "reconstructed_shots_count": 28,
+        "observations_count": 43113,
+        "average_track_length": 2.9284743920662955,
+        "average_track_length_over_two": 4.094544897333742,
+        "histogram_track_length": {
+          "2": 8196,
+          "3": 2823,
+          "4": 2116,
+          "5": 722,
+          "6": 384,
+          "7": 210,
+          "8": 133,
+          "9": 72,
+          "10": 42,
+          "11": 17,
+          "12": 6,
+          "13": 1
+        },
+        "reprojection_error_normalized": 0.135559025193991,
+        "reprojection_error_pixels": 0.42176454077084424,
+        "reprojection_error_angular": 0.0003077322242515713,
+        "reprojection_histogram_normalized": [
+          [
+            17324.0,
+            6220.0,
+            2922.0,
+            1682.0,
+            1046.0,
+            695.0,
+            516.0,
+            350.0,
+            249.0,
+            179.0,
+            131.0,
+            87.0,
+            82.0,
+            64.0,
+            46.0,
+            36.0,
+            26.0,
+            22.0,
+            29.0,
+            20.0,
+            15.0,
+            15.0,
+            13.0,
+            5.0,
+            9.0,
+            5.0,
+            2.0,
+            4.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.00029623312261240994,
+            0.07566325773985547,
+            0.1510302823570985,
+            0.22639730697434157,
+            0.3017643315915846,
+            0.37713135620882765,
+            0.45249838082607075,
+            0.5278654054433137,
+            0.6032324300605568,
+            0.6785994546777999,
+            0.7539664792950429,
+            0.829333503912286,
+            0.9047005285295291,
+            0.9800675531467721,
+            1.055434577764015,
+            1.1308016023812582,
+            1.2061686269985012,
+            1.2815356516157443,
+            1.3569026762329874,
+            1.4322697008502303,
+            1.5076367254674734,
+            1.5830037500847165,
+            1.6583707747019596,
+            1.7337377993192027,
+            1.8091048239364458,
+            1.8844718485536887,
+            1.9598388731709318,
+            2.035205897788175,
+            2.1105729224054177,
+            2.185939947022661,
+            2.261306971639904
+          ]
+        ],
+        "reprojection_histogram_pixels": [
+          [
+            10927.0,
+            6816.0,
+            3789.0,
+            2425.0,
+            1802.0,
+            1352.0,
+            917.0,
+            782.0,
+            573.0,
+            490.0,
+            362.0,
+            273.0,
+            194.0,
+            166.0,
+            141.0,
+            104.0,
+            102.0,
+            73.0,
+            63.0,
+            65.0,
+            48.0,
+            56.0,
+            40.0,
+            48.0,
+            37.0,
+            30.0,
+            34.0,
+            21.0,
+            36.0,
+            29.0
+          ],
+          [
+            0.0010943552213232535,
+            0.13424585762394586,
+            0.26739736002656844,
+            0.400548862429191,
+            0.5337003648318137,
+            0.6668518672344363,
+            0.8000033696370589,
+            0.9331548720396815,
+            1.066306374442304,
+            1.1994578768449267,
+            1.3326093792475493,
+            1.465760881650172,
+            1.5989123840527943,
+            1.732063886455417,
+            1.8652153888580396,
+            1.9983668912606622,
+            2.131518393663285,
+            2.2646698960659073,
+            2.39782139846853,
+            2.5309729008711526,
+            2.6641244032737754,
+            2.797275905676398,
+            2.9304274080790207,
+            3.063578910481643,
+            3.1967304128842655,
+            3.3298819152868884,
+            3.463033417689511,
+            3.5961849200921336,
+            3.729336422494756,
+            3.862487924897379,
+            3.9956394273000013
+          ]
+        ],
+        "reprojection_histogram_angular": [
+          [
+            31794.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            7.511426902490173e-07,
+            0.016104030353415393,
+            0.032207309564140536,
+            0.04831058877486568,
+            0.06441386798559083,
+            0.08051714719631597,
+            0.09662042640704112,
+            0.11272370561776626,
+            0.1288269848284914,
+            0.14493026403921652,
+            0.16103354324994168,
+            0.17713682246066684,
+            0.19324010167139197,
+            0.2093433808821171,
+            0.22544666009284225,
+            0.2415499393035674,
+            0.25765321851429257,
+            0.2737564977250177,
+            0.28985977693574283,
+            0.305963056146468,
+            0.32206633535719315,
+            0.3381696145679183,
+            0.35427289377864346,
+            0.3703761729893686,
+            0.3864794522000937,
+            0.40258273141081885,
+            0.418686010621544,
+            0.43478928983226917,
+            0.4508925690429943,
+            0.4669958482537194,
+            0.4830991274644446
+          ]
+        ]
+      },
+      "processing_statistics": {
+        "steps_times": {
+          "Feature Extraction": 19.793594355000096,
+          "Features Matching": 94.49597542799984,
+          "Tracks Merging": 2.4017690670002594,
+          "Reconstruction": 39.548473149000074,
+          "Total Time": 156.23981199900027
+        },
+        "date": "30/06/2026 at 00:48:05",
+        "start_date": "01/01/1970 at 00:00:00",
+        "end_date": "01/01/1970 at 00:00:00",
+        "area": 28.5522848580897
+      },
+      "features_statistics": {
+        "detected_features": {
+          "min": 9137,
+          "max": 18444,
+          "mean": 14226,
+          "median": 14157
+        },
+        "reconstructed_features": {
+          "min": 15,
+          "max": 6702,
+          "mean": 1539,
+          "median": 755
+        }
+      },
+      "reprojection_error_pixels": 0.42176454077084424,
+      "reprojection_error_normalized": 0.135559025193991,
+      "reprojection_error_angular": 0.0003077322242515713,
+      "poses_sample": [
+        "Capturadepantalla2026-06-27014339.png",
+        "Capturadepantalla2026-06-27014225.png",
+        "Capturadepantalla2026-06-27014309.png",
+        "Capturadepantalla2026-06-27014042.png",
+        "Capturadepantalla2026-06-27014347.png",
+        "Capturadepantalla2026-06-27014203.png",
+        "Capturadepantalla2026-06-27014314.png",
+        "Capturadepantalla2026-06-27014026.png",
+        "Capturadepantalla2026-06-27014244.png",
+        "Capturadepantalla2026-06-27014320.png"
+      ]
+    }
+  },
+  "datasets": {
+    "set1": {
+      "input": {
+        "image_dir": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera",
+        "image_count": 18,
+        "resolutions": {
+          "1941x1108": 1,
+          "1556x1117": 1,
+          "1525x1131": 1,
+          "1546x1116": 1,
+          "1867x1013": 1,
+          "1872x1022": 1,
+          "1752x996": 1,
+          "1867x1058": 1,
+          "1820x1055": 1,
+          "1788x937": 1,
+          "1763x1063": 1,
+          "1767x1055": 1,
+          "1852x1087": 1,
+          "1855x1095": 1,
+          "1132x1127": 1,
+          "1157x1117": 1,
+          "1331x1117": 1,
+          "1218x1057": 1
+        },
+        "sample_images": [
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera/Captura de pantalla 2026-06-16 200740.png",
+            "width": 1941,
+            "height": 1108
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera/Captura de pantalla 2026-06-16 200759.png",
+            "width": 1556,
+            "height": 1117
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera/Captura de pantalla 2026-06-16 200808.png",
+            "width": 1525,
+            "height": 1131
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera/Captura de pantalla 2026-06-16 200822.png",
+            "width": 1546,
+            "height": 1116
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera/Captura de pantalla 2026-06-16 200840.png",
+            "width": 1867,
+            "height": 1013
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera/Captura de pantalla 2026-06-16 200848.png",
+            "width": 1872,
+            "height": 1022
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera/Captura de pantalla 2026-06-16 200902.png",
+            "width": 1752,
+            "height": 996
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera/Captura de pantalla 2026-06-16 200918.png",
+            "width": 1867,
+            "height": 1058
+          }
+        ],
+        "discarded_images": 0,
+        "discard_reason": "No upload/reconstruction discard list was present in the persisted artifacts."
+      },
+      "opensfm_nodeodm": {
+        "nodeodm_task_uuid": "4d324ed3-3ec9-446b-9976-39285560b6b5",
+        "opensfm_dir": "/var/www/data/4d324ed3-3ec9-446b-9976-39285560b6b5/opensfm",
+        "cameras_models_count": 18,
+        "reconstructed_shots_from_reconstruction_json": 18,
+        "landmarks_from_reconstruction_json": 12024,
+        "tracks_csv_rows_including_header": 10201,
+        "tracks_csv_observations_rows_estimate": 10200,
+        "reconstruction_statistics": {
+          "components": 1,
+          "has_gps": false,
+          "has_gcp": true,
+          "initial_points_count": 36803,
+          "initial_shots_count": 18,
+          "reconstructed_points_count": 12024,
+          "reconstructed_shots_count": 18,
+          "observations_count": 31671,
+          "average_track_length": 2.6339820359281436,
+          "average_track_length_over_two": 3.519433924656169,
+          "histogram_track_length": {
+            "2": 7007,
+            "3": 3526,
+            "4": 857,
+            "5": 348,
+            "6": 160,
+            "7": 76,
+            "8": 35,
+            "9": 11,
+            "10": 4
+          },
+          "reprojection_error_normalized": 0.16485530464295284,
+          "reprojection_error_pixels": 0.4519559220438218,
+          "reprojection_error_angular": 0.00029767348164481727,
+          "reprojection_histogram_normalized": [
+            [
+              10079.0,
+              2738.0,
+              1477.0,
+              848.0,
+              671.0,
+              554.0,
+              462.0,
+              339.0,
+              209.0,
+              125.0,
+              91.0,
+              64.0,
+              53.0,
+              56.0,
+              39.0,
+              33.0,
+              25.0,
+              28.0,
+              22.0,
+              23.0,
+              24.0,
+              12.0,
+              14.0,
+              8.0,
+              10.0,
+              5.0,
+              2.0,
+              1.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0002742699535833293,
+              0.08069552556662703,
+              0.1611167811796707,
+              0.2415380367927144,
+              0.3219592924057581,
+              0.4023805480188018,
+              0.4828018036318455,
+              0.5632230592448892,
+              0.6436443148579329,
+              0.7240655704709766,
+              0.8044868260840203,
+              0.884908081697064,
+              0.9653293373101077,
+              1.0457505929231514,
+              1.1261718485361951,
+              1.2065931041492388,
+              1.2870143597622825,
+              1.3674356153753262,
+              1.44785687098837,
+              1.5282781266014136,
+              1.6086993822144573,
+              1.689120637827501,
+              1.7695418934405447,
+              1.8499631490535884,
+              1.930384404666632,
+              2.0108056602796758,
+              2.0912269158927193,
+              2.1716481715057627,
+              2.2520694271188066,
+              2.3324906827318506,
+              2.412911938344894
+            ]
+          ],
+          "reprojection_histogram_pixels": [
+            [
+              6793.0,
+              3486.0,
+              1705.0,
+              1256.0,
+              860.0,
+              659.0,
+              606.0,
+              478.0,
+              394.0,
+              368.0,
+              278.0,
+              220.0,
+              167.0,
+              118.0,
+              78.0,
+              40.0,
+              45.0,
+              45.0,
+              45.0,
+              38.0,
+              41.0,
+              38.0,
+              33.0,
+              34.0,
+              26.0,
+              41.0,
+              30.0,
+              29.0,
+              25.0,
+              37.0
+            ],
+            [
+              0.0012711210456537718,
+              0.1344698726195837,
+              0.2676686241935136,
+              0.4008673757674436,
+              0.5340661273413735,
+              0.6672648789153034,
+              0.8004636304892334,
+              0.9336623820631633,
+              1.0668611336370932,
+              1.2000598852110231,
+              1.333258636784953,
+              1.466457388358883,
+              1.599656139932813,
+              1.732854891506743,
+              1.866053643080673,
+              1.9992523946546028,
+              2.132451146228533,
+              2.265649897802463,
+              2.3988486493763927,
+              2.5320474009503227,
+              2.6652461525242526,
+              2.7984449040981825,
+              2.9316436556721124,
+              3.0648424072460423,
+              3.1980411588199726,
+              3.3312399103939025,
+              3.4644386619678325,
+              3.5976374135417624,
+              3.7308361651156923,
+              3.864034916689622,
+              3.9972336682635516
+            ]
+          ],
+          "reprojection_histogram_angular": [
+            [
+              17962.0,
+              47.0,
+              0.0,
+              2.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              7.183534379717236e-07,
+              0.0030302339693287065,
+              0.006059749585219441,
+              0.009089265201110176,
+              0.01211878081700091,
+              0.015148296432891645,
+              0.01817781204878238,
+              0.021207327664673113,
+              0.024236843280563847,
+              0.02726635889645458,
+              0.030295874512345316,
+              0.03332539012823605,
+              0.03635490574412679,
+              0.03938442136001752,
+              0.042413936975908256,
+              0.04544345259179899,
+              0.048472968207689725,
+              0.05150248382358046,
+              0.05453199943947119,
+              0.05756151505536193,
+              0.06059103067125266,
+              0.06362054628714339,
+              0.06665006190303413,
+              0.06967957751892487,
+              0.0727090931348156,
+              0.07573860875070634,
+              0.07876812436659707,
+              0.0817976399824878,
+              0.08482715559837854,
+              0.08785667121426928,
+              0.09088618683016
+            ]
+          ]
+        },
+        "processing_statistics": {
+          "steps_times": {
+            "Feature Extraction": 19.000030284999866,
+            "Features Matching": 48.336660338,
+            "Tracks Merging": 1.904501664000236,
+            "Reconstruction": 29.792625186999885,
+            "Total Time": 99.03381747399999
+          },
+          "date": "30/06/2026 at 00:41:00",
+          "start_date": "01/01/1970 at 00:00:00",
+          "end_date": "01/01/1970 at 00:00:00",
+          "area": 112.59935705195176
+        },
+        "features_statistics": {
+          "detected_features": {
+            "min": 12784,
+            "max": 19570,
+            "mean": 16645,
+            "median": 16515
+          },
+          "reconstructed_features": {
+            "min": 90,
+            "max": 5699,
+            "mean": 1759,
+            "median": 1140
+          }
+        },
+        "reprojection_error_pixels": 0.4519559220438218,
+        "reprojection_error_normalized": 0.16485530464295284,
+        "reprojection_error_angular": 0.00029767348164481727,
+        "poses_sample": [
+          "Capturadepantalla2026-06-16201137.png",
+          "Capturadepantalla2026-06-16200840.png",
+          "Capturadepantalla2026-06-16200950.png",
+          "Capturadepantalla2026-06-16201123.png",
+          "Capturadepantalla2026-06-16200918.png",
+          "Capturadepantalla2026-06-16200928.png",
+          "Capturadepantalla2026-06-16201050.png",
+          "Capturadepantalla2026-06-16200740.png",
+          "Capturadepantalla2026-06-16200759.png",
+          "Capturadepantalla2026-06-16200936.png"
+        ]
+      },
+      "productive_pipeline": {
+        "productive_report_path": "/app/data/pdi_productive_migration_hito05_set1.json",
+        "productive_report": {
+          "run_id": "RUN-PDI-PRODUCTIVE-MIGRATION-01",
+          "dataset": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera",
+          "image_count": 18,
+          "steps": [
+            {
+              "step": "upload",
+              "status_code": 200,
+              "seconds": 1.951,
+              "body": {
+                "session_id": "b3c14c84-b660-407f-817f-1fc185ce3e9c",
+                "image_count": 18,
+                "valid": true,
+                "errors": [],
+                "pipeline_state": "VALIDATED"
+              }
+            },
+            {
+              "step": "calibrate",
+              "status_code": 200,
+              "seconds": 8.653,
+              "body": {
+                "session_id": "b3c14c84-b660-407f-817f-1fc185ce3e9c",
+                "calibration_mode": "automatic",
+                "guide_detected_in_n_images": 15,
+                "detection_confidence": 0.8333,
+                "scale_px_per_cm": 1.1708,
+                "scale_error_percentage": null,
+                "pipeline_state": "CALIBRATED",
+                "warning": "Automatic detection confidence below recommended threshold (0.90); continuing with detected markers."
+              }
+            },
+            {
+              "step": "reconstruct",
+              "status_code": 202,
+              "seconds": 0.044,
+              "body": {
+                "session_id": "b3c14c84-b660-407f-817f-1fc185ce3e9c",
+                "pipeline_state": "RECONSTRUCTION_PENDING",
+                "message": "Reconstruction task submitted to NodeODM. Poll /api/results/{session_id} for status."
+              }
+            }
+          ],
+          "polls": [
+            {
+              "poll": 1,
+              "status_code": 200,
+              "seconds": 0.039,
+              "pipeline_state": "RECONSTRUCTION_PENDING",
+              "progress_percentage": 0,
+              "message": "Reconstruction task submitted to NodeODM"
+            },
+            {
+              "poll": 2,
+              "status_code": 200,
+              "seconds": 0.285,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 3,
+              "status_code": 200,
+              "seconds": 0.065,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 4,
+              "status_code": 200,
+              "seconds": 0.049,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 5,
+              "status_code": 200,
+              "seconds": 0.032,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 6,
+              "status_code": 200,
+              "seconds": 0.034,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 7,
+              "status_code": 200,
+              "seconds": 0.029,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 8,
+              "status_code": 200,
+              "seconds": 0.023,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 9,
+              "status_code": 200,
+              "seconds": 0.023,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 10,
+              "status_code": 200,
+              "seconds": 0.034,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 11,
+              "status_code": 200,
+              "seconds": 0.047,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 12,
+              "status_code": 200,
+              "seconds": 0.048,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 13,
+              "status_code": 200,
+              "seconds": 0.028,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 14,
+              "status_code": 200,
+              "seconds": 0.028,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 15,
+              "status_code": 200,
+              "seconds": 0.026,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 16,
+              "status_code": 200,
+              "seconds": 0.122,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 17,
+              "status_code": 200,
+              "seconds": 0.073,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 18,
+              "status_code": 200,
+              "seconds": 0.037,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 19,
+              "status_code": 200,
+              "seconds": 0.035,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 20,
+              "status_code": 200,
+              "seconds": 0.17,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 21,
+              "status_code": 200,
+              "seconds": 0.032,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 22,
+              "status_code": 200,
+              "seconds": 0.368,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 23,
+              "status_code": 200,
+              "seconds": 0.028,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 24,
+              "status_code": 200,
+              "seconds": 0.047,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 25,
+              "status_code": 200,
+              "seconds": 0.038,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 26,
+              "status_code": 200,
+              "seconds": 0.027,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 27,
+              "status_code": 200,
+              "seconds": 0.022,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 28,
+              "status_code": 200,
+              "seconds": 0.023,
+              "pipeline_state": "COMPLETED",
+              "progress_percentage": 100,
+              "message": "Preliminary volumetry completed"
+            }
+          ],
+          "final": {
+            "session_id": "b3c14c84-b660-407f-817f-1fc185ce3e9c",
+            "pipeline_state": "COMPLETED",
+            "progress_percentage": 100,
+            "point_cloud_path": "data/processed/b3c14c84-b660-407f-817f-1fc185ce3e9c/point_cloud.ply",
+            "mesh_ply_path": null,
+            "mesh_glb_path": null,
+            "mesh_watertight": null,
+            "mesh_repair_applied": false,
+            "volume_m3": 69.8281,
+            "volume_method": "point_density_integration",
+            "confidence_score": 100.0,
+            "confidence_level": "HIGH",
+            "quality_gates": [
+              {
+                "name": "segmentation.isolated_points",
+                "status": "PASS",
+                "metric": "isolated_point_ratio",
+                "value": 0.0,
+                "explanation": "High isolated-point ratio indicates possible background leakage or sparse segmentation."
+              },
+              {
+                "name": "segmentation.outliers",
+                "status": "PASS",
+                "metric": "outlier_ratio",
+                "value": 0.016667,
+                "explanation": "Nearest-neighbor outliers can expand PDI support and inflate volume."
+              },
+              {
+                "name": "segmentation.mean_density",
+                "status": "PASS",
+                "metric": "density_points_per_m3",
+                "value": 36.0504,
+                "explanation": "Low global density increases sensitivity to voxelization."
+              },
+              {
+                "name": "segmentation.bbox_aspect",
+                "status": "PASS",
+                "metric": "axis_ratio",
+                "value": 1.461,
+                "explanation": "Extreme bounding-box ratios can indicate missing views or background contamination."
+              },
+              {
+                "name": "coverage.spatial_distribution",
+                "status": "PASS",
+                "metric": "spatial_coverage_ratio",
+                "value": 0.208333,
+                "explanation": "Low occupied-cell coverage suggests incomplete spatial support."
+              },
+              {
+                "name": "coverage.interior_holes",
+                "status": "PASS",
+                "metric": "interior_hole_ratio",
+                "value": 0.734375,
+                "explanation": "High empty-interior ratio is a proxy for large holes or missing regions."
+              },
+              {
+                "name": "coverage.lateral",
+                "status": "PASS",
+                "metric": "lateral_coverage_ratio",
+                "value": 0.1875,
+                "explanation": "Low lateral coverage can cause structured underestimation."
+              },
+              {
+                "name": "coverage.top",
+                "status": "PASS",
+                "metric": "top_coverage_ratio",
+                "value": 0.194444,
+                "explanation": "Low top coverage can indicate missing upper surface observations."
+              },
+              {
+                "name": "coverage.bottom",
+                "status": "PASS",
+                "metric": "bottom_coverage_ratio",
+                "value": 0.25,
+                "explanation": "Low bottom coverage is expected in aerial capture but reduces volumetric confidence."
+              },
+              {
+                "name": "geometry.point_count",
+                "status": "PASS",
+                "metric": "point_count",
+                "value": 15799,
+                "explanation": "Low point count reduces estimator stability."
+              },
+              {
+                "name": "geometry.components",
+                "status": "PASS",
+                "metric": "voxel_components",
+                "value": 2,
+                "explanation": "Many disconnected occupied components indicate fragmentation or background leakage."
+              },
+              {
+                "name": "geometry.spatial_consistency",
+                "status": "PASS",
+                "metric": "dominant_component_voxel_ratio",
+                "value": 0.765957,
+                "explanation": "Low dominant-component ratio indicates fragmented spatial support."
+              }
+            ],
+            "diagnostic": [
+              "No quality gate produced WARNING or FAIL."
+            ],
+            "pdi_metrics": {
+              "method": "point_density_integration",
+              "volume_m3": 69.8281,
+              "voxel_size_m": 0.25,
+              "density_threshold_points_per_voxel": 2,
+              "hull_density_points_per_m3": 193.414566,
+              "hull_volume_m3": 81.684644,
+              "solid_voxels": 4469,
+              "occupied_voxels": 1081,
+              "dense_voxels": 975
+            },
+            "bounding_box_m": {
+              "length_m": 7.1052,
+              "width_m": 9.493,
+              "height_m": 6.4974
+            },
+            "ground_truth_volume_m3": 119.74,
+            "error_percentage": 41.6836,
+            "reconstruction_attempts": [
+              {
+                "attempt": "attempt_1",
+                "options": [
+                  {
+                    "name": "feature-quality",
+                    "value": "ultra"
+                  },
+                  {
+                    "name": "pc-quality",
+                    "value": "high"
+                  },
+                  {
+                    "name": "min-num-features",
+                    "value": "16000"
+                  },
+                  {
+                    "name": "matcher-neighbors",
+                    "value": "12"
+                  },
+                  {
+                    "name": "depthmap-resolution",
+                    "value": "high"
+                  },
+                  {
+                    "name": "pc-filter",
+                    "value": "1"
+                  },
+                  {
+                    "name": "end-with",
+                    "value": "odm_filterpoints"
+                  }
+                ],
+                "task_uuid": "4d324ed3-3ec9-446b-9976-39285560b6b5",
+                "status": "completed",
+                "message": null
+              }
+            ],
+            "scale_evidence": {
+              "image_count": 18,
+              "images_with_exif": 0,
+              "images_with_gps": 0,
+              "gcp_path": "data/processed/b3c14c84-b660-407f-817f-1fc185ce3e9c/gcp_list.txt",
+              "scale_certified": true,
+              "reason": "aruco_gcp_generated",
+              "aruco_gcp": {
+                "gcp_path": "data/processed/b3c14c84-b660-407f-817f-1fc185ce3e9c/gcp_list.txt",
+                "marker_size_m": 1.0,
+                "detections_count": 14,
+                "rejected_detections_count": 1,
+                "gcp_count": 56,
+                "detections": [
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200740.png",
+                    "marker_id": 0,
+                    "side_px": 157.2465,
+                    "corners_px": [
+                      [
+                        172.42379760742188,
+                        945.971435546875
+                      ],
+                      [
+                        329.755615234375,
+                        950.6117553710938
+                      ],
+                      [
+                        251.75607299804688,
+                        1070.4482421875
+                      ],
+                      [
+                        76.670654296875,
+                        1065.8885498046875
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200759.png",
+                    "marker_id": 0,
+                    "side_px": 156.9711,
+                    "corners_px": [
+                      [
+                        74.946533203125,
+                        966.9576416015625
+                      ],
+                      [
+                        256.9599609375,
+                        933.846435546875
+                      ],
+                      [
+                        267.2947692871094,
+                        1046.82421875
+                      ],
+                      [
+                        63.7465934753418,
+                        1088.170654296875
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200808.png",
+                    "marker_id": 0,
+                    "side_px": 166.9703,
+                    "corners_px": [
+                      [
+                        588.3670043945312,
+                        996.3278198242188
+                      ],
+                      [
+                        738.9896240234375,
+                        921.6459350585938
+                      ],
+                      [
+                        867.7879028320312,
+                        1011.08447265625
+                      ],
+                      [
+                        713.2904052734375,
+                        1102.059326171875
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200822.png",
+                    "marker_id": 0,
+                    "side_px": 153.578,
+                    "corners_px": [
+                      [
+                        1274.7979736328125,
+                        1012.9938354492188
+                      ],
+                      [
+                        1295.865478515625,
+                        909.96923828125
+                      ],
+                      [
+                        1477.51708984375,
+                        952.4959716796875
+                      ],
+                      [
+                        1477.5186767578125,
+                        1065.6424560546875
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200840.png",
+                    "marker_id": 0,
+                    "side_px": 144.7372,
+                    "corners_px": [
+                      [
+                        1613.4031982421875,
+                        966.1427612304688
+                      ],
+                      [
+                        1561.70654296875,
+                        864.5567016601562
+                      ],
+                      [
+                        1722.68115234375,
+                        871.6146850585938
+                      ],
+                      [
+                        1792.3834228515625,
+                        974.9423217773438
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200848.png",
+                    "marker_id": 0,
+                    "side_px": 149.6655,
+                    "corners_px": [
+                      [
+                        1645.24658203125,
+                        968.4483642578125
+                      ],
+                      [
+                        1580.23876953125,
+                        865.3443603515625
+                      ],
+                      [
+                        1741.0772705078125,
+                        872.5264282226562
+                      ],
+                      [
+                        1825.8314208984375,
+                        977.5570068359375
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200902.png",
+                    "marker_id": 0,
+                    "side_px": 109.9182,
+                    "corners_px": [
+                      [
+                        1608.8643798828125,
+                        732.1414184570312
+                      ],
+                      [
+                        1497.551513671875,
+                        672.301513671875
+                      ],
+                      [
+                        1587.586181640625,
+                        651.2869873046875
+                      ],
+                      [
+                        1700.488037109375,
+                        706.5989379882812
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200918.png",
+                    "marker_id": 0,
+                    "side_px": 78.4704,
+                    "corners_px": [
+                      [
+                        1645.426513671875,
+                        558.497314453125
+                      ],
+                      [
+                        1542.0791015625,
+                        534.5442504882812
+                      ],
+                      [
+                        1580.5364990234375,
+                        503.1564025878906
+                      ],
+                      [
+                        1685.1314697265625,
+                        526.517578125
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 201021.png",
+                    "marker_id": 0,
+                    "side_px": 126.2929,
+                    "corners_px": [
+                      [
+                        140.70977783203125,
+                        776.9026489257812
+                      ],
+                      [
+                        244.80360412597656,
+                        802.1637573242188
+                      ],
+                      [
+                        132.94834899902344,
+                        883.7546997070312
+                      ],
+                      [
+                        20.5034236907959,
+                        855.6431884765625
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 201030.png",
+                    "marker_id": 0,
+                    "side_px": 126.2929,
+                    "corners_px": [
+                      [
+                        168.70977783203125,
+                        772.9026489257812
+                      ],
+                      [
+                        272.8035888671875,
+                        798.1637573242188
+                      ],
+                      [
+                        160.94834899902344,
+                        879.7546997070312
+                      ],
+                      [
+                        48.503421783447266,
+                        851.6431274414062
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 201050.png",
+                    "marker_id": 0,
+                    "side_px": 89.5073,
+                    "corners_px": [
+                      [
+                        67.92567443847656,
+                        999.0433959960938
+                      ],
+                      [
+                        154.2514190673828,
+                        1002.0722045898438
+                      ],
+                      [
+                        143.9136962890625,
+                        1094.24462890625
+                      ],
+                      [
+                        56.67036056518555,
+                        1089.897216796875
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 201104.png",
+                    "marker_id": 0,
+                    "side_px": 88.9936,
+                    "corners_px": [
+                      [
+                        1003.0546875,
+                        1082.2086181640625
+                      ],
+                      [
+                        1006.0752563476562,
+                        991.9219360351562
+                      ],
+                      [
+                        1092.9429931640625,
+                        998.9161376953125
+                      ],
+                      [
+                        1090.85107421875,
+                        1089.2979736328125
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 201123.png",
+                    "marker_id": 0,
+                    "side_px": 68.3683,
+                    "corners_px": [
+                      [
+                        1159.31298828125,
+                        617.2276611328125
+                      ],
+                      [
+                        1113.3406982421875,
+                        565.04638671875
+                      ],
+                      [
+                        1163.4886474609375,
+                        520.9725341796875
+                      ],
+                      [
+                        1210.1002197265625,
+                        572.615478515625
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 201137.png",
+                    "marker_id": 0,
+                    "side_px": 77.1368,
+                    "corners_px": [
+                      [
+                        1107.9239501953125,
+                        160.20724487304688
+                      ],
+                      [
+                        1029.1307373046875,
+                        154.28628540039062
+                      ],
+                      [
+                        1033.9158935546875,
+                        78.7399673461914
+                      ],
+                      [
+                        1112.2763671875,
+                        85.1187744140625
+                      ]
+                    ]
+                  }
+                ],
+                "rejected_detections": [
+                  {
+                    "image_path": "data/uploads/b3c14c84-b660-407f-817f-1fc185ce3e9c/Captura de pantalla 2026-06-16 200928.png",
+                    "side_px": 62.005,
+                    "mean_side_px": 62.005,
+                    "side_cv": 0.4817,
+                    "area_ratio": 0.3318,
+                    "reasons": [
+                      "unstable_side_lengths"
+                    ]
+                  }
+                ]
+              }
+            },
+            "error_code": null,
+            "message": "Preliminary volumetry completed"
+          },
+          "session_id": "b3c14c84-b660-407f-817f-1fc185ce3e9c",
+          "total_seconds": 292.533
+        },
+        "scale_quality": {
+          "point_cloud_scale_m_per_unit": 1.0,
+          "source": "gcp_or_nodeodm_metric_output",
+          "scale_px_per_cm_observed": null,
+          "metric_units_certified": true
+        },
+        "cleanup_steps": [
+          {
+            "filter": "statistical_outlier",
+            "before": 401873,
+            "after": 398562,
+            "removed": 3311,
+            "removed_ratio": 0.008239
+          }
+        ],
+        "segmentation_quality": {
+          "applied": true,
+          "method": "dbscan_dominant_components",
+          "voxel_size_m": 0.06,
+          "cluster_eps_m": 0.35,
+          "cluster_min_points": 20,
+          "max_components": 2,
+          "min_component_ratio": 0.1,
+          "max_component_height_m": 8.0,
+          "max_component_bbox_volume_m3": 500.0,
+          "max_component_axis_ratio": 8.0,
+          "selection_reason": "plausible_woodpile_components",
+          "selected_labels": [
+            14,
+            0
+          ],
+          "selected_point_count": 15799,
+          "cluster_counts": {
+            "14": 12247,
+            "1": 7156,
+            "0": 3552,
+            "2": 2402,
+            "7": 533,
+            "41": 450,
+            "31": 417,
+            "10": 407
+          },
+          "cluster_metrics": {
+            "14": {
+              "count": 12247,
+              "extent": [
+                7.1052,
+                5.4474,
+                3.4694
+              ],
+              "bbox_volume_m3": 134.2839,
+              "density_points_per_m3": 91.2023,
+              "axis_ratio": 2.0479,
+              "plausible_woodpile": true
+            },
+            "0": {
+              "count": 3552,
+              "extent": [
+                4.6977,
+                3.0382,
+                0.5921
+              ],
+              "bbox_volume_m3": 8.4504,
+              "density_points_per_m3": 420.3364,
+              "axis_ratio": 7.9344,
+              "plausible_woodpile": true
+            }
+          }
+        },
+        "stages": {
+          "nodeodm_raw_point_cloud": {
+            "name": "nodeodm_raw_point_cloud",
+            "point_count": 401873,
+            "bbox_min": [
+              -12.331664,
+              -12.92817,
+              -30.942608
+            ],
+            "bbox_max": [
+              17.171391,
+              15.431313,
+              9.907525
+            ],
+            "bbox_extent": [
+              29.503055,
+              28.359483,
+              40.850133
+            ],
+            "bbox_volume_m3": 34178.953655,
+            "density_points_per_m3": 11.757908,
+            "mean_nn_distance_m": 0.009882,
+            "median_nn_distance_m": 0.00907,
+            "std_xyz": [
+              2.460761,
+              3.677669,
+              2.618832
+            ],
+            "centroid": [
+              5.826524,
+              -0.680233,
+              -1.489034
+            ],
+            "histograms": {
+              "x": {
+                "counts": [
+                  233,
+                  16,
+                  29,
+                  639,
+                  373,
+                  156,
+                  128,
+                  363,
+                  3092,
+                  23576,
+                  72899,
+                  60479,
+                  85905,
+                  87737,
+                  60016,
+                  4033,
+                  820,
+                  1254,
+                  7,
+                  118
+                ],
+                "edges": [
+                  -12.331664,
+                  -10.856511,
+                  -9.381359,
+                  -7.906206,
+                  -6.431053,
+                  -4.9559,
+                  -3.480748,
+                  -2.005595,
+                  -0.530442,
+                  0.94471,
+                  2.419863,
+                  3.895016,
+                  5.370169,
+                  6.845321,
+                  8.320474,
+                  9.795627,
+                  11.27078,
+                  12.745932,
+                  14.221085,
+                  15.696238,
+                  17.171391
+                ]
+              },
+              "y": {
+                "counts": [
+                  73,
+                  1025,
+                  8081,
+                  14433,
+                  24270,
+                  23130,
+                  42324,
+                  47337,
+                  12955,
+                  56195,
+                  98457,
+                  69486,
+                  2579,
+                  0,
+                  15,
+                  168,
+                  340,
+                  636,
+                  364,
+                  5
+                ],
+                "edges": [
+                  -12.92817,
+                  -11.510196,
+                  -10.092222,
+                  -8.674248,
+                  -7.256274,
+                  -5.8383,
+                  -4.420325,
+                  -3.002351,
+                  -1.584377,
+                  -0.166403,
+                  1.251571,
+                  2.669545,
+                  4.087519,
+                  5.505494,
+                  6.923468,
+                  8.341442,
+                  9.759416,
+                  11.17739,
+                  12.595364,
+                  14.013338,
+                  15.431313
+                ]
+              },
+              "z": {
+                "counts": [
+                  5,
+                  0,
+                  522,
+                  799,
+                  17,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  263,
+                  12217,
+                  135321,
+                  71092,
+                  176698,
+                  2136,
+                  2141,
+                  533,
+                  129
+                ],
+                "edges": [
+                  -30.942608,
+                  -28.900101,
+                  -26.857595,
+                  -24.815088,
+                  -22.772581,
+                  -20.730075,
+                  -18.687568,
+                  -16.645061,
+                  -14.602555,
+                  -12.560048,
+                  -10.517541,
+                  -8.475035,
+                  -6.432528,
+                  -4.390021,
+                  -2.347515,
+                  -0.305008,
+                  1.737498,
+                  3.780005,
+                  5.822512,
+                  7.865018,
+                  9.907525
+                ]
+              }
+            }
+          },
+          "metric_scaled_cloud": {
+            "name": "metric_scaled_cloud",
+            "point_count": 401873,
+            "bbox_min": [
+              -12.331664,
+              -12.92817,
+              -30.942608
+            ],
+            "bbox_max": [
+              17.171391,
+              15.431313,
+              9.907525
+            ],
+            "bbox_extent": [
+              29.503055,
+              28.359483,
+              40.850133
+            ],
+            "bbox_volume_m3": 34178.953655,
+            "density_points_per_m3": 11.757908,
+            "mean_nn_distance_m": 0.009882,
+            "median_nn_distance_m": 0.00907,
+            "std_xyz": [
+              2.460761,
+              3.677669,
+              2.618832
+            ],
+            "centroid": [
+              5.826524,
+              -0.680233,
+              -1.489034
+            ],
+            "histograms": {
+              "x": {
+                "counts": [
+                  233,
+                  16,
+                  29,
+                  639,
+                  373,
+                  156,
+                  128,
+                  363,
+                  3092,
+                  23576,
+                  72899,
+                  60479,
+                  85905,
+                  87737,
+                  60016,
+                  4033,
+                  820,
+                  1254,
+                  7,
+                  118
+                ],
+                "edges": [
+                  -12.331664,
+                  -10.856511,
+                  -9.381359,
+                  -7.906206,
+                  -6.431053,
+                  -4.9559,
+                  -3.480748,
+                  -2.005595,
+                  -0.530442,
+                  0.94471,
+                  2.419863,
+                  3.895016,
+                  5.370169,
+                  6.845321,
+                  8.320474,
+                  9.795627,
+                  11.27078,
+                  12.745932,
+                  14.221085,
+                  15.696238,
+                  17.171391
+                ]
+              },
+              "y": {
+                "counts": [
+                  73,
+                  1025,
+                  8081,
+                  14433,
+                  24270,
+                  23130,
+                  42324,
+                  47337,
+                  12955,
+                  56195,
+                  98457,
+                  69486,
+                  2579,
+                  0,
+                  15,
+                  168,
+                  340,
+                  636,
+                  364,
+                  5
+                ],
+                "edges": [
+                  -12.92817,
+                  -11.510196,
+                  -10.092222,
+                  -8.674248,
+                  -7.256274,
+                  -5.8383,
+                  -4.420325,
+                  -3.002351,
+                  -1.584377,
+                  -0.166403,
+                  1.251571,
+                  2.669545,
+                  4.087519,
+                  5.505494,
+                  6.923468,
+                  8.341442,
+                  9.759416,
+                  11.17739,
+                  12.595364,
+                  14.013338,
+                  15.431313
+                ]
+              },
+              "z": {
+                "counts": [
+                  5,
+                  0,
+                  522,
+                  799,
+                  17,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  263,
+                  12217,
+                  135321,
+                  71092,
+                  176698,
+                  2136,
+                  2141,
+                  533,
+                  129
+                ],
+                "edges": [
+                  -30.942608,
+                  -28.900101,
+                  -26.857595,
+                  -24.815088,
+                  -22.772581,
+                  -20.730075,
+                  -18.687568,
+                  -16.645061,
+                  -14.602555,
+                  -12.560048,
+                  -10.517541,
+                  -8.475035,
+                  -6.432528,
+                  -4.390021,
+                  -2.347515,
+                  -0.305008,
+                  1.737498,
+                  3.780005,
+                  5.822512,
+                  7.865018,
+                  9.907525
+                ]
+              }
+            }
+          },
+          "cleaned_cloud": {
+            "name": "cleaned_cloud",
+            "point_count": 398562,
+            "bbox_min": [
+              -12.316292,
+              -11.846539,
+              -25.375698
+            ],
+            "bbox_max": [
+              16.411634,
+              13.428234,
+              7.810715
+            ],
+            "bbox_extent": [
+              28.727926,
+              25.274774,
+              33.186413
+            ],
+            "bbox_volume_m3": 24096.383622,
+            "density_points_per_m3": 16.540324,
+            "mean_nn_distance_m": 0.009596,
+            "median_nn_distance_m": 0.00906,
+            "std_xyz": [
+              2.409626,
+              3.634283,
+              2.457174
+            ],
+            "centroid": [
+              5.837542,
+              -0.673211,
+              -1.469936
+            ],
+            "histograms": {
+              "x": {
+                "counts": [
+                  216,
+                  0,
+                  24,
+                  377,
+                  319,
+                  9,
+                  51,
+                  189,
+                  2564,
+                  9898,
+                  67971,
+                  58713,
+                  78747,
+                  81759,
+                  79178,
+                  16217,
+                  605,
+                  1615,
+                  27,
+                  83
+                ],
+                "edges": [
+                  -12.316292,
+                  -10.879895,
+                  -9.443499,
+                  -8.007103,
+                  -6.570707,
+                  -5.13431,
+                  -3.697914,
+                  -2.261518,
+                  -0.825121,
+                  0.611275,
+                  2.047671,
+                  3.484068,
+                  4.920464,
+                  6.35686,
+                  7.793257,
+                  9.229653,
+                  10.666049,
+                  12.102446,
+                  13.538842,
+                  14.975238,
+                  16.411634
+                ]
+              },
+              "y": {
+                "counts": [
+                  268,
+                  4240,
+                  8578,
+                  17220,
+                  20618,
+                  21624,
+                  39278,
+                  46588,
+                  8297,
+                  38225,
+                  76075,
+                  91393,
+                  24919,
+                  267,
+                  0,
+                  0,
+                  51,
+                  123,
+                  271,
+                  527
+                ],
+                "edges": [
+                  -11.846539,
+                  -10.582801,
+                  -9.319062,
+                  -8.055323,
+                  -6.791585,
+                  -5.527846,
+                  -4.264107,
+                  -3.000369,
+                  -1.73663,
+                  -0.472891,
+                  0.790847,
+                  2.054586,
+                  3.318325,
+                  4.582063,
+                  5.845802,
+                  7.109541,
+                  8.373279,
+                  9.637018,
+                  10.900757,
+                  12.164495,
+                  13.428234
+                ]
+              },
+              "z": {
+                "counts": [
+                  713,
+                  60,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  50,
+                  756,
+                  138399,
+                  8973,
+                  45354,
+                  185967,
+                  15875,
+                  691,
+                  1566,
+                  158
+                ],
+                "edges": [
+                  -25.375698,
+                  -23.716377,
+                  -22.057057,
+                  -20.397736,
+                  -18.738415,
+                  -17.079095,
+                  -15.419774,
+                  -13.760453,
+                  -12.101133,
+                  -10.441812,
+                  -8.782491,
+                  -7.123171,
+                  -5.46385,
+                  -3.804529,
+                  -2.145209,
+                  -0.485888,
+                  1.173433,
+                  2.832753,
+                  4.492074,
+                  6.151395,
+                  7.810715
+                ]
+              }
+            }
+          },
+          "pdi_input_cloud": {
+            "name": "pdi_input_cloud",
+            "point_count": 15799,
+            "bbox_min": [
+              2.467712,
+              -4.827366,
+              -4.450778
+            ],
+            "bbox_max": [
+              9.572889,
+              4.665641,
+              2.046638
+            ],
+            "bbox_extent": [
+              7.105177,
+              9.493006,
+              6.497416
+            ],
+            "bbox_volume_m3": 438.24735,
+            "density_points_per_m3": 36.050418,
+            "mean_nn_distance_m": 0.035924,
+            "median_nn_distance_m": 0.036206,
+            "std_xyz": [
+              1.655098,
+              2.313771,
+              1.923227
+            ],
+            "centroid": [
+              6.558608,
+              0.843278,
+              -0.794953
+            ],
+            "histograms": {
+              "x": {
+                "counts": [
+                  90,
+                  236,
+                  366,
+                  453,
+                  437,
+                  501,
+                  704,
+                  1101,
+                  1029,
+                  1108,
+                  1249,
+                  967,
+                  999,
+                  1162,
+                  1053,
+                  1118,
+                  1062,
+                  920,
+                  746,
+                  498
+                ],
+                "edges": [
+                  2.467712,
+                  2.822971,
+                  3.17823,
+                  3.533489,
+                  3.888747,
+                  4.244006,
+                  4.599265,
+                  4.954524,
+                  5.309783,
+                  5.665042,
+                  6.0203,
+                  6.375559,
+                  6.730818,
+                  7.086077,
+                  7.441336,
+                  7.796595,
+                  8.151853,
+                  8.507112,
+                  8.862371,
+                  9.21763,
+                  9.572889
+                ]
+              },
+              "y": {
+                "counts": [
+                  61,
+                  327,
+                  612,
+                  796,
+                  926,
+                  724,
+                  106,
+                  0,
+                  55,
+                  368,
+                  713,
+                  1123,
+                  1513,
+                  1783,
+                  1701,
+                  1704,
+                  1629,
+                  1040,
+                  449,
+                  169
+                ],
+                "edges": [
+                  -4.827366,
+                  -4.352716,
+                  -3.878065,
+                  -3.403415,
+                  -2.928765,
+                  -2.454114,
+                  -1.979464,
+                  -1.504814,
+                  -1.030163,
+                  -0.555513,
+                  -0.080863,
+                  0.393788,
+                  0.868438,
+                  1.343088,
+                  1.817739,
+                  2.292389,
+                  2.767039,
+                  3.24169,
+                  3.71634,
+                  4.19099,
+                  4.665641
+                ]
+              },
+              "z": {
+                "counts": [
+                  2692,
+                  860,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  75,
+                  371,
+                  1220,
+                  2003,
+                  2000,
+                  2010,
+                  1805,
+                  1304,
+                  1162,
+                  261,
+                  36
+                ],
+                "edges": [
+                  -4.450778,
+                  -4.125907,
+                  -3.801036,
+                  -3.476166,
+                  -3.151295,
+                  -2.826424,
+                  -2.501553,
+                  -2.176683,
+                  -1.851812,
+                  -1.526941,
+                  -1.20207,
+                  -0.877199,
+                  -0.552329,
+                  -0.227458,
+                  0.097413,
+                  0.422284,
+                  0.747154,
+                  1.072025,
+                  1.396896,
+                  1.721767,
+                  2.046638
+                ]
+              }
+            }
+          }
+        },
+        "pdi_metrics_recomputed": {
+          "method": "point_density_integration",
+          "volume_m3": 69.8281,
+          "voxel_size_m": 0.25,
+          "density_threshold_points_per_voxel": 2,
+          "hull_density_points_per_m3": 193.414566,
+          "hull_volume_m3": 81.684644,
+          "solid_voxels": 4469,
+          "occupied_voxels": 1081,
+          "dense_voxels": 975
+        },
+        "quality_gates_recomputed": [
+          {
+            "name": "segmentation.isolated_points",
+            "status": "PASS",
+            "metric": "isolated_point_ratio",
+            "value": 0.0,
+            "explanation": "High isolated-point ratio indicates possible background leakage or sparse segmentation."
+          },
+          {
+            "name": "segmentation.outliers",
+            "status": "PASS",
+            "metric": "outlier_ratio",
+            "value": 0.016667,
+            "explanation": "Nearest-neighbor outliers can expand PDI support and inflate volume."
+          },
+          {
+            "name": "segmentation.mean_density",
+            "status": "PASS",
+            "metric": "density_points_per_m3",
+            "value": 36.0504,
+            "explanation": "Low global density increases sensitivity to voxelization."
+          },
+          {
+            "name": "segmentation.bbox_aspect",
+            "status": "PASS",
+            "metric": "axis_ratio",
+            "value": 1.461,
+            "explanation": "Extreme bounding-box ratios can indicate missing views or background contamination."
+          },
+          {
+            "name": "coverage.spatial_distribution",
+            "status": "PASS",
+            "metric": "spatial_coverage_ratio",
+            "value": 0.208333,
+            "explanation": "Low occupied-cell coverage suggests incomplete spatial support."
+          },
+          {
+            "name": "coverage.interior_holes",
+            "status": "PASS",
+            "metric": "interior_hole_ratio",
+            "value": 0.734375,
+            "explanation": "High empty-interior ratio is a proxy for large holes or missing regions."
+          },
+          {
+            "name": "coverage.lateral",
+            "status": "PASS",
+            "metric": "lateral_coverage_ratio",
+            "value": 0.1875,
+            "explanation": "Low lateral coverage can cause structured underestimation."
+          },
+          {
+            "name": "coverage.top",
+            "status": "PASS",
+            "metric": "top_coverage_ratio",
+            "value": 0.194444,
+            "explanation": "Low top coverage can indicate missing upper surface observations."
+          },
+          {
+            "name": "coverage.bottom",
+            "status": "PASS",
+            "metric": "bottom_coverage_ratio",
+            "value": 0.25,
+            "explanation": "Low bottom coverage is expected in aerial capture but reduces volumetric confidence."
+          },
+          {
+            "name": "geometry.point_count",
+            "status": "PASS",
+            "metric": "point_count",
+            "value": 15799,
+            "explanation": "Low point count reduces estimator stability."
+          },
+          {
+            "name": "geometry.components",
+            "status": "PASS",
+            "metric": "voxel_components",
+            "value": 2,
+            "explanation": "Many disconnected occupied components indicate fragmentation or background leakage."
+          },
+          {
+            "name": "geometry.spatial_consistency",
+            "status": "PASS",
+            "metric": "dominant_component_voxel_ratio",
+            "value": 0.765957,
+            "explanation": "Low dominant-component ratio indicates fragmented spatial support."
+          }
+        ],
+        "pdi_quality_recomputed": {
+          "point_count": 15799,
+          "bounding_box_extent": [
+            7.105176666203667,
+            9.493006420135497,
+            6.497415542602539
+          ],
+          "axis_ratio": 1.461,
+          "density_points_per_m3": 36.0504,
+          "median_nn_m": 0.038676,
+          "mean_nn_m": 0.039063,
+          "local_density_cv": 0.308069,
+          "isolated_point_ratio": 0.0,
+          "outlier_ratio": 0.016667,
+          "spatial_coverage_ratio": 0.208333,
+          "interior_hole_ratio": 0.734375,
+          "lateral_coverage_ratio": 0.1875,
+          "top_coverage_ratio": 0.194444,
+          "bottom_coverage_ratio": 0.25,
+          "voxel_components": 2,
+          "dominant_component_voxel_ratio": 0.765957
+        },
+        "confidence_recomputed": {
+          "score": 100.0,
+          "level": "HIGH",
+          "diagnostic": [
+            "No quality gate produced WARNING or FAIL."
+          ]
+        },
+        "percentage_points_removed_nodeodm_to_pdi": 96.0687
+      },
+      "benchmark_experimental": {
+        "path": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_input_cloud.ply",
+        "stats": {
+          "name": "benchmark_experimental_pdi_input",
+          "point_count": 19879,
+          "bbox_min": [
+            1.28758,
+            -10.007647,
+            -4.472788
+          ],
+          "bbox_max": [
+            10.271735,
+            4.973067,
+            0.61537
+          ],
+          "bbox_extent": [
+            8.984155,
+            14.980714,
+            5.088158
+          ],
+          "bbox_volume_m3": 684.810396,
+          "density_points_per_m3": 29.028473,
+          "mean_nn_distance_m": 0.03645,
+          "median_nn_distance_m": 0.03681,
+          "std_xyz": [
+            2.021698,
+            4.208927,
+            1.135393
+          ],
+          "centroid": [
+            6.557998,
+            0.425842,
+            -1.801395
+          ],
+          "histograms": {
+            "x": {
+              "counts": [
+                100,
+                230,
+                372,
+                581,
+                594,
+                696,
+                787,
+                1119,
+                1061,
+                1364,
+                1475,
+                1187,
+                1441,
+                1395,
+                1629,
+                1736,
+                1829,
+                1320,
+                637,
+                326
+              ],
+              "edges": [
+                1.28758,
+                1.736788,
+                2.185996,
+                2.635204,
+                3.084411,
+                3.533619,
+                3.982827,
+                4.432035,
+                4.881242,
+                5.33045,
+                5.779658,
+                6.228866,
+                6.678073,
+                7.127281,
+                7.576489,
+                8.025697,
+                8.474904,
+                8.924112,
+                9.37332,
+                9.822527,
+                10.271735
+              ]
+            },
+            "y": {
+              "counts": [
+                584,
+                958,
+                1174,
+                668,
+                41,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                243,
+                1102,
+                2156,
+                3255,
+                3312,
+                3382,
+                2355,
+                649
+              ],
+              "edges": [
+                -10.007647,
+                -9.258611,
+                -8.509576,
+                -7.76054,
+                -7.011504,
+                -6.262469,
+                -5.513433,
+                -4.764397,
+                -4.015361,
+                -3.266326,
+                -2.51729,
+                -1.768254,
+                -1.019219,
+                -0.270183,
+                0.478853,
+                1.227888,
+                1.976924,
+                2.72596,
+                3.474995,
+                4.224031,
+                4.973067
+              ]
+            },
+            "z": {
+              "counts": [
+                149,
+                1074,
+                861,
+                279,
+                628,
+                471,
+                637,
+                1228,
+                1183,
+                1269,
+                1726,
+                2058,
+                1940,
+                1834,
+                1475,
+                1020,
+                882,
+                1036,
+                106,
+                23
+              ],
+              "edges": [
+                -4.472788,
+                -4.21838,
+                -3.963973,
+                -3.709565,
+                -3.455157,
+                -3.200749,
+                -2.946341,
+                -2.691933,
+                -2.437525,
+                -2.183117,
+                -1.928709,
+                -1.674301,
+                -1.419893,
+                -1.165485,
+                -0.911078,
+                -0.65667,
+                -0.402262,
+                -0.147854,
+                0.106554,
+                0.360962,
+                0.61537
+              ]
+            }
+          }
+        },
+        "pdi_metrics_recomputed": {
+          "method": "point_density_integration",
+          "volume_m3": 97.375,
+          "voxel_size_m": 0.25,
+          "density_threshold_points_per_voxel": 1,
+          "hull_density_points_per_m3": 126.676172,
+          "hull_volume_m3": 156.927698,
+          "solid_voxels": 6232,
+          "occupied_voxels": 1429,
+          "dense_voxels": 1429
+        },
+        "benchmark_reference_volume_m3": 97.375
+      },
+      "cloud_comparison": {
+        "productive_cloud": "/app/experiments/pipeline_diagnostics/set1_productive_pdi_input.ply",
+        "benchmark_cloud": "/app/data/processed/a3c36266-f866-402f-8bc8-1c2b59b4a4ce/surface_closure_diagnostics/poisson_input_cloud.ply",
+        "productive_stats": {
+          "name": "productive_pdi_input",
+          "point_count": 15799,
+          "bbox_min": [
+            2.467712,
+            -4.827366,
+            -4.450778
+          ],
+          "bbox_max": [
+            9.572889,
+            4.665641,
+            2.046638
+          ],
+          "bbox_extent": [
+            7.105177,
+            9.493006,
+            6.497416
+          ],
+          "bbox_volume_m3": 438.24735,
+          "density_points_per_m3": 36.050418,
+          "mean_nn_distance_m": 0.035924,
+          "median_nn_distance_m": 0.036206,
+          "std_xyz": [
+            1.655098,
+            2.313771,
+            1.923227
+          ],
+          "centroid": [
+            6.558608,
+            0.843278,
+            -0.794953
+          ],
+          "histograms": {
+            "x": {
+              "counts": [
+                90,
+                236,
+                366,
+                453,
+                437,
+                501,
+                704,
+                1101,
+                1029,
+                1108,
+                1249,
+                967,
+                999,
+                1162,
+                1053,
+                1118,
+                1062,
+                920,
+                746,
+                498
+              ],
+              "edges": [
+                2.467712,
+                2.822971,
+                3.17823,
+                3.533489,
+                3.888747,
+                4.244006,
+                4.599265,
+                4.954524,
+                5.309783,
+                5.665042,
+                6.0203,
+                6.375559,
+                6.730818,
+                7.086077,
+                7.441336,
+                7.796595,
+                8.151853,
+                8.507112,
+                8.862371,
+                9.21763,
+                9.572889
+              ]
+            },
+            "y": {
+              "counts": [
+                61,
+                327,
+                612,
+                796,
+                926,
+                724,
+                106,
+                0,
+                55,
+                368,
+                713,
+                1123,
+                1513,
+                1783,
+                1701,
+                1704,
+                1629,
+                1040,
+                449,
+                169
+              ],
+              "edges": [
+                -4.827366,
+                -4.352716,
+                -3.878065,
+                -3.403415,
+                -2.928765,
+                -2.454114,
+                -1.979464,
+                -1.504814,
+                -1.030163,
+                -0.555513,
+                -0.080863,
+                0.393788,
+                0.868438,
+                1.343088,
+                1.817739,
+                2.292389,
+                2.767039,
+                3.24169,
+                3.71634,
+                4.19099,
+                4.665641
+              ]
+            },
+            "z": {
+              "counts": [
+                2692,
+                860,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                75,
+                371,
+                1220,
+                2003,
+                2000,
+                2010,
+                1805,
+                1304,
+                1162,
+                261,
+                36
+              ],
+              "edges": [
+                -4.450778,
+                -4.125907,
+                -3.801036,
+                -3.476166,
+                -3.151295,
+                -2.826424,
+                -2.501553,
+                -2.176683,
+                -1.851812,
+                -1.526941,
+                -1.20207,
+                -0.877199,
+                -0.552329,
+                -0.227458,
+                0.097413,
+                0.422284,
+                0.747154,
+                1.072025,
+                1.396896,
+                1.721767,
+                2.046638
+              ]
+            }
+          }
+        },
+        "benchmark_stats": {
+          "name": "benchmark_experimental_pdi_input",
+          "point_count": 19879,
+          "bbox_min": [
+            1.28758,
+            -10.007647,
+            -4.472788
+          ],
+          "bbox_max": [
+            10.271735,
+            4.973067,
+            0.61537
+          ],
+          "bbox_extent": [
+            8.984155,
+            14.980714,
+            5.088158
+          ],
+          "bbox_volume_m3": 684.810396,
+          "density_points_per_m3": 29.028473,
+          "mean_nn_distance_m": 0.03645,
+          "median_nn_distance_m": 0.03681,
+          "std_xyz": [
+            2.021698,
+            4.208927,
+            1.135393
+          ],
+          "centroid": [
+            6.557998,
+            0.425842,
+            -1.801395
+          ],
+          "histograms": {
+            "x": {
+              "counts": [
+                100,
+                230,
+                372,
+                581,
+                594,
+                696,
+                787,
+                1119,
+                1061,
+                1364,
+                1475,
+                1187,
+                1441,
+                1395,
+                1629,
+                1736,
+                1829,
+                1320,
+                637,
+                326
+              ],
+              "edges": [
+                1.28758,
+                1.736788,
+                2.185996,
+                2.635204,
+                3.084411,
+                3.533619,
+                3.982827,
+                4.432035,
+                4.881242,
+                5.33045,
+                5.779658,
+                6.228866,
+                6.678073,
+                7.127281,
+                7.576489,
+                8.025697,
+                8.474904,
+                8.924112,
+                9.37332,
+                9.822527,
+                10.271735
+              ]
+            },
+            "y": {
+              "counts": [
+                584,
+                958,
+                1174,
+                668,
+                41,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                243,
+                1102,
+                2156,
+                3255,
+                3312,
+                3382,
+                2355,
+                649
+              ],
+              "edges": [
+                -10.007647,
+                -9.258611,
+                -8.509576,
+                -7.76054,
+                -7.011504,
+                -6.262469,
+                -5.513433,
+                -4.764397,
+                -4.015361,
+                -3.266326,
+                -2.51729,
+                -1.768254,
+                -1.019219,
+                -0.270183,
+                0.478853,
+                1.227888,
+                1.976924,
+                2.72596,
+                3.474995,
+                4.224031,
+                4.973067
+              ]
+            },
+            "z": {
+              "counts": [
+                149,
+                1074,
+                861,
+                279,
+                628,
+                471,
+                637,
+                1228,
+                1183,
+                1269,
+                1726,
+                2058,
+                1940,
+                1834,
+                1475,
+                1020,
+                882,
+                1036,
+                106,
+                23
+              ],
+              "edges": [
+                -4.472788,
+                -4.21838,
+                -3.963973,
+                -3.709565,
+                -3.455157,
+                -3.200749,
+                -2.946341,
+                -2.691933,
+                -2.437525,
+                -2.183117,
+                -1.928709,
+                -1.674301,
+                -1.419893,
+                -1.165485,
+                -0.911078,
+                -0.65667,
+                -0.402262,
+                -0.147854,
+                0.106554,
+                0.360962,
+                0.61537
+              ]
+            }
+          }
+        },
+        "point_count_ratio_productive_to_benchmark": 0.794758,
+        "point_count_delta": -4080,
+        "bbox_extent_delta_m": [
+          -1.878978,
+          -5.487708,
+          1.409258
+        ],
+        "bbox_volume_ratio_productive_to_benchmark": 0.639954,
+        "density_ratio_productive_to_benchmark": 1.241899,
+        "distance_metrics": {
+          "sample_size_source": 12000,
+          "sample_size_target": 12000,
+          "chamfer_distance_m": 1.669309,
+          "hausdorff_distance_m": 5.374957,
+          "productive_to_benchmark_mean_m": 1.602743,
+          "benchmark_to_productive_mean_m": 1.735876,
+          "productive_overlap_ratio_at_0_25m": 0.0,
+          "benchmark_overlap_ratio_at_0_25m": 0.0
+        },
+        "icp_metrics": {
+          "fitness": 0.775233,
+          "inlier_rmse_m": 0.127069,
+          "transformation": [
+            [
+              0.996972,
+              0.052539,
+              -0.057325,
+              -0.273943
+            ],
+            [
+              -0.059371,
+              0.990399,
+              -0.124836,
+              0.780826
+            ],
+            [
+              0.050216,
+              0.127861,
+              0.99052,
+              -2.083598
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "first_divergence": {
+        "stage": "nodeodm_raw_point_cloud",
+        "point_delta_ratio_vs_benchmark": 19.215957,
+        "bbox_volume_delta_ratio_vs_benchmark": 48.910098,
+        "stage_point_count": 401873,
+        "benchmark_point_count": 19879,
+        "stage_bbox_volume_m3": 34178.953655,
+        "benchmark_bbox_volume_m3": 684.810396,
+        "bottleneck": "OpenSfM/NodeODM reconstruction output differs before productive filtering."
+      }
+    },
+    "set2": {
+      "input": {
+        "image_dir": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2",
+        "image_count": 28,
+        "resolutions": {
+          "1787x972": 1,
+          "1803x950": 1,
+          "1661x937": 1,
+          "1458x1020": 1,
+          "1337x1047": 1,
+          "1595x1007": 1,
+          "1848x938": 1,
+          "1952x842": 1,
+          "1780x936": 1,
+          "1732x1011": 1,
+          "1726x1001": 1,
+          "1615x977": 1,
+          "1638x946": 1,
+          "1640x965": 1,
+          "1540x972": 1,
+          "1535x992": 1,
+          "1656x973": 1,
+          "1482x908": 1,
+          "1575x942": 1,
+          "1548x868": 1,
+          "1757x907": 1,
+          "1812x990": 1,
+          "1877x935": 1,
+          "1893x958": 1,
+          "1363x1137": 1,
+          "1346x1105": 1,
+          "1165x1138": 1,
+          "1117x1117": 1
+        },
+        "sample_images": [
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2/Captura de pantalla 2026-06-27 014000.png",
+            "width": 1787,
+            "height": 972
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2/Captura de pantalla 2026-06-27 014016.png",
+            "width": 1803,
+            "height": 950
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2/Captura de pantalla 2026-06-27 014026.png",
+            "width": 1661,
+            "height": 937
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2/Captura de pantalla 2026-06-27 014035.png",
+            "width": 1458,
+            "height": 1020
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2/Captura de pantalla 2026-06-27 014042.png",
+            "width": 1337,
+            "height": 1047
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2/Captura de pantalla 2026-06-27 014049.png",
+            "width": 1595,
+            "height": 1007
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2/Captura de pantalla 2026-06-27 014102.png",
+            "width": 1848,
+            "height": 938
+          },
+          {
+            "file": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2/Captura de pantalla 2026-06-27 014129.png",
+            "width": 1952,
+            "height": 842
+          }
+        ],
+        "discarded_images": 0,
+        "discard_reason": "No upload/reconstruction discard list was present in the persisted artifacts."
+      },
+      "opensfm_nodeodm": {
+        "nodeodm_task_uuid": "86f11977-7789-42d8-b4b0-852f623f1df0",
+        "opensfm_dir": "/var/www/data/86f11977-7789-42d8-b4b0-852f623f1df0/opensfm",
+        "cameras_models_count": 28,
+        "reconstructed_shots_from_reconstruction_json": 28,
+        "landmarks_from_reconstruction_json": 14722,
+        "tracks_csv_rows_including_header": 12687,
+        "tracks_csv_observations_rows_estimate": 12686,
+        "reconstruction_statistics": {
+          "components": 1,
+          "has_gps": false,
+          "has_gcp": true,
+          "initial_points_count": 38490,
+          "initial_shots_count": 28,
+          "reconstructed_points_count": 14722,
+          "reconstructed_shots_count": 28,
+          "observations_count": 43113,
+          "average_track_length": 2.9284743920662955,
+          "average_track_length_over_two": 4.094544897333742,
+          "histogram_track_length": {
+            "2": 8196,
+            "3": 2823,
+            "4": 2116,
+            "5": 722,
+            "6": 384,
+            "7": 210,
+            "8": 133,
+            "9": 72,
+            "10": 42,
+            "11": 17,
+            "12": 6,
+            "13": 1
+          },
+          "reprojection_error_normalized": 0.135559025193991,
+          "reprojection_error_pixels": 0.42176454077084424,
+          "reprojection_error_angular": 0.0003077322242515713,
+          "reprojection_histogram_normalized": [
+            [
+              17324.0,
+              6220.0,
+              2922.0,
+              1682.0,
+              1046.0,
+              695.0,
+              516.0,
+              350.0,
+              249.0,
+              179.0,
+              131.0,
+              87.0,
+              82.0,
+              64.0,
+              46.0,
+              36.0,
+              26.0,
+              22.0,
+              29.0,
+              20.0,
+              15.0,
+              15.0,
+              13.0,
+              5.0,
+              9.0,
+              5.0,
+              2.0,
+              4.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.00029623312261240994,
+              0.07566325773985547,
+              0.1510302823570985,
+              0.22639730697434157,
+              0.3017643315915846,
+              0.37713135620882765,
+              0.45249838082607075,
+              0.5278654054433137,
+              0.6032324300605568,
+              0.6785994546777999,
+              0.7539664792950429,
+              0.829333503912286,
+              0.9047005285295291,
+              0.9800675531467721,
+              1.055434577764015,
+              1.1308016023812582,
+              1.2061686269985012,
+              1.2815356516157443,
+              1.3569026762329874,
+              1.4322697008502303,
+              1.5076367254674734,
+              1.5830037500847165,
+              1.6583707747019596,
+              1.7337377993192027,
+              1.8091048239364458,
+              1.8844718485536887,
+              1.9598388731709318,
+              2.035205897788175,
+              2.1105729224054177,
+              2.185939947022661,
+              2.261306971639904
+            ]
+          ],
+          "reprojection_histogram_pixels": [
+            [
+              10927.0,
+              6816.0,
+              3789.0,
+              2425.0,
+              1802.0,
+              1352.0,
+              917.0,
+              782.0,
+              573.0,
+              490.0,
+              362.0,
+              273.0,
+              194.0,
+              166.0,
+              141.0,
+              104.0,
+              102.0,
+              73.0,
+              63.0,
+              65.0,
+              48.0,
+              56.0,
+              40.0,
+              48.0,
+              37.0,
+              30.0,
+              34.0,
+              21.0,
+              36.0,
+              29.0
+            ],
+            [
+              0.0010943552213232535,
+              0.13424585762394586,
+              0.26739736002656844,
+              0.400548862429191,
+              0.5337003648318137,
+              0.6668518672344363,
+              0.8000033696370589,
+              0.9331548720396815,
+              1.066306374442304,
+              1.1994578768449267,
+              1.3326093792475493,
+              1.465760881650172,
+              1.5989123840527943,
+              1.732063886455417,
+              1.8652153888580396,
+              1.9983668912606622,
+              2.131518393663285,
+              2.2646698960659073,
+              2.39782139846853,
+              2.5309729008711526,
+              2.6641244032737754,
+              2.797275905676398,
+              2.9304274080790207,
+              3.063578910481643,
+              3.1967304128842655,
+              3.3298819152868884,
+              3.463033417689511,
+              3.5961849200921336,
+              3.729336422494756,
+              3.862487924897379,
+              3.9956394273000013
+            ]
+          ],
+          "reprojection_histogram_angular": [
+            [
+              31794.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              7.511426902490173e-07,
+              0.016104030353415393,
+              0.032207309564140536,
+              0.04831058877486568,
+              0.06441386798559083,
+              0.08051714719631597,
+              0.09662042640704112,
+              0.11272370561776626,
+              0.1288269848284914,
+              0.14493026403921652,
+              0.16103354324994168,
+              0.17713682246066684,
+              0.19324010167139197,
+              0.2093433808821171,
+              0.22544666009284225,
+              0.2415499393035674,
+              0.25765321851429257,
+              0.2737564977250177,
+              0.28985977693574283,
+              0.305963056146468,
+              0.32206633535719315,
+              0.3381696145679183,
+              0.35427289377864346,
+              0.3703761729893686,
+              0.3864794522000937,
+              0.40258273141081885,
+              0.418686010621544,
+              0.43478928983226917,
+              0.4508925690429943,
+              0.4669958482537194,
+              0.4830991274644446
+            ]
+          ]
+        },
+        "processing_statistics": {
+          "steps_times": {
+            "Feature Extraction": 19.793594355000096,
+            "Features Matching": 94.49597542799984,
+            "Tracks Merging": 2.4017690670002594,
+            "Reconstruction": 39.548473149000074,
+            "Total Time": 156.23981199900027
+          },
+          "date": "30/06/2026 at 00:48:05",
+          "start_date": "01/01/1970 at 00:00:00",
+          "end_date": "01/01/1970 at 00:00:00",
+          "area": 28.5522848580897
+        },
+        "features_statistics": {
+          "detected_features": {
+            "min": 9137,
+            "max": 18444,
+            "mean": 14226,
+            "median": 14157
+          },
+          "reconstructed_features": {
+            "min": 15,
+            "max": 6702,
+            "mean": 1539,
+            "median": 755
+          }
+        },
+        "reprojection_error_pixels": 0.42176454077084424,
+        "reprojection_error_normalized": 0.135559025193991,
+        "reprojection_error_angular": 0.0003077322242515713,
+        "poses_sample": [
+          "Capturadepantalla2026-06-27014339.png",
+          "Capturadepantalla2026-06-27014225.png",
+          "Capturadepantalla2026-06-27014309.png",
+          "Capturadepantalla2026-06-27014042.png",
+          "Capturadepantalla2026-06-27014347.png",
+          "Capturadepantalla2026-06-27014203.png",
+          "Capturadepantalla2026-06-27014314.png",
+          "Capturadepantalla2026-06-27014026.png",
+          "Capturadepantalla2026-06-27014244.png",
+          "Capturadepantalla2026-06-27014320.png"
+        ]
+      },
+      "productive_pipeline": {
+        "productive_report_path": "/app/data/pdi_productive_migration_hito05_set2.json",
+        "productive_report": {
+          "run_id": "RUN-PDI-PRODUCTIVE-MIGRATION-01",
+          "dataset": "/app/projects/ForestVol/set_imagenes+guia/set_fotos_castillo_de_madera_2",
+          "image_count": 28,
+          "steps": [
+            {
+              "step": "upload",
+              "status_code": 200,
+              "seconds": 1.978,
+              "body": {
+                "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+                "image_count": 28,
+                "valid": true,
+                "errors": [],
+                "pipeline_state": "VALIDATED"
+              }
+            },
+            {
+              "step": "calibrate",
+              "status_code": 200,
+              "seconds": 12.331,
+              "body": {
+                "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+                "calibration_mode": "automatic",
+                "guide_detected_in_n_images": 21,
+                "detection_confidence": 0.75,
+                "scale_px_per_cm": 0.9865,
+                "scale_error_percentage": null,
+                "pipeline_state": "CALIBRATED",
+                "warning": "Automatic detection confidence below recommended threshold (0.90); continuing with detected markers."
+              }
+            },
+            {
+              "step": "reconstruct",
+              "status_code": 202,
+              "seconds": 0.055,
+              "body": {
+                "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+                "pipeline_state": "RECONSTRUCTION_PENDING",
+                "message": "Reconstruction task submitted to NodeODM. Poll /api/results/{session_id} for status."
+              }
+            }
+          ],
+          "polls": [
+            {
+              "poll": 1,
+              "status_code": 200,
+              "seconds": 0.019,
+              "pipeline_state": "RECONSTRUCTION_PENDING",
+              "progress_percentage": 0,
+              "message": "Reconstruction task submitted to NodeODM"
+            },
+            {
+              "poll": 2,
+              "status_code": 200,
+              "seconds": 0.163,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 3,
+              "status_code": 200,
+              "seconds": 0.1,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 4,
+              "status_code": 200,
+              "seconds": 0.02,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 5,
+              "status_code": 200,
+              "seconds": 0.018,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 6,
+              "status_code": 200,
+              "seconds": 0.021,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 7,
+              "status_code": 200,
+              "seconds": 0.041,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 8,
+              "status_code": 200,
+              "seconds": 0.022,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 9,
+              "status_code": 200,
+              "seconds": 0.022,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 10,
+              "status_code": 200,
+              "seconds": 0.043,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 11,
+              "status_code": 200,
+              "seconds": 0.029,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 12,
+              "status_code": 200,
+              "seconds": 0.024,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 13,
+              "status_code": 200,
+              "seconds": 0.021,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 14,
+              "status_code": 200,
+              "seconds": 0.029,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 15,
+              "status_code": 200,
+              "seconds": 0.018,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 16,
+              "status_code": 200,
+              "seconds": 0.017,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 17,
+              "status_code": 200,
+              "seconds": 0.037,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 18,
+              "status_code": 200,
+              "seconds": 0.02,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 19,
+              "status_code": 200,
+              "seconds": 0.028,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 20,
+              "status_code": 200,
+              "seconds": 0.022,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 21,
+              "status_code": 200,
+              "seconds": 0.028,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 22,
+              "status_code": 200,
+              "seconds": 0.034,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 23,
+              "status_code": 200,
+              "seconds": 0.069,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 24,
+              "status_code": 200,
+              "seconds": 0.063,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 25,
+              "status_code": 200,
+              "seconds": 0.096,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 26,
+              "status_code": 200,
+              "seconds": 0.038,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 27,
+              "status_code": 200,
+              "seconds": 0.03,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 28,
+              "status_code": 200,
+              "seconds": 0.029,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 29,
+              "status_code": 200,
+              "seconds": 0.067,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 30,
+              "status_code": 200,
+              "seconds": 0.14,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 31,
+              "status_code": 200,
+              "seconds": 0.021,
+              "pipeline_state": "RECONSTRUCTING",
+              "progress_percentage": 0,
+              "message": "NodeODM task started"
+            },
+            {
+              "poll": 32,
+              "status_code": 200,
+              "seconds": 0.023,
+              "pipeline_state": "COMPLETED",
+              "progress_percentage": 100,
+              "message": "Preliminary volumetry completed"
+            }
+          ],
+          "final": {
+            "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+            "pipeline_state": "COMPLETED",
+            "progress_percentage": 100,
+            "point_cloud_path": "data/processed/723f91e2-b1b5-43f7-b336-6816d8300509/point_cloud.ply",
+            "mesh_ply_path": null,
+            "mesh_glb_path": null,
+            "mesh_watertight": null,
+            "mesh_repair_applied": false,
+            "volume_m3": 39.0156,
+            "volume_method": "point_density_integration",
+            "confidence_score": 25.0,
+            "confidence_level": "CRITICAL",
+            "quality_gates": [
+              {
+                "name": "segmentation.isolated_points",
+                "status": "PASS",
+                "metric": "isolated_point_ratio",
+                "value": 0.002746,
+                "explanation": "High isolated-point ratio indicates possible background leakage or sparse segmentation."
+              },
+              {
+                "name": "segmentation.outliers",
+                "status": "PASS",
+                "metric": "outlier_ratio",
+                "value": 0.006711,
+                "explanation": "Nearest-neighbor outliers can expand PDI support and inflate volume."
+              },
+              {
+                "name": "segmentation.mean_density",
+                "status": "FAIL",
+                "metric": "density_points_per_m3",
+                "value": 6.0925,
+                "explanation": "Low global density increases sensitivity to voxelization."
+              },
+              {
+                "name": "segmentation.bbox_aspect",
+                "status": "PASS",
+                "metric": "axis_ratio",
+                "value": 1.4568,
+                "explanation": "Extreme bounding-box ratios can indicate missing views or background contamination."
+              },
+              {
+                "name": "coverage.spatial_distribution",
+                "status": "PASS",
+                "metric": "spatial_coverage_ratio",
+                "value": 0.092593,
+                "explanation": "Low occupied-cell coverage suggests incomplete spatial support."
+              },
+              {
+                "name": "coverage.interior_holes",
+                "status": "FAIL",
+                "metric": "interior_hole_ratio",
+                "value": 0.921875,
+                "explanation": "High empty-interior ratio is a proxy for large holes or missing regions."
+              },
+              {
+                "name": "coverage.lateral",
+                "status": "FAIL",
+                "metric": "lateral_coverage_ratio",
+                "value": 0.097222,
+                "explanation": "Low lateral coverage can cause structured underestimation."
+              },
+              {
+                "name": "coverage.top",
+                "status": "FAIL",
+                "metric": "top_coverage_ratio",
+                "value": 0.055556,
+                "explanation": "Low top coverage can indicate missing upper surface observations."
+              },
+              {
+                "name": "coverage.bottom",
+                "status": "PASS",
+                "metric": "bottom_coverage_ratio",
+                "value": 0.222222,
+                "explanation": "Low bottom coverage is expected in aerial capture but reduces volumetric confidence."
+              },
+              {
+                "name": "geometry.point_count",
+                "status": "FAIL",
+                "metric": "point_count",
+                "value": 3278,
+                "explanation": "Low point count reduces estimator stability."
+              },
+              {
+                "name": "geometry.components",
+                "status": "PASS",
+                "metric": "voxel_components",
+                "value": 3,
+                "explanation": "Many disconnected occupied components indicate fragmentation or background leakage."
+              },
+              {
+                "name": "geometry.spatial_consistency",
+                "status": "PASS",
+                "metric": "dominant_component_voxel_ratio",
+                "value": 0.809249,
+                "explanation": "Low dominant-component ratio indicates fragmented spatial support."
+              }
+            ],
+            "diagnostic": [
+              "segmentation.mean_density: FAIL - Low global density increases sensitivity to voxelization.",
+              "coverage.interior_holes: FAIL - High empty-interior ratio is a proxy for large holes or missing regions.",
+              "coverage.lateral: FAIL - Low lateral coverage can cause structured underestimation.",
+              "coverage.top: FAIL - Low top coverage can indicate missing upper surface observations.",
+              "geometry.point_count: FAIL - Low point count reduces estimator stability."
+            ],
+            "pdi_metrics": {
+              "method": "point_density_integration",
+              "volume_m3": 39.0156,
+              "voxel_size_m": 0.25,
+              "density_threshold_points_per_voxel": 1,
+              "hull_density_points_per_m3": 74.396752,
+              "hull_volume_m3": 44.061063,
+              "solid_voxels": 2497,
+              "occupied_voxels": 346,
+              "dense_voxels": 346
+            },
+            "bounding_box_m": {
+              "length_m": 8.1378,
+              "width_m": 9.8142,
+              "height_m": 6.7368
+            },
+            "ground_truth_volume_m3": 119.74,
+            "error_percentage": 67.4164,
+            "reconstruction_attempts": [
+              {
+                "attempt": "attempt_1",
+                "options": [
+                  {
+                    "name": "feature-quality",
+                    "value": "ultra"
+                  },
+                  {
+                    "name": "pc-quality",
+                    "value": "high"
+                  },
+                  {
+                    "name": "min-num-features",
+                    "value": "16000"
+                  },
+                  {
+                    "name": "matcher-neighbors",
+                    "value": "12"
+                  },
+                  {
+                    "name": "depthmap-resolution",
+                    "value": "high"
+                  },
+                  {
+                    "name": "pc-filter",
+                    "value": "1"
+                  },
+                  {
+                    "name": "end-with",
+                    "value": "odm_filterpoints"
+                  }
+                ],
+                "task_uuid": "86f11977-7789-42d8-b4b0-852f623f1df0",
+                "status": "completed",
+                "message": null
+              }
+            ],
+            "scale_evidence": {
+              "image_count": 28,
+              "images_with_exif": 0,
+              "images_with_gps": 0,
+              "gcp_path": "data/processed/723f91e2-b1b5-43f7-b336-6816d8300509/gcp_list.txt",
+              "scale_certified": true,
+              "reason": "aruco_gcp_generated",
+              "aruco_gcp": {
+                "gcp_path": "data/processed/723f91e2-b1b5-43f7-b336-6816d8300509/gcp_list.txt",
+                "marker_size_m": 1.0,
+                "detections_count": 15,
+                "rejected_detections_count": 6,
+                "gcp_count": 60,
+                "detections": [
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014000.png",
+                    "marker_id": 0,
+                    "side_px": 135.175,
+                    "corners_px": [
+                      [
+                        133.45794677734375,
+                        836.9730224609375
+                      ],
+                      [
+                        274.34271240234375,
+                        838.127685546875
+                      ],
+                      [
+                        203.26722717285156,
+                        933.5525512695312
+                      ],
+                      [
+                        49.13911056518555,
+                        931.5191650390625
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014016.png",
+                    "marker_id": 0,
+                    "side_px": 129.6255,
+                    "corners_px": [
+                      [
+                        259.65045166015625,
+                        809.451416015625
+                      ],
+                      [
+                        400.66705322265625,
+                        811.5188598632812
+                      ],
+                      [
+                        346.41552734375,
+                        904.5349731445312
+                      ],
+                      [
+                        191.79026794433594,
+                        902.4814453125
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014026.png",
+                    "marker_id": 0,
+                    "side_px": 132.5468,
+                    "corners_px": [
+                      [
+                        194.27816772460938,
+                        795.6844482421875
+                      ],
+                      [
+                        347.25830078125,
+                        786.4334106445312
+                      ],
+                      [
+                        319.57958984375,
+                        882.4803466796875
+                      ],
+                      [
+                        150.3710479736328,
+                        893.691162109375
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014035.png",
+                    "marker_id": 0,
+                    "side_px": 152.7549,
+                    "corners_px": [
+                      [
+                        431.5993347167969,
+                        894.2445678710938
+                      ],
+                      [
+                        581.949462890625,
+                        834.8959350585938
+                      ],
+                      [
+                        689.6718139648438,
+                        918.576171875
+                      ],
+                      [
+                        531.4093017578125,
+                        990.9262084960938
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014042.png",
+                    "marker_id": 0,
+                    "side_px": 148.6713,
+                    "corners_px": [
+                      [
+                        977.6923828125,
+                        941.680908203125
+                      ],
+                      [
+                        1064.2430419921875,
+                        859.1507568359375
+                      ],
+                      [
+                        1228.492431640625,
+                        903.3749389648438
+                      ],
+                      [
+                        1155.9180908203125,
+                        996.9273071289062
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014049.png",
+                    "marker_id": 0,
+                    "side_px": 150.0816,
+                    "corners_px": [
+                      [
+                        1247.8533935546875,
+                        905.9750366210938
+                      ],
+                      [
+                        1280.2718505859375,
+                        824.7266235351562
+                      ],
+                      [
+                        1473.768798828125,
+                        868.8609619140625
+                      ],
+                      [
+                        1461.9658203125,
+                        961.3391723632812
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014102.png",
+                    "marker_id": 0,
+                    "side_px": 139.8549,
+                    "corners_px": [
+                      [
+                        1576.385986328125,
+                        856.0595092773438
+                      ],
+                      [
+                        1524.3040771484375,
+                        770.4549560546875
+                      ],
+                      [
+                        1686.070068359375,
+                        778.4541015625
+                      ],
+                      [
+                        1758.9246826171875,
+                        866.6643676757812
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014129.png",
+                    "marker_id": 0,
+                    "side_px": 127.1842,
+                    "corners_px": [
+                      [
+                        1749.797607421875,
+                        778.7212524414062
+                      ],
+                      [
+                        1651.010986328125,
+                        709.93017578125
+                      ],
+                      [
+                        1775.095947265625,
+                        699.3718872070312
+                      ],
+                      [
+                        1884.800537109375,
+                        765.6956787109375
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014145.png",
+                    "marker_id": 0,
+                    "side_px": 73.2515,
+                    "corners_px": [
+                      [
+                        1617.608154296875,
+                        483.79473876953125
+                      ],
+                      [
+                        1518.6087646484375,
+                        460.71771240234375
+                      ],
+                      [
+                        1563.40185546875,
+                        435.653076171875
+                      ],
+                      [
+                        1654.576904296875,
+                        455.1014099121094
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014339.png",
+                    "marker_id": 0,
+                    "side_px": 103.2014,
+                    "corners_px": [
+                      [
+                        197.42074584960938,
+                        597.8088989257812
+                      ],
+                      [
+                        270.4868469238281,
+                        625.8842163085938
+                      ],
+                      [
+                        154.47930908203125,
+                        680.2134399414062
+                      ],
+                      [
+                        81.31436157226562,
+                        648.5037231445312
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014347.png",
+                    "marker_id": 0,
+                    "side_px": 132.902,
+                    "corners_px": [
+                      [
+                        154.54348754882812,
+                        739.4660034179688
+                      ],
+                      [
+                        278.1768493652344,
+                        753.3125610351562
+                      ],
+                      [
+                        171.13946533203125,
+                        832.5924072265625
+                      ],
+                      [
+                        37.704166412353516,
+                        815.6787109375
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014420.png",
+                    "marker_id": 0,
+                    "side_px": 85.271,
+                    "corners_px": [
+                      [
+                        143.0017547607422,
+                        981.7092895507812
+                      ],
+                      [
+                        225.27938842773438,
+                        988.0722045898438
+                      ],
+                      [
+                        215.3334503173828,
+                        1074.6402587890625
+                      ],
+                      [
+                        132.12950134277344,
+                        1069.068359375
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014429.png",
+                    "marker_id": 0,
+                    "side_px": 78.0452,
+                    "corners_px": [
+                      [
+                        1081.0108642578125,
+                        117.01536560058594
+                      ],
+                      [
+                        1002.9830322265625,
+                        116.01490020751953
+                      ],
+                      [
+                        1003.9805297851562,
+                        37.974605560302734
+                      ],
+                      [
+                        1082.0225830078125,
+                        38.97050094604492
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014454.png",
+                    "marker_id": 0,
+                    "side_px": 62.9249,
+                    "corners_px": [
+                      [
+                        569.349853515625,
+                        68.23811340332031
+                      ],
+                      [
+                        522.1309814453125,
+                        109.81739044189453
+                      ],
+                      [
+                        481.04901123046875,
+                        62.46382522583008
+                      ],
+                      [
+                        528.335693359375,
+                        20.54656410217285
+                      ]
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014507.png",
+                    "marker_id": 0,
+                    "side_px": 69.2144,
+                    "corners_px": [
+                      [
+                        349.51812744140625,
+                        1024.501953125
+                      ],
+                      [
+                        410.6587829589844,
+                        994.6574096679688
+                      ],
+                      [
+                        438.82275390625,
+                        1058.059814453125
+                      ],
+                      [
+                        377.3973388671875,
+                        1089.29345703125
+                      ]
+                    ]
+                  }
+                ],
+                "rejected_detections": [
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014203.png",
+                    "side_px": 57.5716,
+                    "mean_side_px": 57.5716,
+                    "side_cv": 0.4987,
+                    "area_ratio": 0.2861,
+                    "reasons": [
+                      "marker_too_small",
+                      "unstable_side_lengths"
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014212.png",
+                    "side_px": 50.9751,
+                    "mean_side_px": 50.9751,
+                    "side_cv": 0.556,
+                    "area_ratio": 0.2579,
+                    "reasons": [
+                      "marker_too_small",
+                      "unstable_side_lengths"
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014219.png",
+                    "side_px": 51.5455,
+                    "mean_side_px": 51.5455,
+                    "side_cv": 0.5473,
+                    "area_ratio": 0.2569,
+                    "reasons": [
+                      "marker_too_small",
+                      "unstable_side_lengths"
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014314.png",
+                    "side_px": 52.5989,
+                    "mean_side_px": 52.5989,
+                    "side_cv": 0.5241,
+                    "area_ratio": 0.2406,
+                    "reasons": [
+                      "marker_too_small",
+                      "unstable_side_lengths"
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014320.png",
+                    "side_px": 61.1081,
+                    "mean_side_px": 61.1081,
+                    "side_cv": 0.6326,
+                    "area_ratio": 0.2111,
+                    "reasons": [
+                      "unstable_side_lengths"
+                    ]
+                  },
+                  {
+                    "image_path": "data/uploads/723f91e2-b1b5-43f7-b336-6816d8300509/Captura de pantalla 2026-06-27 014327.png",
+                    "side_px": 77.2173,
+                    "mean_side_px": 77.2173,
+                    "side_cv": 0.5338,
+                    "area_ratio": 0.2325,
+                    "reasons": [
+                      "unstable_side_lengths"
+                    ]
+                  }
+                ]
+              }
+            },
+            "error_code": null,
+            "message": "Preliminary volumetry completed"
+          },
+          "session_id": "723f91e2-b1b5-43f7-b336-6816d8300509",
+          "total_seconds": 335.804
+        },
+        "scale_quality": {
+          "point_cloud_scale_m_per_unit": 1.0,
+          "source": "gcp_or_nodeodm_metric_output",
+          "scale_px_per_cm_observed": null,
+          "metric_units_certified": true
+        },
+        "cleanup_steps": [
+          {
+            "filter": "statistical_outlier",
+            "before": 371766,
+            "after": 364166,
+            "removed": 7600,
+            "removed_ratio": 0.020443
+          }
+        ],
+        "segmentation_quality": {
+          "applied": true,
+          "method": "dbscan_dominant_components",
+          "voxel_size_m": 0.06,
+          "cluster_eps_m": 0.35,
+          "cluster_min_points": 20,
+          "max_components": 2,
+          "min_component_ratio": 0.1,
+          "max_component_height_m": 8.0,
+          "max_component_bbox_volume_m3": 500.0,
+          "max_component_axis_ratio": 8.0,
+          "selection_reason": "plausible_woodpile_components",
+          "selected_labels": [
+            4,
+            8
+          ],
+          "selected_point_count": 3278,
+          "cluster_counts": {
+            "4": 2609,
+            "8": 669,
+            "7": 276,
+            "2": 61,
+            "6": 55,
+            "1": 50,
+            "10": 38,
+            "0": 31
+          },
+          "cluster_metrics": {
+            "4": {
+              "count": 2609,
+              "extent": [
+                5.5872,
+                4.7737,
+                1.6774
+              ],
+              "bbox_volume_m3": 44.7396,
+              "density_points_per_m3": 58.3153,
+              "axis_ratio": 3.3308,
+              "plausible_woodpile": true
+            },
+            "8": {
+              "count": 669,
+              "extent": [
+                1.479,
+                1.2496,
+                1.7502
+              ],
+              "bbox_volume_m3": 3.2346,
+              "density_points_per_m3": 206.8289,
+              "axis_ratio": 1.4006,
+              "plausible_woodpile": true
+            }
+          }
+        },
+        "stages": {
+          "nodeodm_raw_point_cloud": {
+            "name": "nodeodm_raw_point_cloud",
+            "point_count": 371766,
+            "bbox_min": [
+              -1.282025,
+              -9.225185,
+              -7.388458
+            ],
+            "bbox_max": [
+              11.047532,
+              2.114264,
+              1.66957
+            ],
+            "bbox_extent": [
+              12.329557,
+              11.33945,
+              9.058028
+            ],
+            "bbox_volume_m3": 1266.406363,
+            "density_points_per_m3": 293.559801,
+            "mean_nn_distance_m": 0.002234,
+            "median_nn_distance_m": 0.001123,
+            "std_xyz": [
+              1.722276,
+              1.95547,
+              1.477457
+            ],
+            "centroid": [
+              0.572442,
+              -0.423265,
+              -1.393283
+            ],
+            "histograms": {
+              "x": {
+                "counts": [
+                  315,
+                  104867,
+                  232906,
+                  2451,
+                  122,
+                  1817,
+                  2980,
+                  2169,
+                  3048,
+                  4908,
+                  4449,
+                  1588,
+                  2664,
+                  1010,
+                  69,
+                  425,
+                  127,
+                  1075,
+                  2338,
+                  2438
+                ],
+                "edges": [
+                  -1.282025,
+                  -0.665547,
+                  -0.049069,
+                  0.567409,
+                  1.183887,
+                  1.800364,
+                  2.416842,
+                  3.03332,
+                  3.649798,
+                  4.266276,
+                  4.882754,
+                  5.499232,
+                  6.115709,
+                  6.732187,
+                  7.348665,
+                  7.965143,
+                  8.581621,
+                  9.198099,
+                  9.814576,
+                  10.431054,
+                  11.047532
+                ]
+              },
+              "y": {
+                "counts": [
+                  2416,
+                  5461,
+                  5067,
+                  3570,
+                  2629,
+                  3036,
+                  2638,
+                  1637,
+                  1551,
+                  848,
+                  30,
+                  0,
+                  65,
+                  366,
+                  85,
+                  18047,
+                  305053,
+                  18407,
+                  555,
+                  305
+                ],
+                "edges": [
+                  -9.225185,
+                  -8.658213,
+                  -8.09124,
+                  -7.524268,
+                  -6.957295,
+                  -6.390323,
+                  -5.823351,
+                  -5.256378,
+                  -4.689406,
+                  -4.122433,
+                  -3.555461,
+                  -2.988488,
+                  -2.421516,
+                  -1.854543,
+                  -1.287571,
+                  -0.720598,
+                  -0.153626,
+                  0.413347,
+                  0.980319,
+                  1.547292,
+                  2.114264
+                ]
+              },
+              "z": {
+                "counts": [
+                  2757,
+                  11155,
+                  10614,
+                  3887,
+                  538,
+                  177,
+                  0,
+                  0,
+                  264,
+                  81,
+                  336,
+                  1624,
+                  605,
+                  22075,
+                  316109,
+                  451,
+                  569,
+                  211,
+                  219,
+                  94
+                ],
+                "edges": [
+                  -7.388458,
+                  -6.935556,
+                  -6.482655,
+                  -6.029754,
+                  -5.576852,
+                  -5.123951,
+                  -4.671049,
+                  -4.218148,
+                  -3.765247,
+                  -3.312345,
+                  -2.859444,
+                  -2.406543,
+                  -1.953641,
+                  -1.50074,
+                  -1.047838,
+                  -0.594937,
+                  -0.142036,
+                  0.310866,
+                  0.763767,
+                  1.216668,
+                  1.66957
+                ]
+              }
+            }
+          },
+          "metric_scaled_cloud": {
+            "name": "metric_scaled_cloud",
+            "point_count": 371766,
+            "bbox_min": [
+              -1.282025,
+              -9.225185,
+              -7.388458
+            ],
+            "bbox_max": [
+              11.047532,
+              2.114264,
+              1.66957
+            ],
+            "bbox_extent": [
+              12.329557,
+              11.33945,
+              9.058028
+            ],
+            "bbox_volume_m3": 1266.406363,
+            "density_points_per_m3": 293.559801,
+            "mean_nn_distance_m": 0.002234,
+            "median_nn_distance_m": 0.001123,
+            "std_xyz": [
+              1.722276,
+              1.95547,
+              1.477457
+            ],
+            "centroid": [
+              0.572442,
+              -0.423265,
+              -1.393283
+            ],
+            "histograms": {
+              "x": {
+                "counts": [
+                  315,
+                  104867,
+                  232906,
+                  2451,
+                  122,
+                  1817,
+                  2980,
+                  2169,
+                  3048,
+                  4908,
+                  4449,
+                  1588,
+                  2664,
+                  1010,
+                  69,
+                  425,
+                  127,
+                  1075,
+                  2338,
+                  2438
+                ],
+                "edges": [
+                  -1.282025,
+                  -0.665547,
+                  -0.049069,
+                  0.567409,
+                  1.183887,
+                  1.800364,
+                  2.416842,
+                  3.03332,
+                  3.649798,
+                  4.266276,
+                  4.882754,
+                  5.499232,
+                  6.115709,
+                  6.732187,
+                  7.348665,
+                  7.965143,
+                  8.581621,
+                  9.198099,
+                  9.814576,
+                  10.431054,
+                  11.047532
+                ]
+              },
+              "y": {
+                "counts": [
+                  2416,
+                  5461,
+                  5067,
+                  3570,
+                  2629,
+                  3036,
+                  2638,
+                  1637,
+                  1551,
+                  848,
+                  30,
+                  0,
+                  65,
+                  366,
+                  85,
+                  18047,
+                  305053,
+                  18407,
+                  555,
+                  305
+                ],
+                "edges": [
+                  -9.225185,
+                  -8.658213,
+                  -8.09124,
+                  -7.524268,
+                  -6.957295,
+                  -6.390323,
+                  -5.823351,
+                  -5.256378,
+                  -4.689406,
+                  -4.122433,
+                  -3.555461,
+                  -2.988488,
+                  -2.421516,
+                  -1.854543,
+                  -1.287571,
+                  -0.720598,
+                  -0.153626,
+                  0.413347,
+                  0.980319,
+                  1.547292,
+                  2.114264
+                ]
+              },
+              "z": {
+                "counts": [
+                  2757,
+                  11155,
+                  10614,
+                  3887,
+                  538,
+                  177,
+                  0,
+                  0,
+                  264,
+                  81,
+                  336,
+                  1624,
+                  605,
+                  22075,
+                  316109,
+                  451,
+                  569,
+                  211,
+                  219,
+                  94
+                ],
+                "edges": [
+                  -7.388458,
+                  -6.935556,
+                  -6.482655,
+                  -6.029754,
+                  -5.576852,
+                  -5.123951,
+                  -4.671049,
+                  -4.218148,
+                  -3.765247,
+                  -3.312345,
+                  -2.859444,
+                  -2.406543,
+                  -1.953641,
+                  -1.50074,
+                  -1.047838,
+                  -0.594937,
+                  -0.142036,
+                  0.310866,
+                  0.763767,
+                  1.216668,
+                  1.66957
+                ]
+              }
+            }
+          },
+          "cleaned_cloud": {
+            "name": "cleaned_cloud",
+            "point_count": 364166,
+            "bbox_min": [
+              -0.862003,
+              -9.182234,
+              -7.380173
+            ],
+            "bbox_max": [
+              11.047532,
+              2.110117,
+              1.453394
+            ],
+            "bbox_extent": [
+              11.909535,
+              11.292351,
+              8.833567
+            ],
+            "bbox_volume_m3": 1187.996792,
+            "density_points_per_m3": 306.537865,
+            "mean_nn_distance_m": 0.001957,
+            "median_nn_distance_m": 0.001114,
+            "std_xyz": [
+              1.615612,
+              1.746881,
+              1.331999
+            ],
+            "centroid": [
+              0.488343,
+              -0.305694,
+              -1.306233
+            ],
+            "histograms": {
+              "x": {
+                "counts": [
+                  17961,
+                  244024,
+                  78397,
+                  17,
+                  591,
+                  991,
+                  3004,
+                  1033,
+                  2692,
+                  3141,
+                  3210,
+                  851,
+                  1799,
+                  443,
+                  0,
+                  303,
+                  69,
+                  1120,
+                  2248,
+                  2272
+                ],
+                "edges": [
+                  -0.862003,
+                  -0.266526,
+                  0.328951,
+                  0.924427,
+                  1.519904,
+                  2.115381,
+                  2.710858,
+                  3.306334,
+                  3.901811,
+                  4.497288,
+                  5.092765,
+                  5.688241,
+                  6.283718,
+                  6.879195,
+                  7.474672,
+                  8.070148,
+                  8.665625,
+                  9.261102,
+                  9.856579,
+                  10.452055,
+                  11.047532
+                ]
+              },
+              "y": {
+                "counts": [
+                  1989,
+                  4343,
+                  3905,
+                  2283,
+                  1819,
+                  2530,
+                  2525,
+                  1128,
+                  1350,
+                  531,
+                  0,
+                  0,
+                  36,
+                  246,
+                  27,
+                  18919,
+                  304432,
+                  17584,
+                  346,
+                  173
+                ],
+                "edges": [
+                  -9.182234,
+                  -8.617616,
+                  -8.052999,
+                  -7.488381,
+                  -6.923764,
+                  -6.359146,
+                  -5.794529,
+                  -5.229911,
+                  -4.665294,
+                  -4.100676,
+                  -3.536059,
+                  -2.971441,
+                  -2.406823,
+                  -1.842206,
+                  -1.277588,
+                  -0.712971,
+                  -0.148353,
+                  0.416264,
+                  0.980882,
+                  1.545499,
+                  2.110117
+                ]
+              },
+              "z": {
+                "counts": [
+                  2162,
+                  9473,
+                  7533,
+                  2810,
+                  460,
+                  128,
+                  10,
+                  0,
+                  136,
+                  13,
+                  134,
+                  1273,
+                  626,
+                  7774,
+                  329869,
+                  1153,
+                  183,
+                  349,
+                  50,
+                  30
+                ],
+                "edges": [
+                  -7.380173,
+                  -6.938494,
+                  -6.496816,
+                  -6.055138,
+                  -5.613459,
+                  -5.171781,
+                  -4.730103,
+                  -4.288424,
+                  -3.846746,
+                  -3.405068,
+                  -2.963389,
+                  -2.521711,
+                  -2.080032,
+                  -1.638354,
+                  -1.196676,
+                  -0.754997,
+                  -0.313319,
+                  0.128359,
+                  0.570038,
+                  1.011716,
+                  1.453394
+                ]
+              }
+            }
+          },
+          "pdi_input_cloud": {
+            "name": "pdi_input_cloud",
+            "point_count": 3278,
+            "bbox_min": [
+              -0.725309,
+              -9.169596,
+              -7.374809
+            ],
+            "bbox_max": [
+              7.412486,
+              0.644581,
+              -0.637976
+            ],
+            "bbox_extent": [
+              8.137795,
+              9.814177,
+              6.736833
+            ],
+            "bbox_volume_m3": 538.042284,
+            "density_points_per_m3": 6.092458,
+            "mean_nn_distance_m": 0.032287,
+            "median_nn_distance_m": 0.031672,
+            "std_xyz": [
+              2.148798,
+              3.182878,
+              2.165462
+            ],
+            "centroid": [
+              3.626917,
+              -6.013584,
+              -5.362235
+            ],
+            "histograms": {
+              "x": {
+                "counts": [
+                  57,
+                  283,
+                  249,
+                  80,
+                  0,
+                  0,
+                  90,
+                  134,
+                  191,
+                  223,
+                  35,
+                  204,
+                  363,
+                  355,
+                  361,
+                  217,
+                  66,
+                  220,
+                  134,
+                  16
+                ],
+                "edges": [
+                  -0.725309,
+                  -0.318419,
+                  0.08847,
+                  0.49536,
+                  0.90225,
+                  1.30914,
+                  1.716029,
+                  2.122919,
+                  2.529809,
+                  2.936699,
+                  3.343588,
+                  3.750478,
+                  4.157368,
+                  4.564258,
+                  4.971147,
+                  5.378037,
+                  5.784927,
+                  6.191817,
+                  6.598706,
+                  7.005596,
+                  7.412486
+                ]
+              },
+              "y": {
+                "counts": [
+                  269,
+                  569,
+                  574,
+                  431,
+                  219,
+                  174,
+                  200,
+                  99,
+                  49,
+                  25,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  88,
+                  361,
+                  220
+                ],
+                "edges": [
+                  -9.169596,
+                  -8.678887,
+                  -8.188178,
+                  -7.697469,
+                  -7.206761,
+                  -6.716052,
+                  -6.225343,
+                  -5.734634,
+                  -5.243925,
+                  -4.753216,
+                  -4.262507,
+                  -3.771799,
+                  -3.28109,
+                  -2.790381,
+                  -2.299672,
+                  -1.808963,
+                  -1.318254,
+                  -0.827546,
+                  -0.336837,
+                  0.153872,
+                  0.644581
+                ]
+              },
+              "z": {
+                "counts": [
+                  187,
+                  423,
+                  795,
+                  912,
+                  292,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  13,
+                  36,
+                  8,
+                  56,
+                  333,
+                  223
+                ],
+                "edges": [
+                  -7.374809,
+                  -7.037967,
+                  -6.701126,
+                  -6.364284,
+                  -6.027442,
+                  -5.690601,
+                  -5.353759,
+                  -5.016917,
+                  -4.680076,
+                  -4.343234,
+                  -4.006393,
+                  -3.669551,
+                  -3.332709,
+                  -2.995868,
+                  -2.659026,
+                  -2.322184,
+                  -1.985343,
+                  -1.648501,
+                  -1.311659,
+                  -0.974818,
+                  -0.637976
+                ]
+              }
+            }
+          }
+        },
+        "pdi_metrics_recomputed": {
+          "method": "point_density_integration",
+          "volume_m3": 39.0156,
+          "voxel_size_m": 0.25,
+          "density_threshold_points_per_voxel": 1,
+          "hull_density_points_per_m3": 74.396752,
+          "hull_volume_m3": 44.061063,
+          "solid_voxels": 2497,
+          "occupied_voxels": 346,
+          "dense_voxels": 346
+        },
+        "quality_gates_recomputed": [
+          {
+            "name": "segmentation.isolated_points",
+            "status": "PASS",
+            "metric": "isolated_point_ratio",
+            "value": 0.002746,
+            "explanation": "High isolated-point ratio indicates possible background leakage or sparse segmentation."
+          },
+          {
+            "name": "segmentation.outliers",
+            "status": "PASS",
+            "metric": "outlier_ratio",
+            "value": 0.006711,
+            "explanation": "Nearest-neighbor outliers can expand PDI support and inflate volume."
+          },
+          {
+            "name": "segmentation.mean_density",
+            "status": "FAIL",
+            "metric": "density_points_per_m3",
+            "value": 6.0925,
+            "explanation": "Low global density increases sensitivity to voxelization."
+          },
+          {
+            "name": "segmentation.bbox_aspect",
+            "status": "PASS",
+            "metric": "axis_ratio",
+            "value": 1.4568,
+            "explanation": "Extreme bounding-box ratios can indicate missing views or background contamination."
+          },
+          {
+            "name": "coverage.spatial_distribution",
+            "status": "PASS",
+            "metric": "spatial_coverage_ratio",
+            "value": 0.092593,
+            "explanation": "Low occupied-cell coverage suggests incomplete spatial support."
+          },
+          {
+            "name": "coverage.interior_holes",
+            "status": "FAIL",
+            "metric": "interior_hole_ratio",
+            "value": 0.921875,
+            "explanation": "High empty-interior ratio is a proxy for large holes or missing regions."
+          },
+          {
+            "name": "coverage.lateral",
+            "status": "FAIL",
+            "metric": "lateral_coverage_ratio",
+            "value": 0.097222,
+            "explanation": "Low lateral coverage can cause structured underestimation."
+          },
+          {
+            "name": "coverage.top",
+            "status": "FAIL",
+            "metric": "top_coverage_ratio",
+            "value": 0.055556,
+            "explanation": "Low top coverage can indicate missing upper surface observations."
+          },
+          {
+            "name": "coverage.bottom",
+            "status": "PASS",
+            "metric": "bottom_coverage_ratio",
+            "value": 0.222222,
+            "explanation": "Low bottom coverage is expected in aerial capture but reduces volumetric confidence."
+          },
+          {
+            "name": "geometry.point_count",
+            "status": "FAIL",
+            "metric": "point_count",
+            "value": 3278,
+            "explanation": "Low point count reduces estimator stability."
+          },
+          {
+            "name": "geometry.components",
+            "status": "PASS",
+            "metric": "voxel_components",
+            "value": 3,
+            "explanation": "Many disconnected occupied components indicate fragmentation or background leakage."
+          },
+          {
+            "name": "geometry.spatial_consistency",
+            "status": "PASS",
+            "metric": "dominant_component_voxel_ratio",
+            "value": 0.809249,
+            "explanation": "Low dominant-component ratio indicates fragmented spatial support."
+          }
+        ],
+        "pdi_quality_recomputed": {
+          "point_count": 3278,
+          "bounding_box_extent": [
+            8.13779503107071,
+            9.81417683760325,
+            6.736832999047779
+          ],
+          "axis_ratio": 1.4568,
+          "density_points_per_m3": 6.0925,
+          "median_nn_m": 0.031672,
+          "mean_nn_m": 0.032287,
+          "local_density_cv": 0.475097,
+          "isolated_point_ratio": 0.002746,
+          "outlier_ratio": 0.006711,
+          "spatial_coverage_ratio": 0.092593,
+          "interior_hole_ratio": 0.921875,
+          "lateral_coverage_ratio": 0.097222,
+          "top_coverage_ratio": 0.055556,
+          "bottom_coverage_ratio": 0.222222,
+          "voxel_components": 3,
+          "dominant_component_voxel_ratio": 0.809249
+        },
+        "confidence_recomputed": {
+          "score": 25.0,
+          "level": "CRITICAL",
+          "diagnostic": [
+            "segmentation.mean_density: FAIL - Low global density increases sensitivity to voxelization.",
+            "coverage.interior_holes: FAIL - High empty-interior ratio is a proxy for large holes or missing regions.",
+            "coverage.lateral: FAIL - Low lateral coverage can cause structured underestimation.",
+            "coverage.top: FAIL - Low top coverage can indicate missing upper surface observations.",
+            "geometry.point_count: FAIL - Low point count reduces estimator stability."
+          ]
+        },
+        "percentage_points_removed_nodeodm_to_pdi": 99.1183
+      },
+      "benchmark_experimental": {
+        "path": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_input_cloud.ply",
+        "stats": {
+          "name": "benchmark_experimental_pdi_input",
+          "point_count": 26113,
+          "bbox_min": [
+            2.862918,
+            -7.653658,
+            -1.040662
+          ],
+          "bbox_max": [
+            9.662048,
+            1.445573,
+            5.236663
+          ],
+          "bbox_extent": [
+            6.79913,
+            9.099231,
+            6.277325
+          ],
+          "bbox_volume_m3": 388.358359,
+          "density_points_per_m3": 67.239444,
+          "mean_nn_distance_m": 0.038123,
+          "median_nn_distance_m": 0.039463,
+          "std_xyz": [
+            1.562006,
+            1.939324,
+            1.487122
+          ],
+          "centroid": [
+            6.308759,
+            -2.143907,
+            2.243974
+          ],
+          "histograms": {
+            "x": {
+              "counts": [
+                20,
+                129,
+                792,
+                1658,
+                2027,
+                1846,
+                1524,
+                1612,
+                1663,
+                1634,
+                1649,
+                1728,
+                1623,
+                1654,
+                1605,
+                1595,
+                1490,
+                1223,
+                498,
+                143
+              ],
+              "edges": [
+                2.862918,
+                3.202875,
+                3.542831,
+                3.882788,
+                4.222744,
+                4.562701,
+                4.902657,
+                5.242614,
+                5.58257,
+                5.922527,
+                6.262483,
+                6.60244,
+                6.942396,
+                7.282353,
+                7.622309,
+                7.962266,
+                8.302222,
+                8.642179,
+                8.982135,
+                9.322092,
+                9.662048
+              ]
+            },
+            "y": {
+              "counts": [
+                105,
+                198,
+                192,
+                163,
+                241,
+                931,
+                1736,
+                1778,
+                1717,
+                1830,
+                1686,
+                1907,
+                1930,
+                1816,
+                2036,
+                1983,
+                1846,
+                1833,
+                1636,
+                549
+              ],
+              "edges": [
+                -7.653658,
+                -7.198696,
+                -6.743735,
+                -6.288773,
+                -5.833812,
+                -5.37885,
+                -4.923888,
+                -4.468927,
+                -4.013965,
+                -3.559004,
+                -3.104042,
+                -2.649081,
+                -2.194119,
+                -1.739158,
+                -1.284196,
+                -0.829235,
+                -0.374273,
+                0.080689,
+                0.53565,
+                0.990612,
+                1.445573
+              ]
+            },
+            "z": {
+              "counts": [
+                58,
+                493,
+                1114,
+                1247,
+                1303,
+                1626,
+                1335,
+                1361,
+                1769,
+                1489,
+                1536,
+                2310,
+                2036,
+                1257,
+                1418,
+                1868,
+                1594,
+                1263,
+                788,
+                248
+              ],
+              "edges": [
+                -1.040662,
+                -0.726796,
+                -0.41293,
+                -0.099063,
+                0.214803,
+                0.528669,
+                0.842535,
+                1.156402,
+                1.470268,
+                1.784134,
+                2.098,
+                2.411867,
+                2.725733,
+                3.039599,
+                3.353465,
+                3.667332,
+                3.981198,
+                4.295064,
+                4.608931,
+                4.922797,
+                5.236663
+              ]
+            }
+          }
+        },
+        "pdi_metrics_recomputed": {
+          "method": "point_density_integration",
+          "volume_m3": 132.6719,
+          "voxel_size_m": 0.25,
+          "density_threshold_points_per_voxel": 2,
+          "hull_density_points_per_m3": 316.513648,
+          "hull_volume_m3": 82.501972,
+          "solid_voxels": 8491,
+          "occupied_voxels": 1627,
+          "dense_voxels": 1499
+        },
+        "benchmark_reference_volume_m3": 132.671875
+      },
+      "cloud_comparison": {
+        "productive_cloud": "/app/experiments/pipeline_diagnostics/set2_productive_pdi_input.ply",
+        "benchmark_cloud": "/app/data/processed/b6b04af0-122f-4fcc-af8a-cc553ca5e28d/surface_closure_diagnostics_2/poisson_input_cloud.ply",
+        "productive_stats": {
+          "name": "productive_pdi_input",
+          "point_count": 3278,
+          "bbox_min": [
+            -0.725309,
+            -9.169596,
+            -7.374809
+          ],
+          "bbox_max": [
+            7.412486,
+            0.644581,
+            -0.637976
+          ],
+          "bbox_extent": [
+            8.137795,
+            9.814177,
+            6.736833
+          ],
+          "bbox_volume_m3": 538.042284,
+          "density_points_per_m3": 6.092458,
+          "mean_nn_distance_m": 0.032287,
+          "median_nn_distance_m": 0.031672,
+          "std_xyz": [
+            2.148798,
+            3.182878,
+            2.165462
+          ],
+          "centroid": [
+            3.626917,
+            -6.013584,
+            -5.362235
+          ],
+          "histograms": {
+            "x": {
+              "counts": [
+                57,
+                283,
+                249,
+                80,
+                0,
+                0,
+                90,
+                134,
+                191,
+                223,
+                35,
+                204,
+                363,
+                355,
+                361,
+                217,
+                66,
+                220,
+                134,
+                16
+              ],
+              "edges": [
+                -0.725309,
+                -0.318419,
+                0.08847,
+                0.49536,
+                0.90225,
+                1.30914,
+                1.716029,
+                2.122919,
+                2.529809,
+                2.936699,
+                3.343588,
+                3.750478,
+                4.157368,
+                4.564258,
+                4.971147,
+                5.378037,
+                5.784927,
+                6.191817,
+                6.598706,
+                7.005596,
+                7.412486
+              ]
+            },
+            "y": {
+              "counts": [
+                269,
+                569,
+                574,
+                431,
+                219,
+                174,
+                200,
+                99,
+                49,
+                25,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                88,
+                361,
+                220
+              ],
+              "edges": [
+                -9.169596,
+                -8.678887,
+                -8.188178,
+                -7.697469,
+                -7.206761,
+                -6.716052,
+                -6.225343,
+                -5.734634,
+                -5.243925,
+                -4.753216,
+                -4.262507,
+                -3.771799,
+                -3.28109,
+                -2.790381,
+                -2.299672,
+                -1.808963,
+                -1.318254,
+                -0.827546,
+                -0.336837,
+                0.153872,
+                0.644581
+              ]
+            },
+            "z": {
+              "counts": [
+                187,
+                423,
+                795,
+                912,
+                292,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                13,
+                36,
+                8,
+                56,
+                333,
+                223
+              ],
+              "edges": [
+                -7.374809,
+                -7.037967,
+                -6.701126,
+                -6.364284,
+                -6.027442,
+                -5.690601,
+                -5.353759,
+                -5.016917,
+                -4.680076,
+                -4.343234,
+                -4.006393,
+                -3.669551,
+                -3.332709,
+                -2.995868,
+                -2.659026,
+                -2.322184,
+                -1.985343,
+                -1.648501,
+                -1.311659,
+                -0.974818,
+                -0.637976
+              ]
+            }
+          }
+        },
+        "benchmark_stats": {
+          "name": "benchmark_experimental_pdi_input",
+          "point_count": 26113,
+          "bbox_min": [
+            2.862918,
+            -7.653658,
+            -1.040662
+          ],
+          "bbox_max": [
+            9.662048,
+            1.445573,
+            5.236663
+          ],
+          "bbox_extent": [
+            6.79913,
+            9.099231,
+            6.277325
+          ],
+          "bbox_volume_m3": 388.358359,
+          "density_points_per_m3": 67.239444,
+          "mean_nn_distance_m": 0.038123,
+          "median_nn_distance_m": 0.039463,
+          "std_xyz": [
+            1.562006,
+            1.939324,
+            1.487122
+          ],
+          "centroid": [
+            6.308759,
+            -2.143907,
+            2.243974
+          ],
+          "histograms": {
+            "x": {
+              "counts": [
+                20,
+                129,
+                792,
+                1658,
+                2027,
+                1846,
+                1524,
+                1612,
+                1663,
+                1634,
+                1649,
+                1728,
+                1623,
+                1654,
+                1605,
+                1595,
+                1490,
+                1223,
+                498,
+                143
+              ],
+              "edges": [
+                2.862918,
+                3.202875,
+                3.542831,
+                3.882788,
+                4.222744,
+                4.562701,
+                4.902657,
+                5.242614,
+                5.58257,
+                5.922527,
+                6.262483,
+                6.60244,
+                6.942396,
+                7.282353,
+                7.622309,
+                7.962266,
+                8.302222,
+                8.642179,
+                8.982135,
+                9.322092,
+                9.662048
+              ]
+            },
+            "y": {
+              "counts": [
+                105,
+                198,
+                192,
+                163,
+                241,
+                931,
+                1736,
+                1778,
+                1717,
+                1830,
+                1686,
+                1907,
+                1930,
+                1816,
+                2036,
+                1983,
+                1846,
+                1833,
+                1636,
+                549
+              ],
+              "edges": [
+                -7.653658,
+                -7.198696,
+                -6.743735,
+                -6.288773,
+                -5.833812,
+                -5.37885,
+                -4.923888,
+                -4.468927,
+                -4.013965,
+                -3.559004,
+                -3.104042,
+                -2.649081,
+                -2.194119,
+                -1.739158,
+                -1.284196,
+                -0.829235,
+                -0.374273,
+                0.080689,
+                0.53565,
+                0.990612,
+                1.445573
+              ]
+            },
+            "z": {
+              "counts": [
+                58,
+                493,
+                1114,
+                1247,
+                1303,
+                1626,
+                1335,
+                1361,
+                1769,
+                1489,
+                1536,
+                2310,
+                2036,
+                1257,
+                1418,
+                1868,
+                1594,
+                1263,
+                788,
+                248
+              ],
+              "edges": [
+                -1.040662,
+                -0.726796,
+                -0.41293,
+                -0.099063,
+                0.214803,
+                0.528669,
+                0.842535,
+                1.156402,
+                1.470268,
+                1.784134,
+                2.098,
+                2.411867,
+                2.725733,
+                3.039599,
+                3.353465,
+                3.667332,
+                3.981198,
+                4.295064,
+                4.608931,
+                4.922797,
+                5.236663
+              ]
+            }
+          }
+        },
+        "point_count_ratio_productive_to_benchmark": 0.125531,
+        "point_count_delta": -22835,
+        "bbox_extent_delta_m": [
+          1.338665,
+          0.714946,
+          0.459508
+        ],
+        "bbox_volume_ratio_productive_to_benchmark": 1.385427,
+        "density_ratio_productive_to_benchmark": 0.090608,
+        "distance_metrics": {
+          "sample_size_source": 3278,
+          "sample_size_target": 12000,
+          "chamfer_distance_m": 6.787717,
+          "hausdorff_distance_m": 10.237346,
+          "productive_to_benchmark_mean_m": 6.209359,
+          "benchmark_to_productive_mean_m": 7.366076,
+          "productive_overlap_ratio_at_0_25m": 0.0,
+          "benchmark_overlap_ratio_at_0_25m": 0.0
+        },
+        "icp_metrics": {
+          "fitness": 0.0,
+          "inlier_rmse_m": 0.0,
+          "transformation": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "first_divergence": {
+        "stage": "nodeodm_raw_point_cloud",
+        "point_delta_ratio_vs_benchmark": 13.236817,
+        "bbox_volume_delta_ratio_vs_benchmark": 2.260922,
+        "stage_point_count": 371766,
+        "benchmark_point_count": 26113,
+        "stage_bbox_volume_m3": 1266.406363,
+        "benchmark_bbox_volume_m3": 388.358359,
+        "bottleneck": "OpenSfM/NodeODM reconstruction output differs before productive filtering."
+      }
+    }
+  },
+  "elapsed_seconds": 47.208
+}

@@ -158,7 +158,103 @@
       ],
       "ts": "2026-06-22T01:53:17.641087+00:00",
       "type": "gate_updated"
+    },
+    {
+      "lesson_id": "LESSON-RUN-HITO-0-5F-001",
+      "source": "manual",
+      "severity": "high",
+      "applies_when": [
+        "nodeodm",
+        "gcp",
+        "filenames",
+        "upload",
+        "scale"
+      ],
+      "ts": "2026-06-22T21:17:45.608236+00:00",
+      "type": "lesson_recorded"
+    },
+    {
+      "lesson_id": "LESSON-RUN-HITO-0-5F-002",
+      "source": "manual",
+      "severity": "critical",
+      "applies_when": [
+        "rf09_compliance",
+        "ground_truth_certified",
+        "error_percentage",
+        "aruco",
+        "gcp",
+        "scale"
+      ],
+      "ts": "2026-06-22T21:17:45.671411+00:00",
+      "type": "lesson_recorded"
+    },
+    {
+      "lesson_id": "LESSON-RUN-HITO-0-5F-003",
+      "source": "manual",
+      "severity": "high",
+      "applies_when": [
+        "mesh",
+        "point_cloud",
+        "segmentation",
+        "rf09",
+        "volume_estimate"
+      ],
+      "ts": "2026-06-22T21:17:45.740511+00:00",
+      "type": "lesson_recorded"
     }
   ],
-  "lessons": []
+  "lessons": [
+    {
+      "lesson_id": "LESSON-RUN-HITO-0-5F-001",
+      "stage": "CLOSE",
+      "outcome": "failed",
+      "do_not_repeat": "No enviar a NodeODM imagenes GCP con nombres ambiguos o incompatibles con el parser de referencias.",
+      "recommended_action": "Sanear nombres de archivo para el upload y generar las lineas del GCP usando exactamente esos nombres normalizados.",
+      "applies_when": [
+        "nodeodm",
+        "gcp",
+        "filenames",
+        "upload",
+        "scale"
+      ],
+      "severity": "high",
+      "source": "manual",
+      "timestamp": "2026-06-22T21:17:45.604238+00:00"
+    },
+    {
+      "lesson_id": "LESSON-RUN-HITO-0-5F-002",
+      "stage": "CLOSE",
+      "outcome": "rejected",
+      "do_not_repeat": "No corregir escala volumetrica usando ground truth ni multiplicadores magicos en tiempo de ejecucion.",
+      "recommended_action": "Integrar la referencia fisica ArUco de 100 cm en la etapa fotogrametrica para generar GCP reales y reconstruir la nube ya escalada.",
+      "applies_when": [
+        "rf09_compliance",
+        "ground_truth_certified",
+        "error_percentage",
+        "aruco",
+        "gcp",
+        "scale"
+      ],
+      "severity": "critical",
+      "source": "manual",
+      "timestamp": "2026-06-22T21:17:45.667372+00:00"
+    },
+    {
+      "lesson_id": "LESSON-RUN-HITO-0-5F-003",
+      "stage": "CLOSE",
+      "outcome": "failed",
+      "do_not_repeat": "No calcular volumen del acopio sobre la nube completa sin una etapa de segmentacion geometrica del objeto.",
+      "recommended_action": "Aplicar limpieza y segmentacion por componentes densos antes del mallado watertight para aislar el acopio real.",
+      "applies_when": [
+        "mesh",
+        "point_cloud",
+        "segmentation",
+        "rf09",
+        "volume_estimate"
+      ],
+      "severity": "high",
+      "source": "manual",
+      "timestamp": "2026-06-22T21:17:45.735980+00:00"
+    }
+  ]
 }

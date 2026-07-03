@@ -1,0 +1,1112 @@
+{
+  "session_id": "422bae01-50e4-40a6-8425-2a96f84d8cf6",
+  "pipeline_state": "COMPLETED",
+  "progress_percentage": 100,
+  "point_cloud_path": "data/processed/422bae01-50e4-40a6-8425-2a96f84d8cf6/point_cloud.ply",
+  "mesh_ply_path": null,
+  "mesh_glb_path": null,
+  "mesh_watertight": null,
+  "mesh_repair_applied": false,
+  "volume_m3": 181.2031,
+  "volume_method": "point_density_integration",
+  "confidence_score": 100.0,
+  "confidence_level": "HIGH",
+  "quality_gates": [
+    {
+      "name": "segmentation.isolated_points",
+      "status": "PASS",
+      "metric": "isolated_point_ratio",
+      "value": 0.00025,
+      "explanation": "High isolated-point ratio indicates possible background leakage or sparse segmentation."
+    },
+    {
+      "name": "segmentation.outliers",
+      "status": "PASS",
+      "metric": "outlier_ratio",
+      "value": 0.032417,
+      "explanation": "Nearest-neighbor outliers can expand PDI support and inflate volume."
+    },
+    {
+      "name": "segmentation.mean_density",
+      "status": "PASS",
+      "metric": "density_points_per_m3",
+      "value": 92.932,
+      "explanation": "Low global density increases sensitivity to voxelization."
+    },
+    {
+      "name": "segmentation.bbox_aspect",
+      "status": "PASS",
+      "metric": "axis_ratio",
+      "value": 1.8074,
+      "explanation": "Extreme bounding-box ratios can indicate missing views or background contamination."
+    },
+    {
+      "name": "coverage.spatial_distribution",
+      "status": "PASS",
+      "metric": "spatial_coverage_ratio",
+      "value": 0.550926,
+      "explanation": "Low occupied-cell coverage suggests incomplete spatial support."
+    },
+    {
+      "name": "coverage.interior_holes",
+      "status": "PASS",
+      "metric": "interior_hole_ratio",
+      "value": 0.484375,
+      "explanation": "High empty-interior ratio is a proxy for large holes or missing regions."
+    },
+    {
+      "name": "coverage.lateral",
+      "status": "PASS",
+      "metric": "lateral_coverage_ratio",
+      "value": 0.5,
+      "explanation": "Low lateral coverage can cause structured underestimation."
+    },
+    {
+      "name": "coverage.top",
+      "status": "PASS",
+      "metric": "top_coverage_ratio",
+      "value": 0.5,
+      "explanation": "Low top coverage can indicate missing upper surface observations."
+    },
+    {
+      "name": "coverage.bottom",
+      "status": "PASS",
+      "metric": "bottom_coverage_ratio",
+      "value": 0.305556,
+      "explanation": "Low bottom coverage is expected in aerial capture but reduces volumetric confidence."
+    },
+    {
+      "name": "geometry.point_count",
+      "status": "PASS",
+      "metric": "point_count",
+      "value": 27689,
+      "explanation": "Low point count reduces estimator stability."
+    },
+    {
+      "name": "geometry.components",
+      "status": "PASS",
+      "metric": "voxel_components",
+      "value": 1,
+      "explanation": "Many disconnected occupied components indicate fragmentation or background leakage."
+    },
+    {
+      "name": "geometry.spatial_consistency",
+      "status": "PASS",
+      "metric": "dominant_component_voxel_ratio",
+      "value": 1.0,
+      "explanation": "Low dominant-component ratio indicates fragmented spatial support."
+    }
+  ],
+  "diagnostic": [
+    "No quality gate produced WARNING or FAIL."
+  ],
+  "pdi_metrics": {
+    "method": "point_density_integration",
+    "volume_m3": 181.2031,
+    "voxel_size_m": 0.25,
+    "density_threshold_points_per_voxel": 2,
+    "hull_density_points_per_m3": 207.919632,
+    "hull_volume_m3": 133.171648,
+    "solid_voxels": 11597,
+    "occupied_voxels": 2091,
+    "dense_voxels": 1925
+  },
+  "bounding_box_m": {
+    "length_m": 8.4138,
+    "width_m": 7.6072,
+    "height_m": 4.6551
+  },
+  "ground_truth_volume_m3": 119.74,
+  "error_percentage": 51.3305,
+  "reconstruction_attempts": [
+    {
+      "attempt": "attempt_1",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "ultra"
+        },
+        {
+          "name": "pc-quality",
+          "value": "high"
+        },
+        {
+          "name": "min-num-features",
+          "value": "16000"
+        },
+        {
+          "name": "matcher-neighbors",
+          "value": "12"
+        },
+        {
+          "name": "depthmap-resolution",
+          "value": "high"
+        },
+        {
+          "name": "pc-filter",
+          "value": "1"
+        },
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        }
+      ],
+      "task_uuid": "133e014e-2961-4655-9342-3cfff4fadce5",
+      "status": "completed",
+      "message": null
+    }
+  ],
+  "scale_evidence": {
+    "image_count": 50,
+    "images_with_exif": 0,
+    "images_with_gps": 0,
+    "gcp_path": "data/processed/422bae01-50e4-40a6-8425-2a96f84d8cf6/gcp_list.txt",
+    "scale_certified": true,
+    "reason": "reconstructed_aruco_3d",
+    "aruco_gcp": {
+      "gcp_path": "data/processed/422bae01-50e4-40a6-8425-2a96f84d8cf6/gcp_list.txt",
+      "marker_size_m": 1.0,
+      "detections_count": 26,
+      "rejected_detections_count": 10,
+      "gcp_count": 104,
+      "detections": [
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030023.png",
+          "marker_id": 0,
+          "side_px": 92.2033,
+          "corners_px": [
+            [
+              546.21435546875,
+              834.6719360351562
+            ],
+            [
+              631.7721557617188,
+              790.8857421875
+            ],
+            [
+              697.4789428710938,
+              845.5830688476562
+            ],
+            [
+              609.3622436523438,
+              894.0173950195312
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030029.png",
+          "marker_id": 0,
+          "side_px": 92.3277,
+          "corners_px": [
+            [
+              587.128173828125,
+              817.9441528320312
+            ],
+            [
+              668.7797241210938,
+              771.626220703125
+            ],
+            [
+              739.583740234375,
+              823.7015380859375
+            ],
+            [
+              657.5143432617188,
+              875.1336059570312
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030035.png",
+          "marker_id": 0,
+          "side_px": 92.0392,
+          "corners_px": [
+            [
+              651.664306640625,
+              838.4988403320312
+            ],
+            [
+              724.8215942382812,
+              788.5714111328125
+            ],
+            [
+              804.3865966796875,
+              835.597900390625
+            ],
+            [
+              731.6367797851562,
+              891.0460815429688
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030041.png",
+          "marker_id": 0,
+          "side_px": 92.2764,
+          "corners_px": [
+            [
+              658.4544677734375,
+              823.1287231445312
+            ],
+            [
+              727.7520141601562,
+              770.833251953125
+            ],
+            [
+              810.74560546875,
+              816.8401489257812
+            ],
+            [
+              742.61181640625,
+              874.107177734375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030046.png",
+          "marker_id": 0,
+          "side_px": 91.1266,
+          "corners_px": [
+            [
+              759.2225341796875,
+              816.251220703125
+            ],
+            [
+              820.3494262695312,
+              761.9126586914062
+            ],
+            [
+              908.8335571289062,
+              802.6263427734375
+            ],
+            [
+              850.6126708984375,
+              861.9659423828125
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030051.png",
+          "marker_id": 0,
+          "side_px": 90.1487,
+          "corners_px": [
+            [
+              764.678466796875,
+              805.7528076171875
+            ],
+            [
+              816.1707763671875,
+              749.1333618164062
+            ],
+            [
+              910.4169311523438,
+              785.5400390625
+            ],
+            [
+              862.4593505859375,
+              846.1011962890625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030056.png",
+          "marker_id": 0,
+          "side_px": 88.3803,
+          "corners_px": [
+            [
+              861.9512939453125,
+              783.7698974609375
+            ],
+            [
+              902.1729125976562,
+              725.8743896484375
+            ],
+            [
+              1000.5162353515625,
+              756.5015869140625
+            ],
+            [
+              965.843994140625,
+              818.031982421875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030101.png",
+          "marker_id": 0,
+          "side_px": 86.6055,
+          "corners_px": [
+            [
+              950.7286987304688,
+              825.695556640625
+            ],
+            [
+              976.2348022460938,
+              765.7313232421875
+            ],
+            [
+              1077.815185546875,
+              789.9317626953125
+            ],
+            [
+              1057.87255859375,
+              853.1007080078125
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030106.png",
+          "marker_id": 0,
+          "side_px": 84.4685,
+          "corners_px": [
+            [
+              1024.75244140625,
+              823.9127807617188
+            ],
+            [
+              1035.91943359375,
+              762.90283203125
+            ],
+            [
+              1137.1407470703125,
+              780.0338745117188
+            ],
+            [
+              1132.9708251953125,
+              843.1680297851562
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030111.png",
+          "marker_id": 0,
+          "side_px": 81.2333,
+          "corners_px": [
+            [
+              1050.9456787109375,
+              737.0322265625
+            ],
+            [
+              1045.6922607421875,
+              679.2169189453125
+            ],
+            [
+              1145.9300537109375,
+              688.742919921875
+            ],
+            [
+              1156.7626953125,
+              747.6009521484375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030120.png",
+          "marker_id": 0,
+          "side_px": 76.4714,
+          "corners_px": [
+            [
+              1132.71240234375,
+              706.6588134765625
+            ],
+            [
+              1101.62109375,
+              654.5827026367188
+            ],
+            [
+              1190.5286865234375,
+              651.4896850585938
+            ],
+            [
+              1226.4447021484375,
+              702.5804443359375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030130.png",
+          "marker_id": 0,
+          "side_px": 72.5572,
+          "corners_px": [
+            [
+              1216.3153076171875,
+              653.7898559570312
+            ],
+            [
+              1169.76611328125,
+              607.263427734375
+            ],
+            [
+              1245.1177978515625,
+              595.890380859375
+            ],
+            [
+              1295.4400634765625,
+              641.921142578125
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030141.png",
+          "marker_id": 0,
+          "side_px": 68.6596,
+          "corners_px": [
+            [
+              1221.506591796875,
+              626.0592041015625
+            ],
+            [
+              1163.6473388671875,
+              585.9425659179688
+            ],
+            [
+              1227.52685546875,
+              570.0009155273438
+            ],
+            [
+              1286.8692626953125,
+              608.4178466796875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030151.png",
+          "marker_id": 0,
+          "side_px": 65.3837,
+          "corners_px": [
+            [
+              1215.765380859375,
+              564.243408203125
+            ],
+            [
+              1152.680419921875,
+              530.3984985351562
+            ],
+            [
+              1207.50927734375,
+              510.600830078125
+            ],
+            [
+              1271.692138671875,
+              542.153564453125
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030202.png",
+          "marker_id": 0,
+          "side_px": 60.5158,
+          "corners_px": [
+            [
+              1264.24462890625,
+              523.774169921875
+            ],
+            [
+              1201.2823486328125,
+              502.7587890625
+            ],
+            [
+              1246.1473388671875,
+              477.2744140625
+            ],
+            [
+              1312.56787109375,
+              499.72967529296875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030424.png",
+          "marker_id": 0,
+          "side_px": 60.2939,
+          "corners_px": [
+            [
+              161.0,
+              445.0
+            ],
+            [
+              208.95516967773438,
+              461.71868896484375
+            ],
+            [
+              141.59938049316406,
+              487.2299499511719
+            ],
+            [
+              96.03652954101562,
+              468.09197998046875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030428.png",
+          "marker_id": 0,
+          "side_px": 64.4974,
+          "corners_px": [
+            [
+              209.0,
+              465.0
+            ],
+            [
+              266.6649475097656,
+              479.8779296875
+            ],
+            [
+              202.49102783203125,
+              510.1914367675781
+            ],
+            [
+              146.26632690429688,
+              492.73150634765625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030434.png",
+          "marker_id": 0,
+          "side_px": 71.3165,
+          "corners_px": [
+            [
+              176.52500915527344,
+              528.1361083984375
+            ],
+            [
+              250.7352752685547,
+              539.2252807617188
+            ],
+            [
+              200.26565551757812,
+              577.6932373046875
+            ],
+            [
+              121.47505187988281,
+              566.7137451171875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030439.png",
+          "marker_id": 0,
+          "side_px": 74.0236,
+          "corners_px": [
+            [
+              219.15919494628906,
+              590.2442626953125
+            ],
+            [
+              302.28564453125,
+              597.0369873046875
+            ],
+            [
+              260.7798767089844,
+              641.773193359375
+            ],
+            [
+              173.17327880859375,
+              634.3942260742188
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030444.png",
+          "marker_id": 0,
+          "side_px": 77.4148,
+          "corners_px": [
+            [
+              208.33340454101562,
+              605.029052734375
+            ],
+            [
+              304.3187561035156,
+              604.2273559570312
+            ],
+            [
+              282.02783203125,
+              652.8228759765625
+            ],
+            [
+              179.1973876953125,
+              654.442138671875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030450.png",
+          "marker_id": 0,
+          "side_px": 79.9568,
+          "corners_px": [
+            [
+              259.8802185058594,
+              646.8761596679688
+            ],
+            [
+              361.5832214355469,
+              638.3958129882812
+            ],
+            [
+              357.2280578613281,
+              691.1688232421875
+            ],
+            [
+              248.82232666015625,
+              701.6767578125
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030454.png",
+          "marker_id": 0,
+          "side_px": 83.0102,
+          "corners_px": [
+            [
+              270.85113525390625,
+              695.0286865234375
+            ],
+            [
+              374.703369140625,
+              679.2482299804688
+            ],
+            [
+              386.2125549316406,
+              734.88916015625
+            ],
+            [
+              275.8034973144531,
+              753.0953979492188
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030459.png",
+          "marker_id": 0,
+          "side_px": 85.0145,
+          "corners_px": [
+            [
+              292.1855163574219,
+              718.8687133789062
+            ],
+            [
+              394.8820495605469,
+              696.9971313476562
+            ],
+            [
+              419.15057373046875,
+              753.0531005859375
+            ],
+            [
+              310.0689697265625,
+              778.254150390625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030504.png",
+          "marker_id": 0,
+          "side_px": 87.7143,
+          "corners_px": [
+            [
+              359.3575744628906,
+              727.1792602539062
+            ],
+            [
+              458.2417907714844,
+              697.7528686523438
+            ],
+            [
+              502.0924072265625,
+              750.9208374023438
+            ],
+            [
+              398.3926696777344,
+              784.8682250976562
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030509.png",
+          "marker_id": 0,
+          "side_px": 89.6282,
+          "corners_px": [
+            [
+              513.2384033203125,
+              736.7114868164062
+            ],
+            [
+              602.7573852539062,
+              699.7518920898438
+            ],
+            [
+              666.6429443359375,
+              747.9878540039062
+            ],
+            [
+              574.9456787109375,
+              789.2659301757812
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030515.png",
+          "marker_id": 0,
+          "side_px": 90.3647,
+          "corners_px": [
+            [
+              620.28466796875,
+              723.2095336914062
+            ],
+            [
+              702.2781982421875,
+              681.664794921875
+            ],
+            [
+              776.426025390625,
+              726.5364379882812
+            ],
+            [
+              694.0785522460938,
+              772.3314208984375
+            ]
+          ]
+        }
+      ],
+      "rejected_detections": [
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030213.png",
+          "side_px": 54.8317,
+          "mean_side_px": 54.8317,
+          "side_cv": 0.3233,
+          "area_ratio": 0.3923,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030222.png",
+          "side_px": 49.7805,
+          "mean_side_px": 49.7805,
+          "side_cv": 0.359,
+          "area_ratio": 0.4197,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030235.png",
+          "side_px": 46.2254,
+          "mean_side_px": 46.2254,
+          "side_cv": 0.4165,
+          "area_ratio": 0.3864,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030247.png",
+          "side_px": 44.0245,
+          "mean_side_px": 44.0245,
+          "side_cv": 0.4253,
+          "area_ratio": 0.3852,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030355.png",
+          "side_px": 42.7566,
+          "mean_side_px": 42.7566,
+          "side_cv": 0.4969,
+          "area_ratio": 0.3185,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030359.png",
+          "side_px": 44.7344,
+          "mean_side_px": 44.7344,
+          "side_cv": 0.4978,
+          "area_ratio": 0.3166,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030404.png",
+          "side_px": 45.9631,
+          "mean_side_px": 45.9631,
+          "side_cv": 0.4863,
+          "area_ratio": 0.3209,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030410.png",
+          "side_px": 49.217,
+          "mean_side_px": 49.217,
+          "side_cv": 0.426,
+          "area_ratio": 0.337,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030415.png",
+          "side_px": 52.1781,
+          "mean_side_px": 52.1781,
+          "side_cv": 0.3627,
+          "area_ratio": 0.3623,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/422bae01-50e4-40a6-8425-2a96f84d8cf6/Captura de pantalla 2026-07-01 030419.png",
+          "side_px": 56.2383,
+          "mean_side_px": 56.2383,
+          "side_cv": 0.2646,
+          "area_ratio": 0.3851,
+          "reasons": [
+            "marker_too_small"
+          ]
+        }
+      ]
+    },
+    "reconstructed_aruco_scale": {
+      "method": "reconstructed_aruco_3d",
+      "marker_size_m": 1.0,
+      "point_cloud_path": "data/processed/422bae01-50e4-40a6-8425-2a96f84d8cf6/point_cloud.ply",
+      "point_count": 768281,
+      "color_candidate_points": 250000,
+      "candidate_count": 15,
+      "scale_factor_m_per_unit": 0.65003574,
+      "selected_candidate": {
+        "point_count": 4388,
+        "centroid": [
+          -0.047227,
+          0.903537,
+          0.138356
+        ],
+        "pca_extent": [
+          1.696016,
+          1.380738,
+          0.391873
+        ],
+        "reconstructed_side_units": 1.538377,
+        "scale_factor_m_per_unit": 0.65003574,
+        "plane_thickness_units": 0.391873,
+        "flatness_ratio": 0.231055,
+        "square_ratio": 0.814107,
+        "distance_to_expected_center_units": 0.69386,
+        "confidence": 0.369572
+      },
+      "candidates": [
+        {
+          "point_count": 4388,
+          "centroid": [
+            -0.047227,
+            0.903537,
+            0.138356
+          ],
+          "pca_extent": [
+            1.696016,
+            1.380738,
+            0.391873
+          ],
+          "reconstructed_side_units": 1.538377,
+          "scale_factor_m_per_unit": 0.65003574,
+          "plane_thickness_units": 0.391873,
+          "flatness_ratio": 0.231055,
+          "square_ratio": 0.814107,
+          "distance_to_expected_center_units": 0.69386,
+          "confidence": 0.369572
+        },
+        {
+          "point_count": 455,
+          "centroid": [
+            8.292969,
+            -3.965694,
+            4.924302
+          ],
+          "pca_extent": [
+            1.448211,
+            1.43449,
+            0.182677
+          ],
+          "reconstructed_side_units": 1.44135,
+          "scale_factor_m_per_unit": 0.69379384,
+          "plane_thickness_units": 0.182677,
+          "flatness_ratio": 0.12614,
+          "square_ratio": 0.990526,
+          "distance_to_expected_center_units": 10.243121,
+          "confidence": 0.070059
+        },
+        {
+          "point_count": 910,
+          "centroid": [
+            8.908252,
+            0.478142,
+            4.571095
+          ],
+          "pca_extent": [
+            2.17113,
+            3.487794,
+            0.350219
+          ],
+          "reconstructed_side_units": 2.829462,
+          "scale_factor_m_per_unit": 0.35342407,
+          "plane_thickness_units": 0.350219,
+          "flatness_ratio": 0.100413,
+          "square_ratio": 0.622494,
+          "distance_to_expected_center_units": 9.57048,
+          "confidence": 0.052977
+        },
+        {
+          "point_count": 1318,
+          "centroid": [
+            10.770547,
+            -2.415897,
+            4.741039
+          ],
+          "pca_extent": [
+            1.960853,
+            3.356751,
+            0.211387
+          ],
+          "reconstructed_side_units": 2.658802,
+          "scale_factor_m_per_unit": 0.3761093,
+          "plane_thickness_units": 0.211387,
+          "flatness_ratio": 0.062974,
+          "square_ratio": 0.584152,
+          "distance_to_expected_center_units": 11.681783,
+          "confidence": 0.043162
+        },
+        {
+          "point_count": 654,
+          "centroid": [
+            6.230055,
+            -9.466642,
+            -1.055738
+          ],
+          "pca_extent": [
+            1.729936,
+            0.856961,
+            0.29826
+          ],
+          "reconstructed_side_units": 1.293448,
+          "scale_factor_m_per_unit": 0.77312704,
+          "plane_thickness_units": 0.29826,
+          "flatness_ratio": 0.172411,
+          "square_ratio": 0.495371,
+          "distance_to_expected_center_units": 11.544786,
+          "confidence": 0.03268
+        },
+        {
+          "point_count": 207,
+          "centroid": [
+            5.875923,
+            -0.177611,
+            4.720146
+          ],
+          "pca_extent": [
+            1.685169,
+            1.114363,
+            0.23888
+          ],
+          "reconstructed_side_units": 1.399766,
+          "scale_factor_m_per_unit": 0.71440519,
+          "plane_thickness_units": 0.23888,
+          "flatness_ratio": 0.141754,
+          "square_ratio": 0.661277,
+          "distance_to_expected_center_units": 7.186061,
+          "confidence": 0.028703
+        },
+        {
+          "point_count": 142,
+          "centroid": [
+            6.736238,
+            -1.629129,
+            4.866417
+          ],
+          "pca_extent": [
+            0.95816,
+            0.952604,
+            0.109848
+          ],
+          "reconstructed_side_units": 0.955382,
+          "scale_factor_m_per_unit": 1.04670139,
+          "plane_thickness_units": 0.109848,
+          "flatness_ratio": 0.114645,
+          "square_ratio": 0.994201,
+          "distance_to_expected_center_units": 8.191817,
+          "confidence": 0.027196
+        },
+        {
+          "point_count": 210,
+          "centroid": [
+            6.460206,
+            3.496428,
+            4.391764
+          ],
+          "pca_extent": [
+            0.719184,
+            0.367977,
+            0.059235
+          ],
+          "reconstructed_side_units": 0.54358,
+          "scale_factor_m_per_unit": 1.83965405,
+          "plane_thickness_units": 0.059235,
+          "flatness_ratio": 0.082364,
+          "square_ratio": 0.511659,
+          "distance_to_expected_center_units": 7.986878,
+          "confidence": 0.021943
+        },
+        {
+          "point_count": 131,
+          "centroid": [
+            4.779981,
+            1.435834,
+            4.614785
+          ],
+          "pca_extent": [
+            0.580031,
+            1.048723,
+            0.093276
+          ],
+          "reconstructed_side_units": 0.814377,
+          "scale_factor_m_per_unit": 1.22793218,
+          "plane_thickness_units": 0.093276,
+          "flatness_ratio": 0.088943,
+          "square_ratio": 0.553083,
+          "distance_to_expected_center_units": 6.363196,
+          "confidence": 0.01793
+        },
+        {
+          "point_count": 141,
+          "centroid": [
+            7.322347,
+            -2.496665,
+            4.89449
+          ],
+          "pca_extent": [
+            1.103679,
+            0.565323,
+            0.065894
+          ],
+          "reconstructed_side_units": 0.834501,
+          "scale_factor_m_per_unit": 1.19832101,
+          "plane_thickness_units": 0.065894,
+          "flatness_ratio": 0.059704,
+          "square_ratio": 0.512217,
+          "distance_to_expected_center_units": 8.915181,
+          "confidence": 0.013698
+        }
+      ]
+    }
+  },
+  "error_code": null,
+  "message": "Preliminary volumetry completed"
+}

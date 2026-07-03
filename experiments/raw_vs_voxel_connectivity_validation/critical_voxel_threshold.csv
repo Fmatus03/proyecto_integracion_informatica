@@ -1,0 +1,9 @@
+region_id,raw_connected,first_fused_voxel_m,max_voxel_preserving_separation_m
+0,True,0.01,
+1,True,0.01,
+2,True,0.01,
+3,False,,0.1
+4,True,0.01,
+5,True,0.01,
+6,True,0.01,
+7,True,0.01,

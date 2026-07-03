@@ -30,6 +30,13 @@ def test_python_runtime_files_exist_and_old_runtime_is_removed():
     assert not _exists("tests/harness/contract.test.mjs")
 
 
+def test_specs_operational_surface_exists():
+    assert _exists("specs/forestvol-mvp/spec.md")
+    assert _exists("specs/forestvol-mvp/plan.md")
+    assert _exists("specs/forestvol-mvp/tasks.md")
+    assert _exists("specs/forestvol-mvp/analyze-report.md")
+
+
 def test_runtime_contract_points_to_python_entrypoint():
     contract = _read_json(".harness/runtime_contract.json")
     assert contract["runtime_entrypoint"] == "python .harness/cli.py"
@@ -62,7 +69,7 @@ def test_claim_policy_blocks_unsupported_material_claims():
 
 
 def test_dataset_contract_is_consistent_with_harness():
-    manifest = _read_json("set_imagenes+guia/dataset_manifest.json")
+    manifest = _read_json("projects/ForestVol/set_imagenes+guia/dataset_manifest.json")
     assert manifest["reference_marker"]["dictionary"] == "DICT_4X4_50"
     assert manifest["input_contract"]["requires_exif"] is False
     assert manifest["input_contract"]["requires_drone_metadata"] is False

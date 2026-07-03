@@ -1,0 +1,1008 @@
+{
+  "set1": {
+    "nodeodm_raw_to_after_outlier": {
+      "bins": 6,
+      "total_lost_points": 3311,
+      "face_losses": {
+        "x_min": 93,
+        "x_max": 259,
+        "y_min": 803,
+        "y_max": 355,
+        "z_min": 276,
+        "z_max": 725
+      },
+      "dominant_loss_face": "y_min",
+      "dominant_loss_face_points": 803,
+      "dominant_loss_face_ratio_of_lost": 0.242525,
+      "top_loss_cells": [
+        {
+          "cell": [
+            4,
+            2,
+            5
+          ],
+          "lost_points": 30,
+          "previous_points": 30,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            1,
+            3,
+            4
+          ],
+          "lost_points": 27,
+          "previous_points": 27,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            3,
+            0
+          ],
+          "lost_points": 16,
+          "previous_points": 16,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            0,
+            4,
+            3
+          ],
+          "lost_points": 14,
+          "previous_points": 14,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            2,
+            1
+          ],
+          "lost_points": 14,
+          "previous_points": 14,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            4,
+            3
+          ],
+          "lost_points": 14,
+          "previous_points": 14,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            4,
+            3
+          ],
+          "lost_points": 12,
+          "previous_points": 12,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            2,
+            0
+          ],
+          "lost_points": 2,
+          "previous_points": 2,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            3,
+            5
+          ],
+          "lost_points": 2,
+          "previous_points": 2,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            1,
+            5
+          ],
+          "lost_points": 1,
+          "previous_points": 1,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            3,
+            1
+          ],
+          "lost_points": 1,
+          "previous_points": 1,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            2,
+            4
+          ],
+          "lost_points": 1,
+          "previous_points": 1,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            1,
+            5,
+            1
+          ],
+          "lost_points": 136,
+          "previous_points": 149,
+          "lost_ratio": 0.912752
+        },
+        {
+          "cell": [
+            3,
+            0,
+            5
+          ],
+          "lost_points": 103,
+          "previous_points": 118,
+          "lost_ratio": 0.872881
+        },
+        {
+          "cell": [
+            1,
+            4,
+            1
+          ],
+          "lost_points": 113,
+          "previous_points": 158,
+          "lost_ratio": 0.71519
+        }
+      ]
+    },
+    "after_outlier_to_after_dbscan": {
+      "bins": 6,
+      "total_lost_points": 382763,
+      "face_losses": {
+        "x_min": 262,
+        "x_max": 1844,
+        "y_min": 17236,
+        "y_max": 940,
+        "z_min": 773,
+        "z_max": 2919
+      },
+      "dominant_loss_face": "y_min",
+      "dominant_loss_face_points": 17236,
+      "dominant_loss_face_ratio_of_lost": 0.04503,
+      "top_loss_cells": [
+        {
+          "cell": [
+            4,
+            1,
+            4
+          ],
+          "lost_points": 8556,
+          "previous_points": 8556,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            0,
+            3
+          ],
+          "lost_points": 6456,
+          "previous_points": 6456,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            1,
+            3
+          ],
+          "lost_points": 4915,
+          "previous_points": 4915,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            0,
+            4
+          ],
+          "lost_points": 4877,
+          "previous_points": 4877,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            2,
+            4
+          ],
+          "lost_points": 2417,
+          "previous_points": 2417,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            0,
+            3
+          ],
+          "lost_points": 2228,
+          "previous_points": 2228,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            0,
+            4
+          ],
+          "lost_points": 2022,
+          "previous_points": 2022,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            1,
+            4
+          ],
+          "lost_points": 1714,
+          "previous_points": 1714,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            2,
+            3
+          ],
+          "lost_points": 1293,
+          "previous_points": 1293,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            3,
+            4
+          ],
+          "lost_points": 1193,
+          "previous_points": 1193,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            0,
+            5
+          ],
+          "lost_points": 920,
+          "previous_points": 920,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            1,
+            5,
+            0
+          ],
+          "lost_points": 702,
+          "previous_points": 702,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            1,
+            5
+          ],
+          "lost_points": 562,
+          "previous_points": 562,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            1,
+            5
+          ],
+          "lost_points": 461,
+          "previous_points": 461,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            0,
+            3
+          ],
+          "lost_points": 398,
+          "previous_points": 398,
+          "lost_ratio": 1.0
+        }
+      ]
+    },
+    "nodeodm_raw_to_before_pdi": {
+      "bins": 6,
+      "total_lost_points": 386074,
+      "face_losses": {
+        "x_min": 397,
+        "x_max": 1972,
+        "y_min": 12489,
+        "y_max": 1191,
+        "z_min": 968,
+        "z_max": 2997
+      },
+      "dominant_loss_face": "y_min",
+      "dominant_loss_face_points": 12489,
+      "dominant_loss_face_ratio_of_lost": 0.032349,
+      "top_loss_cells": [
+        {
+          "cell": [
+            2,
+            1,
+            3
+          ],
+          "lost_points": 13553,
+          "previous_points": 13553,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            1,
+            4
+          ],
+          "lost_points": 8245,
+          "previous_points": 8245,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            2,
+            3
+          ],
+          "lost_points": 6274,
+          "previous_points": 6274,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            0,
+            4
+          ],
+          "lost_points": 4654,
+          "previous_points": 4654,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            1,
+            4
+          ],
+          "lost_points": 4500,
+          "previous_points": 4500,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            2,
+            4
+          ],
+          "lost_points": 3628,
+          "previous_points": 3628,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            0,
+            3
+          ],
+          "lost_points": 2648,
+          "previous_points": 2648,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            0,
+            3
+          ],
+          "lost_points": 2204,
+          "previous_points": 2204,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            0,
+            4
+          ],
+          "lost_points": 1391,
+          "previous_points": 1391,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            0,
+            5
+          ],
+          "lost_points": 979,
+          "previous_points": 979,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            1,
+            5,
+            0
+          ],
+          "lost_points": 704,
+          "previous_points": 704,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            1,
+            5
+          ],
+          "lost_points": 521,
+          "previous_points": 521,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            2,
+            5
+          ],
+          "lost_points": 417,
+          "previous_points": 417,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            1,
+            4
+          ],
+          "lost_points": 412,
+          "previous_points": 412,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            0,
+            5
+          ],
+          "lost_points": 347,
+          "previous_points": 347,
+          "lost_ratio": 1.0
+        }
+      ]
+    }
+  },
+  "set2": {
+    "nodeodm_raw_to_after_outlier": {
+      "bins": 6,
+      "total_lost_points": 7600,
+      "face_losses": {
+        "x_min": 157,
+        "x_max": 215,
+        "y_min": 3295,
+        "y_max": 516,
+        "z_min": 5911,
+        "z_max": 424
+      },
+      "dominant_loss_face": "z_min",
+      "dominant_loss_face_points": 5911,
+      "dominant_loss_face_ratio_of_lost": 0.777763,
+      "top_loss_cells": [
+        {
+          "cell": [
+            0,
+            4,
+            5
+          ],
+          "lost_points": 34,
+          "previous_points": 34,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            4,
+            3
+          ],
+          "lost_points": 33,
+          "previous_points": 33,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            3,
+            1
+          ],
+          "lost_points": 21,
+          "previous_points": 21,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            2,
+            0
+          ],
+          "lost_points": 18,
+          "previous_points": 18,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            2,
+            3
+          ],
+          "lost_points": 13,
+          "previous_points": 13,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            0,
+            3,
+            5
+          ],
+          "lost_points": 9,
+          "previous_points": 9,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            3,
+            3
+          ],
+          "lost_points": 9,
+          "previous_points": 9,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            2,
+            1
+          ],
+          "lost_points": 7,
+          "previous_points": 7,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            4,
+            1
+          ],
+          "lost_points": 5,
+          "previous_points": 5,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            1,
+            1
+          ],
+          "lost_points": 4,
+          "previous_points": 4,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            1,
+            3
+          ],
+          "lost_points": 4,
+          "previous_points": 4,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            1,
+            1
+          ],
+          "lost_points": 3,
+          "previous_points": 3,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            0,
+            1
+          ],
+          "lost_points": 2,
+          "previous_points": 2,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            5,
+            4
+          ],
+          "lost_points": 2,
+          "previous_points": 2,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            4,
+            2
+          ],
+          "lost_points": 45,
+          "previous_points": 48,
+          "lost_ratio": 0.9375
+        }
+      ]
+    },
+    "after_outlier_to_after_dbscan": {
+      "bins": 6,
+      "total_lost_points": 360888,
+      "face_losses": {
+        "x_min": 339713,
+        "x_max": 5640,
+        "y_min": 9387,
+        "y_max": 103414,
+        "z_min": 18599,
+        "z_max": 441
+      },
+      "dominant_loss_face": "x_min",
+      "dominant_loss_face_points": 339713,
+      "dominant_loss_face_ratio_of_lost": 0.941325,
+      "top_loss_cells": [
+        {
+          "cell": [
+            5,
+            2,
+            0
+          ],
+          "lost_points": 2877,
+          "previous_points": 2877,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            1,
+            0
+          ],
+          "lost_points": 2227,
+          "previous_points": 2227,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            5,
+            4
+          ],
+          "lost_points": 524,
+          "previous_points": 524,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            1,
+            2,
+            1
+          ],
+          "lost_points": 294,
+          "previous_points": 294,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            5,
+            5
+          ],
+          "lost_points": 192,
+          "previous_points": 192,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            5,
+            5
+          ],
+          "lost_points": 118,
+          "previous_points": 118,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            3,
+            2
+          ],
+          "lost_points": 85,
+          "previous_points": 85,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            2,
+            1
+          ],
+          "lost_points": 72,
+          "previous_points": 72,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            1,
+            1
+          ],
+          "lost_points": 69,
+          "previous_points": 69,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            5,
+            5
+          ],
+          "lost_points": 63,
+          "previous_points": 63,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            4,
+            1
+          ],
+          "lost_points": 62,
+          "previous_points": 62,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            1,
+            1
+          ],
+          "lost_points": 60,
+          "previous_points": 60,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            4,
+            3
+          ],
+          "lost_points": 58,
+          "previous_points": 58,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            4,
+            2
+          ],
+          "lost_points": 51,
+          "previous_points": 51,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            4,
+            3
+          ],
+          "lost_points": 49,
+          "previous_points": 49,
+          "lost_ratio": 1.0
+        }
+      ]
+    },
+    "nodeodm_raw_to_before_pdi": {
+      "bins": 6,
+      "total_lost_points": 368488,
+      "face_losses": {
+        "x_min": 339869,
+        "x_max": 5855,
+        "y_min": 12516,
+        "y_max": 106284,
+        "z_min": 24618,
+        "z_max": 853
+      },
+      "dominant_loss_face": "x_min",
+      "dominant_loss_face_points": 339869,
+      "dominant_loss_face_ratio_of_lost": 0.922334,
+      "top_loss_cells": [
+        {
+          "cell": [
+            5,
+            2,
+            0
+          ],
+          "lost_points": 2935,
+          "previous_points": 2935,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            1,
+            0
+          ],
+          "lost_points": 2223,
+          "previous_points": 2223,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            5,
+            5,
+            4
+          ],
+          "lost_points": 662,
+          "previous_points": 662,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            1,
+            2,
+            1
+          ],
+          "lost_points": 324,
+          "previous_points": 324,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            5,
+            5
+          ],
+          "lost_points": 260,
+          "previous_points": 260,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            5,
+            5
+          ],
+          "lost_points": 215,
+          "previous_points": 215,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            5,
+            5
+          ],
+          "lost_points": 189,
+          "previous_points": 189,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            2,
+            4,
+            3
+          ],
+          "lost_points": 159,
+          "previous_points": 159,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            4,
+            2
+          ],
+          "lost_points": 120,
+          "previous_points": 120,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            3,
+            4,
+            3
+          ],
+          "lost_points": 116,
+          "previous_points": 116,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            4,
+            1
+          ],
+          "lost_points": 96,
+          "previous_points": 96,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            2,
+            1
+          ],
+          "lost_points": 94,
+          "previous_points": 94,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            3,
+            1
+          ],
+          "lost_points": 83,
+          "previous_points": 83,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            0,
+            4,
+            2
+          ],
+          "lost_points": 81,
+          "previous_points": 81,
+          "lost_ratio": 1.0
+        },
+        {
+          "cell": [
+            4,
+            1,
+            1
+          ],
+          "lost_points": 79,
+          "previous_points": 79,
+          "lost_ratio": 1.0
+        }
+      ]
+    }
+  }
+}

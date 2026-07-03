@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETED",
+  "session_id": "bd1e9a21-3f48-4a6f-a236-b1010a9d153f",
+  "image_count": 50,
+  "message": "Preliminary volumetry completed",
+  "error_code": null,
+  "volume_m3": 342.4062,
+  "error_percentage": 185.9581
+}

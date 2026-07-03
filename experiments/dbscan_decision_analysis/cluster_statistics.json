@@ -1,0 +1,4634 @@
+{
+  "set1": [
+    {
+      "cluster_id": 14,
+      "point_count": 12247,
+      "point_ratio_input": 0.389226,
+      "bbox_min": [
+        2.467712,
+        -0.781808,
+        -1.422776
+      ],
+      "bbox_max": [
+        9.572889,
+        4.665641,
+        2.046638
+      ],
+      "bbox_extent_xyz": [
+        7.105177,
+        5.447449,
+        3.469413
+      ],
+      "bbox_volume_m3": 134.283931,
+      "centroid": [
+        6.312674,
+        1.958857,
+        0.192722
+      ],
+      "density_points_per_m3": 91.202275,
+      "distance_to_global_center_m": 4.410151,
+      "distance_to_ground_plane_m": 23.940041,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 21.856377,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 814,
+        "grid_voxels": 8932,
+        "occupancy_ratio": 0.091133
+      },
+      "mean_color_rgb01": [
+        0.308015,
+        0.285993,
+        0.252892
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 12247,
+        "current_heuristic_density": 91.202275,
+        "count_ratio_to_main": 1.0,
+        "passes_min_component_ratio": true,
+        "plausible_woodpile": true,
+        "sort_key": [
+          12247,
+          91.202275
+        ]
+      },
+      "discard_reasons": [],
+      "rank_by_current_heuristic": 1,
+      "pipeline_selected": true,
+      "selection_reason": "plausible_woodpile_components"
+    },
+    {
+      "cluster_id": 1,
+      "point_count": 7156,
+      "point_ratio_input": 0.227427,
+      "bbox_min": [
+        1.434959,
+        -9.25373,
+        -4.607718
+      ],
+      "bbox_max": [
+        4.651148,
+        -1.488412,
+        -3.787368
+      ],
+      "bbox_extent_xyz": [
+        3.216189,
+        7.765318,
+        0.820351
+      ],
+      "bbox_volume_m3": 20.488038,
+      "centroid": [
+        2.918005,
+        -5.0966,
+        -4.254787
+      ],
+      "density_points_per_m3": 349.276975,
+      "distance_to_global_center_m": 4.829144,
+      "distance_to_ground_plane_m": 20.755098,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 10.189723,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 485,
+        "grid_voxels": 1664,
+        "occupancy_ratio": 0.291466
+      },
+      "mean_color_rgb01": [
+        0.417683,
+        0.396725,
+        0.379659
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 7156,
+        "current_heuristic_density": 349.276975,
+        "count_ratio_to_main": 0.584306,
+        "passes_min_component_ratio": true,
+        "plausible_woodpile": false,
+        "sort_key": [
+          7156,
+          349.276975
+        ]
+      },
+      "discard_reasons": [
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 2,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 0,
+      "point_count": 3552,
+      "point_ratio_input": 0.112887,
+      "bbox_min": [
+        4.802401,
+        -4.827366,
+        -4.450778
+      ],
+      "bbox_max": [
+        9.500109,
+        -1.78915,
+        -3.85871
+      ],
+      "bbox_extent_xyz": [
+        4.697708,
+        3.038216,
+        0.592068
+      ],
+      "bbox_volume_m3": 8.450375,
+      "centroid": [
+        7.406566,
+        -3.003147,
+        -4.200375
+      ],
+      "density_points_per_m3": 420.336368,
+      "distance_to_global_center_m": 3.111914,
+      "distance_to_ground_plane_m": 20.912039,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 4.262512,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 246,
+        "grid_voxels": 741,
+        "occupancy_ratio": 0.331984
+      },
+      "mean_color_rgb01": [
+        0.421761,
+        0.409232,
+        0.397668
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 3552,
+        "current_heuristic_density": 420.336368,
+        "count_ratio_to_main": 0.29003,
+        "passes_min_component_ratio": true,
+        "plausible_woodpile": true,
+        "sort_key": [
+          3552,
+          420.336368
+        ]
+      },
+      "discard_reasons": [],
+      "rank_by_current_heuristic": 3,
+      "pipeline_selected": true,
+      "selection_reason": "plausible_woodpile_components"
+    },
+    {
+      "cluster_id": 2,
+      "point_count": 2402,
+      "point_ratio_input": 0.076339,
+      "bbox_min": [
+        5.77036,
+        -8.449792,
+        -3.192421
+      ],
+      "bbox_max": [
+        9.737359,
+        -3.641653,
+        3.740753
+      ],
+      "bbox_extent_xyz": [
+        3.966999,
+        4.808139,
+        6.933174
+      ],
+      "bbox_volume_m3": 132.242558,
+      "centroid": [
+        7.687205,
+        -5.93787,
+        -0.598727
+      ],
+      "density_points_per_m3": 18.163593,
+      "distance_to_global_center_m": 4.765763,
+      "distance_to_ground_plane_m": 22.170396,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 7.328595,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 219,
+        "grid_voxels": 8960,
+        "occupancy_ratio": 0.024442
+      },
+      "mean_color_rgb01": [
+        0.417578,
+        0.396382,
+        0.377032
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 2402,
+        "current_heuristic_density": 18.163593,
+        "count_ratio_to_main": 0.19613,
+        "passes_min_component_ratio": true,
+        "plausible_woodpile": true,
+        "sort_key": [
+          2402,
+          18.163593
+        ]
+      },
+      "discard_reasons": [
+        "not_in_top_max_components_after_ranking"
+      ],
+      "rank_by_current_heuristic": 4,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 7,
+      "point_count": 533,
+      "point_ratio_input": 0.016939,
+      "bbox_min": [
+        3.844043,
+        -10.100938,
+        -1.121985
+      ],
+      "bbox_max": [
+        5.067311,
+        -8.729434,
+        0.688727
+      ],
+      "bbox_extent_xyz": [
+        1.223268,
+        1.371504,
+        1.810712
+      ],
+      "bbox_volume_m3": 3.037861,
+      "centroid": [
+        4.243972,
+        -9.474578,
+        -0.386302
+      ],
+      "density_points_per_m3": 175.452396,
+      "distance_to_global_center_m": 7.900422,
+      "distance_to_ground_plane_m": 24.240832,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.794528,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 67,
+        "grid_voxels": 240,
+        "occupancy_ratio": 0.279167
+      },
+      "mean_color_rgb01": [
+        0.513506,
+        0.489625,
+        0.460138
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 533,
+        "current_heuristic_density": 175.452396,
+        "count_ratio_to_main": 0.043521,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          533,
+          175.452396
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 5,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 41,
+      "point_count": 450,
+      "point_ratio_input": 0.014302,
+      "bbox_min": [
+        -7.655957,
+        11.547624,
+        -25.362817
+      ],
+      "bbox_max": [
+        -5.620508,
+        13.412292,
+        -24.089668
+      ],
+      "bbox_extent_xyz": [
+        2.035449,
+        1.864668,
+        1.273149
+      ],
+      "bbox_volume_m3": 4.832154,
+      "centroid": [
+        -6.742779,
+        12.571983,
+        -24.756315
+      ],
+      "density_points_per_m3": 93.126164,
+      "distance_to_global_center_m": 29.704466,
+      "distance_to_ground_plane_m": 0.0,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": true,
+        "z_min": true,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.50261,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 56,
+        "grid_voxels": 432,
+        "occupancy_ratio": 0.12963
+      },
+      "mean_color_rgb01": [
+        0.431165,
+        0.443679,
+        0.425736
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 450,
+        "current_heuristic_density": 93.126164,
+        "count_ratio_to_main": 0.036744,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          450,
+          93.126164
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 6,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 31,
+      "point_count": 417,
+      "point_ratio_input": 0.013253,
+      "bbox_min": [
+        7.689914,
+        -1.618846,
+        -1.00178
+      ],
+      "bbox_max": [
+        10.338703,
+        -0.1416,
+        0.310087
+      ],
+      "bbox_extent_xyz": [
+        2.648789,
+        1.477246,
+        1.311866
+      ],
+      "bbox_volume_m3": 5.133218,
+      "centroid": [
+        9.171352,
+        -0.902606,
+        -0.499681
+      ],
+      "density_points_per_m3": 81.235588,
+      "distance_to_global_center_m": 3.934944,
+      "distance_to_ground_plane_m": 24.361037,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.694809,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 53,
+        "grid_voxels": 396,
+        "occupancy_ratio": 0.133838
+      },
+      "mean_color_rgb01": [
+        0.432059,
+        0.327049,
+        0.301266
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 417,
+        "current_heuristic_density": 81.235588,
+        "count_ratio_to_main": 0.034049,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          417,
+          81.235588
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 7,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 10,
+      "point_count": 407,
+      "point_ratio_input": 0.012935,
+      "bbox_min": [
+        12.287397,
+        -10.710146,
+        4.531783
+      ],
+      "bbox_max": [
+        13.016819,
+        -9.103667,
+        6.079942
+      ],
+      "bbox_extent_xyz": [
+        0.729422,
+        1.606479,
+        1.548159
+      ],
+      "bbox_volume_m3": 1.814134,
+      "centroid": [
+        12.719302,
+        -9.805563,
+        5.246768
+      ],
+      "density_points_per_m3": 224.349444,
+      "distance_to_global_center_m": 12.845358,
+      "distance_to_ground_plane_m": 29.8946,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.450522,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 55,
+        "grid_voxels": 147,
+        "occupancy_ratio": 0.37415
+      },
+      "mean_color_rgb01": [
+        0.386931,
+        0.362683,
+        0.344266
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 407,
+        "current_heuristic_density": 224.349444,
+        "count_ratio_to_main": 0.033233,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          407,
+          224.349444
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 8,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 20,
+      "point_count": 373,
+      "point_ratio_input": 0.011854,
+      "bbox_min": [
+        5.86326,
+        -9.326296,
+        -3.277244
+      ],
+      "bbox_max": [
+        6.774227,
+        -7.593449,
+        -2.291492
+      ],
+      "bbox_extent_xyz": [
+        0.910968,
+        1.732847,
+        0.985752
+      ],
+      "bbox_volume_m3": 1.556076,
+      "centroid": [
+        6.248658,
+        -8.328468,
+        -2.870392
+      ],
+      "density_points_per_m3": 239.70557,
+      "distance_to_global_center_m": 6.577334,
+      "distance_to_ground_plane_m": 22.085573,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.441389,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 42,
+        "grid_voxels": 112,
+        "occupancy_ratio": 0.375
+      },
+      "mean_color_rgb01": [
+        0.467307,
+        0.434878,
+        0.396335
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 373,
+        "current_heuristic_density": 239.70557,
+        "count_ratio_to_main": 0.030456,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          373,
+          239.70557
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 9,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 13,
+      "point_count": 321,
+      "point_ratio_input": 0.010202,
+      "bbox_min": [
+        12.715532,
+        -4.28792,
+        3.896996
+      ],
+      "bbox_max": [
+        13.118102,
+        -2.680399,
+        5.64616
+      ],
+      "bbox_extent_xyz": [
+        0.40257,
+        1.607521,
+        1.749164
+      ],
+      "bbox_volume_m3": 1.131954,
+      "centroid": [
+        12.891567,
+        -3.539129,
+        4.785599
+      ],
+      "density_points_per_m3": 283.580537,
+      "distance_to_global_center_m": 10.031536,
+      "distance_to_ground_plane_m": 29.259813,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.298057,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 33,
+        "grid_voxels": 98,
+        "occupancy_ratio": 0.336735
+      },
+      "mean_color_rgb01": [
+        0.441741,
+        0.416847,
+        0.384101
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 321,
+        "current_heuristic_density": 283.580537,
+        "count_ratio_to_main": 0.026211,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          321,
+          283.580537
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 10,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 8,
+      "point_count": 261,
+      "point_ratio_input": 0.008295,
+      "bbox_min": [
+        5.188846,
+        -9.598614,
+        -2.139257
+      ],
+      "bbox_max": [
+        6.150825,
+        -8.150932,
+        -1.158189
+      ],
+      "bbox_extent_xyz": [
+        0.961979,
+        1.447681,
+        0.981067
+      ],
+      "bbox_volume_m3": 1.366273,
+      "centroid": [
+        5.621415,
+        -8.961895,
+        -1.736457
+      ],
+      "density_points_per_m3": 191.030682,
+      "distance_to_global_center_m": 7.11487,
+      "distance_to_ground_plane_m": 23.22356,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.361024,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 36,
+        "grid_voxels": 96,
+        "occupancy_ratio": 0.375
+      },
+      "mean_color_rgb01": [
+        0.430685,
+        0.418189,
+        0.37043
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 261,
+        "current_heuristic_density": 191.030682,
+        "count_ratio_to_main": 0.021311,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          261,
+          191.030682
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 11,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 34,
+      "point_count": 220,
+      "point_ratio_input": 0.006992,
+      "bbox_min": [
+        -0.776178,
+        0.275338,
+        0.625653
+      ],
+      "bbox_max": [
+        0.399139,
+        1.216233,
+        0.976321
+      ],
+      "bbox_extent_xyz": [
+        1.175318,
+        0.940894,
+        0.350668
+      ],
+      "bbox_volume_m3": 0.387786,
+      "centroid": [
+        -0.187486,
+        0.700182,
+        0.732372
+      ],
+      "density_points_per_m3": 567.322903,
+      "distance_to_global_center_m": 6.88195,
+      "distance_to_ground_plane_m": 25.98847,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.110188,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 20,
+        "grid_voxels": 40,
+        "occupancy_ratio": 0.5
+      },
+      "mean_color_rgb01": [
+        0.447556,
+        0.400921,
+        0.444514
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 220,
+        "current_heuristic_density": 567.322903,
+        "count_ratio_to_main": 0.017964,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          220,
+          567.322903
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 12,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 18,
+      "point_count": 122,
+      "point_ratio_input": 0.003877,
+      "bbox_min": [
+        5.22448,
+        -10.181483,
+        -2.865593
+      ],
+      "bbox_max": [
+        6.077592,
+        -9.900875,
+        -1.976066
+      ],
+      "bbox_extent_xyz": [
+        0.853112,
+        0.280608,
+        0.889526
+      ],
+      "bbox_volume_m3": 0.212944,
+      "centroid": [
+        5.606638,
+        -10.052223,
+        -2.325267
+      ],
+      "density_points_per_m3": 572.920867,
+      "distance_to_global_center_m": 8.212637,
+      "distance_to_ground_plane_m": 22.497224,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.065025,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 15,
+        "grid_voxels": 32,
+        "occupancy_ratio": 0.46875
+      },
+      "mean_color_rgb01": [
+        0.443726,
+        0.402995,
+        0.396544
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 122,
+        "current_heuristic_density": 572.920867,
+        "count_ratio_to_main": 0.009962,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          122,
+          572.920867
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 13,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 39,
+      "point_count": 109,
+      "point_ratio_input": 0.003464,
+      "bbox_min": [
+        9.181524,
+        -0.558669,
+        -0.885395
+      ],
+      "bbox_max": [
+        10.163058,
+        0.684406,
+        -0.406712
+      ],
+      "bbox_extent_xyz": [
+        0.981534,
+        1.243075,
+        0.478683
+      ],
+      "bbox_volume_m3": 0.58405,
+      "centroid": [
+        9.765876,
+        0.110609,
+        -0.672866
+      ],
+      "density_points_per_m3": 186.62773,
+      "distance_to_global_center_m": 4.746986,
+      "distance_to_ground_plane_m": 24.477422,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.025463,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 13,
+        "grid_voxels": 40,
+        "occupancy_ratio": 0.325
+      },
+      "mean_color_rgb01": [
+        0.383665,
+        0.249519,
+        0.192488
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 109,
+        "current_heuristic_density": 186.62773,
+        "count_ratio_to_main": 0.0089,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          109,
+          186.62773
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 14,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 16,
+      "point_count": 87,
+      "point_ratio_input": 0.002765,
+      "bbox_min": [
+        6.284735,
+        -1.381913,
+        1.481312
+      ],
+      "bbox_max": [
+        6.522244,
+        0.555593,
+        2.29695
+      ],
+      "bbox_extent_xyz": [
+        0.237509,
+        1.937505,
+        0.815638
+      ],
+      "bbox_volume_m3": 0.375337,
+      "centroid": [
+        6.371509,
+        -0.407918,
+        1.891007
+      ],
+      "density_points_per_m3": 231.79195,
+      "distance_to_global_center_m": 4.144693,
+      "distance_to_ground_plane_m": 26.844129,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.003901,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 11,
+        "grid_voxels": 32,
+        "occupancy_ratio": 0.34375
+      },
+      "mean_color_rgb01": [
+        0.174557,
+        0.188054,
+        0.113391
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 87,
+        "current_heuristic_density": 231.79195,
+        "count_ratio_to_main": 0.007104,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": false,
+        "sort_key": [
+          87,
+          231.79195
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio",
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 15,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 9,
+      "point_count": 85,
+      "point_ratio_input": 0.002701,
+      "bbox_min": [
+        9.182963,
+        -10.042942,
+        -3.222193
+      ],
+      "bbox_max": [
+        9.580384,
+        -9.327873,
+        -3.01817
+      ],
+      "bbox_extent_xyz": [
+        0.397421,
+        0.715069,
+        0.204023
+      ],
+      "bbox_volume_m3": 0.05798,
+      "centroid": [
+        9.437019,
+        -9.664008,
+        -3.114055
+      ],
+      "density_points_per_m3": 1466.022612,
+      "distance_to_global_center_m": 8.775019,
+      "distance_to_ground_plane_m": 22.140624,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.021062,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 6,
+        "grid_voxels": 6,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.536368,
+        0.485837,
+        0.467655
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 85,
+        "current_heuristic_density": 1466.022612,
+        "count_ratio_to_main": 0.00694,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          85,
+          1466.022612
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 16,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 32,
+      "point_count": 74,
+      "point_ratio_input": 0.002352,
+      "bbox_min": [
+        10.02866,
+        0.286653,
+        0.602845
+      ],
+      "bbox_max": [
+        10.829061,
+        1.060122,
+        1.073169
+      ],
+      "bbox_extent_xyz": [
+        0.800401,
+        0.773469,
+        0.470324
+      ],
+      "bbox_volume_m3": 0.29117,
+      "centroid": [
+        10.418587,
+        0.586825,
+        0.863145
+      ],
+      "density_points_per_m3": 254.146773,
+      "distance_to_global_center_m": 6.054417,
+      "distance_to_ground_plane_m": 25.965662,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.023565,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 10,
+        "grid_voxels": 32,
+        "occupancy_ratio": 0.3125
+      },
+      "mean_color_rgb01": [
+        0.341229,
+        0.264045,
+        0.202689
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 74,
+        "current_heuristic_density": 254.146773,
+        "count_ratio_to_main": 0.006042,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          74,
+          254.146773
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 17,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 46,
+      "point_count": 73,
+      "point_ratio_input": 0.00232,
+      "bbox_min": [
+        -12.316292,
+        10.775713,
+        -7.17889
+      ],
+      "bbox_max": [
+        -11.859992,
+        11.523771,
+        -6.914772
+      ],
+      "bbox_extent_xyz": [
+        0.4563,
+        0.748058,
+        0.264118
+      ],
+      "bbox_volume_m3": 0.090154,
+      "centroid": [
+        -12.111039,
+        11.154397,
+        -7.061432
+      ],
+      "density_points_per_m3": 809.728837,
+      "distance_to_global_center_m": 22.586437,
+      "distance_to_ground_plane_m": 18.183927,
+      "touches_global_bbox": {
+        "x_min": true,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.011025,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 6,
+        "grid_voxels": 12,
+        "occupancy_ratio": 0.5
+      },
+      "mean_color_rgb01": [
+        0.785807,
+        0.685005,
+        0.725863
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 73,
+        "current_heuristic_density": 809.728837,
+        "count_ratio_to_main": 0.005961,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          73,
+          809.728837
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 18,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 6,
+      "point_count": 70,
+      "point_ratio_input": 0.002225,
+      "bbox_min": [
+        4.325777,
+        -7.149297,
+        -4.610178
+      ],
+      "bbox_max": [
+        4.763495,
+        -6.646454,
+        -4.038955
+      ],
+      "bbox_extent_xyz": [
+        0.437719,
+        0.502843,
+        0.571223
+      ],
+      "bbox_volume_m3": 0.125728,
+      "centroid": [
+        4.594324,
+        -6.897539,
+        -4.333025
+      ],
+      "density_points_per_m3": 556.755926,
+      "distance_to_global_center_m": 5.688418,
+      "distance_to_ground_plane_m": 20.752638,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.028735,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 8,
+        "grid_voxels": 18,
+        "occupancy_ratio": 0.444444
+      },
+      "mean_color_rgb01": [
+        0.424722,
+        0.408791,
+        0.392452
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 70,
+        "current_heuristic_density": 556.755926,
+        "count_ratio_to_main": 0.005716,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          70,
+          556.755926
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 19,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 40,
+      "point_count": 70,
+      "point_ratio_input": 0.002225,
+      "bbox_min": [
+        -6.770894,
+        10.396711,
+        -25.050867
+      ],
+      "bbox_max": [
+        -6.202942,
+        10.845795,
+        -24.748285
+      ],
+      "bbox_extent_xyz": [
+        0.567951,
+        0.449083,
+        0.302582
+      ],
+      "bbox_volume_m3": 0.077176,
+      "centroid": [
+        -6.473414,
+        10.602104,
+        -24.861582
+      ],
+      "density_points_per_m3": 907.020913,
+      "distance_to_global_center_m": 28.768829,
+      "distance_to_ground_plane_m": 0.31195,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.013313,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 10,
+        "grid_voxels": 12,
+        "occupancy_ratio": 0.833333
+      },
+      "mean_color_rgb01": [
+        0.299104,
+        0.321839,
+        0.281643
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 70,
+        "current_heuristic_density": 907.020913,
+        "count_ratio_to_main": 0.005716,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          70,
+          907.020913
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 20,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 11,
+      "point_count": 66,
+      "point_ratio_input": 0.002098,
+      "bbox_min": [
+        7.659494,
+        -3.604484,
+        -0.453959
+      ],
+      "bbox_max": [
+        8.205729,
+        -3.079346,
+        -0.171179
+      ],
+      "bbox_extent_xyz": [
+        0.546235,
+        0.525138,
+        0.28278
+      ],
+      "bbox_volume_m3": 0.081115,
+      "centroid": [
+        7.921708,
+        -3.290442,
+        -0.292273
+      ],
+      "density_points_per_m3": 813.658697,
+      "distance_to_global_center_m": 3.162375,
+      "distance_to_ground_plane_m": 24.908858,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.018848,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 7,
+        "grid_voxels": 18,
+        "occupancy_ratio": 0.388889
+      },
+      "mean_color_rgb01": [
+        0.410799,
+        0.387157,
+        0.329253
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 66,
+        "current_heuristic_density": 813.658697,
+        "count_ratio_to_main": 0.005389,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          66,
+          813.658697
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 21,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 29,
+      "point_count": 61,
+      "point_ratio_input": 0.001939,
+      "bbox_min": [
+        6.065356,
+        -5.019458,
+        -5.677964
+      ],
+      "bbox_max": [
+        6.321701,
+        -4.550154,
+        -5.444957
+      ],
+      "bbox_extent_xyz": [
+        0.256345,
+        0.469305,
+        0.233007
+      ],
+      "bbox_volume_m3": 0.028032,
+      "centroid": [
+        6.172422,
+        -4.777523,
+        -5.572443
+      ],
+      "density_points_per_m3": 2176.113592,
+      "distance_to_global_center_m": 4.710583,
+      "distance_to_ground_plane_m": 19.684853,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.010352,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 4,
+        "occupancy_ratio": 0.75
+      },
+      "mean_color_rgb01": [
+        0.460124,
+        0.416477,
+        0.389213
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 61,
+        "current_heuristic_density": 2176.113592,
+        "count_ratio_to_main": 0.004981,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          61,
+          2176.113592
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 22,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 47,
+      "point_count": 59,
+      "point_ratio_input": 0.001875,
+      "bbox_min": [
+        9.095803,
+        -10.017597,
+        -2.396599
+      ],
+      "bbox_max": [
+        9.494209,
+        -9.877898,
+        -1.719694
+      ],
+      "bbox_extent_xyz": [
+        0.398407,
+        0.139699,
+        0.676904
+      ],
+      "bbox_volume_m3": 0.037674,
+      "centroid": [
+        9.282961,
+        -9.91899,
+        -2.049338
+      ],
+      "density_points_per_m3": 1566.048065,
+      "distance_to_global_center_m": 8.859922,
+      "distance_to_ground_plane_m": 22.966218,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.006262,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 5,
+        "grid_voxels": 6,
+        "occupancy_ratio": 0.833333
+      },
+      "mean_color_rgb01": [
+        0.48834,
+        0.427353,
+        0.381619
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 59,
+        "current_heuristic_density": 1566.048065,
+        "count_ratio_to_main": 0.004818,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          59,
+          1566.048065
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 23,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 35,
+      "point_count": 59,
+      "point_ratio_input": 0.001875,
+      "bbox_min": [
+        -1.503406,
+        -6.694607,
+        2.512689
+      ],
+      "bbox_max": [
+        -0.607667,
+        -6.559822,
+        2.647169
+      ],
+      "bbox_extent_xyz": [
+        0.895739,
+        0.134785,
+        0.13448
+      ],
+      "bbox_volume_m3": 0.016236,
+      "centroid": [
+        -0.992748,
+        -6.618323,
+        2.566402
+      ],
+      "density_points_per_m3": 3633.87643,
+      "distance_to_global_center_m": 9.312304,
+      "distance_to_ground_plane_m": 27.875506,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.005909,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 4,
+        "grid_voxels": 4,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.471432,
+        0.328093,
+        0.302185
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 59,
+        "current_heuristic_density": 3633.87643,
+        "count_ratio_to_main": 0.004818,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          59,
+          3633.87643
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 24,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 25,
+      "point_count": 58,
+      "point_ratio_input": 0.001843,
+      "bbox_min": [
+        6.766123,
+        -8.314541,
+        -3.510667
+      ],
+      "bbox_max": [
+        7.581519,
+        -7.630867,
+        -3.195827
+      ],
+      "bbox_extent_xyz": [
+        0.815396,
+        0.683674,
+        0.314841
+      ],
+      "bbox_volume_m3": 0.175513,
+      "centroid": [
+        7.100629,
+        -7.898418,
+        -3.364533
+      ],
+      "density_points_per_m3": 330.46054,
+      "distance_to_global_center_m": 6.390548,
+      "distance_to_ground_plane_m": 21.85215,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.041991,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 11,
+        "grid_voxels": 24,
+        "occupancy_ratio": 0.458333
+      },
+      "mean_color_rgb01": [
+        0.418053,
+        0.388753,
+        0.369472
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 58,
+        "current_heuristic_density": 330.46054,
+        "count_ratio_to_main": 0.004736,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          58,
+          330.46054
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 25,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 56,
+      "point_count": 55,
+      "point_ratio_input": 0.001748,
+      "bbox_min": [
+        8.330111,
+        -5.487888,
+        -1.730935
+      ],
+      "bbox_max": [
+        8.542468,
+        -4.904945,
+        -1.511939
+      ],
+      "bbox_extent_xyz": [
+        0.212358,
+        0.582942,
+        0.218995
+      ],
+      "bbox_volume_m3": 0.02711,
+      "centroid": [
+        8.451657,
+        -5.216756,
+        -1.60695
+      ],
+      "density_points_per_m3": 2028.779865,
+      "distance_to_global_center_m": 4.406407,
+      "distance_to_ground_plane_m": 23.631882,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.008357,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 3,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.434123,
+        0.407977,
+        0.402137
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 55,
+        "current_heuristic_density": 2028.779865,
+        "count_ratio_to_main": 0.004491,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          55,
+          2028.779865
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 26,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 19,
+      "point_count": 55,
+      "point_ratio_input": 0.001748,
+      "bbox_min": [
+        3.219776,
+        -8.975188,
+        -4.287755
+      ],
+      "bbox_max": [
+        3.544266,
+        -8.619151,
+        -3.954562
+      ],
+      "bbox_extent_xyz": [
+        0.32449,
+        0.356036,
+        0.333194
+      ],
+      "bbox_volume_m3": 0.038494,
+      "centroid": [
+        3.385321,
+        -8.811952,
+        -4.123148
+      ],
+      "density_points_per_m3": 1428.795007,
+      "distance_to_global_center_m": 7.638238,
+      "distance_to_ground_plane_m": 21.075061,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.005365,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 5,
+        "grid_voxels": 8,
+        "occupancy_ratio": 0.625
+      },
+      "mean_color_rgb01": [
+        0.528207,
+        0.498251,
+        0.461814
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 55,
+        "current_heuristic_density": 1428.795007,
+        "count_ratio_to_main": 0.004491,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          55,
+          1428.795007
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 27,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 28,
+      "point_count": 48,
+      "point_ratio_input": 0.001526,
+      "bbox_min": [
+        7.233986,
+        -4.88726,
+        -1.743585
+      ],
+      "bbox_max": [
+        7.711286,
+        -4.374542,
+        -1.394852
+      ],
+      "bbox_extent_xyz": [
+        0.477299,
+        0.512717,
+        0.348733
+      ],
+      "bbox_volume_m3": 0.085342,
+      "centroid": [
+        7.435086,
+        -4.690038,
+        -1.531799
+      ],
+      "density_points_per_m3": 562.443633,
+      "distance_to_global_center_m": 3.389768,
+      "distance_to_ground_plane_m": 23.619232,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.010394,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 5,
+        "grid_voxels": 12,
+        "occupancy_ratio": 0.416667
+      },
+      "mean_color_rgb01": [
+        0.406044,
+        0.378687,
+        0.377595
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 48,
+        "current_heuristic_density": 562.443633,
+        "count_ratio_to_main": 0.003919,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          48,
+          562.443633
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 28,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 3,
+      "point_count": 48,
+      "point_ratio_input": 0.001526,
+      "bbox_min": [
+        7.964325,
+        -5.066734,
+        -3.995003
+      ],
+      "bbox_max": [
+        8.501197,
+        -4.775873,
+        -3.777485
+      ],
+      "bbox_extent_xyz": [
+        0.536871,
+        0.29086,
+        0.217518
+      ],
+      "bbox_volume_m3": 0.033967,
+      "centroid": [
+        8.179213,
+        -4.930918,
+        -3.906276
+      ],
+      "density_points_per_m3": 1413.156385,
+      "distance_to_global_center_m": 4.465648,
+      "distance_to_ground_plane_m": 21.367814,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.0081,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 5,
+        "grid_voxels": 6,
+        "occupancy_ratio": 0.833333
+      },
+      "mean_color_rgb01": [
+        0.449979,
+        0.426809,
+        0.411129
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 48,
+        "current_heuristic_density": 1413.156385,
+        "count_ratio_to_main": 0.003919,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          48,
+          1413.156385
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 29,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 23,
+      "point_count": 46,
+      "point_ratio_input": 0.001462,
+      "bbox_min": [
+        3.711226,
+        -9.542685,
+        0.963193
+      ],
+      "bbox_max": [
+        3.867258,
+        -9.025281,
+        1.676758
+      ],
+      "bbox_extent_xyz": [
+        0.156031,
+        0.517404,
+        0.713566
+      ],
+      "bbox_volume_m3": 0.057607,
+      "centroid": [
+        3.782108,
+        -9.254349,
+        1.261175
+      ],
+      "density_points_per_m3": 798.514119,
+      "distance_to_global_center_m": 8.268916,
+      "distance_to_ground_plane_m": 26.326009,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.003759,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 6,
+        "grid_voxels": 9,
+        "occupancy_ratio": 0.666667
+      },
+      "mean_color_rgb01": [
+        0.521988,
+        0.492384,
+        0.414457
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 46,
+        "current_heuristic_density": 798.514119,
+        "count_ratio_to_main": 0.003756,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          46,
+          798.514119
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 30,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 52,
+      "point_count": 46,
+      "point_ratio_input": 0.001462,
+      "bbox_min": [
+        10.26936,
+        -1.209173,
+        0.313839
+      ],
+      "bbox_max": [
+        10.528201,
+        -0.046488,
+        0.527095
+      ],
+      "bbox_extent_xyz": [
+        0.258842,
+        1.162685,
+        0.213255
+      ],
+      "bbox_volume_m3": 0.064179,
+      "centroid": [
+        10.409982,
+        -0.625433,
+        0.413573
+      ],
+      "density_points_per_m3": 716.740396,
+      "distance_to_global_center_m": 5.461989,
+      "distance_to_ground_plane_m": 25.676656,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000518,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 6,
+        "grid_voxels": 10,
+        "occupancy_ratio": 0.6
+      },
+      "mean_color_rgb01": [
+        0.228045,
+        0.198858,
+        0.103186
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 46,
+        "current_heuristic_density": 716.740396,
+        "count_ratio_to_main": 0.003756,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          46,
+          716.740396
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 31,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 4,
+      "point_count": 42,
+      "point_ratio_input": 0.001335,
+      "bbox_min": [
+        7.924903,
+        -5.900848,
+        -3.993596
+      ],
+      "bbox_max": [
+        8.250807,
+        -5.435477,
+        -3.858936
+      ],
+      "bbox_extent_xyz": [
+        0.325904,
+        0.465371,
+        0.13466
+      ],
+      "bbox_volume_m3": 0.020423,
+      "centroid": [
+        8.07346,
+        -5.618191,
+        -3.940957
+      ],
+      "density_points_per_m3": 2056.463,
+      "distance_to_global_center_m": 4.925456,
+      "distance_to_ground_plane_m": 21.369221,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.00506,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 4,
+        "occupancy_ratio": 0.75
+      },
+      "mean_color_rgb01": [
+        0.434462,
+        0.39734,
+        0.406575
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 42,
+        "current_heuristic_density": 2056.463,
+        "count_ratio_to_main": 0.003429,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          42,
+          2056.463
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 32,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 12,
+      "point_count": 42,
+      "point_ratio_input": 0.001335,
+      "bbox_min": [
+        10.377809,
+        -6.305805,
+        -1.806014
+      ],
+      "bbox_max": [
+        10.553395,
+        -5.862673,
+        -1.452114
+      ],
+      "bbox_extent_xyz": [
+        0.175586,
+        0.443131,
+        0.3539
+      ],
+      "bbox_volume_m3": 0.027536,
+      "centroid": [
+        10.473847,
+        -6.066016,
+        -1.640251
+      ],
+      "density_points_per_m3": 1525.268415,
+      "distance_to_global_center_m": 6.430385,
+      "distance_to_ground_plane_m": 23.556803,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.008045,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 4,
+        "grid_voxels": 4,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.401732,
+        0.373121,
+        0.355668
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 42,
+        "current_heuristic_density": 1525.268415,
+        "count_ratio_to_main": 0.003429,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          42,
+          1525.268415
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 33,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 22,
+      "point_count": 40,
+      "point_ratio_input": 0.001271,
+      "bbox_min": [
+        9.958527,
+        -10.904648,
+        2.975424
+      ],
+      "bbox_max": [
+        10.588168,
+        -10.633706,
+        3.350285
+      ],
+      "bbox_extent_xyz": [
+        0.629641,
+        0.270942,
+        0.374861
+      ],
+      "bbox_volume_m3": 0.06395,
+      "centroid": [
+        10.279235,
+        -10.752286,
+        3.171435
+      ],
+      "density_points_per_m3": 625.490051,
+      "distance_to_global_center_m": 11.262992,
+      "distance_to_ground_plane_m": 28.338241,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.010158,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 6,
+        "grid_voxels": 12,
+        "occupancy_ratio": 0.5
+      },
+      "mean_color_rgb01": [
+        0.491204,
+        0.480163,
+        0.436271
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 40,
+        "current_heuristic_density": 625.490051,
+        "count_ratio_to_main": 0.003266,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          40,
+          625.490051
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 34,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 5,
+      "point_count": 39,
+      "point_ratio_input": 0.001239,
+      "bbox_min": [
+        9.78264,
+        -11.45546,
+        6.795404
+      ],
+      "bbox_max": [
+        10.013483,
+        -11.141746,
+        7.273342
+      ],
+      "bbox_extent_xyz": [
+        0.230843,
+        0.313714,
+        0.477938
+      ],
+      "bbox_volume_m3": 0.034612,
+      "centroid": [
+        9.921105,
+        -11.287581,
+        7.106558
+      ],
+      "density_points_per_m3": 1126.791188,
+      "distance_to_global_center_m": 13.749481,
+      "distance_to_ground_plane_m": 32.158221,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.006276,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 4,
+        "occupancy_ratio": 0.75
+      },
+      "mean_color_rgb01": [
+        0.269435,
+        0.26964,
+        0.227372
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 39,
+        "current_heuristic_density": 1126.791188,
+        "count_ratio_to_main": 0.003184,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          39,
+          1126.791188
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 35,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 30,
+      "point_count": 39,
+      "point_ratio_input": 0.001239,
+      "bbox_min": [
+        0.240952,
+        4.077013,
+        3.849939
+      ],
+      "bbox_max": [
+        1.142183,
+        4.252743,
+        4.070926
+      ],
+      "bbox_extent_xyz": [
+        0.901231,
+        0.17573,
+        0.220987
+      ],
+      "bbox_volume_m3": 0.034999,
+      "centroid": [
+        0.660041,
+        4.162128,
+        3.997077
+      ],
+      "density_points_per_m3": 1114.331402,
+      "distance_to_global_center_m": 9.790713,
+      "distance_to_ground_plane_m": 29.212756,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.009835,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 4,
+        "grid_voxels": 4,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.389291,
+        0.230709,
+        0.20507
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 39,
+        "current_heuristic_density": 1114.331402,
+        "count_ratio_to_main": 0.003184,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          39,
+          1114.331402
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 36,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 24,
+      "point_count": 35,
+      "point_ratio_input": 0.001112,
+      "bbox_min": [
+        6.829216,
+        -8.639011,
+        -1.467498
+      ],
+      "bbox_max": [
+        7.044727,
+        -8.380849,
+        -1.212846
+      ],
+      "bbox_extent_xyz": [
+        0.215511,
+        0.258162,
+        0.254652
+      ],
+      "bbox_volume_m3": 0.014168,
+      "centroid": [
+        6.949263,
+        -8.519322,
+        -1.349891
+      ],
+      "density_points_per_m3": 2470.357626,
+      "distance_to_global_center_m": 6.823734,
+      "distance_to_ground_plane_m": 23.895319,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.003295,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 4,
+        "occupancy_ratio": 0.75
+      },
+      "mean_color_rgb01": [
+        0.411986,
+        0.406985,
+        0.392749
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 35,
+        "current_heuristic_density": 2470.357626,
+        "count_ratio_to_main": 0.002858,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          35,
+          2470.357626
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 37,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 36,
+      "point_count": 35,
+      "point_ratio_input": 0.001112,
+      "bbox_min": [
+        1.07282,
+        0.9234,
+        0.725369
+      ],
+      "bbox_max": [
+        1.168248,
+        1.400118,
+        0.833394
+      ],
+      "bbox_extent_xyz": [
+        0.095427,
+        0.476718,
+        0.108026
+      ],
+      "bbox_volume_m3": 0.004914,
+      "centroid": [
+        1.12705,
+        1.171747,
+        0.771798
+      ],
+      "density_points_per_m3": 7122.074655,
+      "distance_to_global_center_m": 6.053112,
+      "distance_to_ground_plane_m": 26.088185,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.001907,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.404781,
+        0.277483,
+        0.249033
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 35,
+        "current_heuristic_density": 7122.074655,
+        "count_ratio_to_main": 0.002858,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          35,
+          7122.074655
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 38,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 17,
+      "point_count": 35,
+      "point_ratio_input": 0.001112,
+      "bbox_min": [
+        4.24901,
+        -10.438983,
+        -1.649868
+      ],
+      "bbox_max": [
+        4.581877,
+        -10.047253,
+        -1.402408
+      ],
+      "bbox_extent_xyz": [
+        0.332868,
+        0.39173,
+        0.247459
+      ],
+      "bbox_volume_m3": 0.032267,
+      "centroid": [
+        4.405171,
+        -10.256291,
+        -1.550209
+      ],
+      "density_points_per_m3": 1084.690305,
+      "distance_to_global_center_m": 8.503336,
+      "distance_to_ground_plane_m": 23.712949,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.004717,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 4,
+        "grid_voxels": 4,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.456865,
+        0.435896,
+        0.422076
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 35,
+        "current_heuristic_density": 1084.690305,
+        "count_ratio_to_main": 0.002858,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          35,
+          1084.690305
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 39,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 55,
+      "point_count": 33,
+      "point_ratio_input": 0.001049,
+      "bbox_min": [
+        16.183065,
+        -4.688485,
+        5.839589
+      ],
+      "bbox_max": [
+        16.411634,
+        -4.34625,
+        6.006765
+      ],
+      "bbox_extent_xyz": [
+        0.228569,
+        0.342235,
+        0.167176
+      ],
+      "bbox_volume_m3": 0.013077,
+      "centroid": [
+        16.31351,
+        -4.499804,
+        5.900533
+      ],
+      "density_points_per_m3": 2523.467704,
+      "distance_to_global_center_m": 13.506664,
+      "distance_to_ground_plane_m": 31.202406,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": true,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.002832,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.361299,
+        0.271678,
+        0.248784
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 33,
+        "current_heuristic_density": 2523.467704,
+        "count_ratio_to_main": 0.002695,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          33,
+          2523.467704
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 40,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 27,
+      "point_count": 33,
+      "point_ratio_input": 0.001049,
+      "bbox_min": [
+        5.302623,
+        -4.126571,
+        5.483727
+      ],
+      "bbox_max": [
+        5.440644,
+        -3.808601,
+        5.906463
+      ],
+      "bbox_extent_xyz": [
+        0.138021,
+        0.31797,
+        0.422736
+      ],
+      "bbox_volume_m3": 0.018552,
+      "centroid": [
+        5.369878,
+        -3.963871,
+        5.702606
+      ],
+      "density_points_per_m3": 1778.749756,
+      "distance_to_global_center_m": 7.917452,
+      "distance_to_ground_plane_m": 30.846543,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.003086,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 4,
+        "occupancy_ratio": 0.75
+      },
+      "mean_color_rgb01": [
+        0.401743,
+        0.415567,
+        0.367479
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 33,
+        "current_heuristic_density": 1778.749756,
+        "count_ratio_to_main": 0.002695,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          33,
+          1778.749756
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 41,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 50,
+      "point_count": 31,
+      "point_ratio_input": 0.000985,
+      "bbox_min": [
+        8.623505,
+        3.300776,
+        -1.795305
+      ],
+      "bbox_max": [
+        8.909693,
+        3.525192,
+        -1.494397
+      ],
+      "bbox_extent_xyz": [
+        0.286189,
+        0.224416,
+        0.300908
+      ],
+      "bbox_volume_m3": 0.019326,
+      "centroid": [
+        8.779839,
+        3.398515,
+        -1.650045
+      ],
+      "density_points_per_m3": 1604.059839,
+      "distance_to_global_center_m": 6.128248,
+      "distance_to_ground_plane_m": 23.567512,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000594,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 4,
+        "occupancy_ratio": 0.75
+      },
+      "mean_color_rgb01": [
+        0.426875,
+        0.417283,
+        0.403428
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 31,
+        "current_heuristic_density": 1604.059839,
+        "count_ratio_to_main": 0.002531,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          31,
+          1604.059839
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 42,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 37,
+      "point_count": 28,
+      "point_ratio_input": 0.00089,
+      "bbox_min": [
+        2.667624,
+        -9.604589,
+        -3.246767
+      ],
+      "bbox_max": [
+        2.898845,
+        -9.336212,
+        -2.647241
+      ],
+      "bbox_extent_xyz": [
+        0.231221,
+        0.268377,
+        0.599526
+      ],
+      "bbox_volume_m3": 0.037203,
+      "centroid": [
+        2.766831,
+        -9.450824,
+        -2.916941
+      ],
+      "density_points_per_m3": 752.624011,
+      "distance_to_global_center_m": 8.18229,
+      "distance_to_ground_plane_m": 22.11605,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000899,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 5,
+        "grid_voxels": 6,
+        "occupancy_ratio": 0.833333
+      },
+      "mean_color_rgb01": [
+        0.580629,
+        0.510658,
+        0.512715
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 28,
+        "current_heuristic_density": 752.624011,
+        "count_ratio_to_main": 0.002286,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          28,
+          752.624011
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 43,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 43,
+      "point_count": 28,
+      "point_ratio_input": 0.00089,
+      "bbox_min": [
+        9.461574,
+        3.157394,
+        -2.975885
+      ],
+      "bbox_max": [
+        9.677717,
+        3.336705,
+        -2.676522
+      ],
+      "bbox_extent_xyz": [
+        0.216143,
+        0.179311,
+        0.299363
+      ],
+      "bbox_volume_m3": 0.011602,
+      "centroid": [
+        9.55723,
+        3.251912,
+        -2.790905
+      ],
+      "density_points_per_m3": 2413.305108,
+      "distance_to_global_center_m": 6.497935,
+      "distance_to_ground_plane_m": 22.386932,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000889,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.423769,
+        0.38497,
+        0.360092
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 28,
+        "current_heuristic_density": 2413.305108,
+        "count_ratio_to_main": 0.002286,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          28,
+          2413.305108
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 44,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 26,
+      "point_count": 28,
+      "point_ratio_input": 0.00089,
+      "bbox_min": [
+        5.825023,
+        -5.659987,
+        -1.59514
+      ],
+      "bbox_max": [
+        5.986868,
+        -5.38062,
+        -1.366158
+      ],
+      "bbox_extent_xyz": [
+        0.161845,
+        0.279366,
+        0.228982
+      ],
+      "bbox_volume_m3": 0.010353,
+      "centroid": [
+        5.898256,
+        -5.5495,
+        -1.497413
+      ],
+      "density_points_per_m3": 2704.474199,
+      "distance_to_global_center_m": 3.734275,
+      "distance_to_ground_plane_m": 23.767677,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.002158,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.324506,
+        0.304177,
+        0.313365
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 28,
+        "current_heuristic_density": 2704.474199,
+        "count_ratio_to_main": 0.002286,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          28,
+          2704.474199
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 45,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 49,
+      "point_count": 27,
+      "point_ratio_input": 0.000858,
+      "bbox_min": [
+        9.830608,
+        -5.602287,
+        1.997674
+      ],
+      "bbox_max": [
+        10.00501,
+        -5.296213,
+        2.092171
+      ],
+      "bbox_extent_xyz": [
+        0.174402,
+        0.306074,
+        0.094497
+      ],
+      "bbox_volume_m3": 0.005044,
+      "centroid": [
+        9.936536,
+        -5.463224,
+        2.05185
+      ],
+      "density_points_per_m3": 5352.645996,
+      "distance_to_global_center_m": 6.886891,
+      "distance_to_ground_plane_m": 27.360491,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.001608,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.394196,
+        0.358395,
+        0.35266
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 27,
+        "current_heuristic_density": 5352.645996,
+        "count_ratio_to_main": 0.002205,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          27,
+          5352.645996
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 46,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 48,
+      "point_count": 24,
+      "point_ratio_input": 0.000763,
+      "bbox_min": [
+        7.568274,
+        -9.244979,
+        -2.507
+      ],
+      "bbox_max": [
+        7.766167,
+        -9.047317,
+        -2.437309
+      ],
+      "bbox_extent_xyz": [
+        0.197894,
+        0.197662,
+        0.069691
+      ],
+      "bbox_volume_m3": 0.002726,
+      "centroid": [
+        7.662933,
+        -9.157556,
+        -2.477024
+      ],
+      "density_points_per_m3": 8803.928901,
+      "distance_to_global_center_m": 7.606549,
+      "distance_to_ground_plane_m": 22.855817,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000943,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 1,
+        "grid_voxels": 1,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.422198,
+        0.412871,
+        0.361122
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 24,
+        "current_heuristic_density": 8803.928901,
+        "count_ratio_to_main": 0.00196,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          24,
+          8803.928901
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 47,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 53,
+      "point_count": 24,
+      "point_ratio_input": 0.000763,
+      "bbox_min": [
+        5.686379,
+        4.602851,
+        -0.45822
+      ],
+      "bbox_max": [
+        5.87843,
+        4.804765,
+        -0.162475
+      ],
+      "bbox_extent_xyz": [
+        0.19205,
+        0.201914,
+        0.295745
+      ],
+      "bbox_volume_m3": 0.011468,
+      "centroid": [
+        5.777152,
+        4.710222,
+        -0.309763
+      ],
+      "density_points_per_m3": 2092.721188,
+      "distance_to_global_center_m": 6.75681,
+      "distance_to_ground_plane_m": 24.904596,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000281,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.370593,
+        0.365327,
+        0.366537
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 24,
+        "current_heuristic_density": 2092.721188,
+        "count_ratio_to_main": 0.00196,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          24,
+          2092.721188
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 48,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 44,
+      "point_count": 24,
+      "point_ratio_input": 0.000763,
+      "bbox_min": [
+        -3.358055,
+        9.146954,
+        -23.539331
+      ],
+      "bbox_max": [
+        -3.028272,
+        9.326658,
+        -23.207188
+      ],
+      "bbox_extent_xyz": [
+        0.329784,
+        0.179705,
+        0.332144
+      ],
+      "bbox_volume_m3": 0.019684,
+      "centroid": [
+        -3.203628,
+        9.237275,
+        -23.374499
+      ],
+      "density_points_per_m3": 1219.260774,
+      "distance_to_global_center_m": 25.711223,
+      "distance_to_ground_plane_m": 1.823485,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.001549,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 4,
+        "grid_voxels": 4,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.377042,
+        0.335621,
+        0.322903
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 24,
+        "current_heuristic_density": 1219.260774,
+        "count_ratio_to_main": 0.00196,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          24,
+          1219.260774
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 49,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 51,
+      "point_count": 24,
+      "point_ratio_input": 0.000763,
+      "bbox_min": [
+        6.798214,
+        -10.324925,
+        0.87677
+      ],
+      "bbox_max": [
+        6.967146,
+        -10.123209,
+        1.120179
+      ],
+      "bbox_extent_xyz": [
+        0.168932,
+        0.201716,
+        0.24341
+      ],
+      "bbox_volume_m3": 0.008295,
+      "centroid": [
+        6.89207,
+        -10.215801,
+        0.994578
+      ],
+      "density_points_per_m3": 2893.476748,
+      "distance_to_global_center_m": 8.950281,
+      "distance_to_ground_plane_m": 26.239586,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.00126,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 1,
+        "grid_voxels": 1,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.581229,
+        0.550634,
+        0.525562
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 24,
+        "current_heuristic_density": 2893.476748,
+        "count_ratio_to_main": 0.00196,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          24,
+          2893.476748
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 50,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 15,
+      "point_count": 24,
+      "point_ratio_input": 0.000763,
+      "bbox_min": [
+        1.207021,
+        1.04898,
+        -2.36647
+      ],
+      "bbox_max": [
+        1.461779,
+        1.170608,
+        -2.10518
+      ],
+      "bbox_extent_xyz": [
+        0.254758,
+        0.121627,
+        0.261289
+      ],
+      "bbox_volume_m3": 0.008096,
+      "centroid": [
+        1.398833,
+        1.110877,
+        -2.199314
+      ],
+      "density_points_per_m3": 2964.359884,
+      "distance_to_global_center_m": 5.168996,
+      "distance_to_ground_plane_m": 22.996347,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.001064,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 4,
+        "occupancy_ratio": 0.75
+      },
+      "mean_color_rgb01": [
+        0.371048,
+        0.21904,
+        0.177227
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 24,
+        "current_heuristic_density": 2964.359884,
+        "count_ratio_to_main": 0.00196,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          24,
+          2964.359884
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 51,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 42,
+      "point_count": 24,
+      "point_ratio_input": 0.000763,
+      "bbox_min": [
+        9.192092,
+        -9.241429,
+        -1.304539
+      ],
+      "bbox_max": [
+        9.394067,
+        -9.007498,
+        -1.124296
+      ],
+      "bbox_extent_xyz": [
+        0.201975,
+        0.233932,
+        0.180242
+      ],
+      "bbox_volume_m3": 0.008516,
+      "centroid": [
+        9.28546,
+        -9.125717,
+        -1.209633
+      ],
+      "density_points_per_m3": 2818.174837,
+      "distance_to_global_center_m": 8.175327,
+      "distance_to_ground_plane_m": 24.058278,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000777,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 1,
+        "grid_voxels": 1,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.424398,
+        0.40309,
+        0.386297
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 24,
+        "current_heuristic_density": 2818.174837,
+        "count_ratio_to_main": 0.00196,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          24,
+          2818.174837
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 52,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 57,
+      "point_count": 22,
+      "point_ratio_input": 0.000699,
+      "bbox_min": [
+        8.636167,
+        -0.058062,
+        -4.836249
+      ],
+      "bbox_max": [
+        8.962884,
+        0.161202,
+        -4.755064
+      ],
+      "bbox_extent_xyz": [
+        0.326717,
+        0.219264,
+        0.081185
+      ],
+      "bbox_volume_m3": 0.005816,
+      "centroid": [
+        8.796479,
+        0.040214,
+        -4.784052
+      ],
+      "density_points_per_m3": 3782.755231,
+      "distance_to_global_center_m": 4.669216,
+      "distance_to_ground_plane_m": 20.526567,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.001174,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.356409,
+        0.249847,
+        0.186255
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 22,
+        "current_heuristic_density": 3782.755231,
+        "count_ratio_to_main": 0.001796,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          22,
+          3782.755231
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 53,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 54,
+      "point_count": 22,
+      "point_ratio_input": 0.000699,
+      "bbox_min": [
+        8.822314,
+        0.031176,
+        -0.632688
+      ],
+      "bbox_max": [
+        9.082931,
+        0.191919,
+        -0.479365
+      ],
+      "bbox_extent_xyz": [
+        0.260617,
+        0.160743,
+        0.153323
+      ],
+      "bbox_volume_m3": 0.006423,
+      "centroid": [
+        8.95302,
+        0.123439,
+        -0.541784
+      ],
+      "density_points_per_m3": 3425.16275,
+      "distance_to_global_center_m": 4.106284,
+      "distance_to_ground_plane_m": 24.730129,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000549,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.37456,
+        0.246335,
+        0.223367
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 22,
+        "current_heuristic_density": 3425.16275,
+        "count_ratio_to_main": 0.001796,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          22,
+          3425.16275
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 54,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 21,
+      "point_count": 22,
+      "point_ratio_input": 0.000699,
+      "bbox_min": [
+        9.391885,
+        -11.837327,
+        6.374648
+      ],
+      "bbox_max": [
+        9.627733,
+        -11.628417,
+        6.555142
+      ],
+      "bbox_extent_xyz": [
+        0.235848,
+        0.20891,
+        0.180494
+      ],
+      "bbox_volume_m3": 0.008893,
+      "centroid": [
+        9.500821,
+        -11.757012,
+        6.475238
+      ],
+      "density_points_per_m3": 2473.830115,
+      "distance_to_global_center_m": 13.553394,
+      "distance_to_ground_plane_m": 31.737465,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": true,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.00194,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 1,
+        "grid_voxels": 1,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.295603,
+        0.305187,
+        0.228033
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 22,
+        "current_heuristic_density": 2473.830115,
+        "count_ratio_to_main": 0.001796,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          22,
+          2473.830115
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 55,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 45,
+      "point_count": 21,
+      "point_ratio_input": 0.000667,
+      "bbox_min": [
+        6.102447,
+        4.50067,
+        -0.992416
+      ],
+      "bbox_max": [
+        6.402863,
+        4.712886,
+        -0.84105
+      ],
+      "bbox_extent_xyz": [
+        0.300416,
+        0.212215,
+        0.151366
+      ],
+      "bbox_volume_m3": 0.00965,
+      "centroid": [
+        6.25082,
+        4.601286,
+        -0.909516
+      ],
+      "density_points_per_m3": 2176.155722,
+      "distance_to_global_center_m": 6.559598,
+      "distance_to_ground_plane_m": 24.3704,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000163,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.439078,
+        0.399854,
+        0.396333
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 21,
+        "current_heuristic_density": 2176.155722,
+        "count_ratio_to_main": 0.001715,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          21,
+          2176.155722
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 56,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 33,
+      "point_count": 21,
+      "point_ratio_input": 0.000667,
+      "bbox_min": [
+        -0.47066,
+        -6.277262,
+        -1.831674
+      ],
+      "bbox_max": [
+        -0.124003,
+        -6.179038,
+        -1.747637
+      ],
+      "bbox_extent_xyz": [
+        0.346657,
+        0.098225,
+        0.084037
+      ],
+      "bbox_volume_m3": 0.002861,
+      "centroid": [
+        -0.298384,
+        -6.232148,
+        -1.780534
+      ],
+      "density_points_per_m3": 7338.88047,
+      "distance_to_global_center_m": 7.371555,
+      "distance_to_ground_plane_m": 23.531143,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000922,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.459818,
+        0.297402,
+        0.298262
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 21,
+        "current_heuristic_density": 7338.88047,
+        "count_ratio_to_main": 0.001715,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          21,
+          7338.88047
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 57,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 38,
+      "point_count": 20,
+      "point_ratio_input": 0.000636,
+      "bbox_min": [
+        4.932185,
+        -6.014749,
+        -0.751388
+      ],
+      "bbox_max": [
+        5.052523,
+        -5.7663,
+        -0.533263
+      ],
+      "bbox_extent_xyz": [
+        0.120338,
+        0.248449,
+        0.218125
+      ],
+      "bbox_volume_m3": 0.006521,
+      "centroid": [
+        5.001651,
+        -5.909955,
+        -0.654525
+      ],
+      "density_points_per_m3": 3066.792979,
+      "distance_to_global_center_m": 4.299728,
+      "distance_to_ground_plane_m": 24.611429,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.001016,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 1,
+        "grid_voxels": 1,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.430183,
+        0.412667,
+        0.352569
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 20,
+        "current_heuristic_density": 3066.792979,
+        "count_ratio_to_main": 0.001633,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          20,
+          3066.792979
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 58,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 59,
+      "point_count": 20,
+      "point_ratio_input": 0.000636,
+      "bbox_min": [
+        9.51688,
+        -5.596773,
+        -3.091875
+      ],
+      "bbox_max": [
+        9.627632,
+        -5.153451,
+        -2.940361
+      ],
+      "bbox_extent_xyz": [
+        0.110752,
+        0.443322,
+        0.151513
+      ],
+      "bbox_volume_m3": 0.007439,
+      "centroid": [
+        9.563229,
+        -5.380473,
+        -2.980326
+      ],
+      "density_points_per_m3": 2688.490068,
+      "distance_to_global_center_m": 5.392485,
+      "distance_to_ground_plane_m": 22.270942,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.001718,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 2,
+        "grid_voxels": 2,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.49733,
+        0.466425,
+        0.450585
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 20,
+        "current_heuristic_density": 2688.490068,
+        "count_ratio_to_main": 0.001633,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          20,
+          2688.490068
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 59,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 58,
+      "point_count": 20,
+      "point_ratio_input": 0.000636,
+      "bbox_min": [
+        11.407121,
+        0.53196,
+        0.725084
+      ],
+      "bbox_max": [
+        12.042242,
+        0.639166,
+        0.75469
+      ],
+      "bbox_extent_xyz": [
+        0.635122,
+        0.107206,
+        0.029607
+      ],
+      "bbox_volume_m3": 0.002016,
+      "centroid": [
+        11.759385,
+        0.595177,
+        0.735754
+      ],
+      "density_points_per_m3": 9921.235687,
+      "distance_to_global_center_m": 7.116854,
+      "distance_to_ground_plane_m": 26.087901,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000493,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 3,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.365303,
+        0.324954,
+        0.231185
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 20,
+        "current_heuristic_density": 9921.235687,
+        "count_ratio_to_main": 0.001633,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": false,
+        "sort_key": [
+          20,
+          9921.235687
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio",
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 60,
+      "pipeline_selected": false
+    }
+  ],
+  "set2": [
+    {
+      "cluster_id": 4,
+      "point_count": 2609,
+      "point_ratio_input": 0.62119,
+      "bbox_min": [
+        1.825328,
+        -9.169596,
+        -7.374809
+      ],
+      "bbox_max": [
+        7.412486,
+        -4.395919,
+        -5.697366
+      ],
+      "bbox_extent_xyz": [
+        5.587158,
+        4.773677,
+        1.677443
+      ],
+      "bbox_volume_m3": 44.739571,
+      "centroid": [
+        4.535162,
+        -7.556376,
+        -6.443642
+      ],
+      "density_points_per_m3": 58.315266,
+      "distance_to_global_center_m": 2.427947,
+      "distance_to_ground_plane_m": 0.0,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": true,
+        "y_max": false,
+        "z_min": true,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 7.521986,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 276,
+        "grid_voxels": 3220,
+        "occupancy_ratio": 0.085714
+      },
+      "mean_color_rgb01": [
+        0.433827,
+        0.408836,
+        0.384686
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 2609,
+        "current_heuristic_density": 58.315266,
+        "count_ratio_to_main": 1.0,
+        "passes_min_component_ratio": true,
+        "plausible_woodpile": true,
+        "sort_key": [
+          2609,
+          58.315266
+        ]
+      },
+      "discard_reasons": [],
+      "rank_by_current_heuristic": 1,
+      "pipeline_selected": true,
+      "selection_reason": "plausible_woodpile_components"
+    },
+    {
+      "cluster_id": 8,
+      "point_count": 669,
+      "point_ratio_input": 0.159286,
+      "bbox_min": [
+        -0.725309,
+        -0.605013,
+        -2.388186
+      ],
+      "bbox_max": [
+        0.753648,
+        0.644581,
+        -0.637976
+      ],
+      "bbox_extent_xyz": [
+        1.478958,
+        1.249594,
+        1.75021
+      ],
+      "bbox_volume_m3": 3.234557,
+      "centroid": [
+        0.084897,
+        0.003074,
+        -1.144911
+      ],
+      "density_points_per_m3": 206.828934,
+      "distance_to_global_center_m": 8.116583,
+      "distance_to_ground_plane_m": 4.986623,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.95863,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 63,
+        "grid_voxels": 240,
+        "occupancy_ratio": 0.2625
+      },
+      "mean_color_rgb01": [
+        0.357322,
+        0.328943,
+        0.302847
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 669,
+        "current_heuristic_density": 206.828934,
+        "count_ratio_to_main": 0.25642,
+        "passes_min_component_ratio": true,
+        "plausible_woodpile": true,
+        "sort_key": [
+          669,
+          206.828934
+        ]
+      },
+      "discard_reasons": [],
+      "rank_by_current_heuristic": 2,
+      "pipeline_selected": true,
+      "selection_reason": "plausible_woodpile_components"
+    },
+    {
+      "cluster_id": 7,
+      "point_count": 276,
+      "point_ratio_input": 0.065714,
+      "bbox_min": [
+        9.422793,
+        -6.942272,
+        -6.733454
+      ],
+      "bbox_max": [
+        11.043644,
+        -4.882831,
+        -6.611011
+      ],
+      "bbox_extent_xyz": [
+        1.620851,
+        2.059441,
+        0.122443
+      ],
+      "bbox_volume_m3": 0.408722,
+      "centroid": [
+        10.256769,
+        -5.685756,
+        -6.671085
+      ],
+      "density_points_per_m3": 675.275848,
+      "distance_to_global_center_m": 5.948137,
+      "distance_to_ground_plane_m": 0.641355,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": true,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.110282,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 25,
+        "grid_voxels": 63,
+        "occupancy_ratio": 0.396825
+      },
+      "mean_color_rgb01": [
+        0.407759,
+        0.278602,
+        0.272822
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 276,
+        "current_heuristic_density": 675.275848,
+        "count_ratio_to_main": 0.105788,
+        "passes_min_component_ratio": true,
+        "plausible_woodpile": false,
+        "sort_key": [
+          276,
+          675.275848
+        ]
+      },
+      "discard_reasons": [
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 3,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 2,
+      "point_count": 61,
+      "point_ratio_input": 0.014524,
+      "bbox_min": [
+        3.47453,
+        -4.982017,
+        -5.879548
+      ],
+      "bbox_max": [
+        3.983701,
+        -3.889441,
+        -5.704189
+      ],
+      "bbox_extent_xyz": [
+        0.509171,
+        1.092576,
+        0.175358
+      ],
+      "bbox_volume_m3": 0.097553,
+      "centroid": [
+        3.663998,
+        -4.342705,
+        -5.778475
+      ],
+      "density_points_per_m3": 625.299113,
+      "distance_to_global_center_m": 1.501891,
+      "distance_to_ground_plane_m": 1.495261,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.021171,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 9,
+        "grid_voxels": 15,
+        "occupancy_ratio": 0.6
+      },
+      "mean_color_rgb01": [
+        0.376803,
+        0.358338,
+        0.326144
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 61,
+        "current_heuristic_density": 625.299113,
+        "count_ratio_to_main": 0.023381,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          61,
+          625.299113
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 4,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 6,
+      "point_count": 55,
+      "point_ratio_input": 0.013095,
+      "bbox_min": [
+        9.487888,
+        -4.509872,
+        -6.653825
+      ],
+      "bbox_max": [
+        10.770553,
+        -4.410621,
+        -6.593419
+      ],
+      "bbox_extent_xyz": [
+        1.282664,
+        0.099251,
+        0.060406
+      ],
+      "bbox_volume_m3": 0.00769,
+      "centroid": [
+        10.220678,
+        -4.470693,
+        -6.618128
+      ],
+      "density_points_per_m3": 7152.100176,
+      "distance_to_global_center_m": 5.978809,
+      "distance_to_ground_plane_m": 0.720984,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.001354,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 6,
+        "grid_voxels": 6,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.381192,
+        0.266707,
+        0.258568
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 55,
+        "current_heuristic_density": 7152.100176,
+        "count_ratio_to_main": 0.021081,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": false,
+        "sort_key": [
+          55,
+          7152.100176
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio",
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 5,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 1,
+      "point_count": 50,
+      "point_ratio_input": 0.011905,
+      "bbox_min": [
+        10.488582,
+        0.463545,
+        -0.429503
+      ],
+      "bbox_max": [
+        10.64594,
+        1.719634,
+        -0.324735
+      ],
+      "bbox_extent_xyz": [
+        0.157358,
+        1.256088,
+        0.104768
+      ],
+      "bbox_volume_m3": 0.020708,
+      "centroid": [
+        10.566389,
+        1.132621,
+        -0.38423
+      ],
+      "density_points_per_m3": 2414.529401,
+      "distance_to_global_center_m": 10.184163,
+      "distance_to_ground_plane_m": 6.945306,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.003155,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 6,
+        "grid_voxels": 6,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.36476,
+        0.265987,
+        0.21725
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 50,
+        "current_heuristic_density": 2414.529401,
+        "count_ratio_to_main": 0.019164,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": false,
+        "sort_key": [
+          50,
+          2414.529401
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio",
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 6,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 10,
+      "point_count": 38,
+      "point_ratio_input": 0.009048,
+      "bbox_min": [
+        8.101353,
+        0.790519,
+        0.186408
+      ],
+      "bbox_max": [
+        8.214787,
+        1.556659,
+        0.220833
+      ],
+      "bbox_extent_xyz": [
+        0.113434,
+        0.76614,
+        0.034425
+      ],
+      "bbox_volume_m3": 0.002992,
+      "centroid": [
+        8.163775,
+        1.144118,
+        0.20792
+      ],
+      "density_points_per_m3": 12701.378628,
+      "distance_to_global_center_m": 9.302353,
+      "distance_to_ground_plane_m": 7.561217,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000971,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 4,
+        "grid_voxels": 4,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.370166,
+        0.301958,
+        0.243066
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 38,
+        "current_heuristic_density": 12701.378628,
+        "count_ratio_to_main": 0.014565,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": false,
+        "sort_key": [
+          38,
+          12701.378628
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio",
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 7,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 0,
+      "point_count": 31,
+      "point_ratio_input": 0.007381,
+      "bbox_min": [
+        9.31973,
+        0.674422,
+        -0.107696
+      ],
+      "bbox_max": [
+        9.455379,
+        1.177756,
+        -0.068463
+      ],
+      "bbox_extent_xyz": [
+        0.13565,
+        0.503334,
+        0.039234
+      ],
+      "bbox_volume_m3": 0.002679,
+      "centroid": [
+        9.393793,
+        0.919736,
+        -0.085959
+      ],
+      "density_points_per_m3": 11572.449659,
+      "distance_to_global_center_m": 9.542513,
+      "distance_to_ground_plane_m": 7.267113,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000873,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 3,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.368276,
+        0.275167,
+        0.234898
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 31,
+        "current_heuristic_density": 11572.449659,
+        "count_ratio_to_main": 0.011882,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": false,
+        "sort_key": [
+          31,
+          11572.449659
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio",
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 8,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 3,
+      "point_count": 31,
+      "point_ratio_input": 0.007381,
+      "bbox_min": [
+        2.569568,
+        -5.150782,
+        -5.716352
+      ],
+      "bbox_max": [
+        2.782064,
+        -4.456981,
+        -5.507693
+      ],
+      "bbox_extent_xyz": [
+        0.212496,
+        0.693801,
+        0.208659
+      ],
+      "bbox_volume_m3": 0.030763,
+      "centroid": [
+        2.6934,
+        -4.72597,
+        -5.562845
+      ],
+      "density_points_per_m3": 1007.717568,
+      "distance_to_global_center_m": 1.975207,
+      "distance_to_ground_plane_m": 1.658457,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.002334,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 3,
+        "grid_voxels": 3,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.354281,
+        0.336031,
+        0.305502
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 31,
+        "current_heuristic_density": 1007.717568,
+        "count_ratio_to_main": 0.011882,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": true,
+        "sort_key": [
+          31,
+          1007.717568
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio"
+      ],
+      "rank_by_current_heuristic": 9,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 9,
+      "point_count": 21,
+      "point_ratio_input": 0.005,
+      "bbox_min": [
+        10.73293,
+        -7.134754,
+        -6.724198
+      ],
+      "bbox_max": [
+        11.020863,
+        -6.850101,
+        -6.706243
+      ],
+      "bbox_extent_xyz": [
+        0.287933,
+        0.284653,
+        0.017954
+      ],
+      "bbox_volume_m3": 0.001472,
+      "centroid": [
+        10.888285,
+        -6.94465,
+        -6.712672
+      ],
+      "density_points_per_m3": 14270.654311,
+      "distance_to_global_center_m": 6.732763,
+      "distance_to_ground_plane_m": 0.650611,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": true,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.000227,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 4,
+        "grid_voxels": 4,
+        "occupancy_ratio": 1.0
+      },
+      "mean_color_rgb01": [
+        0.418808,
+        0.305693,
+        0.29024
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 21,
+        "current_heuristic_density": 14270.654311,
+        "count_ratio_to_main": 0.008049,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": false,
+        "sort_key": [
+          21,
+          14270.654311
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio",
+        "axis_ratio_exceeds_max_component_axis_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 10,
+      "pipeline_selected": false
+    },
+    {
+      "cluster_id": 5,
+      "point_count": 17,
+      "point_ratio_input": 0.004048,
+      "bbox_min": [
+        3.155553,
+        -6.831031,
+        -6.23079
+      ],
+      "bbox_max": [
+        3.434216,
+        -6.554507,
+        -5.903569
+      ],
+      "bbox_extent_xyz": [
+        0.278663,
+        0.276523,
+        0.327221
+      ],
+      "bbox_volume_m3": 0.025215,
+      "centroid": [
+        3.358942,
+        -6.752611,
+        -5.984453
+      ],
+      "density_points_per_m3": 674.213053,
+      "distance_to_global_center_m": 1.882354,
+      "distance_to_ground_plane_m": 1.144019,
+      "touches_global_bbox": {
+        "x_min": false,
+        "x_max": false,
+        "y_min": false,
+        "y_max": false,
+        "z_min": false,
+        "z_max": false
+      },
+      "convex_hull_volume_m3": 0.002318,
+      "occupancy": {
+        "voxel_size_m": 0.25,
+        "occupied_voxels": 4,
+        "grid_voxels": 8,
+        "occupancy_ratio": 0.5
+      },
+      "mean_color_rgb01": [
+        0.375353,
+        0.334555,
+        0.31779
+      ],
+      "heuristic_score": {
+        "current_heuristic_count": 17,
+        "current_heuristic_density": 674.213053,
+        "count_ratio_to_main": 0.006516,
+        "passes_min_component_ratio": false,
+        "plausible_woodpile": false,
+        "sort_key": [
+          17,
+          674.213053
+        ]
+      },
+      "discard_reasons": [
+        "below_min_component_ratio",
+        "not_plausible_woodpile"
+      ],
+      "rank_by_current_heuristic": 11,
+      "pipeline_selected": false
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import logging
 from pathlib import Path
 from typing import Any
 
@@ -12,6 +13,7 @@ from backend.app.config import Settings
 
 ARUCO_MARKER_ID = 0
 ARUCO_DICTIONARY = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
+logger = logging.getLogger(__name__)
 
 
 class CalibrationFailedError(Exception):
@@ -244,7 +246,33 @@ def calibrate_image_paths(
     ]
     detection_confidence = len(confidence_detections) / len(visible_paths)
 
-    if confidence_detections and detection_confidence >= settings.calibration_confidence_threshold:
+    coverage_warning = None
+    if detection_confidence < settings.calibration_confidence_threshold:
+        coverage_warning = (
+            "Automatic detection confidence below recommended threshold "
+            f"({settings.calibration_confidence_threshold:.2f}); continuing with detected markers."
+        )
+        logger.warning(
+            "ArUco detection coverage below recommended threshold: "
+            "detected=%s visible=%s confidence=%.4f threshold=%.2f; continuing calibration",
+            len(confidence_detections),
+            len(visible_paths),
+            detection_confidence,
+            settings.calibration_confidence_threshold,
+        )
+    else:
+        logger.info(
+            "ArUco detection coverage: detected=%s visible=%s confidence=%.4f threshold=%.2f",
+            len(confidence_detections),
+            len(visible_paths),
+            detection_confidence,
+            settings.calibration_confidence_threshold,
+        )
+
+    if confidence_detections and (
+        detection_confidence >= settings.calibration_confidence_threshold
+        or manual_scale_px_per_cm is None
+    ):
         scale_values = [detection.scale_px_per_cm for detection in confidence_detections]
         measured_scale_px_per_cm = float(np.mean(scale_values))
         return CalibrationResult(
@@ -259,6 +287,7 @@ def calibrate_image_paths(
                 else round(_scale_error_percentage(measured_scale_px_per_cm, expected_scale_px_per_cm), 4)
             ),
             marker_detections=confidence_detections,
+            warning=coverage_warning,
         )
 
     if manual_scale_px_per_cm is not None:

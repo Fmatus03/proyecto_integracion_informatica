@@ -367,7 +367,13 @@ class HarnessRuntime:
         injection_policy = _read_json(self.root_dir / profile.get("injection_policy", ".harness/injection_policy.json"))
         eval_contract = _read_json(self.root_dir / profile.get("eval_contract", ".harness/eval_contract.json"))
         prompt_contract = _read_json(self.root_dir / profile.get("prompt_contract", ".harness/prompt_contract.json"))
-        manifest = _read_json(self.root_dir / profile.get("dataset_manifest", "set_imagenes+guia/dataset_manifest.json"))
+        manifest = _read_json(
+            self.root_dir
+            / profile.get(
+                "dataset_manifest",
+                "projects/ForestVol/set_imagenes+guia/dataset_manifest.json",
+            )
+        )
         self._validate_contract_integrity(
             runtime_contract, state_machine, claim_policy, artifact_policy,
             evidence_policy, role_policy, injection_policy, eval_contract,
@@ -526,7 +532,7 @@ class HarnessRuntime:
         runtime_contract = _read_json(self.harness_dir / "runtime_contract.json")
         return runtime_contract.get("project_profile", {}).get(
             "dataset_manifest",
-            "set_imagenes+guia/dataset_manifest.json",
+            "projects/ForestVol/set_imagenes+guia/dataset_manifest.json",
         )
 
     # ── State I/O ─────────────────────────────────────────────────────────────

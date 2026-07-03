@@ -48,7 +48,7 @@ def test_nodeodm_options_do_not_pass_local_gcp_path_as_option() -> None:
         image_count=18,
         images_with_exif=0,
         images_with_gps=0,
-        gcp_path="set_imagenes+guia/gcp_list.txt",
+        gcp_path="projects/ForestVol/set_imagenes+guia/gcp_list.txt",
         scale_certified=True,
         reason="gcp_file_available",
     )

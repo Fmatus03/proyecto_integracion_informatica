@@ -1,0 +1,12 @@
+ply
+format ascii 1.0
+comment minimum_cut_nodes.ply
+element vertex 1
+property float x
+property float y
+property float z
+property uchar red
+property uchar green
+property uchar blue
+end_header
+1.063982 2.327745 -0.133811 255 220 30

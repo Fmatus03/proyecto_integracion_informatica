@@ -1,0 +1,86 @@
+[
+  {
+    "attempt": "attempt_1",
+    "options": [
+      {
+        "name": "feature-quality",
+        "value": "ultra"
+      },
+      {
+        "name": "pc-quality",
+        "value": "high"
+      },
+      {
+        "name": "min-num-features",
+        "value": "16000"
+      },
+      {
+        "name": "matcher-neighbors",
+        "value": "12"
+      },
+      {
+        "name": "depthmap-resolution",
+        "value": "high"
+      },
+      {
+        "name": "pc-filter",
+        "value": "1"
+      },
+      {
+        "name": "end-with",
+        "value": "odm_filterpoints"
+      }
+    ],
+    "task_uuid": "3fa0447b-f109-43d8-abb7-161e9a863cfa",
+    "status": "completed",
+    "nodeodm_info": {
+      "uuid": "3fa0447b-f109-43d8-abb7-161e9a863cfa",
+      "name": "forestvol-d78e0ca6-6259-47b1-89a7-2278acf95119-attempt_1",
+      "dateCreated": 1782796316369,
+      "processingTime": 1638735,
+      "status": {
+        "code": 40
+      },
+      "options": [
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        },
+        {
+          "name": "min-num-features",
+          "value": 16000
+        },
+        {
+          "name": "feature-quality",
+          "value": "ultra"
+        },
+        {
+          "name": "matcher-neighbors",
+          "value": 12
+        },
+        {
+          "name": "pc-quality",
+          "value": "high"
+        },
+        {
+          "name": "pc-filter",
+          "value": 1
+        },
+        {
+          "name": "pc-ept",
+          "value": true
+        },
+        {
+          "name": "cog",
+          "value": true
+        },
+        {
+          "name": "gltf",
+          "value": true
+        }
+      ],
+      "imagesCount": 95,
+      "progress": 100
+    }
+  }
+]

@@ -1,0 +1,1286 @@
+{
+  "session_id": "d0563947-152b-411b-a62a-fb525d9bbeaa",
+  "pipeline_state": "FAILED",
+  "message": "NodeODM failed after 3 fallback attempts",
+  "error_code": "NODEODM_PROCESSING_FAILED",
+  "point_cloud_path": null,
+  "scale_evidence": {
+    "image_count": 95,
+    "images_with_exif": 0,
+    "images_with_gps": 0,
+    "gcp_path": "data/processed/d0563947-152b-411b-a62a-fb525d9bbeaa/gcp_list.txt",
+    "scale_certified": false,
+    "reason": "aruco_gcp_generated_pending_3d_validation",
+    "aruco_gcp": {
+      "gcp_path": "data/processed/d0563947-152b-411b-a62a-fb525d9bbeaa/gcp_list.txt",
+      "marker_size_m": 1.0,
+      "detections_count": 39,
+      "rejected_detections_count": 22,
+      "gcp_count": 156,
+      "detections": [
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004319.png",
+          "marker_id": 0,
+          "side_px": 93.6195,
+          "corners_px": [
+            [
+              646.4851684570312,
+              797.170654296875
+            ],
+            [
+              729.384765625,
+              749.7960205078125
+            ],
+            [
+              799.8692016601562,
+              803.9335327148438
+            ],
+            [
+              715.8917846679688,
+              856.2789306640625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004328.png",
+          "marker_id": 0,
+          "side_px": 93.6701,
+          "corners_px": [
+            [
+              714.3095092773438,
+              798.2125854492188
+            ],
+            [
+              791.2177124023438,
+              747.7424926757812
+            ],
+            [
+              868.430908203125,
+              798.60888671875
+            ],
+            [
+              791.468994140625,
+              854.1633911132812
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004337.png",
+          "marker_id": 0,
+          "side_px": 92.5927,
+          "corners_px": [
+            [
+              698.0023193359375,
+              789.2177734375
+            ],
+            [
+              764.5618286132812,
+              735.782958984375
+            ],
+            [
+              850.5584716796875,
+              780.0553588867188
+            ],
+            [
+              786.001708984375,
+              838.801513671875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004428.png",
+          "marker_id": 0,
+          "side_px": 92.1932,
+          "corners_px": [
+            [
+              748.7528076171875,
+              833.6641845703125
+            ],
+            [
+              808.7650146484375,
+              777.9089965820312
+            ],
+            [
+              899.2626342773438,
+              819.3370361328125
+            ],
+            [
+              841.6895141601562,
+              879.869140625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004438.png",
+          "marker_id": 0,
+          "side_px": 91.4752,
+          "corners_px": [
+            [
+              737.6981811523438,
+              797.7564086914062
+            ],
+            [
+              792.006103515625,
+              740.6757202148438
+            ],
+            [
+              885.5073852539062,
+              778.3992919921875
+            ],
+            [
+              835.2869262695312,
+              840.40087890625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004449.png",
+          "marker_id": 0,
+          "side_px": 90.7148,
+          "corners_px": [
+            [
+              808.206787109375,
+              828.8471069335938
+            ],
+            [
+              853.0763549804688,
+              769.0829467773438
+            ],
+            [
+              950.3576049804688,
+              803.3980102539062
+            ],
+            [
+              910.026611328125,
+              867.771240234375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004457.png",
+          "marker_id": 0,
+          "side_px": 88.6363,
+          "corners_px": [
+            [
+              828.5732421875,
+              792.6053466796875
+            ],
+            [
+              863.8612670898438,
+              732.9646606445312
+            ],
+            [
+              964.2454833984375,
+              762.1569213867188
+            ],
+            [
+              934.7216796875,
+              825.2418823242188
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004506.png",
+          "marker_id": 0,
+          "side_px": 87.5486,
+          "corners_px": [
+            [
+              898.087158203125,
+              796.1737670898438
+            ],
+            [
+              923.8548583984375,
+              735.1751708984375
+            ],
+            [
+              1025.2646484375,
+              759.2234497070312
+            ],
+            [
+              1005.81884765625,
+              824.7055053710938
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004513.png",
+          "marker_id": 0,
+          "side_px": 84.0511,
+          "corners_px": [
+            [
+              1016.6765747070312,
+              798.857177734375
+            ],
+            [
+              1022.7471923828125,
+              738.956298828125
+            ],
+            [
+              1124.9578857421875,
+              753.8475341796875
+            ],
+            [
+              1125.8310546875,
+              816.0484619140625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004518.png",
+          "marker_id": 0,
+          "side_px": 82.3505,
+          "corners_px": [
+            [
+              1033.066162109375,
+              773.0873413085938
+            ],
+            [
+              1029.9759521484375,
+              713.8345947265625
+            ],
+            [
+              1130.535888671875,
+              724.6132202148438
+            ],
+            [
+              1140.9638671875,
+              784.1741333007812
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004523.png",
+          "marker_id": 0,
+          "side_px": 80.8283,
+          "corners_px": [
+            [
+              1088.1815185546875,
+              773.3128051757812
+            ],
+            [
+              1075.38818359375,
+              716.4028930664062
+            ],
+            [
+              1173.8245849609375,
+              721.9931640625
+            ],
+            [
+              1193.1357421875,
+              780.0829467773438
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004529.png",
+          "marker_id": 0,
+          "side_px": 79.5424,
+          "corners_px": [
+            [
+              1131.463134765625,
+              767.4823608398438
+            ],
+            [
+              1113.2877197265625,
+              712.5196533203125
+            ],
+            [
+              1210.0286865234375,
+              715.1802978515625
+            ],
+            [
+              1234.270263671875,
+              770.7666625976562
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004534.png",
+          "marker_id": 0,
+          "side_px": 77.8702,
+          "corners_px": [
+            [
+              1186.1160888671875,
+              684.8790283203125
+            ],
+            [
+              1157.7642822265625,
+              633.1231079101562
+            ],
+            [
+              1250.35595703125,
+              632.4524536132812
+            ],
+            [
+              1284.353759765625,
+              683.8578491210938
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004540.png",
+          "marker_id": 0,
+          "side_px": 75.7601,
+          "corners_px": [
+            [
+              1207.3782958984375,
+              681.9972534179688
+            ],
+            [
+              1170.5615234375,
+              632.6625366210938
+            ],
+            [
+              1256.7568359375,
+              627.2601318359375
+            ],
+            [
+              1298.5057373046875,
+              675.4447021484375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004549.png",
+          "marker_id": 0,
+          "side_px": 73.6359,
+          "corners_px": [
+            [
+              1173.365234375,
+              655.8154907226562
+            ],
+            [
+              1127.216552734375,
+              609.6619873046875
+            ],
+            [
+              1206.3587646484375,
+              600.2745361328125
+            ],
+            [
+              1255.6097412109375,
+              645.1806640625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004555.png",
+          "marker_id": 0,
+          "side_px": 71.4091,
+          "corners_px": [
+            [
+              1178.6912841796875,
+              593.7089233398438
+            ],
+            [
+              1127.7353515625,
+              551.3369750976562
+            ],
+            [
+              1201.0589599609375,
+              539.23876953125
+            ],
+            [
+              1254.887451171875,
+              580.2568969726562
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004602.png",
+          "marker_id": 0,
+          "side_px": 68.3862,
+          "corners_px": [
+            [
+              1290.8123779296875,
+              584.0836181640625
+            ],
+            [
+              1233.090087890625,
+              545.7593383789062
+            ],
+            [
+              1299.7796630859375,
+              531.5103149414062
+            ],
+            [
+              1357.186767578125,
+              567.1234741210938
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004607.png",
+          "marker_id": 0,
+          "side_px": 66.1064,
+          "corners_px": [
+            [
+              1285.718505859375,
+              540.619384765625
+            ],
+            [
+              1226.340087890625,
+              506.7103271484375
+            ],
+            [
+              1286.255615234375,
+              489.9995422363281
+            ],
+            [
+              1347.5499267578125,
+              522.687255859375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004612.png",
+          "marker_id": 0,
+          "side_px": 64.3434,
+          "corners_px": [
+            [
+              1256.65234375,
+              538.6487426757812
+            ],
+            [
+              1194.22509765625,
+              508.7741394042969
+            ],
+            [
+              1249.2255859375,
+              490.28021240234375
+            ],
+            [
+              1313.3367919921875,
+              517.1796875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004618.png",
+          "marker_id": 0,
+          "side_px": 63.0593,
+          "corners_px": [
+            [
+              1294.201904296875,
+              523.3012084960938
+            ],
+            [
+              1227.33740234375,
+              493.8408203125
+            ],
+            [
+              1281.5244140625,
+              474.7886657714844
+            ],
+            [
+              1343.6654052734375,
+              500.1239929199219
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004628.png",
+          "marker_id": 0,
+          "side_px": 62.3243,
+          "corners_px": [
+            [
+              1300.5855712890625,
+              501.4055480957031
+            ],
+            [
+              1233.0567626953125,
+              475.91180419921875
+            ],
+            [
+              1278.9337158203125,
+              453.3897705078125
+            ],
+            [
+              1347.65283203125,
+              474.97808837890625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004635.png",
+          "marker_id": 0,
+          "side_px": 61.1692,
+          "corners_px": [
+            [
+              1290.0325927734375,
+              495.5065612792969
+            ],
+            [
+              1221.488525390625,
+              473.5793151855469
+            ],
+            [
+              1265.853759765625,
+              448.37481689453125
+            ],
+            [
+              1333.6002197265625,
+              469.58026123046875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005222.png",
+          "marker_id": 0,
+          "side_px": 62.0904,
+          "corners_px": [
+            [
+              139.61669921875,
+              451.0307312011719
+            ],
+            [
+              186.91622924804688,
+              469.6614074707031
+            ],
+            [
+              119.08534240722656,
+              497.1976318359375
+            ],
+            [
+              71.6440200805664,
+              477.27362060546875
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005230.png",
+          "marker_id": 0,
+          "side_px": 64.7107,
+          "corners_px": [
+            [
+              188.1041717529297,
+              472.6593322753906
+            ],
+            [
+              250.35287475585938,
+              483.6148681640625
+            ],
+            [
+              185.50958251953125,
+              514.1925048828125
+            ],
+            [
+              128.46568298339844,
+              496.4248352050781
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005235.png",
+          "marker_id": 0,
+          "side_px": 67.8992,
+          "corners_px": [
+            [
+              150.9497528076172,
+              490.4060363769531
+            ],
+            [
+              215.8503875732422,
+              504.07159423828125
+            ],
+            [
+              155.87564086914062,
+              537.77734375
+            ],
+            [
+              89.94945526123047,
+              521.9622192382812
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005241.png",
+          "marker_id": 0,
+          "side_px": 70.326,
+          "corners_px": [
+            [
+              160.29380798339844,
+              518.010986328125
+            ],
+            [
+              229.54702758789062,
+              531.197509765625
+            ],
+            [
+              172.24925231933594,
+              567.9747314453125
+            ],
+            [
+              100.53424072265625,
+              553.68115234375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005246.png",
+          "marker_id": 0,
+          "side_px": 73.105,
+          "corners_px": [
+            [
+              159.69749450683594,
+              584.3347778320312
+            ],
+            [
+              239.68643188476562,
+              592.8577880859375
+            ],
+            [
+              192.08749389648438,
+              633.7047119140625
+            ],
+            [
+              108.2527084350586,
+              623.7977905273438
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005251.png",
+          "marker_id": 0,
+          "side_px": 76.8379,
+          "corners_px": [
+            [
+              155.0247344970703,
+              551.29541015625
+            ],
+            [
+              246.34164428710938,
+              554.1361694335938
+            ],
+            [
+              211.3865509033203,
+              600.6627197265625
+            ],
+            [
+              114.60603332519531,
+              596.9061889648438
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005537.png",
+          "marker_id": 0,
+          "side_px": 85.1426,
+          "corners_px": [
+            [
+              634.884765625,
+              936.4046020507812
+            ],
+            [
+              696.5830688476562,
+              881.8947143554688
+            ],
+            [
+              761.2429809570312,
+              937.3054809570312
+            ],
+            [
+              699.4855346679688,
+              995.9973754882812
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005546.png",
+          "marker_id": 0,
+          "side_px": 79.1782,
+          "corners_px": [
+            [
+              891.223388671875,
+              868.4138793945312
+            ],
+            [
+              901.0701293945312,
+              798.7891235351562
+            ],
+            [
+              984.77294921875,
+              816.734375
+            ],
+            [
+              977.9012451171875,
+              888.27197265625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005551.png",
+          "marker_id": 0,
+          "side_px": 69.5364,
+          "corners_px": [
+            [
+              1017.87158203125,
+              707.8821411132812
+            ],
+            [
+              984.2233276367188,
+              649.373779296875
+            ],
+            [
+              1052.658935546875,
+              635.2557983398438
+            ],
+            [
+              1089.0311279296875,
+              692.7359619140625
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005558.png",
+          "marker_id": 0,
+          "side_px": 64.2917,
+          "corners_px": [
+            [
+              1131.390625,
+              635.9489135742188
+            ],
+            [
+              1083.8106689453125,
+              587.1419067382812
+            ],
+            [
+              1139.155029296875,
+              562.7154541015625
+            ],
+            [
+              1186.84326171875,
+              610.4567260742188
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005712.png",
+          "marker_id": 0,
+          "side_px": 60.8653,
+          "corners_px": [
+            [
+              300.9918212890625,
+              497.6313781738281
+            ],
+            [
+              336.7685241699219,
+              534.3387451171875
+            ],
+            [
+              274.8253479003906,
+              569.290771484375
+            ],
+            [
+              240.16656494140625,
+              530.7901611328125
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005716.png",
+          "marker_id": 0,
+          "side_px": 66.2863,
+          "corners_px": [
+            [
+              267.3539733886719,
+              616.0119018554688
+            ],
+            [
+              319.5932922363281,
+              644.9710083007812
+            ],
+            [
+              265.8187561035156,
+              693.3814697265625
+            ],
+            [
+              212.78321838378906,
+              662.5145874023438
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005721.png",
+          "marker_id": 0,
+          "side_px": 71.0443,
+          "corners_px": [
+            [
+              228.4332275390625,
+              661.9072265625
+            ],
+            [
+              293.8404235839844,
+              682.70751953125
+            ],
+            [
+              251.71791076660156,
+              741.0347290039062
+            ],
+            [
+              183.9013671875,
+              718.7542724609375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005726.png",
+          "marker_id": 0,
+          "side_px": 77.4401,
+          "corners_px": [
+            [
+              221.77957153320312,
+              769.1087036132812
+            ],
+            [
+              303.08172607421875,
+              771.164794921875
+            ],
+            [
+              287.1919860839844,
+              840.9325561523438
+            ],
+            [
+              202.3666229248047,
+              838.4591674804688
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005733.png",
+          "marker_id": 0,
+          "side_px": 83.2756,
+          "corners_px": [
+            [
+              382.75506591796875,
+              889.1678466796875
+            ],
+            [
+              466.0463562011719,
+              863.976806640625
+            ],
+            [
+              488.79736328125,
+              937.225830078125
+            ],
+            [
+              402.27117919921875,
+              965.161865234375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005742.png",
+          "marker_id": 0,
+          "side_px": 85.441,
+          "corners_px": [
+            [
+              524.584716796875,
+              936.5009155273438
+            ],
+            [
+              592.5740966796875,
+              885.7871704101562
+            ],
+            [
+              648.7939453125,
+              948.3356323242188
+            ],
+            [
+              580.1719970703125,
+              1001.8704833984375
+            ]
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005748.png",
+          "marker_id": 0,
+          "side_px": 83.796,
+          "corners_px": [
+            [
+              726.6776123046875,
+              945.4296875
+            ],
+            [
+              768.4412841796875,
+              879.7178344726562
+            ],
+            [
+              844.9912109375,
+              921.9730224609375
+            ],
+            [
+              805.4076538085938,
+              990.5218505859375
+            ]
+          ]
+        }
+      ],
+      "rejected_detections": [
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004641.png",
+          "side_px": 59.4431,
+          "mean_side_px": 59.4431,
+          "side_cv": 0.189,
+          "area_ratio": 0.4965,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004649.png",
+          "side_px": 57.6013,
+          "mean_side_px": 57.6013,
+          "side_cv": 0.2302,
+          "area_ratio": 0.473,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004656.png",
+          "side_px": 56.3059,
+          "mean_side_px": 56.3059,
+          "side_cv": 0.2541,
+          "area_ratio": 0.457,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004702.png",
+          "side_px": 52.0765,
+          "mean_side_px": 52.0765,
+          "side_cv": 0.3142,
+          "area_ratio": 0.4343,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004708.png",
+          "side_px": 50.6329,
+          "mean_side_px": 50.6329,
+          "side_cv": 0.3626,
+          "area_ratio": 0.3975,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004714.png",
+          "side_px": 48.9268,
+          "mean_side_px": 48.9268,
+          "side_cv": 0.381,
+          "area_ratio": 0.3943,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004719.png",
+          "side_px": 47.1366,
+          "mean_side_px": 47.1366,
+          "side_cv": 0.4313,
+          "area_ratio": 0.3775,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004725.png",
+          "side_px": 45.3868,
+          "mean_side_px": 45.3868,
+          "side_cv": 0.4503,
+          "area_ratio": 0.3647,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004732.png",
+          "side_px": 44.3124,
+          "mean_side_px": 44.3124,
+          "side_cv": 0.4596,
+          "area_ratio": 0.355,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 004741.png",
+          "side_px": 43.7494,
+          "mean_side_px": 43.7494,
+          "side_cv": 0.4754,
+          "area_ratio": 0.3398,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005136.png",
+          "side_px": 41.722,
+          "mean_side_px": 41.722,
+          "side_cv": 0.508,
+          "area_ratio": 0.2933,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005143.png",
+          "side_px": 43.2388,
+          "mean_side_px": 43.2388,
+          "side_cv": 0.5273,
+          "area_ratio": 0.2978,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005149.png",
+          "side_px": 45.2634,
+          "mean_side_px": 45.2633,
+          "side_cv": 0.5192,
+          "area_ratio": 0.2958,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005154.png",
+          "side_px": 46.7144,
+          "mean_side_px": 46.7144,
+          "side_cv": 0.4974,
+          "area_ratio": 0.3047,
+          "reasons": [
+            "marker_too_small",
+            "unstable_side_lengths"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005159.png",
+          "side_px": 49.2132,
+          "mean_side_px": 49.2132,
+          "side_cv": 0.4457,
+          "area_ratio": 0.3107,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005205.png",
+          "side_px": 52.925,
+          "mean_side_px": 52.925,
+          "side_cv": 0.3713,
+          "area_ratio": 0.3436,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005212.png",
+          "side_px": 57.2009,
+          "mean_side_px": 57.2009,
+          "side_cv": 0.262,
+          "area_ratio": 0.3812,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005217.png",
+          "side_px": 59.1931,
+          "mean_side_px": 59.1931,
+          "side_cv": 0.2105,
+          "area_ratio": 0.4165,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005613.png",
+          "side_px": 56.7545,
+          "mean_side_px": 56.7545,
+          "side_cv": 0.1581,
+          "area_ratio": 0.6924,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005619.png",
+          "side_px": 52.6292,
+          "mean_side_px": 52.6292,
+          "side_cv": 0.1975,
+          "area_ratio": 0.64,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005659.png",
+          "side_px": 52.4704,
+          "mean_side_px": 52.4704,
+          "side_cv": 0.2246,
+          "area_ratio": 0.6061,
+          "reasons": [
+            "marker_too_small"
+          ]
+        },
+        {
+          "image_path": "data/uploads/d0563947-152b-411b-a62a-fb525d9bbeaa/Captura de pantalla 2026-06-30 005704.png",
+          "side_px": 56.1415,
+          "mean_side_px": 56.1415,
+          "side_cv": 0.2065,
+          "area_ratio": 0.6381,
+          "reasons": [
+            "marker_too_small"
+          ]
+        }
+      ]
+    }
+  },
+  "aruco_detection": {
+    "selected_candidate": null,
+    "reconstructed_side_units": null,
+    "physical_side_m": 1.0,
+    "scale_factor_m_per_unit": null,
+    "confidence": null,
+    "point_count": null
+  },
+  "scaling": {
+    "factor_applied": null,
+    "source": null
+  },
+  "segmentation": {},
+  "pdi": {
+    "hull_volume_m3": null,
+    "volume_m3": null,
+    "voxel_size_m": null,
+    "occupied_voxels": null,
+    "filled_voxels": null
+  },
+  "volume": {
+    "volume_m3": null,
+    "volume_method": null,
+    "expected_volume_m3": 119.74,
+    "error_percentage": null
+  },
+  "reconstruction_attempts": [
+    {
+      "attempt": "attempt_1",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "ultra"
+        },
+        {
+          "name": "pc-quality",
+          "value": "high"
+        },
+        {
+          "name": "min-num-features",
+          "value": "16000"
+        },
+        {
+          "name": "matcher-neighbors",
+          "value": "12"
+        },
+        {
+          "name": "depthmap-resolution",
+          "value": "high"
+        },
+        {
+          "name": "pc-filter",
+          "value": "1"
+        },
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        }
+      ],
+      "task_uuid": "a8c6cf5c-fa5f-4ad2-99c0-524d21af7ae7",
+      "status": "failed",
+      "message": "NodeODM task a8c6cf5c-fa5f-4ad2-99c0-524d21af7ae7 timed out"
+    },
+    {
+      "attempt": "attempt_2",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "high"
+        },
+        {
+          "name": "pc-quality",
+          "value": "high"
+        },
+        {
+          "name": "min-num-features",
+          "value": "12000"
+        },
+        {
+          "name": "matcher-neighbors",
+          "value": "10"
+        },
+        {
+          "name": "depthmap-resolution",
+          "value": "medium"
+        },
+        {
+          "name": "pc-filter",
+          "value": "1"
+        },
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        }
+      ],
+      "task_uuid": "105ef158-7420-4dce-b826-e1c72b08c77d",
+      "status": "failed",
+      "message": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+    },
+    {
+      "attempt": "attempt_3",
+      "options": [
+        {
+          "name": "feature-quality",
+          "value": "medium"
+        },
+        {
+          "name": "pc-quality",
+          "value": "medium"
+        },
+        {
+          "name": "min-num-features",
+          "value": "9000"
+        },
+        {
+          "name": "matcher-neighbors",
+          "value": "8"
+        },
+        {
+          "name": "depthmap-resolution",
+          "value": "medium"
+        },
+        {
+          "name": "pc-filter",
+          "value": "2"
+        },
+        {
+          "name": "end-with",
+          "value": "odm_filterpoints"
+        }
+      ],
+      "task_uuid": null,
+      "status": "failed",
+      "message": "HTTPConnectionPool(host='nodeodm', port=3000): Max retries exceeded with url: /task/new (Caused by NewConnectionError(\"HTTPConnection(host='nodeodm', port=3000): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+    }
+  ]
+}

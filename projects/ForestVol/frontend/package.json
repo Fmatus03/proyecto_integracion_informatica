@@ -1,9 +1,23 @@
 {
-  "name": "forestvol-frontend-hito0",
-  "version": "0.1.0",
+  "name": "forestvol-frontend",
+  "version": "1.0.0",
   "private": true,
-  "description": "Placeholder operativo del frontend para Hito 0",
+  "description": "Aplicacion Vue para la consola operativa ForestVol",
+  "type": "module",
   "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3000",
     "start": "node server.js"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "axios": "^1.7.9",
+    "element-plus": "^2.9.4",
+    "three": "^0.172.0",
+    "vite": "^6.0.7",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
   }
 }

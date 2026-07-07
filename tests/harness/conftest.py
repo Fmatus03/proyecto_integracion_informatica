@@ -46,7 +46,7 @@ def temp_repo(tmp_path):
     shutil.copytree(
         REPO_ROOT / "projects",
         tmp_path / "projects",
-        ignore=shutil.ignore_patterns("data", "__pycache__"),
+        ignore=shutil.ignore_patterns("data", "__pycache__", "node_modules", "dist"),
     )
 
     # Dataset oficial del proyecto activo

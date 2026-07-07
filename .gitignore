@@ -8,10 +8,17 @@ __pycache__/
 # Local environments
 .venv/
 venv/
+.env
+.env.*
+!.env.example
+node_modules/
+**/node_modules/
 
 # Runtime outputs
 .factory/runs/
 .harness/runs/
+dist/
+**/dist/
 data/uploads/
 data/processed/
 data/exports/
@@ -19,6 +26,12 @@ projects/*/data/uploads/
 projects/*/data/processed/
 projects/*/data/exports/
 projects/*/projects/*/data/
+experiments/**/.mplconfig/
+experiments/**/model_cache/
+experiments/**/runs/
+experiments/**/deps/
+experiments/**/*.pth
+experiments/**/*.pt
 
 # OS/editor
 .DS_Store

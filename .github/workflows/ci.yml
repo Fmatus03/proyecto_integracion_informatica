@@ -45,3 +45,37 @@ jobs:
 
       - name: Run backend tests
         run: pytest projects/ForestVol/backend/tests -q
+
+  frontend-build:
+    runs-on: ubuntu-latest
+    if: ${{ hashFiles('projects/ForestVol/frontend/package-lock.json') != '' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: projects/ForestVol/frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: projects/ForestVol/frontend
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: projects/ForestVol/frontend
+        run: npm run build
+
+  docker-build:
+    runs-on: ubuntu-latest
+    needs:
+      - backend-tests
+      - frontend-build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build ForestVol Docker images
+        run: docker compose -f projects/ForestVol/docker-compose.yml build forestvol-backend forestvol-frontend

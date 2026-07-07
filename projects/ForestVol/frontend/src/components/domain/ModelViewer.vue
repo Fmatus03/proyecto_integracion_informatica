@@ -4,6 +4,9 @@
     <div class="viewer-overlay">
       <el-tag :type="statusType" effect="dark">{{ statusLabel }}</el-tag>
       <span v-if="fileName">{{ fileName }}</span>
+      <el-button v-if="status === 'ready'" size="small" :icon="RefreshRight" @click="fitCameraToCurrentModel">
+        Reencuadrar
+      </el-button>
     </div>
   </div>
 </template>
@@ -11,6 +14,8 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, ref, watch } from "vue";
 import * as THREE from "three";
+import { RefreshRight } from "@element-plus/icons-vue";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { PLYLoader } from "three/examples/jsm/loaders/PLYLoader.js";
 
@@ -25,6 +30,7 @@ const status = ref("idle");
 let renderer;
 let scene;
 let camera;
+let controls;
 let animationId;
 let modelGroup;
 let resizeObserver;
@@ -49,11 +55,18 @@ function initScene() {
   scene.background = new THREE.Color(0x101816);
 
   camera = new THREE.PerspectiveCamera(45, 16 / 9, 0.01, 5000);
-  camera.position.set(2.2, 1.6, 2.8);
+  camera.position.set(3, 2, 3);
 
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   container.value.appendChild(renderer.domElement);
+
+  controls = new OrbitControls(camera, renderer.domElement);
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 0.7;
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.08;
+  controls.target.set(0, 0, 0);
 
   const hemi = new THREE.HemisphereLight(0xf4fff5, 0x26362d, 2.4);
   scene.add(hemi);
@@ -81,6 +94,7 @@ function resize() {
   renderer.setSize(width, height, false);
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
+  if (status.value === "ready") fitCameraToCurrentModel();
 }
 
 function clearModel() {
@@ -96,12 +110,45 @@ function clearModel() {
 }
 
 function frameModel(object) {
+  object.updateMatrixWorld(true);
   const box = new THREE.Box3().setFromObject(object);
+  if (box.isEmpty()) throw new Error("El modelo no contiene geometria visible");
   const center = box.getCenter(new THREE.Vector3());
   const size = box.getSize(new THREE.Vector3());
-  const radius = Math.max(size.x, size.y, size.z) || 1;
+  const radius = Math.max(size.length() / 2, 0.001);
+  const targetRadius = 1.6;
   object.position.sub(center);
-  object.scale.setScalar(1.8 / radius);
+  object.scale.multiplyScalar(targetRadius / radius);
+  object.updateMatrixWorld(true);
+}
+
+function fitCameraToCurrentModel() {
+  if (!camera || !modelGroup || !modelGroup.children.length) return;
+
+  modelGroup.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(modelGroup);
+  if (box.isEmpty()) return;
+
+  const sphere = box.getBoundingSphere(new THREE.Sphere());
+  const radius = Math.max(sphere.radius, 0.1);
+  const verticalFov = THREE.MathUtils.degToRad(camera.fov);
+  const horizontalFov = 2 * Math.atan(Math.tan(verticalFov / 2) * camera.aspect);
+  const limitingFov = Math.max(0.01, Math.min(verticalFov, horizontalFov));
+  const distance = (radius / Math.sin(limitingFov / 2)) * 1.35;
+  const direction = new THREE.Vector3(1.55, 1.05, 1.75).normalize();
+
+  camera.position.copy(sphere.center).add(direction.multiplyScalar(distance));
+  camera.near = Math.max(0.001, distance - radius * 4);
+  camera.far = distance + radius * 5;
+  camera.lookAt(sphere.center);
+  camera.updateProjectionMatrix();
+
+  if (controls) {
+    controls.target.copy(sphere.center);
+    controls.minDistance = Math.max(radius * 0.25, 0.05);
+    controls.maxDistance = Math.max(radius * 8, distance * 2);
+    controls.update();
+  }
 }
 
 async function loadModel() {
@@ -135,6 +182,8 @@ async function loadModel() {
       modelGroup.add(gltf.scene);
     }
 
+    modelGroup.rotation.set(0, 0, 0);
+    fitCameraToCurrentModel();
     status.value = "ready";
     emit("ready");
   } catch (error) {
@@ -145,7 +194,7 @@ async function loadModel() {
 
 function animate() {
   animationId = requestAnimationFrame(animate);
-  if (modelGroup) modelGroup.rotation.y += 0.006;
+  controls?.update();
   renderer?.render(scene, camera);
 }
 
@@ -155,6 +204,7 @@ onBeforeUnmount(() => {
   if (animationId) cancelAnimationFrame(animationId);
   resizeObserver?.disconnect();
   clearModel();
+  controls?.dispose();
   renderer?.dispose();
 });
 </script>

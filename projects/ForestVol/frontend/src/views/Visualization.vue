@@ -9,6 +9,8 @@
       </el-form>
     </el-card>
 
+    <MetricGrid v-if="result" :result="result" />
+
     <ModelViewer :url="viewerUrl" :file-name="fileName" @error="onViewerError" />
 
     <el-card shadow="never">
@@ -25,6 +27,7 @@ import { useRoute } from "vue-router";
 import { ElMessage } from "element-plus";
 import { Download, Search } from "@element-plus/icons-vue";
 import EmptyState from "@/components/common/EmptyState.vue";
+import MetricGrid from "@/components/domain/MetricGrid.vue";
 import ModelViewer from "@/components/domain/ModelViewer.vue";
 import ResultSummary from "@/components/domain/ResultSummary.vue";
 import { getResults, modelUrl } from "@/services/processService";

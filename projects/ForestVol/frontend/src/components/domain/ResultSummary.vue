@@ -9,8 +9,8 @@
       <p>{{ result?.volume_method || "--" }}</p>
     </div>
     <div>
-      <span class="label">Error vs referencia</span>
-      <p>{{ formatNumber(result?.error_percentage, "%") }}</p>
+      <span class="label">Confianza</span>
+      <p>{{ confidence }}</p>
     </div>
     <div>
       <span class="label">Malla</span>
@@ -21,7 +21,7 @@
 
 <script setup>
 import { computed } from "vue";
-import { formatNumber } from "@/utils/labels";
+import { confidenceLabels, formatNumber } from "@/utils/labels";
 
 const props = defineProps({
   result: { type: Object, default: null },
@@ -41,5 +41,11 @@ const meshState = computed(() => {
   if (props.result.mesh_watertight === true) return "Cerrada";
   if (props.result.mesh_repair_applied) return "Reparada";
   return "Generada";
+});
+
+const confidence = computed(() => {
+  if (!props.result || props.result.confidence_score === null || props.result.confidence_score === undefined) return "--";
+  const label = confidenceLabels[String(props.result.confidence_level || "").toUpperCase()] || props.result.confidence_level || "";
+  return `${formatNumber(props.result.confidence_score)} ${label}`.trim();
 });
 </script>

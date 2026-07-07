@@ -5,7 +5,7 @@
       <strong><StatusBadge :state="result?.pipeline_state" /></strong>
     </article>
     <article class="metric-tile">
-      <span>Volumen oficial</span>
+      <span>Volumen estimado</span>
       <strong>{{ formatNumber(result?.volume_m3, " m3") }}</strong>
     </article>
     <article class="metric-tile">
